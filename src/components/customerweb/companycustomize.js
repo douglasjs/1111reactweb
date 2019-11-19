@@ -27,7 +27,7 @@ function CompanyCustomize() {
 
                                     <div className="fancy-box content-box-heading-sm fancy-box-classes">
                                         <figure className="fancy-box-image">
-                                            <img src="image/custom-4.jpg" alt="1111人力銀行客製化" />
+                                            <img src="/image/custom-4.jpg" alt="1111人力銀行客製化" />
 										</figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info">

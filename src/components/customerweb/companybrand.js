@@ -93,7 +93,7 @@ function CompanyBrand() {
                                     <div className="liquid-img-group-img-container">
                                         <div className="liquid-img-container-inner" data-parallax="true" data-parallax-from='{"scaleX":1.25,"scaleY":1.25}' data-parallax-to='{"scaleX":1,"scaleY":1}' data-parallax-options='{"overflowHidden":true,"easing":"linear"}'>
                                             <figure>
-                                                <img src="image/brand-1.jpg" alt="1111人力銀行品牌介紹" style={style} />
+                                                <img src="/image/brand-1.jpg" alt="1111人力銀行品牌介紹" style={style} />
 											</figure>
 										</div>
 									</div>

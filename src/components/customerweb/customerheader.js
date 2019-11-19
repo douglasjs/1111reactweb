@@ -3,12 +3,12 @@
 const NavBar = () => {
     return(
         <div className="navbar-header">
-            <a className="navbar-brand" href="##" rel="home">
+            <a className="navbar-brand" href="/#" rel="home">
                 <span className="navbar-brand-inner">
-                    <img className="logo-dark" src="image/logo.png" alt="1111人力銀行Logo" />
-                    <img className="logo-sticky" src="image/logo.png" alt="1111人力銀行Logo" />
-                    <img className="mobile-logo-default" src="image/logo.png" alt="1111人力銀行Logo" />
-                    <img className="logo-default" src="image/logo.png" alt="1111人力銀行Logo" />
+                    <img className="logo-dark" src="/image/logo.png" alt="1111人力銀行Logo" />
+                    <img className="logo-sticky" src="/image/logo.png" alt="1111人力銀行Logo" />
+                    <img className="mobile-logo-default" src="/image/logo.png" alt="1111人力銀行Logo" />
+                    <img className="logo-default" src="/image/logo.png" alt="1111人力銀行Logo" />
                 </span>
             </a>
             <button type="button" className="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames={`{ "html": "mobile-nav-activated overflow-hidden" }`}>

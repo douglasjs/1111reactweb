@@ -19,7 +19,7 @@ function CompanyBenifit() {
                                     <div className="liquid-img-group-img-container liquid-img-group-container-benefit-sm">
                                         <div className="liquid-img-container-inner" data-parallax="true" data-parallax-from='{"scaleX":1.25,"scaleY":1.25}' data-parallax-to='{"scaleX":1,"scaleY":1}' data-parallax-options='{"overflowHidden":true,"easing":"linear"}'>
                                             <figure>
-                                                <img src="image/benefit-1.png" alt="1111人力銀行員工福利" />
+                                                <img src="/image/benefit-1.png" alt="1111人力銀行員工福利" />
 											</figure>
 										</div>
 									</div>

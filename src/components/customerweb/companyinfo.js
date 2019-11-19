@@ -50,7 +50,7 @@ function CompanyInfo() {
                                         <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
                                             <div className="cb-img-container border-radius-5">
                                                 <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">
-                                                    <img className="invisible" src="image/company-1.jpg" alt="1111人力銀行公司介紹" />
+                                                    <img className="invisible" src="/image/company-1.jpg" alt="1111人力銀行公司介紹" />
 												</figure>
 											</div>
 											<div className="fancy-box-header">
@@ -67,7 +67,7 @@ function CompanyInfo() {
                                             <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
                                                 <div className="cb-img-container border-radius-5">
                                                     <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">
-                                                        <img className="invisible" src="image/company-2.jpg" alt="1111人力銀行公司介紹" />
+                                                        <img className="invisible" src="/image/company-2.jpg" alt="1111人力銀行公司介紹" />
 												</figure>
 											</div>
 											<div className="fancy-box-header">
@@ -84,7 +84,7 @@ function CompanyInfo() {
                                                 <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
                                                     <div className="cb-img-container border-radius-5">
                                                         <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">
-                                                            <img className="invisible" src="image/company-3.jpg" alt="1111人力銀行公司介紹" />
+                                                            <img className="invisible" src="/image/company-3.jpg" alt="1111人力銀行公司介紹" />
 												</figure>
 											</div>
 											<div className="fancy-box-header">
