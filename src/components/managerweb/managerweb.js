@@ -6,6 +6,7 @@ import ManagerContent from './managerContent';
 import ManagerScollToTop from './managerScrollToTop';
 import ManagerModal from './managerModal';
 
+  
 function ManagerWeb(props) {
     const cid = props.match.params.cid;
     const companyName = '1111人力銀行-永豐餘生技' + cid;
