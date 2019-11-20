@@ -7,15 +7,15 @@ function ManagerModal() {
             <div className="modal-dialog" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <h5 className="modal-title" id="exampleModalLabel">登出管理介面</h5>
                         <button className="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
-                    <div className="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div className="modal-body">確定要離開了嗎?</div>
                     <div className="modal-footer">
-                        <button className="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a className="btn btn-primary" href="login.html">Logout</a>
+                        <button className="btn btn-secondary" type="button" data-dismiss="modal">取消</button>
+                        <a className="btn btn-primary" href="/web/managerweb/">登出</a>
                     </div>
                 </div>
             </div>

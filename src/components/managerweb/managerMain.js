@@ -26,8 +26,8 @@ function ManagerContentMainContainer(props) {
     */
     return (
         <div className="container-fluid">
-            <h1 class="h3 mb-2 text-gray-800">客製化網站系統使用說明</h1>
-            <p class="mb-4"> 使用客製化網站系統可以快速建置人力需求網站，簡易迅速，詳見使用手冊</p>
+            <h1 className="h3 mb-2 text-gray-800">客製化網站系統使用說明</h1>
+            <p className="mb-4"> 使用客製化網站系統可以快速建置人力需求網站，簡易迅速，詳見使用手冊</p>
             <div>
                 <a target="_blank" href="./#">使用手冊</a>
             </div>

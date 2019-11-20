@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 
-function ManagerSlideBar() {
-
+function ManagerSlideBar(props) {
+   
     return (
         
           <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -9,7 +9,7 @@ function ManagerSlideBar() {
 
               <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div>
-                  <img class="img-fluid" src='/image/1111.png' alt='1111 Image' />
+                  <img className="img-fluid" src='/image/1111.png' alt='1111 Image' />
                 </div>
               </a>
 
@@ -18,7 +18,7 @@ function ManagerSlideBar() {
 
   
               <li className="nav-item active">
-                  <h6 class="m-0 font-weight-bold text-white">客製化網站</h6>
+                  <h6 className="m-0 font-weight-bold text-white">客製化網站</h6>
               </li>
 
      
@@ -26,7 +26,7 @@ function ManagerSlideBar() {
 
    
               <div className="sidebar-heading">
-              <h6 class="m-0 font-weight-bold text-white">網站設定</h6>
+              <h6 className="m-0 font-weight-bold text-white">網站設定</h6>
               </div>
 
 
@@ -38,7 +38,7 @@ function ManagerSlideBar() {
                 <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                   <div className="bg-white py-2 collapse-inner rounded">
                     <h6 className="collapse-header">通用設定</h6>
-                    <a className="collapse-item" href="buttons.html">網站通用設定</a>
+                    <a className="collapse-item" href="setting">網站通用設定</a>
                   </div>
                 </div>
               </li>
@@ -52,10 +52,10 @@ function ManagerSlideBar() {
                 <div id="collapseUtilities" className="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                   <div className="bg-white py-2 collapse-inner rounded">
                     <h6 className="collapse-header">客製化網站模板設定</h6>
-                    <a className="collapse-item" href="utilities-color.html">模板型式 =1=</a>
-                    <a className="collapse-item" href="utilities-border.html">模板型式 =2=</a>
-                    <a className="collapse-item" href="utilities-animation.html">模板型式 =3=</a>
-                    <a className="collapse-item" href="utilities-other.html">模板型式 =4=</a>
+                    <a className="collapse-item" href="template1">模板型式 =1=</a>
+                    <a className="collapse-item" href="template2">模板型式 =2=</a>
+                    <a className="collapse-item" href="template3">模板型式 =3=</a>
+                    <a className="collapse-item" href="template4">模板型式 =4=</a>
                   </div>
                 </div>
               </li>

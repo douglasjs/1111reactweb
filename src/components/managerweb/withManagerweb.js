@@ -2,12 +2,13 @@
 import TitleSet from '../sharecomponents/titleset';
 import useScript from '../sharecomponents/usescript';
 import ManagerSlideBar from './managerSlideBar';
-import ManagerContent from './managerContent';
+import ManagerContentMainToolbar from './managerContentMainToolbar';
+import ManagerContentFoot from './managerContentFoot';
 import ManagerScollToTop from './managerScrollToTop';
 import ManagerModal from './managerModal';
 
   
-function ManagerWeb(props) {
+const withManagerWeb = Componet => props => {
     const cid = props.match.params.cid;
     const companyName = '1111人力銀行-永豐餘生技' + cid;
     const companyMeta = {
@@ -31,7 +32,13 @@ function ManagerWeb(props) {
 
                 <TitleSet title={companyName} meta={companyMeta} style={styleSheet} />
                 <ManagerSlideBar />
-                <ManagerContent />
+                <div id="content-wrapper" className="d-flex flex-column">
+                    <div id="content">
+                        <ManagerContentMainToolbar />
+                        <Componet {...props}/>
+                    </div>
+                    <ManagerContentFoot />
+                </div>
                 <ManagerScollToTop />
                 <ManagerModal />
 
@@ -41,4 +48,4 @@ function ManagerWeb(props) {
 
 }
 
-export default ManagerWeb;
+export default withManagerWeb;
