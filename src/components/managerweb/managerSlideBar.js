@@ -1,17 +1,19 @@
 ﻿import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 function ManagerSlideBar(props) {
    
+    const cid = props.match.params.cid;
     return (
         
           <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-
-              <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+              <Link className="sidebar-brand d-flex align-items-center justify-content-center" to={`/managerweb/${cid}`}>
                 <div>
-                  <img className="img-fluid" src='/image/1111.png' alt='1111 Image' />
+                  <img className="img-fluid" src='/image/1111.png' alt='1111' />
                 </div>
-              </a>
+              </Link>
 
         
               <hr className="sidebar-divider my-0" />
@@ -38,7 +40,9 @@ function ManagerSlideBar(props) {
                 <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                   <div className="bg-white py-2 collapse-inner rounded">
                     <h6 className="collapse-header">通用設定</h6>
-                    <a className="collapse-item" href="setting">網站通用設定</a>
+                   {/* <a className="collapse-item" href="/#" onClick={()=>loginHandler(props,'setting')}>網站通用設定</a>*/}
+              
+                    <Link className="collapse-item" to={`/managerweb/${cid}/setting`}>網站通用設定</Link>
                   </div>
                 </div>
               </li>
@@ -52,10 +56,10 @@ function ManagerSlideBar(props) {
                 <div id="collapseUtilities" className="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                   <div className="bg-white py-2 collapse-inner rounded">
                     <h6 className="collapse-header">客製化網站模板設定</h6>
-                    <a className="collapse-item" href="template1">模板型式 =1=</a>
-                    <a className="collapse-item" href="template2">模板型式 =2=</a>
-                    <a className="collapse-item" href="template3">模板型式 =3=</a>
-                    <a className="collapse-item" href="template4">模板型式 =4=</a>
+                    <Link className="collapse-item" to={`/managerweb/${cid}/template1`}>模板型式 =1=</Link>
+                    <a className="collapse-item" href="/#">模板型式 =2=</a>
+                    <a className="collapse-item" href="/#">模板型式 =3=</a>
+                    <a className="collapse-item" href="/#">模板型式 =4=</a>
                   </div>
                 </div>
               </li>

@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 
 function CustomerFoot() {
+ 
 
     return (
         <footer className="lqd-main-footer-bk bg-cape-cod">
@@ -13,7 +14,8 @@ function CustomerFoot() {
 					</div>
 				</div>
 			</section>
-        </footer>   
+        </footer>
+
     )
 }
 

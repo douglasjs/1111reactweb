@@ -10,7 +10,7 @@ function ManagerLogin(props) {
 
     const loginHandler = () => {
         props.history.push({
-            pathname: '/web/managerweb/' + loginNumber
+            pathname: '/managerweb/' + loginNumber
         })
     }
 

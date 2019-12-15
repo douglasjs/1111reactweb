@@ -1,5 +1,4 @@
 import React from 'react';
-import Msg from './msg';
 
 
 
@@ -27,7 +26,6 @@ class managerGeneralSetting extends React.Component{
     }
 
     render(){
-
         return(
             <div className="container-fluid">
                 <div className="card shadow">

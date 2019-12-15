@@ -1,11 +1,11 @@
 ﻿import React from 'react';
 import TitleSet from '../sharecomponents/titleset';
-import useScript from '../sharecomponents/usescript';
 import ManagerSlideBar from './managerSlideBar';
 import ManagerContentMainToolbar from './managerContentMainToolbar';
 import ManagerContentFoot from './managerContentFoot';
 import ManagerScollToTop from './managerScrollToTop';
 import ManagerModal from './managerModal';
+import ManagerFoot from './managerFoot';
 
   
 const withManagerWeb = Componet => props => {
@@ -20,18 +20,16 @@ const withManagerWeb = Componet => props => {
         'https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i',
         '/assetsBK/css/sb-admin-2.min.css'
     ]
-    
-    useScript('/assetsBK/vendor/jquery/jquery.min.js');
-    useScript('/assetsBK/vendor/bootstrap/js/bootstrap.bundle.min.js');
-    useScript('/assetsBK/js/sb-admin-2.min.js');
-    useScript('/assetsBK/vendor/chart.js/Chart.min.js');
+
+    const script = ['/assetsBK/vendor/jquery/jquery.min.js'];
+
     
     return (
         <div id="page-top">
             <div id="wrapper">
 
-                <TitleSet title={companyName} meta={companyMeta} style={styleSheet} />
-                <ManagerSlideBar />
+                <TitleSet title={companyName} meta={companyMeta} style={styleSheet} script={script}  />
+                <ManagerSlideBar {...props}/>
                 <div id="content-wrapper" className="d-flex flex-column">
                     <div id="content">
                         <ManagerContentMainToolbar />
@@ -43,6 +41,7 @@ const withManagerWeb = Componet => props => {
                 <ManagerModal />
 
             </div>
+            <ManagerFoot />
         </div>
     )
 

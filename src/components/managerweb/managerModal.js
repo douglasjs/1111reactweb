@@ -1,6 +1,8 @@
 ﻿import React from 'react';
-
 function ManagerModal() {
+
+
+
 
     return (
         <div className="modal fade" id="logoutModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

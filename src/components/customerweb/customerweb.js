@@ -1,9 +1,10 @@
 ﻿import React from 'react';
 import TitleSet from '../sharecomponents/titleset';
-import useScript from '../sharecomponents/usescript';
 import CustomerHeader from './customerheader';
 import CustomerMain from './customermain';
 import CustomerFoot from './customerfoot';
+import useScript from '../sharecomponents/usescript';
+
 
 function CustomerWeb(props) {
     const cid = props.match ? props.match.params.cid : props.cid ? props.cid : '' ;
@@ -19,14 +20,19 @@ function CustomerWeb(props) {
         '/assets/css/theme.min.css',
         '/assets/css/style_blue.css'
     ]
-    const script = ['/assets/vendors/modernizr.min.js'];
+    const script = ['/assets/vendors/modernizr.min.js','/assets/vendors/jquery.min.js'];
 
-    useScript('/assets/vendors/jquery.min.js');
-    useScript('/assets/js/theme-vendors.js');
-    useScript('/assets/js/theme.min.js');
-    useScript('/assets/js/liquidAjaxContactForm.min.js');
-    useScript('/assets/js/liquidAjaxMailchimp.min.js');
-    useScript('/assets/js/goTopButton.js');
+    const URL = [
+        '/assets/vendors/jquery.min.js',
+        '/assets/js/theme-vendors.js',
+        '/assets/js/theme.min.js',
+        '/assets/js/liquidAjaxContactForm.min.js',
+        '/assets/js/liquidAjaxMailchimp.min.js',
+        '/assets/js/goTopButton.js'
+       ]
+
+    useScript(URL);
+
 
     return (
          

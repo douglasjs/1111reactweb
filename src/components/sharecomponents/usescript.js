@@ -2,16 +2,18 @@
 
 const useScript = url => {
     useEffect(() => {
-        const script = document.createElement('script');
+        url.forEach(element => {
+            
+            let script = document.createElement('script');
+            script.src = element;
+            script.async = true;
+   
+            document.body.appendChild(script);
 
-        script.src = url;
-        script.async = true;
-
-        document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        }
+            return () => {
+                document.body.removeChild(script);
+            }
+        });
     }, [url]);
 };
 
