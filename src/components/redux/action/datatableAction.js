@@ -149,13 +149,13 @@ const deleteAllError = (error) =>{
 
 }
 
-const getDataList = (rowSet, page, serach, sortString ) =>{
+const getDataList = (ono,rowSet, page, serach, sortString ) =>{
 
     return (dispatch) =>{
         
       
         dispatch(getAllStart());
-        axios({ method: 'get', url: 'http://localhost:8888/api/users', params:{pageSize: rowSet, pageNo: page, query: serach, sort : sortString} })
+        axios({ method: 'get', url: 'http://localhost:8888/api/users/' + ono, params:{pageSize: rowSet, pageNo: page, query: serach, sort : sortString} })
             .then(response => {
                 //setTimeout(() => {
                     dispatch(getAllSuccess(response.data));

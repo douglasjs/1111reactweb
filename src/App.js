@@ -2,6 +2,16 @@ import React from 'react';
 import CustomerWeb from './components/customerweb/customerweb';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
+//Redux 
+import { bindActionCreators } from 'redux';
+import { connect, Provider } from 'react-redux';
+
+//redux store
+import store from './components/redux/store';
+
+//redux action
+import * as searchAction from './components/redux/action';
+
 import withManagerWeb from './components/managerweb/withManagerweb';
 import ManagerMain from './components/managerweb/managerMain';
 import ManagerGeneralSetting from './components/managerweb/managerGeneralSetting';
@@ -15,20 +25,34 @@ import ManagerLogin from './components/managerweb/managerLogin';
 import './App.css';
 
 
-const WithManagerMain = withManagerWeb(ManagerMain);
-const WithGerneralSetting = withManagerWeb(ManagerGeneralSetting);
-const WithManagerTemplate1 = withManagerWeb(ManagerTemplate1);
-const WithManagerTemplate2 = withManagerWeb(ManagerTemplate2);
-const WithManagerTemplate3 = withManagerWeb(ManagerTemplate3);
-const WithManagerTemplate4 = withManagerWeb(ManagerTemplate4);
+//redux State
+const mapStateToProps = (state) => {
+    return {
+        ...state
+    }
+}
+
+//redux Dispatch
+const mapDispatchToProps = (dispatch) => {
+    return {
+        ...bindActionCreators(searchAction, dispatch)
+    }
+}
+
+const WithManagerMain = connect(mapStateToProps, mapDispatchToProps)(withManagerWeb(ManagerMain));
+const WithGerneralSetting = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerGeneralSetting));
+const WithManagerTemplate1 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate1));
+const WithManagerTemplate2 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate2));
+const WithManagerTemplate3 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate3));
+const WithManagerTemplate4 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate4));
 
 
 function App() {
 
   return (
       <div className="App">
-         
-          <BrowserRouter>
+          <Provider store={store}>
+            <BrowserRouter>
               <Switch>
               <Route exact path="/:cid" component={CustomerWeb} />
                   <Route exact path="/managerweb/" component={ManagerLogin} />
@@ -39,7 +63,8 @@ function App() {
                   <Route exact path="/managerweb/:cid/template3" component={WithManagerTemplate3} />
                   <Route exact path="/managerweb/:cid/template4" component={WithManagerTemplate4} />
               </Switch>
-          </BrowserRouter>
+             </BrowserRouter>
+          </Provider>
       </div>
   );
 }

@@ -1,4 +1,4 @@
-﻿import React from 'react';
+﻿import React, { useEffect } from 'react';
 import TitleSet from '../sharecomponents/titleset';
 import ManagerSlideBar from './managerSlideBar';
 import ManagerContentMainToolbar from './managerContentMainToolbar';
@@ -6,7 +6,6 @@ import ManagerContentFoot from './managerContentFoot';
 import ManagerScollToTop from './managerScrollToTop';
 import ManagerModal from './managerModal';
 import ManagerFoot from './managerFoot';
-
   
 const withManagerWeb = Componet => props => {
     const cid = props.match.params.cid;
@@ -23,6 +22,11 @@ const withManagerWeb = Componet => props => {
 
     const script = ['/assetsBK/vendor/jquery/jquery.min.js'];
 
+    useEffect(() => {
+        //props.getDataList(cid);
+    });
+
+    console.log(props);
     
     return (
         <div id="page-top">
