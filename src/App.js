@@ -3,8 +3,8 @@ import CustomerWeb from './components/customerweb/customerweb';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
 //Redux 
-import { bindActionCreators } from 'redux';
-import { connect, Provider } from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {connect, Provider} from 'react-redux';
 
 //redux store
 import store from './components/redux/store';
@@ -24,18 +24,17 @@ import ManagerLogin from './components/managerweb/managerLogin';
 
 import './App.css';
 
-
 //redux State
 const mapStateToProps = (state) => {
     return {
-        ...state
+      ...state
     }
-}
+  }
 
 //redux Dispatch
 const mapDispatchToProps = (dispatch) => {
-    return {
-        ...bindActionCreators(searchAction, dispatch)
+    return{
+          ...bindActionCreators(searchAction,dispatch)
     }
 }
 
@@ -48,10 +47,11 @@ const WithManagerTemplate4 = withManagerWeb(connect(mapStateToProps, mapDispatch
 
 
 function App() {
-
+  
   return (
       <div className="App">
-          <Provider store={store}>
+         
+         <Provider store={store}>
             <BrowserRouter>
               <Switch>
               <Route exact path="/:cid" component={CustomerWeb} />
@@ -64,7 +64,8 @@ function App() {
                   <Route exact path="/managerweb/:cid/template4" component={WithManagerTemplate4} />
               </Switch>
              </BrowserRouter>
-          </Provider>
+        </Provider>
+
       </div>
   );
 }

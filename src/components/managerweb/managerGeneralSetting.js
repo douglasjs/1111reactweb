@@ -11,7 +11,8 @@ class managerGeneralSetting extends React.Component{
             companyName: '永豐餘生技',
             companyEN: '',
             webKeyWords: '1111,永豐餘生技,人力,徵才',
-            webDescription: '永豐餘生技(股)公司是永豐餘投資控股股份有限公司旗下關係企業，創立於民國 89 年，主要從事食品生技業、有機農業、製造業、餐飲業等。&nbsp;1998年永豐餘生物科技在臺灣宜蘭成立了南澳豐園農場，投身有機的事業，致力於栽培各種有機的食材，積極推廣尊重自然的有機生活哲學，試圖扮演有機生活管家的角色。'
+            webDescription: '永豐餘生技(股)公司是永豐餘投資控股股份有限公司旗下關係企業，創立於民國 89 年，主要從事食品生技業、有機農業、製造業、餐飲業等。&nbsp;1998年永豐餘生物科技在臺灣宜蘭成立了南澳豐園農場，投身有機的事業，致力於栽培各種有機的食材，積極推廣尊重自然的有機生活哲學，試圖扮演有機生活管家的角色。',
+            email: "test@gmail.com"
         };
     }
     
@@ -65,6 +66,23 @@ class managerGeneralSetting extends React.Component{
                                   <label>網站敘述</label>
                                   <textarea className={`form-control`} id="webDescription"  placeholder="網站敘述" 
                                     value={this.state.webDescription.value} onChange={this.handleChange('webDescription')} />
+                          </div>
+                          <div className="form-row">
+                                  <label>聯絡我們 Email</label>
+                                  <textarea className={`form-control`} id="Email"  placeholder="Email" 
+                                    value={this.state.email.value} onChange={this.handleChange('email')} />
+                          </div>
+                          <div className="form-row">
+                                <label>公司LOGO上傳</label>
+                          </div>
+                          <div className="form-row">
+        
+                                  <div class="card">
+                                    <img src='/image/logo.png' class="card-img-top" alt="Logo" />
+                                    <div class="card-body">
+                                        <a href="/#" className="btn btn-primary">上傳 Logo</a>
+                                    </div>
+                                </div>
                           </div>
                           <hr />
                           <button className="btn btn-facebook btn-block" onClick={this.handleSubmit}><i className="fas fa-save"></i> 儲存設定</button>

@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Session1(){
 
     return(
@@ -11,36 +12,37 @@ function Session1(){
             <div className="card-body">
                 <h3>設定公司標題</h3>
                       <form id='dataForm'>
+                     
                         <div className="form-row">
-                            <div className="col-md-6 mb-3">
-                                <label>公司標題</label>
-                                <input type="text" className={`form-control`} id="companyName" placeholder="公司名稱"
-                                    value={this.state.companyName.value} onChange={this.handleChange('companyName')} required />
-                                <div className="invalid-feedback">
-                                    公司標題不可以空白
-                                  </div>
-                            </div>
-                            <div className="col-md-6 mb-3">
-                                <label>公司口號</label>
-                                <input type="text" className={`form-control`} id="companyEN" placeholder="公司英文名稱"
-                                    value={this.state.companyEN.value} onChange={this.handleChange('companyEN')} required />
-                                <div className="invalid-feedback">
-                                    公司口號不可以空白
-                                  </div>
-                            </div>
+                            <label>主要標題</label>
+                            <input type="text" className={`form-control`} id="companyName"  placeholder="主要標題"   
+                                    value='' onChange='' required />
                         </div>
                         <div className="form-row">
-                            <label>網站關鍵字</label>
-                            <textarea className={`form-control`} id="webKeyWords" placeholder="網站關鍵字"
-                                value={this.state.webKeyWords.value} onChange={this.handleChange('webKeyWords')} />
+                            <label>標題敘述</label>
+                            <textarea className={`form-control`} id="titleDescription" placeholder="標題敘述"
+                                value='' onChange=''/>
                         </div>
                         <div className="form-row">
-                            <label>網站敘述</label>
-                            <textarea className={`form-control`} id="webDescription" placeholder="網站敘述"
-                                value={this.state.webDescription.value} onChange={this.handleChange('webDescription')} />
+                            <label>副標題</label>
+                            <input type="text" className={`form-control`} id="companyName"  placeholder="副標題"   
+                                    value='' onChange='' required />
+
                         </div>
+                        <div className="form-row">
+                                <label>背景圖片上傳</label>
+                          </div>
+                          <div className="form-row">
+        
+                                  <div class="card">
+                                    <img src='/image/company-1.jpg' class="card-img-top" alt="Logo" />
+                                    <div class="card-body">
+                                        <a href="/#" className="btn btn-primary">上傳圖片</a>
+                                    </div>
+                                </div>
+                          </div>
                         <hr />
-                        <button className="btn btn-facebook btn-block" onClick={this.handleSubmit}><i className="fas fa-save"></i> 儲存設定</button>
+                        <button className="btn btn-facebook btn-block" onClick=''><i className="fas fa-save"></i> 儲存設定</button>
                     </form>
             </div>
             </div>
