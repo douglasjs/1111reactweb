@@ -1,4 +1,5 @@
 import React from 'react';
+import Msg from './msg';
 
 
 
@@ -8,14 +9,23 @@ class managerGeneralSetting extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            companyName: '永豐餘生技',
-            companyEN: '',
-            webKeyWords: '1111,永豐餘生技,人力,徵才',
-            webDescription: '永豐餘生技(股)公司是永豐餘投資控股股份有限公司旗下關係企業，創立於民國 89 年，主要從事食品生技業、有機農業、製造業、餐飲業等。&nbsp;1998年永豐餘生物科技在臺灣宜蘭成立了南澳豐園農場，投身有機的事業，致力於栽培各種有機的食材，積極推廣尊重自然的有機生活哲學，試圖扮演有機生活管家的角色。',
-            email: "test@gmail.com"
+            companyName: '',
+            companyEName: '',
+            keyword: '',
+            description: '',
+            email: '',
+            img: ''
         };
     }
     
+
+    componentDidMount(){
+        const cid = this.props.match.params.cid;
+        this.props.getDataList(cid);
+   
+    }
+
+
     handleChange = name => event => {
         let newValue = event.target.value;
         this.setState({ ...this.state, [name]: newValue});
@@ -26,7 +36,28 @@ class managerGeneralSetting extends React.Component{
         alert('儲存設定完畢');
     }
 
+
     render(){
+        const { data, err, isLoading} = this.props.datatableReducer;
+        let companyName = this.state.companyName ;
+        let companyEName = this.state.companyEName ;
+        let description = this.state.description ;
+        let keyword = this.state.keyword ;
+        let img = this.state.img ;
+        let email = this.state.email;
+
+        if(data){
+            data.forEach(element => {
+                companyName = companyName !=="" ? companyName : element.companyName;
+                companyEName = companyEName !=="" ? companyEName : element.companyEName;
+                description = description !=="" ? description : element.description;
+                keyword = keyword !=="" ? keyword : element.keyword;
+                img = img !=="" ? img : element.img;
+                email = email !=="" ? email : element.email;
+            })
+        }
+
+
         return(
             <div className="container-fluid">
                 <div className="card shadow">
@@ -34,16 +65,17 @@ class managerGeneralSetting extends React.Component{
                         <h6 className="m-0 font-weight-bold text-primary">網站通用設定</h6>
                     </div>
                     <div className="card-body">
-                        {/* 
+                        
                         <Msg type ='LOADING'  value = {isLoading} text='Processing ' /> 
                         <Msg type ='ERROR' value = {err} text= 'Opps! Error : ' />
-                        */}
+                   
+
                         <form id='dataForm'>
                           <div className="form-row">
                               <div className="col-md-6 mb-3">
                                   <label>公司名稱</label>
                                   <input type="text" className={`form-control`} id="companyName"  placeholder="公司名稱"   
-                                    value={this.state.companyName.value} onChange={this.handleChange('companyName')} required />
+                                    value={companyName} onChange={this.handleChange('companyName')} required />
                                   <div className="invalid-feedback">
                                          公司名稱不可以空白
                                   </div>
@@ -51,7 +83,7 @@ class managerGeneralSetting extends React.Component{
                               <div className="col-md-6 mb-3">
                                   <label>公司英文名稱</label>
                                   <input type="text" className={`form-control`} id="companyEN"  placeholder="公司英文名稱"
-                                     value={this.state.companyEN.value} onChange={this.handleChange('companyEN')} required />
+                                     value={companyEName} onChange={this.handleChange('companyEName')} required />
                                   <div className="invalid-feedback">
                                         公司英文名稱不可以空白
                                   </div>
@@ -60,12 +92,12 @@ class managerGeneralSetting extends React.Component{
                           <div className="form-row">
                                   <label>網站關鍵字</label>
                                   <textarea  className={`form-control`} id="webKeyWords"  placeholder="網站關鍵字"  
-                                     value={this.state.webKeyWords.value} onChange={this.handleChange('webKeyWords')} />
+                                     value={keyword} onChange={this.handleChange('keyword')} />
                           </div>
                           <div className="form-row">
                                   <label>網站敘述</label>
                                   <textarea className={`form-control`} id="webDescription"  placeholder="網站敘述" 
-                                    value={this.state.webDescription.value} onChange={this.handleChange('webDescription')} />
+                                    value={description} onChange={this.handleChange('description')} />
                           </div>
                           <div className="form-row">
                                   <label>聯絡我們 Email</label>
@@ -77,9 +109,9 @@ class managerGeneralSetting extends React.Component{
                           </div>
                           <div className="form-row">
         
-                                  <div class="card">
-                                    <img src='/image/logo.png' class="card-img-top" alt="Logo" />
-                                    <div class="card-body">
+                                  <div className="card">
+                                    <img src='/image/logo.png' className="card-img-top" alt="Logo" />
+                                    <div className="card-body">
                                         <a href="/#" className="btn btn-primary">上傳 Logo</a>
                                     </div>
                                 </div>

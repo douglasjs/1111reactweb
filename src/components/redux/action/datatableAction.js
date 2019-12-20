@@ -155,7 +155,7 @@ const getDataList = (ono,rowSet, page, serach, sortString ) =>{
         
       
         dispatch(getAllStart());
-        axios({ method: 'get', url: 'http://localhost:8888/api/users/' + ono, params:{pageSize: rowSet, pageNo: page, query: serach, sort : sortString} })
+        axios({ method: 'get', url: 'https://localhost:44312/api/main/' + ono})
             .then(response => {
                 //setTimeout(() => {
                     dispatch(getAllSuccess(response.data));
