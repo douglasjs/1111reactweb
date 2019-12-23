@@ -3,19 +3,27 @@ import Msg from './msg';
 
 
 
+
 class managerGeneralSetting extends React.Component{
 
 
     constructor(props){
         super(props);
+        this.state = {};
+  
         this.state = {
-            companyName: '',
-            companyEName: '',
-            keyword: '',
-            description: '',
-            email: '',
-            img: ''
+            companyName: '$',
+            companyEName: '$',
+            keyword: '$',
+            description: '$',
+            email: '$',
+            logoImg: '$',
+            title: '$',
+            themeNum: '$',
+            styleType: '$',
+            uploadImg: ''
         };
+ 
     }
     
 
@@ -25,55 +33,176 @@ class managerGeneralSetting extends React.Component{
    
     }
 
-
     handleChange = name => event => {
         let newValue = event.target.value;
         this.setState({ ...this.state, [name]: newValue});
+
     };
+
+    handleFileUpload = (event) =>{
+        const infoArea = document.getElementById( 'upload-label' );
+        const input = event.target;
+
+        if (input.files && input.files[0]) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onloadend = () => {
+                
+                const img = new Image();
+                const that = this;
+                img.src=reader.result;
+
+                img.onload = function() {
+                   if(img.width > 104 || img.height > 32){
+                       alert('上傳圖片尺寸不合');
+                       return false;
+                   }else{
+
+                        that.setState( {...this.state,
+                            uploadImg: {
+                                file: URL.createObjectURL(file),
+                                value : reader.result
+                            }
+                        });
+                        infoArea.textContent = '上傳檔案名稱: ' + file.name;
+                        const fileFullName = "setting_logo_"+ file.name;
+                        that.setState({ ...this.state, logoImg: fileFullName });
+
+                   }
+                };
+
+
+           
+            };
+
+        }
+
+       
+    }
 
     handleSubmit = (event) =>{
         event.preventDefault();
-        alert('儲存設定完畢');
+
+        const cid = this.props.match.params.cid;
+
+        if(event.target.companyName.value){
+            if(event.target.companyName.value ===''){
+                return false;
+            }
+        }
+        if(event.target.companyEName.value){
+            if(event.target.companyEName.value ===''){
+                return false;
+            }
+        }
+        if(event.target.themeNum.value){
+            if(event.target.themeNum.value ===''){
+                return false;
+            }
+        }
+        if(event.target.styleType.value){
+            if(event.target.styleType.value ===''){
+                return false;
+            }
+        }
+
+        if(event.target.email.value){
+            if(event.target.email.value ===''){
+                return false;
+            }
+        }
+
+        this.props.updateData({
+            ono: cid,
+            companyName: event.target.companyName.value,
+            companyEName: event.target.companyEName.value,
+            themeNum:event.target.themeNum.value,
+            styleType:event.target.styleType.value,
+            email: event.target.email.value,
+            description : event.target.description.value,
+            keyword : event.target.keyword.value,
+            title: event.target.title.value,
+            logoImg: event.target.logoImg.value,
+            uploadImg: this.state.uploadImg.value
+
+        });
+
+       
+
     }
+
 
 
     render(){
         const { data, err, isLoading} = this.props.datatableReducer;
+        const cid = this.props.match.params.cid;
+     
+
+
         let companyName = this.state.companyName ;
         let companyEName = this.state.companyEName ;
         let description = this.state.description ;
         let keyword = this.state.keyword ;
-        let img = this.state.img ;
         let email = this.state.email;
+        let title = this.state.title;
+        let logoImg = this.state.logoImg;
+        let themeNum = this.state.themeNum;
+        let styleType = this.state.styleType;
+        
 
         if(data){
+      
             data.forEach(element => {
-                companyName = companyName !=="" ? companyName : element.companyName;
-                companyEName = companyEName !=="" ? companyEName : element.companyEName;
-                description = description !=="" ? description : element.description;
-                keyword = keyword !=="" ? keyword : element.keyword;
-                img = img !=="" ? img : element.img;
-                email = email !=="" ? email : element.email;
+                companyName = companyName !=="$" ? companyName : element.companyName;
+                companyEName = companyEName !=="$" ? companyEName : element.companyEName;
+                description = description !=="$" ? description : element.description;
+                keyword = keyword !=="$" ? keyword : element.keyword;
+                title = title !=="$" ? title : element.title;
+                email = email !=="$" ? email : element.email;
+                logoImg = logoImg !=="$" ? logoImg : element.logoImg;
+                themeNum = themeNum !=="$" ? themeNum : element.themeNum;
+                styleType = styleType !== "$" ? styleType : element.styleType;
             })
         }
-
+ 
+        //const UploadImg = this.state.uploadImg !=='' ?  this.state.uploadImg.file : `/upload/${cid}/${themeNum}/${logoImg}`;
+        const UploadImg = this.state.uploadImg !=='' ?  this.state.uploadImg.file : `https://localhost:44312/api/image/${cid}?fileName=${logoImg}`;
 
         return(
             <div className="container-fluid">
                 <div className="card shadow">
                     <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h6 className="m-0 font-weight-bold text-primary">網站通用設定</h6>
+                        <h6 className="m-0 font-weight-bold text-primary">網站通用設定 (<span className='text-danger'>*</span> 為必填欄位)</h6>
                     </div>
                     <div className="card-body">
-                        
+                   
                         <Msg type ='LOADING'  value = {isLoading} text='Processing ' /> 
                         <Msg type ='ERROR' value = {err} text= 'Opps! Error : ' />
-                   
+                  
 
-                        <form id='dataForm'>
+                        <form id='dataForm' className={isLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
+
                           <div className="form-row">
                               <div className="col-md-6 mb-3">
-                                  <label>公司名稱</label>
+                                  <label><span className='text-danger'>*</span> 選用版型</label>
+                                  <select  className="form-control" id="themeNum" value={themeNum} onChange={this.handleChange('themeNum')} required>
+                                            <option value=''>選擇版型...</option>
+                                            <option value='tp01'>第一版型</option>
+                                  </select>
+                              </div>
+                              <div className="col-md-6 mb-3">
+                                  <label><span className='text-danger'>*</span> 選用版型色系</label>
+                                  <select  className="form-control" id="styleType" value={styleType} onChange={this.handleChange('styleType')} required>
+                                            <option value=''>選擇版型色系...</option>
+                                            <option value='red.css'>紅色系</option>
+                                  </select>
+                              </div>
+                          </div>
+
+                          <div className="form-row">
+                              <div className="col-md-6 mb-3">
+                                  <label><span className='text-danger'>*</span> 公司名稱</label>
                                   <input type="text" className={`form-control`} id="companyName"  placeholder="公司名稱"   
                                     value={companyName} onChange={this.handleChange('companyName')} required />
                                   <div className="invalid-feedback">
@@ -81,8 +210,8 @@ class managerGeneralSetting extends React.Component{
                                   </div>
                               </div>
                               <div className="col-md-6 mb-3">
-                                  <label>公司英文名稱</label>
-                                  <input type="text" className={`form-control`} id="companyEN"  placeholder="公司英文名稱"
+                                  <label><span className='text-danger'>*</span> 公司英文名稱</label>
+                                  <input type="text" className={`form-control`} id="companyEName"  placeholder="公司英文名稱"
                                      value={companyEName} onChange={this.handleChange('companyEName')} required />
                                   <div className="invalid-feedback">
                                         公司英文名稱不可以空白
@@ -90,34 +219,47 @@ class managerGeneralSetting extends React.Component{
                               </div>
                           </div>
                           <div className="form-row">
+                                  <label>網站標題</label>
+                                  <input  className={`form-control`} id="title"  placeholder="網站標題"
+                                     value={title} onChange={this.handleChange('title')} />
+                          </div>
+                          <div className="form-row">
                                   <label>網站關鍵字</label>
-                                  <textarea  className={`form-control`} id="webKeyWords"  placeholder="網站關鍵字"  
+                                  <textarea  className={`form-control`} id="keyword"  placeholder="網站關鍵字"  
                                      value={keyword} onChange={this.handleChange('keyword')} />
                           </div>
                           <div className="form-row">
+                                  <label><span className='text-danger'>*</span> 聯絡我們 Email</label>
+                                  <input className={`form-control`} id="email"  placeholder="email" 
+                                    value={email} onChange={this.handleChange('email')} required/>
+                          </div>
+                          <div className="form-row">
                                   <label>網站敘述</label>
-                                  <textarea className={`form-control`} id="webDescription"  placeholder="網站敘述" 
+                                  <textarea className={`form-control`} id="description"  placeholder="網站敘述" rows="5"
                                     value={description} onChange={this.handleChange('description')} />
                           </div>
+                         
+
                           <div className="form-row">
-                                  <label>聯絡我們 Email</label>
-                                  <textarea className={`form-control`} id="Email"  placeholder="Email" 
-                                    value={this.state.email.value} onChange={this.handleChange('email')} />
+                                <label><span className='text-danger'>*</span> 公司LOGO上傳</label><em className='text-primary'>(圖檔尺寸大小為 104*32，接受格式為png、jpg)</em> 
                           </div>
                           <div className="form-row">
-                                <label>公司LOGO上傳</label>
-                          </div>
-                          <div className="form-row">
-        
-                                  <div className="card">
-                                    <img src='/image/logo.png' className="card-img-top" alt="Logo" />
-                                    <div className="card-body">
-                                        <a href="/#" className="btn btn-primary">上傳 Logo</a>
+                                  <div className="card image-area mt-4"><img id="imageResult" src={UploadImg} alt="For Upload" className="img-fluid rounded shadow-sm mx-auto d-block" /></div>
+                                 
+                                  <div className="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                                    <input type="hidden" id="logoImg" value={logoImg} />
+                                   
+                                    <input id="upload" type="file"  accept="image/*" onChange={this.handleFileUpload} className="form-control border-0 uploadFile" />
+                                    <label id="upload-label" htmlFor="upload" className="font-weight-light text-muted upload-label">選擇檔案</label>
+                                    <div className="input-group-append">
+                                        <label htmlFor="upload" className="btn btn-light m-0 rounded-pill px-4"> <i className="fa fa-cloud-upload mr-2 text-muted"></i>
+                                        <small className="text-uppercase font-weight-bold text-muted">選擇檔案</small></label>
                                     </div>
                                 </div>
+                             
                           </div>
                           <hr />
-                          <button className="btn btn-facebook btn-block" onClick={this.handleSubmit}><i className="fas fa-save"></i> 儲存設定</button>
+                          <button type='submit' className="btn btn-facebook btn-block" ><i className="fas fa-save"></i> 儲存設定</button>
                         </form>
                     </div>
                 </div>

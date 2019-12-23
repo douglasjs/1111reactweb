@@ -34,9 +34,9 @@ const dataList = (state= initState, action) =>{
                     return GET_ACTION;
          case 'EDIT_ALL_START' :
                     return GET_ACTION;
-         case 'EDIT__ALL_SUCCESS' :
+         case 'EDIT_ALL_SUCCESS' :
                     return GET_ACTION;
-         case 'EDIT__ALL_ERROR' :
+         case 'EDIT_ALL_ERROR' :
                     return GET_ACTION;
          case 'DELETE_ALL_START' :
                     return GET_ACTION;

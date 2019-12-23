@@ -20,3 +20,14 @@
 .App-link {
   color: #09d3ac;
 }
+
+.uploadFile {
+  opacity: 0;
+}
+
+.upload-label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}

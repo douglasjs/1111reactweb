@@ -91,7 +91,7 @@ const editAllSuccess = (response) =>{
     return {
 
         type: "EDIT_ALL_SUCCESS",
-        data: response,
+        data: [response],
         err: null,
         isLoading: false,
     }
@@ -193,7 +193,7 @@ const createData = (data, handleBack) =>{
 }
 
 
-const updateData = (data, handleBack) =>{
+const updateData = (data) =>{
 
    
     return (dispatch) =>{
@@ -202,12 +202,14 @@ const updateData = (data, handleBack) =>{
             dispatch(editAllStart());
             axios({
                 method: 'put',
-                url: `http://localhost:8888/api/users/${data.id}`,
+                url: `https://localhost:44312/api/main/${data.ono}`,
                 data
             })
             .then((response) => {
                 dispatch(editAllSuccess(response.data));
-                handleBack();})
+                alert("更新資料完成");
+             
+            })
             .catch(err => {
                 dispatch(editAllError(err));
             });
