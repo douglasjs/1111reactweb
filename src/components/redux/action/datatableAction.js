@@ -1,4 +1,5 @@
 import axios from 'axios';
+import envConfig from '../../../config/env';
 
 const getAllStart = () =>{
 
@@ -149,13 +150,13 @@ const deleteAllError = (error) =>{
 
 }
 
-const getDataList = (ono,rowSet, page, serach, sortString ) =>{
+const getDataList = (ono) =>{
 
     return (dispatch) =>{
         
       
         dispatch(getAllStart());
-        axios({ method: 'get', url: 'https://localhost:44312/api/main/' + ono})
+        axios({ method: 'get', url: `${envConfig.WebAPI}/main/` + ono})
             .then(response => {
                 //setTimeout(() => {
                     dispatch(getAllSuccess(response.data));
@@ -170,7 +171,7 @@ const getDataList = (ono,rowSet, page, serach, sortString ) =>{
 
 }
 
-const createData = (data, handleBack) =>{
+const createData = (data) =>{
 
    
     return (dispatch) =>{
@@ -179,12 +180,14 @@ const createData = (data, handleBack) =>{
             dispatch(createAllStart());
             axios({
                 method: 'post',
-                url: 'http://localhost:8888/api/users',
+                url: `${envConfig.WebAPI}/main/`,
                 data
             })
             .then((response)=>{
                 dispatch(createAllSuccess(response.data));
-                handleBack();})
+                alert("新增資料完成");
+                dispatch(getDataList(data.ono));
+            })
             .catch(err => {
                 dispatch(createAllError(err));
             });
@@ -202,13 +205,13 @@ const updateData = (data) =>{
             dispatch(editAllStart());
             axios({
                 method: 'put',
-                url: `https://localhost:44312/api/main/${data.ono}`,
+                url: `${envConfig.WebAPI}/main/${data.ono}`,
                 data
             })
             .then((response) => {
                 dispatch(editAllSuccess(response.data));
                 alert("更新資料完成");
-             
+                dispatch(getDataList(data.ono));
             })
             .catch(err => {
                 dispatch(editAllError(err));

@@ -1,6 +1,6 @@
 import React from 'react';
 import Msg from './msg';
-
+import envConfig from '../../config/env';
 
 
 
@@ -12,15 +12,15 @@ class managerGeneralSetting extends React.Component{
         this.state = {};
   
         this.state = {
-            companyName: '$',
-            companyEName: '$',
-            keyword: '$',
-            description: '$',
-            email: '$',
-            logoImg: '$',
-            title: '$',
-            themeNum: '$',
-            styleType: '$',
+            companyName: ' ',
+            companyEName: ' ',
+            keyword: ' ',
+            description: ' ',
+            email: ' ',
+            logoImg: ' ',
+            title: ' ',
+            themeNum: 'tp01',
+            styleType: 'red.css',
             uploadImg: ''
         };
  
@@ -30,6 +30,7 @@ class managerGeneralSetting extends React.Component{
     componentDidMount(){
         const cid = this.props.match.params.cid;
         this.props.getDataList(cid);
+        this.props.getkind01(cid);
    
     }
 
@@ -113,20 +114,53 @@ class managerGeneralSetting extends React.Component{
             }
         }
 
-        this.props.updateData({
-            ono: cid,
-            companyName: event.target.companyName.value,
-            companyEName: event.target.companyEName.value,
-            themeNum:event.target.themeNum.value,
-            styleType:event.target.styleType.value,
-            email: event.target.email.value,
-            description : event.target.description.value,
-            keyword : event.target.keyword.value,
-            title: event.target.title.value,
-            logoImg: event.target.logoImg.value,
-            uploadImg: this.state.uploadImg.value
+        if(event.target.logoImg.value){
+            if(event.target.logoImg.value ===''){
+                return false;
+            }
+        }
 
-        });
+
+        if(event.target.action.value === 'create'){
+
+            this.props.createData({
+                ono: cid,
+                companyName: event.target.companyName.value,
+                companyEName: event.target.companyEName.value,
+                themeNum:event.target.themeNum.value,
+                styleType:event.target.styleType.value,
+                email: event.target.email.value,
+                description : event.target.description.value,
+                keyword : event.target.keyword.value,
+                title: event.target.title.value,
+                logoImg: event.target.logoImg.value,
+                uploadImg: this.state.uploadImg.value
+    
+            });
+
+        }
+
+        
+        if(event.target.action.value === 'modify'){
+   
+            this.props.updateData({
+                ono: cid,
+                companyName: event.target.companyName.value,
+                companyEName: event.target.companyEName.value,
+                themeNum:event.target.themeNum.value,
+                styleType:event.target.styleType.value,
+                email: event.target.email.value,
+                description : event.target.description.value,
+                keyword : event.target.keyword.value,
+                title: event.target.title.value,
+                logoImg: event.target.logoImg.value,
+                uploadImg: this.state.uploadImg.value
+    
+            });
+ 
+        }
+
+
 
        
 
@@ -136,38 +170,46 @@ class managerGeneralSetting extends React.Component{
 
     render(){
         const { data, err, isLoading} = this.props.datatableReducer;
+        const { kind01_data} = this.props.kind01Reducer;
         const cid = this.props.match.params.cid;
      
 
-
-        let companyName = this.state.companyName ;
-        let companyEName = this.state.companyEName ;
-        let description = this.state.description ;
+        let companyName = this.state.companyName === " " && kind01_data.Organ ? kind01_data.Organ : this.state.companyName ;
+        let companyEName = this.state.companyEName;
+        let description = this.state.description === " " && kind01_data.brief ? kind01_data.brief : this.state.description;
         let keyword = this.state.keyword ;
-        let email = this.state.email;
-        let title = this.state.title;
+        let email = this.state.email === " " && kind01_data.Service ? kind01_data.Service[2] : this.state.email;
+        let title = this.state.title === " " && kind01_data.Organ ? kind01_data.Organ :this.state.title;
         let logoImg = this.state.logoImg;
         let themeNum = this.state.themeNum;
         let styleType = this.state.styleType;
+        let actionType = 'create';
         
 
-        if(data){
-      
+        if(data && data.length > 0){
+            actionType = 'modify';
             data.forEach(element => {
-                companyName = companyName !=="$" ? companyName : element.companyName;
-                companyEName = companyEName !=="$" ? companyEName : element.companyEName;
-                description = description !=="$" ? description : element.description;
-                keyword = keyword !=="$" ? keyword : element.keyword;
-                title = title !=="$" ? title : element.title;
-                email = email !=="$" ? email : element.email;
-                logoImg = logoImg !=="$" ? logoImg : element.logoImg;
-                themeNum = themeNum !=="$" ? themeNum : element.themeNum;
-                styleType = styleType !== "$" ? styleType : element.styleType;
+                companyName = companyName !==" " ? companyName : element.companyName;
+                companyEName = companyEName !==" " ? companyEName : element.companyEName;
+                description = description !==" " ? description : element.description;
+                keyword = keyword !==" " ? keyword : element.keyword;
+                title = title !==" " ? title : element.title;
+                email = email !==" " ? email : element.email;
+                logoImg = logoImg !==" " ? logoImg : element.logoImg;
+                themeNum = themeNum !==" " ? themeNum : element.themeNum;
+                styleType = styleType !== " " ? styleType : element.styleType;
             })
         }
  
         //const UploadImg = this.state.uploadImg !=='' ?  this.state.uploadImg.file : `/upload/${cid}/${themeNum}/${logoImg}`;
-        const UploadImg = this.state.uploadImg !=='' ?  this.state.uploadImg.file : `https://localhost:44312/api/image/${cid}?fileName=${logoImg}`;
+        let UploadImg ="";
+        if(logoImg === " "){
+           UploadImg = "/image/logo-1111.png";
+        }else{
+           UploadImg = this.state.uploadImg !=='' ?  this.state.uploadImg.file : `${envConfig.WebAPI}/image/${cid}?fileName=${logoImg}`;
+        }
+
+        
 
         return(
             <div className="container-fluid">
@@ -259,7 +301,7 @@ class managerGeneralSetting extends React.Component{
                              
                           </div>
                           <hr />
-                          <button type='submit' className="btn btn-facebook btn-block" ><i className="fas fa-save"></i> 儲存設定</button>
+                          <button type='submit' id='action' value={actionType} className="btn btn-facebook btn-block" ><i className="fas fa-save"></i> 儲存設定</button>
                         </form>
                     </div>
                 </div>

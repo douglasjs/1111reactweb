@@ -1,4 +1,5 @@
 import {getDataList,createData,deleteData,updateData} from './datatableAction'
+import getkind01 from './apiKind1js';
 import setTable from './tablesetAction';
  
 export {
@@ -6,5 +7,6 @@ export {
 	createData,
 	deleteData,
 	updateData,
-	setTable
+	setTable,
+	getkind01
 }
