@@ -171,20 +171,30 @@ class managerGeneralSetting extends React.Component{
     render(){
         const { data, err, isLoading} = this.props.datatableReducer;
         const { kind01_data} = this.props.kind01Reducer;
-        const cid = this.props.match.params.cid;
+        const cid = this.props.match.params.cid.trim();
      
 
-        let companyName = this.state.companyName === " " && kind01_data.Organ ? kind01_data.Organ : this.state.companyName ;
+        let companyName = this.state.companyName;
         let companyEName = this.state.companyEName;
-        let description = this.state.description === " " && kind01_data.brief ? kind01_data.brief : this.state.description;
+        let description = this.state.description;
         let keyword = this.state.keyword ;
-        let email = this.state.email === " " && kind01_data.Service ? kind01_data.Service[2] : this.state.email;
-        let title = this.state.title === " " && kind01_data.Organ ? kind01_data.Organ :this.state.title;
+        let email = this.state.email;
+        let title = this.state.title;
         let logoImg = this.state.logoImg;
         let themeNum = this.state.themeNum;
         let styleType = this.state.styleType;
         let actionType = 'create';
         
+        if( kind01_data ){
+
+            if(kind01_data.oNo===Number(cid) && data.length ===0){
+                console.log("t2")
+                companyName= companyName === ' '? kind01_data.Organ : companyName ;
+                description= description === ' '? kind01_data.brief : description;
+                email= email === ' '? kind01_data.Service[2] : email;
+                title= title === ' '? kind01_data.Organ : title ;
+            }
+        }
 
         if(data && data.length > 0){
             actionType = 'modify';

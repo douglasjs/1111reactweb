@@ -4,6 +4,7 @@ function Session2(){
 
     return(
         <div className="card shadow mb-4">
+           {/*
             <a href="#collapseCard2" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard2">
             <h6 className="m-0 font-weight-bold text-primary">設定區段-公司介紹</h6>
             </a>
@@ -28,9 +29,9 @@ function Session2(){
                      </div>
                      <div className="form-row">
      
-                               <div class="card">
-                                 <img src='/image/company-2.jpg' class="card-img-top" alt="Logo" />
-                                 <div class="card-body">
+                               <div className="card">
+                                 <img src='/image/company-2.jpg' className="card-img-top" alt="Logo" />
+                                 <div className="card-body">
                                      <a href="/#" className="btn btn-primary">上傳圖片</a>
                                  </div>
                              </div>
@@ -71,7 +72,9 @@ function Session2(){
                  </form>
             </div>
             </div>
+              */}
        </div>
+         
     )
 
 }

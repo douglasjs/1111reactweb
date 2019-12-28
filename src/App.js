@@ -12,6 +12,7 @@ import store from './components/redux/store';
 //redux action
 import * as searchAction from './components/redux/action';
 
+import IndexWeb from './components/indexWeb';
 import withManagerWeb from './components/managerweb/withManagerweb';
 import ManagerMain from './components/managerweb/managerMain';
 import ManagerGeneralSetting from './components/managerweb/managerGeneralSetting';
@@ -54,7 +55,8 @@ function App() {
          <Provider store={store}>
             <BrowserRouter>
               <Switch>
-              <Route exact path="/:cid" component={CustomerWeb} />
+                  <Route exact path="/" component={IndexWeb} />
+                  <Route exact path="/:cid" component={CustomerWeb} />
                   <Route exact path="/managerweb/" component={ManagerLogin} />
                   <Route exact path="/managerweb/:cid/" component={WithManagerMain} />
                   <Route exact path="/managerweb/:cid/setting" component={WithGerneralSetting} />
