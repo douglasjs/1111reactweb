@@ -1,4 +1,5 @@
-import {getDataList,createData,deleteData,updateData} from './datatableAction'
+import {getDataList,createData,deleteData,updateData} from './datatableAction';
+import {getCompanyList,createCompany,updateCompany} from './company';
 import getkind01 from './apiKind1js';
 import setTable from './tablesetAction';
  
@@ -8,5 +9,8 @@ export {
 	deleteData,
 	updateData,
 	setTable,
-	getkind01
+	getkind01,
+	getCompanyList,
+	createCompany,
+	updateCompany
 }

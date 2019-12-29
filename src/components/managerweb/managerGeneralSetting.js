@@ -134,7 +134,8 @@ class managerGeneralSetting extends React.Component{
                 keyword : event.target.keyword.value,
                 title: event.target.title.value,
                 logoImg: event.target.logoImg.value,
-                uploadImg: this.state.uploadImg.value
+                uploadImg: this.state.uploadImg ? this.state.uploadImg.value : null,
+               // uploadImg: this.state.uploadImg.value
     
             });
 
@@ -313,6 +314,7 @@ class managerGeneralSetting extends React.Component{
                           <hr />
                           <button type='submit' id='action' value={actionType} className="btn btn-facebook btn-block" ><i className="fas fa-save"></i> 儲存設定</button>
                         </form>
+
                     </div>
                 </div>
             </div>

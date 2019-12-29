@@ -1,0 +1,188 @@
+import axios from 'axios';
+import envConfig from '../../../config/env';
+
+const getCompanyStart = () =>{
+
+    return {
+
+        type: "GET_COM_START",
+        companyData: [],
+        companyErr: null,
+        companyIsLoading: true,
+    }
+
+}
+
+const getCompanySuccess = (response) =>{
+
+    return {
+
+        type: "GET_COM_SUCCESS",
+        companyData: response,
+        companyErr: null,
+        companyIsLoading: false,
+    }
+
+}
+
+
+
+const getCompanyError = (error) =>{
+
+    return {
+        type: "GET_COM_ERROR",
+        companyData: [],
+        companyErr: error,
+        companyIsLoading: false,
+    }
+
+}
+
+const createCompanyStart = () =>{
+
+    return {
+
+        type: "CREATE_COM_START",
+        companyData: [],
+        companyErr: null,
+        companyIsLoading: true,
+    }
+
+}
+
+
+const createCompanySuccess = (response) =>{
+
+    return {
+
+        type: "CREATE_COM_SUCCESS",
+        companyData: response,
+        companyErr: null,
+        companyIsLoading: false,
+    }
+
+}
+
+const createCompanyError = (error) =>{
+
+    return {
+        type: "CREATE_COM_ERROR",
+        companyData: [],
+        companyErr: error,
+        companyIsLoading: false,
+    }
+
+}
+
+
+const editCompanyStart = () =>{
+
+    return {
+
+        type: "EDIT_COM_START",
+        companyData: [],
+        companyErr: null,
+        companyIsLoading: true,
+    }
+
+}
+
+const editCompanySuccess = (response) =>{
+
+    return {
+
+        type: "EDIT_COM_SUCCESS",
+        companyData: [response],
+        companyErr: null,
+        companyIsLoading: false,
+    }
+
+}
+
+
+
+const editCompanyError = (error) =>{
+
+    return {
+        type: "EDIT_COM_ERROR",
+        companyData: [],
+        companyErr: error,
+        companyIsLoading: false,
+    }
+
+}
+
+
+
+const getCompanyList = (ono, themeNum) =>{
+
+    return (dispatch) =>{
+        
+      
+        dispatch(getCompanyStart());
+        axios({ method: 'get', url: `${envConfig.WebAPI}/company/${ono}`, params:{themeNum: themeNum}})
+            .then(response => {
+                //setTimeout(() => {
+                    dispatch(getCompanySuccess(response.data));
+                //}, 1000);
+              }
+            
+            )
+            .catch(err => {
+                dispatch(getCompanyError(err));
+            });
+    }
+
+}
+
+const createCompany = (data) =>{
+
+   
+  
+    return (dispatch) =>{
+        
+      
+            dispatch(createCompanyStart());
+            axios({
+                method: 'post',
+                url: `${envConfig.WebAPI}/company/`,
+                data
+            })
+            .then((response)=>{
+                dispatch(createCompanySuccess(response.data));
+                alert("新增資料完成");
+                dispatch(getCompanyList(data.ono));
+            })
+            .catch(err => {
+                dispatch(createCompanyError(err));
+            });
+    }
+
+}
+
+
+const updateCompany = (data) =>{
+    console.log(data);
+    return (dispatch) =>{
+        
+      
+            dispatch(editCompanyStart());
+            axios({
+                method: 'put',
+                url: `${envConfig.WebAPI}/company/${data.ono}`,
+                data
+            })
+            .then((response) => {
+                dispatch(editCompanySuccess(response.data));
+                alert("更新資料完成");
+                dispatch(getCompanyList(data.ono));
+            })
+            .catch(err => {
+                dispatch(editCompanyError(err));
+            });
+    }
+
+}
+
+
+export  {getCompanyList,createCompany,updateCompany};
