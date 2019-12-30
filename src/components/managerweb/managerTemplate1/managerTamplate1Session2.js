@@ -14,6 +14,16 @@ class Session2 extends React.Component{
             introSubTitle1ImgText: ' ',
             introSubTitle1Img: ' ',
             introSubTitle1ImgUpload: '',
+            introSubTitle2: ' ',
+            introSubTitle2Content: ' ',
+            introSubTitle2ImgText: ' ',
+            introSubTitle2Img: ' ',
+            introSubTitle2ImgUpload: '',
+            introSubTitle3: ' ',
+            introSubTitle3Content: ' ',
+            introSubTitle3ImgText: ' ',
+            introSubTitle3Img: ' ',
+            introSubTitle3ImgUpload: '',
         }
     }
 
@@ -68,7 +78,7 @@ class Session2 extends React.Component{
 
     handleSubmit = (event) =>{
         event.preventDefault();
-        const cid = this.props.match.params.cid;
+     
     }
 
 
@@ -77,7 +87,7 @@ class Session2 extends React.Component{
 
         const { companyData, companyErr, companyIsLoading} = this.props.companyReducer;
   
-     
+        console.log(companyData);
         const cid = this.props.match.params.cid.trim();
 
         let introTitle = this.state.introTitle;
@@ -86,6 +96,14 @@ class Session2 extends React.Component{
         let introSubTitle1Content = this.state.introSubTitle1Content;
         let introSubTitle1ImgText = this.state.introSubTitle1ImgText;
         let introSubTitle1Img = this.state.introSubTitle1Img;
+        let introSubTitle2 = this.state.introSubTitle1;
+        let introSubTitle2Content = this.state.introSubTitle1Content;
+        let introSubTitle2ImgText = this.state.introSubTitle1ImgText;
+        let introSubTitle2Img = this.state.introSubTitle1Img;
+        let introSubTitle3 = this.state.introSubTitle1;
+        let introSubTitle3Content = this.state.introSubTitle1Content;
+        let introSubTitle3ImgText = this.state.introSubTitle1ImgText;
+        let introSubTitle3Img = this.state.introSubTitle1Img;
         let themeNum = 'tp01';
         let actionType = 'create';
 
@@ -95,6 +113,20 @@ class Session2 extends React.Component{
             introSubTitle1ImgUpload = "/image/logo-1111.png";
          }else{
             introSubTitle1ImgUpload = this.state.introSubTitle1Img !==' ' ?  this.state.introSubTitle1ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${introSubTitle1Img}`;
+         }
+
+         let introSubTitle2ImgUpload ="";
+         if(introSubTitle2Img === " "){
+            introSubTitle2ImgUpload = "/image/logo-1111.png";
+         }else{
+            introSubTitle2ImgUpload = this.state.introSubTitle2Img !==' ' ?  this.state.introSubTitle2ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${introSubTitle2Img}`;
+         }
+
+         let introSubTitle3ImgUpload ="";
+         if(introSubTitle3Img === " "){
+            introSubTitle3ImgUpload = "/image/logo-1111.png";
+         }else{
+            introSubTitle3ImgUpload = this.state.introSubTitle3Img !==' ' ?  this.state.introSubTitle3ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${introSubTitle3Img}`;
          }
 
 
@@ -125,48 +157,176 @@ class Session2 extends React.Component{
                                         公司介紹主內容不可以空白
                                   </div>
                             </div>
+
                             <div className="form-row">
-                                  <label><span className='text-danger'>*</span>小標題1 <em className='text-primary'>( 字數限制為11個字以內 )</em> </label>
-                                  <input type="text" className={`form-control`} id="introSubTitle1"  placeholder="小標題1"   
-                                    value={introSubTitle1} onChange={this.handleChange('introSubTitle1')} required />
-                                  <div className="invalid-feedback">
-                                        小標題1不可以空白
-                                  </div>
+                                <label><span className='text-danger'>*</span>小標題一 <em className='text-primary'>(必填)</em> </label>
                             </div>
-                            <div className="form-row">
-                                  <label><span className='text-danger'>*</span>小標題1內容 <em className='text-primary'>( 字數限制為55個字以內 )</em> </label>
-                                  <textarea className={`form-control`} id="introSubTitle1Content"  placeholder="小標題1內容" rows="3"
-                                    value={introSubTitle1Content} onChange={this.handleChange('introSubTitle1Content')} required/>
-                                  <div className="invalid-feedback">
-                                        小標題1內容不可以空白
-                                  </div>
-                            </div>
-                            <div className="form-row">
-                                  <label><span className='text-danger'>*</span>小標題1圖片文字  <em className='text-primary'>( 字數限制為20個字以內 )</em> </label>
-                                  <input type="text" className={`form-control`} id="introSubTitle1ImgText"  placeholder="小標題1圖片文字"   
-                                    value={introSubTitle1ImgText} onChange={this.handleChange('introSubTitle1ImgText')} required />
-                                  <div className="invalid-feedback">
-                                        小標題1圖片文字不可以空白
-                                  </div>
-                            </div>
-                            <div className="form-row">
-                                <label><span className='text-danger'>*</span> 小標題1圖片上傳</label><em className='text-primary'>(圖檔尺寸大小為 724*500 ，接受格式為png、jpg)</em> 
-                            </div>
-                            <div className="form-row">
-                                  <div className="card image-area mt-4"><img id="introSubTitle1ImgResult" src={introSubTitle1ImgUpload} alt="For Upload" className="img-fluid rounded shadow-sm mx-auto d-block" /></div>
-                                 
-                                  <div className="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
-                                    <input type="hidden" id="companyBackgroundImg1" value={introSubTitle1Img} />
-                                   
-                                    <input id="introSubTitle1ImgUpload" type="file"  accept="image/*" onChange={this.handleFileUpload('introSubTitle1ImgUpload-label', 'introSubTitle1Img','introSubTitle1ImgUpload')} className="form-control border-0 uploadFile" />
-                                    <label id="introSubTitle1ImgUpload-label" htmlFor="upload" className="font-weight-light text-muted upload-label">選擇檔案</label>
-                                    <div className="input-group-append">
-                                        <label htmlFor="introSubTitle1ImgUpload" className="btn btn-light m-0 rounded-pill px-4"> <i className="fa fa-cloud-upload mr-2 text-muted"></i>
-                                        <small className="text-uppercase font-weight-bold text-muted">選擇檔案</small></label>
+
+                            <div>
+                                <div className="card">
+                                    <div className="card-header text-white bg-primary">小標題一</div>
+                                    <div className="card-body">
+                                        <div className="form-row">
+                                            <label><span className='text-danger'>*</span>小標題1 <em className='text-primary'>( 字數限制為11個字以內 )</em> </label>
+                                            <input type="text" className={`form-control`} id="introSubTitle1"  placeholder="小標題1"   
+                                                value={introSubTitle1} onChange={this.handleChange('introSubTitle1')} required />
+                                            <div className="invalid-feedback">
+                                                    小標題1不可以空白
+                                            </div>
+                                        </div>
+                                        <div className="form-row">
+                                            <label><span className='text-danger'>*</span>小標題1內容 <em className='text-primary'>( 字數限制為55個字以內 )</em> </label>
+                                            <textarea className={`form-control`} id="introSubTitle1Content"  placeholder="小標題1內容" rows="3"
+                                                value={introSubTitle1Content} onChange={this.handleChange('introSubTitle1Content')} required/>
+                                            <div className="invalid-feedback">
+                                                    小標題1內容不可以空白
+                                            </div>
+                                        </div>
+                                        <div className="form-row">
+                                            <label><span className='text-danger'>*</span>小標題1圖片文字  <em className='text-primary'>( 字數限制為20個字以內 )</em> </label>
+                                            <input type="text" className={`form-control`} id="introSubTitle1ImgText"  placeholder="小標題1圖片文字"   
+                                                value={introSubTitle1ImgText} onChange={this.handleChange('introSubTitle1ImgText')} required />
+                                            <div className="invalid-feedback">
+                                                    小標題1圖片文字不可以空白
+                                            </div>
+                                        </div>
+                                        <div className="form-row">
+                                            <label><span className='text-danger'>*</span> 小標題1圖片上傳</label><em className='text-primary'>(圖檔尺寸大小為 724*500 ，接受格式為png、jpg)</em> 
+                                        </div>
+                                        <div className="form-row">
+                                            <div className="card image-area mt-4"><img id="introSubTitle1ImgResult" src={introSubTitle1ImgUpload} alt="For Upload" className="img-fluid rounded shadow-sm mx-auto d-block" /></div>
+                                            
+                                            <div className="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                                                <input type="hidden" id="introSubTitle1Img" value={introSubTitle1Img} />
+                                            
+                                                <input id="introSubTitle1ImgUpload" type="file"  accept="image/*" onChange={this.handleFileUpload('introSubTitle1ImgUpload-label', 'introSubTitle1Img','introSubTitle1ImgUpload')} className="form-control border-0 uploadFile" />
+                                                <label id="introSubTitle1ImgUpload-label" htmlFor="upload" className="font-weight-light text-muted upload-label">選擇檔案</label>
+                                                <div className="input-group-append">
+                                                    <label htmlFor="introSubTitle1ImgUpload" className="btn btn-light m-0 rounded-pill px-4"> <i className="fa fa-cloud-upload mr-2 text-muted"></i>
+                                                    <small className="text-uppercase font-weight-bold text-muted">選擇檔案</small></label>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
                                     </div>
                                 </div>
-                             
                             </div>
+
+                            <div className="form-row">
+                                <label><span className='text-danger'>*</span>小標題二 <em className='text-primary'>(必填)</em> </label>
+                            </div>
+
+                            <div>
+                                <div className="card">
+                                    <div className="card-header text-white bg-primary">小標題二</div>
+                                    <div className="card-body">
+
+                                        <div className="form-row">
+                                            <label><span className='text-danger'>*</span>小標題2 <em className='text-primary'>( 字數限制為11個字以內 )</em> </label>
+                                            <input type="text" className={`form-control`} id="introSubTitle2"  placeholder="小標題2"   
+                                                value={introSubTitle2} onChange={this.handleChange('introSubTitle2')} required />
+                                            <div className="invalid-feedback">
+                                                    小標題2不可以空白
+                                            </div>
+                                        </div>
+
+                                        <div className="form-row">
+                                            <label><span className='text-danger'>*</span>小標題2內容 <em className='text-primary'>( 字數限制為55個字以內 )</em> </label>
+                                            <textarea className={`form-control`} id="introSubTitle2Content"  placeholder="小標題2內容" rows="3"
+                                                value={introSubTitle2Content} onChange={this.handleChange('introSubTitle2Content')} required/>
+                                            <div className="invalid-feedback">
+                                                    小標題2內容不可以空白
+                                            </div>
+                                        </div>
+                                        <div className="form-row">
+                                            <label><span className='text-danger'>*</span>小標題2圖片文字  <em className='text-primary'>( 字數限制為20個字以內 )</em> </label>
+                                            <input type="text" className={`form-control`} id="introSubTitle2ImgText"  placeholder="小標題2圖片文字"   
+                                                value={introSubTitle2ImgText} onChange={this.handleChange('introSubTitle2ImgText')} required />
+                                            <div className="invalid-feedback">
+                                                    小標題2圖片文字不可以空白
+                                            </div>
+                                        </div>
+                                        <div className="form-row">
+                                            <label><span className='text-danger'>*</span> 小標題2圖片上傳</label><em className='text-primary'>(圖檔尺寸大小為 724*500 ，接受格式為png、jpg)</em> 
+                                        </div>
+                                        <div className="form-row">
+                                            <div className="card image-area mt-4"><img id="introSubTitle2ImgResult" src={introSubTitle2ImgUpload} alt="For Upload" className="img-fluid rounded shadow-sm mx-auto d-block" /></div>
+                                            
+                                            <div className="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                                                <input type="hidden" id="introSubTitle2Img" value={introSubTitle2Img} />
+                                            
+                                                <input id="introSubTitle2ImgUpload" type="file"  accept="image/*" onChange={this.handleFileUpload('introSubTitle2ImgUpload-label', 'introSubTitle2Img','introSubTitle2ImgUpload')} className="form-control border-0 uploadFile" />
+                                                <label id="introSubTitle2ImgUpload-label" htmlFor="upload" className="font-weight-light text-muted upload-label">選擇檔案</label>
+                                                <div className="input-group-append">
+                                                    <label htmlFor="introSubTitle2ImgUpload" className="btn btn-light m-0 rounded-pill px-4"> <i className="fa fa-cloud-upload mr-2 text-muted"></i>
+                                                    <small className="text-uppercase font-weight-bold text-muted">選擇檔案</small></label>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+  
+  
+                            <div className="form-row">
+                                <label><span className='text-danger'>*</span>小標題三 <em className='text-primary'>(必填)</em> </label>
+                            </div>
+
+                            <div>
+                                <div className="card">
+                                    <div className="card-header text-white bg-primary">小標題三</div>
+                                    <div className="card-body">
+
+                                        <div className="form-row">
+                                            <label><span className='text-danger'>*</span>小標題3 <em className='text-primary'>( 字數限制為11個字以內 )</em> </label>
+                                            <input type="text" className={`form-control`} id="introSubTitle3"  placeholder="小標題2"   
+                                                value={introSubTitle3} onChange={this.handleChange('introSubTitle3')} required />
+                                            <div className="invalid-feedback">
+                                                    小標題3不可以空白
+                                            </div>
+                                        </div>
+
+                                        <div className="form-row">
+                                            <label><span className='text-danger'>*</span>小標題3內容 <em className='text-primary'>( 字數限制為55個字以內 )</em> </label>
+                                            <textarea className={`form-control`} id="introSubTitle3Content"  placeholder="小標題2內容" rows="3"
+                                                value={introSubTitle3Content} onChange={this.handleChange('introSubTitle3Content')} required/>
+                                            <div className="invalid-feedback">
+                                                    小標題3內容不可以空白
+                                            </div>
+                                        </div>
+                                        <div className="form-row">
+                                            <label><span className='text-danger'>*</span>小標題3圖片文字  <em className='text-primary'>( 字數限制為20個字以內 )</em> </label>
+                                            <input type="text" className={`form-control`} id="introSubTitle3ImgText"  placeholder="小標題2圖片文字"   
+                                                value={introSubTitle3ImgText} onChange={this.handleChange('introSubTitle3ImgText')} required />
+                                            <div className="invalid-feedback">
+                                                    小標題3圖片文字不可以空白
+                                            </div>
+                                        </div>
+                                        <div className="form-row">
+                                            <label><span className='text-danger'>*</span> 小標題3圖片上傳</label><em className='text-primary'>(圖檔尺寸大小為 724*500 ，接受格式為png、jpg)</em> 
+                                        </div>
+                                        <div className="form-row">
+                                            <div className="card image-area mt-4"><img id="introSubTitle3ImgResult" src={introSubTitle3ImgUpload} alt="For Upload" className="img-fluid rounded shadow-sm mx-auto d-block" /></div>
+                                            
+                                            <div className="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                                                <input type="hidden" id="introSubTitle3Img" value={introSubTitle3Img} />
+                                            
+                                                <input id="introSubTitle3ImgUpload" type="file"  accept="image/*" onChange={this.handleFileUpload('introSubTitle3ImgUpload-label', 'introSubTitle3Img','introSubTitle3ImgUpload')} className="form-control border-0 uploadFile" />
+                                                <label id="introSubTitle3ImgUpload-label" htmlFor="upload" className="font-weight-light text-muted upload-label">選擇檔案</label>
+                                                <div className="input-group-append">
+                                                    <label htmlFor="introSubTitle3ImgUpload" className="btn btn-light m-0 rounded-pill px-4"> <i className="fa fa-cloud-upload mr-2 text-muted"></i>
+                                                    <small className="text-uppercase font-weight-bold text-muted">選擇檔案</small></label>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                             <hr />
                             <button type='submit' id='action2' value={actionType} className="btn btn-facebook btn-block" ><i className="fas fa-save"></i> 儲存設定</button>
                         </form>

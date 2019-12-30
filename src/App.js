@@ -39,13 +39,12 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-const WithManagerMain = connect(mapStateToProps, mapDispatchToProps)(withManagerWeb(ManagerMain));
+const WithManagerMain = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerMain));
 const WithGerneralSetting = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerGeneralSetting));
 const WithManagerTemplate1 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate1));
 const WithManagerTemplate2 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate2));
 const WithManagerTemplate3 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate3));
 const WithManagerTemplate4 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate4));
-
 
 function App() {
   
