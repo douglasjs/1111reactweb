@@ -3,13 +3,14 @@ import InputText from '../../sharecomponents/inputText';
 import InputTextArea from '../../sharecomponents/inputTextArea';
 import ImgUpload from '../../sharecomponents/imgUpload';
 import envConfig from '../../../config/env';
+import InputSwitch from '../../sharecomponents/inputSwitch';
 
 class Session6 extends React.Component{
 
     constructor(props){
         super(props);
         this.state={
-            customizeEnable : ' ',
+            customizeEnable : false,
             customizeName : ' ',
             customizeTitle : ' ',
             customizeSubTitle : ' ',
@@ -37,7 +38,9 @@ class Session6 extends React.Component{
     render(){
 
         const cid = this.props.match.params.cid.trim();
+        const sessionName=  "自訂標籤";
 
+        let customizeEnable = this.state.customizeEnable;
         let customizeName = this.state.customizeName;
         let customizeTitle = this.state.customizeTitle;
         let customizeSubTitle = this.state.customizeSubTitle;
@@ -88,16 +91,18 @@ class Session6 extends React.Component{
         return(
             <div className="card shadow mb-4">
                 <a href="#collapseCard6" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6">
-                <h6 className="m-0 font-weight-bold text-primary">設定區段-自訂標籤</h6>
+                <h6 className="m-0 font-weight-bold text-primary">設定區段-{sessionName}</h6>
                 </a>
                 <div className="collapse show" id="collapseCard6">
                 <div className="card-body">
                     <form id='dataForm6'>
  
+                        <InputSwitch sessionName={sessionName} inputName='customizeEnable' inputState={customizeEnable} stateObj={this} />
 
                         <div className="form-row">
-                            <label>  </label>
+                            <label> </label>
                         </div>
+                        
                         <InputText title='自訂選單名稱' notice='(即為在主選單上顯示的名稱，字數限制為4個字以內)' inputName='customizeName' inputState={customizeName}
                                            stateObj={this} required={false} />
                         <InputText title='自訂區域主標題' notice='(字數限制為10個字以內)' inputName='customizeTitle' inputState={customizeTitle}
