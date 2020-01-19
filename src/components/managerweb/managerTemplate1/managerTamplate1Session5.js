@@ -3,10 +3,9 @@ import InputText from '../../sharecomponents/inputText';
 import InputTextArea from '../../sharecomponents/inputTextArea';
 import ImgUpload from '../../sharecomponents/imgUpload';
 import envConfig from '../../../config/env';
+import Msg from '../msg';
 
 class Session5 extends React.Component{
-
-
     constructor(props){
         super(props);
         this.state={
@@ -20,11 +19,47 @@ class Session5 extends React.Component{
             brandImg : ' ',
             brandImgUpload : ''
         }
+    }
 
+    handleSubmit = (event) =>{
+        event.preventDefault();
+        const cid = this.props.match.params.cid;
+
+        if(event.target.action5.value === 'create'){
+            this.props.createbrand({
+                ono: cid,
+                themeNum : event.target.themeNum5.value,
+                brandTitle:  this.state.brandTitle,
+                brandTitleSub1:  this.state.brandTitleSub1,
+                brandTitleSub1Content:  this.state.brandTitleSub1Content,
+                brandTitleSub2:  this.state.brandTitleSub2,
+                brandTitleSub2Content:  this.state.brandTitleSub2Content,
+                brandTitleSub3:  this.state.brandTitleSub3,
+                brandTitleSub3Content:  this.state.brandTitleSub3Content,
+                brandImg : this.state.brandImg,
+                brandImgUpload: this.state.brandImgUpload ? this.state.brandImgUpload.value : null
+            });
+        }
+        if(event.target.action5.value === 'modify'){
+            this.props.updatebrand({
+                ono: cid,
+                themeNum : event.target.themeNum5.value,
+                brandTitle:  this.state.brandTitle,
+                brandTitleSub1:  this.state.brandTitleSub1,
+                brandTitleSub1Content:  this.state.brandTitleSub1Content,
+                brandTitleSub2:  this.state.brandTitleSub2,
+                brandTitleSub2Content:  this.state.brandTitleSub2Content,
+                brandTitleSub3:  this.state.brandTitleSub3,
+                brandTitleSub3Content:  this.state.brandTitleSub3Content,
+                brandImg : this.state.brandImg,
+                brandImgUpload: this.state.brandImgUpload ? this.state.brandImgUpload.value : null
+            });
+        }
+     
     }
 
     render(){
-
+        const { brandData, brandErr, brandIsLoading} = this.props.brandReducer;
         const cid = this.props.match.params.cid.trim();
 
         let brandTitle = this.state.brandTitle;
@@ -35,7 +70,23 @@ class Session5 extends React.Component{
         let brandTitleSub3 = this.state.brandTitleSub3;
         let brandTitleSub3Content = this.state.brandTitleSub3Content;
         let brandImg = this.state.brandImg;
+
+        let themeNum = 'tp01';
         let actionType = 'create';
+
+        if(brandData && brandData.length > 0){
+            actionType = 'modify';
+            brandData.forEach(element => {
+                brandTitle = brandTitle !==" " ? brandTitle : element.brandTitle;
+                brandTitleSub1 = brandTitleSub1 !==" " ? brandTitleSub1 : element.brandTitleSub1;
+                brandTitleSub1Content = brandTitleSub1Content !==" " ? brandTitleSub1Content : element.brandTitleSub1Content;
+                brandTitleSub2 = brandTitleSub2 !==" " ? brandTitleSub2 : element.brandTitleSub2;
+                brandTitleSub2Content = brandTitleSub2Content !==" " ? brandTitleSub2Content : element.brandTitleSub2Content;
+                brandTitleSub3 = brandTitleSub3 !==" " ? brandTitleSub3 : element.brandTitleSub3;
+                brandTitleSub3Content = brandTitleSub3Content !==" " ? brandTitleSub3Content : element.brandTitleSub3Content;
+                brandImg = brandImg !==" " ? brandImg : element.brandImg;
+            })
+        }
 
         // image
         let brandImgUpload ="";
@@ -50,9 +101,12 @@ class Session5 extends React.Component{
                 <a href="#collapseCard5" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard5">
                 <h6 className="m-0 font-weight-bold text-primary">設定區段-品牌介紹</h6>
                 </a>
-                <div className="collapse show" id="collapseCard5">
+                <div className="collapse collapsed" id="collapseCard5">
                 <div className="card-body">
-                        <form id='dataForm5'>
+                    <form id='dataForm3' className={brandIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
+                            <Msg type ='LOADING'  value = {brandIsLoading} text='Processing ' /> 
+                            <Msg type ='ERROR' value = {brandErr} text= 'Opps! Error : ' />
+                            <input type="hidden" id="themeNum5" value={themeNum} />
                             <InputText title='品牌介紹主標題' notice='(字數限制為13個字以內)' inputName='brandTitle' inputState={brandTitle}
                                            stateObj={this} required={true} />
                             <InputText title='品牌介紹副標題1' notice='(字數限制為10個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
@@ -71,7 +125,6 @@ class Session5 extends React.Component{
                                            imgFileName={brandImg} parentObj={this} imgW={640} imgH={427} required={true} /> 
                             <hr />
                             <button type='submit' id='action5' value={actionType} className="btn btn-facebook btn-block" ><i className="fas fa-save"></i> 儲存設定</button>
-                            
                         </form>
                 </div>
                 </div>

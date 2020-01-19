@@ -245,7 +245,7 @@ class Session1 extends React.Component{
                              
                         </div>
                         <hr />
-                        <button type='submit' id='action' value={actionType} className="btn btn-facebook btn-block" ><i className="fas fa-save"></i> 儲存設定</button>
+                        <button type='submit' id='action1' value={actionType} className="btn btn-facebook btn-block" ><i className="fas fa-save"></i> 儲存設定</button>
                     </form>
                     </div>
                 </div>

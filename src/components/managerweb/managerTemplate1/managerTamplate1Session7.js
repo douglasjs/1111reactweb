@@ -42,7 +42,7 @@ class Session7 extends React.Component{
                 <a href="#collapseCard7" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard7">
                     <h6 className="m-0 font-weight-bold text-primary">設定區段-{sessionName}</h6>
                 </a>
-                <div className="collapse show" id="collapseCard7">
+                <div className="collapse collapsed" id="collapseCard7">
                 <div className="card-body">
                         <form id='dataForm7'>
                             <InputSwitch sessionName={sessionName} inputName='qaEnable' inputState={qaEnable} stateObj={this} />

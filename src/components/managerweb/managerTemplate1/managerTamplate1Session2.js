@@ -53,7 +53,6 @@ class Session2 extends React.Component{
                        alert('上傳圖片尺寸不合');
                        return false;
                    }else{
-
                         that.setState( {...this.state,
                             [uploadName]: {
                                 file: URL.createObjectURL(file),
@@ -63,31 +62,71 @@ class Session2 extends React.Component{
                         infoArea.textContent = '上傳檔案名稱: ' + file.name;
                         const fileFullName = stateName + "_"+ file.name;
                         that.setState({ ...this.state, [stateName]: fileFullName });
-
                    }
                 };
-
-
-           
             };
-
         }
-
-       
     }
 
     handleSubmit = (event) =>{
         event.preventDefault();
-     
+        const cid = this.props.match.params.cid.trim();
+
+        if(event.target.action2.value === 'create'){
+            this.props.createintroduction({
+                ono: cid,
+                themeNum : event.target.themeNum2.value,
+                introTitle: event.target.introTitle.value,
+                introMainContent: event.target.introMainContent.value,
+                introSubTitle1: event.target.introSubTitle1.value,
+                introSubTitle1Content:event.target.introSubTitle1Content.value,
+                introSubTitle1ImgText:event.target.introSubTitle1ImgText.value,
+                introSubTitle1Img:event.target.introSubTitle1Img.value,
+                introSubTitle1ImgUpload: this.state.introSubTitle1ImgUpload ? this.state.introSubTitle1ImgUpload.value : null,
+
+                introSubTitle2: event.target.introSubTitle2.value,
+                introSubTitle2Content:event.target.introSubTitle2Content.value,
+                introSubTitle2ImgText:event.target.introSubTitle2ImgText.value,
+                introSubTitle2Img:event.target.introSubTitle2Img.value,
+                introSubTitle2ImgUpload: this.state.introSubTitle21ImgUpload ? this.state.introSubTitle2ImgUpload.value : null,
+
+                introSubTitle3: event.target.introSubTitle3.value,
+                introSubTitle3Content:event.target.introSubTitle3Content.value,
+                introSubTitle3ImgText:event.target.introSubTitle3ImgText.value,
+                introSubTitle3Img:event.target.introSubTitle3Img.value,
+                introSubTitle3ImgUpload: this.state.introSubTitle3ImgUpload ? this.state.introSubTitle3ImgUpload.value : null,
+            });
+        }
+        if(event.target.action2.value === 'modify'){
+            this.props.updateintroduction({
+                ono: cid,
+                themeNum : event.target.themeNum2.value,
+                introTitle: event.target.introTitle.value,
+                introMainContent: event.target.introMainContent.value,
+                introSubTitle1: event.target.introSubTitle1.value,
+                introSubTitle1Content:event.target.introSubTitle1Content.value,
+                introSubTitle1ImgText:event.target.introSubTitle1ImgText.value,
+                introSubTitle1Img:event.target.introSubTitle1Img.value,
+                introSubTitle1ImgUpload: this.state.introSubTitle1ImgUpload ? this.state.introSubTitle1ImgUpload.value : null,
+
+                introSubTitle2: event.target.introSubTitle2.value,
+                introSubTitle2Content:event.target.introSubTitle2Content.value,
+                introSubTitle2ImgText:event.target.introSubTitle2ImgText.value,
+                introSubTitle2Img:event.target.introSubTitle2Img.value,
+                introSubTitle2ImgUpload: this.state.introSubTitle2ImgUpload ? this.state.introSubTitle2ImgUpload.value : null,
+
+                introSubTitle3: event.target.introSubTitle3.value,
+                introSubTitle3Content:event.target.introSubTitle3Content.value,
+                introSubTitle3ImgText:event.target.introSubTitle3ImgText.value,
+                introSubTitle3Img:event.target.introSubTitle3Img.value,
+                introSubTitle3ImgUpload: this.state.introSubTitle3ImgUpload ? this.state.introSubTitle3ImgUpload.value : null,
+            });
+        }
     }
-
-
     
     render(){
 
-        const { companyData, companyErr, companyIsLoading} = this.props.companyReducer;
-  
-        console.log(companyData);
+        const { introductionData, introductionErr, introductionIsLoading} = this.props.introductionReducer;
         const cid = this.props.match.params.cid.trim();
 
         let introTitle = this.state.introTitle;
@@ -96,16 +135,40 @@ class Session2 extends React.Component{
         let introSubTitle1Content = this.state.introSubTitle1Content;
         let introSubTitle1ImgText = this.state.introSubTitle1ImgText;
         let introSubTitle1Img = this.state.introSubTitle1Img;
-        let introSubTitle2 = this.state.introSubTitle1;
-        let introSubTitle2Content = this.state.introSubTitle1Content;
-        let introSubTitle2ImgText = this.state.introSubTitle1ImgText;
-        let introSubTitle2Img = this.state.introSubTitle1Img;
-        let introSubTitle3 = this.state.introSubTitle1;
-        let introSubTitle3Content = this.state.introSubTitle1Content;
-        let introSubTitle3ImgText = this.state.introSubTitle1ImgText;
-        let introSubTitle3Img = this.state.introSubTitle1Img;
+        let introSubTitle2 = this.state.introSubTitle2;
+        let introSubTitle2Content = this.state.introSubTitle2Content;
+        let introSubTitle2ImgText = this.state.introSubTitle2ImgText;
+        let introSubTitle2Img = this.state.introSubTitle2Img;
+        let introSubTitle3 = this.state.introSubTitle3;
+        let introSubTitle3Content = this.state.introSubTitle3Content;
+        let introSubTitle3ImgText = this.state.introSubTitle3ImgText;
+        let introSubTitle3Img = this.state.introSubTitle3Img;
         let themeNum = 'tp01';
         let actionType = 'create';
+
+        if(introductionData && introductionData.length > 0){
+            actionType = 'modify';
+            introductionData.forEach(element => {
+                introTitle = introTitle !==" " ? introTitle : element.introTitle;
+                introMainContent = introMainContent !==" " ? introMainContent : element.introMainContent;
+
+                introSubTitle1 = introSubTitle1 !==" " ? introSubTitle1 : element.introSubTitle1;
+                introSubTitle1Content = introSubTitle1Content !==" " ? introSubTitle1Content : element.introSubTitle1Content;
+                introSubTitle1ImgText = introSubTitle1ImgText !==" " ? introSubTitle1ImgText : element.introSubTitle1ImgText;
+                introSubTitle1Img = introSubTitle1Img !==" " ? introSubTitle1Img : element.introSubTitle1Img;
+
+                introSubTitle2 = introSubTitle2 !==" " ? introSubTitle2 : element.introSubTitle2;
+                introSubTitle2Content = introSubTitle2Content !==" " ? introSubTitle2Content : element.introSubTitle2Content;
+                introSubTitle2ImgText = introSubTitle2ImgText !==" " ? introSubTitle2ImgText : element.introSubTitle2ImgText;
+                introSubTitle2Img = introSubTitle2Img !==" " ? introSubTitle2Img : element.introSubTitle2Img;
+
+                introSubTitle3 = introSubTitle3 !==" " ? introSubTitle3 : element.introSubTitle3;
+                introSubTitle3Content = introSubTitle3Content !==" " ? introSubTitle3Content : element.introSubTitle3Content;
+                introSubTitle3ImgText = introSubTitle3ImgText !==" " ? introSubTitle3ImgText : element.introSubTitle3ImgText;
+                introSubTitle3Img = introSubTitle3Img !==" " ? introSubTitle3Img : element.introSubTitle1Img;
+
+            })
+        }
 
          // image
          let introSubTitle1ImgUpload ="";
@@ -135,11 +198,11 @@ class Session2 extends React.Component{
                 <a href="#collapseCard2" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard2">
                     <h6 className="m-0 font-weight-bold text-primary">設定區段-公司介紹</h6>
                 </a>
-                <div className="collapse show" id="collapseCard2">
+                <div className="collapse collapsed" id="collapseCard2">
                     <div className="card-body">
-                        <form id='dataForm2' className={companyIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                            <Msg type ='LOADING'  value = {companyIsLoading} text='Processing ' /> 
-                            <Msg type ='ERROR' value = {companyErr} text= 'Opps! Error : ' />
+                        <form id='dataForm2' className={introductionIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
+                            <Msg type ='LOADING'  value = {introductionIsLoading} text='Processing ' /> 
+                            <Msg type ='ERROR' value = {introductionErr} text= 'Opps! Error : ' />
                             <input type="hidden" id="themeNum2" value={themeNum} />
                             <div className="form-row">
                                   <label><span className='text-danger'>*</span>公司介紹主標題 <em className='text-primary'>( 字數限制為15個字以內 )</em> </label>

@@ -151,7 +151,7 @@ const createCompany = (data) =>{
             .then((response)=>{
                 dispatch(createCompanySuccess(response.data));
                 alert("新增資料完成");
-                dispatch(getCompanyList(data.ono));
+               // dispatch(getCompanyList(data.ono));
             })
             .catch(err => {
                 dispatch(createCompanyError(err));
@@ -175,7 +175,7 @@ const updateCompany = (data) =>{
             .then((response) => {
                 dispatch(editCompanySuccess(response.data));
                 alert("更新資料完成");
-                dispatch(getCompanyList(data.ono));
+              //  dispatch(getCompanyList(data.ono));
             })
             .catch(err => {
                 dispatch(editCompanyError(err));

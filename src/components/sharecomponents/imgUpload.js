@@ -22,7 +22,6 @@ function ImgUpload(props){
                        alert('上傳圖片尺寸不合');
                        return false;
                    }else{
-
                         that.setState( {...that.state,
                             [uploadName]: {
                                 file: URL.createObjectURL(file),
@@ -66,10 +65,10 @@ function ImgUpload(props){
                 <div className="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
                     <input type="hidden" id={`${props.objName}`} value={props.imgFileName} />
                 
-                    <input id={`${props.objName}_Upload`} type="file"  accept="image/*" onChange={handleFileUpload(`${props.objName}_Upload-label`, props.objName,`${props.objName}Upload`, props.parentObj)} className="form-control border-0 uploadFile" />
-                    <label id={`${props.objName}_Upload-label`} htmlFor="upload" className="font-weight-light text-muted upload-label">選擇檔案</label>
+                    <input id={`${props.objName}Upload`} type="file"  accept="image/*" onChange={handleFileUpload(`${props.objName}Upload-label`, props.objName,`${props.objName}Upload`, props.parentObj)} className="form-control border-0 uploadFile" />
+                    <label id={`${props.objName}Upload-label`} htmlFor="upload" className="font-weight-light text-muted upload-label">選擇檔案</label>
                     <div className="input-group-append">
-                        <label htmlFor={`${props.objName}_Upload`} className="btn btn-light m-0 rounded-pill px-4"> <i className="fa fa-cloud-upload mr-2 text-muted"></i>
+                        <label htmlFor={`${props.objName}Upload`} className="btn btn-light m-0 rounded-pill px-4"> <i className="fa fa-cloud-upload mr-2 text-muted"></i>
                         <small className="text-uppercase font-weight-bold text-muted">選擇檔案</small></label>
                     </div>
                 </div>

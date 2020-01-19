@@ -19,6 +19,9 @@ class ManagerTemplate1 extends React.Component{
         const cid = this.props.match.params.cid;
         this.props.getDataList(cid);
         this.props.getCompanyList(cid, 'tp01');
+        this.props.getintroductionList(cid, 'tp01');
+        this.props.getbenefitList(cid, 'tp01');
+        this.props.getbrandList(cid, 'tp01');
 
     }
 

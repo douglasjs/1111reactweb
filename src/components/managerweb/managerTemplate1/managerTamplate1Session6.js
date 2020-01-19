@@ -93,7 +93,7 @@ class Session6 extends React.Component{
                 <a href="#collapseCard6" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6">
                 <h6 className="m-0 font-weight-bold text-primary">設定區段-{sessionName}</h6>
                 </a>
-                <div className="collapse show" id="collapseCard6">
+                <div className="collapse collapsed" id="collapseCard6">
                 <div className="card-body">
                     <form id='dataForm6'>
  
