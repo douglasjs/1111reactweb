@@ -26,7 +26,6 @@ const withManagerWeb = Componet => props => {
         //props.getDataList(cid);
     });
 
-    console.log(props);
     
     return (
         <div id="page-top">
@@ -36,7 +35,7 @@ const withManagerWeb = Componet => props => {
                 <ManagerSlideBar {...props}/>
                 <div id="content-wrapper" className="d-flex flex-column">
                     <div id="content">
-                        <ManagerContentMainToolbar />
+                        <ManagerContentMainToolbar  {...props}/>
                         <Componet {...props}/>
                     </div>
                     <ManagerContentFoot />

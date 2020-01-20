@@ -6,7 +6,14 @@ import companyReducer from './company';
 import introductionReducer from './introduction';
 import benefitReducer from './benefit';
 import brandReducer from './brand';
+import customizeReducer from './customize';
+import qaReducer from './qa';
+import contactReducer from './contact';
 
 export default combineReducers({
-    datatableReducer,tableSetReducer,kind01Reducer,companyReducer,introductionReducer,benefitReducer,brandReducer
+    datatableReducer,tableSetReducer,
+    kind01Reducer,companyReducer,
+    introductionReducer,benefitReducer,
+    brandReducer, customizeReducer,
+    qaReducer, contactReducer
 });

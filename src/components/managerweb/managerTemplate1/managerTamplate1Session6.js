@@ -4,13 +4,14 @@ import InputTextArea from '../../sharecomponents/inputTextArea';
 import ImgUpload from '../../sharecomponents/imgUpload';
 import envConfig from '../../../config/env';
 import InputSwitch from '../../sharecomponents/inputSwitch';
+import Msg from '../msg';
 
 class Session6 extends React.Component{
 
     constructor(props){
         super(props);
         this.state={
-            customizeEnable : false,
+            customizeEnable : ' ',
             customizeName : ' ',
             customizeTitle : ' ',
             customizeSubTitle : ' ',
@@ -35,11 +36,53 @@ class Session6 extends React.Component{
     }
 
 
+    handleSubmit = (event) =>{
+        event.preventDefault();
+        const cid = this.props.match.params.cid;
+
+
+        const submitObj={
+            ono: cid,
+            themeNum : event.target.themeNum6.value,
+            customizeEnable:  event.target.customizeEnable.checked,
+            customizeName:  event.target.customizeName.value,
+            customizeTitle:  event.target.customizeTitle.value,
+            customizeSubTitle:  event.target.customizeSubTitle.value,
+
+            card1Title:  event.target.card1Title.value,
+            card1Content:  event.target.card1Content.value,
+            card1Img:  event.target.card1Img.value,
+            card1ImgUpload : this.state.card1ImgUpload ? this.state.card1ImgUpload.value : null,
+
+            card2Title:  event.target.card2Title.value,
+            card2Content:  event.target.card2Content.value,
+            card2Img:  event.target.card2Img.value,
+            card2ImgUpload : this.state.card2ImgUpload ? this.state.card2ImgUpload.value : null,
+
+            card3Title:  event.target.card3Title.value,
+            card3Content:  event.target.card3Content.value,
+            card3Img:  event.target.card3Img.value,
+            card3ImgUpload : this.state.card3ImgUpload ? this.state.card3ImgUpload.value : null,
+
+            card4Title:  event.target.card4Title.value,
+            card4Content:  event.target.card4Content.value,
+            card4Img:  event.target.card4Img.value,
+            card4ImgUpload : this.state.card4ImgUpload ? this.state.card4ImgUpload.value : null,
+        }
+
+        if(event.target.action6.value === 'create'){
+            this.props.createcustomize(submitObj);
+        }
+        if(event.target.action6.value === 'modify'){
+            this.props.updatecustomize(submitObj);
+        }
+    }
+
     render(){
 
         const cid = this.props.match.params.cid.trim();
-        const sessionName=  "自訂標籤";
-
+        const { customizeData, customizeErr, customizeIsLoading} = this.props.customizeReducer;
+       
         let customizeEnable = this.state.customizeEnable;
         let customizeName = this.state.customizeName;
         let customizeTitle = this.state.customizeTitle;
@@ -57,8 +100,38 @@ class Session6 extends React.Component{
         let card4Content  = this.state.card4Content;
         let card4Img = this.state.card4Img;
 
-
+        const sessionName=  "自訂標籤";
+        let themeNum = 'tp01';
         let actionType = 'create';
+
+        if(customizeData && customizeData.length > 0){
+            actionType = 'modify';
+            customizeData.forEach(element => {
+                customizeEnable = customizeEnable !==" " ? customizeEnable : element.customizeEnable;
+                customizeName = customizeName !==" " ? customizeName : element.customizeName;
+                customizeTitle = customizeTitle !==" " ? customizeTitle : element.customizeTitle;
+                customizeSubTitle = customizeSubTitle !==" " ? customizeSubTitle : element.customizeSubTitle;
+
+                card1Title = card1Title !==" " ? card1Title : element.card1Title;
+                card1Content = card1Content !==" " ? card1Content : element.card1Content;
+                card1Img = card1Img !==" " ? card1Img : element.card1Img;
+
+                card2Title = card2Title !==" " ? card2Title : element.card2Title;
+                card2Content = card2Content !==" " ? card2Content : element.card2Content;
+                card2Img = card2Img !==" " ? card2Img : element.card2Img;
+
+                card3Title = card3Title !==" " ? card3Title : element.card3Title;
+                card3Content = card3Content !==" " ? card3Content : element.card3Content;
+                card3Img = card3Img !==" " ? card3Img : element.card3Img;
+
+                card4Title = card4Title !==" " ? card4Title : element.card4Title;
+                card4Content = card4Content !==" " ? card4Content : element.card4Content;
+                card4Img = card4Img !==" " ? card4Img : element.card4Img;
+            })
+        }
+
+        // enable
+        customizeEnable = customizeEnable ===" " ? false : customizeEnable;
         // image
         let card1ImgUpload ="";
         if(card1Img === " "){
@@ -95,7 +168,10 @@ class Session6 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard6">
                 <div className="card-body">
-                    <form id='dataForm6'>
+                    <form id='dataForm6' className={customizeIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
+                        <Msg type ='LOADING'  value = {customizeIsLoading} text='Processing ' /> 
+                        <Msg type ='ERROR' value = {customizeErr} text= 'Opps! Error : ' />
+                        <input type="hidden" id="themeNum6" value={themeNum} />
  
                         <InputSwitch sessionName={sessionName} inputName='customizeEnable' inputState={customizeEnable} stateObj={this} />
 
@@ -185,7 +261,6 @@ class Session6 extends React.Component{
 
                         <hr />
                         <button type='submit' id='action6' value={actionType} className="btn btn-facebook btn-block" ><i className="fas fa-save"></i> 儲存設定</button>
-                            
                     </form>
                 </div>
                 </div>

@@ -24,13 +24,13 @@ const NavBar = () => {
     );
 };
 
-const NavMain = () => {
+const NavMain = (props) => {
     const menuList = [
         { name: '公司介紹', link: '#company', enable: true },
         { name: '員工福利', link: '#benefit', enable: true },
         { name: '職缺介紹', link: '#jobs', enable: true },
         { name: '品牌介紹', link: '#brand', enable: true },
-        { name: '自訂標籤', link: '#custom', enable: true },
+        { name: props.customizeName, link: '#custom', enable: props.customizeEnable },
         { name: '常見問題', link: '#faq', enable: true },
         { name: '聯絡我們', link: '#contact', enable: true }
     ]
@@ -61,7 +61,15 @@ const NavMain = () => {
 
 
 function CustomerHeader(props) {
-
+    const { customizeData } = props.customizeReducer;
+    let customizeEnable;
+    let customizeName;
+    if(customizeData && customizeData.length > 0){
+        customizeData.forEach(element => {
+            customizeEnable =  element.customizeEnable;
+            customizeName = element.customizeName;
+        })
+    }
     return (
             <header className="main-header main-header-overlay" data-react-to-megamenu="true" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
                 <div className="mainbar-wrap">
@@ -71,7 +79,7 @@ function CustomerHeader(props) {
                         <div className="row mainbar-row align-items-lg-stretch px-4">
                             <div className="col-auto">
                                 <NavBar />
-                                <NavMain />
+                                <NavMain customizeEnable={customizeEnable}  customizeName={customizeName}/>
                             </div>
                         </div>
                     </div>

@@ -45,6 +45,7 @@ const WithManagerTemplate1 = withManagerWeb(connect(mapStateToProps, mapDispatch
 const WithManagerTemplate2 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate2));
 const WithManagerTemplate3 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate3));
 const WithManagerTemplate4 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate4));
+const ConnectCustomerWeb = connect(mapStateToProps, mapDispatchToProps)(CustomerWeb);
 
 function App() {
   
@@ -55,7 +56,7 @@ function App() {
             <BrowserRouter>
               <Switch>
                   <Route exact path="/" component={IndexWeb} />
-                  <Route exact path="/:cid" component={CustomerWeb} />
+                  <Route exact path="/:cid" component={ConnectCustomerWeb} />
                   <Route exact path="/managerweb/" component={ManagerLogin} />
                   <Route exact path="/managerweb/:cid/" component={WithManagerMain} />
                   <Route exact path="/managerweb/:cid/setting" component={WithGerneralSetting} />

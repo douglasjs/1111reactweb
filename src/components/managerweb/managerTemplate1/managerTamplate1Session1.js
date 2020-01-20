@@ -40,7 +40,7 @@ class Session1 extends React.Component{
                 img.src=reader.result;
 
                 img.onload = function() {
-                   if(img.width > 1080 || img.height > 540){
+                   if(img.width > 1920 || img.height > 1200){
                        alert('上傳圖片尺寸不合');
                        return false;
                    }else{
@@ -90,7 +90,7 @@ class Session1 extends React.Component{
         */
 
 
-        if(event.target.action.value === 'create'){
+        if(event.target.action1.value === 'create'){
 
             this.props.createCompany({
                 ono: cid,
@@ -108,7 +108,7 @@ class Session1 extends React.Component{
         }
 
         
-        if(event.target.action.value === 'modify'){
+        if(event.target.action1.value === 'modify'){
    
    
             this.props.updateCompany({
@@ -183,7 +183,7 @@ class Session1 extends React.Component{
                 </a>
                 <div className="collapse show" id="collapseCard1">
                     <div className="card-body">
-                    <form id='dataForm' className={companyIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
+                    <form id='dataForm1' className={companyIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                         <Msg type ='LOADING'  value = {companyIsLoading} text='Processing ' /> 
                         <Msg type ='ERROR' value = {companyErr} text= 'Opps! Error : ' />
                         <input type="hidden" id="themeNum" value={themeNum} />

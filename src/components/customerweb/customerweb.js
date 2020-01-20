@@ -39,9 +39,9 @@ function CustomerWeb(props) {
         <div>
             <TitleSet title={companyName} meta={companyMeta} style={styleSheet} script={script} />
             <div id="wrap">
-                <CustomerHeader />
-                <CustomerMain />
-                <CustomerFoot />
+                <CustomerHeader {...props}/>
+                <CustomerMain {...props}/>
+                <CustomerFoot {...props}/>
             </div>
             <a className="top-link-icon hide" href="/#" id="js-top-icon"><i className="fa fa-angle-up"></i></a>
             <a className="top-link hide" href="/#" id="js-top">

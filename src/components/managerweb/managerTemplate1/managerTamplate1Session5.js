@@ -25,35 +25,26 @@ class Session5 extends React.Component{
         event.preventDefault();
         const cid = this.props.match.params.cid;
 
+        const submitObj = {
+            ono: cid,
+            themeNum : event.target.themeNum5.value,
+            brandTitle:  event.target.brandTitle.value,
+            brandTitleSub1:  event.target.brandTitleSub1.value,
+            brandTitleSub1Content:  event.target.brandTitleSub1Content.value,
+            brandTitleSub2:  event.target.brandTitleSub2.value,
+            brandTitleSub2Content:  event.target.brandTitleSub2Content.value,
+            brandTitleSub3:  event.target.brandTitleSub3.value,
+            brandTitleSub3Content:  event.target.brandTitleSub3Content.value,
+            brandImg : event.target.brandImg.value,
+            brandImgUpload: event.target.brandImgUpload ? this.state.brandImgUpload.value : null
+        }
+
+        console.log(event.target.action5.value);
         if(event.target.action5.value === 'create'){
-            this.props.createbrand({
-                ono: cid,
-                themeNum : event.target.themeNum5.value,
-                brandTitle:  this.state.brandTitle,
-                brandTitleSub1:  this.state.brandTitleSub1,
-                brandTitleSub1Content:  this.state.brandTitleSub1Content,
-                brandTitleSub2:  this.state.brandTitleSub2,
-                brandTitleSub2Content:  this.state.brandTitleSub2Content,
-                brandTitleSub3:  this.state.brandTitleSub3,
-                brandTitleSub3Content:  this.state.brandTitleSub3Content,
-                brandImg : this.state.brandImg,
-                brandImgUpload: this.state.brandImgUpload ? this.state.brandImgUpload.value : null
-            });
+            this.props.createbrand(submitObj);
         }
         if(event.target.action5.value === 'modify'){
-            this.props.updatebrand({
-                ono: cid,
-                themeNum : event.target.themeNum5.value,
-                brandTitle:  this.state.brandTitle,
-                brandTitleSub1:  this.state.brandTitleSub1,
-                brandTitleSub1Content:  this.state.brandTitleSub1Content,
-                brandTitleSub2:  this.state.brandTitleSub2,
-                brandTitleSub2Content:  this.state.brandTitleSub2Content,
-                brandTitleSub3:  this.state.brandTitleSub3,
-                brandTitleSub3Content:  this.state.brandTitleSub3Content,
-                brandImg : this.state.brandImg,
-                brandImgUpload: this.state.brandImgUpload ? this.state.brandImgUpload.value : null
-            });
+            this.props.updatebrand(submitObj);
         }
      
     }
@@ -103,7 +94,7 @@ class Session5 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard5">
                 <div className="card-body">
-                    <form id='dataForm3' className={brandIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
+                    <form id='dataForm5' className={brandIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                             <Msg type ='LOADING'  value = {brandIsLoading} text='Processing ' /> 
                             <Msg type ='ERROR' value = {brandErr} text= 'Opps! Error : ' />
                             <input type="hidden" id="themeNum5" value={themeNum} />

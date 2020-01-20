@@ -1,6 +1,13 @@
 ﻿import React from 'react';
 
-function ManagerContentMainToolbar() {
+function ManagerContentMainToolbar(props) {
+    let cid = props.match.params.cid.trim();
+    cid = "/" + cid;
+
+    let companyName;
+
+
+    companyName = companyName ? companyName : '永豐餘生技';
 
     return (
             <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -13,17 +20,18 @@ function ManagerContentMainToolbar() {
                       <span className="icon text-white">
                         <i className="fas fa-radiation-alt fa-spin"></i>
                       </span>
-                      <span className="text">模板形式 =1=  </span>
+                      <span className="text">預覽模板    </span>
                     </span>
            
-                    <span className="badge badge-danger badge-counter">啟動中</span>
+                    {/*<span className="badge badge-danger badge-counter">啟動中</span>*/}
+
                   </a>
       
                   <div className="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                     <h6 className="dropdown-header">
-                      啟動模板形式
+                      預覽模板
                     </h6>
-                    <a className="dropdown-item d-flex align-items-center" href="./#">
+                    <a className="dropdown-item d-flex align-items-center" target="_blank" rel="noopener noreferrer" href={cid} >
                       <div className="dropdown-list-image mr-3">
                         <img className="rounded-circle" src="/image/bg-2-contact.jpg" alt="img" />
                         <div className="status-indicator bg-success"></div>
@@ -65,7 +73,7 @@ function ManagerContentMainToolbar() {
                     </a>
                   </div>
                 </li>
-
+{/*
                 <li className="nav-item dropdown no-arrow mx-1">
                   <a className="nav-link dropdown-toggle" href="/#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span className="btn btn-info btn-icon-split">
@@ -124,13 +132,13 @@ function ManagerContentMainToolbar() {
                     </a>
                   </div>
                 </li>
-
+*/}
                 <div className="topbar-divider d-none d-sm-block"></div>
 
                
                 <li className="nav-item dropdown no-arrow">
                   <a className="nav-link dropdown-toggle" href="/#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span className="mr-2 d-none d-lg-inline text-gray-600 small">永豐餘</span>
+                    <span className="mr-2 d-none d-lg-inline text-gray-600 small">{companyName}</span>
                   </a>
             
                   <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -149,6 +157,8 @@ function ManagerContentMainToolbar() {
               </ul>
 
             </nav>
+
+
         
     )
 }
