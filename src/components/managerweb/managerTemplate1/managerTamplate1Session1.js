@@ -284,13 +284,13 @@ class Session1 extends React.Component{
                                             <td>大標題</td>
                                             <td align='left'>永豐餘生技</td>
                                             <td>5個字以內</td>
-                                            <td>可自行輸入</td>
+                                            <td>不可空白</td>
                                         </tr>
                                         <tr>
                                             <td>副標題1</td>
                                             <td align='left'>期許作為一個專業及熱情的有機生活管家，貼心的讓客人輕鬆的享受有機生活。</td>
                                             <td>40個字以內</td>
-                                            <td>可自行輸入</td>
+                                            <td>不可空白</td>
                                         </tr>
                                         <tr>
                                             <td>副標題2</td>

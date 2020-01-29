@@ -102,53 +102,116 @@ class Session7 extends React.Component{
                     <h6 className="m-0 font-weight-bold text-primary">設定區段-{sessionName}</h6>
                 </a>
                 <div className="collapse collapsed" id="collapseCard7">
-                <div className="card-body">
-                        <form id='dataForm7' className={qaIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                            <Msg type ='LOADING'  value = {qaIsLoading} text='Processing ' /> 
-                            <Msg type ='ERROR' value = {qaErr} text= 'Opps! Error : ' />
-                            <input type="hidden" id="themeNum7" value={themeNum} />
-                            <InputSwitch sessionName={sessionName} inputName='qaEnable' inputState={qaEnable} stateObj={this} />
-                            <div className="form-row">
-                                <label> </label>
-                            </div>
-                            <InputText  title= {`${sessionName}1標題`} notice='(字數限制為30個字以內)' inputName='qa1Title' inputState={qa1Title}
-                                            stateObj={this} required={false} />
-                            <InputTextArea title={`${sessionName}1內容`}notice='(字數限制為135個字以內)' inputName='qa1Content' inputState={qa1Content}
-                                            rows='4' stateObj={this} required={false} />
-                            <InputText  title= {`${sessionName}2標題`} notice='(字數限制為30個字以內)' inputName='qa2Title' inputState={qa2Title}
-                                            stateObj={this} required={false} />
-                            <InputTextArea title={`${sessionName}2內容`}notice='(字數限制為135個字以內)' inputName='qa2Content' inputState={qa2Content}
-                                            rows='4' stateObj={this} required={false} />
-                            <InputText  title= {`${sessionName}3標題`} notice='(字數限制為30個字以內)' inputName='qa3Title' inputState={qa3Title}
-                                            stateObj={this} required={false} />
-                            <InputTextArea title={`${sessionName}3內容`}notice='(字數限制為135個字以內)' inputName='qa3Content' inputState={qa3Content}
-                                            rows='4' stateObj={this} required={false} />
-                            <InputText  title= {`${sessionName}4標題`} notice='(字數限制為30個字以內)' inputName='qa4Title' inputState={qa4Title}
-                                            stateObj={this} required={false} />
-                            <InputTextArea title={`${sessionName}4內容`}notice='(字數限制為135個字以內)' inputName='qa4Content' inputState={qa4Content}
-                                            rows='4' stateObj={this} required={false} />
-                            <InputText  title= {`${sessionName}5標題`} notice='(字數限制為30個字以內)' inputName='qa5Title' inputState={qa5Title}
-                                            stateObj={this} required={false} />           
-                            <InputTextArea title={`${sessionName}5內容`}notice='(字數限制為135個字以內)' inputName='qa5Content' inputState={qa5Content}
-                                            rows='4' stateObj={this} required={false} />
-
-                            {/*this.createQA(5).map((preName, index)=>{
-                                const titleName = `${preName}Title`;
-                                const contentName = `${preName}Content`;
-                                const thatState = this.state;
-                                return(
-                                    <div key={index}>
-                                        <InputText  title= {`${sessionName}${index+1}標題`} notice='(字數限制為30個字以內)' inputName={titleName} inputState={thatState[titleName]}
-                                            stateObj={this} required={false} />
-                                        <InputTextArea title={`${sessionName}${index+1}內容`}notice='(字數限制為135個字以內)' inputName={contentName} inputState={thatState[contentName]}
-                                            rows='4' stateObj={this} required={false} />
-                                    </div>
-                                )
-                            })*/}
+                    <div className="card-body">
                         
-                            <hr />
-                            <button type='submit' id='action7' value={actionType} className="btn btn-facebook btn-block" ><i className="fas fa-save"></i> 儲存設定</button>
+                            <form id='dataForm7' className={qaIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
+                                <Msg type ='LOADING'  value = {qaIsLoading} text='Processing ' /> 
+                                <Msg type ='ERROR' value = {qaErr} text= 'Opps! Error : ' />
+                                <input type="hidden" id="themeNum7" value={themeNum} />
+                                <InputSwitch sessionName={sessionName} inputName='qaEnable' inputState={qaEnable} stateObj={this} />
+                                <div className="form-row">
+                                    <label> </label>
+                                </div>
+                                <div className="form-row">
+                                    <div className="col-md-6 mb-3">
+                                        <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
+
+                                        <InputText  title= {`${sessionName}1標題`} notice='(字數限制為30個字以內)' inputName='qa1Title' inputState={qa1Title}
+                                                        stateObj={this} required={false} />
+                                        <InputTextArea title={`${sessionName}1內容`}notice='(字數限制為135個字以內)' inputName='qa1Content' inputState={qa1Content}
+                                                        rows='4' stateObj={this} required={false} />
+                                        <InputText  title= {`${sessionName}2標題`} notice='(字數限制為30個字以內)' inputName='qa2Title' inputState={qa2Title}
+                                                        stateObj={this} required={false} />
+                                        <InputTextArea title={`${sessionName}2內容`}notice='(字數限制為135個字以內)' inputName='qa2Content' inputState={qa2Content}
+                                                        rows='4' stateObj={this} required={false} />
+                                        <InputText  title= {`${sessionName}3標題`} notice='(字數限制為30個字以內)' inputName='qa3Title' inputState={qa3Title}
+                                                        stateObj={this} required={false} />
+                                        <InputTextArea title={`${sessionName}3內容`}notice='(字數限制為135個字以內)' inputName='qa3Content' inputState={qa3Content}
+                                                        rows='4' stateObj={this} required={false} />
+                                        <InputText  title= {`${sessionName}4標題`} notice='(字數限制為30個字以內)' inputName='qa4Title' inputState={qa4Title}
+                                                        stateObj={this} required={false} />
+                                        <InputTextArea title={`${sessionName}4內容`}notice='(字數限制為135個字以內)' inputName='qa4Content' inputState={qa4Content}
+                                                        rows='4' stateObj={this} required={false} />
+                                        <InputText  title= {`${sessionName}5標題`} notice='(字數限制為30個字以內)' inputName='qa5Title' inputState={qa5Title}
+                                                        stateObj={this} required={false} />           
+                                        <InputTextArea title={`${sessionName}5內容`}notice='(字數限制為135個字以內)' inputName='qa5Content' inputState={qa5Content}
+                                                        rows='4' stateObj={this} required={false} />
+
+                                            {/*this.createQA(5).map((preName, index)=>{
+                                                const titleName = `${preName}Title`;
+                                                const contentName = `${preName}Content`;
+                                                const thatState = this.state;
+                                                return(
+                                                    <div key={index}>
+                                                        <InputText  title= {`${sessionName}${index+1}標題`} notice='(字數限制為30個字以內)' inputName={titleName} inputState={thatState[titleName]}
+                                                            stateObj={this} required={false} />
+                                                        <InputTextArea title={`${sessionName}${index+1}內容`}notice='(字數限制為135個字以內)' inputName={contentName} inputState={thatState[contentName]}
+                                                            rows='4' stateObj={this} required={false} />
+                                                    </div>
+                                                )
+                                            })*/}
+
+                                        <hr />
+                                        <div  align="center"><button type='submit' id='action7' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
+                                    </div>
+                                    <div className="col-md-6 mb-3">
+                                        <div className="pic-bigger"><img src="/image/sample_01/07.png" alt="Temp1_FAQ" width="100%"/></div>
+                                        <div><a type="button" data-toggle="modal" href="#tmp1_faq">觀看放大圖例</a></div>
+                                        <hr />
+                                        <div>
+                                        <table border='1'>
+                                            <tr>
+                                                <th width="10%">項目</th>
+                                                <th width="35%">內容</th>
+                                                <th width="15%">規格</th>
+                                                <th width="40%">備註</th>
+                                            </tr>
+                                            <tr>
+                                                <td>常見問題標題</td>
+                                                <td align='left'>公司經營理念?</td>
+                                                <td>30個字以內</td>
+                                                <td>至少2則以上內容，才能輪播；<br />最多能輸入5則。</td>
+                                            </tr>
+                                            <tr>
+                                                <td>常見問題內容</td>
+                                                <td align='left'>本公司擁有優秀的經營團隊，秉持著『◆安心宣言◆生態平衡◆達人堅持』的經營理念，追求企業永續經營及成長；除整體營運穩定外，獲利狀況也逐年提昇，是國內績優廠商之一。 我們更希望能屏除一般人對於天然食物口味上的既定印象，帶給消費者既健康又安全、可口的好味道。</td>
+                                                <td>135個字以內</td>
+                                                <td>至少2則以上內容，才能輪播；<br />最多能輸入5則。</td>
+                                            </tr>
+                                            <tr>
+                                                <td>常見問題背景圖片</td>
+                                                <td align='left'>寬、高(px)</td>
+                                                <td>1920*1080</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>接受格式為png、jpg</li>
+                                                        <li>不可空白</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
+                    
+                        <div className="modal fade" id="tmp1_faq" tabindex="-1">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">常見問題範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_01/07.png" alt="tmp1_faq" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
            </div>

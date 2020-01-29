@@ -78,11 +78,58 @@ class Session8 extends React.Component{
                             <div className="form-row">
                                 <label> </label>
                             </div>
-                            <ImgUpload title={`${sessionName}背景圖片`} notice='(圖檔尺寸大小為 1080*540 ，接受格式為png、jpg)' objName='contactImg'  imgUpload={contactImgUpload} 
-                                            imgFileName={contactImg} parentObj={this} imgW={2400} imgH={1200} required={false} />
-                        <hr />
-                        <button type='submit' id='action8' value={actionType} className="btn btn-facebook btn-block" ><i className="fas fa-save"></i> 儲存設定</button>
+                            <div className="form-row">
+                                <div className="col-md-6 mb-3">
+                                    <ImgUpload title={`${sessionName}背景圖片`} notice='(圖檔尺寸大小為 1920*1080 ，接受格式為png、jpg)' objName='contactImg'  imgUpload={contactImgUpload} 
+                                                    imgFileName={contactImg} parentObj={this} imgW={2400} imgH={1200} required={false} />
+                                    <hr />
+                                    <div  align="center"><button type='submit' id='action8' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
+                                </div>
+                                <div className="col-md-6 mb-3">
+                                    <div><img src="/image/sample_01/08.png" alt="Temp1_Contact" width="100%"/></div>
+                                    <div><a type="button" data-toggle="modal" href="#tmp1_contact">觀看放大圖例</a></div>
+                                    <hr />
+                                    <div>
+                                        <table border='1'>
+                                            <tr>
+                                                <th width="10%">項目</th>
+                                                <th width="35%">內容</th>
+                                                <th width="15%">規格</th>
+                                                <th width="40%">備註</th>
+                                            </tr>
+                                            <tr>
+                                                <td>連絡我們背景圖片</td>
+                                                <td align='left'>寬、高(px)</td>
+                                                <td>1920*1080</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>接受格式為png、jpg</li>
+                                                        <li>不可空白</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>                                
+                            </div>
                         </form>
+                        <div className="modal fade" id="tmp1_contact" tabindex="-1">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">連絡我們範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_01/08.png" alt="tmp1_contact" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
            </div>
