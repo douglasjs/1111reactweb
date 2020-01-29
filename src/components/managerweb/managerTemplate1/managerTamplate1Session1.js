@@ -304,6 +304,22 @@ class Session1 extends React.Component{
                         </div>
                     </div>
                 </div>
+                <div className="modal fade" id="tmp1_banner" tabindex="-1">
+                    <div className="modal-dialog sample-img-width">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <p className="modal-title">主視覺範例</p>
+                                <button type="button" className="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div className="modal-body text-center">
+                                <img src="/image/sample_01/01.png" alt="tmp1_banner" width="100%" />
+                            </div>
+                            <div className="modal-footer">
+                                <p className="small">範例僅供參考</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
