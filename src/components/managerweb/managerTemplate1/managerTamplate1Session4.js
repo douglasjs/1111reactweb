@@ -199,6 +199,85 @@ class Session4 extends React.Component{
 
                                                 <div id="dataTable_filter" className="dataTables_filter text-left">
                                                      <button className='btn btn-primary' onClick={this.handleGo}  value='Create'>增加職位 <i className="fas fa-folder-plus" value='Create' /></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                     <button className='btn btn-primary' onClick={this.handleGo}  value='Create'>增加標籤 <i className="fas fa-folder-plus" value='Create' /></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <div className="row-expand-slide-appear">
+                                    <table className="table table-hover table-bordered" id="dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th className='text-center'>刪除</th>
+                                                <th onClick={()=>(this.handleShort('tag'))}>標籤   {this.sortMark('tag')}    </th>
+                                                <th onClick={()=>(this.handleShort('position'))}>職稱  {this.sortMark('position')} </th>
+                                                <th onClick={()=>(this.handleShort('salary'))}>薪資   {this.sortMark('salary')}  </th>
+                                                <th onClick={()=>(this.handleShort('benefit'))}>工作內容       {this.sortMark('benefit')}  </th>
+                                                <th onClick={()=>(this.handleShort('location'))}>地點  {this.sortMark('location')}</th>                                        
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                    <th className='text-center'>刪除</th>
+                                                    <th>標籤</th>
+                                                    <th>職稱</th>
+                                                    <th>薪資  </th>
+                                                    <th>工作內容 </th>
+                                                    <th>地點</th>
+        
+                                                </tr>
+                                        </tfoot>
+                                        <tbody>
+
+                    
+                                        
+                                                        <tr>
+                                                            <td className='text-center'><button className='btn btn-primary' onClick={this.handleDelete} value=''>刪除 <i className="far fa-trash-alt" /></button></td>
+                                                            <td>北區</td>
+                                                            <td>業務專員(電商&禮贈品) </td>
+                                                            <td>面議(經常性薪資4萬/月含以上) </td>
+                                                            <td>其 　他：一、多樣全面的福利項目： 1)獎金福利:端午、中秋、年終獎金、員工分紅、專利獎金、發明王獎金、資深員工獎金。 2)醫療保險及健康照護:員工團體保險(包含壽 </td>
+                                                            <td>台北市中正區</td>
+                                                         
+                                                        </tr>
+                                        
+                                            
+                                        </tbody>
+                                        </table>
+
+                                </div>
+                               
+
+
+                                </div>
+                    </div>
+                </div>
+           </div>
+        )
+
+    }
+
+    /*render(){
+
+        const count =1;
+        const totalPage = 1;
+        const start = 1;
+        const end = 1;
+        return(
+            <div className="card shadow mb-4">
+                <a href="#collapseCard4" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard4">
+                <h6 className="m-0 font-weight-bold text-primary">設定區段-職缺介紹</h6>
+                </a>
+                <div className="collapse collapsed" id="collapseCard4">
+                    <div className="card-body">
+                    <div className="table-responsive">
+                                <div className="row">
+                                        <div className="col-sm-12 col-md-6">
+                                            <div className="dataTables_length" id="dataTable_length">
+
+                                                <div id="dataTable_filter" className="dataTables_filter text-left">
+                                                     <button className='btn btn-primary' onClick={this.handleGo}  value='Create'>增加職位 <i className="fas fa-folder-plus" value='Create' /></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 </div>
                                             </div>
                                         </div>
@@ -280,7 +359,7 @@ class Session4 extends React.Component{
            </div>
         )
 
-    }
+    }*/
 
 
 }
