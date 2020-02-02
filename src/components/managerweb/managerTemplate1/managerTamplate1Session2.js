@@ -199,17 +199,18 @@ class Session2 extends React.Component{
                     <h6 className="m-0 font-weight-bold text-primary">設定區段-公司介紹</h6>
                 </a>
                 <div className="collapse collapsed" id="collapseCard2">
-                    <div><img src="/image/sample_01/02.png" alt="Temp1_Company" width="50%"/></div>
-                    <div>
-                        <a type="button" data-toggle="modal" href="#tmp1_company">觀看放大圖例</a>
-                    </div>
-                    <hr />
                     <div className="card-body">
-                        <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                         <form id='dataForm2' className={introductionIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                             <Msg type ='LOADING'  value = {introductionIsLoading} text='Processing ' /> 
                             <Msg type ='ERROR' value = {introductionErr} text= 'Opps! Error : ' />
                             <input type="hidden" id="themeNum2" value={themeNum} />
+
+                            <div><img src="/image/sample_01/02.png" alt="Temp1_Company" width="50%"/></div>
+                            <div><a type="button" data-toggle="modal" href="#tmp1_company">觀看放大圖例</a></div>
+                            <hr />
+
+                            <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
+                            
                             <div className="form-row">
                                 <div className="col-md-6 mb-3">
                                     <div className="form-row">

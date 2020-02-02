@@ -86,13 +86,13 @@ class Session3 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard3">
                     <div className="card-body">
-                        <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                         <div className="form-row">
                             <div className="col-md-6 mb-3">
                                 <form id='dataForm3' className={benefitIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                                     <Msg type ='LOADING'  value = {benefitIsLoading} text='Processing ' /> 
                                     <Msg type ='ERROR' value = {benefitErr} text= 'Opps! Error : ' />
                                     <input type="hidden" id="themeNum3" value={themeNum} />
+                                    <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <ImgUpload title='員工福利圖片' notice='(圖檔尺寸大小為 500*354 ，接受格式為png、jpg)' objName='benefitImg'  imgUpload={benefitImgUpload} imgFileName={benefitImg} 
                                                     parentObj={this}  imgW={500} imgH={354} required={false}/> 
                                     <div className="form-row">

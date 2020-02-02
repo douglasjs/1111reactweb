@@ -183,13 +183,13 @@ class Session1 extends React.Component{
                 </a>
                 <div className="collapse show" id="collapseCard1">
                     <div className="card-body">
-                        <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                         <div className="form-row">
                             <div className="col-md-6 mb-3">
                                 <form id='dataForm1' className={companyIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                                     <Msg type ='LOADING'  value = {companyIsLoading} text='Processing ' /> 
                                     <Msg type ='ERROR' value = {companyErr} text= 'Opps! Error : ' />
                                     <input type="hidden" id="themeNum" value={themeNum} />
+                                    <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row">
                                             <label><span className='text-danger'>*</span>大標題 <em className='text-primary'>( 字數限制為5個字以內 )</em> </label>
                                             <input type="text" className={`form-control`} id="title"  placeholder="大標題"   
