@@ -218,9 +218,183 @@ class managerGeneralSetting extends React.Component{
            UploadImg = this.state.uploadImg !=='' ?  this.state.uploadImg.file : `${envConfig.WebAPI}/image/${cid}?fileName=${logoImg}`;
         }
 
-        
+
 
         return(
+            <div className="container-fluid">
+                <div className="card shadow">
+                    <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 className="m-0 font-weight-bold text-primary">網站通用設定 (<span className='text-danger'>*</span> 為必填欄位)</h6>
+                    </div>
+                    <div className="card-body">
+                   
+                        <Msg type ='LOADING'  value = {isLoading} text='Processing ' /> 
+                        <Msg type ='ERROR' value = {err} text= 'Opps! Error : ' />
+                  
+
+                        <form id='dataForm' className={isLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
+
+                          <div className="form-row">
+                              <div className="col-md-12 mb-3">
+                                  
+                                  <label><span className='text-danger'>*</span> 請選擇開放版型</label>
+                                  
+                                  <div className="row">
+                                    <div className="radio col-4">
+                                        <div><img src="/image/sample_01/01.png" alt="Temp1_fullimg" width="100%"/></div>
+                                        <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
+                                        <label><input type="radio" value="tp01" checked={true} />版型一</label>
+                                    </div>
+                                    <div className="radio col-4">
+                                        <div><img src="/image/sample_01/01.png" alt="Temp2_fullimg" width="100%"/></div>
+                                        <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
+                                        <label><input type="radio" value="tp02" />版型二</label>
+                                    </div>
+                                    <div className="radio col-4">
+                                        <div><img src="/image/sample_01/01.png" alt="Temp_fullimg" width="100%"/></div>
+                                        <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
+                                        <label><input type="radio" value="tp02" />版型三</label>
+                                    </div>
+                                  </div>
+                                  <div className="row">
+                                    <div className="radio col-4">
+                                        <div><img src="/image/sample_01/01.png" alt="Temp1_fullimg" width="100%"/></div>
+                                        <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
+                                        <label><input type="radio" value="tp01" checked={true} />版型四</label>
+                                    </div>
+                                    <div className="radio col-4">
+                                        <div><img src="/image/sample_01/01.png" alt="Temp2_fullimg" width="100%"/></div>
+                                        <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
+                                        <label><input type="radio" value="tp02" />版型五</label>
+                                    </div>
+                                    <div className="radio col-4">
+                                        <div><img src="/image/sample_01/01.png" alt="Temp_fullimg" width="100%"/></div>
+                                        <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
+                                        <label><input type="radio" value="tp02" />版型六</label>
+                                    </div>
+                                  </div>
+
+
+                                  <div className="modal fade" id="tmp1_fullimg" tabindex="-1">
+                                    <div className="modal-dialog sample-img-width">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <p className="modal-title">版型一 範例</p>
+                                                <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div className="modal-body text-center">
+                                                <img src="/image/sample_01/01.png" alt="tmp1_fullimg" width="100%" />
+                                            </div>
+                                            <div className="modal-footer">
+                                                <p className="small">範例僅供參考</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  
+                              </div>
+                              
+                          </div>
+
+                          <hr width="70%"/>
+
+                          <div className="form-row mb-3" align="center">
+                                <div className="col-4">
+                                    <label><span className='text-danger'>*</span> 請選擇版型色系</label>
+                                </div>
+                                <div className="col-4">
+                                    <select  className="form-control" id="styleType" value={styleType} onChange={this.handleChange('styleType')} required>
+                                        <option value=''>選擇版型色系...</option>
+                                        <option value='blue.css'>藍色系</option>
+                                        <option value='green.css'>綠色系</option>
+                                        <option value='orange.css'>橘色系</option>
+                                        <option value='purple.css'>紫色系</option>
+                                        <option value='red.css'>紅色系</option>
+                                        <option value='yellow.css'>黃色系</option>
+                                    </select>
+                                </div>
+                          </div>
+
+                          <hr width="70%"/>
+
+                          <div className="form-row">
+                              <div className="col-md-6 mb-3">
+                                  <label><span className='text-danger'>*</span> 公司名稱</label>
+                                  <input type="text" className={`form-control`} id="companyName"  placeholder="公司名稱"   
+                                    value={companyName} onChange={this.handleChange('companyName')} required />
+                                  <div className="invalid-feedback">
+                                         公司名稱不可以空白
+                                  </div>
+                              </div>
+                              <div className="col-md-6 mb-3">
+                                  <label><span className='text-danger'>*</span> 公司英文名稱</label>
+                                  <input type="text" className={`form-control`} id="companyEName"  placeholder="公司英文名稱"
+                                     value={companyEName} onChange={this.handleChange('companyEName')} required />
+                                  <div className="invalid-feedback">
+                                        公司英文名稱不可以空白
+                                  </div>
+                              </div>
+                          </div>
+                          <div className="form-row">
+                            <div className="col-md-6 mb-3">
+                                <label>網站標題</label>
+                                <input  className={`form-control`} id="title"  placeholder="網站標題"
+                                     value={title} onChange={this.handleChange('title')} />
+                            </div>
+                            <div className="col-md-6 mb-3">
+                                <label><span className='text-danger'>*</span> 聯絡我們 Email</label>
+                                <input className={`form-control`} id="email"  placeholder="email" 
+                                    value={email} onChange={this.handleChange('email')} required/>
+                            </div>
+                                  
+                          </div>
+                          <div className="form-row">
+                            <div className="col-md-6 mb-3">
+                                <label>網站關鍵字</label>
+                                <textarea  className={`form-control`} id="keyword"  placeholder="網站關鍵字"  
+                                     value={keyword} onChange={this.handleChange('keyword')} />
+                            </div>
+                            <div className="col-md-6 mb-3">
+                                <label>網站敘述</label>
+                                  <textarea className={`form-control`} id="description"  placeholder="網站敘述" rows="5"
+                                    value={description} onChange={this.handleChange('description')} />
+                            </div>
+                          </div>
+
+                          <div className="form-row">
+                                <label><span className='text-danger'>*</span> 公司LOGO上傳</label><em className='text-primary'>(圖檔尺寸大小為 104*32，接受格式為png、jpg)</em> 
+                          </div>
+                          <div className="row">
+                              <div className="col-md-6">
+                                <div className="card image-area mt-4"><img id="imageResult" src={UploadImg} alt="For Upload" className="img-fluid rounded shadow-sm mx-auto d-block" /></div>
+                                 
+                                <div className="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                                    <input type="hidden" id="logoImg" value={logoImg} />
+                                   
+                                    <input id="upload" type="file"  accept="image/*" onChange={this.handleFileUpload} className="form-control border-0 uploadFile" />
+                                    <label id="upload-label" htmlFor="upload" className="font-weight-light text-muted upload-label">選擇檔案</label>
+                                    <div className="input-group-append">
+                                        <label htmlFor="upload" className="btn btn-light m-0 rounded-pill px-4"> <i className="fa fa-cloud-upload mr-2 text-muted"></i>
+                                        <small className="text-uppercase font-weight-bold text-muted">選擇檔案</small></label>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                          <hr />
+                          
+                          <div  align="center">
+                            <button type='submit' id='action' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button>
+                          </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        )
+        
+
+        
+        /*return(
             <div className="container-fluid">
                 <div className="card shadow">
                     <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -316,7 +490,7 @@ class managerGeneralSetting extends React.Component{
                     </div>
                 </div>
             </div>
-        )
+        )*/
 
     }
 
