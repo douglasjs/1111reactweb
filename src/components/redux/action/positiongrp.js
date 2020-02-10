@@ -120,7 +120,7 @@ const getPositionGrpList = (ono, themeNum) =>{
         
       
         dispatch(getPositionGrpStart());
-        axios({ method: 'get', url: `${envConfig.WebAPI}/positionGrp/${ono}`, params:{themeNum: themeNum}})
+        axios({ method: 'get', url: `${envConfig.WebAPI}/positionGroup/${ono}`, params:{themeNum: themeNum}})
             .then(response => {
                 //setTimeout(() => {
                     dispatch(getPositionGrpSuccess(response.data));
@@ -145,7 +145,7 @@ const createPositionGrp = (data) =>{
             dispatch(createPositionGrpStart());
             axios({
                 method: 'post',
-                url: `${envConfig.WebAPI}/positionGrp/`,
+                url: `${envConfig.WebAPI}/positionGroup/`,
                 data
             })
             .then((response)=>{
@@ -169,7 +169,7 @@ const updatePositionGrp = (data) =>{
             dispatch(editPositionGrpStart());
             axios({
                 method: 'put',
-                url: `${envConfig.WebAPI}/positionGrp/${data.ono}`,
+                url: `${envConfig.WebAPI}/positionGroup/${data.ono}`,
                 data
             })
             .then((response) => {

@@ -1,11 +1,12 @@
 import React from 'react';
-
+import Msg from '../msg';
 
 class Session4 extends React.Component{
 
     constructor(props){
         super(props);
         this.state={
+                groupName : " ",
                 currentPage: 1,
                 rowSet: 5,
                 sorters: [{
@@ -181,10 +182,27 @@ class Session4 extends React.Component{
 
     render(){
 
-        /*const count =1;
-        const totalPage = 1;
-        const start = 1;
-        const end = 1;*/
+        //const { positionData, positionErr, positionLoading} = this.props.positionReducer;
+        const { positionGrpData, positionGrpErr, positionGrpLoading} = this.props.positionGrpReducer;
+        console.log(positionGrpErr);
+        const cid = this.props.match.params.cid.trim();
+
+        let groupName = this.state.groupName;
+
+        if(positionGrpData && positionGrpData.length > 0){
+            actionType = 'modify';
+            groupName.forEach(element => {
+                groupName = groupName !==" " ? groupName : element.groupName;
+            })
+        }
+
+
+  
+
+        let themeNum = 'tp01';
+        let actionType = 'create';
+
+
         return(
             <div className="card shadow mb-4">
                 <a href="#collapseCard4" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard4">
@@ -269,7 +287,7 @@ class Session4 extends React.Component{
                             <div className="modal-body text-center">
 
                                 <form id='dataLableForm' className=""  onSubmit={this.handleSubmit}>
-                                    <input type="hidden" id="themeNum" value="{themeNum}" />
+                                    <input type="hidden" id="themeNumTag" value="tp01" />
                                     
                                     <div className="form-row">
                                         <label><span className='text-danger'>*</span>標籤 1 <em className='text-primary'>( 字數限制為4個字以內 )</em> </label>
@@ -294,7 +312,7 @@ class Session4 extends React.Component{
 
                                     <hr />
                                     <div align="center">
-                                        <button type='submit' id='action1' value="{actionType}" className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button>
+                                        <button type='submit' id='actionTag' value="{actionType}" className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button>
                                     </div>
                                 </form>
 
@@ -403,7 +421,7 @@ class Session4 extends React.Component{
                                     </div>
 
                                     <div align="center">
-                                        <button type='submit' id='action1' value="{actionType}" className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 選擇職缺 </button>
+                                        <button type='submit' id='actionPositionDetail' value="{actionType}" className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 選擇職缺 </button>
                                     </div>
 
                                 </form>
