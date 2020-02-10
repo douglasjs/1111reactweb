@@ -253,29 +253,29 @@ class managerGeneralSetting extends React.Component{
                                     <div className="radio col-4">
                                         <div><img src="/image/sample_01/01.png" alt="Temp_fullimg" width="100%"/></div>
                                         <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
-                                        <label><input type="radio" value="tp02" />版型三</label>
+                                        <label><input type="radio" value="tp03" />版型三</label>
                                     </div>
                                   </div>
                                   <div className="row">
                                     <div className="radio col-4">
                                         <div><img src="/image/sample_01/01.png" alt="Temp1_fullimg" width="100%"/></div>
                                         <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
-                                        <label><input type="radio" value="tp01" checked={true} />版型四</label>
+                                        <label><input type="radio" value="tp04" checked={true} />版型四</label>
                                     </div>
                                     <div className="radio col-4">
                                         <div><img src="/image/sample_01/01.png" alt="Temp2_fullimg" width="100%"/></div>
                                         <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
-                                        <label><input type="radio" value="tp02" />版型五</label>
+                                        <label><input type="radio" value="tp05" />版型五</label>
                                     </div>
                                     <div className="radio col-4">
                                         <div><img src="/image/sample_01/01.png" alt="Temp_fullimg" width="100%"/></div>
                                         <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
-                                        <label><input type="radio" value="tp02" />版型六</label>
+                                        <label><input type="radio" value="tp06" />版型六</label>
                                     </div>
                                   </div>
 
 
-                                  <div className="modal fade" id="tmp1_fullimg" tabindex="-1">
+                                  <div className="modal fade" id="tmp1_fullimg">
                                     <div className="modal-dialog sample-img-width">
                                         <div className="modal-content">
                                             <div className="modal-header">

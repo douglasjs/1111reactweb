@@ -131,12 +131,15 @@ class Session5 extends React.Component{
                                 <hr />
                                 <div>
                                     <table border='1'>
+                                        <thead>
                                         <tr>
                                             <th width="10%">項目</th>
                                             <th width="35%">內容</th>
                                             <th width="15%">規格</th>
                                             <th width="40%">備註</th>
                                         </tr>
+                                        </thead>
+                                        <tbody>
                                         <tr>
                                             <td>品牌介紹主標題</td>
                                             <td align='left'>專業及熱情的有機生活管家</td>
@@ -210,12 +213,13 @@ class Session5 extends React.Component{
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand">觀看範例圖片</a>
                                             </td>
                                         </tr>
+                                        </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="modal fade" id="tmp1_brand" tabindex="-1">
+                        <div className="modal fade" id="tmp1_brand">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -232,7 +236,7 @@ class Session5 extends React.Component{
                             </div>
                         </div>
 
-                        <div className="modal fade" id="tmp1_brand_subtitle01" tabindex="-1">
+                        <div className="modal fade" id="tmp1_brand_subtitle01">
                             <div className="modal-dialog modal-lg">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -249,7 +253,7 @@ class Session5 extends React.Component{
                             </div>
                         </div>
 
-                        <div className="modal fade" id="tmp1_brand_subtitle02" tabindex="-1">
+                        <div className="modal fade" id="tmp1_brand_subtitle02">
                             <div className="modal-dialog modal-lg">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -266,7 +270,7 @@ class Session5 extends React.Component{
                             </div>
                         </div>
 
-                        <div className="modal fade" id="tmp1_brand_subtitle03" tabindex="-1">
+                        <div className="modal fade" id="tmp1_brand_subtitle03">
                             <div className="modal-dialog modal-lg">
                                 <div className="modal-content">
                                     <div className="modal-header">

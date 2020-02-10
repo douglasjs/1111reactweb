@@ -194,12 +194,15 @@ class Session6 extends React.Component{
                                 <hr />
                                 <div>
                                     <table border='1'>
+                                        <thead>
                                         <tr>
                                             <th width="10%">項目</th>
                                             <th width="35%">內容範例</th>
                                             <th width="15%">規格</th>
                                             <th width="40%">備註</th>
                                         </tr>
+                                        </thead>
+                                        <tbody>
                                         <tr>
                                             <td>自訂選單名稱</td>
                                             <td align='left'>有機食材</td>
@@ -227,11 +230,12 @@ class Session6 extends React.Component{
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize_title">觀看範例圖片</a>
                                             </td>
                                         </tr>
+                                        </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_customize" tabindex="-1">
+                        <div className="modal fade" id="tmp1_customize">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -247,7 +251,7 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_customize_menu" tabindex="-1">
+                        <div className="modal fade" id="tmp1_customize_menu">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -263,7 +267,7 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_customize_title" tabindex="-1">
+                        <div className="modal fade" id="tmp1_customize_title">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -303,12 +307,15 @@ class Session6 extends React.Component{
                                             <hr />
                                             <div>
                                                 <table border='1'>
+                                                    <thead>
                                                     <tr>
                                                         <th width="10%">項目</th>
                                                         <th width="35%">內容範例</th>
                                                         <th width="15%">規格</th>
                                                         <th width="40%">備註</th>
                                                     </tr>
+                                                    </thead>
+                                                    <tbody>
                                                     <tr>
                                                         <td>卡片1標題</td>
                                                         <td align='left'>海水生態蝦仁</td>
@@ -337,6 +344,7 @@ class Session6 extends React.Component{
                                                             </ul>
                                                         </td>
                                                     </tr>
+                                                    </tbody>
                                                 </table>
                                             </div>
                                         </div>
@@ -370,12 +378,15 @@ class Session6 extends React.Component{
                                             <hr />
                                             <div>
                                                 <table border='1'>
+                                                    <thead>
                                                     <tr>
                                                         <th width="10%">項目</th>
                                                         <th width="35%">內容範例</th>
                                                         <th width="15%">規格</th>
                                                         <th width="40%">備註</th>
                                                     </tr>
+                                                    </thead>
+                                                    <tbody>
                                                     <tr>
                                                         <td>卡片2標題</td>
                                                         <td align='left'>安心鱸魚排</td>
@@ -404,6 +415,7 @@ class Session6 extends React.Component{
                                                             </ul>
                                                         </td>
                                                     </tr>
+                                                    </tbody>
                                                 </table>
                                             </div>
                                         </div>
@@ -437,12 +449,15 @@ class Session6 extends React.Component{
                                             <hr />
                                             <div>
                                                 <table border='1'>
+                                                    <thead>
                                                     <tr>
                                                         <th width="10%">項目</th>
                                                         <th width="35%">內容範例</th>
                                                         <th width="15%">規格</th>
                                                         <th width="40%">備註</th>
                                                     </tr>
+                                                    </thead>
+                                                    <tbody>
                                                     <tr>
                                                         <td>卡片3標題</td>
                                                         <td align='left'>蒲燒鯛魚腹排</td>
@@ -471,6 +486,7 @@ class Session6 extends React.Component{
                                                             </ul>
                                                         </td>
                                                     </tr>
+                                                    </tbody>
                                                 </table>
                                             </div>
                                         </div>
@@ -504,12 +520,15 @@ class Session6 extends React.Component{
                                             <hr />
                                             <div>
                                                 <table border='1'>
+                                                    <thead>
                                                     <tr>
                                                         <th width="10%">項目</th>
                                                         <th width="35%">內容範例</th>
                                                         <th width="15%">規格</th>
                                                         <th width="40%">備註</th>
                                                     </tr>
+                                                    </thead>
+                                                    <tbody>
                                                     <tr>
                                                         <td>卡片4標題</td>
                                                         <td align='left'>一品鮑魚糙米粥</td>
@@ -538,6 +557,7 @@ class Session6 extends React.Component{
                                                             </ul>
                                                         </td>
                                                     </tr>
+                                                    </tbody>
                                                 </table>
                                             </div>
                                         </div>
