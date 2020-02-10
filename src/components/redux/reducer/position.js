@@ -31,11 +31,11 @@ const position = (state= positionInitState, action) =>{
                      return GET_POSITION_ACTION;
          case 'CREATE_POSITION_ERROR' :
                     return GET_POSITION_ACTION;
-         case 'EDIT_POSITION_START' :
+         case 'DEL_POSITION_START' :
                     return GET_POSITION_ACTION;
-         case 'EDIT_POSITION_SUCCESS' :
+         case 'DEL_POSITION_SUCCESS' :
                     return GET_POSITION_ACTION;
-         case 'EDIT_POSITION_ERROR' :
+         case 'DEL_POSITION_ERROR' :
                     return GET_POSITION_ACTION;
          default:
                     return state;

@@ -1,12 +1,15 @@
 import React from 'react';
 import Msg from '../msg';
+import InputText from '../../sharecomponents/inputText';
 
 class Session4 extends React.Component{
 
     constructor(props){
         super(props);
         this.state={
-                groupName : " ",
+                groupName1 : " ",
+                groupName2 : " ",
+                groupName3 : " ",
                 currentPage: 1,
                 rowSet: 5,
                 sorters: [{
@@ -179,28 +182,116 @@ class Session4 extends React.Component{
 
     }
 
+    handleTagSubmit = (event) =>{
+        event.preventDefault();
+        const cid = this.props.match.params.cid;
+
+        const submitObj = {
+            ono: cid,
+            themeNum : event.target.themeNum4.value,
+            groupName1:  event.target.groupName1.value,
+            groupName2:  event.target.groupName2.value,
+            groupName3:  event.target.groupName3.value
+
+        }
+
+
+        if(event.target.actionTag.value === 'create'){
+            this.props.createPositionGrp(submitObj);
+        }
+        if(event.target.actionTag.value === 'modify'){
+            this.props.updatePositionGrp(submitObj);
+        }
+     
+    }
+
+
+    handlePositionSubmit = (event) =>{
+        event.preventDefault();
+        const cid = this.props.match.params.cid;
+        const { kind00Data } = this.props.kind00Reducer;
+        const allTarget = event.target;
+
+        let submitObj;
+        let checkName;
+        let tagName;
+        
+        if(kind00Data && kind00Data.length > 0){
+            
+            kind00Data.forEach( element =>{
+                checkName =  `check_${element.eNo}`;
+                tagName = `tag_${element.eNo}`;
+                if(allTarget[checkName].checked){
+                    submitObj = {
+                        oNo: cid,
+                        themeNum : event.target.themeNum4_position.value,
+                        eNo:  element.eNo.toString(),
+                        position_group : allTarget[tagName].value,
+                        position_name:  element.Position,
+                        position_salary:  element.Salary,
+                        position_matter:  element.Matter,
+                        position_workCity: element.WorkCity
+                    }
+                    this.props.createPosition(submitObj);
+                }
+
+            })
+        }
+     
+    }
+
+
+    handlePositionDelete = (event) =>{
+
+        const cid = this.props.match.params.cid;
+
+        const submitObj = {
+            oNo: cid,
+            themeNum : 'tp01',
+            eNo:  event.target.value
+        }
+
+        this.props.deletePosition(submitObj);
+     
+    }
+
 
     render(){
 
         //const { positionData, positionErr, positionLoading} = this.props.positionReducer;
-        const { positionGrpData, positionGrpErr, positionGrpLoading} = this.props.positionGrpReducer;
-        console.log(positionGrpErr);
-        const cid = this.props.match.params.cid.trim();
+        const { positionGrpData, positionGrpErr, positionGrpIsLoading} = this.props.positionGrpReducer;
+        const { positionData } = this.props.positionReducer;
+        const { kind00Data } = this.props.kind00Reducer;
+        
+        let themeNum = 'tp01';
+        let actionType = 'create';
 
-        let groupName = this.state.groupName;
+        let groupName1 = this.state.groupName1;
+        let groupName2 = this.state.groupName2;
+        let groupName3 = this.state.groupName3;
 
         if(positionGrpData && positionGrpData.length > 0){
             actionType = 'modify';
-            groupName.forEach(element => {
-                groupName = groupName !==" " ? groupName : element.groupName;
+            positionGrpData.forEach( element  => {
+                groupName1 = groupName1 !==" " ? groupName1 : element.groupName1;
+                groupName2 = groupName2 !==" " ? groupName2 : element.groupName2;
+                groupName3 = groupName3 !==" " ? groupName3 : element.groupName3;
             })
         }
 
+        let cityGroup =[];
+        let dutyGroup =[];
 
-  
+        if(kind00Data && kind00Data.length > 0){
+               
+            kind00Data.forEach( element => {
+                cityGroup.push(element.WorkCity);
+                dutyGroup.push(element.DutyArr[0]);
+            })
 
-        let themeNum = 'tp01';
-        let actionType = 'create';
+        }
+        cityGroup = [...new Set(cityGroup)];
+        dutyGroup = [...new Set(dutyGroup)];
 
 
         return(
@@ -226,14 +317,17 @@ class Session4 extends React.Component{
                                 <div className="row-expand-slide-appear">
                                     <table className="table table-hover table-bordered" id="dataTable">
                                         <thead>
-                                            <tr>
-                                                <th className='text-center'>刪除</th>
-                                                <th onClick={()=>(this.handleShort('tag'))}>標籤   {this.sortMark('tag')}    </th>
-                                                <th onClick={()=>(this.handleShort('position'))}>職稱  {this.sortMark('position')} </th>
-                                                <th onClick={()=>(this.handleShort('salary'))}>薪資   {this.sortMark('salary')}  </th>
-                                                <th onClick={()=>(this.handleShort('benefit'))}>工作內容       {this.sortMark('benefit')}  </th>
-                                                <th onClick={()=>(this.handleShort('location'))}>地點  {this.sortMark('location')}</th>                                        
-                                            </tr>
+                                      
+                                                <tr>
+                                                    <th className='text-center'>刪除</th>
+                                                    <th onClick={()=>(this.handleShort('tag'))}>標籤   {this.sortMark('tag')}    </th>
+                                                    <th onClick={()=>(this.handleShort('position'))}>職稱  {this.sortMark('position')} </th>
+                                                    <th onClick={()=>(this.handleShort('salary'))}>薪資   {this.sortMark('salary')}  </th>
+                                                    <th onClick={()=>(this.handleShort('matter'))}>工作內容       {this.sortMark('matter')}  </th>
+                                                    <th onClick={()=>(this.handleShort('location'))}>地點  {this.sortMark('location')}</th>                                        
+                                                </tr>
+                                       
+                                            
                                         </thead>
                                         <tfoot>
                                             <tr>
@@ -249,17 +343,19 @@ class Session4 extends React.Component{
                                         <tbody>
 
                     
-                                        
-                                                        <tr>
-                                                            <td className='text-center'><button className='btn btn-primary' onClick={this.handleDelete} value=''>刪除 <i className="far fa-trash-alt" /></button></td>
-                                                            <td>北區</td>
-                                                            <td>行銷專員 (官網&電子商務) </td>
-                                                            <td>面議(經常性薪資4萬/月含以上) </td>
-                                                            <td>1. 專案: 新官網及APP，掌管開發時程；整合公司內部需求與外部廠商溝通；規劃前後台功能及整體流程動線 2. 負責官網之營運：官網前台及後台管理及問題解決，與外部廠商溝通；商品上下架、庫存追蹤及...</td>
-                                                            <td>台北市中正區</td>
+                                            {Array.isArray(positionData) && positionData.map((element, index) => {
+                                                    return(
+                                                        <tr key={index}>
+                                                            <td className='text-center'><button id={`del_${element.eNo}`}  className='btn btn-primary' value={element.eNo} onClick={this.handlePositionDelete}>刪除 <i className="far fa-trash-alt" /></button></td>
+                                                            <td>{element.position_group} </td>
+                                                            <td>{element.position_name} </td>
+                                                            <td>{element.position_salary} </td>
+                                                            <td>{element.position_matter} </td>
+                                                            <td>{element.position_workCity} </td>
                                                          
                                                         </tr>
-                                        
+                                                    )
+                                             })}
                                             
                                         </tbody>
                                         </table>
@@ -285,35 +381,21 @@ class Session4 extends React.Component{
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div className="modal-body text-center">
-
-                                <form id='dataLableForm' className=""  onSubmit={this.handleSubmit}>
-                                    <input type="hidden" id="themeNumTag" value="tp01" />
+                                <Msg type ='LOADING'  value = {positionGrpIsLoading} text='Processing ' /> 
+                                <Msg type ='ERROR' value = {positionGrpErr} text= 'Opps! Error : ' />
+                                <form id='dataTagForm' className={positionGrpIsLoading ? 'd-none' : ''}  onSubmit={this.handleTagSubmit}>
+                                    <input type="hidden" id="themeNum4" value={themeNum} />
                                     
-                                    <div className="form-row">
-                                        <label><span className='text-danger'>*</span>標籤 1 <em className='text-primary'>( 字數限制為4個字以內 )</em> </label>
-                                        <input type="text" className={`form-control`} id="jobLable1"  placeholder="標籤 1"   
-                                            value="jobLable1" onChange="{this.handleChange('jobLable1')}" required />
-                                        <div className="invalid-feedback">標籤不可以空白</div>
-                                    </div>
 
-                                    <div className="form-row">
-                                        <label><span className='text-danger'>*</span>標籤 2 <em className='text-primary'>( 字數限制為4個字以內 )</em> </label>
-                                        <input type="text" className={`form-control`} id="jobLable2"  placeholder="標籤 2"   
-                                            value="jobLable2" onChange="{this.handleChange('jobLable2')}" required />
-                                        <div className="invalid-feedback">標籤不可以空白</div>
-                                    </div>
-
-                                    <div className="form-row">
-                                        <label><span className='text-danger'>*</span>標籤 3 <em className='text-primary'>( 字數限制為4個字以內 )</em> </label>
-                                        <input type="text" className={`form-control`} id="jobLable3"  placeholder="標籤 3"   
-                                            value="jobLable3" onChange="{this.handleChange('jobLable3')}" required />
-                                        <div className="invalid-feedback">標籤不可以空白</div>
-                                    </div>
-
+                                    <InputText title='標籤 1' notice='( 字數限制為4個字以內 )' inputName='groupName1' inputState={groupName1}
+                                                stateObj={this} required={true} />
+                                    <InputText title='標籤 2' notice='( 字數限制為4個字以內 )' inputName='groupName2' inputState={groupName2}
+                                                stateObj={this} required={false} />
+                                    <InputText title='標籤 3' notice='( 字數限制為4個字以內 )' inputName='groupName3' inputState={groupName3}
+                                                stateObj={this} required={false} />
+                                 
                                     <hr />
-                                    <div align="center">
-                                        <button type='submit' id='actionTag' value="{actionType}" className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button>
-                                    </div>
+                                    <div align="center"><button type='submit' id='actionTag' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
                                 </form>
 
                             </div>
@@ -341,7 +423,7 @@ class Session4 extends React.Component{
                 </div>
 
 
-
+            
                 <div className="modal fade" id="tmp1_addjob">
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
@@ -350,78 +432,80 @@ class Session4 extends React.Component{
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div className="modal-body text-center">
-
-                                <div className="form-row">
-                                    <div className="col-12" align="left"><label><em className='text-primary'>請先選擇地區及職務類別</em> </label></div>
-                                    <div className="col-md-5 mb-3">
-                                        <select  className="form-control" id="kind_0-WorkCity" value="{kind_0-WorkCity}" onChange="{this.handleChange('kind_0-WorkCity')}" required>
-                                                <option value=''>選擇地區...</option>
-                                                <option value='kind_0-WorkCity'>台北市中正區</option>
-                                        </select>
+                              
+                                <form id='dataPositionForm'  onSubmit={this.handlePositionSubmit}>
+                                     <input type="hidden" id="themeNum4_position" value={themeNum} />
+                                    <div className="form-row">
+                                        <div className="col-12" align="left"><label><em className='text-primary'>請先選擇地區及職務類別</em> </label></div>
+                                        <div className="col-md-5 mb-3">
+                                            <select  className="form-control" id="kind_0-WorkCity"  required>
+                                            {cityGroup && cityGroup.map( (element, index) =>{
+                                                return(<option key={index} value='element'>{element}</option>)
+                                            })}
+                                            </select>
+                                        
+                                        </div>
+                                        <div className="col-md-5 mb-3">
+                                            <select  className="form-control" id="kind_0-DutyName" required>
+                                                {dutyGroup && dutyGroup.map( (element, index) =>{
+                                                    return(<option key={index} value={element.DutyName}>{element.DutyName}</option>)
+                                                })}
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div className="col-md-5 mb-3">
-                                        <select  className="form-control" id="kind_0-DutyName" value="{kind_0-DutyName}" onChange="{this.handleChange('kind_0-DutyName')}" required>
-                                                <option value=''>選擇職務類別...</option>
-                                                <option value='kind_0-DutyName'>業務</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <form id='dataForm' className=""  onSubmit={this.handleSubmit}>
-
-                                <div className="form-row">
-                                    <div className="col-12" align="left"><label><em className='text-primary'>請選擇要設定的標籤</em> </label></div>
-                                    <div className="col-md-3 mb-3">
-                                        <select  className="form-control" id="LableType" value="{LableType}" onChange="{this.handleChange('LableType')}" required>
-                                                <option value=''>選擇標籤...</option>
-                                                <option value='Lable01'>北區</option>
-                                                <option value='Lable02'>中區</option>
-                                                <option value='Lable03'>南區</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                    
+        
                                     <div className="form-row">
                                         <table className="table table-hover table-bordered" id="dataTable">
                                             <thead>
                                                 <tr>
                                                     <th className='text-center'>選取</th>
+                                                    <th onClick={()=>(this.handleShort('tag'))}>標籤   {this.sortMark('tag')}    </th>
                                                     <th onClick={()=>(this.handleShort('position'))}>職稱  {this.sortMark('position')} </th>
                                                     <th onClick={()=>(this.handleShort('salary'))}>薪資   {this.sortMark('salary')}  </th>
-                                                    <th onClick={()=>(this.handleShort('benefit'))}>工作內容       {this.sortMark('benefit')}  </th>
+                                                    <th onClick={()=>(this.handleShort('matter'))}>工作內容       {this.sortMark('matter')}  </th>
                                                     <th onClick={()=>(this.handleShort('location'))}>地點  {this.sortMark('location')}</th>                                        
                                                 </tr>
                                             </thead>
                                             <tfoot>
-                                                <tr>
-                                                        <th className='text-center'>選取</th>
-                                                        <th>職稱</th>
-                                                        <th>薪資  </th>
-                                                        <th>工作內容 </th>
-                                                        <th>地點</th>
+                                               
+                                                    
+                                                            <tr>
+                                                                <th className='text-center'>選取</th>
+                                                                <th>標籤  </th>
+                                                                <th>職稱  </th>
+                                                                <th>薪資  </th>
+                                                                <th>工作內容 </th>
+                                                                <th>地點 </th>
+                                                            </tr>
+                                                    
             
-                                                    </tr>
+                                                   
                                             </tfoot>
                                             <tbody>
-
-                        
-                                            
-                                                            <tr>
-                                                                <td className='text-center'><input type="checkbox" name="check01" value="kind_0_eNo" /></td>                                                            
-                                                                <td>行銷專員 (官網&電子商務) </td>
-                                                                <td>面議(經常性薪資4萬/月含以上) </td>
-                                                                <td>1. 專案: 新官網及APP，掌管開發時程；整合公司內部需求與外部廠商溝通；規劃前後台功能及整體流程動線 2. 負責官網之營運：官網前台及後台管理及問題解決，與外部廠商溝通；商品上下架、庫存追蹤及...</td>
-                                                                <td>台北市中正區</td>
-                                                            
-                                                            </tr>
-                                            
-                                                
+                                                { kind00Data && kind00Data.map( (element, index) =>{
+                                                    return(
+                                                        <tr key={index}>
+                                                            <td className='text-center'><input type="checkbox" name={`check_${element.eNo}`} value={element.eNo} /></td> 
+                                                            <td>    
+                                                                <select className="form-control" id={`tag_${element.eNo}`} required>
+                                                                        {groupName1 && groupName1 !==" " && <option value={groupName1}>{groupName1}</option>}
+                                                                        {groupName2 && groupName2 !==" " &&<option value={groupName2}>{groupName2}</option>}
+                                                                        {groupName3 && groupName3 !==" " &&<option value={groupName3}>{groupName3}</option>}
+                                                                </select>
+                                                            </td>                                                 
+                                                            <td>{element.Position}</td>
+                                                            <td>{element.Salary}</td>
+                                                            <td>{element.Matter.substring(0, 50)}</td>
+                                                            <td>{element.WorkCity}</td>
+                                                        </tr>
+                                                    )
+                                                })}
                                             </tbody>
                                         </table>
                                     </div>
 
                                     <div align="center">
-                                        <button type='submit' id='actionPositionDetail' value="{actionType}" className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 選擇職缺 </button>
+                                        <button type='submit' id='actionPosition' className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 選擇職缺 </button>
                                     </div>
 
                                 </form>
@@ -434,6 +518,8 @@ class Session4 extends React.Component{
                         </div>
                     </div>
                 </div>
+
+        
            </div>
         )
 

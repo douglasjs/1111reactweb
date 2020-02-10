@@ -75,11 +75,11 @@ const createPositionError = (error) =>{
 }
 
 
-const editPositionStart = () =>{
+const deletePositionStart = () =>{
 
     return {
 
-        type: "EDIT_POSITION_START",
+        type: "DEL_POSITION_START",
         positionData: [],
         positionErr: null,
         positionIsLoading: true,
@@ -87,11 +87,11 @@ const editPositionStart = () =>{
 
 }
 
-const editPositionSuccess = (response) =>{
+const deletePositionSuccess = (response) =>{
 
     return {
 
-        type: "EDIT_POSITION_SUCCESS",
+        type: "DEL_POSITION_SUCCESS",
         positionData: [response],
         positionErr: null,
         positionIsLoading: false,
@@ -101,10 +101,10 @@ const editPositionSuccess = (response) =>{
 
 
 
-const editPositionError = (error) =>{
+const deletePositionError = (error) =>{
 
     return {
-        type: "EDIT_POSITION_ERROR",
+        type: "DEL_POSITION_ERROR",
         positionData: [],
         positionErr: error,
         positionIsLoading: false,
@@ -151,38 +151,36 @@ const createPosition = (data) =>{
             .then((response)=>{
                 dispatch(createPositionSuccess(response.data));
                 alert("新增資料完成");
-               // dispatch(getPositionList(data.ono));
+                dispatch(getPositionList(data.oNo));
             })
             .catch(err => {
                 dispatch(createPositionError(err));
+                alert("已有資料");
+                dispatch(getPositionList(data.oNo));
             });
     }
 
 }
 
 
-const updatePosition = (data) =>{
-    console.log(data);
+const deletePosition = (data) =>{
+
     return (dispatch) =>{
         
       
-            dispatch(editPositionStart());
-            axios({
-                method: 'put',
-                url: `${envConfig.WebAPI}/Position/${data.ono}`,
-                data
-            })
+            dispatch(deletePositionStart());
+            axios.delete(`${envConfig.WebAPI}/Position/`, { data })
             .then((response) => {
-                dispatch(editPositionSuccess(response.data));
-                alert("更新資料完成");
-              //  dispatch(getPositionList(data.ono));
+                dispatch(deletePositionSuccess(response.data));
+                alert("資料刪除完成");
+                dispatch(getPositionList(data.oNo));
             })
             .catch(err => {
-                dispatch(editPositionError(err));
+                dispatch(deletePositionError(err));
             });
     }
 
 }
 
 
-export  {getPositionList,createPosition,updatePosition};
+export  {getPositionList,createPosition,deletePosition};

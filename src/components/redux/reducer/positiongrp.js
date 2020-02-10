@@ -45,4 +45,3 @@ const positionGrp = (state= positionGrpInitState, action) =>{
 }
 
 export default positionGrp;
-

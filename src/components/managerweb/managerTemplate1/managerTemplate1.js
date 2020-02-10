@@ -27,6 +27,8 @@ class ManagerTemplate1 extends React.Component{
         this.props.getcontactList(cid, 'tp01');
         this.props.getPositionList(cid, 'tp01');
         this.props.getPositionGrpList(cid, 'tp01');
+        this.props.getkind00(cid);
+        this.props.getkind01(cid);
     }
 
     render(){

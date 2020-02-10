@@ -6,9 +6,10 @@ import {getbrandList,createbrand,updatebrand} from './brand';
 import {getcustomizeList,createcustomize,updatecustomize} from './customize';
 import {getqaList,createqa,updateqa} from './qa';
 import {getcontactList,createcontact,updatecontact} from './contact' ;
-import {getPositionList,createPosition,updatePosition} from './position' ;
+import {getPositionList,createPosition,deletePosition} from './position' ;
 import {getPositionGrpList,createPositionGrp,updatePositionGrp} from './positiongrp';
 import getkind01 from './apiKind1js';
+import getkind00 from './apiKind0js';
 import setTable from './tablesetAction';
  
 export {
@@ -18,6 +19,7 @@ export {
 	updateData,
 	setTable,
 	getkind01,
+	getkind00,
 	getCompanyList,
 	createCompany,
 	updateCompany,
@@ -37,6 +39,6 @@ export {
 	createqa,
 	updateqa,
 	getcontactList,createcontact,updatecontact,
-	getPositionList,createPosition,updatePosition,
+	getPositionList,createPosition,deletePosition,
 	getPositionGrpList,createPositionGrp,updatePositionGrp
 }

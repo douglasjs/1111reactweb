@@ -45,7 +45,7 @@ const getKind01 = (ono) =>{
         
       
         dispatch(getKind01Start());
-        axios({ method: 'get', url: envConfig.kind00API})
+        axios({ method: 'get', url: envConfig.kind01API})
             .then(response => {
                 //setTimeout(() => {
                     dispatch(getKind01Success(response.data));
