@@ -6,6 +6,8 @@ import {getbrandList,createbrand,updatebrand} from './brand';
 import {getcustomizeList,createcustomize,updatecustomize} from './customize';
 import {getqaList,createqa,updateqa} from './qa';
 import {getcontactList,createcontact,updatecontact} from './contact' ;
+import {getPositionList,createPosition,updatePosition} from './position' ;
+import {getPositionGrpList,createPositionGrp,updatePositionGrp} from './positiongrp';
 import getkind01 from './apiKind1js';
 import setTable from './tablesetAction';
  
@@ -34,7 +36,7 @@ export {
 	getqaList,
 	createqa,
 	updateqa,
-	getcontactList,
-	createcontact,
-	updatecontact
+	getcontactList,createcontact,updatecontact,
+	getPositionList,createPosition,updatePosition,
+	getPositionGrpList,createPositionGrp,updatePositionGrp
 }
