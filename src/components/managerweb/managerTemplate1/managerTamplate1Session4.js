@@ -274,7 +274,7 @@ class Session4 extends React.Component{
 
 
 
-                <div className="modal fade" id="tmp1_addlable" tabindex="-1">
+                <div className="modal fade" id="tmp1_addlable">
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -323,7 +323,7 @@ class Session4 extends React.Component{
                         </div>
                     </div>
                 </div>
-                <div className="modal fade" id="tmp1_joblable_img" tabindex="-1">
+                <div className="modal fade" id="tmp1_joblable_img">
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -342,7 +342,7 @@ class Session4 extends React.Component{
 
 
 
-                <div className="modal fade" id="tmp1_addjob" tabindex="-1">
+                <div className="modal fade" id="tmp1_addjob">
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
                             <div className="modal-header">

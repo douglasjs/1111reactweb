@@ -235,12 +235,15 @@ class Session2 extends React.Component{
                                     <hr />
                                     <div>
                                         <table border='1'>
+                                            <thead>
                                             <tr>
                                                 <th width="10%">項目</th>
                                                 <th width="35%">內容範例</th>
                                                 <th width="15%">規格</th>
                                                 <th width="40%">備註</th>
                                             </tr>
+                                            </thead>
+                                            <tbody>
                                             <tr>
                                                 <td>主標題</td>
                                                 <td align='left'>永豐餘品牌對人與環境的永續經營</td>
@@ -253,12 +256,13 @@ class Session2 extends React.Component{
                                                 <td>80個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="modal fade" id="tmp1_company" tabindex="-1">
+                            <div className="modal fade" id="tmp1_company">
                                 <div className="modal-dialog sample-img-width">
                                     <div className="modal-content">
                                         <div className="modal-header">
@@ -338,12 +342,15 @@ class Session2 extends React.Component{
                                                 <hr />
                                                 <div>
                                                     <table border='1'>
+                                                        <thead>
                                                         <tr>
                                                             <th width="10%">項目</th>
                                                             <th width="35%">內容範例</th>
                                                             <th width="15%">規格</th>
                                                             <th width="40%">備註</th>
                                                         </tr>
+                                                        </thead>
+                                                        <tbody>
                                                         <tr>
                                                             <td>小標題1</td>
                                                             <td align='left'>有機食材宅配服務</td>
@@ -368,6 +375,7 @@ class Session2 extends React.Component{
                                                             <td>20個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
+                                                        </tbody>
                                                     </table>
                                                 </div>
                                             </div>
@@ -375,7 +383,7 @@ class Session2 extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                            <div className="modal fade" id="tmp1_company_subtitle01" tabindex="-1">
+                            <div className="modal fade" id="tmp1_company_subtitle01">
                                 <div className="modal-dialog modal-xl">
                                     <div className="modal-content">
                                         <div className="modal-header">
@@ -456,12 +464,15 @@ class Session2 extends React.Component{
                                                 <hr />
                                                 <div>
                                                     <table border='1'>
+                                                        <thead>
                                                         <tr>
                                                             <th width="10%">項目</th>
                                                             <th width="35%">內容範例</th>
                                                             <th width="15%">規格</th>
                                                             <th width="40%">備註</th>
                                                         </tr>
+                                                        </thead>
+                                                        <tbody>
                                                         <tr>
                                                             <td>小標題2</td>
                                                             <td align='left'>有機零售實體通路</td>
@@ -486,6 +497,7 @@ class Session2 extends React.Component{
                                                             <td>20個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
+                                                        </tbody>
                                                     </table>
                                                 </div>
                                             </div>
@@ -494,7 +506,7 @@ class Session2 extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                            <div className="modal fade" id="tmp1_company_subtitle02" tabindex="-1">
+                            <div className="modal fade" id="tmp1_company_subtitle02">
                                 <div className="modal-dialog modal-xl">
                                     <div className="modal-content">
                                         <div className="modal-header">
@@ -576,12 +588,15 @@ class Session2 extends React.Component{
                                                 <hr />
                                                 <div>
                                                     <table border='1'>
+                                                        <thead>
                                                         <tr>
                                                             <th width="10%">項目</th>
                                                             <th width="35%">內容範例</th>
                                                             <th width="15%">規格</th>
                                                             <th width="40%">備註</th>
                                                         </tr>
+                                                        </thead>
+                                                        <tbody>
                                                         <tr>
                                                             <td>小標題3</td>
                                                             <td align='left'>從農場到餐桌的餐飲通路</td>
@@ -606,6 +621,7 @@ class Session2 extends React.Component{
                                                             <td>20個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
+                                                        </tbody>
                                                     </table>
                                                 </div>
                                             </div>
@@ -614,7 +630,7 @@ class Session2 extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                            <div className="modal fade" id="tmp1_company_subtitle03" tabindex="-1">
+                            <div className="modal fade" id="tmp1_company_subtitle03">
                                 <div className="modal-dialog modal-xl">
                                     <div className="modal-content">
                                         <div className="modal-header">

@@ -91,12 +91,15 @@ class Session8 extends React.Component{
                                     <hr />
                                     <div>
                                         <table border='1'>
+                                            <thead>
                                             <tr>
                                                 <th width="10%">項目</th>
                                                 <th width="35%">內容</th>
                                                 <th width="15%">規格</th>
                                                 <th width="40%">備註</th>
                                             </tr>
+                                            </thead>
+                                            <tbody>
                                             <tr>
                                                 <td>連絡我們背景圖片</td>
                                                 <td align='left'>寬、高(px)</td>
@@ -108,12 +111,13 @@ class Session8 extends React.Component{
                                                     </ul>
                                                 </td>
                                             </tr>
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div>                                
                             </div>
                         </form>
-                        <div className="modal fade" id="tmp1_contact" tabindex="-1">
+                        <div className="modal fade" id="tmp1_contact">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">

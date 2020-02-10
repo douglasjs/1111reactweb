@@ -159,12 +159,15 @@ class Session7 extends React.Component{
                                         <hr />
                                         <div>
                                         <table border='1'>
+                                            <thead>
                                             <tr>
                                                 <th width="10%">項目</th>
                                                 <th width="35%">內容</th>
                                                 <th width="15%">規格</th>
                                                 <th width="40%">備註</th>
                                             </tr>
+                                            </thead>
+                                            <tbody>
                                             <tr>
                                                 <td>常見問題標題</td>
                                                 <td align='left'>公司經營理念?</td>
@@ -188,13 +191,14 @@ class Session7 extends React.Component{
                                                     </ul>
                                                 </td>
                                             </tr>
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div>
                             </div>
                         </form>
                     
-                        <div className="modal fade" id="tmp1_faq" tabindex="-1">
+                        <div className="modal fade" id="tmp1_faq">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">

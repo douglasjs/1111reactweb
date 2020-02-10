@@ -134,12 +134,15 @@ class Session3 extends React.Component{
                                 <hr />
                                 <div>
                                     <table border='1'>
+                                        <thead>
                                         <tr>
                                             <th width="10%">項目</th>
                                             <th width="35%">內容</th>
                                             <th width="15%">規格</th>
                                             <th width="40%">備註</th>
                                         </tr>
+                                        </thead>
+                                        <tbody>
                                         <tr>
                                             <td>員工福利圖片</td>
                                             <td align='left'>寬、高(px)</td>
@@ -168,11 +171,12 @@ class Session3 extends React.Component{
                                             <td>350個字以內</td>
                                             <td>可自行編輯排版，不可空白</td>
                                         </tr>
+                                        </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_benefit" tabindex="-1">
+                        <div className="modal fade" id="tmp1_benefit">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
