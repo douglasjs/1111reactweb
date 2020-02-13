@@ -260,7 +260,7 @@ class managerGeneralSetting extends React.Component{
                                     <div className="radio col-4">
                                         <div><img src="/image/sample_01/01.png" alt="Temp1_fullimg" width="100%"/></div>
                                         <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
-                                        <label><input type="radio" value="tp04" checked={true} />版型四</label>
+                                        <label><input type="radio" value="tp04"/>版型四</label>
                                     </div>
                                     <div className="radio col-4">
                                         <div><img src="/image/sample_01/01.png" alt="Temp2_fullimg" width="100%"/></div>
