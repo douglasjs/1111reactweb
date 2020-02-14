@@ -22,6 +22,7 @@ class CompanyTitle extends React.Component{
         let companySubTitle2;
         let companyBackgroundImg1;
         let companyBackgroundImg2;
+        let companyurl = 'https://m.1111.com.tw/corp/' + cid + '/';
 
         if(companyData && companyData.length > 0){
             companyData.forEach(element => {
@@ -72,7 +73,7 @@ class CompanyTitle extends React.Component{
     
                             </header>
     
-                            <a href="https://m.1111.com.tw/corp/50750609/" className="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-18 font-weight-bold ltr-sp-05 px-2 bg-hover-white text-hover-primary mb-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+                            <a href={companyurl} className="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-18 font-weight-bold ltr-sp-05 px-2 bg-hover-white text-hover-primary mb-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
                                 <span>
                                     <span className="btn-txt">我要應徵</span>
                                 </span>
