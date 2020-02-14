@@ -8,7 +8,7 @@ import useScript from '../sharecomponents/usescript';
 
 function CustomerWeb(props) {
     const cid = props.match ? props.match.params.cid : props.cid ? props.cid : '' ;
-    const companyName = '1111人力銀行-永豐餘生技' + cid;
+    const companyName = '1111人力銀行-' + cid;
     const companyMeta = {
         keywords: '1111,永豐餘生技,人力,徵才',
         description: '永豐餘生技(股)公司是永豐餘投資控股股份有限公司旗下關係企業，創立於民國 89 年，主要從事食品生技業、有機農業、製造業、餐飲業等。&nbsp;1998年永豐餘生物科技在臺灣宜蘭成立了南澳豐園農場，投身有機的事業，致力於栽培各種有機的食材，積極推廣尊重自然的有機生活哲學，試圖扮演有機生活管家的角色。'
