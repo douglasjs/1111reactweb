@@ -47,17 +47,17 @@ class CompanyJobs extends React.Component {
                                             <ul className="nav tabs-nav ltr-sp-175 font-weight-bold" role="tablist">
                                                 {groupName1 &&
                                                     <li  role="presentation" className="active">
-                                                        <a style={style} href={`#${groupName1}`} aria-expanded="false" aria-controls= {groupName1} role="tab" data-toggle="tab"> {groupName1} </a>
+                                                        <a style={style} href="#ld-tab-pane-17"/*{`#${groupName1}`}*/ aria-expanded="false" aria-controls= {groupName1} role="tab" data-toggle="tab"> {groupName1} </a>
                                                     </li>
                                                 }
                                                 {groupName2 &&
-                                                    <li  role="presentation" className="active">
-                                                        <a style={style} href={`#${groupName2}`} aria-expanded="false" aria-controls= {groupName2} role="tab" data-toggle="tab"> {groupName2} </a>
+                                                    <li  role="presentation">
+                                                        <a style={style} href="#ld-tab-pane-18"/*{`#${groupName2}`}*/ aria-expanded="false" aria-controls= {groupName2} role="tab" data-toggle="tab"> {groupName2} </a>
                                                     </li>
                                                 }
                                                 {groupName3 &&
-                                                    <li role="presentation" className="active">
-                                                        <a style={style} href={`#${groupName3}`} aria-expanded="false" aria-controls= {groupName3} role="tab" data-toggle="tab"> {groupName3} </a>
+                                                    <li role="presentation">
+                                                        <a style={style} href="#ld-tab-pane-19"/*{`#${groupName3}`}*/ aria-expanded="false" aria-controls= {groupName3} role="tab" data-toggle="tab"> {groupName3} </a>
                                                     </li>
                                                 }
                                                
