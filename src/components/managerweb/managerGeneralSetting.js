@@ -220,7 +220,7 @@ class managerGeneralSetting extends React.Component{
 
 
 
-        return(
+        /*return(
             <div className="container-fluid">
                 <div className="card shadow">
                     <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -390,11 +390,11 @@ class managerGeneralSetting extends React.Component{
                     </div>
                 </div>
             </div>
-        )
+        )*/
         
 
         
-        /*return(
+        return(
             <div className="container-fluid">
                 <div className="card shadow">
                     <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -413,14 +413,24 @@ class managerGeneralSetting extends React.Component{
                                   <label><span className='text-danger'>*</span> 選用版型</label>
                                   <select  className="form-control" id="themeNum" value={themeNum} onChange={this.handleChange('themeNum')} required>
                                             <option value=''>選擇版型...</option>
-                                            <option value='tp01'>第一版型</option>
+                                            <option value='tp01'>版型一</option>
+                                            <option value='tp02'>版型二</option>
+                                            <option value='tp03'>版型三</option>
+                                            <option value='tp04'>版型四</option>
+                                            <option value='tp05'>版型五</option>
+                                            <option value='tp06'>版型六</option>
                                   </select>
                               </div>
                               <div className="col-md-6 mb-3">
                                   <label><span className='text-danger'>*</span> 選用版型色系</label>
                                   <select  className="form-control" id="styleType" value={styleType} onChange={this.handleChange('styleType')} required>
                                             <option value=''>選擇版型色系...</option>
+                                            <option value='blue.css'>藍色系</option>
+                                            <option value='green.css'>綠色系</option>
+                                            <option value='orange.css'>橘色系</option>
+                                            <option value='purple.css'>紫色系</option>
                                             <option value='red.css'>紅色系</option>
+                                            <option value='yellow.css'>黃色系</option>
                                   </select>
                               </div>
                           </div>
@@ -490,7 +500,7 @@ class managerGeneralSetting extends React.Component{
                     </div>
                 </div>
             </div>
-        )*/
+        )
 
     }
 
