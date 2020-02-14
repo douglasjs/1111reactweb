@@ -255,6 +255,32 @@ class Session4 extends React.Component{
      
     }
 
+    checkGroupName = (group) => {
+        const { positionGrpData} = this.props.positionGrpReducer;
+        let groupName1;
+        let groupName2;
+        let groupName3;
+
+        if(positionGrpData && positionGrpData.length > 0){
+            positionGrpData.forEach( element  => {
+                groupName1 = element.groupName1;
+                groupName2 = element.groupName2;
+                groupName3 = element.groupName3;
+            })
+        }
+
+        switch (group) {
+            case "1":
+                return groupName1;
+            case "2":
+                return groupName2;
+            case "3":
+                return groupName3;
+            default:
+                return null;
+        }
+    }
+
 
     render(){
 
@@ -347,7 +373,7 @@ class Session4 extends React.Component{
                                                     return(
                                                         <tr key={index}>
                                                             <td className='text-center'><button id={`del_${element.eNo}`}  className='btn btn-primary' value={element.eNo} onClick={this.handlePositionDelete}>刪除 <i className="far fa-trash-alt" /></button></td>
-                                                            <td>{element.position_group} </td>
+                                                            <td>{this.checkGroupName(element.position_group)} </td>
                                                             <td>{element.position_name} </td>
                                                             <td>{element.position_salary} </td>
                                                             <td>{element.position_matter} </td>
@@ -488,9 +514,9 @@ class Session4 extends React.Component{
                                                             <td className='text-center'><input type="checkbox" name={`check_${element.eNo}`} value={element.eNo} /></td> 
                                                             <td>    
                                                                 <select className="form-control" id={`tag_${element.eNo}`} required>
-                                                                        {groupName1 && groupName1 !==" " && <option value={groupName1}>{groupName1}</option>}
-                                                                        {groupName2 && groupName2 !==" " &&<option value={groupName2}>{groupName2}</option>}
-                                                                        {groupName3 && groupName3 !==" " &&<option value={groupName3}>{groupName3}</option>}
+                                                                        {groupName1 && groupName1 !==" " && <option value="1">{groupName1}</option>}
+                                                                        {groupName2 && groupName2 !==" " &&<option value="2">{groupName2}</option>}
+                                                                        {groupName3 && groupName3 !==" " &&<option value="3">{groupName3}</option>}
                                                                 </select>
                                                             </td>                                                 
                                                             <td>{element.Position}</td>
