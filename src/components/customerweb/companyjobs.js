@@ -93,7 +93,7 @@ class CompanyJobs extends React.Component {
                                                             </div>
                                                             <div className="cell" data-title="地點："> {element.position_workCity}</div>
                                                             <div className="cell" data-title="加入：">
-                                                                <a href={positionHref} className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
+                                                                <a href={positionHref} target="_blank" className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
                                                                     <span>
                                                                         <span className="btn-txt">應徵</span>
                                                                     </span>
