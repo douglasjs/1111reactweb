@@ -1,4 +1,5 @@
 import React from 'react';
+import TitleSet from '../../sharecomponents/titleset';
 import ManagerTemplate1Session1 from './managerTamplate1Session1';
 import ManagerTemplate1Session2 from './managerTamplate1Session2';
 import ManagerTemplate1Session3 from './managerTamplate1Session3';
@@ -32,9 +33,31 @@ class ManagerTemplate1 extends React.Component{
     }
 
     render(){
+        const cid = this.props.match.params.cid;
+        const { data } = this.props.datatableReducer;
+        let companyName = '1111人力銀行' + cid;
+        let companyMeta = {
+            keywords: '1111,人力,徵才',
+            description: '1111人力銀行'
+        }
+        const styleSheet = [
+            '/assetsBK/vendor/fontawesome-free/css/all.min.css',
+            'https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i',
+            '/assetsBK/css/sb-admin-2.min.css'
+        ]
 
+        if(data && data.length > 0){
+            companyName= data[0].companyName;
+            companyMeta = {
+                keywords: data[0].keywords,
+                description: data[0].description
+            }
+        }
+
+        
         return(
             <div className="container-fluid">
+                <TitleSet title={companyName} meta={companyMeta} style={styleSheet}   />
                 <ManagerTemplate1Session1 {...this.props}/>
                 <ManagerTemplate1Session2 {...this.props}/>
                 <ManagerTemplate1Session3 {...this.props}/>
@@ -43,6 +66,7 @@ class ManagerTemplate1 extends React.Component{
                 <ManagerTemplate1Session6 {...this.props}/>
                 <ManagerTemplate1Session7 {...this.props}/>
                 <ManagerTemplate1Session8 {...this.props}/>
+                <a href={`/${cid}`} target='_blank'rel="noopener noreferrer"><button className='btn btn-primary'>預覽畫面</button></a>
             </div>
           
         )
