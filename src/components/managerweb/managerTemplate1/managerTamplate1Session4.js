@@ -232,6 +232,7 @@ class Session4 extends React.Component{
                         position_matter:  element.Matter,
                         position_workCity: element.WorkCity
                     }
+                    console.log(submitObj);
                     this.props.createPosition(submitObj);
                 }
 
@@ -251,8 +252,10 @@ class Session4 extends React.Component{
             eNo:  event.target.value
         }
 
-        this.props.deletePosition(submitObj);
-     
+        if (submitObj.eNo){
+            this.props.deletePosition(submitObj);
+        }
+
     }
 
 
