@@ -30,8 +30,8 @@ class CustomerMain extends React.Component{
 
             let companyName = '1111人力銀行-' + cid;
             let companyMeta = {
-                keywords: '1111,永豐餘生技,人力,徵才',
-                description: '永豐餘生技(股)公司是永豐餘投資控股股份有限公司旗下關係企業，創立於民國 89 年，主要從事食品生技業、有機農業、製造業、餐飲業等。&nbsp;1998年永豐餘生物科技在臺灣宜蘭成立了南澳豐園農場，投身有機的事業，致力於栽培各種有機的食材，積極推廣尊重自然的有機生活哲學，試圖扮演有機生活管家的角色。'
+                keywords: '求職,求才,徵才,工作,找工作,求職網,人力銀行,幸福企業',
+                description: '找工作送1萬元！前1,000名不必抽、人人有獎，1111推動幸福企業提供高薪、最好的福利等你來，找到工作立即送1萬元大紅包！速分享好友，他拿1萬元，你也有分享獎金1千元'
             }
             let styleSheet = [
                 '/assets/vendors/liquid-icon/liquid-icon.min.css',
