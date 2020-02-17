@@ -442,7 +442,7 @@ class Session4 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-12" align="left"><label><em className='text-primary'>請先選擇地區及職務類別</em> </label></div>
                                         <div className="col-md-5 mb-3">
-                                            <select  className="form-control" id="kind_0-WorkCity"  onChange={this.handleChange('cityGroup')} required>
+                                            <select  className="form-control" id="kind_0-WorkCity"  onChange={this.handleChange('cityGroup')}>
                                             <option value="">不限</option>
                                             {cityGroup && cityGroup.map( (element, index) =>{
                                                 return(<option key={index} value={element}>{element}</option>)
@@ -451,7 +451,7 @@ class Session4 extends React.Component{
                                         
                                         </div>
                                         <div className="col-md-5 mb-3">
-                                            <select  className="form-control" id="kind_0-DutyName" onChange={this.handleChange('dutyGroup')} required>
+                                            <select  className="form-control" id="kind_0-DutyName" onChange={this.handleChange('dutyGroup')}>
                                                 <option value="">不限</option>
                                                 {dutyGroup && dutyGroup.map( (element, index) =>{
                                                     return(<option key={index} value={element.DutyName}>{element.DutyName}</option>)
