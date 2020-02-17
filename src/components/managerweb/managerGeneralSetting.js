@@ -454,31 +454,34 @@ class managerGeneralSetting extends React.Component{
                               </div>
                           </div>
                           <div className="form-row">
+                              <div className="col-md-6 mb-3">
                                   <label>網站標題</label>
                                   <input  className={`form-control`} id="title"  placeholder="網站標題"
                                      value={title} onChange={this.handleChange('title')} />
-                          </div>
-                          <div className="form-row">
-                                  <label>網站關鍵字</label>
-                                  <textarea  className={`form-control`} id="keyword"  placeholder="網站關鍵字"  
-                                     value={keyword} onChange={this.handleChange('keyword')} />
-                          </div>
-                          <div className="form-row">
+                              </div>
+                              <div className="col-md-6 mb-3">
                                   <label><span className='text-danger'>*</span> 聯絡我們 Email</label>
                                   <input className={`form-control`} id="email"  placeholder="email" 
                                     value={email} onChange={this.handleChange('email')} required/>
+                              </div>                                  
                           </div>
                           <div className="form-row">
+                              <div className="col-md-6 mb-3">
+                                  <label>網站關鍵字</label>
+                                  <textarea  className={`form-control`} id="keyword"  placeholder="網站關鍵字"  
+                                     value={keyword} onChange={this.handleChange('keyword')} />
+                              </div>
+                              <div className="col-md-6 mb-3">
                                   <label>網站敘述</label>
                                   <textarea className={`form-control`} id="description"  placeholder="網站敘述" rows="5"
                                     value={description} onChange={this.handleChange('description')} />
-                          </div>
-                         
-
+                              </div>
+                          </div>                          
                           <div className="form-row">
                                 <label><span className='text-danger'>*</span> 公司LOGO上傳</label><em className='text-primary'>(圖檔尺寸大小為 104*32，接受格式為png、jpg)</em> 
                           </div>
                           <div className="form-row">
+                              <div className="col-md-6 mb-3">
                                   <div className="card image-area mt-4"><img id="imageResult" src={UploadImg} alt="For Upload" className="img-fluid rounded shadow-sm mx-auto d-block" /></div>
                                  
                                   <div className="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
@@ -490,11 +493,13 @@ class managerGeneralSetting extends React.Component{
                                         <label htmlFor="upload" className="btn btn-light m-0 rounded-pill px-4"> <i className="fa fa-cloud-upload mr-2 text-muted"></i>
                                         <small className="text-uppercase font-weight-bold text-muted">選擇檔案</small></label>
                                     </div>
-                                </div>
-                             
+                                  </div>
+                              </div>
                           </div>
                           <hr />
-                          <button type='submit' id='action' value={actionType} className="btn btn-facebook btn-block" ><i className="fas fa-save"></i> 儲存設定</button>
+                          <div  align="center">
+                            <button type='submit' id='action' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button>
+                          </div>
                         </form>
 
                     </div>
