@@ -47,17 +47,17 @@ class CompanyJobs extends React.Component {
                                             <ul className="nav tabs-nav ltr-sp-175 font-weight-bold" role="tablist">
                                                 {groupName1 &&
                                                     <li  role="presentation" className="active">
-                                                        <a style={style} href={`#${groupName1}`}/*"#ld-tab-pane-17"*/ aria-expanded="false" aria-controls= {groupName1} role="tab" data-toggle="tab"> {groupName1} </a>
+                                                        <a style={style} href="#ld-tab-pane-17"/*{`#${groupName1}`}*/ aria-expanded="false" aria-controls= {groupName1} role="tab" data-toggle="tab"> {groupName1} </a>
                                                     </li>
                                                 }
                                                 {groupName2 &&
                                                     <li  role="presentation">
-                                                        <a style={style} href={`#${groupName2}`}/*"#ld-tab-pane-18"*/ aria-expanded="false" aria-controls= {groupName2} role="tab" data-toggle="tab"> {groupName2} </a>
+                                                        <a style={style} href="#ld-tab-pane-18"/*{`#${groupName2}`}*/ aria-expanded="false" aria-controls= {groupName2} role="tab" data-toggle="tab"> {groupName2} </a>
                                                     </li>
                                                 }
                                                 {groupName3 &&
                                                     <li role="presentation">
-                                                        <a style={style} href={`#${groupName3}`}/*"#ld-tab-pane-19"*/ aria-expanded="false" aria-controls= {groupName3} role="tab" data-toggle="tab"> {groupName3} </a>
+                                                        <a style={style} href="#ld-tab-pane-19"/*{`#${groupName3}`}*/ aria-expanded="false" aria-controls= {groupName3} role="tab" data-toggle="tab"> {groupName3} </a>
                                                     </li>
                                                 }
                                                
@@ -80,7 +80,6 @@ class CompanyJobs extends React.Component {
     
                                             
                                                 {Array.isArray(positionData) && positionData.map((element, index) => {
-                                                    let positionHref = "https://www.1111.com.tw/job/" + element.eNo + "/";
 
                                                   return(
                                                         <div key={index} className="jobs-table-row">
@@ -93,7 +92,7 @@ class CompanyJobs extends React.Component {
                                                             </div>
                                                             <div className="cell" data-title="地點："> {element.position_workCity}</div>
                                                             <div className="cell" data-title="加入：">
-                                                                <a href={positionHref} target="_blank" rel="noopener noreferrer" className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
+                                                                <a href='/#' target="_blank" rel="noopener noreferrer" className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
                                                                     <span>
                                                                         <span className="btn-txt">應徵</span>
                                                                     </span>
@@ -110,7 +109,7 @@ class CompanyJobs extends React.Component {
     
                                     </div>
     
-                                    {/*<div id="ld-tab-pane-18" role="tabpanel" className="tabs-pane fade">
+                                    <div id="ld-tab-pane-18" role="tabpanel" className="tabs-pane fade">
     
                                         <div className="jobs-table">
                                             <div className="jobs-table-row header">
@@ -366,7 +365,7 @@ class CompanyJobs extends React.Component {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>*/}
+                                    </div>
     
                                 </div>
                             </div>
