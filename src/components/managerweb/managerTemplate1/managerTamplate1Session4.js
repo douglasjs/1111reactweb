@@ -195,13 +195,13 @@ class Session4 extends React.Component{
 
         }
 
-
         if(event.target.actionTag.value === 'create'){
             this.props.createPositionGrp(submitObj);
         }
         if(event.target.actionTag.value === 'modify'){
             this.props.updatePositionGrp(submitObj);
         }
+
      
     }
 

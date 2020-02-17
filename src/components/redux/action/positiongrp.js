@@ -151,7 +151,7 @@ const createPositionGrp = (data) =>{
             .then((response)=>{
                 dispatch(createPositionGrpSuccess(response.data));
                 alert("新增資料完成");
-               // dispatch(getPositionGrpList(data.ono));
+                dispatch(getPositionGrpList(data.ono, data.themeNum ));
             })
             .catch(err => {
                 dispatch(createPositionGrpError(err));
