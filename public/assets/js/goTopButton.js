@@ -36,7 +36,7 @@ const scrollToTop = () => {
 // When the button is clicked, run our ScrolltoTop function above!
 scrollToTopButton.onclick = function(e) {
   e.preventDefault();
-  window.open("https://www.1111.com.tw/corp/1355006/#c4");
+  window.open("https://www.1111.com.tw/corp/50750609/#c4");
   //scrollToTop();
 }
 
