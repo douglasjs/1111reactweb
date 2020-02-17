@@ -33,18 +33,16 @@ class ManagerTemplate1 extends React.Component{
     }
 
     render(){
+      
         const cid = this.props.match.params.cid;
         const { data } = this.props.datatableReducer;
-        let companyName = '1111人力銀行' + cid;
+
+        let companyName = '1111人力銀行';
         let companyMeta = {
             keywords: '1111,人力,徵才',
             description: '1111人力銀行'
         }
-        const styleSheet = [
-            '/assetsBK/vendor/fontawesome-free/css/all.min.css',
-            'https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i',
-            '/assetsBK/css/sb-admin-2.min.css'
-        ]
+    
 
         if(data && data.length > 0){
             companyName= data[0].companyName;
@@ -53,11 +51,11 @@ class ManagerTemplate1 extends React.Component{
                 description: data[0].description
             }
         }
-
+    
         
         return(
             <div className="container-fluid">
-                <TitleSet title={companyName} meta={companyMeta} style={styleSheet}   />
+                 <TitleSet title={companyName} meta={companyMeta} />
                 <ManagerTemplate1Session1 {...this.props}/>
                 <ManagerTemplate1Session2 {...this.props}/>
                 <ManagerTemplate1Session3 {...this.props}/>
