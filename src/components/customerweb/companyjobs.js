@@ -81,7 +81,7 @@ class CompanyJobs extends React.Component {
                                             </div>
     
                                             
-                                                {Array.isArray(positionData) && positionData.filter( data => data.position_group === groupName1).map((element, index) => {
+                                                {Array.isArray(positionData) && positionData.filter( data => data.position_group === "1").map((element, index) => {
                                                     let positionURL = "https://www.1111.com.tw/job/"+ element.eNo + "/";
 
                                                   return(
@@ -122,7 +122,7 @@ class CompanyJobs extends React.Component {
                                             </div>
 
                                             
-                                                {Array.isArray(positionData) && positionData.filter( data => data.position_group === groupName2).map((element, index) => {
+                                                {Array.isArray(positionData) && positionData.filter( data => data.position_group === "2").map((element, index) => {
                                                     let positionURL = "https://www.1111.com.tw/job/"+ element.eNo + "/";
 
                                                 return(
@@ -163,7 +163,7 @@ class CompanyJobs extends React.Component {
                                             </div>
 
                                             
-                                                {Array.isArray(positionData) && positionData.filter( data => data.position_group === groupName3).map((element, index) => {
+                                                {Array.isArray(positionData) && positionData.filter( data => data.position_group === "3").map((element, index) => {
                                                     let positionURL = "https://www.1111.com.tw/job/"+ element.eNo + "/";
 
                                                 return(
