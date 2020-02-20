@@ -259,6 +259,33 @@ class Session4 extends React.Component{
 
     }
 
+    positionGroupMapping(positionGroup) {
+    
+        const {positionGrpData} = this.props.positionGrpReducer;
+
+        let groupName1 = this.state.groupName1;
+        let groupName2 = this.state.groupName2;
+        let groupName3 = this.state.groupName3;
+
+        if(positionGrpData && positionGrpData.length > 0){
+            positionGrpData.forEach( element  => {
+                groupName1 = groupName1 !==" " ? groupName1 : element.groupName1;
+                groupName2 = groupName2 !==" " ? groupName2 : element.groupName2;
+                groupName3 = groupName3 !==" " ? groupName3 : element.groupName3;
+            })
+        }
+
+        switch(positionGroup){
+            case "1":
+                return groupName1;
+            case "2":
+                return groupName2;
+            case "3":
+                return groupName3;
+            default: return "沒標籤";
+        }
+    }
+
 
     render(){
 
@@ -281,20 +308,6 @@ class Session4 extends React.Component{
                 groupName2 = groupName2 !==" " ? groupName2 : element.groupName2;
                 groupName3 = groupName3 !==" " ? groupName3 : element.groupName3;
             })
-        }
-
-        let positionGroup;
-
-        const positionGroupMapping = () => {
-            switch(positionGroup){
-                case 1:
-                    return groupName1;
-                case 2:
-                    return groupName2;
-                case 3:
-                    return groupName3;
-                default: return "沒";
-            }
         }
 
         let cityGroup =[];
@@ -364,7 +377,7 @@ class Session4 extends React.Component{
                                                     return(
                                                         <tr key={index}>
                                                             <td className='text-center'><button id={`del_${element.eNo}`}  className='btn btn-primary' value={element.eNo} onClick={this.handlePositionDelete}>刪除 <i className="far fa-trash-alt" /></button></td>
-                                                            <td>{positionGroupMapping(element.position_group)} </td>
+                                                            <td>{this.positionGroupMapping(element.position_group)} </td>
                                                             <td>{element.position_name} </td>
                                                             <td>{element.position_salary} </td>
                                                             <td>{element.position_matter} </td>
