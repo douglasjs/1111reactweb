@@ -1,6 +1,6 @@
-const scrollToTopButton = document.getElementById('jstopicon');
+var scrollToTopButton = document.getElementById('jstopicon');
 
-const scrollFuncIcon = () => {
+var scrollFuncIcon = () => {
   let y = window.scrollY;
   
   if (y > 0) {
@@ -12,9 +12,9 @@ const scrollFuncIcon = () => {
 
 window.addEventListener("scroll", scrollFuncIcon);
 
-const scrollToTopIcon = () => {
+var scrollToTopIcon = () => {
   
-  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  let c = document.documentElement.scrollTop || document.body.scrollTop;
   
   if (c > 0) {
     window.requestAnimationFrame(scrollToTopIcon);
