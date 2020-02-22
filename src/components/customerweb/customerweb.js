@@ -7,6 +7,14 @@ import useScript from '../sharecomponents/usescript';
 
 function CustomerWeb(props) {
 
+    const { data } = props.datatableReducer;
+    
+    let companyNo = "1355006";
+    if(data && data.length > 0){
+        companyNo = data[0].oNo;
+    }
+
+    let companyurl = "https://www.1111.com.tw/corp/" + companyNo;
 
     const URL = [
         '/assets/vendors/jquery.min.js',
@@ -30,7 +38,7 @@ function CustomerWeb(props) {
                 <CustomerFoot {...props}/>
             </div>
             <a className="top-link-icon hide" href="/#" id="jstopicon"><i className="fa fa-angle-up"></i></a>
-            <a className="top-link show" href="https://www.1111.com.tw/corp/50750609/" target='_blank' rel="noopener noreferrer">
+            <a className="top-link show" href={companyurl} target='_blank' rel="noopener noreferrer">
                 <img src="assets/img/join_icon_blue.png" alt="立即應徵" />
             </a>
         </div>    
