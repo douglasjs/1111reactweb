@@ -24,7 +24,7 @@ class CompanyJobs extends React.Component {
         let groupName1;
         let groupName2;
         let groupName3;
-        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
+        let companyurl = "https://www.1111.com.tw/corp/" + cid;
 
         if(positionGrpData && positionGrpData.length > 0){
             positionGrpData.forEach( element  => {
