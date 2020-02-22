@@ -2,9 +2,12 @@
 
 function ManagerScrollToTop() {
     return (
+        <div>
             <a className="scroll-to-top rounded" href="#page-top">
                 <i className="fas fa-angle-up"></i>
-            </a>      
+            </a>
+            <a className="scroll-word rounded" href="#page-top">預覽</a>
+        </div>
     )
 }
 
