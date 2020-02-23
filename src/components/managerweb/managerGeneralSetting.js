@@ -70,13 +70,10 @@ class managerGeneralSetting extends React.Component{
 
                    }
                 };
-
-
            
             };
 
         }
-
        
     }
 
@@ -159,9 +156,87 @@ class managerGeneralSetting extends React.Component{
  
         }
 
+    }
 
 
-       
+    sampleMapping = (samplemap) =>{
+
+        switch(samplemap){
+            case "tp01blue.css":
+                return "tp01blue.jpg";
+            case "tp02blue.css":
+                return "tp02blue.jpg";
+            case "tp03blue.css":
+                return "tp03blue.jpg";
+            case "tp04blue.css":
+                return "tp04blue.jpg";
+            case "tp05blue.css":
+                return "tp05blue.jpg";
+            case "tp06blue.css":
+                return "tp06blue.jpg";
+            case "tp01green.css":
+                return "tp01green.jpg";
+            case "tp02green.css":
+                return "tp02green.jpg";
+            case "tp03green.css":
+                return "tp03green.jpg";
+            case "tp04green.css":
+                return "tp04green.jpg";
+            case "tp05green.css":
+                return "tp05green.jpg";
+            case "tp06green.css":
+                return "tp06green.jpg";
+            case "tp01orange.css":
+                return "tp01orange.jpg";
+            case "tp02orange.css":
+                return "tp02orange.jpg";
+            case "tp03orange.css":
+                return "tp03orange.jpg";
+            case "tp04orange.css":
+                return "tp04orange.jpg";
+            case "tp05orange.css":
+                return "tp05orange.jpg";
+            case "tp06orange.css":
+                return "tp06orange.jpg";
+            case "tp01purple.css":
+                return "tp01purple.jpg";
+            case "tp02purple.css":
+                return "tp02purple.jpg";
+            case "tp03purple.css":
+                return "tp03purple.jpg";
+            case "tp04purple.css":
+                return "tp04purple.jpg";
+            case "tp05purple.css":
+                return "tp05purple.jpg";
+            case "tp06purple.css":
+                return "tp06purple.jpg";
+            case "tp01red.css":
+                return "tp01red.jpg";
+            case "tp02red.css":
+                return "tp02red.jpg";
+            case "tp03red.css":
+                return "tp03red.jpg";
+            case "tp04red.css":
+                return "tp04red.jpg";
+            case "tp05red.css":
+                return "tp05red.jpg";
+            case "tp06red.css":
+                return "tp06red.jpg";
+            case "tp01yellow.css":
+                return "tp01yellow.jpg";
+            case "tp02yellow.css":
+                return "tp02yellow.jpg";
+            case "tp03yellow.css":
+                return "tp03yellow.jpg";
+            case "tp04yellow.css":
+                return "tp04yellow.jpg";
+            case "tp05yellow.css":
+                return "tp05yellow.jpg";
+            case "tp06yellow.css":
+                return "tp06yellow.jpg";
+            default:
+                return "tp01blue.jpg";
+        }
 
     }
 
@@ -216,8 +291,15 @@ class managerGeneralSetting extends React.Component{
            UploadImg = "/image/logo-1111.png";
         }else{
            UploadImg = this.state.uploadImg !=='' ?  this.state.uploadImg.file : `${envConfig.WebAPI}/image/${cid}?fileName=${logoImg}`;
+<<<<<<< HEAD
         }      
         
+=======
+        }
+
+        let sampleImgURL = "/image/templatesample/" + this.sampleMapping(themeNum + styleType);
+
+>>>>>>> ae95def7ea03b35b1edf545c06870e3d61721f47
         return(
             <div className="container-fluid">
                 <div className="card shadow">
@@ -234,8 +316,9 @@ class managerGeneralSetting extends React.Component{
 
                           <div className="form-row">
                               <div className="col-md-6 mb-3">
-                                  <label><span className='text-danger'>*</span> 選用版型</label>
-                                  <select  className="form-control" id="themeNum" value={themeNum} onChange={this.handleChange('themeNum')} required>
+                                <div className="form-row mangerweb-pb-1">
+                                    <label><span className='text-danger'>*</span> 選用版型</label>
+                                    <select  className="form-control" id="themeNum" value={themeNum} onChange={this.handleChange('themeNum')} required>
                                             <option value=''>選擇版型...</option>
                                             <option value='tp01'>版型一</option>
                                             <option value='tp02'>版型二</option>
@@ -243,11 +326,11 @@ class managerGeneralSetting extends React.Component{
                                             <option value='tp04'>版型四</option>
                                             <option value='tp05'>版型五</option>
                                             <option value='tp06'>版型六</option>
-                                  </select>
-                              </div>
-                              <div className="col-md-6 mb-3">
-                                  <label><span className='text-danger'>*</span> 選用版型色系</label>
-                                  <select  className="form-control" id="styleType" value={styleType} onChange={this.handleChange('styleType')} required>
+                                    </select>
+                                </div>
+                                <div className="form-row">
+                                    <label><span className='text-danger'>*</span> 選用版型色系</label>
+                                    <select  className="form-control" id="styleType" value={styleType} onChange={this.handleChange('styleType')} required>
                                             <option value=''>選擇版型色系...</option>
                                             <option value='blue.css'>藍色系</option>
                                             <option value='green.css'>綠色系</option>
@@ -255,9 +338,31 @@ class managerGeneralSetting extends React.Component{
                                             <option value='purple.css'>紫色系</option>
                                             <option value='red.css'>紅色系</option>
                                             <option value='yellow.css'>黃色系</option>
-                                  </select>
+                                    </select>
+                                </div>
                               </div>
+                              <div className="col-md-6 mb-3">
+                                    <div><img src={sampleImgURL} alt="Temp1_fullimg" width="100%"/></div>
+                                    <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
+                              </div>
+                              <div className="modal fade" id="tmp1_fullimg">
+                                    <div className="modal-dialog sample-img-width">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <p className="modal-title">版型一 範例</p>
+                                                <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div className="modal-body text-center">
+                                                <img src={sampleImgURL} alt="tmp1_fullimg" width="100%" />
+                                            </div>
+                                            <div className="modal-footer">
+                                                <p className="small">範例僅供參考</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
                           </div>
+                          
 
                           <div className="form-row">
                               <div className="col-md-6 mb-3">
