@@ -291,15 +291,10 @@ class managerGeneralSetting extends React.Component{
            UploadImg = "/image/logo-1111.png";
         }else{
            UploadImg = this.state.uploadImg !=='' ?  this.state.uploadImg.file : `${envConfig.WebAPI}/image/${cid}?fileName=${logoImg}`;
-<<<<<<< HEAD
-        }      
-        
-=======
         }
 
         let sampleImgURL = "/image/templatesample/" + this.sampleMapping(themeNum + styleType);
 
->>>>>>> ae95def7ea03b35b1edf545c06870e3d61721f47
         return(
             <div className="container-fluid">
                 <div className="card shadow">
