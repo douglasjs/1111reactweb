@@ -14,7 +14,7 @@ function CustomerWeb(props) {
         companyNo = data[0].oNo;
     }
 
-    let companyurl = "https://www.1111.com.tw/corp/" + companyNo;
+    let companyurl = "https://www.1111.com.tw/corp/" + companyNo + "/#c4";
 
     const URL = [
         '/assets/vendors/jquery.min.js',
