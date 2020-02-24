@@ -1,4 +1,4 @@
-var scrollToTopButton = document.getElementById('jstopicon');
+var scrollToTopButton = document.getElementById('js-top-icon');
 
 var scrollFuncIcon = () => {
   let y = window.scrollY;
