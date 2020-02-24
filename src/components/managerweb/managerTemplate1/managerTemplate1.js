@@ -42,6 +42,8 @@ class ManagerTemplate1 extends React.Component{
             keywords: '1111,人力,徵才',
             description: '1111人力銀行'
         }
+
+        let previewURL = "/" + cid;
     
 
         if(data && data.length > 0){
@@ -64,7 +66,8 @@ class ManagerTemplate1 extends React.Component{
                 <ManagerTemplate1Session6 {...this.props}/>
                 <ManagerTemplate1Session7 {...this.props}/>
                 <ManagerTemplate1Session8 {...this.props}/>
-                <a href={`/${cid}`} target='_blank'rel="noopener noreferrer"><button className='btn btn-primary'>預覽畫面</button></a>
+                <div className="mangerweb-pb-1"><a href={`/${cid}`} target='_blank'rel="noopener noreferrer"><button className='btn btn-primary'>確認發佈</button></a></div>
+                <a className="scroll-to-top rounded scroll-to-top-bottom" target="_blank" rel="noopener noreferrer" href={previewURL}>預覽</a>
             </div>
           
         )

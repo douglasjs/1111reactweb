@@ -17,12 +17,14 @@ class CompanyJobs extends React.Component {
         const style = {
             fontSize: '18px'
         }
+        const cid = this.props.match.params.cid;
         const { positionGrpData} = this.props.positionGrpReducer;
         const { positionData } = this.props.positionReducer;
 
         let groupName1;
         let groupName2;
         let groupName3;
+        let companyurl = "https://www.1111.com.tw/corp/" + cid;
 
         if(positionGrpData && positionGrpData.length > 0){
             positionGrpData.forEach( element  => {
@@ -79,7 +81,8 @@ class CompanyJobs extends React.Component {
                                             </div>
     
                                             
-                                                {Array.isArray(positionData) && positionData.filter( data => data.position_group === groupName1).map((element, index) => {
+                                                {Array.isArray(positionData) && positionData.filter( data => data.position_group === "1").map((element, index) => {
+                                                    let positionURL = "https://www.1111.com.tw/job/"+ element.eNo + "/";
 
                                                   return(
                                                         <div key={index} className="jobs-table-row">
@@ -92,7 +95,7 @@ class CompanyJobs extends React.Component {
                                                             </div>
                                                             <div className="cell" data-title="地點："> {element.position_workCity}</div>
                                                             <div className="cell" data-title="加入：">
-                                                                <a href="/#" className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
+                                                                <a href={positionURL} target='_blank' rel="noopener noreferrer" className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
                                                                     <span>
                                                                         <span className="btn-txt">應徵</span>
                                                                     </span>
@@ -119,7 +122,8 @@ class CompanyJobs extends React.Component {
                                             </div>
 
                                             
-                                                {Array.isArray(positionData) && positionData.filter( data => data.position_group === groupName2).map((element, index) => {
+                                                {Array.isArray(positionData) && positionData.filter( data => data.position_group === "2").map((element, index) => {
+                                                    let positionURL = "https://www.1111.com.tw/job/"+ element.eNo + "/";
 
                                                 return(
                                                         <div key={index} className="jobs-table-row">
@@ -132,7 +136,7 @@ class CompanyJobs extends React.Component {
                                                             </div>
                                                             <div className="cell" data-title="地點："> {element.position_workCity}</div>
                                                             <div className="cell" data-title="加入：">
-                                                                <a href="/#" className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
+                                                                <a href={positionURL} target='_blank' rel="noopener noreferrer" className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
                                                                     <span>
                                                                         <span className="btn-txt">應徵</span>
                                                                     </span>
@@ -159,7 +163,8 @@ class CompanyJobs extends React.Component {
                                             </div>
 
                                             
-                                                {Array.isArray(positionData) && positionData.filter( data => data.position_group === groupName3).map((element, index) => {
+                                                {Array.isArray(positionData) && positionData.filter( data => data.position_group === "3").map((element, index) => {
+                                                    let positionURL = "https://www.1111.com.tw/job/"+ element.eNo + "/";
 
                                                 return(
                                                         <div key={index} className="jobs-table-row">
@@ -172,7 +177,7 @@ class CompanyJobs extends React.Component {
                                                             </div>
                                                             <div className="cell" data-title="地點："> {element.position_workCity}</div>
                                                             <div className="cell" data-title="加入：">
-                                                                <a href="/#" className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
+                                                                <a href={positionURL} target='_blank' rel="noopener noreferrer" className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
                                                                     <span>
                                                                         <span className="btn-txt">應徵</span>
                                                                     </span>
@@ -188,7 +193,7 @@ class CompanyJobs extends React.Component {
                                 </div>
                             </div>
                             <div className="text-center mt-20 mb-20">
-                                <a href="https://m.1111.com.tw/corp/50750609" target='_blank' rel="noopener noreferrer" className="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-18 font-weight-bold ltr-sp-05 px-2 bg-hover-white text-hover-primary mb-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+                                <a href={companyurl} target='_blank' rel="noopener noreferrer" className="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-18 font-weight-bold ltr-sp-05 px-2 bg-hover-white text-hover-primary mb-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
                                     <span>
                                         <span className="btn-txt">所有職缺</span>
                                     </span>
