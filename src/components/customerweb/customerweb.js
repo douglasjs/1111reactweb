@@ -7,15 +7,6 @@ import useScript from '../sharecomponents/usescript';
 
 function CustomerWeb(props) {
 
-    const { data } = props.datatableReducer;
-    
-    let companyNo = "1355006";
-    if(data && data.length > 0){
-        companyNo = data[0].oNo;
-    }
-
-    let companyurl = "https://www.1111.com.tw/corp/" + companyNo + "/#c4";
-
     const URL = [
         '/assets/vendors/jquery.min.js',
         '/assets/js/theme-vendors.js',
