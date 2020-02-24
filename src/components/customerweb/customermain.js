@@ -48,13 +48,15 @@ class CustomerMain extends React.Component{
                 companyName= data[0].companyName;
                 email = data[0].email;
                 themeNum =  data[0].themeNum;
-                companyMeta = {
-                    keywords: data[0].keywords,
+                companyMeta = { ...companyMeta,
+                    keywords: data[0].keyword,
                     description: data[0].description
                 }
-                styleSheet[4] = `/assets/css/${data[0].styleType}`
+                styleSheet[4] = `/assets/css/${data[0].styleType}`;
+            
             }
-
+            
+          
 
             return (
                 <main id="content" className="content">

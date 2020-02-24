@@ -29,10 +29,7 @@ function CustomerWeb(props) {
                 <CustomerMain {...props}/>
                 <CustomerFoot {...props}/>
             </div>
-            <a className="top-link-icon hide" href="/#" id="js-top-icon"><i className="fa fa-angle-up"></i></a>
-            <a className="top-link hide" href="/#" id="js-top">
-                <img src="assets/img/join_icon_blue.png" alt="立即應徵" />
-            </a>
+
         </div>    
       
     )
