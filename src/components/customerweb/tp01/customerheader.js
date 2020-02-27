@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import envConfig from '../../config/env';
+import envConfig from '../../../config/env';
 
 const NavBar = (props) => {
     return(

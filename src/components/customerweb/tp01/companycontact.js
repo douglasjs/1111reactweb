@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import envConfig from '../../config/env';
+import envConfig from '../../../config/env';
 
 class CompanyContact extends React.Component {
 
@@ -82,7 +82,7 @@ class CompanyContact extends React.Component {
                 </div>
                 <a className="top-link-icon hide" href="/#" id="js-top-icon"><i className="fa fa-angle-up"></i></a>
                 <a className="top-link show" href="/#" id="js-top">
-                    <img src="assets/img/join_icon_blue.png" alt="立即應徵" />
+                    <img src="assets/tp01/img/join_icon_blue.png" alt="立即應徵" />
                 </a>
             </section>
      

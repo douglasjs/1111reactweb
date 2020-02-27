@@ -2,19 +2,19 @@
 import CustomerHeader from './customerheader';
 import CustomerMain from './customermain';
 import CustomerFoot from './customerfoot';
-import useScript from '../sharecomponents/usescript';
+import useScript from '../../sharecomponents/usescript';
 
 
 function CustomerWeb(props) {
 
     const URL = [
-        '/assets/vendors/jquery.min.js',
-        '/assets/js/theme-vendors.js',
-        '/assets/js/theme.min.js',
-        '/assets/js/liquidAjaxContactForm.min.js',
-        '/assets/js/liquidAjaxMailchimp.min.js',
-        '/assets/js/goTopButton.js',
-        '/assets/vendors/modernizr.min.js'
+        '/assets/tp01/vendors/jquery.min.js',
+        '/assets/tp01/js/theme-vendors.js',
+        '/assets/tp01/js/theme.min.js',
+        '/assets/tp01/js/liquidAjaxContactForm.min.js',
+        '/assets/tp01/js/liquidAjaxMailchimp.min.js',
+        '/assets/tp01/js/goTopButton.js',
+        '/assets/tp01/vendors/modernizr.min.js'
        ]
     useScript(URL);
 

@@ -7,7 +7,7 @@ import CompanyBrand from './companybrand';
 import CompanyCustomize from './companycustomize'
 import CompanyQA from './companyqa'
 import CompanyContact from './companycontact'
-import TitleSet from '../sharecomponents/titleset';
+import TitleSet from '../../sharecomponents/titleset';
 
 class CustomerMain extends React.Component{
 
@@ -34,11 +34,11 @@ class CustomerMain extends React.Component{
                 description: '找工作送1萬元！前1,000名不必抽、人人有獎，1111推動幸福企業提供高薪、最好的福利等你來，找到工作立即送1萬元大紅包！速分享好友，他拿1萬元，你也有分享獎金1千元'
             }
             let styleSheet = [
-                '/assets/vendors/liquid-icon/liquid-icon.min.css',
-                '/assets/vendors/font-awesome/css/font-awesome.min.css',
-                '/assets/css/theme-vendors.min.css',
-                '/assets/css/theme.min.css',
-                '/assets/css/blue.css'
+                '/assets/tp01/vendors/liquid-icon/liquid-icon.min.css',
+                '/assets/tp01/vendors/font-awesome/css/font-awesome.min.css',
+                '/assets/tp01/css/theme-vendors.min.css',
+                '/assets/tp01/css/theme.min.css',
+                '/assets/tp01/css/blue.css'
             ]
             let email;
             let themeNum;
@@ -52,7 +52,7 @@ class CustomerMain extends React.Component{
                     keywords: data[0].keyword,
                     description: data[0].description
                 }
-                styleSheet[4] = `/assets/css/${data[0].styleType}`;
+                styleSheet[4] = `/assets/tp01/css/${data[0].styleType}`;
             
             }
             

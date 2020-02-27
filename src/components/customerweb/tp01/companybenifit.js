@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import envConfig from '../../config/env';
+import envConfig from '../../../config/env';
 
 class CompanyBenifit  extends React.Component {
 
@@ -30,7 +30,7 @@ class CompanyBenifit  extends React.Component {
         // image
         benefitImg = !benefitImg ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitImg}`;
         const style = {
-            'backgroundImage' : 'url(./assets/img/benefit-bg_blue.png)'
+            'backgroundImage' : 'url(./assets/tp01/img/benefit-bg_blue.png)'
         }
 
         return (
