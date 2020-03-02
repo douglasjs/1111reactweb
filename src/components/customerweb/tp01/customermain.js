@@ -8,6 +8,7 @@ import CompanyCustomize from './companycustomize'
 import CompanyQA from './companyqa'
 import CompanyContact from './companycontact'
 import TitleSet from '../../sharecomponents/titleset';
+import envConfig from '../../../config/env';
 
 class CustomerMain extends React.Component{
 
@@ -28,7 +29,7 @@ class CustomerMain extends React.Component{
             const cid = this.props.match.params.cid;
 
 
-            let companyName = '1111人力銀行-' + cid;
+            let webTitle= '1111人力銀行-' + cid;
             let companyMeta = {
                 keywords: '求職,求才,徵才,工作,找工作,求職網,人力銀行,幸福企業',
                 description: '找工作送1萬元！前1,000名不必抽、人人有獎，1111推動幸福企業提供高薪、最好的福利等你來，找到工作立即送1萬元大紅包！速分享好友，他拿1萬元，你也有分享獎金1千元'
@@ -43,10 +44,11 @@ class CustomerMain extends React.Component{
             ]
             let email;
             let themeNum;
-
+            let logURL = "/image/logo-1111.png";
+            let webURL = "https://1111.com.tw";
 
             if(data && data.length > 0){
-                companyName= data[0].companyName;
+                webTitle = data[0].title;
                 email = data[0].email;
                 themeNum =  data[0].themeNum;
                 companyMeta = { ...companyMeta,
@@ -54,14 +56,14 @@ class CustomerMain extends React.Component{
                     description: data[0].description
                 }
                 styleSheet[4] = `/assets/tp01/css/${data[0].styleType}`;
+                logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
+                webURL = `https://1111.com.tw/brand/${cid}/${data[0].companyEName}`;
             
             }
-            
-          
 
             return (
                 <main id="content" className="content">
-                    <TitleSet title={companyName} meta={companyMeta} style={styleSheet} />
+                    <TitleSet title={webTitle} meta={companyMeta} style={styleSheet} logo={logURL} publicURL={webURL}/>
                     <CompanyTitle themeNum={themeNum} {...this.props}/>
                     <CompanyInfo themeNum={themeNum} {...this.props}/>
                     <CompanyBenifit themeNum={themeNum} {...this.props}/>
@@ -70,6 +72,10 @@ class CustomerMain extends React.Component{
                     <CompanyCustomize themeNum={themeNum} {...this.props}/>
                     <CompanyQA themeNum={themeNum} {...this.props}/>
                     <CompanyContact themeNum={themeNum} email={email} {...this.props} />
+                    <a className="top-link-icon hide" href="/#" id="js-top-icon"><i className="fa fa-angle-up"></i></a>
+                    <a className="top-link show" href="/#" id="js-top">
+                        <img src="assets/tp01/img/join_icon_blue.png" alt="立即應徵" />
+                    </a>
                 </main>
             )
         }
