@@ -150,7 +150,7 @@ const createPositionGrp = (data) =>{
             })
             .then((response)=>{
                 dispatch(createPositionGrpSuccess(response.data));
-                alert("新增資料完成");
+                alert("更新資料完成 請繼續前往新增職缺");
                 dispatch(getPositionGrpList(data.ono, data.themeNum ));
             })
             .catch(err => {
@@ -174,7 +174,7 @@ const updatePositionGrp = (data) =>{
             })
             .then((response) => {
                 dispatch(editPositionGrpSuccess(response.data));
-                alert("更新資料完成");
+                alert("更新資料完成 請繼續前往新增職缺");
               //  dispatch(getPositionGrpList(data.ono));
             })
             .catch(err => {

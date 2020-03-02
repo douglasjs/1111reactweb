@@ -135,7 +135,7 @@ const getPositionList = (ono, themeNum) =>{
 
 }
 
-const createPosition = (data) =>{
+const createPosition = (data, updateTable) =>{
 
    
   
@@ -149,13 +149,13 @@ const createPosition = (data) =>{
                 data
             })
             .then((response)=>{
+                updateTable({type: 'created', name: data.position_name});
                 dispatch(createPositionSuccess(response.data));
-                alert("新增資料完成");
                 dispatch(getPositionList(data.oNo));
             })
             .catch(err => {
+                updateTable({type: 'failed', name: data.position_name});
                 dispatch(createPositionError(err));
-                alert("已有資料");
                 dispatch(getPositionList(data.oNo));
             });
     }

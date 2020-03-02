@@ -19,7 +19,10 @@ class Session4 extends React.Component{
                       ,direction: ''
                     },
                 search : {},
-                sortNum:0
+                sortNum:0,
+                created: [],
+                failed:[],
+                showTable: false
                 
         }
 
@@ -82,6 +85,13 @@ class Session4 extends React.Component{
 
     }
 
+    handleUpdateTable = data => {
+        if(data.type === 'created'){
+            this.setState({...this.state, created : [...this.state.created, data.name] });
+        }else{
+            this.setState({...this.state, failed : [...this.state.failed, data.name] });
+        }
+    }
 
     handleChange =  name => event => {
         this.setState({ ...this.state, [name]: event.target.value});
@@ -205,24 +215,33 @@ class Session4 extends React.Component{
 
      
     }
+    handleShow = () =>{
+        this.setState({...this.state, showTable: true});
+    }
 
+    handleClose = () =>{
+        this.setState({...this.state, showTable: false});
+    }
 
-    handlePositionSubmit = (event) =>{
+    handlePositionSubmit = async (event) =>{
         event.preventDefault();
         const cid = this.props.match.params.cid;
         const { kind00Data } = this.props.kind00Reducer;
         const allTarget = event.target;
-
+        
         let submitObj;
         let checkName;
         let tagName;
         
         if(kind00Data && kind00Data.length > 0){
             
-            kind00Data.forEach( element =>{
+            this.setState({...this.state, created : [], failed: [] });
+
+            kind00Data.forEach(  async element =>{
                 checkName =  `check_${element.eNo}`;
                 tagName = `tag_${element.eNo}`;
                 if(allTarget[checkName].checked){
+              
                     submitObj = {
                         oNo: cid,
                         themeNum : event.target.themeNum4_position.value,
@@ -232,15 +251,17 @@ class Session4 extends React.Component{
                         position_salary:  element.Salary,
                         position_matter:  element.Matter,
                         position_workCity: element.WorkCity
-                    }
-                    console.log(submitObj);
-                    this.props.createPosition(submitObj);
+                    };
+                    await new Promise(resolve => this.props.createPosition(submitObj, this.handleUpdateTable));
                 }
 
-            })
+            });
+            await new Promise(resolve => this.setState({...this.state, showTable:true}));
         }
+        await new Promise(resolve => document.getElementById("closePosition").focus());
+      
      
-    }
+    };
 
 
     handlePositionDelete = (event) =>{
@@ -257,6 +278,10 @@ class Session4 extends React.Component{
             this.props.deletePosition(submitObj);
         }
 
+    }
+
+    showStyle = value =>{
+        return value ? "btn btn-facebook btn-block btn-width" : "btn btn-facebook btn-block btn-width d-none";
     }
 
     positionGroupMapping(positionGroup) {
@@ -296,13 +321,18 @@ class Session4 extends React.Component{
         
         let themeNum = 'tp01';
         let actionType = 'create';
+        let groupEmpty= 'd-none';
 
         let groupName1 = this.state.groupName1;
         let groupName2 = this.state.groupName2;
         let groupName3 = this.state.groupName3;
 
+        const text1title = "已經新增 " + this.state.created.length + " 筆職缺";
+        const text2title = "有 " + this.state.failed.length + " 筆職缺已經存在";
+
         if(positionGrpData && positionGrpData.length > 0){
             actionType = 'modify';
+            groupEmpty = '';
             positionGrpData.forEach( element  => {
                 groupName1 = groupName1 !==" " ? groupName1 : element.groupName1;
                 groupName2 = groupName2 !==" " ? groupName2 : element.groupName2;
@@ -323,6 +353,7 @@ class Session4 extends React.Component{
         }
         cityGroup = [...new Set(cityGroup)];
         dutyGroup = [...new Set(dutyGroup)];
+       
 
         return(
             <div className="card shadow mb-4">
@@ -397,8 +428,7 @@ class Session4 extends React.Component{
                                 </div>
                     </div>
                 </div>
-
-
+       
 
                 <div className="modal fade" id="tmp1_addlable">
                     <div className="modal-dialog">
@@ -425,7 +455,10 @@ class Session4 extends React.Component{
                                                 stateObj={this} required={false} />
                                  
                                     <hr />
-                                    <div align="center"><button type='submit' id='actionTag' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
+                                    <div align="center">
+                                        <button type='submit' id='actionTag' value={actionType} className="btn btn-facebook btn-width" ><i className="fas fa-save"></i> 儲存設定</button>
+                                        <button type='button' id='addPosition' data-toggle="modal" data-target="#tmp1_addjob" className={`btn btn-google btn-width ${groupEmpty}`}><i className="fas fa-newspaper"></i> 新增職缺</button>
+                                    </div>
                                 </form>
 
                             </div>
@@ -451,8 +484,7 @@ class Session4 extends React.Component{
                         </div>
                     </div>
                 </div>
-
-
+           
             
                 <div className="modal fade" id="tmp1_addjob">
                     <div className="modal-dialog sample-img-width">
@@ -462,7 +494,7 @@ class Session4 extends React.Component{
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div className="modal-body text-center">
-                              
+                                
                                 <form id='dataPositionForm'  onSubmit={this.handlePositionSubmit}>
                                      <input type="hidden" id="themeNum4_position" value={themeNum} />
                                     <div className="form-row">
@@ -535,9 +567,11 @@ class Session4 extends React.Component{
                                             </tbody>
                                         </table>
                                     </div>
-
+                                    
                                     <div align="center">
-                                        <button type='submit' id='actionPosition' className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 選擇職缺 </button>
+                                        <Msg type ='MESSAGE'  value = {this.state.showTable} text1title={text1title} text1={this.state.created} text2title={text2title} text2={this.state.failed} /> 
+                                        <button type='submit' id='actionPosition' className={this.showStyle(!this.state.showTable)} ><i className="fas fa-save"></i> 選擇職缺 </button>
+                                        <button type="button"  id='closePosition' className={this.showStyle(this.state.showTable)} data-dismiss="modal" onClick={this.handleClose}>關閉視窗  </button>
                                     </div>
 
                                 </form>

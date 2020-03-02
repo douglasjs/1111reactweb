@@ -22,6 +22,24 @@ const Msg = (props) =>{
                     </div>
                 );
 
+         case 'MESSAGE':   
+
+                return(value && 
+                        <div className="row-expand-slide-appear">
+                            <div  className = "p-3 mb-2  bg-primary text-white rounded">
+                                <ul>
+                                    <h4>{props.text1title}</h4>
+                                    {props.text1.map((item, index)=>{
+                                        return( <lo keywords={index}>{item}</lo>);
+                                    })}
+                                    <h4>{props.text2title}</h4>
+                                    {props.text2.map((item, index)=>{
+                                        return( <lo keywords={index}>{item}</lo>);
+                                    })}
+                                </ul>
+                            </div>
+                        </div>
+                    );
         default:
 
             return('');
