@@ -1,3 +1,12 @@
+:root {
+  --color-primary: #cd2122;
+  --color-gradient-start: #cd2122;
+  --color-gradient-stop: #cd2122;
+  --color-dark: #701213;
+  --color-light: #ffe2e2;/*第3*/
+  --color-lightest: #ffeeee;/*最淡*/
+}
+
 body {
   font-family: 'Microsoft JhengHei', 'Roboto', sans-serif;
   font-weight: 400;
@@ -60,13 +69,7 @@ h6 {
 }
 
 .navbar-brand {
-  padding: 25px 30px 25px 0;
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1366px) {
-  .navbar-brand {
-    padding: 20px 30px 20px 0;
-  }
+  padding: 30px 30px 30px 0;
 }
 
 .main-header .btn-underlined {
@@ -394,11 +397,6 @@ h6 {
   height: 75px;
   padding-bottom: 0px;
 }
-@media screen and (min-width: 601px) and (max-width: 768px){
-  .company-hide-text {
-    height: auto;
-  }
-}
 @media screen and (max-width: 600px){
   .company-hide-text {
       line-height: 10px;
@@ -432,13 +430,12 @@ h6 {
 }
 
 
-
 /* Go To Top Button Icon */
 .top-link-icon {
   transition: all .25s ease-in-out;
   position: fixed;
   z-index: 99999999;
-  bottom: 150px;
+  bottom: 140px;
   right: 50px;
   display: inline-flex;
   cursor: pointer;
@@ -451,14 +448,14 @@ h6 {
   height: 50px;
   text-align: center;
   vertical-align: middle;
-  font-size: 50px;
-  color: var(--color-dark);
+  font-size: 35px;
+  color: var(--color-primary);
 }
 
 /* Mobile Screen */
-@media (max-width: 1440px) {
+@media (max-width: 979px) {
   .top-link-icon {
-    bottom: 100px;
+    bottom: 90px;
     right: 22px;
   }
 }
@@ -472,8 +469,8 @@ h6 {
   opacity: 0;
 }
 
-.top-link-icon i:hover {
-  color: #848484;
+.top-link-icon:hover {
+  color: var(--color-dark);
 }
 
 /* 立即應徵 Button */
@@ -508,21 +505,10 @@ h6 {
 }
 
 /* Mobile Screen */
-@media (max-width: 1440px) {
+@media (max-width: 979px) {
   .top-link {
     width: 100px;
     height: 100px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .top-link {
-    width: 150px;
-    height: 150px;
-  }
-  .top-link-icon {
-    bottom: 150px;
-    right: 50px;
   }
 }
 
@@ -626,7 +612,7 @@ h6 {
   color: var(--color-primary) !important;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .mainbar-wrap:not(.is-stuck) .nav-header-text {
     text-shadow:1px 1px #000000;
   }

@@ -38,7 +38,8 @@ class CustomerMain extends React.Component{
                 '/assets/tp01/vendors/font-awesome/css/font-awesome.min.css',
                 '/assets/tp01/css/theme-vendors.min.css',
                 '/assets/tp01/css/theme.min.css',
-                '/assets/tp01/css/blue.css'
+                '/assets/tp01/css/blue.css',
+                '/assets/tp01/css/style.css'
             ]
             let email;
             let themeNum;
