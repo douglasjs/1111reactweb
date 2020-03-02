@@ -44,10 +44,19 @@ const getKind00 = (ono) =>{
 
     return (dispatch) =>{
         
-      
+        const data = {oNo:50750609,kind: 0};
         dispatch(getKind00Start());
-        axios({ method: 'get', url: envConfig.kind00API})
-            .then(response => {
+        axios({
+            method: 'post',
+            mode: 'no-cors',
+            headers: {'Content-Type': 'application/json','Access-Control-Allow-Origin': 'http://benedik.ddns.net:3000',
+            'Access-Control-Allow-Methods': 'POST', 'Access-Control-Allow-Headers': 'content-type'},
+            url: envConfig.kind00API,
+            withCredentials: true,
+            credentials: 'same-origin',
+            data
+        })
+        .then(response => {
                 //setTimeout(() => {
                     dispatch(getKind00Success(response.data));
                 //}, 1000);
