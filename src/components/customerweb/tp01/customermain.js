@@ -46,6 +46,7 @@ class CustomerMain extends React.Component{
             let themeNum;
             let logURL = "/image/logo-1111.png";
             let webURL = "https://1111.com.tw";
+            let styleType ="blue.css";
 
             if(data && data.length > 0){
                 webTitle = data[0].title;
@@ -58,7 +59,7 @@ class CustomerMain extends React.Component{
                 styleSheet[4] = `/assets/tp01/css/${data[0].styleType}`;
                 logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
                 webURL = `https://1111.com.tw/brand/${cid}/${data[0].companyEName}`;
-            
+                styleType = data[0].styleType;
             }
 
             return (
@@ -74,7 +75,7 @@ class CustomerMain extends React.Component{
                     <CompanyContact themeNum={themeNum} email={email} {...this.props} />
                     <a className="top-link-icon hide" href="/#" id="js-top-icon"><i className="fa fa-angle-up"></i></a>
                     <a className="top-link show" href="/#" id="js-top">
-                        <img src="assets/tp01/img/join_icon_blue.png" alt="立即應徵" />
+                        <img src={`assets/tp01/img/join_${styleType}.png`} alt="立即應徵" />
                     </a>
                 </main>
             )

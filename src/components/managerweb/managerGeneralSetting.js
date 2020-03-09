@@ -17,8 +17,8 @@ class managerGeneralSetting extends React.Component{
             email: ' ',
             logoImg: ' ',
             title: ' ',
-            themeNum: 'tp01',
-            styleType: 'red.css',
+            themeNum: ' ',
+            styleType: ' ',
             uploadImg: ''
         };
  
@@ -82,6 +82,7 @@ class managerGeneralSetting extends React.Component{
 
         const cid = this.props.match.params.cid;
 
+
         if(event.target.companyName.value){
             if(event.target.companyName.value ===''){
                 return false;
@@ -115,6 +116,11 @@ class managerGeneralSetting extends React.Component{
             }
         }
 
+
+
+        if(this.state.description.length <5){
+            return false;
+        }
 
         if(event.target.action.value === 'create'){
 
@@ -305,7 +311,6 @@ class managerGeneralSetting extends React.Component{
                    
                         <Msg type ='LOADING'  value = {isLoading} text='Processing ' /> 
                         <Msg type ='ERROR' value = {err} text= 'Opps! Error : ' />
-                  
 
                         <form id='dataForm' className={isLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
 
@@ -385,8 +390,7 @@ class managerGeneralSetting extends React.Component{
                               </div>
                               <div className="col-md-6 mb-3">
                                   <label><span className='text-danger'>*</span> 聯絡我們 Email</label>
-                                  <input className={`form-control`} id="email"  placeholder="email" 
-                                    value={email} onChange={this.handleChange('email')} required/>
+                                  <input type="email" className="form-control" id="email"  value={email} onChange={this.handleChange('email')} aria-describedby="emailHelp" placeholder="Enter email" required/>
                               </div>                                  
                           </div>
                           <div className="form-row">
@@ -399,6 +403,9 @@ class managerGeneralSetting extends React.Component{
                                   <label>網站敘述</label>
                                   <textarea className={`form-control`} id="description"  placeholder="網站敘述" rows="5"
                                     value={description} onChange={this.handleChange('description')} />
+                                  <div className="invalid-feedback">
+                                        網站敘述不可以空白
+                                  </div>
                               </div>
                           </div>                          
                           <div className="form-row">

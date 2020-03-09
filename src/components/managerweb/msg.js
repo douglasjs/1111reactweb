@@ -30,11 +30,11 @@ const Msg = (props) =>{
                                 <ul>
                                     <h4>{props.text1title}</h4>
                                     {props.text1.map((item, index)=>{
-                                        return( <lo keywords={index}>{item}</lo>);
+                                        return( <li keywords={index}>{item}</li>);
                                     })}
                                     <h4>{props.text2title}</h4>
                                     {props.text2.map((item, index)=>{
-                                        return( <lo keywords={index}>{item}</lo>);
+                                        return( <li keywords={index}>{item}</li>);
                                     })}
                                 </ul>
                             </div>

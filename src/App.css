@@ -60,3 +60,7 @@
 .scroll-to-top-bottom {
   bottom: 1rem !important;
 }
+
+.move-top {
+  z-index: 200;
+}

@@ -468,6 +468,10 @@ class Session4 extends React.Component{
                         </div>
                     </div>
                 </div>
+
+
+
+
                 <div className="modal fade" id="tmp1_joblable_img">
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
@@ -485,7 +489,6 @@ class Session4 extends React.Component{
                     </div>
                 </div>
            
-            
                 <div className="modal fade" id="tmp1_addjob">
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
@@ -523,7 +526,7 @@ class Session4 extends React.Component{
                                             <thead>
                                                 <tr>
                                                     <th className='text-center'>選取</th>
-                                                    <th onClick={()=>(this.handleShort('tag'))}>標籤   {this.sortMark('tag')}    </th>
+                                                    <th width='150' onClick={()=>(this.handleShort('tag'))}>標籤   {this.sortMark('tag')}    </th>
                                                     <th onClick={()=>(this.handleShort('position'))}>職稱  {this.sortMark('position')} </th>
                                                     <th onClick={()=>(this.handleShort('salary'))}>薪資   {this.sortMark('salary')}  </th>
                                                     <th onClick={()=>(this.handleShort('matter'))}>工作內容       {this.sortMark('matter')}  </th>
@@ -535,7 +538,7 @@ class Session4 extends React.Component{
                                                     
                                                             <tr>
                                                                 <th className='text-center'>選取</th>
-                                                                <th>標籤  </th>
+                                                                <th width='150'>標籤  </th>
                                                                 <th>職稱  </th>
                                                                 <th>薪資  </th>
                                                                 <th>工作內容 </th>
@@ -570,7 +573,7 @@ class Session4 extends React.Component{
                                     
                                     <div align="center">
                                         <Msg type ='MESSAGE'  value = {this.state.showTable} text1title={text1title} text1={this.state.created} text2title={text2title} text2={this.state.failed} /> 
-                                        <button type='submit' id='actionPosition' className={this.showStyle(!this.state.showTable)} ><i className="fas fa-save"></i> 選擇職缺 </button>
+                                        <button type='submit'  id='actionPosition' className={this.showStyle(!this.state.showTable)}><i className="fas fa-save"></i> 選擇職缺 </button>
                                         <button type="button"  id='closePosition' className={this.showStyle(this.state.showTable)} data-dismiss="modal" onClick={this.handleClose}>關閉視窗  </button>
                                     </div>
 
