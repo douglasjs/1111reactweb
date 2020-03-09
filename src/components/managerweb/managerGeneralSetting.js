@@ -117,11 +117,6 @@ class managerGeneralSetting extends React.Component{
         }
 
 
-
-        if(this.state.description.length <5){
-            return false;
-        }
-
         if(event.target.action.value === 'create'){
 
             this.props.createData({
