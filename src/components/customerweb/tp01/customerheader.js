@@ -12,7 +12,7 @@ const NavBar = (props) => {
                     <img className="logo-default" src={props.logURL} alt="1111人力銀行Logo" />
                 </span>
             </a>
-            <button type="button" className="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames={`{ "html": "mobile-nav-activated overflow-hidden" }`}>
+            <button type="button" className="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
                 <span className="sr-only">選單</span>
                 <span className="bars">
                     <span className="bar"></span>

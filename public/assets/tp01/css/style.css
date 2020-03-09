@@ -523,7 +523,7 @@ h6 {
   .top-link-icon {
     bottom: 150px;
     right: 50px;
-  }
+}
 }
 
 .top-link img {
@@ -630,4 +630,54 @@ h6 {
   .mainbar-wrap:not(.is-stuck) .nav-header-text {
     text-shadow:1px 1px #000000;
   }
+}
+
+
+/* Max line */
+.line-1 ,.line-2 ,.line-3 ,.line-4 ,.line-5 ,.line-18 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.line-1 {
+  -webkit-line-clamp: 1;
+}
+
+.line-2 {
+  -webkit-line-clamp: 2;
+}
+
+.line-3 {
+  -webkit-line-clamp: 3;
+}
+
+.line-4 {
+  -webkit-line-clamp: 4;
+}
+
+.line-5 {
+  -webkit-line-clamp: 5;
+}
+
+.line-18 {
+  -webkit-line-clamp: 18;
+}
+
+/* Max Height */
+.width-100per {
+  width: 100%;
+}
+
+.hight-auto {
+  height: auto;
+}
+
+.min-hight-350 {
+  min-height: 300px;
+}
+
+.max-hight-350 {
+  max-height: 350px;
 }

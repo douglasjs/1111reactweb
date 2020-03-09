@@ -53,7 +53,7 @@ class CompanyBrand extends React.Component {
                         <div className="lqd-column col-lg-6">
     
                             <h2
-                                className="font-size-38 lh-13 mt-0 mb-30"
+                                className="font-size-38 lh-13 mt-0 mb-30 line-1"
                                 data-split-text="true"
                                 data-split-options='{"type":"lines"}'
                                 data-text-rotator="true"
@@ -63,7 +63,7 @@ class CompanyBrand extends React.Component {
                             </h2>
     
                             <div className="accordion accordion-md accordion-title-underlined accordion-expander-left accordion-active-color-primary" id="vc_accordion_5c77a7f9d2896" role="tablist">
-                                <div className="accordion-item panel  active">
+                                <div className="accordion-item panel active">
                                     <div className="accordion-heading" role="tab" id="heading_accordion-1">
                                         <h4 className="accordion-title font-size-17 lh-15">
                                             <a data-toggle="collapse" data-parent="#vc_accordion_5c77a7f9d2896" href="#accordion-1" aria-expanded="true" aria-controls="accordion-1">
@@ -77,7 +77,7 @@ class CompanyBrand extends React.Component {
                                     </div>
                                     <div id="accordion-1" className="accordion-collapse collapse in" role="tabpanel" aria-labelledby="heading_accordion-1">
                                         <div className="accordion-content">
-                                            <p>{brandTitleSub1Content}</p>
+                                            <p className="line-5">{brandTitleSub1Content}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -96,7 +96,7 @@ class CompanyBrand extends React.Component {
                                     </div>
                                     <div id="accordion-2" className="accordion-collapse collapse" role="tabpanel" aria-labelledby="heading_accordion-2">
                                         <div className="accordion-content">
-                                            <p>{brandTitleSub2Content}</p>
+                                            <p className="line-5">{brandTitleSub2Content}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -115,7 +115,7 @@ class CompanyBrand extends React.Component {
                                     </div>
                                     <div id="accordion-3" className="accordion-collapse collapse" role="tabpanel" aria-labelledby="heading_accordion-3">
                                         <div className="accordion-content">
-                                            <p>{brandTitleSub3Content}</p>
+                                            <p className="line-5">{brandTitleSub3Content}</p>
                                         </div>
                                     </div>
                                 </div>

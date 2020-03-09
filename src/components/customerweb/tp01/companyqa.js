@@ -69,9 +69,9 @@ class CompanyQA extends React.Component {
                                             <div className="col-xs-12">
                                                 <div className="testimonial testimonial-lg testimonial-details-sm text-left testimonials-quote-only mb-10">
                                                     <div className="testimonial-quote">
-                                                        <h6 className="mt-30 font-size-20 text-white">{qa1Title}</h6>
+                                                        <h6 className="mt-30 font-size-20 text-white line-1">{qa1Title}</h6>
                                                         <blockquote className="font-size-16 lh-165 text-fade-white-08">
-                                                                <p>{qa1Content}</p>
+                                                            <p className="line-4">{qa1Content}</p>
                                                         </blockquote>
                                                     </div>
                                                 </div>
@@ -79,9 +79,9 @@ class CompanyQA extends React.Component {
                                             <div className="col-xs-12">
                                                 <div className="testimonial testimonial-lg testimonial-details-sm text-left testimonials-quote-only mb-10">
                                                     <div className="testimonial-quote">
-                                                        <h6 className="mt-30 font-size-20 text-white">{qa2Title}</h6>
+                                                        <h6 className="mt-30 font-size-20 text-white line-1">{qa2Title}</h6>
                                                         <blockquote className="font-size-16 lh-165 text-fade-white-08">
-                                                            <p>{qa2Content}</p>
+                                                            <p className="line-4">{qa2Content}</p>
                                                         </blockquote>
                                                     </div>
                                                 </div>
@@ -90,9 +90,9 @@ class CompanyQA extends React.Component {
                                             <div className="col-xs-12">
                                                 <div className="testimonial testimonial-lg testimonial-details-sm text-left testimonials-quote-only mb-10">
                                                     <div className="testimonial-quote">
-                                                        <h6 className="mt-30 font-size-20 text-white">{qa3Title}</h6>
+                                                        <h6 className="mt-30 font-size-20 text-white line-1">{qa3Title}</h6>
                                                         <blockquote className="font-size-16 lh-165 text-fade-white-08">
-                                                            <p>{qa3Content}</p>
+                                                            <p className="line-4">{qa3Content}</p>
                                                         </blockquote>
                                                     </div>
                                                 </div>
@@ -100,9 +100,9 @@ class CompanyQA extends React.Component {
                                             <div className="col-xs-12">
                                                 <div className="testimonial testimonial-lg testimonial-details-sm text-left testimonials-quote-only mb-10">
                                                     <div className="testimonial-quote">
-                                                        <h6 className="mt-30 font-size-20 text-white">{qa4Title}</h6>
+                                                        <h6 className="mt-30 font-size-20 text-white line-1">{qa4Title}</h6>
                                                         <blockquote className="font-size-16 lh-165 text-fade-white-08">
-                                                            <p>{qa4Content}</p>
+                                                            <p className="line-4">{qa4Content}</p>
                                                         </blockquote>
                                                     </div>
                                                 </div>
@@ -110,9 +110,9 @@ class CompanyQA extends React.Component {
                                             <div className="col-xs-12">
                                                 <div className="testimonial testimonial-lg testimonial-details-sm text-left testimonials-quote-only mb-10">
                                                     <div className="testimonial-quote">
-                                                        <h6 className="mt-30 font-size-20 text-white">{qa5Title}</h6>
+                                                        <h6 className="mt-30 font-size-20 text-white line-1">{qa5Title}</h6>
                                                         <blockquote className="font-size-16 lh-165 text-fade-white-08">
-                                                            <p>{qa5Content}</p>
+                                                            <p className="line-4">{qa5Content}</p>
                                                         </blockquote>
                                                     </div>
                                                 </div>

@@ -68,8 +68,8 @@ class CompanyCustomize extends React.Component {
                         <div className="lqd-column col-md-12">
     
                             <header className="fancy-title mb-30" id="fancy-title-unlimited-classes">
-                                <h2 className="text-uppercase ltr-sp-0">{customizeTitle} </h2>
-                                <p>{customizeSubTitle} </p>
+                                <h2 className="text-uppercase ltr-sp-0 line-1">{customizeTitle} </h2>
+                                <p className="line-1">{customizeSubTitle} </p>
                             </header>
     
                         </div>
@@ -89,8 +89,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                                 <div className="fancy-box-contents">
                                                     <div className="fancy-box-info">
-                                                        <h3>{card1Title}</h3>
-                                                        <span className="trainer">
+                                                        <h3 className="line-1">{card1Title}</h3>
+                                                        <span className="trainer line-2">
                                                             {card1Content}
                                                     </span>
                                                 </div>
@@ -107,8 +107,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                                 <div className="fancy-box-contents">
                                                     <div className="fancy-box-info">
-                                                        <h3>{card2Title}</h3>
-                                                        <span className="trainer">
+                                                        <h3 className="line-1">{card2Title}</h3>
+                                                        <span className="trainer line-2">
                                                             {card2Content}
                                                     </span>
                                                 </div>
@@ -125,8 +125,8 @@ class CompanyCustomize extends React.Component {
                                                 <div className="fancy-box-contents">
     
                                                     <div className="fancy-box-info">
-                                                        <h3>{card3Title}</h3>
-                                                        <span className="trainer">
+                                                        <h3 className="line-1">{card3Title}</h3>
+                                                        <span className="trainer line-2">
                                                             {card3Content}
                                                     </span>
                                                 </div>
@@ -143,8 +143,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                                 <div className="fancy-box-contents">
                                                     <div className="fancy-box-info">
-                                                        <h3>{card4Title}</h3>
-                                                        <span className="trainer">
+                                                        <h3 className="line-1">{card4Title}</h3>
+                                                        <span className="trainer line-2">
                                                             {card4Content}
                                                     </span>
                                                 </div>
@@ -152,18 +152,18 @@ class CompanyCustomize extends React.Component {
                                         </div>
     
                                     </div>
-    
+
                                     <div className="lqd-column carousel-item col-md-3 col-sm-6">
     
                                         <div className="fancy-box content-box-heading-sm fancy-box-classes">
                                             <figure className="fancy-box-image">
-                                                <img src="./image/custom-3.jpg" alt="1111人力銀行客製化" />
+                                                <img src={card1Img} alt="1111人力銀行客製化" />
                                             </figure>
-                                            <div className="fancy-box-contents">
+                                                <div className="fancy-box-contents">
                                                     <div className="fancy-box-info">
-                                                        <h3>主恩高優質鮮乳</h3>
-                                                        <span className="trainer">
-                                                            ．定期檢驗無動物用藥殘留 <br />．100%無人工調整鮮乳
+                                                        <h3 className="line-1">{card1Title}</h3>
+                                                        <span className="trainer line-2">
+                                                            {card1Content}
                                                     </span>
                                                 </div>
                                             </div>

@@ -69,8 +69,8 @@ class CompanyInfo extends React.Component{
     
                             <header className="fancy-title fancy-title-1111 text-center">
     
-                                <h2 className="mt-3 mb-3">{introTitle}</h2>
-                                <h6 className="font-size-16 opacity-05">{introMainContent}</h6>
+                                <h2 className="mt-3 mb-3 line-1">{introTitle}</h2>
+                                <h6 className="font-size-16 opacity-05 line-2">{introMainContent}</h6>
     
                             </header>
     
@@ -112,7 +112,7 @@ class CompanyInfo extends React.Component{
                                                     </figure>
                                                 </div>
                                                 <div className="fancy-box-header">
-                                                        <h3> {introSubTitle1ImgText}</h3>
+                                                        <h3 className="line-1"> {introSubTitle1ImgText}</h3>
                                                     </div>
                                             </div>
                                         </div>
@@ -129,7 +129,7 @@ class CompanyInfo extends React.Component{
                                                     </figure>
                                                 </div>
                                                 <div className="fancy-box-header">
-                                                            <h3>{introSubTitle2ImgText}</h3>
+                                                            <h3 className="line-1">{introSubTitle2ImgText}</h3>
                                                         </div>
                                             </div>
                                         </div>
@@ -146,7 +146,7 @@ class CompanyInfo extends React.Component{
                                                     </figure>
                                                 </div>
                                                 <div className="fancy-box-header">
-                                                                <h3>{introSubTitle3ImgText}</h3>
+                                                                <h3 className="line-1">{introSubTitle3ImgText}</h3>
                                                             </div>
                                             </div>
                                         </div>
