@@ -64,3 +64,7 @@
 .move-top {
   z-index: 200;
 }
+
+.message_width {
+  width: 60%;
+}
