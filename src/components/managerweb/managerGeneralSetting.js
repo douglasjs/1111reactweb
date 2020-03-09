@@ -1,6 +1,7 @@
 import React from 'react';
 import Msg from './msg';
 import envConfig from '../../config/env';
+import { Link } from 'react-router-dom';
 
 
 
@@ -241,6 +242,44 @@ class managerGeneralSetting extends React.Component{
 
     }
 
+    nextStepButton = (nextStep) =>{
+        switch(nextStep){
+            case "tp01":
+                return "template1";
+            case "tp02":
+                return "template2";
+            case "tp03":
+                return "template3";
+            case "tp04":
+                return "template4";
+            case "tp05":
+                return "template5";
+            case "tp06":
+                return "template6";
+            default:
+                return "template1";
+        }
+    }
+
+    buttonWord = (word) =>{
+        switch(word){
+            case "tp01":
+                return "前往版型一";
+            case "tp02":
+                return "前往版型二";
+            case "tp03":
+                return "前往版型三";
+            case "tp04":
+                return "前往版型四";
+            case "tp05":
+                return "前往版型五";
+            case "tp06":
+                return "前往版型六";
+            default:
+                return "前往版型一";
+        }
+    }
+
 
 
     render(){
@@ -295,6 +334,8 @@ class managerGeneralSetting extends React.Component{
         }
 
         let sampleImgURL = "/image/templatesample/" + this.sampleMapping(themeNum + styleType);
+        let nextStepURL = `/managerweb/${cid}/` + this.nextStepButton(themeNum);
+        let buttonWord = this.buttonWord(themeNum);
 
         return(
             <div className="container-fluid">
@@ -423,8 +464,13 @@ class managerGeneralSetting extends React.Component{
                               </div>
                           </div>
                           <hr />
-                          <div  align="center">
-                            <button type='submit' id='action' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button>
+                          <div className="form-row" align="center">
+                            <div className="col-md-6 mb-3">
+                                <button type='submit' id='action' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button>
+                            </div>
+                            <div className="col-md-6 mb-3">
+                                <Link className="btn btn-facebook btn-block btn-width" to={nextStepURL}><i className="fas fa-share"></i> {buttonWord}</Link>
+                            </div>
                           </div>
                         </form>
 
