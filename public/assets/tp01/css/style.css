@@ -626,9 +626,20 @@ h6 {
   color: var(--color-primary) !important;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .mainbar-wrap:not(.is-stuck) .nav-header-text {
     text-shadow:1px 1px #000000;
+  }
+}
+
+@media screen and (max-width: 1199px){
+  .main-header .navbar-header { 
+    background-color: #ffffff; 
+  }
+
+  .navbar-collapse {
+    background-color: #ffffff;
+    color: #000;
   }
 }
 
