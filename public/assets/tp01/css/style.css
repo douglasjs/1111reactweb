@@ -634,7 +634,7 @@ h6 {
 
 
 /* Max line */
-.line-1 ,.line-2 ,.line-3 ,.line-4 ,.line-5 ,.line-18 {
+.line-1 ,.line-2 ,.line-3 ,.line-4 ,.line-5 ,.line-15 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -661,8 +661,8 @@ h6 {
   -webkit-line-clamp: 5;
 }
 
-.line-18 {
-  -webkit-line-clamp: 18;
+.line-10 {
+  -webkit-line-clamp: 10;
 }
 
 /* Max Height */
@@ -680,4 +680,16 @@ h6 {
 
 .max-hight-350 {
   max-height: 350px;
+}
+
+.max-hight-410 {
+  max-height: 410px;
+}
+
+.over-div-hide {
+  overflow:hidden;
+}
+
+.text-left {
+  text-align: left;
 }

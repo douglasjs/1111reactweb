@@ -58,7 +58,7 @@ class CompanyBenifit  extends React.Component {
         
                         <div className="lqd-column col-xs-12 col-md-6 pl-md-7">
     
-                            <div className="ld-fancy-heading benefit-margin-custom" dangerouslySetInnerHTML={{__html: benefitContent}}/>
+                            <div className="ld-fancy-heading benefit-margin-custom line-10 max-hight-410 over-div-hide text-left" dangerouslySetInnerHTML={{__html: benefitContent}}/>
     
                         </div>
     
