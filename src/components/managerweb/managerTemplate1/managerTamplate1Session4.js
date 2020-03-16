@@ -202,8 +202,11 @@ class Session4 extends React.Component{
             themeNum : event.target.themeNum4.value,
             groupName1:  event.target.groupName1.value,
             groupName2:  event.target.groupName2.value,
-            groupName3:  event.target.groupName3.value
-
+            groupName3:  event.target.groupName3.value,
+            position_img:  '',
+            position_imgUpload: null,
+            position_backgroudImg:  '',
+            position_backgroudImgUpload: null
         }
 
         if(event.target.actionTag.value === 'create'){

@@ -89,46 +89,30 @@ class Session1 extends React.Component{
         }
         */
 
+        const　comObj = {
+            ono: cid,
+            themeNum : event.target.themeNum.value,
+            title: event.target.title.value,
+            title2: '',
+            title3: '',
+            companySubTitle1: event.target.companySubTitle1.value,
+            companySubTitle2: event.target.companySubTitle2.value,
+            companySubTitle3: '',
+            companyBackgroundImg1:event.target.companyBackgroundImg1.value,
+            companyBackgroundImg2:event.target.companyBackgroundImg2.value,
+            companyBackgroundImg3:'',
+            uploadImg1: this.state.UploadImg1 ? this.state.UploadImg1.value : null,
+            uploadImg2: this.state.UploadImg2 ? this.state.UploadImg2.value : null,
+            uploadImg3: null
+        }
 
         if(event.target.action1.value === 'create'){
-
-            this.props.createCompany({
-                ono: cid,
-                themeNum : event.target.themeNum.value,
-                title: event.target.title.value,
-                companySubTitle1: event.target.companySubTitle1.value,
-                companySubTitle2: event.target.companySubTitle2.value,
-                companyBackgroundImg1:event.target.companyBackgroundImg1.value,
-                companyBackgroundImg2:event.target.companyBackgroundImg2.value,
-                uploadImg1: this.state.UploadImg1 ? this.state.UploadImg1.value : null,
-                uploadImg2: this.state.UploadImg2 ? this.state.UploadImg2.value : null
-    
-            });
-
+            this.props.createCompany(comObj);
         }
 
-        
         if(event.target.action1.value === 'modify'){
-   
-   
-            this.props.updateCompany({
-                ono: cid,
-                themeNum : event.target.themeNum.value,
-                title: event.target.title.value,
-                companySubTitle1: event.target.companySubTitle1.value,
-                companySubTitle2: event.target.companySubTitle2.value,
-                companyBackgroundImg1:event.target.companyBackgroundImg1.value,
-                companyBackgroundImg2:event.target.companyBackgroundImg2.value,
-                uploadImg1: this.state.UploadImg1 ? this.state.UploadImg1.value : null,
-                uploadImg2: this.state.UploadImg2 ? this.state.UploadImg2.value : null
-    
-            });
- 
+            this.props.updateCompany(comObj);
         }
-
-
-
-       
 
     }
     

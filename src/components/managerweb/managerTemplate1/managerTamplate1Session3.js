@@ -21,24 +21,46 @@ class Session3 extends React.Component{
     handleSubmit = (event) =>{
         event.preventDefault();
         const cid = this.props.match.params.cid;
+
+        const benObj={
+            ono: cid,
+            themeNum : event.target.themeNum3.value,
+            benefitContent:  this.state.benefitContent,
+            benefitImg: event.target.benefitImg.value,
+            benefitImg2: '',
+            benefitImgUpload: this.state.benefitImgUpload ? this.state.benefitImgUpload.value : null,
+            benefitImg2Upload: null,
+            benefitSubTitle1: '',
+            benefitSubTitle2: '',
+            benefitSubTitle3: '',
+            benefitSubTitle4: '',
+            benefitSubTitle5: '',
+            benefitSubTitle6: '',
+            benefitSubContent1: '',
+            benefitSubContent2: '',
+            benefitSubContent3: '',
+            benefitSubContent4: '',
+            benefitSubContent5: '',
+            benefitSubContent6: '',
+            benefitSubImg1: '',
+            benefitSubImg2: '',
+            benefitSubImg3: '',
+            benefitSubImg4: '',
+            benefitSubImg5: '',
+            benefitSubImg6: '',
+            benefitSubImg1Upload: null,
+            benefitSubImg2Upload: null,
+            benefitSubImg3Upload: null,
+            benefitSubImg4Upload: null,
+            benefitSubImg5Upload: null,
+            benefitSubImg6Upload: null
+        }
         
         if(event.target.action3.value === 'create'){
-            this.props.createbenefit({
-                ono: cid,
-                themeNum : event.target.themeNum3.value,
-                benefitContent:  this.state.benefitContent,
-                benefitImg: event.target.benefitImg.value,
-                benefitImgUpload: this.state.benefitImgUpload ? this.state.benefitImgUpload.value : null
-            });
+            this.props.createbenefit(benObj);
         }
         if(event.target.action3.value === 'modify'){
-            this.props.updatebenefit({
-                ono: cid,
-                themeNum : event.target.themeNum3.value,
-                benefitContent: this.state.benefitContent,
-                benefitImg: event.target.benefitImg.value,
-                benefitImgUpload: this.state.benefitImgUpload ? this.state.benefitImgUpload.value : null
-            });
+            this.props.updatebenefit(benObj);
         }
     }
 

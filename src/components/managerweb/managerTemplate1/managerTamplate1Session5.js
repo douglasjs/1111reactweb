@@ -36,7 +36,16 @@ class Session5 extends React.Component{
             brandTitleSub3:  event.target.brandTitleSub3.value,
             brandTitleSub3Content:  event.target.brandTitleSub3Content.value,
             brandImg : event.target.brandImg.value,
-            brandImgUpload: event.target.brandImgUpload ? this.state.brandImgUpload.value : null
+            brandImgUpload: event.target.brandImgUpload ? this.state.brandImgUpload.value : null,
+            brandImg1 : '',
+            brandImg1Upload: null,
+            brandImg2 : '',
+            brandImg2Upload: null,
+            brandImg3 : '',
+            brandImg3Upload: null,
+            brandURL1 : '',
+            brandURL2 : '',
+            brandURL3 : ''
         }
 
         console.log(event.target.action5.value);

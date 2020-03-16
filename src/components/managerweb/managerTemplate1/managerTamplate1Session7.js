@@ -50,6 +50,9 @@ class Session7 extends React.Component{
             qa4Content:  event.target.qa4Content.value,
             qa5Title:  event.target.qa5Title.value,
             qa5Content:  event.target.qa5Content.value,
+            qaSubTitle:  '',
+            qaImg:  '',
+            qaImgUpload: null
         }
 
         if(event.target.action7.value === 'create'){
