@@ -389,9 +389,9 @@ h6 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   line-height: 30px;
-  height: 75px;
+  /*height: 75px;*/
   padding-bottom: 0px;
 }
 @media screen and (min-width: 601px) and (max-width: 768px){
