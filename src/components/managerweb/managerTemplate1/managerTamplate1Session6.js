@@ -286,8 +286,10 @@ class Session6 extends React.Component{
 
                         <div>
                             <div className="card">
-                                <div className="card-header text-white bg-primary">卡片 1</div>
-                                <div className="card-body">
+                                <a href="#collapseCard6-1" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6-1">
+                                    <div className="card-header text-white bg-primary">卡片 1</div>
+                                </a>
+                                <div className="card-body collapse show" id="collapseCard6-1">
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                         <InputText title='卡片1標題' notice='(字數限制為8個字以內)' inputName='card1Title' inputState={card1Title}
@@ -357,8 +359,10 @@ class Session6 extends React.Component{
 
                         <div>
                             <div className="card">
-                                <div className="card-header text-white bg-primary">卡片 2</div>
-                                <div className="card-body">
+                                <a href="#collapseCard6-2" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6-2">
+                                    <div className="card-header text-white bg-primary">卡片 2</div>
+                                </a>
+                                <div className="card-body collapse collapsed" id="collapseCard6-2">
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <InputText title='卡片2標題' notice='(字數限制為8個字以內)' inputName='card2Title' inputState={card2Title}
@@ -428,8 +432,10 @@ class Session6 extends React.Component{
 
                         <div>
                             <div className="card">
-                                <div className="card-header text-white bg-primary">卡片 3</div>
-                                <div className="card-body">
+                                <a href="#collapseCard6-3" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6-3">
+                                    <div className="card-header text-white bg-primary">卡片 3</div>
+                                </a>
+                                <div className="card-body collapse collapsed" id="collapseCard6-3">
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <InputText title='卡片3標題' notice='(字數限制為8個字以內)' inputName='card3Title' inputState={card3Title}
@@ -499,8 +505,10 @@ class Session6 extends React.Component{
 
                         <div>
                             <div className="card">
-                                <div className="card-header text-white bg-primary">卡片 4</div>
-                                <div className="card-body">
+                                <a href="#collapseCard6-4" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6-4">
+                                    <div className="card-header text-white bg-primary">卡片 4</div>
+                                </a>
+                                <div className="card-body collapse collapsed" id="collapseCard6-4">
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <InputText title='卡片4標題' notice='(字數限制為8個字以內)' inputName='card4Title' inputState={card4Title}
