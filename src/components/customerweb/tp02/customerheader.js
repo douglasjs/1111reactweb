@@ -2,23 +2,15 @@
 
 const NavBar = () => {
     return(
-        <div className="navbar-header">
-            <a className="navbar-brand" href="##" rel="home">
-                <span className="navbar-brand-inner">
-                    <img className="logo-dark" src="image/logo.png" alt="1111人力銀行Logo" />
-                    <img className="logo-sticky" src="image/logo.png" alt="1111人力銀行Logo" />
-                    <img className="mobile-logo-default" src="image/logo.png" alt="1111人力銀行Logo" />
-                    <img className="logo-default" src="image/logo.png" alt="1111人力銀行Logo" />
-                </span>
-            </a>
-            <button type="button" className="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames={`{ "html": "mobile-nav-activated overflow-hidden" }`}>
-                <span className="sr-only">選單</span>
-                <span className="bars">
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                </span>
-            </button>
+        <div className="preloader-wrap">
+            <div className="preloader">
+                <span className="dot"></span>
+                <div className="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
 
     );
@@ -35,27 +27,41 @@ const NavMain = () => {
         { name: '聯絡我們', link: '#contact', enable: true }
     ]
     return (
-        <div className="collapse navbar-collapse" id="main-header-collapse">
-            <ul id="primary-nav" className="main-nav nav align-items-lg-stretch justify-content-lg-end" data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }'>
-                {menuList.map((item, index) => {
-                    return item.enable &&
-                        <li key={index}>
-                            <a href={item.link} data-localscroll="true" data-localscroll-options='{ "offsetElements": "[data-sticky-header] .mainbar-wrap, parent" }'>
-                                <span className="link-icon"></span>
-                                <span className="link-txt">
-                                    <span className="link-ext"></span>
-                                    <span className="txt nav-header-text">
-                                        {item.name}
-                                        <span className="submenu-expander">
-                                            <i className="fa fa-angle-down"></i>
-                                        </span>
-                                    </span>
-                                </span>
+        <header className="header-area-custom header-area sticky-header">
+            <div className="container-fluid">
+                <div className="row no-gutters align-items-center">
+                    <div className="col-5 col-lg-2">
+                        <div className="header-logo-area">
+                            <a href="#">
+                                <img className="logo-main" src="image/tp02/logo.png" alt="Logo" />
                             </a>
-                        </li>
-                })}
-            </ul>
-        </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-9 d-none d-lg-block">
+                        <div className="header-navigation-area">
+                            <ul className="main-menu nav justify-content-center">
+                            {menuList.map((item, index) => {
+                                return item.enable &&
+                                    <li  key={index} className="full-width">
+                                        <a href={item.link}>{item.name}</a>
+                                    </li>
+                            })}
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-7 col-lg-1">
+                            <div className="header-action-area text-right">
+                                <button className="btn-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </header>
+        
     )
 }
 
@@ -63,21 +69,25 @@ const NavMain = () => {
 function CustomerHeader(props) {
 
     return (
-            <header className="main-header main-header-overlay" data-react-to-megamenu="true" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
-                <div className="mainbar-wrap">
-                <span className="megamenu-hover-bg"></span>
-                <div className="container-fluid mainbar-container">
-                    <div className="mainbar">
-                        <div className="row mainbar-row align-items-lg-stretch px-4">
-                            <div className="col-auto">
-                                <NavBar />
-                                <NavMain />
+        <div>
+            <NavBar />
+
+            <header className="header-area-custom header-area sticky-header">
+                <div className="container-fluid">
+                    <div className="row no-gutters align-items-center">
+                        <div className="col-5 col-lg-2">
+                            <div className="header-logo-area">
+                                <a href="#">
+                                    <img className="logo-main" src="image/tp02/logo.png" alt="Logo" />
+                                </a>
                             </div>
                         </div>
+                        <NavMain />
                     </div>
                 </div>
-                </div>               	
-		    </header> 
+            </header>
+        </div>
+            
     );
 
 

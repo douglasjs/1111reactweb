@@ -2,59 +2,74 @@
 
 function CompanyBenifit() {
 
-    const style = {
-        'backgroundImage' : 'url(./assets/img/benefit-bg_blue.png)'
-    }
-
     return (
-        <section id="benefit" className="vc_row bg-cover bg-center-bottom pt-10" style={style}>
+        <div id="benefit" className="service-area sm-top-custom bg-softWhite">
             <div className="container">
-                <div className="row d-flex flex-wrap align-items-center">
+                <div className="row align-items-center">
+                    <div className="col-lg-7 order-1 order-lg-0">
+                        <div className="service-inner-wrap service-business-classic">
+                            <div className="row">
+                                <div className="col-sm-6">
+                                    <div className="icon-box-item">
+                                        <div className="icon-box__icon">
+                                            <img src="image/benefit1.png" alt="福利" />
+                                        </div>
+                                        <div className="icon-box__txt">
+                                            <h6>法定項目</h6>
+                                            <p>勞保、健保、加班費、生理假、產假、勞退提撥金</p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div className="lqd-column col-xs-12 col-md-6">
+                                <div className="col-sm-6">
+                                    <div className="icon-box-item">
+                                        <div className="icon-box__icon">
+                                            <img src="image/benefit2.png" alt="福利" />
+                                        </div>
+                                        <div className="icon-box__txt">
+                                            <h6>節慶福利</h6>
+                                            <p>年節禮券、生日禮券、春酒聚餐</p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <div className="liquid-img-group-container">
-                            <div className="liquid-img-group-inner">
-                                <div className="liquid-img-group-single" data-reveal="true" data-reveal-options='{"direction":"rl"}'>
-                                    <div className="liquid-img-group-img-container liquid-img-group-container-benefit-sm">
-                                        <div className="liquid-img-container-inner" data-parallax="true" data-parallax-from='{"scaleX":1.25,"scaleY":1.25}' data-parallax-to='{"scaleX":1,"scaleY":1}' data-parallax-options='{"overflowHidden":true,"easing":"linear"}'>
-                                            <figure>
-                                                <img src="image/benefit-1.png" alt="1111人力銀行員工福利" />
-											</figure>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-    
-					</div>
-    
-					<div className="lqd-column col-xs-12 col-md-6 pl-md-7">
+                                <div className="col-sm-6">
+                                    <div className="icon-box-item">
+                                        <div className="icon-box__icon">
+                                           <img src="image/benefit3.png" alt="福利" />
+                                        </div>
+                                        <div className="icon-box__txt">
+                                            <h6>獎金類</h6>
+                                            <p>全勤獎金、年節獎金、員工生日禮金、年終獎金、三節獎金、激勵獎金、績效獎金</p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div className="ld-fancy-heading benefit-margin-custom">
-                                <h2 className="text-black" data-text-rotator="true">
-                                    <span className="ld-fh-txt">員工福利</span>
-                                </h2>
-                                <p className="benefit-hide-text text-black"><strong><span className="text-primary"> 法定項目</span></strong><br />
-                                勞保、健保、男性員工陪產假、育嬰假、生理假、特別休假、員工體檢、勞退提撥金、職災保險<br />
-							</p>
-                        <p className="benefit-hide-text text-black">
-                            <strong><span className="text-primary">福利制度</span></strong><br />
-                                    獎 金 類：全勤獎金、年節獎金、員工生日禮金、年終獎金、三節獎金、禮品、績效獎金<br />
-                                保 險 類：意外險、員工團保、員工及眷屬住院慰問金<br />
-                            餐 飲 類：免費供餐<br />
-                            娛 樂 類：自強活動、國內旅遊、尾牙、員工運動會<br />
-								                補 助 類：員工結婚補助、生育補助、員工國內、外進修補助、員工及眷屬喪葬補助、員工購物優惠、社團補助<br />
-                        其 　他：員工在職教育訓練、良好升遷制度
-							</p>
-						</div >
+                                <div className="col-sm-6">
+                                    <div className="icon-box-item">
+                                        <div className="icon-box__icon">
+                                            <img src="image/benefit4.png" alt="福利" />
+                                        </div>
+                                        <div className="icon-box__txt">
+                                            <h6>其他福利</h6>
+                                            <p>餐 飲 類：免費供餐<br />
+                                                補 助 類：員工國內、外進修補助、員工手機配發或補助<br />
+                                                其 　他：員工在職教育訓練、良好升遷制度</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-					</div>
-
-				</div>
-			</div>
-		</section>
-   
+                    <div className="col-lg-5 order-0 order-lg-1">
+                        <figure className="about-thumb about-thumb-right-align">
+                            <img src="image/benifit-1.jpg" alt="1111人力銀行員工福利" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 
 }

@@ -3,126 +3,77 @@
 function CompanyCustomize() {
 
     return (
-        <section id="custom" className="vc_row pt-30">
+        <div id="custom" className="element-content-area sp-y-custom">
             <div className="container">
                 <div className="row">
+                    <div className="col-lg-6 m-auto text-center">
+                        <div className="section-title mb-0">
+                            <h5>NEWS</h5>
+                            <h4 className="font-weight-bold">媒體報導</h4>
+                        </div>
+                    </div>
+                </div>
+                <div className="row mt-10">
+                    <div className="col-12">
 
-                    <div className="lqd-column col-md-12">
-
-                        <header className="fancy-title mb-30" id="fancy-title-unlimited-classes">
-                            <h2 className="text-uppercase ltr-sp-0">有機食材宅配服務 </h2>
-                            <p>GREEN & SAFE百寶箱組合週週送，各式生鮮、冷藏、冷凍有機食材宅配服務。 </p>
-                        </header>
+                        <div className="position-relative">
+                            <div className="service-slider-content">
+                                
+                                <div className="service-item">
+                                    <div className="service-item__thumb">
+                                        <img src="image/tp02/custom-1.png" alt="1111人力銀行客制化" />
+                                    </div>
+                                    <div className="service-item__txt">
+                                        <h2 className="h6">京典臻品JD classic｜多樣化的紫晶洞、黃水晶 ...</h2>
+                                        <p className="p-hide-text-custom">
+                                            快過年了，想要為家中增添新擺飾? 或是剛開幕想要買個聚寶盆擺起來招財又體面大方卻又怕網路上買得跟到時候收到的不一樣? 今天要推薦一間有 .......
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-item">
+                                    <div className="service-item__thumb">
+                                        <img src="image/tp02/custom-2.png" alt="1111人力銀行客制化" />
+                                    </div>
+                                    <div className="service-item__txt">
+                                        <h2 className="h6">京典臻品JD classic｜台北、台中粉絲頁即將合體</h2>
+                                        <p className="p-hide-text-custom">
+                                            晶典臻品. 致晶典臻品水晶精靈村台中的小精靈～ 從今天這一刻開始晶典臻品自行宣布兩岸統一了！ 我們的粉絲頁將全省合併也就是說台北台中的粉絲頁即將合體不 ...
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-item">
+                                    <div className="service-item__thumb">
+                                        <img src="image/tp02/custom-3.png" alt="1111人力銀行客制化" />
+                                    </div>
+                                    <div className="service-item__txt">
+                                        <h2 className="h6">京典臻品JD classic｜[台中水晶店]大型水晶洞/聚寶盆哪買最便宜? 快來京典臻品JD classNameic ...</h2>
+                                        <p className="p-hide-text-custom">
+                                            就是這家位於台中西屯區的「 京典臻品JD classic 」天然水晶礦石專賣店！ 京典臻品JD classNameic 可是烏拉圭&巴西水晶礦石的大盤商～. 想要什麼 ..
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-item">
+                                    <div className="service-item__thumb">
+                                        <img src="image/tp02/custom-4.png" alt="1111人力銀行客制化" />	
+                                    </div>
+                                    <div className="service-item__txt">
+                                        <h2 className="h6">京典臻品JD classNameic｜[台中水晶]京典臻品 全台最大紫晶洞批發~產品多樣化、價格 ..</h2>
+                                        <p className="p-hide-text-custom">
+                                            莉莉安~玥是幸福 > 愛玩趴趴走 > [台中水晶]京典臻品❤全台最大紫晶洞批發~產品多樣化、價格透明化、優惠折扣活動多!內有”水晶挑選小常識” ...
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
 
                     </div>
-
-					<div className="lqd-column col-md-12">
-
-                        <div className="carousel-container carousel-nav-right carousel-nav-sm carousel-nav-bordered carousel-nav-square carousel-dots-style1">
-
-                            <div className="carousel-items row" data-lqd-flickity='{"cellAlign":"left","prevNextButtons":true,"buttonsAppendTo":"#fancy-title-unlimited-classes","pageDots":false,"groupCells":false,"wrapAround":true,"pauseAutoPlayOnHover":false,"navArrow":{"prev":"<i class=\"fa fa-angle-left\"></i>","next":"<i class=\"fa fa-angle-right\"></i>"}}'>
-
-
-                                <div className="lqd-column carousel-item col-md-3 col-sm-6">
-
-                                    <div className="fancy-box content-box-heading-sm fancy-box-classes">
-                                        <figure className="fancy-box-image">
-                                            <img src="image/custom-4.jpg" alt="1111人力銀行客製化" />
-										</figure>
-                                            <div className="fancy-box-contents">
-                                                <div className="fancy-box-info">
-                                                    <h3>海水生態蝦仁</h3>
-                                                    <span className="trainer">
-                                                        ．定期檢驗重金屬合格。<br />．定期檢驗無動物用藥殘留。
-												</span>
-                                            </div>
-										</div>
-									</div>
-
-								</div>
-
-								<div className="lqd-column carousel-item col-md-3 col-sm-6">
-
-                                    <div className="fancy-box content-box-heading-sm fancy-box-classes">
-                                        <figure className="fancy-box-image">
-                                            <img src="./image/custom-5.jpg" alt="1111人力銀行客製化" />
-										</figure>
-                                            <div className="fancy-box-contents">
-                                                <div className="fancy-box-info">
-                                                    <h3>安心鱸魚排</h3>
-                                                    <span className="trainer">
-                                                        ．定期檢驗無動物用藥殘留<br />．定期檢驗鮮度(VBN)合格
-												</span>
-                                            </div>
-										</div>
-									</div>
-								</div>
-
-								<div className="lqd-column carousel-item col-md-3 col-sm-6">
-
-                                    <div className="fancy-box content-box-heading-sm fancy-box-classes">
-                                        <figure className="fancy-box-image">
-                                            <img src="./image/custom-1.jpg" alt="1111人力銀行客製化" />
-										</figure>
-                                            <div className="fancy-box-contents">
-
-                                                <div className="fancy-box-info">
-                                                    <h3>蒲燒鯛魚腹排</h3>
-                                                    <span className="trainer">
-
-                                                        ．無添加防腐劑<br /> ．無添加任何人工甘味劑
-												</span>
-                                            </div>
-										</div>
-									</div>
-
-								</div>
-
-								<div className="lqd-column carousel-item col-md-3 col-sm-6">
-
-                                    <div className="fancy-box content-box-heading-sm fancy-box-classes">
-                                        <figure className="fancy-box-image">
-                                            <img src="./image/custom-2.jpg" alt="1111人力銀行客製化" />
-										</figure>
-                                            <div className="fancy-box-contents">
-                                                <div className="fancy-box-info">
-                                                    <h3>一品鮑魚糙米粥</h3>
-                                                    <span className="trainer">
-                                                        ．無添加防腐劑 <br />  ．正黑豬及放山雞作為基底
-												</span>
-                                            </div>
-										</div>
-									</div>
-
-								</div>
-
-								<div className="lqd-column carousel-item col-md-3 col-sm-6">
-
-                                    <div className="fancy-box content-box-heading-sm fancy-box-classes">
-                                        <figure className="fancy-box-image">
-                                            <img src="./image/custom-3.jpg" alt="1111人力銀行客製化" />
-										</figure>
-                                        <div className="fancy-box-contents">
-                                                <div className="fancy-box-info">
-                                                    <h3>主恩高優質鮮乳</h3>
-                                                    <span className="trainer">
-                                                        ．定期檢驗無動物用藥殘留 <br />．100%無人工調整鮮乳
-												</span>
-                                            </div>
-										</div>
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-		</section>
+                </div>
+            </div>
+        </div>
     )
 
 }

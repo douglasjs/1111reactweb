@@ -1,47 +1,67 @@
 ﻿import React from 'react';
-import TitleSet from '../sharecomponents/titleset';
-import useScript from '../sharecomponents/usescript';
 import CustomerHeader from './customerheader';
 import CustomerMain from './customermain';
 import CustomerFoot from './customerfoot';
+import useScript from '../../sharecomponents/usescript';
+
 
 function CustomerWeb(props) {
-    const cid = props.match.params.cid;
-    const companyName = '1111人力銀行-';
-    const companyMeta = {
-        keywords: '1111,永豐餘生技,人力,徵才',
-        description: '永豐餘生技(股)公司是永豐餘投資控股股份有限公司旗下關係企業，創立於民國 89 年，主要從事食品生技業、有機農業、製造業、餐飲業等。&nbsp;1998年永豐餘生物科技在臺灣宜蘭成立了南澳豐園農場，投身有機的事業，致力於栽培各種有機的食材，積極推廣尊重自然的有機生活哲學，試圖扮演有機生活管家的角色。'
-    }
-    const styleSheet = [
-        'assets/vendors/liquid-icon/liquid-icon.min.css',
-        'assets/vendors/font-awesome/css/font-awesome.min.css',
-        'assets/css/theme-vendors.min.css',
-        'assets/css/theme.min.css',
-        'assets/css/style_blue.css'
-    ]
-    const script = ['assets/vendors/modernizr.min.js'];
 
-    useScript('assets/vendors/jquery.min.js');
-    useScript('assets/js/theme-vendors.js');
-    useScript('assets/js/theme.min.js');
-    useScript('assets/js/liquidAjaxContactForm.min.js');
-    useScript('assets/js/liquidAjaxMailchimp.min.js');
-    useScript('assets/js/goTopButton.js');
+    const URL = [
+        '/assets/tp02/js/modernizr-3.6.0.min.js',
+        '/assets/tp02/js/jquery-3.3.1.min.js',
+        '/assets/tp02/js/jquery-migrate-1.2.1.min.js',
+        '/assets/tp02/js/popper.min.js',
+        '/assets/tp02/js/bootstrap.min.js',
+        '/assets/tp02/js/counterup.min.js',
+        '/assets/tp02/js/isotope.pkgd.min.js',
+        '/assets/tp02/js/jquery.ajaxchimp.min.js',
+        '/assets/tp02/js/jquery.appear.js',
+        '/assets/tp02/js/jquery.countdown.min.js',
+        '/assets/tp02/js/jquery.easypiechart.min.js',
+        '/assets/tp02/js/jquery.fullpage.min.js',
+        '/assets/tp02/js/jquery.justifiedGallery.min.js',
+        '/assets/tp02/js/jquery.magnific-popup.min.js',
+        '/assets/tp02/js/jquery.matchHeight-min.js',
+        '/assets/tp02/js/jquery.mCustomScrollbar.min.js',
+        '/assets/tp02/js/jquery.multiscroll.min.js',
+        '/assets/tp02/js/jquery.nice-select.min.js',
+        '/assets/tp02/js/jquery.slicknav.min.js',
+        '/assets/tp02/js/jquery.sticky-sidebar.min.js',
+        '/assets/tp02/js/jquery-ui.min.js',
+        '/assets/tp02/js/leaflet.min.js',
+        '/assets/tp02/js/lightslider.min.js',
+        '/assets/tp02/js/parallax.min.js',
+        '/assets/tp02/js/tippy.all.min.js',
+        '/assets/tp02/js/typed.min.js',
+        '/assets/tp02/js/waypoint.min.js',
+        '/assets/tp02/js/active.js',
+        '/assets/tp02/js/revslider/jquery.themepunch.tools.min.js',
+        '/assets/tp02/js/revslider/jquery.themepunch.revolution.min.js',
+        '/assets/tp02/js/revslider/extensions/revolution.extension.actions.min.js',
+        '/assets/tp02/js/revslider/extensions/revolution.extension.carousel.min.js',
+        '/assets/tp02/js/revslider/extensions/revolution.extension.kenburn.min.js',
+        '/assets/tp02/js/revslider/extensions/revolution.extension.layeranimation.min.js',
+        '/assets/tp02/js/revslider/extensions/revolution.extension.migration.min.js',
+        '/assets/tp02/js/revslider/extensions/revolution.extension.navigation.min.js',
+        '/assets/tp02/js/revslider/extensions/revolution.extension.parallax.min.js',
+        '/assets/tp02/js/revslider/extensions/revolution.extension.slideanims.min.js',
+        '/assets/tp02/js/revslider/extensions/revolution.extension.video.min.js',
+        '/assets/tp02/js/revslider/rev-active.js',
+        '/assets/tp02/js/goTopButton.js',
+        '/assets/tp02/js/clickclose.js',
+       ]
+    useScript(URL);
+
 
     return (
          
         <div>
-            <TitleSet title={companyName} meta={companyMeta} style={styleSheet} script={script} />
-            <div id="wrap">
-                <CustomerHeader />
-                <CustomerMain />
-                <CustomerFoot />
-            </div>
-            <a className="top-link-icon hide" href="##" id="js-top-icon"><i className="fa fa-angle-up"></i></a>
-            <a className="top-link hide" href="##" id="js-top">
-                <img src="assets/img/join_icon_blue.png" alt="立即應徵" />
-            </a>
+                <CustomerHeader {...props}/>
+                <CustomerMain {...props}/>
+                <CustomerFoot {...props}/>
         </div>    
+      
     )
 
 }
