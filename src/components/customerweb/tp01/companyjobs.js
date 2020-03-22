@@ -68,7 +68,7 @@ class CompanyJobs extends React.Component {
 
                                 
                                 <div className="tabs-content">
-                                    <div id="ld-tab-1" role="tabpanel" className="tabs-pane fade active in">
+                                    <div id="ld-tab-1" role="tabpanel" className="tabs-pane fade  in">
     
                                         <div className="jobs-table">
     
@@ -83,8 +83,8 @@ class CompanyJobs extends React.Component {
                                             
                                                 {Array.isArray(positionData) && positionData.filter( data => data.position_group === "1").map((element, index) => {
                                                     let positionURL = "https://www.1111.com.tw/job/"+ element.eNo + "/";
-                                                    
-                                                  return(                                                      
+
+                                                  return(
                                                         <div key={index} className="jobs-table-row">
                                                             <div className="cell" data-title="職缺：">{element.position_name}</div>
                                                             <div className="cell" data-title="薪資：">{element.position_salary}</div>
@@ -101,7 +101,7 @@ class CompanyJobs extends React.Component {
                                                                     </span>
                                                                 </a>
                                                             </div>
-                                                        </div>                                                    
+                                                        </div>
                                                     )
 
                                                 })}
@@ -150,7 +150,7 @@ class CompanyJobs extends React.Component {
 
                                     </div>
 
-                                    <div id="ld-tab-3" role="tabpanel" className="tabs-pane fade in">
+                                    <div id="ld-tab-3" role="tabpanel" className="tabs-pane fade active in">
     
                                         <div className="jobs-table">
 
