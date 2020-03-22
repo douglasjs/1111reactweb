@@ -125,6 +125,10 @@ class Session3 extends React.Component{
                                             id='benefitContent'
                                             className='form-control'
                                             editor={ ClassicEditor }
+                                            config={ {
+                                                toolbar: ['heading', '|', 'bold', 'italic', 'blockQuote', 'link', 'numberedList', 'bulletedList', 'insertTable',
+                                                  'tableColumn', 'tableRow', 'mergeTableCells', '|', 'undo', 'redo']
+                                            } }  
                                             data={benefitContent}
                                             onInit={ editor => {
                                                 // You can store the "editor" and use when it is needed.
