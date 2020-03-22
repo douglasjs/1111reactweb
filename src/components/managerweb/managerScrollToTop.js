@@ -1,6 +1,6 @@
 ﻿import React, { Component } from "react";
 
-export default class ScrollToTop extends Component {
+export default class BKScrollToTop extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -27,7 +27,7 @@ export default class ScrollToTop extends Component {
         }
     }
 
-    scrollToTop() {
+    bkscrollToTop() {
         window.scrollTo({
         top: 0,
         behavior: "smooth"
@@ -41,7 +41,7 @@ export default class ScrollToTop extends Component {
 
           <div className="scroll-to-top rounded">
             {is_visible && (
-              <div onClick={() => this.scrollToTop()}>
+              <div onClick={() => this.bkscrollToTop()}>
                 <i className="fas fa-angle-up"></i>
               </div>
             )}
