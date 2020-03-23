@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomerWeb from './components/customerweb/tp01/customerweb';
+import CustomerWeb from './components/customerweb/index';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
 //Redux 

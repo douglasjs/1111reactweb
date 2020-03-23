@@ -12,7 +12,7 @@ function CompanyBenifit() {
                                 <div className="col-sm-6">
                                     <div className="icon-box-item">
                                         <div className="icon-box__icon">
-                                            <img src="image/benefit1.png" alt="福利" />
+                                            <img src="/image/tp02/benefit1.png" alt="福利" />
                                         </div>
                                         <div className="icon-box__txt">
                                             <h6>法定項目</h6>
@@ -24,7 +24,7 @@ function CompanyBenifit() {
                                 <div className="col-sm-6">
                                     <div className="icon-box-item">
                                         <div className="icon-box__icon">
-                                            <img src="image/benefit2.png" alt="福利" />
+                                            <img src="/image/tp02/benefit2.png" alt="福利" />
                                         </div>
                                         <div className="icon-box__txt">
                                             <h6>節慶福利</h6>
@@ -36,7 +36,7 @@ function CompanyBenifit() {
                                 <div className="col-sm-6">
                                     <div className="icon-box-item">
                                         <div className="icon-box__icon">
-                                           <img src="image/benefit3.png" alt="福利" />
+                                           <img src="/image/tp02/benefit3.png" alt="福利" />
                                         </div>
                                         <div className="icon-box__txt">
                                             <h6>獎金類</h6>
@@ -48,7 +48,7 @@ function CompanyBenifit() {
                                 <div className="col-sm-6">
                                     <div className="icon-box-item">
                                         <div className="icon-box__icon">
-                                            <img src="image/benefit4.png" alt="福利" />
+                                            <img src="/image/tp02/benefit4.png" alt="福利" />
                                         </div>
                                         <div className="icon-box__txt">
                                             <h6>其他福利</h6>
@@ -64,7 +64,7 @@ function CompanyBenifit() {
 
                     <div className="col-lg-5 order-0 order-lg-1">
                         <figure className="about-thumb about-thumb-right-align">
-                            <img src="image/benifit-1.jpg" alt="1111人力銀行員工福利" />
+                            <img src="/image/tp02/benifit-1.jpg" alt="1111人力銀行員工福利" />
                         </figure>
                     </div>
                 </div>

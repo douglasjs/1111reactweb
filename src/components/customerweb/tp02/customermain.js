@@ -1,32 +1,20 @@
 ﻿import React from 'react';
-import CompanyTitle from './companytitle';
-import CompanyInfo from './companyinfo';
-import CompanyBenifit from './companybenifit';
-import CompanyJobs from './companyjobs';
-import CompanyBrand from './companybrand';
-import CompanyCustomize from './companycustomize'
-import CompanyQA from './companyqa'
-import CompanyContact from './companycontact'
+import CompanyTitle from './session1';
+import CompanyInfo from './session2';
+import CompanyInfoBrand from './session2_1';
+import CompanyBenifit from './session3';
+import CompanyJobs from './session4';
+import CompanyBrand from './session5';
+import CompanyCustomize from './session6'
+import CompanyQA from './session7'
+import CompanyContact from './session8'
 import TitleSet from '../../sharecomponents/titleset';
 import envConfig from '../../../config/env';
 
-class CustomerMain extends React.Component{
+function CustomerMain(props){
 
-
-    
-        constructor(props){
-            super(props);
-            this.state={};
-        }
-
-        componentDidMount(){
-            const cid = this.props.match.params.cid;
-            this.props.getDataList(cid);
-        }
-
-        render(){
-            const { data } = this.props.datatableReducer;
-            const cid = this.props.match.params.cid;
+            const { data } = props.datatableReducer;
+            const cid = props.match.params.cid;
 
 
             let webTitle= '1111人力銀行-' + cid;
@@ -80,19 +68,19 @@ class CustomerMain extends React.Component{
             return (
                 <div className="preloader-active">
                     <TitleSet title={webTitle} meta={companyMeta} style={styleSheet} logo={logURL} publicURL={webURL}/>
-                    <CompanyTitle themeNum={themeNum} {...this.props}/>
-                    <CompanyInfo themeNum={themeNum} {...this.props}/>
-                    <CompanyInfoBrand themeNum={themeNum} {...this.props}/>
-                    <CompanyBenifit themeNum={themeNum} {...this.props}/>
-                    <CompanyJobs themeNum={themeNum} {...this.props}/>
-                    <CompanyBrand themeNum={themeNum} {...this.props}/>
-                    <CompanyCustomize themeNum={themeNum} {...this.props}/>
-                    <CompanyQA themeNum={themeNum} {...this.props}/>
-                    <CompanyContact themeNum={themeNum} email={email} {...this.props} />
+                    <CompanyTitle themeNum={themeNum} {...props}/>
+                    <CompanyInfo themeNum={themeNum} {...props}/>
+                    <CompanyInfoBrand themeNum={themeNum} {...props}/>
+                    <CompanyBenifit themeNum={themeNum} {...props}/>
+                    <CompanyJobs themeNum={themeNum} {...props}/>
+                    <CompanyBrand themeNum={themeNum} {...props}/>
+                    <CompanyCustomize themeNum={themeNum} {...props}/>
+                    <CompanyQA themeNum={themeNum} {...props}/>
+                    <CompanyContact themeNum={themeNum} email={email} {...props} />
 
-                    <a className="top-link-icon show" id="js-top-icon"><i className="fa fa-angle-up"></i></a>
+                    <a className="top-link-icon show" id="js-top-icon" href="/#">><i className="fa fa-angle-up"></i></a>
                     <a className="top-link show" href="https://www.1111.com.tw/corp/1355006/#c4" id="js-top">
-                        <img src="assets/tp02/img/join_icon_purple.png" alt="立即應徵" />
+                        <img src={`assets/tp02/img/join_icon_${styleType}.png`} alt="立即應徵" />
                     </a>
 
                     <aside className="off-canvas-wrapper">
@@ -100,10 +88,10 @@ class CustomerMain extends React.Component{
                             <div className="off-canvas-content">
                                 <div className="off-canvas-header">
                                     <div className="logo-area">
-                                        <a href="#"><img src="image/tp02/logo.png" alt="Logo" /></a>
+                                        <a href="/#"><img src="image/tp02/logo.png" alt="Logo" /></a>
                                     </div>
                                     <div className="close-action">
-                                        <button className="btn-close"><i class="pe-7s-close"></i></button>
+                                        <button className="btn-close"><i className="pe-7s-close"></i></button>
                                     </div>
                                 </div>
 
@@ -117,7 +105,6 @@ class CustomerMain extends React.Component{
 
                 </div>
             )
-        }
 }
 
 export default CustomerMain;

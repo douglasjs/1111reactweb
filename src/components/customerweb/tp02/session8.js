@@ -39,7 +39,7 @@ function CompanyContact() {
                                             <div className="row align-items-end">
                                                 <div className="col-lg-12">
                                                     <div className="form-input-item light">
-                                                        <label for="message" className="sr-only">Message</label>
+                                                        <label htmlFor="message" className="sr-only">Message</label>
                                                         <textarea name="con_message" id="message" cols="30" rows="4" placeholder="您的訊息" required></textarea>
                                                     </div>
                                                 </div>

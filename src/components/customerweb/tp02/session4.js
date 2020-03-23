@@ -2,10 +2,6 @@
 
 function CompanyJobs() {
 
-    const style = {
-        fontSize: '18px'
-    }
-
     return (
         <div id="jobs" className="testimonial-landing-area custom-top">
             <div className="container">
@@ -27,7 +23,7 @@ function CompanyJobs() {
                                     <span className="client-designation">台中市西屯區</span>
                                 </div>
                                 <div className="button-item mt-15">
-                                    <a target="_blank" href="https://www.1111.com.tw/corp/70449023/#c4" className="btn-brand btn-lg">我要應徵</a>
+                                    <a target="_blank" href="https://www.1111.com.tw/corp/70449023/#c4" rel="noopener noreferrer" className="btn-brand btn-lg">我要應徵</a>
                                 </div>
                             </div>
                             
@@ -47,7 +43,7 @@ function CompanyJobs() {
                                     <span className="client-designation">台中市西屯區</span>
                                 </div>
                                 <div className="button-item mt-15">
-                                    <a target="_blank" href="https://www.1111.com.tw/corp/70449023/#c4" className="btn-brand btn-lg">我要應徵</a>
+                                    <a target="_blank" href="https://www.1111.com.tw/corp/70449023/#c4" rel="noopener noreferrer" className="btn-brand btn-lg">我要應徵</a>
                                 </div>
                             </div>
                             
@@ -67,7 +63,7 @@ function CompanyJobs() {
                                     <span className="client-designation">台中市西屯區</span>
                                 </div>
                                 <div className="button-item mt-15">
-                                    <a target="_blank" href="https://www.1111.com.tw/corp/70449023/#c4" className="btn-brand btn-lg">我要應徵</a>
+                                    <a target="_blank" href="https://www.1111.com.tw/corp/70449023/#c4" rel="noopener noreferrer" className="btn-brand btn-lg">我要應徵</a>
                                 </div>
                             </div>
                             
@@ -85,7 +81,7 @@ function CompanyJobs() {
                                     <span className="client-designation">台中市西屯區</span>
                                 </div>
                                 <div className="button-item mt-15">
-                                    <a target="_blank" href="https://www.1111.com.tw/corp/70449023/#c4" className="btn-brand btn-lg">我要應徵</a>
+                                    <a target="_blank" href="https://www.1111.com.tw/corp/70449023/#c4"  rel="noopener noreferrer" className="btn-brand btn-lg">我要應徵</a>
                                 </div>
                             </div>
                         </div>

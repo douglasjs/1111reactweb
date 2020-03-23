@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import envConfig from '../../../config/env';
 
 const NavBar = () => {
     return(
@@ -32,7 +33,7 @@ const NavMain = () => {
                 <div className="row no-gutters align-items-center">
                     <div className="col-5 col-lg-2">
                         <div className="header-logo-area">
-                            <a href="#">
+                            <a href="\#">
                                 <img className="logo-main" src="image/tp02/logo.png" alt="Logo" />
                             </a>
                         </div>
@@ -68,26 +69,43 @@ const NavMain = () => {
 
 function CustomerHeader(props) {
 
-    return (
-        <div>
-            <NavBar />
+    
+    const { customizeData } = props.customizeReducer;
+    const { data } = props.datatableReducer;
+    const cid = props.match.params.cid;
+    let logURL ="/image/tp02/logo.png";
 
-            <header className="header-area-custom header-area sticky-header">
-                <div className="container-fluid">
-                    <div className="row no-gutters align-items-center">
-                        <div className="col-5 col-lg-2">
-                            <div className="header-logo-area">
-                                <a href="#">
-                                    <img className="logo-main" src="image/tp02/logo.png" alt="Logo" />
-                                </a>
-                            </div>
-                        </div>
-                        <NavMain />
+    if(data && data.length > 0){
+        logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
+    }
+
+    let customizeEnable;
+    let customizeName;
+    if(customizeData && customizeData.length > 0){
+        customizeData.forEach(element => {
+            customizeEnable =  element.customizeEnable;
+            customizeName = element.customizeName;
+        })
+    }
+
+    return (
+    
+
+    <header className="main-header main-header-overlay" data-react-to-megamenu="true" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
+        <div className="mainbar-wrap">
+        <span className="megamenu-hover-bg"></span>
+        <div className="container-fluid mainbar-container">
+            <div className="mainbar">
+                <div className="row mainbar-row align-items-lg-stretch px-4">
+                    <div className="col-auto">
+                        <NavBar logURL={logURL}/>
+                        <NavMain customizeEnable={customizeEnable}  customizeName={customizeName}/>
                     </div>
                 </div>
-            </header>
+            </div>
         </div>
-            
+        </div>               	
+    </header> 
     );
 
 
