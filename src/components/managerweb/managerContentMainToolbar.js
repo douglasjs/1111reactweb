@@ -1,8 +1,8 @@
 ﻿import React from 'react';
 
 function ManagerContentMainToolbar(props) {
-    let cid = props.match.params.cid.trim();
-    cid = "/" + cid;
+    /*let cid = props.match.params.cid.trim();
+    cid = "/" + cid;*/
 
     let companyName;
 
