@@ -23,6 +23,8 @@ function CustomerMain(props){
                 description: '找工作送1萬元！前1,000名不必抽、人人有獎，1111推動幸福企業提供高薪、最好的福利等你來，找到工作立即送1萬元大紅包！速分享好友，他拿1萬元，你也有分享獎金1千元'
             }
             let styleSheet = [
+                'https://fonts.googleapis.com/css?family=Karla:400,400i,700',
+                'https://fonts.googleapis.com/css?family=Playfair+Display:400,400i',
                 '/assets/tp02/css/demo-panel.min.css',
                 '/assets/tp02/css/timeline.min.css',
                 '/assets/tp02/css/slicknav.min.css',
@@ -42,7 +44,7 @@ function CustomerMain(props){
                 '/assets/tp02/css/pe-icon-7-stroke.min.css',
                 '/assets/tp02/css/font-awesome.min.css',
                 '/assets/tp02/css/bootstrap.min.css',
-                '/assets/tp02/css/style.min.purple.css',
+                '/assets/tp02/css/purple.css',
                 '/assets/tp02/css/topbutton.css'
             ]
             let email;
