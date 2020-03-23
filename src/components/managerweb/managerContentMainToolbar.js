@@ -14,7 +14,7 @@ function ManagerContentMainToolbar(props) {
 
               <ul className="navbar-nav ml-auto">
             
-                <li className="nav-item dropdown no-arrow mx-1">
+                {/*<li className="nav-item dropdown no-arrow mx-1">
                   <a className="nav-link dropdown-toggle" href="/#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span className="btn btn-success btn-icon-split">
                       <span className="icon text-white">
@@ -23,7 +23,7 @@ function ManagerContentMainToolbar(props) {
                       <span className="text">預覽模板    </span>
                     </span>
            
-                    {/*<span className="badge badge-danger badge-counter">啟動中</span>*/}
+                    <span className="badge badge-danger badge-counter">啟動中</span>
 
                   </a>
       
@@ -72,7 +72,7 @@ function ManagerContentMainToolbar(props) {
                       </div>
                     </a>
                   </div>
-                </li>
+                </li>*/}
 {/*
                 <li className="nav-item dropdown no-arrow mx-1">
                   <a className="nav-link dropdown-toggle" href="/#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
