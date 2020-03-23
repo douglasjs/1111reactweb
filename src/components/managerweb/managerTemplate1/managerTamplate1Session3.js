@@ -126,7 +126,7 @@ class Session3 extends React.Component{
                                             className='form-control'
                                             editor={ ClassicEditor }
                                             config={ {
-                                                toolbar: ['heading', '|', 'bold', 'italic', 'blockQuote', 'link', 'numberedList', 'bulletedList', 'insertTable',
+                                                toolbar: ['heading', '|','fontcolor', 'fontbackgroundcolor', 'bold', 'italic', 'blockQuote', 'link', 'numberedList', 'bulletedList', 'insertTable',
                                                   'tableColumn', 'tableRow', 'mergeTableCells', '|', 'undo', 'redo']
                                             } }  
                                             data={benefitContent}
