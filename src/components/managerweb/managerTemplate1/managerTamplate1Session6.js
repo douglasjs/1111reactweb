@@ -202,11 +202,11 @@ class Session6 extends React.Component{
                         <div className="form-row">
                             <div className="col-md-6 mb-3">
                             <InputText title='自訂選單名稱' notice='(即為在主選單上顯示的名稱，字數限制為4個字以內)' inputName='customizeName' inputState={customizeName}
-                                           stateObj={this} required={false} />
+                                           stateObj={this} required={false} checkValue='4' />
                             <InputText title='自訂區域主標題' notice='(字數限制為10個字以內)' inputName='customizeTitle' inputState={customizeTitle}
-                                           stateObj={this} required={false} />
+                                           stateObj={this} required={false}  checkValue='10' />
                             <InputTextArea title='自訂區域副標題' notice='(字數限制為40個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
-                                           rows='3' stateObj={this} required={false} />
+                                           rows='3' stateObj={this} required={false}  checkValue='40' />
                             </div>
                             <div className="col-md-6 mb-3">                                    
                                 <div><img src="/image/sample_01/06.png" alt="Temp1_Customize" width="100%"/></div>
