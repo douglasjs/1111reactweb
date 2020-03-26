@@ -414,7 +414,7 @@ class Session4 extends React.Component{
                                                             <td>{this.positionGroupMapping(element.position_group)} </td>
                                                             <td>{element.position_name} </td>
                                                             <td>{element.position_salary} </td>
-                                                            <td>{element.position_matter} </td>
+                                                            <td width="30%">{element.position_matter} </td>
                                                             <td>{element.position_workCity} </td>
                                                          
                                                         </tr>
