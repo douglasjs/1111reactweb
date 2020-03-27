@@ -5,7 +5,7 @@ function checkTextLength(string, value, title){
         return false;
     }
     if (string.length > value) {
-        alert(title + '超過字數');
+        alert(title + '超過' + value + '個字的限制，目前字數為' + string.length + '個字');
         return false;
     }
 
