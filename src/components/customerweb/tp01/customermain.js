@@ -63,7 +63,7 @@ function CustomerMain(props){
                     <CompanyContact themeNum={themeNum} email={email} {...props} />
                      <a className="top-link-icon hide" href="/#" id="js-top-icon"><i className="fa fa-angle-up"></i></a>
                     <a className="top-link show" href="/#" id="js-top">
-                        <img src={`assets/tp01/img/join_${styleType}.png`} alt="立即應徵" />
+                        <img src={`/assets/tp01/img/join_${styleType}.png`} alt="立即應徵" />
                     </a>
                 </main>
             )

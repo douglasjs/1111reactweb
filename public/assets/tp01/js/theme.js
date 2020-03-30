@@ -7503,7 +7503,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 	var pluginName = 'liquidMap';
 	var defaults = {
 		address: '7420 Shore Rd, Brooklyn, NY 11209, USA',
-		marker: 'assets/img/map-marker/marker-1.svg',
+		marker: '/assets/img/map-marker/marker-1.svg',
 		style: 'wy',
 		markers: null,
 		className: 'map_marker',

@@ -135,29 +135,36 @@ const getPositionList = (ono, themeNum) =>{
 
 }
 
-const createPosition = (data, updateTable) =>{
+const createPosition = (data, updateTable,grpCount) =>{
 
    
   
     return (dispatch) =>{
         
-      
-            dispatch(createPositionStart());
-            axios({
-                method: 'post',
-                url: `${envConfig.WebAPI}/Position/`,
-                data
-            })
-            .then((response)=>{
-                updateTable({type: 'created', name: data.position_name});
-                dispatch(createPositionSuccess(response.data));
-                dispatch(getPositionList(data.oNo));
-            })
-            .catch(err => {
-                updateTable({type: 'failed', name: data.position_name});
-                dispatch(createPositionError(err));
-                dispatch(getPositionList(data.oNo));
-            });
+            const grpName = data.position_group;
+
+            if(grpCount[grpName] >= 5){
+                alert(data.position_name + " 超過5個請選其他標籤" );
+            }else{
+                dispatch(createPositionStart());
+                axios({
+                    method: 'post',
+                    url: `${envConfig.WebAPI}/Position/`,
+                    data
+                })
+                .then((response)=>{
+                    updateTable({type: 'created', name: data.position_name, [grpName]:grpCount[grpName]+1, grpName  });
+                    dispatch(createPositionSuccess(response.data));
+                    dispatch(getPositionList(data.oNo));
+                })
+                .catch(err => {
+                    updateTable({type: 'failed', name: data.position_name });
+                    dispatch(createPositionError(err));
+                    dispatch(getPositionList(data.oNo));
+                });
+            }
+
+
     }
 
 }

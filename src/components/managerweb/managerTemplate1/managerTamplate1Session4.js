@@ -22,11 +22,14 @@ class Session4 extends React.Component{
                 sortNum:0,
                 created: [],
                 failed:[],
-                showTable: false
-                
+                showTable: false,
+                "1": 0,
+                "2": 0,
+                "3": 0
         }
 
     }
+
 
     handleGo = (e) => {
         /*
@@ -35,6 +38,7 @@ class Session4 extends React.Component{
         */
         
     }
+
 
     sortFunc = (a ,b) =>{
         const nameA = `${a[this.state.sorters.property]}`.toUpperCase();
@@ -86,8 +90,9 @@ class Session4 extends React.Component{
     }
 
     handleUpdateTable = data => {
+        const grp= data.grpName;
         if(data.type === 'created'){
-            this.setState({...this.state, created : [...this.state.created, data.name] });
+            this.setState({...this.state, created : [...this.state.created, data.name],[grp]:data[grp] });
         }else{
             this.setState({...this.state, failed : [...this.state.failed, data.name] });
         }
@@ -117,7 +122,12 @@ class Session4 extends React.Component{
         }
     }
 
-
+    countGrpPosition = ( positionData, group )=>{
+        const count = positionData.filter( item =>{
+            return item.position_group===group;
+        }).length;
+        return count;
+    }
 
     sortMark = (sortName) => {
 
@@ -235,37 +245,62 @@ class Session4 extends React.Component{
         let submitObj;
         let checkName;
         let tagName;
-        
+        const { positionData } = this.props.positionReducer;
+        let grpCount = { 
+            "1": this.countGrpPosition(positionData, "1"),
+            "2": this.countGrpPosition(positionData, "2"),
+            "3": this.countGrpPosition(positionData, "3"),
+        };
+
         if(kind00Data && kind00Data.length > 0){
-            
-            this.setState({...this.state, created : [], failed: [] });
 
             kind00Data.forEach(  async element =>{
                 checkName =  `check_${element.eNo}`;
                 tagName = `tag_${element.eNo}`;
+                
                 if(allTarget[checkName].checked){
-              
-                    submitObj = {
-                        oNo: cid,
-                        themeNum : event.target.themeNum4_position.value,
-                        eNo:  element.eNo.toString(),
-                        position_group : allTarget[tagName].value,
-                        position_name:  element.Position,
-                        position_salary:  element.Salary,
-                        position_matter:  element.Matter,
-                        position_workCity: element.WorkCity
-                    };
-                    await new Promise(resolve => this.props.createPosition(submitObj, this.handleUpdateTable));
-                }
+        
+                        submitObj = {
+                            oNo: cid,
+                            themeNum : event.target.themeNum4_position.value,
+                            eNo:  element.eNo.toString(),
+                            position_group : allTarget[tagName].value,
+                            position_name:  element.Position,
+                            position_salary:  element.Salary,
+                            position_matter:  element.Matter,
+                            position_workCity: element.WorkCity
+                        };
+                        await new Promise(resolve => this.props.createPosition(submitObj, this.handleUpdateTable, grpCount));
+
+                    }
 
             });
             await new Promise(resolve => this.setState({...this.state, showTable:true}));
         }
         await new Promise(resolve => document.getElementById("closePosition").focus());
-      
+       
      
     };
 
+    handleCheckBox = (event)=>{
+        const name = `tag_${event.target.value}`;
+        const grpName = this.refs[name].value;
+        if(this.state[grpName] >= 5){
+            alert("已滿5個請選擇其他標籤");
+            event.target.checked=false;
+        }else{
+            this.setState({...this.state, [grpName]: this.state[grpName]+1 })
+        }
+    }
+
+    handleAddPosition = () =>{
+        const { positionData } = this.props.positionReducer;
+        this.setState({...this.state, created : [], failed: [],
+                "1": this.countGrpPosition(positionData, "1"),
+                "2": this.countGrpPosition(positionData, "2"),
+                "3": this.countGrpPosition(positionData, "3")
+            });
+    }
 
     handlePositionDelete = (event) =>{
 
@@ -357,7 +392,6 @@ class Session4 extends React.Component{
         cityGroup = [...new Set(cityGroup)];
         dutyGroup = [...new Set(dutyGroup)];
        
-
         return(
             <div className="card shadow mb-4">
                 <a href="#collapseCard4" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard4">
@@ -372,7 +406,7 @@ class Session4 extends React.Component{
 
                                                 <div id="dataTable_filter" className="dataTables_filter text-left">
                                                     <a data-toggle="modal" href="#tmp1_addlable"><button className='btn btn-primary'>增加標籤 <i className="fas fa-folder-plus" value='Create' /></button></a>&nbsp;&nbsp;&nbsp;
-                                                    {actionType === 'modify' && <a data-toggle="modal" href="#tmp1_addjob"><button className='btn btn-primary'>增加職缺 <i className="fas fa-folder-plus" value='Create' /></button></a>}
+                                                    {actionType === 'modify' && <a data-toggle="modal" href="#tmp1_addjob"><button className='btn btn-primary' onClick={this.handleAddPosition}>增加職缺 <i className="fas fa-folder-plus" value='Create' /></button></a>}
                                                 </div>
                                             </div>
                                         </div>
@@ -555,12 +589,12 @@ class Session4 extends React.Component{
                                                 { kind00Data && kind00Data.filter(this.handleSearch/*data=> data.WorkCity === this.state.cityGroup ||  data.DutyArr[0] === this.state.dutyGroup*/).map( (element, index) =>{
                                                     return(
                                                         <tr key={index}>
-                                                            <td className='text-center'><input type="checkbox" name={`check_${element.eNo}`} value={element.eNo} /></td> 
+                                                            <td className='text-center'><input type="checkbox" name={`check_${element.eNo}`} value={element.eNo} onClick={this.handleCheckBox} /></td> 
                                                             <td>    
-                                                                <select className="form-control" id={`tag_${element.eNo}`} required>
+                                                                <select className="form-control" id={`tag_${element.eNo}`} ref={`tag_${element.eNo}`}  required>
                                                                         {groupName1 && groupName1 !==" " && <option value="1">{groupName1}</option>}
                                                                         {groupName2 && groupName2 !==" " && <option value="2">{groupName2}</option>}
-                                                                        {groupName3 && groupName3 !==" " && <option value="3">{groupName3}</option>}
+                                                                        {groupName3 && groupName3 !==" " &&<option value="3">{groupName3}</option>}
                                                                 </select>
                                                             </td>                                                 
                                                             <td>{element.Position}</td>
