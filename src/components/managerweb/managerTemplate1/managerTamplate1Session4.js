@@ -380,8 +380,9 @@ class Session4 extends React.Component{
 
         let cityGroup =[];
         let dutyGroup =[];
+        const dataID = (kind00Data && kind00Data.length > 0 && kind00Data[0].oNo!==0) ? kind00Data[0].oNo: 0;
 
-        if(kind00Data && kind00Data.length > 0){
+        if( dataID!==0 ){
                
             kind00Data.forEach( element => {
                 cityGroup.push(element.WorkCity);
@@ -586,7 +587,8 @@ class Session4 extends React.Component{
                                                    
                                             </tfoot>
                                             <tbody>
-                                                { kind00Data && kind00Data.filter(this.handleSearch/*data=> data.WorkCity === this.state.cityGroup ||  data.DutyArr[0] === this.state.dutyGroup*/).map( (element, index) =>{
+                                                { kind00Data && dataID!==0 && kind00Data.filter(this.handleSearch/*data=> data.WorkCity === this.state.cityGroup ||  data.DutyArr[0] === this.state.dutyGroup*/).map( (element, index) =>{
+                                                    
                                                     return(
                                                         <tr key={index}>
                                                             <td className='text-center'><input type="checkbox" name={`check_${element.eNo}`} value={element.eNo} onClick={this.handleCheckBox} /></td> 
