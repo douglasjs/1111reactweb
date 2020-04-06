@@ -3,15 +3,14 @@ import TitleSet from '../sharecomponents/titleset';
 import ManagerSlideBar from './managerSlideBar';
 import ManagerContentMainToolbar from './managerContentMainToolbar';
 import ManagerContentFoot from './managerContentFoot';
-import ManagerScollToTop from './managerScrollToTop';
+import ManagerScollToTop from '../sharecomponents/managerScrollToTop';
 import ManagerModal from './managerModal';
 import ManagerFoot from './managerFoot';
-//import useScript from '../sharecomponents/usescript';
 
 const withManagerWeb = Componet => props => {
 
     const URL = ['/assetsBK/vendor/jquery/jquery.min.js'];
-    //useScript(URL);
+
     let companyName = '1111人力銀行';
     let companyMeta = {
         keywords: '1111,人力,徵才',
