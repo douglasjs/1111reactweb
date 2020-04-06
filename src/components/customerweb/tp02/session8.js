@@ -12,7 +12,7 @@ function CompanyContact() {
                     <div className="col-lg-9 col-xl-7">
                         <div className="requested-content-wrap pt-30 bg-secondary">
                             <div className="requested-content-inner">
-                                <div className="requested-content-header">
+                                <div className="requested-content-header text-left">
                                     <h5 className="text-white">Contact</h5>
                                     <h4 className="font-weight-bold">聯絡我們</h4>
                                 </div>

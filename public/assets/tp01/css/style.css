@@ -704,3 +704,7 @@ h6 {
 .text-left {
   text-align: left;
 }
+
+.text-gray {
+  color: #333333 !important;
+}

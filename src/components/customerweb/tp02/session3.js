@@ -10,7 +10,7 @@ function CompanyBenifit() {
                         <div className="service-inner-wrap service-business-classic">
                             <div className="row">
                                 <div className="col-sm-6">
-                                    <div className="icon-box-item">
+                                    <div className="icon-box-item text-left">
                                         <div className="icon-box__icon">
                                             <img src="/image/tp02/benefit1.png" alt="福利" />
                                         </div>
@@ -22,7 +22,7 @@ function CompanyBenifit() {
                                 </div>
 
                                 <div className="col-sm-6">
-                                    <div className="icon-box-item">
+                                    <div className="icon-box-item text-left">
                                         <div className="icon-box__icon">
                                             <img src="/image/tp02/benefit2.png" alt="福利" />
                                         </div>
@@ -34,7 +34,7 @@ function CompanyBenifit() {
                                 </div>
 
                                 <div className="col-sm-6">
-                                    <div className="icon-box-item">
+                                    <div className="icon-box-item text-left">
                                         <div className="icon-box__icon">
                                            <img src="/image/tp02/benefit3.png" alt="福利" />
                                         </div>
@@ -46,7 +46,7 @@ function CompanyBenifit() {
                                 </div>
 
                                 <div className="col-sm-6">
-                                    <div className="icon-box-item">
+                                    <div className="icon-box-item text-left">
                                         <div className="icon-box__icon">
                                             <img src="/image/tp02/benefit4.png" alt="福利" />
                                         </div>

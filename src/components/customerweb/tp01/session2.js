@@ -70,7 +70,7 @@ class CompanyInfo extends React.Component{
                             <header className="fancy-title fancy-title-1111 text-center">
     
                                 <h2 className="mt-3 mb-3 line-1">{introTitle}</h2>
-                                <h6 className="font-size-16 opacity-05 line-2">{introMainContent}</h6>
+                                <h6 className="font-size-16 line-2 text-gray">{introMainContent}</h6>
     
                             </header>
     
@@ -112,8 +112,8 @@ class CompanyInfo extends React.Component{
                                                     </figure>
                                                 </div>
                                                 <div className="fancy-box-header">
-                                                        <h3 className="line-1"> {introSubTitle1ImgText}</h3>
-                                                    </div>
+                                                    <h3 className="line-1 text-left"> {introSubTitle1ImgText}</h3>
+                                                </div>
                                             </div>
                                         </div>
         
@@ -121,16 +121,16 @@ class CompanyInfo extends React.Component{
         
                                     <div role="tabpanel" className="tabs-pane fade" id="ld-tab-pane-49">
     
-                                            <div className="fancy-box fancy-box-case-study scheme-light" data-hover3d="true">
-                                                <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
-                                                    <div className="cb-img-container border-radius-5">
-                                                        <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">
-                                                            <img className="invisible" src={introSubTitle2Img} alt="1111人力銀行公司介紹" />
+                                        <div className="fancy-box fancy-box-case-study scheme-light" data-hover3d="true">
+                                            <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
+                                                <div className="cb-img-container border-radius-5">
+                                                    <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">
+                                                        <img className="invisible" src={introSubTitle2Img} alt="1111人力銀行公司介紹" />
                                                     </figure>
                                                 </div>
                                                 <div className="fancy-box-header">
-                                                            <h3 className="line-1">{introSubTitle2ImgText}</h3>
-                                                        </div>
+                                                    <h3 className="line-1 text-left">{introSubTitle2ImgText}</h3>
+                                                </div>
                                             </div>
                                         </div>
                                             
@@ -138,16 +138,16 @@ class CompanyInfo extends React.Component{
             
                                     <div role="tabpanel" className="tabs-pane fade" id="ld-tab-pane-50">
     
-                                                <div className="fancy-box fancy-box-case-study scheme-light" data-hover3d="true">
-                                                    <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
-                                                        <div className="cb-img-container border-radius-5">
-                                                            <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">
-                                                                <img className="invisible" src={introSubTitle3Img} alt="1111人力銀行公司介紹" />
+                                        <div className="fancy-box fancy-box-case-study scheme-light" data-hover3d="true">
+                                            <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
+                                                <div className="cb-img-container border-radius-5">
+                                                    <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">
+                                                        <img className="invisible" src={introSubTitle3Img} alt="1111人力銀行公司介紹" />
                                                     </figure>
                                                 </div>
                                                 <div className="fancy-box-header">
-                                                                <h3 className="line-1">{introSubTitle3ImgText}</h3>
-                                                            </div>
+                                                    <h3 className="line-1 text-left">{introSubTitle3ImgText}</h3>
+                                                </div>
                                             </div>
                                         </div>
                                                 

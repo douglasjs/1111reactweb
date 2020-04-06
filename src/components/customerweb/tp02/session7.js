@@ -10,13 +10,13 @@ function CompanyQA() {
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="faq-content-wrap">
-                            <div className="section-title">
+                            <div className="section-title text-left">
                                 <h5>FAQ</h5>
                                 <h4 className="font-weight-bold">常見問題</h4>
                             </div>
                             
                             <div className="accordion mt-lg-0 my-4 my-md-5" id="accordionFaq">
-                                <div className="card">
+                                <div className="card text-left">
                                     <div className="card-header">
                                         <h4 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">京典臻品 JD Classic</h4></div>
                                     <div id="collapseOne" className="collapse show" data-parent="#accordionFaq">
@@ -25,7 +25,7 @@ function CompanyQA() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card">
+                                <div className="card text-left">
                                     <div className="card-header">
                                          <h4 data-toggle="collapse" data-target="#collapseTwo">臻情．臻心．臻價值</h4></div>
                                     <div id="collapseTwo" className="collapse" data-parent="#accordionFaq">
@@ -34,7 +34,7 @@ function CompanyQA() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card">
+                                <div className="card text-left">
                                     <div className="card-header">
                                         <h4 data-toggle="collapse" data-target="#collapseThree">榮獲「第18屆台灣品質保證金像獎」殊榮</h4>
                                     </div>

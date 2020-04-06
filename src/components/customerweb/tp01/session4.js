@@ -24,7 +24,7 @@ class CompanyJobs extends React.Component {
         let groupName1;
         let groupName2;
         let groupName3;
-        let companyurl = "https://www.1111.com.tw/corp/" + cid;
+        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
 
         if(positionGrpData && positionGrpData.length > 0){
             positionGrpData.forEach( element  => {
@@ -86,9 +86,9 @@ class CompanyJobs extends React.Component {
                                                     
                                                   return(                                                      
                                                         <div key={index} className="jobs-table-row">
-                                                            <div className="cell" data-title="職缺：">{element.position_name}</div>
+                                                            <div className="cell text-left" data-title="職缺：">{element.position_name}</div>
                                                             <div className="cell" data-title="薪資：">{element.position_salary}</div>
-                                                            <div className="cell" data-title="說明">
+                                                            <div className="cell text-left" data-title="說明">
                                                                 <p className="jobs-hide-text">
                                                                     {element.position_matter}
                                                                 </p>
@@ -127,9 +127,9 @@ class CompanyJobs extends React.Component {
 
                                                 return(
                                                         <div key={index} className="jobs-table-row">
-                                                            <div className="cell" data-title="職缺：">{element.position_name}</div>
+                                                            <div className="cell text-left" data-title="職缺：">{element.position_name}</div>
                                                             <div className="cell" data-title="薪資：">{element.position_salary}</div>
-                                                            <div className="cell" data-title="說明">
+                                                            <div className="cell text-left" data-title="說明">
                                                                 <p className="jobs-hide-text">
                                                                     {element.position_matter}
                                                                 </p>
@@ -168,9 +168,9 @@ class CompanyJobs extends React.Component {
 
                                                 return(
                                                         <div key={index} className="jobs-table-row">
-                                                            <div className="cell" data-title="職缺：">{element.position_name}</div>
+                                                            <div className="cell text-left" data-title="職缺：">{element.position_name}</div>
                                                             <div className="cell" data-title="薪資：">{element.position_salary}</div>
-                                                            <div className="cell" data-title="說明">
+                                                            <div className="cell text-left" data-title="說明">
                                                                 <p className="jobs-hide-text">
                                                                     {element.position_matter}
                                                                 </p>

@@ -13,7 +13,7 @@ function CompanyBrand() {
                 </div>
                 <div className="col-md-6 col-xl-3">
                     <div className="gallery-banner-item gallery-banner-item-txt bg-brand">
-                        <div className="gallery-banner-txt">
+                        <div className="gallery-banner-txt text-left">
                             <h5><strong>用心-提升職能 共同學習成長</strong></h5>
                             <p>
                                 藉由各種課程的舉辦，不僅提升同仁全方位的職能，更用心照顧同仁身心平衡發展。
@@ -29,7 +29,7 @@ function CompanyBrand() {
                 </div>
                 <div className="col-md-6 col-xl-3">
                     <div className="gallery-banner-item gallery-banner-item-txt bg-secondary">
-                        <div className="gallery-banner-txt">
+                        <div className="gallery-banner-txt text-left">
                             <h5 className="text-brand"><strong>有情- 支持陪伴 珍惜每位夥伴的聲音</strong></h5>
                             <p className="text-gray">我們相信，透過對話處理人與自己、與他人、與事物，以及與環境之間的關係，能讓彼此間的能量持續正向流動。</p>
                         </div>

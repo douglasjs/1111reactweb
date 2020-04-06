@@ -91,21 +91,12 @@ function CustomerHeader(props) {
     return (
     
 
-    <header className="main-header main-header-overlay" data-react-to-megamenu="true" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
-        <div className="mainbar-wrap">
-        <span className="megamenu-hover-bg"></span>
-        <div className="container-fluid mainbar-container">
-            <div className="mainbar">
-                <div className="row mainbar-row align-items-lg-stretch px-4">
-                    <div className="col-auto">
+    
+                    <div>
                         <NavBar logURL={logURL}/>
                         <NavMain customizeEnable={customizeEnable}  customizeName={customizeName}/>
                     </div>
-                </div>
-            </div>
-        </div>
-        </div>               	
-    </header> 
+                
     );
 
 

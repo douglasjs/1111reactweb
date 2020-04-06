@@ -68,3 +68,16 @@
 .message_width {
   width: 60%;
 }
+
+.row-style-w95-pt1 {
+  width: 95%;
+  padding-top: 1em;
+}
+
+.row-style-w95 {
+  width: 95%;
+}
+
+.row-style-pt1 {
+  padding-top: 1em;
+}

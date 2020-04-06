@@ -35,6 +35,7 @@ function CustomerMain(props){
             let logURL = "/image/logo-1111.png";
             let webURL = "https://1111.com.tw";
             let styleType ="blue.css";
+            let goButtonURL = "https://1111.com.tw";
 
             if(data && data.length > 0){
                 webTitle = data[0].title;
@@ -48,6 +49,7 @@ function CustomerMain(props){
                 logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
                 webURL = `https://1111.com.tw/brand/${cid}/${data[0].companyEName}`;
                 styleType = data[0].styleType;
+                goButtonURL = `https://www.1111.com.tw/corp/${cid}/`
             }
 
             return (
@@ -61,8 +63,8 @@ function CustomerMain(props){
                     <CompanyCustomize themeNum={themeNum} {...props}/>
                     <CompanyQA themeNum={themeNum} {...props}/>
                     <CompanyContact themeNum={themeNum} email={email} {...props} />
-                     <a className="top-link-icon hide" href="/#" id="js-top-icon"><i className="fa fa-angle-up"></i></a>
-                    <a className="top-link show" href="/#" id="js-top">
+                    <a className="top-link-icon hide" href="/#" id="js-top-icon"><i className="fa fa-angle-up"></i></a>
+                    <a className="top-link show" href={goButtonURL}>
                         <img src={`/assets/tp01/img/join_${styleType}.png`} alt="立即應徵" />
                     </a>
                 </main>

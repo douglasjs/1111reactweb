@@ -23,8 +23,8 @@ function CompanyInfo() {
                         <div className="about-business-item bg-brand">
                             <div className="about-content">
                                 <div className="section-title mb-0">
-                                    <h5>京典臻品 JD classic股份有限公司</h5>
-                                    <h4 className="text-white">服務至上的經營理念<br />看不見的非凡用心</h4>
+                                    <h5 className="text-left">京典臻品 JD classic股份有限公司</h5>
+                                    <h4 className="text-white text-left">服務至上的經營理念<br />看不見的非凡用心</h4>
     
                                     <div className="about-txt mt-0 mt-md-20 mt-sm-20">
                                         <p>
