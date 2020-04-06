@@ -4,10 +4,7 @@ function ManagerContentMainToolbar(props) {
     /*let cid = props.match.params.cid.trim();
     cid = "/" + cid;*/
 
-    let companyName;
-
-
-    companyName = companyName ? companyName : '永豐餘生技';
+    let companyName = '1111人力銀行';
 
     return (
             <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -31,7 +28,7 @@ function ManagerContentMainToolbar(props) {
                     <h6 className="dropdown-header">
                       預覽模板
                     </h6>
-                    <a className="dropdown-item d-flex align-items-center" target="_blank" rel="noopener noreferrer" href={cid} >
+                    <a className="dropdown-item d-flex align-items-center" href={`/managerweb${cid}/preview/tp01`} target='_blank' rel="noopener noreferrer" >
                       <div className="dropdown-list-image mr-3">
                         <img className="rounded-circle" src="/image/bg-2-contact.jpg" alt="img" />
                         <div className="status-indicator bg-success"></div>
@@ -41,7 +38,7 @@ function ManagerContentMainToolbar(props) {
                         <div className="small text-gray-500">說明範例: 風格1</div>
                       </div>
                     </a>
-                    <a className="dropdown-item d-flex align-items-center" href="/#">
+                    <a className="dropdown-item d-flex align-items-center" href={`/managerweb${cid}/preview/tp02`} target='_blank' rel="noopener noreferrer">
                       <div className="dropdown-list-image mr-3">
                         <img className="rounded-circle" src="/image/bg-2-contact.jpg" alt="img" />
                         <div className="status-indicator"></div>
