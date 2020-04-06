@@ -1,4 +1,7 @@
 import React from 'react';
+import InputText from '../../sharecomponents/inputText';
+import InputTextArea from '../../sharecomponents/inputTextArea';
+import ImgUpload from '../../sharecomponents/imgUpload';
 import Msg from '../msg';
 import envConfig from '../../../config/env';
 
@@ -212,24 +215,18 @@ class Session2 extends React.Component{
                             <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                             
                             <div className="form-row">
+
                                 <div className="col-md-6 mb-3">
-                                    <div className="form-row">
-                                        <label><span className='text-danger'>*</span>主標題 <em className='text-primary'>( 字數限制為15個字以內 )</em> </label>
-                                        <input type="text" className={`form-control`} id="introTitle"  placeholder="公司介紹主標題"   
-                                            value={introTitle} onChange={this.handleChange('introTitle')} required />
-                                        <div className="invalid-feedback">
-                                                公司介紹主標題不可以空白
-                                        </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <InputText title='主標題' notice='(字數限制為15個字以內)' inputName='introTitle' inputState={introTitle}
+                                           stateObj={this} required={true} checkValue='15' />
                                     </div>
-                                    <div className="form-row">
-                                        <label><span className='text-danger'>*</span>主內容 <em className='text-primary'>( 字數限制為80個字以內 )</em> </label>
-                                        <textarea className={`form-control`} id="introMainContent"  placeholder="公司介紹主內容" rows="5"
-                                            value={introMainContent} onChange={this.handleChange('introMainContent')} required/>
-                                        <div className="invalid-feedback">
-                                                公司介紹主內容不可以空白
-                                        </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <InputTextArea title='主內容' notice='(字數限制為80個字以內)' inputName='introMainContent' inputState={introMainContent}
+                                           rows='5' stateObj={this} required={true}  checkValue='80' />
                                     </div>
                                 </div>
+
                                 <div className="col-md-6 mb-3">                                    
                                     <div><img src="/image/sample_01/02-1.png" alt="Temp1_Company_title" width="100%"/></div>
                                     <hr />
@@ -260,6 +257,7 @@ class Session2 extends React.Component{
                                         </table>
                                     </div>
                                 </div>
+                                
                             </div>
 
                             <div className="modal fade" id="tmp1_company">
@@ -290,50 +288,26 @@ class Session2 extends React.Component{
                                     </a>                                    
                                     <div className="card-body collapse show" id="collapseCard2-1">
                                         <div className="form-row">
+
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <label><span className='text-danger'>*</span>小標題1 <em className='text-primary'>( 字數限制為11個字以內 )</em> </label>
-                                                    <input type="text" className={`form-control`} id="introSubTitle1"  placeholder="小標題1"   
-                                                        value={introSubTitle1} onChange={this.handleChange('introSubTitle1')} required />
-                                                    <div className="invalid-feedback">
-                                                            小標題1不可以空白
-                                                    </div>
+                                                    <InputText title='小標題1' notice='(字數限制為11個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
+                                                        stateObj={this} required={true} checkValue='11' />
                                                 </div>
-                                                <div className="form-row">
-                                                    <label><span className='text-danger'>*</span>小標題1內容 <em className='text-primary'>( 字數限制為55個字以內 )</em> </label>
-                                                    <textarea className={`form-control`} id="introSubTitle1Content"  placeholder="小標題1內容" rows="3"
-                                                        value={introSubTitle1Content} onChange={this.handleChange('introSubTitle1Content')} required/>
-                                                    <div className="invalid-feedback">
-                                                            小標題1內容不可以空白
-                                                    </div>
+                                                <div className="form-row row-style-w95-pt1">
+                                                    <InputTextArea title='小標題1內容' notice='(字數限制為55個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
+                                                        rows='3' stateObj={this} required={true}  checkValue='55' />
                                                 </div>
-                                                <div className="form-row">
-                                                    <label><span className='text-danger'>*</span>小標題1圖片文字  <em className='text-primary'>( 字數限制為20個字以內 )</em> </label>
-                                                    <input type="text" className={`form-control`} id="introSubTitle1ImgText"  placeholder="小標題1圖片文字"   
-                                                        value={introSubTitle1ImgText} onChange={this.handleChange('introSubTitle1ImgText')} required />
-                                                    <div className="invalid-feedback">
-                                                            小標題1圖片文字不可以空白
-                                                    </div>
+                                                <div className="form-row row-style-w95-pt1">
+                                                    <InputText title='小標題1圖片文字' notice='(字數限制為20個字以內)' inputName='introSubTitle1ImgText' inputState={introSubTitle1ImgText}
+                                                        stateObj={this} required={true} checkValue='20' />
                                                 </div>
-                                                <div className="form-row">
-                                                    <label><span className='text-danger'>*</span> 小標題1圖片上傳</label><em className='text-primary'>(圖檔尺寸大小為 724*500 ，接受格式為png、jpg)</em> 
-                                                </div>
-                                                <div className="form-row">
-                                                    <div className="card image-area mt-4"><img id="introSubTitle1ImgResult" src={introSubTitle1ImgUpload} alt="For Upload" className="img-fluid rounded shadow-sm mx-auto d-block" /></div>
-                                                    
-                                                    <div className="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
-                                                        <input type="hidden" id="introSubTitle1Img" value={introSubTitle1Img} />
-                                                    
-                                                        <input id="introSubTitle1ImgUpload" type="file"  accept="image/*" onChange={this.handleFileUpload('introSubTitle1ImgUpload-label', 'introSubTitle1Img','introSubTitle1ImgUpload')} className="form-control border-0 uploadFile" />
-                                                        <label id="introSubTitle1ImgUpload-label" htmlFor="upload" className="font-weight-light text-muted upload-label">選擇檔案</label>
-                                                        <div className="input-group-append">
-                                                            <label htmlFor="introSubTitle1ImgUpload" className="btn btn-light m-0 rounded-pill px-4"> <i className="fa fa-cloud-upload mr-2 text-muted"></i>
-                                                            <small className="text-uppercase font-weight-bold text-muted">選擇檔案</small></label>
-                                                        </div>
-                                                    </div>
-                                                
+                                                <div className="form-row row-style-w95-pt1">
+                                                    <ImgUpload title='小標題1圖片 上傳' notice='(圖檔尺寸大小為 724*500，接受格式為png、jpg)' objName='introSubTitle1Img'  imgUpload={introSubTitle1ImgUpload} 
+                                                        imgFileName={introSubTitle1Img} parentObj={this} imgW={724} imgH={500} required={true} />                                               
                                                 </div>
                                             </div>
+
                                             <div className="col-md-6 mb-3">
                                                 <div><img src="/image/sample_01/02-2.png" alt="Temp1_Company_subtitle01" width="100%"/></div>
                                                 <div>
@@ -413,51 +387,26 @@ class Session2 extends React.Component{
                                     </a>                                    
                                     <div className="card-body collapse collapsed" id="collapseCard2-2">
                                         <div className="form-row">
+
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <label><span className='text-danger'>*</span>小標題2 <em className='text-primary'>( 字數限制為11個字以內 )</em> </label>
-                                                    <input type="text" className={`form-control`} id="introSubTitle2"  placeholder="小標題2"   
-                                                        value={introSubTitle2} onChange={this.handleChange('introSubTitle2')} required />
-                                                    <div className="invalid-feedback">
-                                                            小標題2不可以空白
-                                                    </div>
+                                                    <InputText title='小標題2' notice='(字數限制為11個字以內)' inputName='introSubTitle2' inputState={introSubTitle2}
+                                                        stateObj={this} required={true} checkValue='11' />
                                                 </div>
-
-                                                <div className="form-row">
-                                                    <label><span className='text-danger'>*</span>小標題2內容 <em className='text-primary'>( 字數限制為55個字以內 )</em> </label>
-                                                    <textarea className={`form-control`} id="introSubTitle2Content"  placeholder="小標題2內容" rows="3"
-                                                        value={introSubTitle2Content} onChange={this.handleChange('introSubTitle2Content')} required/>
-                                                    <div className="invalid-feedback">
-                                                            小標題2內容不可以空白
-                                                    </div>
+                                                <div className="form-row row-style-w95-pt1">
+                                                    <InputTextArea title='小標題2內容' notice='(字數限制為55個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
+                                                        rows='3' stateObj={this} required={true}  checkValue='55' />
                                                 </div>
-                                                <div className="form-row">
-                                                    <label><span className='text-danger'>*</span>小標題2圖片文字  <em className='text-primary'>( 字數限制為20個字以內 )</em> </label>
-                                                    <input type="text" className={`form-control`} id="introSubTitle2ImgText"  placeholder="小標題2圖片文字"   
-                                                        value={introSubTitle2ImgText} onChange={this.handleChange('introSubTitle2ImgText')} required />
-                                                    <div className="invalid-feedback">
-                                                            小標題2圖片文字不可以空白
-                                                    </div>
+                                                <div className="form-row row-style-w95-pt1">
+                                                    <InputText title='小標題2圖片文字' notice='(字數限制為20個字以內)' inputName='introSubTitle2ImgText' inputState={introSubTitle2ImgText}
+                                                        stateObj={this} required={true} checkValue='20' />
                                                 </div>
-                                                <div className="form-row">
-                                                    <label><span className='text-danger'>*</span> 小標題2圖片上傳</label><em className='text-primary'>(圖檔尺寸大小為 724*500 ，接受格式為png、jpg)</em> 
-                                                </div>
-                                                <div className="form-row">
-                                                    <div className="card image-area mt-4"><img id="introSubTitle2ImgResult" src={introSubTitle2ImgUpload} alt="For Upload" className="img-fluid rounded shadow-sm mx-auto d-block" /></div>
-                                                    
-                                                    <div className="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
-                                                        <input type="hidden" id="introSubTitle2Img" value={introSubTitle2Img} />
-                                                    
-                                                        <input id="introSubTitle2ImgUpload" type="file"  accept="image/*" onChange={this.handleFileUpload('introSubTitle2ImgUpload-label', 'introSubTitle2Img','introSubTitle2ImgUpload')} className="form-control border-0 uploadFile" />
-                                                        <label id="introSubTitle2ImgUpload-label" htmlFor="upload" className="font-weight-light text-muted upload-label">選擇檔案</label>
-                                                        <div className="input-group-append">
-                                                            <label htmlFor="introSubTitle2ImgUpload" className="btn btn-light m-0 rounded-pill px-4"> <i className="fa fa-cloud-upload mr-2 text-muted"></i>
-                                                            <small className="text-uppercase font-weight-bold text-muted">選擇檔案</small></label>
-                                                        </div>
-                                                    </div>
-                                                
+                                                <div className="form-row row-style-w95-pt1">
+                                                    <ImgUpload title='小標題2圖片 上傳' notice='(圖檔尺寸大小為 724*500，接受格式為png、jpg)' objName='introSubTitle2Img'  imgUpload={introSubTitle2ImgUpload} 
+                                                        imgFileName={introSubTitle2Img} parentObj={this} imgW={724} imgH={500} required={true} />                                          
                                                 </div>
                                             </div>
+
                                             <div className="col-md-6 mb-3">
                                                 <div><img src="/image/sample_01/02-3.png" alt="Temp1_Company_subtitle02" width="100%"/></div>
                                                 <div>
@@ -539,51 +488,26 @@ class Session2 extends React.Component{
                                     </a>                                    
                                     <div className="card-body collapse collapsed" id="collapseCard2-3">
                                         <div className="form-row">
+
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <label><span className='text-danger'>*</span>小標題3 <em className='text-primary'>( 字數限制為11個字以內 )</em> </label>
-                                                    <input type="text" className={`form-control`} id="introSubTitle3"  placeholder="小標題2"   
-                                                        value={introSubTitle3} onChange={this.handleChange('introSubTitle3')} required />
-                                                    <div className="invalid-feedback">
-                                                            小標題3不可以空白
-                                                    </div>
+                                                    <InputText title='小標題3' notice='(字數限制為11個字以內)' inputName='introSubTitle3' inputState={introSubTitle3}
+                                                        stateObj={this} required={true} checkValue='11' />
                                                 </div>
-
-                                                <div className="form-row">
-                                                    <label><span className='text-danger'>*</span>小標題3內容 <em className='text-primary'>( 字數限制為55個字以內 )</em> </label>
-                                                    <textarea className={`form-control`} id="introSubTitle3Content"  placeholder="小標題2內容" rows="3"
-                                                        value={introSubTitle3Content} onChange={this.handleChange('introSubTitle3Content')} required/>
-                                                    <div className="invalid-feedback">
-                                                            小標題3內容不可以空白
-                                                    </div>
+                                                <div className="form-row row-style-w95-pt1">
+                                                    <InputTextArea title='小標題3內容' notice='(字數限制為55個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
+                                                        rows='3' stateObj={this} required={true}  checkValue='55' />
                                                 </div>
-                                                <div className="form-row">
-                                                    <label><span className='text-danger'>*</span>小標題3圖片文字  <em className='text-primary'>( 字數限制為20個字以內 )</em> </label>
-                                                    <input type="text" className={`form-control`} id="introSubTitle3ImgText"  placeholder="小標題2圖片文字"   
-                                                        value={introSubTitle3ImgText} onChange={this.handleChange('introSubTitle3ImgText')} required />
-                                                    <div className="invalid-feedback">
-                                                            小標題3圖片文字不可以空白
-                                                    </div>
+                                                <div className="form-row row-style-w95-pt1">
+                                                    <InputText title='小標題3圖片文字' notice='(字數限制為20個字以內)' inputName='introSubTitle3ImgText' inputState={introSubTitle3ImgText}
+                                                        stateObj={this} required={true} checkValue='20' />
                                                 </div>
-                                                <div className="form-row">
-                                                    <label><span className='text-danger'>*</span> 小標題3圖片上傳</label><em className='text-primary'>(圖檔尺寸大小為 724*500 ，接受格式為png、jpg)</em> 
-                                                </div>
-                                                <div className="form-row">
-                                                    <div className="card image-area mt-4"><img id="introSubTitle3ImgResult" src={introSubTitle3ImgUpload} alt="For Upload" className="img-fluid rounded shadow-sm mx-auto d-block" /></div>
-                                                    
-                                                    <div className="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
-                                                        <input type="hidden" id="introSubTitle3Img" value={introSubTitle3Img} />
-                                                    
-                                                        <input id="introSubTitle3ImgUpload" type="file"  accept="image/*" onChange={this.handleFileUpload('introSubTitle3ImgUpload-label', 'introSubTitle3Img','introSubTitle3ImgUpload')} className="form-control border-0 uploadFile" />
-                                                        <label id="introSubTitle3ImgUpload-label" htmlFor="upload" className="font-weight-light text-muted upload-label">選擇檔案</label>
-                                                        <div className="input-group-append">
-                                                            <label htmlFor="introSubTitle3ImgUpload" className="btn btn-light m-0 rounded-pill px-4"> <i className="fa fa-cloud-upload mr-2 text-muted"></i>
-                                                            <small className="text-uppercase font-weight-bold text-muted">選擇檔案</small></label>
-                                                        </div>
-                                                    </div>
-                                                
+                                                <div className="form-row row-style-w95-pt1">
+                                                    <ImgUpload title='小標題3圖片 上傳' notice='(圖檔尺寸大小為 724*500，接受格式為png、jpg)' objName='introSubTitle3Img'  imgUpload={introSubTitle3ImgUpload} 
+                                                        imgFileName={introSubTitle3Img} parentObj={this} imgW={724} imgH={500} required={true} />                                          
                                                 </div>
                                             </div>
+                                            
                                             <div className="col-md-6 mb-3">
                                                 <div><img src="/image/sample_01/02-4.png" alt="Temp1_Company_subtitle03" width="100%"/></div>
                                                 <div>

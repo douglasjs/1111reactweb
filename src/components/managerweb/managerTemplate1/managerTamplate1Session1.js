@@ -1,4 +1,6 @@
 import React from 'react';
+import InputText from '../../sharecomponents/inputText';
+import InputTextArea from '../../sharecomponents/inputTextArea';
 import Msg from '../msg';
 import envConfig from '../../../config/env';
 
@@ -174,29 +176,20 @@ class Session1 extends React.Component{
                                     <Msg type ='ERROR' value = {companyErr} text= 'Opps! Error : ' />
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
-                                    <div className="form-row">
-                                            <label><span className='text-danger'>*</span>大標題 <em className='text-primary'>( 字數限制為5個字以內 )</em> </label>
-                                            <input type="text" className={`form-control`} id="title"  placeholder="大標題"   
-                                                value={title} onChange={this.handleChange('title')} required />
-                                            <div className="invalid-feedback">
-                                                    大標題不可以空白
-                                            </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <InputText title='大標題' notice='(字數限制為5個字以內)' inputName='title' inputState={title}
+                                           stateObj={this} required={true} checkValue='5' />
                                     </div>
-                                    <div className="form-row">
-                                            <label><span className='text-danger'>*</span>副標題 1 <em className='text-primary'>( 字數限制為40個字以內 )</em> </label>
-                                            <textarea className={`form-control`} id="companySubTitle1"  placeholder="副標題 1" rows="3"
-                                                value={companySubTitle1} onChange={this.handleChange('companySubTitle1')} required/>
-                                            <div className="invalid-feedback">
-                                                    副標題不可以空白
-                                            </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <InputTextArea title='副標題 1' notice='(字數限制為40個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           rows='3' stateObj={this} required={true}  checkValue='40' />
                                     </div>
-                                    <div className="form-row">
-                                            <label>副標題 2 <em className='text-primary'>( 字數限制為40個字以內 )</em> </label>
-                                            <textarea className={`form-control`} id="companySubTitle2"  placeholder="副標題 2" rows="3"
-                                                value={companySubTitle2} onChange={this.handleChange('companySubTitle2')} />
+                                    <div className="form-row row-style-w95-pt1">
+                                        <InputTextArea title='副標題 2' notice='(字數限制為15個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
+                                           rows='2' stateObj={this} required={true}  checkValue='15' />
                                     </div>
-                                    <div className="form-row">
-                                            <label><span className='text-danger'>*</span> 背景圖片1 上傳</label><em className='text-primary'>(圖檔尺寸大小為 1920*1080 ，接受格式為png、jpg)</em> 
+                                    <div className="form-row row-style-w95-pt1">
+                                            <label><span className='text-danger'>*</span> 背景圖片1 上傳</label><em className='text-primary'>(圖檔尺寸大小為 1920*1200 ，接受格式為png、jpg)</em> 
                                     </div>
                                     <div className="form-row">
                                             <div className="card image-area mt-4"><img id="imageResult" src={UploadImg1} alt="For Upload" className="img-fluid rounded shadow-sm mx-auto d-block" /></div>
@@ -213,8 +206,8 @@ class Session1 extends React.Component{
                                             </div>
                                         
                                     </div>
-                                    <div className="form-row">
-                                            <label> 背景圖片2 上傳</label><em className='text-primary'>(圖檔尺寸大小為 1920*1080 ，接受格式為png、jpg)</em> 
+                                    <div className="form-row row-style-w95-pt1">
+                                            <label> 背景圖片2 上傳</label><em className='text-primary'>(圖檔尺寸大小為 1920*1200 ，接受格式為png、jpg)</em> 
                                     </div>
                                     <div className="form-row">
                                             <div className="card image-area mt-4"><img id="imageResult" src={UploadImg2} alt="For Upload" className="img-fluid rounded shadow-sm mx-auto d-block" /></div>
