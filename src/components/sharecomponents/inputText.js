@@ -7,9 +7,23 @@ function InputText(props){
         that.setState({ ...that.state, [name]: event.target.value});
     };
 
-    let checkString = props.inputState;
-    let checkValue = props.checkValue;
-    let checkTitle = props.title;
+    /*let checkState = checkTextLength(props.inputState, props.checkValue, props.title);
+    if (checkState === "false"){
+        if(props.inputState.length !== 0){
+            props.inputState = props.inputState.substr(0,props.checkValue);
+        }
+    }*/
+    checkTextLength(props.inputState, props.checkValue, props.title);
+
+    let inputString = props.inputState;
+
+    /*if (props.inputState.length === 0){
+        inputString = "請輸入";
+    }*/
+
+    if (props.inputState.length > props.checkValue){
+        inputString = inputString.substr(0,props.checkValue);
+    }
 
     return(
         <div className="form-row">
@@ -21,14 +35,13 @@ function InputText(props){
                 <em className='text-primary'>{props.notice} </em>
             </label>
             <input type="text" className={`form-control`} id={props.inputName} placeholder={props.title}   
-            value={props.inputState} onChange={handleChange(props.inputName, props.stateObj)}  required={props.required} />
+            value={inputString} onChange={handleChange(props.inputName, props.stateObj)}  required={props.required} />
                 
             { /*props.required &&
                 <div className="invalid-feedback">
                     {props.title}不可以空白
                 </div>*/
             }
-            {checkTextLength(checkString, checkValue, checkTitle)}
 
         </div>
             
