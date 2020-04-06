@@ -186,7 +186,7 @@ const createData = (data) =>{
             .then((response)=>{
                 dispatch(createAllSuccess(response.data));
                 alert("新增資料完成");
-                //dispatch(getDataList(data.ono));
+                dispatch(getDataList(data.ono));
             })
             .catch(err => {
                 dispatch(createAllError(err));
@@ -211,7 +211,7 @@ const updateData = (data) =>{
             .then((response) => {
                 dispatch(editAllSuccess(response.data));
                 alert("更新資料完成");
-                //dispatch(getDataList(data.ono));
+                dispatch(getDataList(data.ono));
             })
             .catch(err => {
                 dispatch(editAllError(err));

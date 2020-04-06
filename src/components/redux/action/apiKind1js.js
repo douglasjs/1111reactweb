@@ -39,13 +39,21 @@ const getKind01Error = (error) =>{
 
 
 
-const getKind01 = (ono) =>{
+const getKind01 = (oNo) =>{
 
     return (dispatch) =>{
         
       
-        dispatch(getKind01Start());
-        axios({ method: 'get', url: envConfig.kind01API})
+            dispatch(getKind01Start());
+            var data = {
+                oNo,
+                kind: "1"
+            }
+            axios({
+                method: 'post',
+                url: envConfig.kind01API,
+                data
+            })
             .then(response => {
                 //setTimeout(() => {
                     dispatch(getKind01Success(response.data));

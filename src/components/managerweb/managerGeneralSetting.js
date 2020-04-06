@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 class managerGeneralSetting extends React.Component{
 
+    _isMounted = false;
 
     constructor(props){
         super(props);
@@ -27,11 +28,16 @@ class managerGeneralSetting extends React.Component{
     
 
     componentDidMount(){
+        this._isMounted = true;
         const cid = this.props.match.params.cid;
         this.props.getDataList(cid);
         this.props.getkind01(cid);
    
     }
+
+    componentWillUnmount() {
+        this._isMounted = false;
+      }
 
     handleChange = name => event => {
         let newValue = event.target.value;
@@ -298,15 +304,15 @@ class managerGeneralSetting extends React.Component{
         let themeNum = this.state.themeNum;
         let styleType = this.state.styleType;
         let actionType = 'create';
+        const kin01= kind01_data[0];
         
-        if( kind01_data ){
+        if( kin01 ){
 
-            if(kind01_data.oNo===Number(cid) && data.length ===0){
-                console.log("t2")
-                companyName= companyName === ' '? kind01_data.Organ : companyName ;
-                description= description === ' '? kind01_data.brief : description;
-                email= email === ' '? kind01_data.Service[2] : email;
-                title= title === ' '? kind01_data.Organ : title ;
+            if(kin01.oNo===Number(cid) && data.length ===0){
+                companyName= companyName === ' '? kin01.Organ : companyName ;
+                description= description === ' '? kin01.brief : description;
+                email= email === ' '? kin01.Service[2] : email;
+                title= title === ' '? kin01.Organ : title ;
             }
         }
 
