@@ -7,9 +7,21 @@ function InputTextArea(props){
         that.setState({ ...that.state, [name]: event.target.value});
     };
 
-    let checkString = props.inputState;
+    /*let checkString = props.inputState;
     let checkValue = props.checkValue;
-    let checkTitle = props.title;
+    let checkTitle = props.title;*/
+
+    checkTextLength(props.inputState, props.checkValue, props.title);
+
+    let inputString = props.inputState;
+
+    if (props.inputState.length === 0){
+        inputString = "請輸入";
+    }
+
+    if (props.inputState.length > props.checkValue){
+        inputString = inputString.substr(0,props.checkValue);
+    }
 
     return(
 
@@ -24,14 +36,13 @@ function InputTextArea(props){
             </label>
 
             <textarea  className={`form-control`} id={props.inputName} placeholder={props.title}   rows={props.rows}
-            value={props.inputState} onChange={handleChange(props.inputName, props.stateObj)}  required={props.required} />
+            value={inputString} onChange={handleChange(props.inputName, props.stateObj)}  required={props.required} />
 
             { /*props.required &&
                 <div className="invalid-feedback">
                     {props.title}不可以空白
                 </div>*/
             }
-            {checkTextLength(checkString, checkValue, checkTitle)}
 
         </div>
 

@@ -17,9 +17,9 @@ function InputText(props){
 
     let inputString = props.inputState;
 
-    /*if (props.inputState.length === 0){
+    if (props.inputState.length === 0){
         inputString = "請輸入";
-    }*/
+    }
 
     if (props.inputState.length > props.checkValue){
         inputString = inputString.substr(0,props.checkValue);
