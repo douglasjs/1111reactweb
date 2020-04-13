@@ -77,6 +77,7 @@ class Session3 extends React.Component{
 
     render(){
         const { benefitData, benefitErr, benefitIsLoading} = this.props.benefitReducer;
+       // const { kind01_data } = this.props.kind01Reducer;
         const cid = this.props.match.params.cid.trim();
 
         let benefitContent = this.state.benefitContent;
@@ -84,6 +85,7 @@ class Session3 extends React.Component{
 
         let themeNum = 'tp01';
         let actionType = 'create';
+        //benefitContent = kind01_data && kind01_data.length > 0 && benefitContent === ' ' ? kind01_data[0].Benefit : this.state.benefitContent;
 
         if(benefitData && benefitData.length > 0){
             actionType = 'modify';
@@ -134,16 +136,16 @@ class Session3 extends React.Component{
                                             data={benefitContent}
                                             onInit={ editor => {
                                                 // You can store the "editor" and use when it is needed.
-                                                console.log( 'Editor is ready to use!', editor );
+                                                //console.log( 'Editor is ready to use!', editor );
                                             } }
                                             onChange={( event, editor ) => {
                                                 this.handleChange(event, editor.getData());
                                             } }
                                             onBlur={ ( event, editor ) => {
-                                                console.log( 'Blur.', editor );
+                                                //console.log( 'Blur.', editor );
                                             } }
                                             onFocus={ ( event, editor ) => {
-                                                console.log( 'Focus.', editor );
+                                                //console.log( 'Focus.', editor );
                                             } }
                                         />
                                     </div>

@@ -4,6 +4,7 @@ import InputTextArea from '../../sharecomponents/inputTextArea';
 import ImgUpload from '../../sharecomponents/imgUpload';
 import Msg from '../msg';
 import envConfig from '../../../config/env';
+import {strNumLimite} from '../../sharecomponents/toolFunction';
 
 class Session2 extends React.Component{
 
@@ -130,6 +131,9 @@ class Session2 extends React.Component{
     render(){
 
         const { introductionData, introductionErr, introductionIsLoading} = this.props.introductionReducer;
+        const { kind01_data } = this.props.kind01Reducer;
+       
+
         const cid = this.props.match.params.cid.trim();
 
         let introTitle = this.state.introTitle;
@@ -148,7 +152,7 @@ class Session2 extends React.Component{
         let introSubTitle3Img = this.state.introSubTitle3Img;
         let themeNum = 'tp01';
         let actionType = 'create';
-
+        introMainContent = kind01_data && kind01_data.length > 0 && introMainContent === ' ' ? strNumLimite(kind01_data[0].brief,80)  : this.state.introMainContent;
         if(introductionData && introductionData.length > 0){
             actionType = 'modify';
             introductionData.forEach(element => {

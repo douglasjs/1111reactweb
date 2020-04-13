@@ -155,12 +155,12 @@ const createPosition = (data, updateTable,grpCount) =>{
                 .then((response)=>{
                     updateTable({type: 'created', name: data.position_name, [grpName]:grpCount[grpName]+1, grpName  });
                     dispatch(createPositionSuccess(response.data));
-                    dispatch(getPositionList(data.oNo));
+                    dispatch(getPositionList(data.oNo, data.themeNum));
                 })
                 .catch(err => {
                     updateTable({type: 'failed', name: data.position_name });
                     dispatch(createPositionError(err));
-                    dispatch(getPositionList(data.oNo));
+                    dispatch(getPositionList(data.oNo, data.themeNum));
                 });
             }
 
@@ -180,7 +180,8 @@ const deletePosition = (data) =>{
             .then((response) => {
                 dispatch(deletePositionSuccess(response.data));
                 alert("資料刪除完成");
-                dispatch(getPositionList(data.oNo));
+            }).then(()=>{
+                dispatch(getPositionList(data.oNo, data.themeNum));
             })
             .catch(err => {
                 dispatch(deletePositionError(err));

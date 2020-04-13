@@ -162,7 +162,6 @@ const createPositionGrp = (data) =>{
 
 
 const updatePositionGrp = (data) =>{
-    console.log(data);
     return (dispatch) =>{
         
       

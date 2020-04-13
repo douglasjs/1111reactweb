@@ -124,7 +124,6 @@ const getintroductionList = (ono, themeNum) =>{
        // axios.get(`${envConfig.WebAPI}/introduction/${ono}`, {params: { themeNum: themeNum} })
             .then(response => {
                 //setTimeout(() => {
-                    console.log(response.data);
                     dispatch(getintroductionSuccess(response.data));
                 //}, 1000);
               }
@@ -153,7 +152,7 @@ const createintroduction = (data) =>{
             .then((response)=>{
                 dispatch(createintroductionSuccess(response.data));
                 alert("新增資料完成");
-                dispatch(getintroductionList(data.ono));
+                dispatch(getintroductionList(data.ono, data.themeNum));
             })
             .catch(err => {
                 dispatch(createintroductionError(err));

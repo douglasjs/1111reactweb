@@ -8,4 +8,10 @@ function createArray( preName, psotName , number, thatState){
     return newArray;
 }
 
-export {createArray};
+function strNumLimite( str, number ){
+
+    return str.substring(0,str.length-1 > number ? number-1: str.length-1 ) 
+
+}
+
+export {createArray, strNumLimite};
