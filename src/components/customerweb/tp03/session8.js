@@ -1,7 +1,5 @@
 ﻿import React from 'react';
 
-//<section id="contact" className="contact-section" style="background-image: url(images/background/testimonial-bg.png);">
-
 function CompanyContact() {
 
     let imgURL = "url(image/tp03/background/testimonial-bg.png)";

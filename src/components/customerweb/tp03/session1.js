@@ -1,7 +1,5 @@
 ﻿import React from 'react';
 
-//<section className="banner-section" style="background-image: url(images/background/banner-1_red.png);"></section>
-
 function CompanyTitle() {
 
     let imgURL = "url(image/tp03/background/banner-1_red.png)";

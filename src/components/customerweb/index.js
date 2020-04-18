@@ -2,6 +2,7 @@ import React from 'react';
 import TP01 from './tp01/customerweb';
 import TP02 from './tp02/customerweb';
 import TP03 from './tp03/customerweb';
+import TP04 from './tp04/customerweb';
 
 
 class customerIndex extends React.Component{
@@ -21,7 +22,8 @@ class customerIndex extends React.Component{
         switch(themNum){
             case "tp01":  return(<TP01 key={index} {...this.props}/>); 
             case "tp02":  return(<TP02 key={index} {...this.props}/>); 
-            case "tp03":  return(<TP03 key={index} {...this.props}/>); 
+            case "tp03":  return(<TP03 key={index} {...this.props}/>);
+            case "tp04":  return(<TP04 key={index} {...this.props}/>); 
             default:  return(<TP01 key={index} {...this.props}/>); 
         }
     }

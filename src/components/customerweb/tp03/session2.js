@@ -1,7 +1,5 @@
 ﻿import React from 'react';
 
-//<section id="company" className="about-section" style="background-image: url(images/background/about-bg.png);">
-
 function CompanyInfo() {
 
     let imgURL = "url(images/background/about-bg.png)";
