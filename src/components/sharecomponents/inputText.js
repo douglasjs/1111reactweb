@@ -1,5 +1,6 @@
 import React from 'react';
-import checkTextLength from './checktextlength';
+//import checkTextLength from './checktextlength';
+//import {strNumLimite} from './toolFunction';
 
 function InputText(props){
     
@@ -7,22 +8,16 @@ function InputText(props){
         that.setState({ ...that.state, [name]: event.target.value});
     };
 
-    /*let checkState = checkTextLength(props.inputState, props.checkValue, props.title);
-    if (checkState === "false"){
-        if(props.inputState.length !== 0){
-            props.inputState = props.inputState.substr(0,props.checkValue);
-        }
-    }*/
-    checkTextLength(props.inputState, props.checkValue, props.title);
-
     let inputString = props.inputState;
+    //inputString = props.inputState.length > props.checkValue ? checkTextLength(props.inputState, props.checkValue, props.title) : props.inputState;
 
-    if (props.inputState.length === 0){
-        inputString = "請輸入";
+    if (props.inputState === 0) {
+        alert(props.title + '不可以空白');
+        inputString = " ";
     }
-
-    if (props.inputState.length > props.checkValue){
-        inputString = inputString.substr(0,props.checkValue);
+    if (props.inputState.length > props.checkValue) {
+        alert(props.title + '超過' + props.checkValue + '個字的限制');
+        inputString = props.inputState.substring(0,props.inputState.length-1 > props.checkValue ? props.checkValue-1: props.inputState.length-1 );
     }
 
     return(
