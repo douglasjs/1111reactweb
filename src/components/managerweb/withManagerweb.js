@@ -3,7 +3,7 @@ import TitleSet from '../sharecomponents/titleset';
 import ManagerSlideBar from './managerSlideBar';
 import ManagerContentMainToolbar from './managerContentMainToolbar';
 import ManagerContentFoot from './managerContentFoot';
-import ManagerScollToTop from '../sharecomponents/managerScrollToTop';
+//import ManagerScollToTop from '../sharecomponents/managerScrollToTop';
 import ManagerModal from './managerModal';
 import ManagerFoot from './managerFoot';
 
@@ -36,7 +36,7 @@ const withManagerWeb = Componet => props => {
                     </div>
                     <ManagerContentFoot />
                 </div>
-                <ManagerScollToTop />
+                {/* <ManagerScollToTop />*/}
                 <ManagerModal />
 
             </div>

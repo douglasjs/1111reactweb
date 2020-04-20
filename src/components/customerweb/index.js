@@ -30,9 +30,10 @@ class customerIndex extends React.Component{
 
     render(){
         const { data, isLoading } = this.props.datatableReducer;
+        const themNum = this.props.match.params.themNum;
         return(
             <div>
-                {this.props.themNum ? this.chooseTemplate(this.props.themNum) :
+                {themNum ? this.chooseTemplate(themNum) :
                 (!isLoading && data) && data.map( (items,index) =>{
                     return this.chooseTemplate(items.themeNum, index);
                 })}

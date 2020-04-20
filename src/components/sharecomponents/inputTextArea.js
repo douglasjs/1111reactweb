@@ -1,14 +1,14 @@
 import React from 'react';
-import checkTextLength from './checktextlength';
+import { emptyCheck, numCheck} from './toolFunction';
 
 function InputTextArea(props){
     
-    const handleChange = ( name, that ) => event => {
-        that.setState({ ...that.state, [name]: event.target.value});
+    const handleChange = ( name, that, checkValue, title ) => event => {
+        let word = event.target.value;
+        word = emptyCheck(word, title);
+        word = numCheck(word, checkValue, title );
+        that.setState({ ...that.state, [name]: word});
     };
-
-    let inputStringArea;
-    inputStringArea = props.inputState.length > props.checkValue ? checkTextLength(props.inputState, props.checkValue, props.title) : props.inputState;
 
     return(
 
@@ -23,7 +23,7 @@ function InputTextArea(props){
             </label>
 
             <textarea  className={`form-control`} id={props.inputName} placeholder={props.title}   rows={props.rows}
-            value={inputStringArea} onChange={handleChange(props.inputName, props.stateObj)}  required={props.required} />
+            value={props.inputState} onChange={handleChange(props.inputName, props.stateObj,props.checkValue, props.title )}  required={props.required} />
 
             { /*props.required &&
                 <div className="invalid-feedback">

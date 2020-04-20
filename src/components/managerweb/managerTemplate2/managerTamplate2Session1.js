@@ -48,10 +48,10 @@ class Session1 extends React.Component{
             }
         }
         */
-
+       
         const　comObj = {
             ono: cid,
-            themeNum : event.target.themeNum.value,
+            themeNum : this.props.themeNum,
             title: event.target.title.value,
             title2: '',
             title3: '',
@@ -78,7 +78,6 @@ class Session1 extends React.Component{
     
     render(){
         const { companyData, companyErr, companyIsLoading} = this.props.companyReducer;
-  
      
         const cid = this.props.match.params.cid.trim();
 
@@ -87,7 +86,7 @@ class Session1 extends React.Component{
         let companySubTitle2 = this.state.companySubTitle2;
         let companyBackgroundImg1 = this.state.companyBackgroundImg1;
         let companyBackgroundImg2 = this.state.companyBackgroundImg2;
-        let themeNum = 'tp01';
+        let themeNum = this.props.themeNum;
         let actionType = 'create';
 
         if(companyData && companyData.length > 0){

@@ -9,9 +9,26 @@ function createArray( preName, psotName , number, thatState){
 }
 
 function strNumLimite( str, number ){
-
-    return str.substring(0,str.length-1 > number ? number-1: str.length-1 ) 
-
+    return str.substring(0,str.length-1 > number ? number-1: str.length-1 );
 }
 
-export {createArray, strNumLimite};
+const emptyCheck = (value, title) => {
+    if (value.length === 0){
+        alert(title + '不可以空白');
+        return " ";
+    }else{
+        return value;
+    }
+}
+
+
+const numCheck = (value, num , title) =>{
+    if (value.length > num) {
+        alert(title + '超過' + num + '個字的限制');
+        return strNumLimite(value,num);
+    }else{
+        return value;
+    }
+}
+
+export {createArray, strNumLimite, emptyCheck, numCheck};

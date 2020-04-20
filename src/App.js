@@ -17,7 +17,7 @@ import withManagerWeb from './components/managerweb/withManagerweb';
 import ManagerMain from './components/managerweb/managerMain';
 import ManagerGeneralSetting from './components/managerweb/managerGeneralSetting';
 import ManagerTemplate1 from './components/managerweb/managerTemplate1/managerTemplate1';
-import ManagerTemplate2 from './components/managerweb/managerTemplate2';
+import ManagerTemplate2 from './components/managerweb/managerTemplate2/managerTemplate2';
 import ManagerTemplate3 from './components/managerweb/managerTemplate3';
 import ManagerTemplate4 from './components/managerweb/managerTemplate4';
 //import ManagerLogin from './components/managerweb/managerLogin';
@@ -49,14 +49,6 @@ const ConnectCustomerWeb = connect(mapStateToProps, mapDispatchToProps)(Customer
 
 function App() {
   
-  const Preview = (props) => {
-    const url ='/managerweb/:cid/preview/' +  props.themNum;
-    return(
-      <div>
-          <Route exact path={url} component={ConnectCustomerWeb} themNum={props.themNum}/>
-      </div>
-    )
-  }
 
   return (
       <div className="App">
@@ -73,10 +65,7 @@ function App() {
                   <Route exact path="/managerweb/:cid/template2" component={WithManagerTemplate2} />
                   <Route exact path="/managerweb/:cid/template3" component={WithManagerTemplate3} />
                   <Route exact path="/managerweb/:cid/template4" component={WithManagerTemplate4} />
-                  <Preview themNum='tp01'/>
-                  <Preview themNum='tp02'/>
-                  <Preview themNum='tp03'/>
-                  <Preview themNum='tp04'/>
+                  <Route exact path="/managerweb/:cid/preview/:themNum" component={ConnectCustomerWeb} />
               </Switch>
              </BrowserRouter>
         </Provider>

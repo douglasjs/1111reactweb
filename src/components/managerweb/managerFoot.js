@@ -1,5 +1,6 @@
 import React from 'react';
 import useScript from '../sharecomponents/usescript';
+import ManagerScollToTop from '../sharecomponents/managerScrollToTop';
 
 function ManagerFoot (props){
 
@@ -14,7 +15,9 @@ function ManagerFoot (props){
      
     return(
 
-        <div></div>
+        <div>
+            <ManagerScollToTop />
+        </div>
 
     )
 

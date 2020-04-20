@@ -118,7 +118,6 @@ const getCompanyList = (ono, themeNum) =>{
 
     return (dispatch) =>{
         
-      
         dispatch(getCompanyStart());
         axios({ method: 'get', url: `${envConfig.WebAPI}/company/${ono}`, params:{themeNum: themeNum}})
             .then(response => {

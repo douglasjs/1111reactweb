@@ -1,24 +1,14 @@
 import React from 'react';
-//import checkTextLength from './checktextlength';
-//import {strNumLimite} from './toolFunction';
+import { emptyCheck, numCheck} from './toolFunction';
 
 function InputText(props){
     
-    const handleChange = ( name, that ) => event => {
-        that.setState({ ...that.state, [name]: event.target.value});
+    const handleChange = ( name, that, checkValue, title ) => event => {
+        let word = event.target.value;
+        word = emptyCheck(word, title);
+        word = numCheck(word, checkValue, title );
+        that.setState({ ...that.state, [name]: word});
     };
-
-    let inputString = props.inputState;
-    //inputString = props.inputState.length > props.checkValue ? checkTextLength(props.inputState, props.checkValue, props.title) : props.inputState;
-
-    if (props.inputState === 0) {
-        alert(props.title + '不可以空白');
-        inputString = " ";
-    }
-    if (props.inputState.length > props.checkValue) {
-        alert(props.title + '超過' + props.checkValue + '個字的限制');
-        inputString = props.inputState.substring(0,props.inputState.length-1 > props.checkValue ? props.checkValue-1: props.inputState.length-1 );
-    }
 
     return(
         <div className="form-row">
@@ -30,7 +20,7 @@ function InputText(props){
                 <em className='text-primary'>{props.notice} </em>
             </label>
             <input type="text" className={`form-control`} id={props.inputName} placeholder={props.title}   
-            value={inputString} onChange={handleChange(props.inputName, props.stateObj)}  required={props.required} />
+            value={props.inputState} onChange={handleChange(props.inputName, props.stateObj, props.checkValue, props.title)}  required={props.required} />
                 
             { /*props.required &&
                 <div className="invalid-feedback">

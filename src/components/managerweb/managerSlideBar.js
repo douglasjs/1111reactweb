@@ -57,7 +57,7 @@ function ManagerSlideBar(props) {
                   <div className="bg-white py-2 collapse-inner rounded">
                     <h6 className="collapse-header">客製化網站模板設定</h6>
                     <Link className="collapse-item" to={`/managerweb/${cid}/template1`}>模板樣式 =1=</Link>
-                    <a className="collapse-item" href="/#">模板樣式 =2=</a>
+                    <Link className="collapse-item" to={`/managerweb/${cid}/template2`}>模板樣式 =2=</Link>
                     <a className="collapse-item" href="/#">模板樣式 =3=</a>
                     <a className="collapse-item" href="/#">模板樣式 =4=</a>
                     <a className="collapse-item" href="/#">模板樣式 =5=</a>
