@@ -434,7 +434,7 @@ class Session4 extends React.Component{
                                                     <th>標籤</th>
                                                     <th>職稱</th>
                                                     <th>薪資  </th>
-                                                    <th>工作內容 </th>
+                                                    <th width="30%">工作內容 </th>
                                                     <th>地點</th>
         
                                                 </tr>
@@ -449,7 +449,7 @@ class Session4 extends React.Component{
                                                             <td>{this.positionGroupMapping(element.position_group)} </td>
                                                             <td className='text-left'>{element.position_name} </td>
                                                             <td className='text-left'>{element.position_salary} </td>
-                                                            <td className='text-left' width="30%">{element.position_matter.substring(0, 100)} </td>
+                                                            <td className='text-left line-4 width-100'>{element.position_matter.substring(0, 100)} </td>
                                                             <td>{element.position_workCity} </td>
                                                          
                                                         </tr>
