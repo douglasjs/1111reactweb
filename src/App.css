@@ -118,3 +118,8 @@
   width: 100%;
 }
 
+.height-sample {
+  max-height: 200px;
+  overflow: hidden;
+}
+
