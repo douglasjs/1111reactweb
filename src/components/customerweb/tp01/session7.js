@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import envConfig from '../../../config/env';
 
 class CompanyQA extends React.Component {
 
@@ -13,6 +14,7 @@ class CompanyQA extends React.Component {
     }
 
     render(){
+        const cid = this.props.match.params.cid.trim();
         const { qaData } = this.props.qaReducer;
 
         let qaEnable;
@@ -26,6 +28,7 @@ class CompanyQA extends React.Component {
         let qa4Content;
         let qa5Title;
         let qa5Content;
+        let qaImg;
 
         if(qaData && qaData.length > 0){
             qaData.forEach(element => {
@@ -40,12 +43,24 @@ class CompanyQA extends React.Component {
                 qa4Content = element.qa4Content;
                 qa5Title = element.qa5Title;
                 qa5Content = element.qa5Content;
+                qaImg = element.qaImg;
             })
         }
 
-        const style = qaEnable ? {backgroundImage: 'url(image/bg-1-faq.jpg)'} : {display: 'none'};
+        // image
+        qaImg = !qaImg ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${qaImg}`;
+
+        const style = {
+            backgroundImage: 'url('+ qaImg + ')',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover'
+        }
+
+        //const style = qaEnable ? {styleImg} : {display: 'none'};
 
         return (
+        
+            <div style={qaEnable? {} : {display: 'none'}}>
     
             <section id="faq" className="faq-padding-custom bg-cover box-shadow-3" style={style}>
     
@@ -130,6 +145,7 @@ class CompanyQA extends React.Component {
                     </div>
                 </div>
             </section>
+            </div>
         )
 
     }
