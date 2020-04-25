@@ -62,7 +62,7 @@ class CompanyCustomize extends React.Component {
                 card3Img = element.card3Img;
                 card4Title = element.card4Title;
                 card4Content = element.card4Content;
-                card4Img = element.card5Img;
+                card4Img = element.card4Img;
                 card5Title = element.card5Title;
                 card5Content = element.card5Content;
                 card5Img = element.card5Img;
