@@ -172,7 +172,7 @@ class Session2 extends React.Component{
                 introSubTitle3 = introSubTitle3 !==" " ? introSubTitle3 : element.introSubTitle3;
                 introSubTitle3Content = introSubTitle3Content !==" " ? introSubTitle3Content : element.introSubTitle3Content;
                 introSubTitle3ImgText = introSubTitle3ImgText !==" " ? introSubTitle3ImgText : element.introSubTitle3ImgText;
-                introSubTitle3Img = introSubTitle3Img !==" " ? introSubTitle3Img : element.introSubTitle1Img;
+                introSubTitle3Img = introSubTitle3Img !==" " ? introSubTitle3Img : element.introSubTitle3Img;
 
             })
         }
