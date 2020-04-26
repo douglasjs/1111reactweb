@@ -13,7 +13,7 @@ function PreviewButton(props){
                     <a href={`/${cid}`} target='_blank'rel="noopener noreferrer"><button className='btn btn-primary'>確認發佈</button></a>
                   </div>
                   <div className="scroll-to-top rounded scroll-to-top-bottom">
-                    <a href='/managerweb/50750609/preview/tp01' target='_blank' rel="noopener noreferrer"><span className='previewButton'>預覽</span></a>
+                    <a href={`/managerweb/${cid}/preview/${themNum}`} target='_blank' rel="noopener noreferrer"><span className='previewButton'>預覽</span></a>
                   </div>
                 </div>
             }
