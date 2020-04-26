@@ -62,6 +62,7 @@ class CompanyInfo extends React.Component{
 
         return (
             <section id="company" className="pt-10">
+                {introductionData && introductionData.length > 0 &&
                 <div className="container">
                     <div className="row">
     
@@ -108,7 +109,7 @@ class CompanyInfo extends React.Component{
                                             <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
                                                 <div className="cb-img-container border-radius-5">
                                                     <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">
-                                                        <img className="invisible" src={introSubTitle1Img} alt="1111人力銀行公司介紹" />
+                                                        <img  src={introSubTitle1Img} alt="1111人力銀行公司介紹" />
                                                     </figure>
                                                 </div>
                                                 <div className="fancy-box-header">
@@ -125,7 +126,7 @@ class CompanyInfo extends React.Component{
                                             <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
                                                 <div className="cb-img-container border-radius-5">
                                                     <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">
-                                                        <img className="invisible" src={introSubTitle2Img} alt="1111人力銀行公司介紹" />
+                                                        <img  src={introSubTitle2Img}  alt="1111人力銀行公司介紹" />
                                                     </figure>
                                                 </div>
                                                 <div className="fancy-box-header">
@@ -142,7 +143,7 @@ class CompanyInfo extends React.Component{
                                             <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
                                                 <div className="cb-img-container border-radius-5">
                                                     <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">
-                                                        <img className="invisible" src={introSubTitle3Img} alt="1111人力銀行公司介紹" />
+                                                        <img  src={introSubTitle3Img}   alt="1111人力銀行公司介紹" />
                                                     </figure>
                                                 </div>
                                                 <div className="fancy-box-header">
@@ -161,6 +162,7 @@ class CompanyInfo extends React.Component{
                 
                     </div>
                 </div>
+                }
             </section>
         )
 

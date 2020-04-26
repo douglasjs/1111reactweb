@@ -47,6 +47,7 @@ class CompanyBrand extends React.Component {
     
         return (
             <section id="brand" className="vc_row pt-30 pb-30 bg-gray">
+                {brandData && brandData.length > 0 &&
                 <div className="container">
                     <div className="row">
     
@@ -61,7 +62,7 @@ class CompanyBrand extends React.Component {
                                 {brandTitle}
     
                             </h2>
-    
+                           
                             <div className="accordion accordion-md accordion-title-underlined accordion-expander-left accordion-active-color-primary" id="vc_accordion_5c77a7f9d2896" role="tablist">
                                 <div className="accordion-item panel active">
                                     <div className="accordion-heading" role="tab" id="heading_accordion-1">
@@ -121,9 +122,10 @@ class CompanyBrand extends React.Component {
                                 </div>
     
                             </div>
-    
+
                         </div>
-    
+                            
+                        
                         <div className="lqd-column col-xs-12 col-lg-6">
     
                             <div className="liquid-img-group-container">
@@ -141,9 +143,11 @@ class CompanyBrand extends React.Component {
                             </div>
         
                         </div>
+                    
         
                     </div>
                 </div>
+                }
             </section>
         )
     }

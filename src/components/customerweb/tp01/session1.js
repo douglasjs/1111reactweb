@@ -40,14 +40,16 @@ class CompanyTitle extends React.Component{
         const imageData = `{"delay":3000,"effect":"scale","imageArray":["${companyBackgroundImg1}","${companyBackgroundImg2}"]}`;
 
         return (
-        
-            <section
+            <section>
+            {//companyData && companyData.length > 0 &&
+            <div
                 className="vc_row height-60 d-flex flex-wrap align-items-end"
                 data-parallax="true"
                 data-parallax-options='{"parallaxBG":true}'
                 data-slideshow-bg="true"
                 data-slideshow-options={imageData}
             >
+                
     
                 <span className="row-bg-loader">
                     <span className="row-bg-loader-inner"></span>
@@ -83,8 +85,10 @@ class CompanyTitle extends React.Component{
     
                     </div>
                 </div>
-    
-            </section>    
+            
+            </div>
+             }
+            </section>   
         )
     }
 }

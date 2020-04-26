@@ -32,9 +32,11 @@ class CompanyBenifit  extends React.Component {
         const style = {
             'backgroundImage' : 'url(/assets/tp01/img/benefit-bg_blue.png)'
         }
+        const styleImg = {};
 
         return (
             <section id="benefit" className="vc_row bg-cover bg-center-bottom pt-10" style={style}>
+                {benefitData && benefitData.length > 0 &&
                 <div className="container">
                     <div className="row d-flex flex-wrap align-items-center">
     
@@ -46,7 +48,7 @@ class CompanyBenifit  extends React.Component {
                                         <div className="liquid-img-group-img-container liquid-img-group-container-benefit-sm">
                                             <div className="liquid-img-container-inner" data-parallax="true" data-parallax-from='{"scaleX":1.25,"scaleY":1.25}' data-parallax-to='{"scaleX":1,"scaleY":1}' data-parallax-options='{"overflowHidden":true,"easing":"linear"}'>
                                                 <figure>
-                                                    <img src={benefitImg} alt="1111人力銀行員工福利" />
+                                                    <img src={benefitImg}  loading="lazy" style={styleImg} alt="1111人力銀行員工福利" />
                                                 </figure>
                                             </div>
                                         </div>
@@ -64,6 +66,7 @@ class CompanyBenifit  extends React.Component {
     
                     </div>
                 </div>
+                }
             </section>
        
         )

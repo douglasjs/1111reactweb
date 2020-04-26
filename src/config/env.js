@@ -31,7 +31,7 @@ const envConfig = {
 const envConfig = {
     kind01API : 'http://benedik.ddns.net:8080/api/GetApi',
     kind00API : 'http://benedik.ddns.net:8080/api/GetApi',
-    WebAPI: 'https://localhost:44312/api'
+    WebAPI: 'http://benedik.ddns.net:8080/api'
 
 }
 
