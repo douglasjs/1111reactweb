@@ -395,8 +395,8 @@ class Session4 extends React.Component{
        
         return(
             <div className="card shadow mb-4">
-                <a href="#collapseCard4" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard4">
-                <h6 className="m-0 font-weight-bold text-primary">設定區段-職缺介紹</h6>
+                <a href="#collapseCard4" className="d-block card-header py-3 text-white bg-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard4">
+                <h6 className="m-0 font-weight-bold">設定區段-職缺介紹</h6>
                 </a>
                 <div className="collapse collapsed" id="collapseCard4">
                     <div className="card-body">
@@ -434,7 +434,7 @@ class Session4 extends React.Component{
                                                     <th>標籤</th>
                                                     <th>職稱</th>
                                                     <th>薪資  </th>
-                                                    <th>工作內容 </th>
+                                                    <th width="30%">工作內容 </th>
                                                     <th>地點</th>
         
                                                 </tr>
@@ -447,9 +447,9 @@ class Session4 extends React.Component{
                                                         <tr key={index}>
                                                             <td className='text-center'><button id={`del_${element.eNo}`}  className='btn btn-primary' value={element.eNo} onClick={this.handlePositionDelete}>刪除 <i className="far fa-trash-alt" /></button></td>
                                                             <td>{this.positionGroupMapping(element.position_group)} </td>
-                                                            <td>{element.position_name} </td>
-                                                            <td>{element.position_salary} </td>
-                                                            <td width="30%">{element.position_matter} </td>
+                                                            <td className='text-left'>{element.position_name} </td>
+                                                            <td className='text-left'>{element.position_salary} </td>
+                                                            <td className='text-left line-4 width-100'>{element.position_matter} </td>
                                                             <td>{element.position_workCity} </td>
                                                          
                                                         </tr>
@@ -599,9 +599,9 @@ class Session4 extends React.Component{
                                                                         {groupName3 && groupName3 !==" " &&<option value="3">{groupName3}</option>}
                                                                 </select>
                                                             </td>                                                 
-                                                            <td>{element.Position}</td>
-                                                            <td>{element.Salary}</td>
-                                                            <td>{element.Matter.substring(0, 50)}</td>
+                                                            <td className='text-left'>{element.Position}</td>
+                                                            <td className='text-left'>{element.Salary}</td>
+                                                            <td className='text-left'>{element.Matter.substring(0, 100)}</td>
                                                             <td>{element.WorkCity}</td>
                                                         </tr>
                                                     )

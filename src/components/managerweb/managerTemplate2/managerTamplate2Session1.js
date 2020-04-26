@@ -121,8 +121,8 @@ class Session1 extends React.Component{
 
         return(
             <div className="card shadow mb-4">
-                <a href="#collapseCard1" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard1">
-                    <h6 className="m-0 font-weight-bold text-primary">設定區段-主視覺</h6>
+                <a href="#collapseCard1" className="d-block card-header py-3 text-white bg-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard1">
+                    <h6 className="m-0 font-weight-bold">設定區段-主視覺</h6>
                 </a>
                 <div className="collapse show" id="collapseCard1">
                     <div className="card-body">

@@ -171,79 +171,79 @@ class managerGeneralSetting extends React.Component{
 
         switch(samplemap){
             case "tp01blue.css":
-                return "tp01blue.jpg";
+                return "tp01blue.png";
             case "tp02blue.css":
-                return "tp02blue.jpg";
+                return "tp02blue.png";
             case "tp03blue.css":
-                return "tp03blue.jpg";
+                return "tp03blue.png";
             case "tp04blue.css":
-                return "tp04blue.jpg";
+                return "tp04blue.png";
             case "tp05blue.css":
-                return "tp05blue.jpg";
+                return "tp05blue.png";
             case "tp06blue.css":
-                return "tp06blue.jpg";
+                return "tp06blue.png";
             case "tp01green.css":
-                return "tp01green.jpg";
+                return "tp01green.png";
             case "tp02green.css":
-                return "tp02green.jpg";
+                return "tp02green.png";
             case "tp03green.css":
-                return "tp03green.jpg";
+                return "tp03green.png";
             case "tp04green.css":
-                return "tp04green.jpg";
+                return "tp04green.png";
             case "tp05green.css":
-                return "tp05green.jpg";
+                return "tp05green.png";
             case "tp06green.css":
-                return "tp06green.jpg";
+                return "tp06green.png";
             case "tp01orange.css":
-                return "tp01orange.jpg";
+                return "tp01orange.png";
             case "tp02orange.css":
-                return "tp02orange.jpg";
+                return "tp02orange.png";
             case "tp03orange.css":
-                return "tp03orange.jpg";
+                return "tp03orange.png";
             case "tp04orange.css":
-                return "tp04orange.jpg";
+                return "tp04orange.png";
             case "tp05orange.css":
-                return "tp05orange.jpg";
+                return "tp05orange.png";
             case "tp06orange.css":
-                return "tp06orange.jpg";
+                return "tp06orange.png";
             case "tp01purple.css":
-                return "tp01purple.jpg";
+                return "tp01purple.png";
             case "tp02purple.css":
-                return "tp02purple.jpg";
+                return "tp02purple.png";
             case "tp03purple.css":
-                return "tp03purple.jpg";
+                return "tp03purple.png";
             case "tp04purple.css":
-                return "tp04purple.jpg";
+                return "tp04purple.png";
             case "tp05purple.css":
-                return "tp05purple.jpg";
+                return "tp05purple.png";
             case "tp06purple.css":
-                return "tp06purple.jpg";
+                return "tp06purple.png";
             case "tp01red.css":
-                return "tp01red.jpg";
+                return "tp01red.png";
             case "tp02red.css":
-                return "tp02red.jpg";
+                return "tp02red.png";
             case "tp03red.css":
-                return "tp03red.jpg";
+                return "tp03red.png";
             case "tp04red.css":
-                return "tp04red.jpg";
+                return "tp04red.png";
             case "tp05red.css":
-                return "tp05red.jpg";
+                return "tp05red.png";
             case "tp06red.css":
-                return "tp06red.jpg";
+                return "tp06red.png";
             case "tp01yellow.css":
-                return "tp01yellow.jpg";
+                return "tp01yellow.png";
             case "tp02yellow.css":
-                return "tp02yellow.jpg";
+                return "tp02yellow.png";
             case "tp03yellow.css":
-                return "tp03yellow.jpg";
+                return "tp03yellow.png";
             case "tp04yellow.css":
-                return "tp04yellow.jpg";
+                return "tp04yellow.png";
             case "tp05yellow.css":
-                return "tp05yellow.jpg";
+                return "tp05yellow.png";
             case "tp06yellow.css":
-                return "tp06yellow.jpg";
+                return "tp06yellow.png";
             default:
-                return "tp01blue.jpg";
+                return "tp01blue.png";
         }
 
     }
@@ -384,7 +384,7 @@ class managerGeneralSetting extends React.Component{
                                 </div>
                               </div>
                               <div className="col-md-6 mb-3">
-                                    <div><img src={sampleImgURL} alt="Temp1_fullimg" width="100%"/></div>
+                                    <div className="height-sample"><img src={sampleImgURL} alt="Temp1_fullimg" width="100%"/></div>
                                     <div><a type="button" data-toggle="modal" href="#tmp1_fullimg">觀看放大圖例</a></div>
                               </div>
                               <div className="modal fade" id="tmp1_fullimg">

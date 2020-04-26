@@ -81,3 +81,45 @@
 .row-style-pt1 {
   padding-top: 1em;
 }
+
+/* Max line */
+.line-1 ,.line-2 ,.line-3 ,.line-4 ,.line-5 ,.line-15 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.line-1 {
+  -webkit-line-clamp: 1;
+}
+
+.line-2 {
+  -webkit-line-clamp: 2;
+}
+
+.line-3 {
+  -webkit-line-clamp: 3;
+}
+
+.line-4 {
+  -webkit-line-clamp: 4;
+}
+
+.line-5 {
+  -webkit-line-clamp: 5;
+}
+
+.line-10 {
+  -webkit-line-clamp: 10;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.height-sample {
+  max-height: 200px;
+  overflow: hidden;
+}
+

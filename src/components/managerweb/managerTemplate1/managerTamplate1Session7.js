@@ -2,6 +2,8 @@ import React from 'react';
 import InputSwitch from '../../sharecomponents/inputSwitch';
 import InputText from '../../sharecomponents/inputText';
 import InputTextArea from '../../sharecomponents/inputTextArea';
+import ImgUpload from '../../sharecomponents/imgUpload';
+import envConfig from '../../../config/env';
 import Msg from '../msg';
 
 class Session7 extends React.Component{
@@ -20,6 +22,8 @@ class Session7 extends React.Component{
             qa4Content : ' ',
             qa5Title : ' ',
             qa5Content : ' ',
+            qaImg : ' ',
+            qaImgUpload : '',
         };     
     }
 
@@ -51,8 +55,8 @@ class Session7 extends React.Component{
             qa5Title:  event.target.qa5Title.value,
             qa5Content:  event.target.qa5Content.value,
             qaSubTitle:  '',
-            qaImg:  '',
-            qaImgUpload: null
+            qaImg:  event.target.qaImg.value,
+            qaImgUpload : this.state.qaImgUpload ? this.state.qaImgUpload.value : null
         }
 
         if(event.target.action7.value === 'create'){
@@ -64,6 +68,7 @@ class Session7 extends React.Component{
     }
 
     render(){
+        const cid = this.props.match.params.cid.trim();
         const { qaData, qaErr, qaIsLoading} = this.props.qaReducer;
 
         let qaEnable = this.state.qaEnable;
@@ -77,6 +82,7 @@ class Session7 extends React.Component{
         let qa4Content = this.state.qa4Content;
         let qa5Title = this.state.qa5Title;
         let qa5Content = this.state.qa5Content;
+        let qaImg = this.state.qaImg;
 
         const sessionName=  "常見問題";
         let themeNum = 'tp01';
@@ -95,14 +101,23 @@ class Session7 extends React.Component{
                 qa4Title = qa4Title !==" " ? qa4Title : element.qa4Title;
                 qa4Content = qa4Content !==" " ? qa4Content : element.qa4Content;
                 qa5Title = qa5Title !==" " ? qa5Title : element.qa5Title;
-                qa5Content = qa5Content !==" " ? qa5Content : element.qa5Content;       
+                qa5Content = qa5Content !==" " ? qa5Content : element.qa5Content;
+                qaImg = qaImg !==" " ? qaImg : element.qaImg;
             })
+        }
+
+        // image
+        let qaImgUpload ="";
+        if(qaImg === " "){
+            qaImgUpload = "/image/logo-1111.png";
+        }else{
+            qaImgUpload = this.state.qaImg !==' ' ?  this.state.qaImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${qaImg}`;
         }
         
         return(
             <div className="card shadow mb-4">
-                <a href="#collapseCard7" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard7">
-                    <h6 className="m-0 font-weight-bold text-primary">設定區段-{sessionName}</h6>
+                <a href="#collapseCard7" className="d-block card-header py-3 text-white bg-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard7">
+                    <h6 className="m-0 font-weight-bold">設定區段-{sessionName}</h6>
                 </a>
                 <div className="collapse collapsed" id="collapseCard7">
                     <div className="card-body">
@@ -155,6 +170,10 @@ class Session7 extends React.Component{
                                         <div className="form-row row-style-w95-pt1">
                                             <InputTextArea title={`${sessionName}5內容`} notice='(字數限制為135個字以內)' inputName='qa5Content' inputState={qa5Content}
                                                 rows='4' stateObj={this} required={false} checkValue='135' />
+                                        </div>
+                                        <div className="form-row row-style-w95-pt1">
+                                            <ImgUpload title='常見問題背景圖片' notice='(圖檔尺寸大小為 1920*1080  ，接受格式為png、jpg)' objName='qaImg'  imgUpload={qaImgUpload} 
+                                                imgFileName={qaImg} parentObj={this} imgW={1920} imgH={1080} required={false} />
                                         </div>
 
                                             {/*this.createQA(5).map((preName, index)=>{
