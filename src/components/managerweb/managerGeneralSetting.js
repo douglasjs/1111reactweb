@@ -51,6 +51,13 @@ class managerGeneralSetting extends React.Component{
 
         if (input.files && input.files[0]) {
             const file = event.target.files[0];
+
+            if(file.type.indexOf('png') < 0 ){
+                alert('請上傳正確的圖片格式: png');
+                return;
+            }
+
+
             const reader = new FileReader();
             reader.readAsDataURL(file);
             reader.onloadend = () => {
@@ -363,11 +370,14 @@ class managerGeneralSetting extends React.Component{
                                     <select  className="form-control" id="themeNum" value={themeNum} onChange={this.handleChange('themeNum')} required>
                                             <option value=''>選擇版型...</option>
                                             <option value='tp01'>版型一</option>
+                                            {/*
                                             <option value='tp02'>版型二</option>
                                             <option value='tp03'>版型三</option>
                                             <option value='tp04'>版型四</option>
                                             <option value='tp05'>版型五</option>
                                             <option value='tp06'>版型六</option>
+                                            */}
+
                                     </select>
                                 </div>
                                 <div className="form-row">
@@ -451,7 +461,7 @@ class managerGeneralSetting extends React.Component{
                               </div>
                           </div>                          
                           <div className="form-row">
-                                <label><span className='text-danger'>*</span> 公司LOGO上傳</label><em className='text-primary'>(圖檔尺寸大小為 104*32，接受格式為png、jpg)</em> 
+                                <label><span className='text-danger'>*</span> 公司LOGO上傳</label><em className='text-primary'>(圖檔尺寸大小為 104*32，接受格式為png)</em> 
                           </div>
                           <div className="form-row">
                               <div className="col-md-6 mb-3">

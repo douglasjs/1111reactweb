@@ -48,7 +48,7 @@ class CompanyBenifit  extends React.Component {
                                         <div className="liquid-img-group-img-container liquid-img-group-container-benefit-sm">
                                             <div className="liquid-img-container-inner" data-parallax="true" data-parallax-from='{"scaleX":1.25,"scaleY":1.25}' data-parallax-to='{"scaleX":1,"scaleY":1}' data-parallax-options='{"overflowHidden":true,"easing":"linear"}'>
                                                 <figure>
-                                                    <img src={benefitImg}  loading="lazy" style={styleImg} alt="1111人力銀行員工福利" />
+                                                    <img src={benefitImg} style={styleImg} alt="1111人力銀行員工福利" />
                                                 </figure>
                                             </div>
                                         </div>

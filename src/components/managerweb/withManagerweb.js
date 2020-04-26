@@ -6,6 +6,7 @@ import ManagerContentFoot from './managerContentFoot';
 //import ManagerScollToTop from '../sharecomponents/managerScrollToTop';
 import ManagerModal from './managerModal';
 import ManagerFoot from './managerFoot';
+import {Redirect} from "react-router-dom";
 
 const withManagerWeb = Componet => props => {
 
@@ -22,7 +23,30 @@ const withManagerWeb = Componet => props => {
         '/assetsBK/css/sb-admin-2.min.css'
     ]
 
-
+    
+    if(!props.location.state){
+        alert("請登入後使用管理介面");
+        return(
+            <Redirect
+                to={{
+                pathname: "/login"
+                }}
+            />
+        )
+    }
+  
+    if(props.location.state.detail!=="login"){
+            alert("請登入後使用管理介面");
+            return(
+                <Redirect
+                    to={{
+                    pathname: "/login"
+                    }}
+                />
+            )
+    }
+    
+    
 
     return (
         <div id="page-top">

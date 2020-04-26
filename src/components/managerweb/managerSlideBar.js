@@ -42,7 +42,7 @@ function ManagerSlideBar(props) {
                     <h6 className="collapse-header">通用設定</h6>
                    {/* <a className="collapse-item" href="/#" onClick={()=>loginHandler(props,'setting')}>網站通用設定</a>*/}
               
-                    <Link className="collapse-item" to={`/managerweb/${cid}/setting`}>網站通用設定</Link>
+                    <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/setting`, state: { detail: 'login' }}}>網站通用設定</Link>
                   </div>
                 </div>
               </li>
@@ -56,12 +56,15 @@ function ManagerSlideBar(props) {
                 <div id="collapseUtilities" className="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                   <div className="bg-white py-2 collapse-inner rounded">
                     <h6 className="collapse-header">客製化網站模板設定</h6>
-                    <Link className="collapse-item" to={`/managerweb/${cid}/template1`}>模板樣式 =1=</Link>
-                    <Link className="collapse-item" to={`/managerweb/${cid}/template2`}>模板樣式 =2=</Link>
+                    <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template1`, state: { detail: 'login' }}}>模板樣式 =1=</Link>
+                    {/*
+                                        <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template2`, state: { detail: 'login' }}}>模板樣式 =2=</Link>
                     <a className="collapse-item" href="/#">模板樣式 =3=</a>
                     <a className="collapse-item" href="/#">模板樣式 =4=</a>
                     <a className="collapse-item" href="/#">模板樣式 =5=</a>
                     <a className="collapse-item" href="/#">模板樣式 =6=</a>
+                    */}
+
                   </div>
                 </div>
               </li>

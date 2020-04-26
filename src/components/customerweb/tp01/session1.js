@@ -8,7 +8,7 @@ class CompanyTitle extends React.Component{
         this.state={};
     }
 
-    componentDidMount(){
+   componentDidMount(){
         const cid = this.props.match.params.cid;
         this.props.getCompanyList(cid, this.props.themeNum? this.props.themeNum: 'tp01');
     }
@@ -16,6 +16,7 @@ class CompanyTitle extends React.Component{
     render(){
         const cid = this.props.match.params.cid;
         const { companyData } = this.props.companyReducer;
+        console.log(companyData);
 
         let title;
         let companySubTitle1;
@@ -41,7 +42,6 @@ class CompanyTitle extends React.Component{
 
         return (
             <section>
-            {//companyData && companyData.length > 0 &&
             <div
                 className="vc_row height-60 d-flex flex-wrap align-items-end"
                 data-parallax="true"
@@ -87,7 +87,6 @@ class CompanyTitle extends React.Component{
                 </div>
             
             </div>
-             }
             </section>   
         )
     }

@@ -61,7 +61,7 @@ class CompanyQA extends React.Component {
         return (
         
             <div style={qaEnable? {} : {display: 'none'}}>
-    
+            {qaData && qaData.length > 0 && 
             <section id="faq" className="faq-padding-custom bg-cover box-shadow-3" style={style}>
     
                 <div className="container">
@@ -145,6 +145,7 @@ class CompanyQA extends React.Component {
                     </div>
                 </div>
             </section>
+            }
             </div>
         )
 

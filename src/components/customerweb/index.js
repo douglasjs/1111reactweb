@@ -20,10 +20,10 @@ class customerIndex extends React.Component{
     chooseTemplate= (themNum, themIndex) =>{
         const index = themIndex ? themIndex : 0;
         switch(themNum){
-            case "tp01":  return(<TP01 key={index} {...this.props}/>); 
-            case "tp02":  return(<TP02 key={index} {...this.props}/>); 
-            case "tp03":  return(<TP03 key={index} {...this.props}/>);
-            case "tp04":  return(<TP04 key={index} {...this.props}/>); 
+            case "tp01":  return(<TP01 key={index} themeNum={themNum} {...this.props} />); 
+            case "tp02":  return(<TP02 key={index} themeNum={themNum} {...this.props}/>); 
+            case "tp03":  return(<TP03 key={index} themeNum={themNum} {...this.props}/>);
+            case "tp04":  return(<TP04 key={index} themeNum={themNum} {...this.props}/>); 
             default:  return(<TP01 key={index} {...this.props}/>); 
         }
     }

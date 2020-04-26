@@ -17,7 +17,7 @@ function ManagerModal() {
                     <div className="modal-body">確定要離開了嗎?</div>
                     <div className="modal-footer">
                         <button className="btn btn-secondary" type="button" data-dismiss="modal">取消</button>
-                        <a className="btn btn-primary" href="/web/managerweb/">登出</a>
+                        <a className="btn btn-primary" href="/login">登出</a>
                     </div>
                 </div>
             </div>

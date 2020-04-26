@@ -9,6 +9,19 @@ function ImgUpload(props){
 
         if (input.files && input.files[0]) {
             const file = event.target.files[0];
+
+            if(props.limitType && props.limitType.length > 0){
+                if(file.type.indexOf(props.limitType) < 0){
+                    alert('請上傳正確的圖片格式: ' + props.limitType );
+                    return;
+                }
+            }
+
+            if(file.type.indexOf('jpeg') < 0 && file.type.indexOf('png') < 0 ){
+                alert('請上傳圖片檔案');
+                return;
+            }
+
             const reader = new FileReader();
             reader.readAsDataURL(file);
             reader.onloadend = () => {
@@ -16,6 +29,7 @@ function ImgUpload(props){
                 const img = new Image();
                 const that = parentObj;
                 img.src=reader.result;
+                
 
                 img.onload = function() {
                    if(img.width > props.imgW || img.height > props.imgH){

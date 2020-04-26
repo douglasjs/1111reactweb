@@ -20,7 +20,7 @@ import ManagerTemplate1 from './components/managerweb/managerTemplate1/managerTe
 import ManagerTemplate2 from './components/managerweb/managerTemplate2/managerTemplate2';
 import ManagerTemplate3 from './components/managerweb/managerTemplate3';
 import ManagerTemplate4 from './components/managerweb/managerTemplate4';
-//import ManagerLogin from './components/managerweb/managerLogin';
+import ManagerLogin from './components/managerweb/managerLogin';
 
 
 import './App.css';
@@ -57,6 +57,7 @@ function App() {
             <BrowserRouter>
               <Switch>
                   <Route exact path="/" component={IndexWeb} />
+                  <Route exact path="/login/" component={ManagerLogin} />
                   <Route exact path="/:cid" component={ConnectCustomerWeb} />
                   <Route exact path="/managerweb/:cid/" component={WithGerneralSetting} />
                   <Route exact path="/managerweb/:cid/setting" component={WithGerneralSetting} />
