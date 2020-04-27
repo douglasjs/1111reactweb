@@ -32,8 +32,8 @@ const NavMain = (props) => {
         { name: '職缺介紹', link: '#jobs', enable: true },
         { name: '品牌介紹', link: '#brand', enable: true },
         { name: props.customizeName, link: '#custom', enable: props.customizeEnable },
-        { name: '常見問題', link: '#faq', enable: true },
-        { name: '聯絡我們', link: '#contact', enable: true }
+        { name: '常見問題', link: '#faq', enable: props.qaEnable },
+        { name: '聯絡我們', link: '#contact', enable: props.contactEnable }
     ]
 
     return (
@@ -65,6 +65,8 @@ const NavMain = (props) => {
 function CustomerHeader(props) {
 
     const { customizeData } = props.customizeReducer;
+    const { qaData } = props.qaReducer;
+    const { contactData} = props.contactReducer;
     const { data } = props.datatableReducer;
     const cid = props.match.params.cid;
     let logURL ="/image/logo-1111.png";
@@ -81,6 +83,21 @@ function CustomerHeader(props) {
             customizeName = element.customizeName;
         })
     }
+
+    let qaEnable;
+    if(qaData && qaData.length > 0){
+        qaData.forEach(element => {
+            qaEnable =  element.qaEnable;
+        })
+    }
+
+    let contactEnable;
+    if(contactData && contactData.length > 0){
+        contactData.forEach(element => {
+            contactEnable =  element.contactEnable;
+        })
+    }
+
     return (
             <header className="main-header main-header-overlay" data-react-to-megamenu="true" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
                 <div className="mainbar-wrap">
@@ -90,7 +107,7 @@ function CustomerHeader(props) {
                         <div className="row mainbar-row align-items-lg-stretch px-4">
                             <div className="col-auto">
                                 <NavBar logURL={logURL}/>
-                                <NavMain customizeEnable={customizeEnable}  customizeName={customizeName}/>
+                                <NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
                             </div>
                         </div>
                     </div>
