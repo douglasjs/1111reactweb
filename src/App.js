@@ -59,7 +59,6 @@ function App() {
                   <Route exact path="/" component={IndexWeb} />
                   <Route exact path="/login/" component={ManagerLogin} />
                   <Route exact path="/:cid" component={ConnectCustomerWeb} />
-                  <Route exact path="/:cid/:enName" component={ConnectCustomerWeb} />
                   <Route exact path="/managerweb/:cid/" component={WithGerneralSetting} />
                   <Route exact path="/managerweb/:cid/setting" component={WithGerneralSetting} />
                   <Route exact path="/managerweb/:cid/help/" component={WithManagerMain} />
@@ -68,6 +67,7 @@ function App() {
                   <Route exact path="/managerweb/:cid/template3" component={WithManagerTemplate3} />
                   <Route exact path="/managerweb/:cid/template4" component={WithManagerTemplate4} />
                   <Route exact path="/managerweb/:cid/preview/:themNum" component={ConnectCustomerWeb} />
+                  <Route exact path="/:cid/:enName" component={ConnectCustomerWeb} />
               </Switch>
              </BrowserRouter>
         </Provider>
