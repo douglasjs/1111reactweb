@@ -3,9 +3,9 @@ import { emptyCheck, numCheck} from './toolFunction';
 
 function InputText(props){
     
-    const handleChange = ( name, that, checkValue, title ) => event => {
+    const handleChange = ( name, that, checkValue, title, required ) => event => {
         let word = event.target.value;
-        word = emptyCheck(word, title);
+        if (required === "true"){word = emptyCheck(word, title);}        
         word = numCheck(word, checkValue, title );
         that.setState({ ...that.state, [name]: word});
     };

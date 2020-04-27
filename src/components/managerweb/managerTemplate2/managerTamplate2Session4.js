@@ -486,11 +486,11 @@ class Session4 extends React.Component{
                                     
 
                                     <InputText title='標籤 1' notice='( 字數限制為4個字以內 )' inputName='groupName1' inputState={groupName1}
-                                                stateObj={this} required={true} />
+                                                stateObj={this} required={true} checkValue='4' />
                                     <InputText title='標籤 2' notice='( 字數限制為4個字以內 )' inputName='groupName2' inputState={groupName2}
-                                                stateObj={this} required={false} />
+                                                stateObj={this} required={false} checkValue='4' />
                                     <InputText title='標籤 3' notice='( 字數限制為4個字以內 )' inputName='groupName3' inputState={groupName3}
-                                                stateObj={this} required={false} />
+                                                stateObj={this} required={false} checkValue='4' />
                                  
                                     <hr />
                                     <div align="center">
