@@ -485,7 +485,7 @@ class managerGeneralSetting extends React.Component{
                                 <button type='submit' id='action' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button>
                             </div>
                             <div className="col-md-6 mb-3">
-                                <Link className="btn btn-facebook btn-block btn-width" to={nextStepURL}><i className="fas fa-share"></i> {buttonWord}</Link>
+                                <Link className="btn btn-facebook btn-block btn-width" to={{pathname:`${nextStepURL}`, state: { detail: 'login' }}}><i className="fas fa-share"></i> {buttonWord}</Link>
                             </div>
                           </div>
                         </form>
