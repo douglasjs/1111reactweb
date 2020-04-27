@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import CompanyTitle from './session1';
+import CompanyTitle from './session1new';
 import CompanyInfo from './session2';
 import CompanyBenifit from './session3';
 import CompanyJobs from './session4';

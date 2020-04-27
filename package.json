@@ -10,6 +10,7 @@
     "env-cmd": "^10.1.0",
     "jquery": "^3.4.1",
     "react": "16.11.0",
+    "react-animated-slider": "^2.0.0",
     "react-dom": "16.11.0",
     "react-helmet": "^5.2.1",
     "react-redux": "^7.1.3",
