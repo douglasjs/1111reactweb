@@ -284,11 +284,11 @@ class Session6 extends React.Component{
                                 </div>
                                 <div className="form-row row-style-w95-pt1">
                                     <InputText title='自訂區域主標題' notice='(字數限制為10個字以內)' inputName='customizeTitle' inputState={customizeTitle}
-                                        stateObj={this} required={false}  checkValue='10' />
+                                        stateObj={this} required={false} checkValue='10' />
                                 </div>
                                 <div className="form-row row-style-w95-pt1">
                                     <InputTextArea title='自訂區域副標題' notice='(字數限制為40個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
-                                        rows='3' stateObj={this} required={false}  checkValue='40' />
+                                        rows='3' stateObj={this} required={false} checkValue='40' />
                                 </div>
                             </div>
                             <div className="col-md-6 mb-3">                                    

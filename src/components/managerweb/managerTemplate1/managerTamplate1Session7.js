@@ -137,7 +137,7 @@ class Session7 extends React.Component{
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
                                             <InputTextArea title={`${sessionName}1內容`} notice='(字數限制為135個字以內)' inputName='qa1Content' inputState={qa1Content}
-                                                rows='4' stateObj={this} required={false}  checkValue='135' />
+                                                rows='4' stateObj={this} required={false} checkValue='135' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
                                             <InputText  title= {`${sessionName}2標題`} notice='(字數限制為30個字以內)' inputName='qa2Title' inputState={qa2Title}
