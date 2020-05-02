@@ -21,15 +21,12 @@ function CustomerWeb(props) {
 
     return (
          
-        <div>
-          
-            <div id="wrap">
-                <CustomerHeader {...props}/>
-                <CustomerMain {...props}/>
-                <CustomerFoot {...props}/>
-            </div>
-        </div>    
-      
+        <div id="wrap">
+            <CustomerHeader {...props}/>
+            <CustomerMain {...props}/>
+            <CustomerFoot {...props}/>
+        </div>
+
     )
 
 }

@@ -20,7 +20,7 @@ function CompanyBenifit() {
                     </div>
 
                     <div className="col-lg-7 col-md-12">
-                        <div className="why-choose-us-content">
+                        <div className="why-choose-us-content text-left">
                             <div className="content">
                                 <div className="title">
                                     <span className="sub-title">Your Benefits</span>

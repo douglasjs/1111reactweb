@@ -57,7 +57,7 @@ class CompanyTitle extends React.Component{
                 
                                     <div className="lqd-column col-md-10 col-md-offset-1 text-center py-7" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":31,"translateZ":-108,"opacity":0},"animations":{"translateY":0,"translateZ":0,"opacity":1}}'>
                 
-                                        <header className="fancy-title">
+                                        <header className="fancy-title pt-3">
                                             <h6 className="text-white lh-15 mb-4"><span className="font-size-3-3x lh-1 font-weight-bold text-shodow line-1">{title}</span></h6>
                 
                                             <div className="row">
@@ -68,7 +68,7 @@ class CompanyTitle extends React.Component{
                                                 </div>
                                             </div>
                 
-                                            <h6 className="text-uppercase font-weight-bold ltr-sp-2 text-white text-shodow mb-5 line-1">{companySubTitle2}</h6>
+                                            <h6 className="text-uppercase font-weight-bold ltr-sp-2 text-white text-shodow mb-0 line-1">{companySubTitle2}</h6>
                 
                                         </header>
                 

@@ -16,7 +16,7 @@ function CompanyBrand() {
                     </div>
 
                     <div className="col-lg-6 col-md-12">
-                        <div className="about-content">
+                        <div className="about-content text-left">
                             <span>Brands</span>
                             <h2>持續為地球綠色能源貢獻一份心力
 
@@ -34,7 +34,7 @@ function CompanyBrand() {
 </p>
 
                             
-                            <a href="https://www.1111.com.tw/corp/72189449/#c1" className="default-btn">了解更多 <span></span></a>
+                            <a className="default-btn" href="https://www.1111.com.tw/corp/72189449/#c1" target="_blank" rel="noopener noreferrer">了解更多 <span></span></a>
                         </div>
                     </div>
                 </div>

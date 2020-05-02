@@ -60,16 +60,16 @@ function CustomerMain(props){
                     <TitleSet title={webTitle} meta={companyMeta} style={styleSheet} logo={logURL} publicURL={webURL}/>
                     <CompanyTitle themeNum={themeNum} {...props}/>
                     <CompanyInfo themeNum={themeNum} {...props}/>
-                    <CompanyJobs themeNum={themeNum} {...props}/>
                     <CompanyBenifit themeNum={themeNum} {...props}/>
+                    <CompanyJobs themeNum={themeNum} {...props}/>                    
                     <CompanyBrand themeNum={themeNum} {...props}/>
                     <CompanyCustomize themeNum={themeNum} {...props}/>
                     <CompanyQA themeNum={themeNum} {...props}/>
                     <CompanyContact themeNum={themeNum} email={email} {...props} />
 
                     <a className="top-link-icon show" id="js-top-icon" href="/#"><i className="fa fa-angle-up"></i></a>
-                    <a className="top-link show" href="https://www.1111.com.tw/corp/1355006/#c4" id="js-top">
-                        <img src={`/assets/tp04/img/icons/join_icon_${styleType}.png`} alt="立即應徵" />
+                    <a className="top-link show" href="https://www.1111.com.tw/corp/1355006/#c4" id="js-top" target='_blank' rel='noopener noreferrer'>
+                        <img src={`/assets/tp04/img/join_icon_${styleType}.png`} alt="立即應徵" />
                     </a>
 
                 </div>

@@ -189,7 +189,6 @@
 			dots: true,
 			autoplayHoverPause: true,
             autoplay: true,
-			autoplayTimeout:15000,
             margin: 30,
             navText: [
                 "<i class='flaticon-left-chevron'></i>",

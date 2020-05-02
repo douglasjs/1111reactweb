@@ -18,7 +18,7 @@ function CompanyCustomize() {
                         </div>
 
                         <div className="events-content">
-                            <div className="content">
+                            <div className="content text-left">
                                 <h3><a href="/#">執政2年談能源 總統：綠電長期較核電經濟</a></h3>
                                 <p>總統表示，2025年非核家園，屆時核一、核二以及核三廠都要退役，綠能要達到總發電量的20%，主要來源則是來自太陽能和風力。</p>
                                 <span className="location"><i className="fas fa-thumbtack"></i> 新聞新知, 綠能新訊  </span>
@@ -42,7 +42,7 @@ function CompanyCustomize() {
                         </div>
 
                         <div className="events-content">
-                            <div className="content">
+                            <div className="content text-left">
                                 <h3><a href="/#">電費收入穩定，可作為另類收益來源-投資再生能源 買題材股不如買電廠</a></h3>
                                 <p>對於追求收益與低波動的投資人來說，要參與綠電商機，近年出現了另一種思維下的全新投資工具——再生能源基礎建設證券，此種投資工具更適合長期布局。</p>
                                 <span className="location"><i className="fas fa-thumbtack"></i>新聞新知, 綠能新訊 </span>
@@ -66,7 +66,7 @@ function CompanyCustomize() {
                         </div>
 
                         <div className="events-content">
-                            <div className="content">
+                            <div className="content text-left">
                                 <h3><a href="/#">收益穩定 公民電廠上網就能買</a></h3>
                                 <p>國外綠能合作社已有二十多年歷史，台灣也有環保志願者仿效此模式，讓民眾可透過認購單片太陽能板的方式，成為大型電廠的合夥人。</p>
                                 <span className="location"><i className="fas fa-thumbtack"></i> 新聞新知, 綠能新訊 </span>
@@ -91,7 +91,7 @@ function CompanyCustomize() {
                         </div>
 
                         <div className="events-content">
-                            <div className="content">
+                            <div className="content text-left">
                                 <h3><a href="/#">推廣全民種電 電力燃氣供應家數增</a></h3>
                                 <p>政府推綠能，號召全民一起種電，據主計總處最新發布的工商普查，2016 年底電力及燃氣供應業家數較五年前增加 279%，主計總處說明，民間業者陸續投入綠能發電是關鍵。</p>
                                 <span className="location"><i className="fas fa-thumbtack"></i> 綠能新訊  </span>

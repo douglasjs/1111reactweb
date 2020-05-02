@@ -3,7 +3,7 @@
 function CompanyInfo() {
 
     return (
-        <section  className="about-area ptb-100 bg-f8f8f8">
+        <section className="about-area ptb-100 bg-f8f8f8">
             <div id="company" className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12 hide-xs">
@@ -14,14 +14,14 @@ function CompanyInfo() {
                     </div>
 
                     <div className="col-lg-6 col-md-12">
-                        <div className="about-content">
+                        <div className="about-content text-left">
                             <span>About Us</span>
                             <h2>集陽由來</h2>
                             <p>集陽綠能是由一群”熱血，瘋狂，健康”的好友們一同創建的團隊。
 在一次的聚會中，大夥談及各自的工作近況，衍生聊到什麼行業是對社會有貢獻又能對自己未來交代的行業呢？
 然而提及到〔太陽能〕，因看見這個行業有著友善環境又響應多年來”節能減碳推動再生能源”的趨勢，太陽能資源豐富，且無需運輸，對環境污染低。
 進而感覺這是一份有責任感的行業，因此開啟了集陽綠能這班列車。</p>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.1111.com.tw/corp/72189449/#c1" className="default-btn">我要應徵 <span></span></a>
+                            <a target="_blank"  rel="noopener noreferrer" href="https://www.1111.com.tw/corp/72189449/#c1" className="default-btn">我要應徵 <span></span></a>
                         </div>
                     </div>
                 </div>

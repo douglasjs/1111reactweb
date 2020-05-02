@@ -14,7 +14,7 @@ function CompanyQA() {
                     </div>
 
                     <div className="col-lg-6 col-md-12 p-0">
-                        <div className="faq-accordion">
+                        <div className="faq-accordion text-left">
                             <span className="sub-title">Frequently Asked Questions</span>
                             <h2>常見問題</h2>
 

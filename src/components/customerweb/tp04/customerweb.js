@@ -32,9 +32,18 @@ function CustomerWeb(props) {
     return (
          
         <div>
-                <CustomerHeader {...props}/>
-                <CustomerMain {...props}/>
-                <CustomerFoot {...props}/>
+
+            {/*<div className="preloader">
+                <div className="loader">
+                    <div className="shadow"></div>
+                    <div className="box"></div>
+                </div>
+            </div>*/}
+
+            <CustomerHeader {...props}/>
+            <CustomerMain {...props}/>
+            <CustomerFoot {...props}/>
+
         </div>    
       
     )

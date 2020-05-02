@@ -1,0 +1,245 @@
+body {
+  font-family:'Microsoft JhengHei','Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 1.5em;
+  color: rgb(72, 72, 72);
+}
+
+#content {
+  background-image: url(../../demo/bg/creative-content-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6 .h6 {
+  font-family: 'Microsoft JhengHei','Poppins', 'sans-serif';
+  font-weight: 700;
+  color: #000;
+}
+
+.h1,
+h1 {
+  font-size: 52px;
+  line-height: 1.4em;
+}
+
+.h2,
+h2 {
+  font-size: 35px;
+  line-height: 1.2em;
+  letter-spacing: 0;
+}
+
+.h3,
+h3 {
+  font-size: 30px;
+  line-height: 1.6em;
+}
+
+.h4,
+h4 {
+  font-size: 25px;
+  line-height: 1.7em;
+}
+
+.h5,
+h5 {
+  font-size: 21px;
+  line-height: 1.8em;
+}
+
+.h6,
+h6 {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+/* 
+.btn-solid {
+  background-color: var(--color-compared);
+  border-color: var(--color-compared);
+}
+
+.btn-solid:hover {
+  background-color: #var(--color-primary);color: var(--color-primary);
+  border-color: #var(--color-primary);color: var(--color-primary);
+} */
+
+.main-nav > li > a {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #666;
+}
+
+.main-nav > li.is-active > a,
+.main-nav > li.current-menu-item > a,
+.main-nav > li:hover > a,
+.main-nav > li > a:hover {
+  color: #var(--color-primary);color: var(--color-primary);
+}
+
+.main-footer {
+  color: #808291;
+}
+
+.main-footer a:not(.btn) {
+  color: #808291;
+}
+
+.main-footer a:not(.btn):hover {
+  color: #var(--color-primary);color: var(--color-primary);
+}
+
+@media (min-width: 1200px) {
+  .main-header .is-stuck {
+    background: #fff !important;
+  }
+  .mainbar-wrap.is-stuck .social-icon a,
+  .mainbar-wrap.is-stuck .header-module .ld-module-trigger,
+  .mainbar-wrap.is-stuck .ld-module-search-visible-form .ld-search-form input {
+    color: rgba(0, 0, 0, 0.7) !important;
+  }
+  .mainbar-wrap.is-stuck .social-icon a:hover,
+  .mainbar-wrap.is-stuck .main-nav > li > a:hover {
+    color: #000 !important;
+  }
+}
+
+/* BK */
+.bg-primary-creative {
+  background: var(--color-primary) !important;
+}
+
+.bg-light-creative {
+  background: #FEF1F4 !important;/*#FEF1F4*/
+  background: var(--color-light) !important;/*#FEF1F4*/
+}
+
+.iconbox .content h3 {
+	font-size: 27px;
+}
+
+/* Go To Top Button Icon */
+.top-link-icon {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  z-index: 99999999;
+  bottom: 140px;
+  right: 50px;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.1em 0.1em 0;
+  border-radius: 50%;
+  padding: .25em;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
+  color: #var(--color-primary);color: var(--color-primary);
+}
+.top-link-icon .fa{ font-weight: 700;}
+/* Mobile Screen */
+
+
+@media (max-width: 1440px) {
+  .top-link-icon {
+	display: inline-flex !important;
+    bottom: 100px;
+    right: 22px;
+	
+  }
+  
+  .top-link {
+    width: 100px;
+    height: 100px;
+}
+}
+
+
+.top-link-icon.show {
+  visibility: visible;
+  opacity: 1;
+}
+.top-link-icon.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.top-link-icon:hover {
+  /*background-color: #var(--color-primary);color: var(--color-primary);*/
+  color: var(--color-dark);
+}
+
+/* 立即應徵 Button */
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  z-index: 99999999;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.1em 0.1em 0;
+  border-radius: 50%;
+  padding: .25em;
+  width: 150px;
+  height: 150px;
+}
+.top-link.show {
+  visibility: visible;
+  opacity: 1;
+}
+.top-link.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+.top-link svg {
+  fill: #000;
+  width: 24px;
+  height: 12px;
+}
+
+/* Mobile Screen */
+@media (max-width: 1440px) {
+  .top-link {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .top-link-icon {
+	display: inline-flex !important;
+    bottom: 125px;
+    right: 45px;
+	
+  }
+  
+  .top-link {
+    width: 150px;
+    height: 150px;
+}
+}
+
+.top-link img {
+  width: 100%;
+}
+
+footer.main-footer {
+	background-color: #333;
+}
+
+footer.main-footer p {
+	color: #fff;
+}

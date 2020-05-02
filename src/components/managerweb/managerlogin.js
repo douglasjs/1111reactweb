@@ -76,7 +76,7 @@ function ManagerLogin(props) {
 
                                             <form className="user">
                                                 <div className="form-group">
-                                                    <input type="number" className="form-control form-control-user" id="InputID" aria-describedby="emailHelp" onChange={changeLoginHandler} value={loginNumber} placeholder="請輸入客戶代碼" />
+                                                    <input type="text" className="form-control form-control-user" id="InputID" aria-describedby="emailHelp" onChange={changeLoginHandler} value={loginNumber} placeholder="請輸入客戶代碼" />
                                                 </div>
                                                 <div className="form-group">
                                                     <input type="password" className="form-control form-control-user" id="InputPassword" placeholder="請輸入密碼" onChange={changePasswordHandler}  value={loginPassword} />

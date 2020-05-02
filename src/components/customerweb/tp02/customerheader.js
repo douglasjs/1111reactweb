@@ -71,9 +71,11 @@ function CustomerHeader(props) {
 
     
     const { customizeData } = props.customizeReducer;
+    const { qaData } = props.qaReducer;
+    const { contactData} = props.contactReducer;
     const { data } = props.datatableReducer;
     const cid = props.match.params.cid;
-    let logURL ="/image/tp02/logo.png";
+    let logURL ="/image/logo.png";
 
     if(data && data.length > 0){
         logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
@@ -88,13 +90,27 @@ function CustomerHeader(props) {
         })
     }
 
+    let qaEnable;
+    if(qaData && qaData.length > 0){
+        qaData.forEach(element => {
+            qaEnable =  element.qaEnable;
+        })
+    }
+
+    let contactEnable;
+    if(contactData && contactData.length > 0){
+        contactData.forEach(element => {
+            contactEnable =  element.contactEnable;
+        })
+    }
+
     return (
     
 
     
                     <div>
                         <NavBar logURL={logURL}/>
-                        <NavMain customizeEnable={customizeEnable}  customizeName={customizeName}/>
+                        <NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
                     </div>
                 
     );

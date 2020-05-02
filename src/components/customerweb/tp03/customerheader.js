@@ -48,9 +48,11 @@ function CustomerHeader(props) {
 
     
     const { customizeData } = props.customizeReducer;
+    const { qaData } = props.qaReducer;
+    const { contactData} = props.contactReducer;
     const { data } = props.datatableReducer;
     const cid = props.match.params.cid;
-    let logURL ="/image/tp03/logo.png";
+    let logURL ="/image/logo-1111.png";
 
     if(data && data.length > 0){
         logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
@@ -62,6 +64,20 @@ function CustomerHeader(props) {
         customizeData.forEach(element => {
             customizeEnable =  element.customizeEnable;
             customizeName = element.customizeName;
+        })
+    }
+
+    let qaEnable;
+    if(qaData && qaData.length > 0){
+        qaData.forEach(element => {
+            qaEnable =  element.qaEnable;
+        })
+    }
+
+    let contactEnable;
+    if(contactData && contactData.length > 0){
+        contactData.forEach(element => {
+            contactEnable =  element.contactEnable;
         })
     }
 
@@ -77,7 +93,7 @@ function CustomerHeader(props) {
                         <div className="menu-area">
                             <nav className="main-menu navbar-expand-lg">
                                 <NavBar logURL={logURL}/>
-                                <NavMain customizeEnable={customizeEnable}  customizeName={customizeName}/>
+                                <NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
                             </nav>
                         </div>
                     </div>
@@ -91,7 +107,7 @@ function CustomerHeader(props) {
                     <div className="menu-area">
                         <nav className="main-menu navbar-expand-lg">
                             <NavBar logURL={logURL}/>
-                            <NavMain customizeEnable={customizeEnable}  customizeName={customizeName}/>
+                            <NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
                         </nav>
                     </div>
                 </div>

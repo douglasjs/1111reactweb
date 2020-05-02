@@ -364,6 +364,7 @@ h6 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  word-break: break-all;
   line-height: 24px;
   height: auto;
   padding-bottom: 0px;
@@ -376,6 +377,7 @@ h6 {
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 7;
+      word-break: break-all;v
       line-height: 30px;
       height: auto;
       padding-bottom: 0px;
@@ -390,6 +392,7 @@ h6 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  word-break: break-all;
   line-height: 30px;
   /*height: 75px;*/
   padding-bottom: 0px;
@@ -650,6 +653,7 @@ h6 {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  word-break: break-all;
 }
 
 .line-1 {
