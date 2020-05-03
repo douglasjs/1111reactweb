@@ -1,0 +1,185 @@
+body {
+  font-family: '微軟正黑體','Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.85em;
+  color: rgb(72, 72, 72); }
+
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
+  font-family: '微軟正黑體', sans-serif;
+  font-weight: 600;
+  line-height: 1.3em;
+  color: #23313C; }
+
+.h1,
+h1 {
+  font-size: 54px;
+  font-weight: 700; }
+
+.h2,
+h2 {
+  font-size: 33px; }
+
+.h3,
+h3 {
+  font-size: 28px; }
+
+.h4,
+h4 {
+  font-size: 26px; }
+
+.h5,
+h5 {
+  font-size: 17px; }
+
+.h6,
+h6 {
+  font-size: 16px; }
+
+.mainbar-wrap {
+  background-color: #FFFFFF; }
+
+.main-nav {
+  font-family: '微軟正黑體', sans-serif; }
+  .main-nav > li {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .main-nav > li > a {
+      font-size: 17px;
+      line-height: 1.5em;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: #000; }
+    .main-nav > li.is-active > a,
+    .main-nav > li.current-menu-item > a,
+    .main-nav > li:hover > a,
+    .main-nav > li > a:hover {
+      color: #89bd51; }
+
+.main-footer {
+  padding-top: 70px;
+  background-color: #383B4C;
+  color: rgba(255, 255, 255, 0.85); }
+  .main-footer a:not(.btn) {
+    color: rgba(255, 255, 255, 0.6); }
+    .main-footer a:not(.btn):hover {
+      color: #fff; }
+
+@media (min-width: 1200px) {
+  .main-header .is-stuck {
+    background: #fff !important; }
+  .mainbar-wrap .btn {
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #424242; }
+  .mainbar-wrap.is-stuck .social-icon a,
+  .mainbar-wrap.is-stuck .header-module .ld-module-trigger,
+  .mainbar-wrap.is-stuck .main-nav > li > a,
+  .mainbar-wrap.is-stuck .ld-module-search-visible-form .ld-search-form input {
+    color: #424242 !important; }
+  .mainbar-wrap.is-stuck .ld-module-search-visible-form .ld-search-form input {
+    border-color: #424242 !important; }
+  .is-stuck .btn {
+    color: var(--color-primary);
+    border-color: var(--color-primary); }
+  .is-stuck .btn.btn-solid {
+    background-color: var(--color-primary); }
+  .is-stuck .btn:hover {
+    border-color: var(--color-primary);
+    color: #fff; }
+  .is-stuck .btn:hover {
+    background-color: var(--color-primary); } }
+
+
+/* Go To Top Button Icon */
+.top-link-icon {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  z-index: 99999999;
+  bottom: 160px;
+  right: 50px;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.1em 0.1em 0;
+  border-radius: 50%;
+  padding: .25em;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
+  color: var(--color-primary);
+}
+
+/* Mobile Screen */
+@media (max-width: 1440px) {
+  .top-link-icon {
+    bottom: 100px;
+    right: 22px;
+  }
+}
+
+.top-link-icon .fa {
+	font-weight: 700;
+}
+
+.top-link-icon.show {
+  visibility: visible;
+  opacity: 1;
+}
+.top-link-icon.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.top-link-icon:hover {
+  color: var(--color-dark);
+}
+
+/* 立即應徵 Button */
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  z-index: 99999999;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.1em 0.1em 0;
+  border-radius: 50%;
+  padding: .25em;
+  width: 150px;
+  height: 150px;
+}
+.top-link.show {
+  visibility: visible;
+  opacity: 1;
+}
+.top-link.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+.top-link svg {
+  fill: #000;
+  width: 24px;
+  height: 12px;
+}
+
+/* Mobile Screen */
+@media (max-width: 1440px) {
+  .top-link {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.top-link img {
+  width: 100%;
+}

@@ -46,8 +46,8 @@ function CompanyTitle() {
 								data-custom-animations="true"
 								data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
 								data-split-options='{"type":"lines"}'>
-								<span className="ld-fh-txt hidden-sm-down text-justify">在餐廳裡，甜點是飽餐一頓的完美句點；
-在亞尼克，甜點是美好生活的幸福起點。<br />
+								<span className="ld-fh-txt hidden-sm-down text-justify">
+									在餐廳裡，甜點是飽餐一頓的完美句點；在亞尼克，甜點是美好生活的幸福起點。<br />
 								</span>							
 							</p>
 						</div>
@@ -63,7 +63,6 @@ function CompanyTitle() {
 								</a>
 
 							</div>
-
 
 						</div>
 
