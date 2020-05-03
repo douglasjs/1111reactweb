@@ -8,9 +8,10 @@ function InputSwitch(props){
 
     return(
         <div className="form-row custom-control custom-switch">
-            <input type="checkbox" className="custom-control-input" 
+            <input type="checkbox" className="custom-control-input inputswitch_size"
                    id={props.inputName} checked ={props.inputState} onChange={handleChange(props.inputName, props.stateObj)}/>
-            <label className="custom-control-label" htmlFor={props.inputName}>開啟{props.sessionName}區段</label>
+            <label className="custom-control-label inputswitch_size" htmlFor={props.inputName}>開啟{props.sessionName}區段</label>
+            <hr />
         </div>
     )
 }
