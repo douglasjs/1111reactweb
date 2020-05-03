@@ -21,19 +21,7 @@ function CompanyContact() {
 
 							</div>
 
-							<div className="lqd-column col-md-4 hidden-sm hidden-xs text-right">
-
-								<div className="iconbox text-right iconbox-xl" data-animate-icon="true" data-plugin-options='{"resetOnHover":true,"color":"rgb(216, 219, 226)","hoverColor":"rgb(0, 0, 0)"}'>
-									<div className="iconbox-icon-wrap">
-										<span className="iconbox-icon-container">
-											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" space="preserve"> 
-												<polygon stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="1,30 63,1 23,41" /> 
-												<polygon stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="34,63 63,1 23,41" /> 
-											</svg>
-										</span>
-									</div>
-								</div>
-							</div>
+							
 
 						</div>
 
@@ -42,7 +30,7 @@ function CompanyContact() {
 							<div className="lqd-column col-md-10 col-md-offset-1">
 
 								<div className="contact-form contact-form-inputs-underlined contact-form-button-circle">
-									<form action="assets/php/mailer.php" method="post" novalidate>
+									<form method="post">
 										<div className="row d-flex flex-wrap">
 											<div className="lqd-column col-md-6 mb-20">
 												<input className="lh-25 mb-30" type="text" name="name" aria-required="true" aria-invalid="false" placeholder="姓名" required />

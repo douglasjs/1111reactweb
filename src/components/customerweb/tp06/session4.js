@@ -2,9 +2,11 @@
 
 function CompanyJobs() {
 
+	let imgURL = "url(./image/tp06/jobs_bg-1.jpg)";
+
     return (
         
-        <section id="jobs" className="vc_row pt-30 pb-30 bg-cover" data-parallax="true" data-parallax-options='{ "parallaxBG": true }' style="background-image: url(./image/tp06/jobs_bg-1.jpg);" >
+        <section id="jobs" className="vc_row pt-30 pb-30 bg-cover" data-parallax="true" data-parallax-options='{ "parallaxBG": true }' style={{backgroundImage: imgURL}} >
 
 				<div className="container text-center">
 
@@ -245,7 +247,7 @@ function CompanyJobs() {
 					
 					</div>
 						
-							<a href="https://www.1111.com.tw/corp/50750609/#c1" className="mt-40 btn btn-sm btn-solid round lh-15 px-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+							<a href="https://www.1111.com.tw/corp/50750609/" className="mt-40 btn btn-sm btn-solid round lh-15 px-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
 								<span>
 									<span className="btn-txt">所有職缺</span>
 									<span className="btn-icon"><i className="fa fa-angle-right"></i></span>

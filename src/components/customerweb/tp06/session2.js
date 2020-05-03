@@ -38,13 +38,13 @@ function CompanyInfo() {
 								</p>
 							</header>
 
-							<a href="https://www.1111.com.tw/corp/50750609/#c1" target='_blank' rel='noopener noreferrer' className="btn btn-solid btn-sm semi-round btn-bordered border-thin fresco px-2 font-size-17">
+							<a href="https://www.1111.com.tw/corp/50750609/" target='_blank' rel='noopener noreferrer' className="btn btn-solid btn-sm semi-round btn-bordered border-thin fresco px-2 font-size-17">
 								<span>
 									<span className="btn-txt">我要應徵</span>
 								</span>
 							</a>
 
-							<a href="https://www.1111.com.tw/corp/50750609/#c1" target='_blank' rel='noopener noreferrer' className="btn btn-default btn-sm semi-round btn-bordered border-thin btn-light px-2 font-size-17">
+							<a href="https://www.1111.com.tw/corp/50750609/" target='_blank' rel='noopener noreferrer' className="btn btn-default btn-sm semi-round btn-bordered border-thin btn-light px-2 font-size-17">
 								<span>
 									<span className="btn-txt">了解更多</span>
 								</span>

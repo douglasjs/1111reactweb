@@ -6,7 +6,7 @@ function CompanyQA() {
 
         <section id="faq" className="vc_row">
 				<div className="container">
-					<div className="row">
+					<div className="row text-left">
 						
 						<div className="lqd-column m-3">
 

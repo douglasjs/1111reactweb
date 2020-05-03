@@ -4,6 +4,7 @@ import TP02 from './tp02/customerweb';
 import TP03 from './tp03/customerweb';
 import TP04 from './tp04/customerweb';
 import TP05 from './tp05/customerweb';
+import TP06 from './tp06/customerweb';
 
 
 class customerIndex extends React.Component{
@@ -25,7 +26,8 @@ class customerIndex extends React.Component{
             case "tp02":  return(<TP02 key={index} themeNum={themNum} {...this.props}/>); 
             case "tp03":  return(<TP03 key={index} themeNum={themNum} {...this.props}/>);
             case "tp04":  return(<TP04 key={index} themeNum={themNum} {...this.props}/>);
-            case "tp05":  return(<TP05 key={index} themeNum={themNum} {...this.props}/>);  
+            case "tp05":  return(<TP05 key={index} themeNum={themNum} {...this.props}/>);
+            case "tp06":  return(<TP06 key={index} themeNum={themNum} {...this.props}/>);
             default:  return(<TP01 key={index} {...this.props}/>); 
         }
     }

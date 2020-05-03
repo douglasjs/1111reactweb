@@ -39,7 +39,7 @@ function CompanyCustomize() {
 														</div>
 													</div>
 												</div>
-												<a href="/#" className="liquid-overlay-link"></a>
+												<a href="/#" className="liquid-overlay-link">{}</a>
 											</div>
 										</article>
 									</div>
@@ -61,7 +61,7 @@ function CompanyCustomize() {
 														</div>
 													</div>
 												</div>
-												<a href="/#" className="liquid-overlay-link"></a>
+												<a href="/#" className="liquid-overlay-link">{}</a>
 											</div>
 										</article>
 									</div>
@@ -83,7 +83,7 @@ function CompanyCustomize() {
 														</div>
 													</div>
 												</div>
-												<a href="/#" className="liquid-overlay-link"></a>
+												<a href="/#" className="liquid-overlay-link">{}</a>
 											</div>
 										</article>
 									</div>
@@ -105,7 +105,7 @@ function CompanyCustomize() {
 														</div>
 													</div>
 												</div>
-												<a href="/#" className="liquid-overlay-link"></a>
+												<a href="/#" className="liquid-overlay-link">{}</a>
 											</div>
 										</article>
 									</div>
@@ -127,7 +127,7 @@ function CompanyCustomize() {
 														</div>
 													</div>
 												</div>
-												<a href="/#" className="liquid-overlay-link"></a>
+												<a href="/#" className="liquid-overlay-link">{}</a>
 											</div>
 										</article>
 									</div>
@@ -149,7 +149,7 @@ function CompanyCustomize() {
 														</div>
 													</div>
 												</div>
-												<a href="/#" className="liquid-overlay-link"></a>
+												<a href="/#" className="liquid-overlay-link">{}</a>
 											</div>
 										</article>
 									</div>
