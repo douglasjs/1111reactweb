@@ -22,7 +22,7 @@ function CompanyTitle() {
 			<div className="container">
 				<div className="row d-flex flex-wrap align-items-center">
 
-					<div className="lqd-column col-lg-6 col-md-6 top-text-block" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}' >
+					<div className="lqd-column col-lg-6 col-md-6 top-text-block text-left" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}' >
 
 						<div className="ld-fancy-heading mask-text">
 							<h1

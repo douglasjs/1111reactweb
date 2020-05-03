@@ -58,7 +58,7 @@ function CompanyInfo() {
 
 					</div>
 
-					<div className="lqd-column col-md-5 col-lg-5 "  data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":160,"initValues":{"translateY":50,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+					<div className="lqd-column col-md-5 col-lg-5 text-left"  data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":160,"initValues":{"translateY":50,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
 
 						<header className="fancy-title mb-60">
 
