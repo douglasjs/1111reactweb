@@ -2,8 +2,8 @@
 
 function CompanyCustomize() {
 
-    let imgURL1 = "url('./image/tp05/custom-2.jpg')";
-    let imgURL2 = "url('./image/tp05/custom-1.jpg')";
+    let imgURL1 = "url('./image/tp05/custom-1.jpg')";
+    let imgURL2 = "url('./image/tp05/custom-2.jpg')";
     let imgURL3 = "url('./image/tp05/custom-3.jpg')";
     let imgURL4 = "url('./image/tp05/custom-4.jpg')";
     let imgURL5 = "url('./image/tp05/custom-5.jpg')";
@@ -46,8 +46,8 @@ function CompanyCustomize() {
 											<div className="ld-pf-inner">
 												
 												<div className="ld-pf-image">
-													<figure style={{backgroundImage: imgURL1}}>
-														<img src="./image/tp05/custom-2.jpg" alt="亞尼克菓子工房股份有限公司" />
+													<figure style={{backgroundImage: imgURL2}}>
+														<img src="./image/tp05/custom-2.jpg" alt="1111人力銀行" />
 													</figure>
 												</div>
 							
@@ -59,7 +59,7 @@ function CompanyCustomize() {
 													</div>
 												</div>
 												
-												<a href="https://www.1111.com.tw/corp/51395296/#c4" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>暢通的升遷管道</a>
+												<a href="https://www.1111.com.tw/corp/51395296/" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>暢通的升遷管道</a>
 												
 											</div>
 											
@@ -74,8 +74,8 @@ function CompanyCustomize() {
 											<div className="ld-pf-inner">
 												
 												<div className="ld-pf-image">
-													<figure style={{backgroundImage: imgURL2}}>
-														<img src="./image/tp05/custom-1.jpg" alt="亞尼克菓子工房股份有限公司" />
+													<figure style={{backgroundImage: imgURL1}}>
+														<img src="./image/tp05/custom-1.jpg" alt="1111人力銀行" />
 													</figure>
 												</div>
 							
@@ -87,7 +87,7 @@ function CompanyCustomize() {
 													</div>
 												</div>
 												
-												<a href="https://www.1111.com.tw/corp/51395296/#c4" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>優惠的餐飲津貼</a>
+												<a href="https://www.1111.com.tw/corp/51395296/" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>優惠的餐飲津貼</a>
 												
 											</div>
 											
@@ -103,7 +103,7 @@ function CompanyCustomize() {
 												
 												<div className="ld-pf-image">
 													<figure style={{backgroundImage: imgURL3}}>
-														<img src="./image/tp05/custom-3.jpg" alt="亞尼克菓子工房股份有限公司" />
+														<img src="./image/tp05/custom-3.jpg" alt="1111人力銀行" />
 													</figure>
 												</div>
 							
@@ -115,7 +115,7 @@ function CompanyCustomize() {
 													</div>
 												</div>
 												
-												<a href="https://www.1111.com.tw/corp/51395296/#c4" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>享有員工專屬折扣</a>
+												<a href="https://www.1111.com.tw/corp/51395296/" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>享有員工專屬折扣</a>
 												
 											</div>
 											
@@ -131,7 +131,7 @@ function CompanyCustomize() {
 												
 												<div className="ld-pf-image">
 													<figure style={{backgroundImage: imgURL4}}>
-														<img src="./image/tp05/custom-4.jpg" alt="亞尼克菓子工房股份有限公司" />
+														<img src="./image/tp05/custom-4.jpg" alt="1111人力銀行" />
 													</figure>
 												</div>
 							
@@ -143,7 +143,7 @@ function CompanyCustomize() {
 													</div>
 												</div>
 												
-												<a href="https://www.1111.com.tw/corp/51395296/#c4" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>每年的健康檢查</a>
+												<a href="https://www.1111.com.tw/corp/51395296/" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>每年的健康檢查</a>
 												
 											</div>
 											
@@ -159,7 +159,7 @@ function CompanyCustomize() {
 												
 												<div className="ld-pf-image">
 													<figure style={{backgroundImage: imgURL5}}>
-														<img src="./image/tp05/custom-5.jpg" alt="亞尼克菓子工房股份有限公司" />
+														<img src="./image/tp05/custom-5.jpg" alt="1111人力銀行" />
 													</figure>
 												</div>
 							
@@ -171,7 +171,7 @@ function CompanyCustomize() {
 													</div>
 												</div>
 												
-												<a href="https://www.1111.com.tw/corp/51395296/#c4" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>多元的訓練方式</a>
+												<a href="https://www.1111.com.tw/corp/51395296/" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>多元的訓練方式</a>
 												
 											</div>
 											
@@ -187,7 +187,7 @@ function CompanyCustomize() {
 												
 												<div className="ld-pf-image">
 													<figure style={{backgroundImage: imgURL6}}>
-														<img src="./image/tp05/custom-6.jpg" alt="亞尼克菓子工房股份有限公司" />
+														<img src="./image/tp05/custom-6.jpg" alt="1111人力銀行" />
 													</figure>
 												</div>
 							

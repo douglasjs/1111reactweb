@@ -43,7 +43,7 @@ function CustomerMain(props){
                     keywords: data[0].keyword,
                     description: data[0].description
                 }
-                styleSheet[4] = `/assets/tp05/css/${data[0].styleType}`;
+                styleSheet[6] = `/assets/tp05/css/${data[0].styleType}`;
                 logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
                 webURL = `https://1111.com.tw/brand/${cid}/${data[0].companyEName}`;
                 styleType = data[0].styleType;

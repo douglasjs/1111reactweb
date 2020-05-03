@@ -44,7 +44,6 @@ function CustomerMain(props){
                 '/assets/tp02/css/pe-icon-7-stroke.min.css',
                 '/assets/tp02/css/font-awesome.min.css',
                 '/assets/tp02/css/bootstrap.min.css',
-                '/assets/tp02/css/purple.css',
                 '/assets/tp02/css/topbutton.css'
             ]
             let email;
@@ -61,7 +60,7 @@ function CustomerMain(props){
                     keywords: data[0].keyword,
                     description: data[0].description
                 }
-                styleSheet[4] = `/assets/tp02/css/${data[0].styleType}`;
+                styleSheet[22] = `/assets/tp02/css/${data[0].styleType}`;
                 logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
                 webURL = `https://1111.com.tw/brand/${cid}/${data[0].companyEName}`;
                 styleType = data[0].styleType;
