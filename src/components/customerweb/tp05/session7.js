@@ -8,7 +8,7 @@ function CompanyQA() {
 
         <section id="faq" className="vc_row pt-150 pb-100">
 			<div className="container">
-				<div className="row" style={{backgroundImage: imgURL}}>
+				<div className="row text-left" style={{backgroundImage: imgURL}}>
 
 					<div className="lqd-column col-lg-4 col-md-12 pb-sm-5"  data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":160,"initValues":{"translateY":50,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
 
