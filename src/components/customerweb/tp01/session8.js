@@ -5,7 +5,13 @@ class CompanyContact extends React.Component {
 
     constructor(props){
         super(props);
-        this.state={};
+        this.state={
+           sentMail: true,
+           custName: "",
+           custMobile: "",
+           custMsg: "",
+           custMail: ""
+        };
     }
 
     componentDidMount(){
@@ -13,13 +19,47 @@ class CompanyContact extends React.Component {
         this.props.getcontactList(cid, this.props.themeNum);
     }
 
+    handleChange = name => event => {
+        if(name === "sentMail"){
+            this.setState({...this.state, [name]: true});
+        }else{
+            this.setState({...this.state, [name]: event.target.value});
+        }
+    }
+
+    habdleSubmit = (event) => {
+        event.preventDefault();
+        const { data } = this.props.datatableReducer;
+        
+        if(data && data.length > 0){
+            const emailObj = {
+                oNo: this.props.match.params.cid.trim(),
+                kind: "2",
+                oMail: data[0].email,
+                csMail: data[0].email,
+                Subject: "1111 Website QA",
+                custName: this.state.custName,
+                custMobile: this.state.custMobile,
+                custMsg: this.state.custMsg,
+                custMail: this.state.custMail
+            }
+            this.props.getEmail(emailObj);
+            this.setState({...this.state, sentMail : false});
+        }
+
+    }
+
 
     render(){
         const cid = this.props.match.params.cid.trim();
         const { contactData} = this.props.contactReducer;
+        const { email_data } = this.props.emailReducer;
 
         let contactEnable;
         let contactImg;
+
+        const emailMsg = email_data && email_data.length > 0 ? email_data[0].msg : ""; 
+
 
         if(contactData && contactData.length > 0){
             contactData.forEach(element => {
@@ -39,6 +79,12 @@ class CompanyContact extends React.Component {
 
         return (
             <section id="contact" className="vc_row bg-cover bg-center" style={contactEnable? {} : {display: 'none'}}>
+                <div className="alert alert-primary" role="alert" hidden={this.state.sentMail}>
+                    <strong>聯絡我們:{emailMsg} &nbsp;</strong> 
+                    <button type="button" className="close" onClick={this.handleChange("sentMail")}>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
                 <div className="container-fluid">
                     <div className="row d-flex flex-wrap align-items-stretch  box-shadow-3 " style={style}>
                         <div className="lqd-column col-md-6 col-xs-12 px-0 pt-20 pb-10" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"120","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":30,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
@@ -51,23 +97,23 @@ class CompanyContact extends React.Component {
                                     </header>
     
                                         <div className="contact-form contact-form-inputs-filled contact-form-button-block font-size-14 pt-10">
-                                        <form action="assets/php/mailer.php" method="post" noValidate>
+                                        <form  method="post" noValidate>
                                             <div className="row">
                                                 <div className="col-md-6">
-                                                    <input className="bg-white border-fade-black-03" type="text" name="name" aria-required="true" aria-invalid="false" placeholder="姓名" required />
+                                                    <input className="bg-white border-fade-black-03" type="text" name="name" aria-required="true" aria-invalid="false" placeholder="姓名" onChange={this.handleChange('custName')} value={this.state.custName} required />
                                                     </div>
                                                     <div className="col-md-6">
-                                                        <input className="bg-white border-fade-black-03" type="tel" name="mobile" aria-required="true" aria-invalid="false" placeholder="電話" required />
+                                                        <input className="bg-white border-fade-black-03" type="tel" name="mobile" aria-required="true" aria-invalid="false" placeholder="電話" onChange={this.handleChange('custMobile')} value={this.state.custMobile} required />
                                                     </div>
                                                     <div className="col-md-12">
-                                                            <input className="bg-white border-fade-black-03" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email" required />
+                                                            <input className="bg-white border-fade-black-03" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email"  onChange={this.handleChange('custMail')} value={this.state.custMail}  required />
                                                     </div>
                                                         
                                                     <div className="col-md-12">
-                                                                <textarea className="bg-white border-fade-black-03" cols="10" rows="3" name="message" aria-required="true" aria-invalid="false" placeholder="訊息" required></textarea>
+                                                                <textarea className="bg-white border-fade-black-03" cols="10" rows="3" name="message" aria-required="true" aria-invalid="false" placeholder="訊息" onChange={this.handleChange('custMsg')} value={this.state.custMsg} required></textarea>
                                                             </div>
                                                     <div className="col-md-12 text-md-right">
-                                                                <input className="font-weight-bold font-size-14 ltr-sp-1" type="submit" value="送出" />
+                                                                <input className="font-weight-bold font-size-14 ltr-sp-1" type="submit" value="送出" onClick={this.habdleSubmit} />
                                                     </div>
                                                 </div>
                                             </form>

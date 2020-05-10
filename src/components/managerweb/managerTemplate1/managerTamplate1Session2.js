@@ -99,6 +99,28 @@ class Session2 extends React.Component{
                 introSubTitle3ImgText:event.target.introSubTitle3ImgText.value,
                 introSubTitle3Img:event.target.introSubTitle3Img.value,
                 introSubTitle3ImgUpload: this.state.introSubTitle3ImgUpload ? this.state.introSubTitle3ImgUpload.value : null,
+
+                intro1ImgUpload: null,
+                intro1Img: null,
+                intro2ImgUpload: null,
+                intro2Img: null,
+                intro3ImgUpload: null,
+                intro3Img: null,
+                intro4ImgUpload: null,
+                intro4Img: null,
+                intro5ImgUpload: null,
+                intro5Img: null,
+                intro6ImgUpload: null,
+                intro6Img: null,
+                intro7ImgUpload: null,
+                intro7Img: null,
+                intro8ImgUpload: null,
+                intro8Img: null,
+                intro9ImgUpload: null,
+                intro9Img: null,
+                intro10ImgUpload: null,
+                intro10Img: null,
+                introImgEnable: false
             });
         }
         if(event.target.action2.value === 'modify'){
@@ -124,6 +146,28 @@ class Session2 extends React.Component{
                 introSubTitle3ImgText:event.target.introSubTitle3ImgText.value,
                 introSubTitle3Img:event.target.introSubTitle3Img.value,
                 introSubTitle3ImgUpload: this.state.introSubTitle3ImgUpload ? this.state.introSubTitle3ImgUpload.value : null,
+
+                intro1ImgUpload: null,
+                intro1Img: "",
+                intro2ImgUpload: null,
+                intro2Img: "",
+                intro3ImgUpload: null,
+                intro3Img: "",
+                intro4ImgUpload: null,
+                intro4Img: "",
+                intro5ImgUpload: null,
+                intro5Img: "",
+                intro6ImgUpload: null,
+                intro6Img: "",
+                intro7ImgUpload: null,
+                intro7Img: "",
+                intro8ImgUpload: null,
+                intro8Img: "",
+                intro9ImgUpload: null,
+                intro9Img: "",
+                intro10ImgUpload: null,
+                intro10Img: "",
+                introImgEnable: false
             });
         }
     }

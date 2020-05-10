@@ -12,6 +12,7 @@ import contactReducer from './contact';
 import positionReducer from './position';
 import positionGrpReducer from './positiongrp';
 import kind00Reducer from './kind00';
+import emailReducer from './email';
 
 export default combineReducers({
     datatableReducer,tableSetReducer,
@@ -20,5 +21,5 @@ export default combineReducers({
     brandReducer, customizeReducer,
     qaReducer, contactReducer,
     positionReducer,positionGrpReducer,
-    kind00Reducer
+    kind00Reducer, emailReducer
 });

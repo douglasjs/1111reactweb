@@ -117,8 +117,6 @@ const editintroductionError = (error) =>{
 const getintroductionList = (ono, themeNum) =>{
 
     return (dispatch) =>{
-        console.log( `${envConfig.WebAPI}/introduction/${ono}`);
-      
         dispatch(getintroductionStart());
         axios({ method: 'get', url: `${envConfig.WebAPI}/introduction/${ono}`, params:{themeNum: themeNum}})
        // axios.get(`${envConfig.WebAPI}/introduction/${ono}`, {params: { themeNum: themeNum} })

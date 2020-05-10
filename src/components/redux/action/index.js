@@ -10,6 +10,7 @@ import {getPositionList,createPosition,deletePosition} from './position' ;
 import {getPositionGrpList,createPositionGrp,updatePositionGrp} from './positiongrp';
 import getkind01 from './apiKind1js';
 import getkind00 from './apiKind0js';
+import getEmail from './email';
 import setTable from './tablesetAction';
  
 export {
@@ -20,6 +21,7 @@ export {
 	setTable,
 	getkind01,
 	getkind00,
+	getEmail,
 	getCompanyList,
 	createCompany,
 	updateCompany,
