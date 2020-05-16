@@ -46,7 +46,7 @@ class Session6 extends React.Component{
             card8Title : ' ',
             card8Content : ' ',
             card8Img : ' ',
-            card8ImgUpload : ' ',
+            card8ImgUpload : ' '
         }
 
     }
@@ -55,7 +55,6 @@ class Session6 extends React.Component{
     handleSubmit = (event) =>{
         event.preventDefault();
         const cid = this.props.match.params.cid;
-
 
         const submitObj={
             ono: cid,
@@ -85,6 +84,27 @@ class Session6 extends React.Component{
             card4Img:  event.target.card4Img.value,
             card4ImgUpload : this.state.card4ImgUpload ? this.state.card4ImgUpload.value : null,
 
+            card5Title : '',
+            card5Content : '',
+            card5Img : '',
+            card5ImgUpload : null,
+
+            card6Title : '',
+            card6Content : '',
+            card6Img : '',
+            card6ImgUpload : null,
+
+            card7Title : '',
+            card7Content : '',
+            card7Img : '',
+            card7ImgUpload : null,
+
+            card8Title : '',
+            card8Content : '',
+            card8Img : '',
+            card8ImgUpload : null,
+
+            /*
             card5Title:  event.target.card5Title.value,
             card5Content:  event.target.card5Content.value,
             card5Img:  event.target.card5Img.value,
@@ -103,7 +123,8 @@ class Session6 extends React.Component{
             card8Title:  event.target.card8Title.value,
             card8Content:  event.target.card8Content.value,
             card8Img:  event.target.card8Img.value,
-            card8ImgUpload : this.state.card8ImgUpload ? this.state.card8ImgUpload.value : null,            
+            card8ImgUpload : this.state.card8ImgUpload ? this.state.card8ImgUpload.value : null,
+            */            
             
             customizeTag1: '',
             customizeTag2: '',
@@ -144,6 +165,7 @@ class Session6 extends React.Component{
         let card4Title = this.state.card4Title;
         let card4Content  = this.state.card4Content;
         let card4Img = this.state.card4Img;
+        /*
         let card5Title = this.state.card5Title;
         let card5Content  = this.state.card5Content;
         let card5Img = this.state.card5Img;
@@ -156,6 +178,7 @@ class Session6 extends React.Component{
         let card8Title = this.state.card8Title;
         let card8Content  = this.state.card8Content;
         let card8Img = this.state.card8Img;
+        */
 
         const sessionName=  "自定義";
         let themeNum = 'tp01';
@@ -185,6 +208,7 @@ class Session6 extends React.Component{
                 card4Content = card4Content !==" " ? card4Content : element.card4Content;
                 card4Img = card4Img !==" " ? card4Img : element.card4Img;
 
+                /*
                 card5Title = card5Title !==" " ? card5Title : element.card5Title;
                 card5Content = card5Content !==" " ? card5Content : element.card5Content;
                 card5Img = card5Img !==" " ? card5Img : element.card5Img;
@@ -200,6 +224,7 @@ class Session6 extends React.Component{
                 card8Title = card8Title !==" " ? card8Title : element.card8Title;
                 card8Content = card8Content !==" " ? card8Content : element.card8Content;
                 card8Img = card8Img !==" " ? card8Img : element.card8Img;
+                */
             })
         }
 
@@ -234,6 +259,7 @@ class Session6 extends React.Component{
             card4ImgUpload = this.state.card4Img !==' ' ?  this.state.card4ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card4Img}`;
         }
 
+        /*
         let card5ImgUpload ="";
         if(card5Img === " "){
             card5ImgUpload = "/image/logo-1111.png";
@@ -261,6 +287,7 @@ class Session6 extends React.Component{
         }else{
             card8ImgUpload = this.state.card8Img !==' ' ?  this.state.card8ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card8Img}`;
         } 
+        */
 
         return(
             <div className="card shadow mb-4">
@@ -707,6 +734,7 @@ class Session6 extends React.Component{
 
 
 
+                        {/*}
                         <div>
                             <div className="card">
                                 <a href="#collapseCard6-5" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6-5">
@@ -1020,6 +1048,7 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                         </div>
+                        {*/}
 
                         <hr />
                         <div  align="center">

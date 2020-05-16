@@ -33,6 +33,7 @@ class CompanyCustomize extends React.Component {
         let card4Title;
         let card4Content;
         let card4Img;
+        /*
         let card5Title;
         let card5Content;
         let card5Img;
@@ -45,6 +46,7 @@ class CompanyCustomize extends React.Component {
         let card8Title;
         let card8Content;
         let card8Img;
+        */
 
         if(customizeData && customizeData.length > 0){
             customizeData.forEach(element => {
@@ -63,6 +65,7 @@ class CompanyCustomize extends React.Component {
                 card4Title = element.card4Title;
                 card4Content = element.card4Content;
                 card4Img = element.card4Img;
+                /*
                 card5Title = element.card5Title;
                 card5Content = element.card5Content;
                 card5Img = element.card5Img;
@@ -75,6 +78,7 @@ class CompanyCustomize extends React.Component {
                 card8Title = element.card8Title;
                 card8Content = element.card8Content;
                 card8Img = element.card8Img;
+                */
             })
         }
 
@@ -83,10 +87,12 @@ class CompanyCustomize extends React.Component {
         card2Img = !card2Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card2Img}`;
         card3Img = !card3Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card3Img}`;
         card4Img = !card4Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card4Img}`;
+        /*
         card5Img = !card5Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card5Img}`;
         card6Img = !card6Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card6Img}`;
         card7Img = !card7Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card7Img}`;
         card8Img = !card8Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card8Img}`;
+        */
 
         return (
             <section id="custom" className="vc_row pt-30" style={customizeEnable? {} : {display: 'none'}}>
@@ -173,6 +179,7 @@ class CompanyCustomize extends React.Component {
     
                                     </div>
 
+                                    {/*}
                                     <div className="lqd-column carousel-item col-md-3 col-sm-6">
     
                                         <div className="fancy-box content-box-heading-sm fancy-box-classes">
@@ -236,6 +243,7 @@ class CompanyCustomize extends React.Component {
                                         </div>
     
                                     </div>
+                                    {*/}
     
                                 </div>
     
