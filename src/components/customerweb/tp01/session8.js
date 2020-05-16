@@ -37,7 +37,7 @@ class CompanyContact extends React.Component {
                 kind: "2",
                 oMail: data[0].email,
                 csMail: data[0].email,
-                Subject: "1111 Website QA",
+                Subject: "1111 中繼頁聯絡我們",
                 custName: this.state.custName,
                 custMobile: this.state.custMobile,
                 custMsg: this.state.custMsg,

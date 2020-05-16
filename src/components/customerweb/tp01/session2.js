@@ -61,7 +61,7 @@ class CompanyInfo extends React.Component{
         introSubTitle3Img = !introSubTitle3Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${introSubTitle3Img}`;
 
         return (
-            <section id="company" className="pt-10">
+            <section id="company">
                 {introductionData && introductionData.length > 0 &&
                 <div className="container">
                     <div className="row">
