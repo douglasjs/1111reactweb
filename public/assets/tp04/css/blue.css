@@ -7566,7 +7566,7 @@ Go Top CSS
 
 #jobs .owl-stage .single-services-box p,
 .single-services-box h3 a {
-	-webkit-line-clamp: 2;
+	-webkit-line-clamp: 1;
 }
 
 #jobs .owl-stage .single-services-box p,
