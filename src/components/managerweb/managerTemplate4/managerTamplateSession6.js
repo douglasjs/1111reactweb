@@ -168,35 +168,35 @@ class Session6 extends React.Component{
         if(customizeData && customizeData.length > 0){
             actionType = 'modify';
             customizeData.forEach(element => {
-                customizeEnable = customizeEnable !==" " ? customizeEnable : element.customizeEnable;
-                customizeName = customizeName !==" " ? customizeName : element.customizeName;
-                customizeTitle = customizeTitle !==" " ? customizeTitle : element.customizeTitle;
-                customizeSubTitle = customizeSubTitle !==" " ? customizeSubTitle : element.customizeSubTitle;
+                customizeEnable = customizeEnable !=="" ? customizeEnable : element.customizeEnable;
+                customizeName = customizeName !=="" ? customizeName : element.customizeName;
+                customizeTitle = customizeTitle !=="" ? customizeTitle : element.customizeTitle;
+                customizeSubTitle = customizeSubTitle !=="" ? customizeSubTitle : element.customizeSubTitle;
 
-                card1Title = card1Title !==" " ? card1Title : element.card1Title;
-                card1Content = card1Content !==" " ? card1Content : element.card1Content;
+                card1Title = card1Title !=="" ? card1Title : element.card1Title;
+                card1Content = card1Content !=="" ? card1Content : element.card1Content;
                 card1Img = card1Img !==" " ? card1Img : element.card1Img;
 
-                card2Title = card2Title !==" " ? card2Title : element.card2Title;
-                card2Content = card2Content !==" " ? card2Content : element.card2Content;
+                card2Title = card2Title !=="" ? card2Title : element.card2Title;
+                card2Content = card2Content !=="" ? card2Content : element.card2Content;
                 card2Img = card2Img !==" " ? card2Img : element.card2Img;
 
-                card3Title = card3Title !==" " ? card3Title : element.card3Title;
-                card3Content = card3Content !==" " ? card3Content : element.card3Content;
+                card3Title = card3Title !=="" ? card3Title : element.card3Title;
+                card3Content = card3Content !=="" ? card3Content : element.card3Content;
                 card3Img = card3Img !==" " ? card3Img : element.card3Img;
 
-                card4Title = card4Title !==" " ? card4Title : element.card4Title;
-                card4Content = card4Content !==" " ? card4Content : element.card4Content;
+                card4Title = card4Title !=="" ? card4Title : element.card4Title;
+                card4Content = card4Content !=="" ? card4Content : element.card4Content;
                 card4Img = card4Img !==" " ? card4Img : element.card4Img;
 
-                customizeTag1 = customizeTag1 !==" " ? customizeTag1 : element.customizeTag1;
-                customizeTag2 = customizeTag2 !==" " ? customizeTag2 : element.customizeTag2;
-                customizeTag3 = customizeTag3 !==" " ? customizeTag3 : element.customizeTag3;
-                customizeTag4 = customizeTag4 !==" " ? customizeTag4 : element.customizeTag4;
-                customizeURL1 = customizeURL1 !==" " ? customizeURL1 : element.customizeURL1;
-                customizeURL2 = customizeURL2 !==" " ? customizeURL2 : element.customizeURL2;
-                customizeURL3 = customizeURL3 !==" " ? customizeURL3 : element.customizeURL3;
-                customizeURL4 = customizeURL4 !==" " ? customizeURL4 : element.customizeURL4;
+                customizeTag1 = customizeTag1 !=="" ? customizeTag1 : element.customizeTag1;
+                customizeTag2 = customizeTag2 !=="" ? customizeTag2 : element.customizeTag2;
+                customizeTag3 = customizeTag3 !=="" ? customizeTag3 : element.customizeTag3;
+                customizeTag4 = customizeTag4 !=="" ? customizeTag4 : element.customizeTag4;
+                customizeURL1 = customizeURL1 !=="" ? customizeURL1 : element.customizeURL1;
+                customizeURL2 = customizeURL2 !=="" ? customizeURL2 : element.customizeURL2;
+                customizeURL3 = customizeURL3 !=="" ? customizeURL3 : element.customizeURL3;
+                customizeURL4 = customizeURL4 !=="" ? customizeURL4 : element.customizeURL4;
             })
         }
 
