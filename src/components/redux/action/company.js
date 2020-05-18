@@ -161,7 +161,6 @@ const createCompany = (data) =>{
 
 
 const updateCompany = (data) =>{
-    console.log(data);
     return (dispatch) =>{
         
       

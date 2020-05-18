@@ -9,26 +9,27 @@ import ManagerTemplate1Session5 from './managerTamplate1Session5';
 import ManagerTemplate1Session6 from './managerTamplate1Session6';
 import ManagerTemplate1Session7 from './managerTamplate1Session7';
 import ManagerTemplate1Session8 from './managerTamplate1Session8';
+import ManagerTitle from '../../sharecomponents/managerTitle';
 
 class ManagerTemplate1 extends React.Component{
 
     constructor(props){
         super(props);
-        this.state={};
+        this.state={ themeNum: 'tp01'};
     }
 
     componentDidMount(){
         const cid = this.props.match.params.cid;
         this.props.getDataList(cid);
-        this.props.getCompanyList(cid, 'tp01');
-        this.props.getintroductionList(cid, 'tp01');
-        this.props.getbenefitList(cid, 'tp01');
-        this.props.getbrandList(cid, 'tp01');
-        this.props.getcustomizeList(cid, 'tp01');
-        this.props.getqaList(cid, 'tp01');
-        this.props.getcontactList(cid, 'tp01');
-        this.props.getPositionList(cid, 'tp01');
-        this.props.getPositionGrpList(cid, 'tp01');
+        this.props.getCompanyList(cid,  this.state.themeNum);
+        this.props.getintroductionList(cid,  this.state.themeNum);
+        this.props.getbenefitList(cid,  this.state.themeNum);
+        this.props.getbrandList(cid,  this.state.themeNum);
+        this.props.getcustomizeList(cid,  this.state.themeNum);
+        this.props.getqaList(cid,  this.state.themeNum);
+        this.props.getcontactList(cid,  this.state.themeNum);
+        this.props.getPositionList(cid,  this.state.themeNum);
+        this.props.getPositionGrpList(cid,  this.state.themeNum);
         this.props.getkind00(cid);
         this.props.getkind01(cid);
     }
@@ -43,7 +44,7 @@ class ManagerTemplate1 extends React.Component{
             keywords: '1111,人力,徵才',
             description: '1111人力銀行'
         }
-        let themNum = 'tp01';
+        let themNum = this.state.themeNum;
         
         if(data && data.length > 0){
             companyName= data[0].companyName;
@@ -54,10 +55,10 @@ class ManagerTemplate1 extends React.Component{
             themNum = data[0].themeNum;
         }
     
-        
         return(
             <div className="container-fluid">
-                 <TitleSet title={companyName} meta={companyMeta} />
+                <TitleSet title={companyName} meta={companyMeta} />
+                <ManagerTitle themeNum={themNum}/>
                 <ManagerTemplate1Session1 {...this.props}/>
                 <ManagerTemplate1Session2 {...this.props}/>
                 <ManagerTemplate1Session3 {...this.props}/>
@@ -68,7 +69,6 @@ class ManagerTemplate1 extends React.Component{
                 <ManagerTemplate1Session8 {...this.props}/>
                 <Preview cid={cid} themNum={themNum} />
             </div>
-          
         )
 
     }

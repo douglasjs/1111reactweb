@@ -76,34 +76,8 @@ class Session2 extends React.Component{
         event.preventDefault();
         const cid = this.props.match.params.cid.trim();
 
-        if(event.target.action2.value === 'create'){
-            this.props.createintroduction({
-                ono: cid,
-                themeNum : event.target.themeNum2.value,
-                introTitle: event.target.introTitle.value,
-                introMainContent: event.target.introMainContent.value,
-                introSubTitle1: event.target.introSubTitle1.value,
-                introSubTitle1Content:event.target.introSubTitle1Content.value,
-                introSubTitle1ImgText:event.target.introSubTitle1ImgText.value,
-                introSubTitle1Img:event.target.introSubTitle1Img.value,
-                introSubTitle1ImgUpload: this.state.introSubTitle1ImgUpload ? this.state.introSubTitle1ImgUpload.value : null,
-
-                introSubTitle2: event.target.introSubTitle2.value,
-                introSubTitle2Content:event.target.introSubTitle2Content.value,
-                introSubTitle2ImgText:event.target.introSubTitle2ImgText.value,
-                introSubTitle2Img:event.target.introSubTitle2Img.value,
-                introSubTitle2ImgUpload: this.state.introSubTitle21ImgUpload ? this.state.introSubTitle2ImgUpload.value : null,
-
-                introSubTitle3: event.target.introSubTitle3.value,
-                introSubTitle3Content:event.target.introSubTitle3Content.value,
-                introSubTitle3ImgText:event.target.introSubTitle3ImgText.value,
-                introSubTitle3Img:event.target.introSubTitle3Img.value,
-                introSubTitle3ImgUpload: this.state.introSubTitle3ImgUpload ? this.state.introSubTitle3ImgUpload.value : null,
-            });
-        }
-        if(event.target.action2.value === 'modify'){
-            this.props.updateintroduction({
-                ono: cid,
+        const submitObj={
+            ono: cid,
                 themeNum : event.target.themeNum2.value,
                 introTitle: event.target.introTitle.value,
                 introMainContent: event.target.introMainContent.value,
@@ -124,7 +98,35 @@ class Session2 extends React.Component{
                 introSubTitle3ImgText:event.target.introSubTitle3ImgText.value,
                 introSubTitle3Img:event.target.introSubTitle3Img.value,
                 introSubTitle3ImgUpload: this.state.introSubTitle3ImgUpload ? this.state.introSubTitle3ImgUpload.value : null,
-            });
+
+                intro1ImgUpload: null,
+                intro1Img: "",
+                intro2ImgUpload: null,
+                intro2Img: "",
+                intro3ImgUpload: null,
+                intro3Img: "",
+                intro4ImgUpload: null,
+                intro4Img: "",
+                intro5ImgUpload: null,
+                intro5Img: "",
+                intro6ImgUpload: null,
+                intro6Img: "",
+                intro7ImgUpload: null,
+                intro7Img: "",
+                intro8ImgUpload: null,
+                intro8Img: "",
+                intro9ImgUpload: null,
+                intro9Img: "",
+                intro10ImgUpload: null,
+                intro10Img: "",
+                introImgEnable: false
+        }
+
+        if(event.target.action2.value === 'create'){
+            this.props.createintroduction(submitObj);            
+        }
+        if(event.target.action2.value === 'modify'){
+            this.props.updateintroduction(submitObj);            
         }
     }
     
@@ -152,7 +154,7 @@ class Session2 extends React.Component{
         let introSubTitle3Img = this.state.introSubTitle3Img;
         let themeNum = this.props.themeNum;
         let actionType = 'create';
-        introMainContent = kind01_data && kind01_data.length > 0 && introMainContent === ' ' ? strNumLimite(kind01_data[0].brief,80)  : this.state.introMainContent;
+       
         if(introductionData && introductionData.length > 0){
             actionType = 'modify';
             introductionData.forEach(element => {
@@ -175,6 +177,10 @@ class Session2 extends React.Component{
                 introSubTitle3Img = introSubTitle3Img !==" " ? introSubTitle3Img : element.introSubTitle3Img;
 
             })
+        }
+
+        if(actionType === "create"){
+            introMainContent = kind01_data && kind01_data.length > 0 && introMainContent === ' ' ? strNumLimite(kind01_data[0].brief,80)  : this.state.introMainContent;
         }
 
          // image

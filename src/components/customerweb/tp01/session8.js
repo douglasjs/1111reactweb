@@ -16,6 +16,7 @@ class CompanyContact extends React.Component {
 
     componentDidMount(){
         const cid = this.props.match.params.cid;
+        this.props.getkind01(cid);
         this.props.getcontactList(cid, this.props.themeNum);
     }
 
@@ -30,13 +31,14 @@ class CompanyContact extends React.Component {
     habdleSubmit = (event) => {
         event.preventDefault();
         const { data } = this.props.datatableReducer;
+        const { kind01_data } = this.props.kind01Reducer;
         
         if(data && data.length > 0){
             const emailObj = {
                 oNo: this.props.match.params.cid.trim(),
                 kind: "2",
                 oMail: data[0].email,
-                csMail: data[0].email,
+                csMail:kind01_data[0].Service[2],
                 Subject: "1111 中繼頁聯絡我們",
                 custName: this.state.custName,
                 custMobile: this.state.custMobile,
@@ -54,6 +56,7 @@ class CompanyContact extends React.Component {
         const cid = this.props.match.params.cid.trim();
         const { contactData} = this.props.contactReducer;
         const { email_data } = this.props.emailReducer;
+       
 
         let contactEnable;
         let contactImg;

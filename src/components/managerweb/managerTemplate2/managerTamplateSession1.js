@@ -48,10 +48,10 @@ class Session1 extends React.Component{
             }
         }
         */
-       
+
         const　comObj = {
             ono: cid,
-            themeNum : this.props.themeNum,
+            themeNum : event.target.themeNum.value,
             title: event.target.title.value,
             title2: '',
             title3: '',
@@ -78,7 +78,6 @@ class Session1 extends React.Component{
     
     render(){
         const { companyData, companyErr, companyIsLoading} = this.props.companyReducer;
-     
         const cid = this.props.match.params.cid.trim();
 
         let title = this.state.title;

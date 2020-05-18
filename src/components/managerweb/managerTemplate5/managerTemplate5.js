@@ -15,7 +15,7 @@ class ManagerTemplate extends React.Component{
 
     constructor(props){
         super(props);
-        this.state={ themeNum: 'tp02'};
+        this.state={ themeNum: 'tp05'};
     }
 
     componentDidMount(){
@@ -72,6 +72,7 @@ class ManagerTemplate extends React.Component{
                 <ManagerTemplateSession8 {...this.props} themeNum = {themNum}/>
                 <Preview cid={cid} themNum={themNum} />
             </div>
+          
         )
 
     }

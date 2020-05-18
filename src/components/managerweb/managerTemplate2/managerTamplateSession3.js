@@ -122,7 +122,7 @@ class Session3 extends React.Component{
                                             parentObj={this}  imgW={500} imgH={354} required={true}/> 
                                     </div>                                    
                                     <div className="form-row row-style-w95-pt1">
-                                        <label><span className='text-danger'>*</span>員工福利內容 <em className='text-primary'>( 字數限制為350個字以內 )</em> </label>
+                                        <label><span className='text-danger'>*</span>員工福利內容 <em className='text-primary'>( 因版面有限，內容編排請特別注意，可搭配預覽確認是否超出顯示範圍 )</em> </label>
                                     </div>
                                     <div>
                                         <CKEditor

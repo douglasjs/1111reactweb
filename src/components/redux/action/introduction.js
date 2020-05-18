@@ -173,7 +173,7 @@ const updateintroduction = (data) =>{
             .then((response) => {
                 dispatch(editintroductionSuccess(response.data));
                 alert("更新資料完成");
-               // dispatch(getintroductionList(data.ono));
+                dispatch(getintroductionList(data.ono,data.themeNum));
             })
             .catch(err => {
                 dispatch(editintroductionError(err));

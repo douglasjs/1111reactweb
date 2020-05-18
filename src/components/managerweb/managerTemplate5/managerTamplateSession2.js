@@ -152,7 +152,7 @@ class Session2 extends React.Component{
         let introSubTitle3Content = this.state.introSubTitle3Content;
         let introSubTitle3ImgText = this.state.introSubTitle3ImgText;
         let introSubTitle3Img = this.state.introSubTitle3Img;
-        let themeNum = 'tp01';
+        let themeNum = this.props.themeNum;
         let actionType = 'create';
        
         if(introductionData && introductionData.length > 0){

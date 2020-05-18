@@ -15,7 +15,7 @@ class ManagerTemplate extends React.Component{
 
     constructor(props){
         super(props);
-        this.state={ themeNum: 'tp02'};
+        this.state={ themeNum: 'tp06'};
     }
 
     componentDidMount(){
@@ -56,7 +56,6 @@ class ManagerTemplate extends React.Component{
                 themNum = data[0].themeNum;
             }
         }
-
     
         return(
             <div className="container-fluid">
@@ -72,6 +71,7 @@ class ManagerTemplate extends React.Component{
                 <ManagerTemplateSession8 {...this.props} themeNum = {themNum}/>
                 <Preview cid={cid} themNum={themNum} />
             </div>
+          
         )
 
     }

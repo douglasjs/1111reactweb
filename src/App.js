@@ -18,8 +18,10 @@ import ManagerMain from './components/managerweb/managerMain';
 import ManagerGeneralSetting from './components/managerweb/managerGeneralSetting';
 import ManagerTemplate1 from './components/managerweb/managerTemplate1/managerTemplate1';
 import ManagerTemplate2 from './components/managerweb/managerTemplate2/managerTemplate2';
-import ManagerTemplate3 from './components/managerweb/managerTemplate3';
-import ManagerTemplate4 from './components/managerweb/managerTemplate4';
+import ManagerTemplate3 from './components/managerweb/managerTemplate3/managerTemplate3';
+import ManagerTemplate4 from './components/managerweb/managerTemplate4/managerTemplate4';
+import ManagerTemplate5 from './components/managerweb/managerTemplate5/managerTemplate5';
+import ManagerTemplate6 from './components/managerweb/managerTemplate6/managerTemplate6';
 import ManagerLogin from './components/managerweb/managerLogin';
 
 
@@ -45,6 +47,8 @@ const WithManagerTemplate1 = withManagerWeb(connect(mapStateToProps, mapDispatch
 const WithManagerTemplate2 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate2));
 const WithManagerTemplate3 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate3));
 const WithManagerTemplate4 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate4));
+const WithManagerTemplate5 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate5));
+const WithManagerTemplate6 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate6));
 const ConnectCustomerWeb = connect(mapStateToProps, mapDispatchToProps)(CustomerWeb);
 
 function App() {
@@ -66,6 +70,8 @@ function App() {
                   <Route exact path="/managerweb/:cid/template2" component={WithManagerTemplate2} />
                   <Route exact path="/managerweb/:cid/template3" component={WithManagerTemplate3} />
                   <Route exact path="/managerweb/:cid/template4" component={WithManagerTemplate4} />
+                  <Route exact path="/managerweb/:cid/template5" component={WithManagerTemplate5} />
+                  <Route exact path="/managerweb/:cid/template6" component={WithManagerTemplate6} />
                   <Route exact path="/managerweb/:cid/preview/:themNum" component={ConnectCustomerWeb} />
                   <Route exact path="/:cid/:enName" component={ConnectCustomerWeb} />
               </Switch>
