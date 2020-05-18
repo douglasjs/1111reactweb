@@ -1,115 +1,196 @@
 ﻿import React from 'react';
+import envConfig from '../../../config/env';
 
-function CompanyCustomize() {
-
-    return (
-        <section className="events-area pt-70 pb-50">
-            <div id="custom" className="container">
-                <div className="section-title">
-                    <h2>綠能新訊</h2>
-                    <p>能看出以後的趨勢，您們還在等甚麼呢?</p>
-                </div>
-                <div className="single-events-box">
-                    <div className="events-box">
-                        <div className="events-image">
-                            <div className="image bg1">
-                                <img src="image/tp04/events1.jpg" alt="自訂圖片" />
-                            </div>
-                        </div>
-
-                        <div className="events-content">
-                            <div className="content text-left">
-                                <h3><a href="/#">執政2年談能源 總統：綠電長期較核電經濟</a></h3>
-                                <p>總統表示，2025年非核家園，屆時核一、核二以及核三廠都要退役，綠能要達到總發電量的20%，主要來源則是來自太陽能和風力。</p>
-                                <span className="location"><i className="fas fa-thumbtack"></i> 新聞新知, 綠能新訊  </span>
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.fs-greentek.com/news-0521/" className="join-now-btn">了解更多</a>
-                            </div>
-                        </div>
-						<div className="box-shape">
-							<img src="assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
-							<img src="assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
-						</div>
-                     
-                    </div>
-                </div>
-
-                <div className="single-events-box">
-                    <div className="events-box">
-                        <div className="events-image">
-                            <div className="image bg2">
-                                <img src="image/tp04/events2.jpg" alt="自訂圖片" />
-                            </div>
-                        </div>
-
-                        <div className="events-content">
-                            <div className="content text-left">
-                                <h3><a href="/#">電費收入穩定，可作為另類收益來源-投資再生能源 買題材股不如買電廠</a></h3>
-                                <p>對於追求收益與低波動的投資人來說，要參與綠電商機，近年出現了另一種思維下的全新投資工具——再生能源基礎建設證券，此種投資工具更適合長期布局。</p>
-                                <span className="location"><i className="fas fa-thumbtack"></i>新聞新知, 綠能新訊 </span>
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.fs-greentek.com/%e9%9b%b7%e8%81%b2%e5%a4%a7%e5%8d%bb%e9%9b%a8%e9%bb%9e%e5%b0%8f%ef%bc%8c%e5%8f%b0%e7%81%a3%e7%b6%a0%e8%83%bd%e8%9e%8d%e8%b3%87%e5%8d%a1%e5%9c%a8%e5%93%aa%ef%bc%9f-2-2-2/" className="join-now-btn">了解更多</a>
-                            </div>
-                        </div>
-						<div className="box-shape">
-							<img src="assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
-							<img src="assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
-						</div>
-                       
-                    </div>
-                </div>
-
-                <div className="single-events-box">
-                    <div className="events-box">
-                        <div className="events-image">
-                            <div className="image bg3">
-                                <img src="image/tp04/events3.jpg" alt="自訂圖片" />
-                            </div>
-                        </div>
-
-                        <div className="events-content">
-                            <div className="content text-left">
-                                <h3><a href="/#">收益穩定 公民電廠上網就能買</a></h3>
-                                <p>國外綠能合作社已有二十多年歷史，台灣也有環保志願者仿效此模式，讓民眾可透過認購單片太陽能板的方式，成為大型電廠的合夥人。</p>
-                                <span className="location"><i className="fas fa-thumbtack"></i> 新聞新知, 綠能新訊 </span>
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.fs-greentek.com/%e9%9b%b7%e8%81%b2%e5%a4%a7%e5%8d%bb%e9%9b%a8%e9%bb%9e%e5%b0%8f%ef%bc%8c%e5%8f%b0%e7%81%a3%e7%b6%a0%e8%83%bd%e8%9e%8d%e8%b3%87%e5%8d%a1%e5%9c%a8%e5%93%aa%ef%bc%9f-2-2-2-2/" className="join-now-btn">了解更多</a>
-								
-                            </div>
-                        </div>
-						<div className="box-shape">
-							<img src="assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
-							<img src="assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
-						</div>
-                      
-                    </div>
-                </div>
-
-                <div className="single-events-box">
-                    <div className="events-box">
-                        <div className="events-image">
-                            <div className="image bg4">
-                                <img src="image/tp04/events4.jpg" alt="自訂圖片" />
-                            </div>
-                        </div>
-
-                        <div className="events-content">
-                            <div className="content text-left">
-                                <h3><a href="/#">推廣全民種電 電力燃氣供應家數增</a></h3>
-                                <p>政府推綠能，號召全民一起種電，據主計總處最新發布的工商普查，2016 年底電力及燃氣供應業家數較五年前增加 279%，主計總處說明，民間業者陸續投入綠能發電是關鍵。</p>
-                                <span className="location"><i className="fas fa-thumbtack"></i> 綠能新訊  </span>
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.fs-greentek.com/aside%e6%8e%a8%e5%bb%a3%e5%85%a8%e6%b0%91%e7%a8%ae%e9%9b%bb-%e9%9b%bb%e5%8a%9b%e7%87%83%e6%b0%a3%e4%be%9b%e6%87%89%e5%ae%b6%e6%95%b8%e5%a2%9e/" className="join-now-btn">了解更多</a>
-								<div className="box-shape">
-									<img src="assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
-							        <img src="assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
-								</div>
-                            </div>
-                        </div>
-
+class CompanyCustomize extends React.Component {
     
+    constructor(props){
+        super(props);
+        this.state={};
+    }
+
+    componentDidMount(){
+        const cid = this.props.match.params.cid;
+        this.props.getcustomizeList(cid, this.props.themeNum);
+    }
+
+    render(){
+
+        const cid = this.props.match.params.cid.trim();
+        const { customizeData } = this.props.customizeReducer;
+       
+        let customizeEnable;
+        let customizeTitle;
+        let customizeSubTitle;
+        let card1Title;
+        let card1Content;
+        let card1Img;
+        let card2Title;
+        let card2Content;
+        let card2Img;
+        let card3Title;
+        let card3Content;
+        let card3Img;
+        let card4Title;
+        let card4Content;
+        let card4Img;
+        let customizeTag1;
+        let customizeTag2;
+        let customizeTag3;
+        let customizeTag4;
+        let customizeURL1;
+        let customizeURL2;
+        let customizeURL3;
+        let customizeURL4;
+
+        if(customizeData && customizeData.length > 0){
+            customizeData.forEach(element => {
+                customizeEnable =  element.customizeEnable;
+                customizeTitle = element.customizeTitle;
+                customizeSubTitle = element.customizeSubTitle;
+                card1Title = element.card1Title;
+                card1Content = element.card1Content;
+                card1Img = element.card1Img;
+                card2Title = element.card2Title;
+                card2Content = element.card2Content;
+                card2Img = element.card2Img;
+                card3Title = element.card3Title;
+                card3Content = element.card3Content;
+                card3Img = element.card3Img;
+                card4Title = element.card4Title;
+                card4Content = element.card4Content;
+                card4Img = element.card4Img;
+                customizeTag1 = element.customizeTag1;
+                customizeTag2 = element.customizeTag2;
+                customizeTag3 = element.customizeTag3;
+                customizeTag4 = element.customizeTag4;
+                customizeURL1 = element.customizeURL1;
+                customizeURL2 = element.customizeURL2;
+                customizeURL3 = element.customizeURL3;
+                customizeURL4 = element.customizeURL4;
+            })
+        }
+
+        // image
+        card1Img = !card1Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card1Img}`;
+        card2Img = !card2Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card2Img}`;
+        card3Img = !card3Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card3Img}`;
+        card4Img = !card4Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card4Img}`;
+
+        return (
+            <section className="events-area pt-70 pb-50" style={customizeEnable? {} : {display: 'none'}}>
+                
+                {customizeData && customizeData.length > 0 &&
+                
+                <div id="custom" className="container">
+                    <div className="section-title">
+                        <h2>{customizeTitle}</h2>
+                        <p>{customizeSubTitle}</p>
+                    </div>
+                    <div className="single-events-box">
+                        <div className="events-box">
+                            <div className="events-image">
+                                <div className="image bg1">
+                                    <img src={card1Img} alt="自訂圖片" />
+                                </div>
+                            </div>
+
+                            <div className="events-content">
+                                <div className="content text-left">
+                                    <h3><a href="/#">{card1Title}</a></h3>
+                                    <p>{card1Content}</p>
+                                    <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag1}</span>
+                                    <a target="_blank" rel="noopener noreferrer" href={customizeURL1} className="join-now-btn">了解更多</a>
+                                </div>
+                            </div>
+                            <div className="box-shape">
+                                <img src="assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
+                                <img src="assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <div className="single-events-box">
+                        <div className="events-box">
+                            <div className="events-image">
+                                <div className="image bg2">
+                                    <img src={card2Img} alt="自訂圖片" />
+                                </div>
+                            </div>
+
+                            <div className="events-content">
+                                <div className="content text-left">
+                                    <h3><a href="/#">{card2Title}</a></h3>
+                                    <p>{card2Content}</p>
+                                    <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag2}</span>
+                                    <a target="_blank" rel="noopener noreferrer" href={customizeURL2} className="join-now-btn">了解更多</a>
+                                </div>
+                            </div>
+                            <div className="box-shape">
+                                <img src="assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
+                                <img src="assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <div className="single-events-box">
+                        <div className="events-box">
+                            <div className="events-image">
+                                <div className="image bg3">
+                                    <img src={card3Img} alt="自訂圖片" />
+                                </div>
+                            </div>
+
+                            <div className="events-content">
+                                <div className="content text-left">
+                                    <h3><a href="/#">{card3Title}</a></h3>
+                                    <p>{card3Content}</p>
+                                    <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag3}</span>
+                                    <a target="_blank" rel="noopener noreferrer" href={customizeURL3} className="join-now-btn">了解更多</a>
+                                    
+                                </div>
+                            </div>
+                            <div className="box-shape">
+                                <img src="assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
+                                <img src="assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <div className="single-events-box">
+                        <div className="events-box">
+                            <div className="events-image">
+                                <div className="image bg4">
+                                    <img src={card4Img} alt="自訂圖片" />
+                                </div>
+                            </div>
+
+                            <div className="events-content">
+                                <div className="content text-left">
+                                    <h3><a href="/#">{card4Title}</a></h3>
+                                    <p>{card4Content}</p>
+                                    <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag4}</span>
+                                    <a target="_blank" rel="noopener noreferrer" href={customizeURL4} className="join-now-btn">了解更多</a>
+                                    <div className="box-shape">
+                                        <img src="assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
+                                        <img src="assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
+                                    </div>
+                                </div>
+                            </div>
+
+        
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    )
+                
+                }
+                
+            </section>
+        )
 
+    }
 }
 
 export default CompanyCustomize;
