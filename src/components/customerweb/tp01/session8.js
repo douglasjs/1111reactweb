@@ -100,7 +100,7 @@ class CompanyContact extends React.Component {
                                     </header>
     
                                         <div className="contact-form contact-form-inputs-filled contact-form-button-block font-size-14 pt-10">
-                                        <form  method="post" noValidate>
+                                        <form method="post" noValidate>
                                             <div className="row">
                                                 <div className="col-md-6">
                                                     <input className="bg-white border-fade-black-03" type="text" name="name" aria-required="true" aria-invalid="false" placeholder="姓名" onChange={this.handleChange('custName')} value={this.state.custName} required />
@@ -109,7 +109,7 @@ class CompanyContact extends React.Component {
                                                         <input className="bg-white border-fade-black-03" type="tel" name="mobile" aria-required="true" aria-invalid="false" placeholder="電話" onChange={this.handleChange('custMobile')} value={this.state.custMobile} required />
                                                     </div>
                                                     <div className="col-md-12">
-                                                            <input className="bg-white border-fade-black-03" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email"  onChange={this.handleChange('custMail')} value={this.state.custMail}  required />
+                                                            <input className="bg-white border-fade-black-03" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email" onChange={this.handleChange('custMail')} value={this.state.custMail} required />
                                                     </div>
                                                         
                                                     <div className="col-md-12">
