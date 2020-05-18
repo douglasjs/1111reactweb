@@ -53,7 +53,7 @@ class Session2 extends React.Component{
                 img.src=reader.result;
 
                 img.onload = function() {
-                   if(img.width > 724 || img.height > 500){
+                   if(img.width > 360 || img.height > 300){
                        alert('上傳圖片尺寸不合');
                        return false;
                    }else{
@@ -82,22 +82,22 @@ class Session2 extends React.Component{
                 introTitle: event.target.introTitle.value,
                 introMainContent: event.target.introMainContent.value,
                 introSubTitle1: event.target.introSubTitle1.value,
-                introSubTitle1Content:event.target.introSubTitle1Content.value,
-                introSubTitle1ImgText:event.target.introSubTitle1ImgText.value,
-                introSubTitle1Img:event.target.introSubTitle1Img.value,
+                introSubTitle1Content: event.target.introSubTitle1Content.value,
+                introSubTitle1ImgText: '',
+                introSubTitle1Img: event.target.introSubTitle1Img.value,
                 introSubTitle1ImgUpload: this.state.introSubTitle1ImgUpload ? this.state.introSubTitle1ImgUpload.value : null,
 
                 introSubTitle2: event.target.introSubTitle2.value,
-                introSubTitle2Content:event.target.introSubTitle2Content.value,
-                introSubTitle2ImgText:event.target.introSubTitle2ImgText.value,
-                introSubTitle2Img:event.target.introSubTitle2Img.value,
+                introSubTitle2Content: event.target.introSubTitle2Content.value,
+                introSubTitle2ImgText: '',
+                introSubTitle2Img: event.target.introSubTitle2Img.value,
                 introSubTitle2ImgUpload: this.state.introSubTitle2ImgUpload ? this.state.introSubTitle2ImgUpload.value : null,
 
                 introSubTitle3: event.target.introSubTitle3.value,
-                introSubTitle3Content:event.target.introSubTitle3Content.value,
-                introSubTitle3ImgText:event.target.introSubTitle3ImgText.value,
-                introSubTitle3Img:event.target.introSubTitle3Img.value,
-                introSubTitle3ImgUpload: this.state.introSubTitle3ImgUpload ? this.state.introSubTitle3ImgUpload.value : null,
+                introSubTitle3Content: event.target.introSubTitle3Content.value,
+                introSubTitle3ImgText: '',
+                introSubTitle3Img: '',
+                introSubTitle3ImgUpload: null,
 
                 intro1ImgUpload: null,
                 intro1Img: "",
@@ -142,16 +142,12 @@ class Session2 extends React.Component{
         let introMainContent = this.state.introMainContent;
         let introSubTitle1 = this.state.introSubTitle1;
         let introSubTitle1Content = this.state.introSubTitle1Content;
-        let introSubTitle1ImgText = this.state.introSubTitle1ImgText;
         let introSubTitle1Img = this.state.introSubTitle1Img;
         let introSubTitle2 = this.state.introSubTitle2;
         let introSubTitle2Content = this.state.introSubTitle2Content;
-        let introSubTitle2ImgText = this.state.introSubTitle2ImgText;
         let introSubTitle2Img = this.state.introSubTitle2Img;
         let introSubTitle3 = this.state.introSubTitle3;
         let introSubTitle3Content = this.state.introSubTitle3Content;
-        let introSubTitle3ImgText = this.state.introSubTitle3ImgText;
-        let introSubTitle3Img = this.state.introSubTitle3Img;
         let themeNum = this.props.themeNum;
         let actionType = 'create';
        
@@ -163,19 +159,14 @@ class Session2 extends React.Component{
 
                 introSubTitle1 = introSubTitle1 !==" " ? introSubTitle1 : element.introSubTitle1;
                 introSubTitle1Content = introSubTitle1Content !==" " ? introSubTitle1Content : element.introSubTitle1Content;
-                introSubTitle1ImgText = introSubTitle1ImgText !==" " ? introSubTitle1ImgText : element.introSubTitle1ImgText;
                 introSubTitle1Img = introSubTitle1Img !==" " ? introSubTitle1Img : element.introSubTitle1Img;
 
                 introSubTitle2 = introSubTitle2 !==" " ? introSubTitle2 : element.introSubTitle2;
                 introSubTitle2Content = introSubTitle2Content !==" " ? introSubTitle2Content : element.introSubTitle2Content;
-                introSubTitle2ImgText = introSubTitle2ImgText !==" " ? introSubTitle2ImgText : element.introSubTitle2ImgText;
                 introSubTitle2Img = introSubTitle2Img !==" " ? introSubTitle2Img : element.introSubTitle2Img;
 
                 introSubTitle3 = introSubTitle3 !==" " ? introSubTitle3 : element.introSubTitle3;
                 introSubTitle3Content = introSubTitle3Content !==" " ? introSubTitle3Content : element.introSubTitle3Content;
-                introSubTitle3ImgText = introSubTitle3ImgText !==" " ? introSubTitle3ImgText : element.introSubTitle3ImgText;
-                introSubTitle3Img = introSubTitle3Img !==" " ? introSubTitle3Img : element.introSubTitle3Img;
-
             })
         }
 
@@ -196,13 +187,6 @@ class Session2 extends React.Component{
             introSubTitle2ImgUpload = "/image/logo-1111.png";
          }else{
             introSubTitle2ImgUpload = this.state.introSubTitle2Img !==' ' ?  this.state.introSubTitle2ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${introSubTitle2Img}`;
-         }
-
-         let introSubTitle3ImgUpload ="";
-         if(introSubTitle3Img === " "){
-            introSubTitle3ImgUpload = "/image/logo-1111.png";
-         }else{
-            introSubTitle3ImgUpload = this.state.introSubTitle3Img !==' ' ?  this.state.introSubTitle3ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${introSubTitle3Img}`;
          }
 
 
@@ -228,12 +212,20 @@ class Session2 extends React.Component{
 
                                 <div className="col-md-6 mb-3">
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='主標題' notice='(字數限制為15個字以內)' inputName='introTitle' inputState={introTitle}
-                                           stateObj={this} required={true} checkValue='15' />
+                                        <InputText title='主標題' notice='(字數限制為25個字以內)' inputName='introTitle' inputState={introTitle}
+                                           stateObj={this} required={true} checkValue='25' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='主內容' notice='(字數限制為80個字以內)' inputName='introMainContent' inputState={introMainContent}
-                                           rows='5' stateObj={this} required={true} checkValue='80' />
+                                        <InputTextArea title='主內容' notice='(字數限制為120個字以內)' inputName='introMainContent' inputState={introMainContent}
+                                           rows='5' stateObj={this} required={true} checkValue='120' />
+                                    </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <ImgUpload title='圖片一 上傳' notice='(圖檔尺寸大小為 360*300，接受格式為png、jpg)' objName='introSubTitle1Img'  imgUpload={introSubTitle1ImgUpload} 
+                                            imgFileName={introSubTitle1Img} parentObj={this} imgW={360} imgH={300} required={true} />                                               
+                                    </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <ImgUpload title='圖片二 上傳' notice='(圖檔尺寸大小為 360*300，接受格式為png、jpg)' objName='introSubTitle2Img'  imgUpload={introSubTitle2ImgUpload} 
+                                            imgFileName={introSubTitle2Img} parentObj={this} imgW={360} imgH={300} required={true} />                                          
                                     </div>
                                 </div>
 
@@ -301,20 +293,12 @@ class Session2 extends React.Component{
 
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <InputText title='小標題1' notice='(字數限制為11個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
-                                                        stateObj={this} required={true} checkValue='11' />
+                                                    <InputText title='小標題1' notice='(字數限制為10個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
+                                                        stateObj={this} required={true} checkValue='10' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題1內容' notice='(字數限制為55個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
-                                                        rows='3' stateObj={this} required={true} checkValue='55' />
-                                                </div>
-                                                <div className="form-row row-style-w95-pt1">
-                                                    <InputText title='小標題1圖片文字' notice='(字數限制為20個字以內)' inputName='introSubTitle1ImgText' inputState={introSubTitle1ImgText}
-                                                        stateObj={this} required={true} checkValue='20' />
-                                                </div>
-                                                <div className="form-row row-style-w95-pt1">
-                                                    <ImgUpload title='小標題1圖片 上傳' notice='(圖檔尺寸大小為 724*500，接受格式為png、jpg)' objName='introSubTitle1Img'  imgUpload={introSubTitle1ImgUpload} 
-                                                        imgFileName={introSubTitle1Img} parentObj={this} imgW={724} imgH={500} required={true} />                                               
+                                                    <InputTextArea title='小標題1內容' notice='(字數限制為100個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
+                                                        rows='3' stateObj={this} required={true} checkValue='100' />
                                                 </div>
                                             </div>
 
@@ -400,20 +384,12 @@ class Session2 extends React.Component{
 
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <InputText title='小標題2' notice='(字數限制為11個字以內)' inputName='introSubTitle2' inputState={introSubTitle2}
-                                                        stateObj={this} required={true} checkValue='11' />
+                                                    <InputText title='小標題2' notice='(字數限制為10個字以內)' inputName='introSubTitle2' inputState={introSubTitle2}
+                                                        stateObj={this} required={true} checkValue='10' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題2內容' notice='(字數限制為55個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
-                                                        rows='3' stateObj={this} required={true} checkValue='55' />
-                                                </div>
-                                                <div className="form-row row-style-w95-pt1">
-                                                    <InputText title='小標題2圖片文字' notice='(字數限制為20個字以內)' inputName='introSubTitle2ImgText' inputState={introSubTitle2ImgText}
-                                                        stateObj={this} required={true} checkValue='20' />
-                                                </div>
-                                                <div className="form-row row-style-w95-pt1">
-                                                    <ImgUpload title='小標題2圖片 上傳' notice='(圖檔尺寸大小為 724*500，接受格式為png、jpg)' objName='introSubTitle2Img'  imgUpload={introSubTitle2ImgUpload} 
-                                                        imgFileName={introSubTitle2Img} parentObj={this} imgW={724} imgH={500} required={true} />                                          
+                                                    <InputTextArea title='小標題2內容' notice='(字數限制為100個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
+                                                        rows='3' stateObj={this} required={true} checkValue='100' />
                                                 </div>
                                             </div>
 
@@ -501,20 +477,12 @@ class Session2 extends React.Component{
 
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <InputText title='小標題3' notice='(字數限制為11個字以內)' inputName='introSubTitle3' inputState={introSubTitle3}
-                                                        stateObj={this} required={true} checkValue='11' />
+                                                    <InputText title='小標題3' notice='(字數限制為10個字以內)' inputName='introSubTitle3' inputState={introSubTitle3}
+                                                        stateObj={this} required={true} checkValue='10' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題3內容' notice='(字數限制為55個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
-                                                        rows='3' stateObj={this} required={true} checkValue='55' />
-                                                </div>
-                                                <div className="form-row row-style-w95-pt1">
-                                                    <InputText title='小標題3圖片文字' notice='(字數限制為20個字以內)' inputName='introSubTitle3ImgText' inputState={introSubTitle3ImgText}
-                                                        stateObj={this} required={true} checkValue='20' />
-                                                </div>
-                                                <div className="form-row row-style-w95-pt1">
-                                                    <ImgUpload title='小標題3圖片 上傳' notice='(圖檔尺寸大小為 724*500，接受格式為png、jpg)' objName='introSubTitle3Img'  imgUpload={introSubTitle3ImgUpload} 
-                                                        imgFileName={introSubTitle3Img} parentObj={this} imgW={724} imgH={500} required={true} />                                          
+                                                    <InputTextArea title='小標題3內容' notice='(字數限制為100個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
+                                                        rows='3' stateObj={this} required={true} checkValue='100' />
                                                 </div>
                                             </div>
                                             
