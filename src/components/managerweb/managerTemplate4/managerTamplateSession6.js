@@ -149,22 +149,6 @@ class Session6 extends React.Component{
         let themeNum = this.props.themeNum;
         let actionType = 'create';
 
-        if(customizeURL1 === ""){
-            customizeURL1 = `https://www.1111.com.tw/corp/${cid}/`
-        }
-
-        if(customizeURL2 === ""){
-            customizeURL2 = `https://www.1111.com.tw/corp/${cid}/`
-        }
-
-        if(customizeURL3 === ""){
-            customizeURL3 = `https://www.1111.com.tw/corp/${cid}/`
-        }
-
-        if(customizeURL4 === ""){
-            customizeURL4 = `https://www.1111.com.tw/corp/${cid}/`
-        }
-
         if(customizeData && customizeData.length > 0){
             actionType = 'modify';
             customizeData.forEach(element => {
@@ -198,6 +182,13 @@ class Session6 extends React.Component{
                 customizeURL3 = customizeURL3 !=="" ? customizeURL3 : element.customizeURL3;
                 customizeURL4 = customizeURL4 !=="" ? customizeURL4 : element.customizeURL4;
             })
+        }
+        
+        if(actionType === 'create'){
+            customizeURL1 = `https://www.1111.com.tw/corp/${cid}/`
+            customizeURL2 = `https://www.1111.com.tw/corp/${cid}/`
+            customizeURL3 = `https://www.1111.com.tw/corp/${cid}/`
+            customizeURL4 = `https://www.1111.com.tw/corp/${cid}/`
         }
 
         // enable
