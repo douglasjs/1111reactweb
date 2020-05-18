@@ -43,7 +43,7 @@ class CompanyBrand extends React.Component {
                             <div className="about-img">
                                 <img src={brandImg} alt="品牌介紹" />
                                 <div className="shape">
-                                    <img src="assets/tp04/img/dot.png" alt="品牌介紹" />
+                                    <img src="../../../assets/tp04/img/dot.png" alt="品牌介紹" />
                                 </div>
                             </div>
                         </div>

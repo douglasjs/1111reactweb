@@ -103,8 +103,8 @@ class CompanyCustomize extends React.Component {
                                 </div>
                             </div>
                             <div className="box-shape">
-                                <img src="assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
-                                <img src="assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
+                                <img src="../../../assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
+                                <img src="../../../assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
                             </div>
                         
                         </div>
@@ -127,8 +127,8 @@ class CompanyCustomize extends React.Component {
                                 </div>
                             </div>
                             <div className="box-shape">
-                                <img src="assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
-                                <img src="assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
+                                <img src="../../../assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
+                                <img src="../../../assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
                             </div>
                         
                         </div>
@@ -152,8 +152,8 @@ class CompanyCustomize extends React.Component {
                                 </div>
                             </div>
                             <div className="box-shape">
-                                <img src="assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
-                                <img src="assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
+                                <img src="../../../assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
+                                <img src="../../../assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
                             </div>
                         
                         </div>
@@ -174,8 +174,8 @@ class CompanyCustomize extends React.Component {
                                     <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag4}</span>
                                     <a target="_blank" rel="noopener noreferrer" href={customizeURL4} className="join-now-btn">了解更多</a>
                                     <div className="box-shape">
-                                        <img src="assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
-                                        <img src="assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
+                                        <img src="../../../assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
+                                        <img src="../../../assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
                                     </div>
                                 </div>
                             </div>

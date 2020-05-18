@@ -1,14 +1,14 @@
 ﻿import React from 'react';
 import envConfig from '../../../config/env';
 
-const NavBar = () => {
+const NavBar = (props) => {
     return(
         <div className="pearo-responsive-nav">
             <div className="container">
                 <div className="pearo-responsive-menu">
                     <div className="logo">
                         <a href="/#">
-                            <img src="image/tp04/logo.png" alt="logo" />
+                            <img src={props.logURL} alt="logo" />
                         </a>
                     </div>
                 </div>
@@ -34,14 +34,14 @@ const NavMain = (props) => {
             <div className="container">
                 <nav className="navbar navbar-expand-md navbar-light">
                     <a className="navbar-brand" href="/#">
-                        <img src="image/tp04/logo.png" alt="logo" />
+                        <img src={props.logURL} alt="logo" />
                     </a>
 
                     <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul className="navbar-nav">
                             <li className="nav-item hidden-md-down"><div className="top-header-logo align-items-center mtb-17">
                                     <a href="/#">
-                                        <img src="image/tp04/logo.png" alt="logo" />
+                                        <img src={props.logURL} alt="logo" />
                                     </a>
                                 </div>
                             </li>
@@ -61,16 +61,15 @@ const NavMain = (props) => {
 
 function CustomerHeader(props) {
 
-    
     const { customizeData } = props.customizeReducer;
     const { qaData } = props.qaReducer;
     const { contactData} = props.contactReducer;
     const { data } = props.datatableReducer;
     const cid = props.match.params.cid;
-    let logURL ="/image/tp04/logo.png";
+    let logURL ="/image/logo-1111.png";
 
     if(data && data.length > 0){
-        logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
+        logURL = `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
     }
 
     let customizeEnable;
@@ -103,7 +102,7 @@ function CustomerHeader(props) {
             <div className="navbar-area">
 
                 <NavBar logURL={logURL}/>
-                <NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
+                <NavMain logURL={logURL} customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
                 
             </div>
 

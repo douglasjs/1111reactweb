@@ -49,8 +49,8 @@ class CompanyJobs extends React.Component {
                                     <a target="_blank" rel="noopener noreferrer" href={positionURL} className="default-btn">我要應徵<span></span></a>
 
                                     <div className="box-shape">
-                                        <img src="assets/tp04/img/box-shape1.png" alt="職缺介紹" />
-                                        <img src="assets/tp04/img/box-shape1g.png" alt="職缺介紹" />
+                                        <img src="../../../assets/tp04/img/box-shape1.png" alt="職缺介紹" />
+                                        <img src="../../../assets/tp04/img/box-shape1g.png" alt="職缺介紹" />
                                     </div>
                                 </div>
                                 

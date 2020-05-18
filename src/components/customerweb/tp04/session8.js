@@ -121,7 +121,7 @@ class CompanyContact extends React.Component {
                     </div>
                 </div>
                 
-                <div className="bg-map"><img src="assets/tp04/img/bg-map.png" alt="連絡我們" /></div>
+                <div className="bg-map"><img src="../../../assets/tp04/img/bg-map.png" alt="連絡我們" /></div>
             </section>
     
         )
