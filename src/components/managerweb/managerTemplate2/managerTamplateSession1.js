@@ -11,12 +11,17 @@ class Session1 extends React.Component{
         super(props);
         this.state={
             title: ' ',
+            title2: ' ',
+            title3: ' ',
             companySubTitle1: ' ',
             companySubTitle2: ' ',
+            companySubTitle3: ' ',
             companyBackgroundImg1: ' ',
             companyBackgroundImg1Upload:'',
             companyBackgroundImg2: ' ',
-            companyBackgroundImg2Upload:''
+            companyBackgroundImg2Upload:'',
+            companyBackgroundImg3: ' ',
+            companyBackgroundImg3Upload:''
         };
     }
 
