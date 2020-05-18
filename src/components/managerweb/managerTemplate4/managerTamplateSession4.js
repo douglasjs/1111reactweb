@@ -210,13 +210,13 @@ class Session4 extends React.Component{
         const submitObj = {
             ono: cid,
             themeNum : event.target.themeNum4.value,
-            groupName1:  event.target.groupName1.value,
-            groupName2:  event.target.groupName2.value,
-            groupName3:  event.target.groupName3.value,
-            position_img:  '',
-            position_imgUpload: null,
-            position_backgroudImg:  '',
-            position_backgroudImgUpload: null
+            groupName1 : '',
+            groupName2 : '',
+            groupName3 : '',
+            position_img : '',
+            position_imgUpload : null,
+            position_backgroudImg : '',
+            position_backgroudImgUpload : null
         }
 
         if(event.target.actionTag.value === 'create'){
@@ -286,7 +286,7 @@ class Session4 extends React.Component{
         const name = `tag_${event.target.value}`;
         const grpName = this.refs[name].value;
         if(this.state[grpName] >= 5){
-            alert("已滿5個請選擇其他標籤");
+            alert("已選滿5個職缺");
             event.target.checked=false;
         }else{
             this.setState({...this.state, [grpName]: this.state[grpName]+1 })
@@ -332,9 +332,9 @@ class Session4 extends React.Component{
 
         if(positionGrpData && positionGrpData.length > 0){
             positionGrpData.forEach( element  => {
-                groupName1 = groupName1 !==" " ? groupName1 : element.groupName1;
-                groupName2 = groupName2 !==" " ? groupName2 : element.groupName2;
-                groupName3 = groupName3 !==" " ? groupName3 : element.groupName3;
+                groupName1 = groupName1 !== "" ? groupName1 : element.groupName1;
+                groupName2 = groupName2 !== "" ? groupName2 : element.groupName2;
+                groupName3 = groupName3 !== "" ? groupName3 : element.groupName3;
             })
         }
 
@@ -372,9 +372,9 @@ class Session4 extends React.Component{
             actionType = 'modify';
             groupEmpty = '';
             positionGrpData.forEach( element  => {
-                groupName1 = groupName1 !==" " ? groupName1 : element.groupName1;
-                groupName2 = groupName2 !==" " ? groupName2 : element.groupName2;
-                groupName3 = groupName3 !==" " ? groupName3 : element.groupName3;
+                groupName1 = groupName1 !== "" ? groupName1 : element.groupName1;
+                groupName2 = groupName2 !== "" ? groupName2 : element.groupName2;
+                groupName3 = groupName3 !== "" ? groupName3 : element.groupName3;
             })
         }
 
