@@ -34,24 +34,6 @@ class Session1 extends React.Component{
         event.preventDefault();
         const cid = this.props.match.params.cid;
 
-        if(event.target.title.value){
-            if(event.target.title.value ===' '){
-                return false;
-            }
-        }
-        if(event.target.companySubTitle1.value){
-            if(event.target.companySubTitle1.value ===' '){
-                return false;
-            }
-        }
-        /*
-        if(event.target.companyBackgroundImg1.value){
-            if(event.target.companyBackgroundImg1.value ===' '){
-                return false;
-            }
-        }
-        */
-
         const　comObj = {
             ono: cid,
             themeNum : event.target.themeNum.value,
