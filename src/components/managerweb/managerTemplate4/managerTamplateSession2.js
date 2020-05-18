@@ -11,23 +11,18 @@ class Session2 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            introTitle: ' ',
-            introMainContent: ' ',
-            introSubTitle1: ' ',
-            introSubTitle1Content: ' ',
-            introSubTitle1ImgText: ' ',
+            introTitle: '',
+            introMainContent: '',
+            introSubTitle1: '',
+            introSubTitle1Content: '',
             introSubTitle1Img: ' ',
             introSubTitle1ImgUpload: '',
-            introSubTitle2: ' ',
-            introSubTitle2Content: ' ',
-            introSubTitle2ImgText: ' ',
+            introSubTitle2: '',
+            introSubTitle2Content: '',
             introSubTitle2Img: ' ',
             introSubTitle2ImgUpload: '',
-            introSubTitle3: ' ',
-            introSubTitle3Content: ' ',
-            introSubTitle3ImgText: ' ',
-            introSubTitle3Img: ' ',
-            introSubTitle3ImgUpload: '',
+            introSubTitle3: '',
+            introSubTitle3Content: ''
         }
     }
 
@@ -132,7 +127,7 @@ class Session2 extends React.Component{
     
     render(){
 
-        const { introductionData, introductionErr, introductionIsLoading} = this.props.introductionReducer;
+        const { introductionData, introductionErr, introductionIsLoading } = this.props.introductionReducer;
         const { kind01_data } = this.props.kind01Reducer;
        
 
@@ -154,19 +149,19 @@ class Session2 extends React.Component{
         if(introductionData && introductionData.length > 0){
             actionType = 'modify';
             introductionData.forEach(element => {
-                introTitle = introTitle !==" " ? introTitle : element.introTitle;
-                introMainContent = introMainContent !==" " ? introMainContent : element.introMainContent;
+                introTitle = introTitle !=="" ? introTitle : element.introTitle;
+                introMainContent = introMainContent !=="" ? introMainContent : element.introMainContent;
 
-                introSubTitle1 = introSubTitle1 !==" " ? introSubTitle1 : element.introSubTitle1;
-                introSubTitle1Content = introSubTitle1Content !==" " ? introSubTitle1Content : element.introSubTitle1Content;
+                introSubTitle1 = introSubTitle1 !=="" ? introSubTitle1 : element.introSubTitle1;
+                introSubTitle1Content = introSubTitle1Content !=="" ? introSubTitle1Content : element.introSubTitle1Content;
                 introSubTitle1Img = introSubTitle1Img !==" " ? introSubTitle1Img : element.introSubTitle1Img;
 
-                introSubTitle2 = introSubTitle2 !==" " ? introSubTitle2 : element.introSubTitle2;
-                introSubTitle2Content = introSubTitle2Content !==" " ? introSubTitle2Content : element.introSubTitle2Content;
+                introSubTitle2 = introSubTitle2 !=="" ? introSubTitle2 : element.introSubTitle2;
+                introSubTitle2Content = introSubTitle2Content !=="" ? introSubTitle2Content : element.introSubTitle2Content;
                 introSubTitle2Img = introSubTitle2Img !==" " ? introSubTitle2Img : element.introSubTitle2Img;
 
-                introSubTitle3 = introSubTitle3 !==" " ? introSubTitle3 : element.introSubTitle3;
-                introSubTitle3Content = introSubTitle3Content !==" " ? introSubTitle3Content : element.introSubTitle3Content;
+                introSubTitle3 = introSubTitle3 !=="" ? introSubTitle3 : element.introSubTitle3;
+                introSubTitle3Content = introSubTitle3Content !=="" ? introSubTitle3Content : element.introSubTitle3Content;
             })
         }
 

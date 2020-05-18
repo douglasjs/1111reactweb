@@ -29,53 +29,53 @@ class Session3 extends React.Component{
             benefitSubContent5 : '',
             benefitSubContent6 : '',
             benefitSubImg1 : ' ',
-            benefitSubImg2 : ' ',
-            benefitSubImg3 : ' ',
-            benefitSubImg4 : ' ',
-            benefitSubImg1Upload : '',
-            benefitSubImg2Upload : '',
-            benefitSubImg3Upload : '',
-            benefitSubImg4Upload : ''
+            benefitSubImg1Upload : ''
         }
 
     }
+
+    handleChange = name => event => {
+        let newValue = event.target.value;
+        this.setState({ ...this.state, [name]: newValue});
+
+    };
 
     handleSubmit = (event) =>{
         event.preventDefault();
         const cid = this.props.match.params.cid;
 
         const benObj={
-            ono: cid,
+            ono : cid,
             themeNum : event.target.themeNum3.value,
-            benefitContent: this.state.benefitContent,
-            benefitImg: event.target.benefitImg.value,
-            benefitImg2: event.target.benefitImg2.value,
-            benefitImgUpload: this.state.benefitImgUpload ? this.state.benefitImgUpload.value : null,
-            benefitImg2Upload: this.state.benefitImg2Upload ? this.state.benefitImg2Upload.value : null,
-            benefitSubTitle1: this.state.benefitSubTitle1,
-            benefitSubTitle2: this.state.benefitSubTitle2,
-            benefitSubTitle3: this.state.benefitSubTitle3,
-            benefitSubTitle4: this.state.benefitSubTitle4,
-            benefitSubTitle5: this.state.benefitSubTitle5,
-            benefitSubTitle6: this.state.benefitSubTitle6,
-            benefitSubContent1: this.state.benefitSubContent1,
-            benefitSubContent2: this.state.benefitSubContent2,
-            benefitSubContent3: this.state.benefitSubContent3,
-            benefitSubContent4: this.state.benefitSubContent4,
-            benefitSubContent5: this.state.benefitSubContent5,
-            benefitSubContent6: this.state.benefitSubContent6,
-            benefitSubImg1: this.state.benefitSubImg1,
-            benefitSubImg2: '',
-            benefitSubImg3: '',
-            benefitSubImg4: '',
-            benefitSubImg5: '',
-            benefitSubImg6: '',
-            benefitSubImg1Upload: this.state.benefitSubImg1Upload ? this.state.benefitSubImg1Upload.value : null,
-            benefitSubImg2Upload: null,
-            benefitSubImg3Upload: null,
-            benefitSubImg4Upload: null,
-            benefitSubImg5Upload: null,
-            benefitSubImg6Upload: null
+            benefitContent : event.target.benefitContent.value,
+            benefitImg : event.target.benefitImg.value,
+            benefitImg2 : event.target.benefitImg2.value,
+            benefitImgUpload : this.state.benefitImgUpload ? this.state.benefitImgUpload.value : null,
+            benefitImg2Upload : this.state.benefitImg2Upload ? this.state.benefitImg2Upload.value : null,
+            benefitSubTitle1 : event.target.benefitSubTitle1.value,
+            benefitSubTitle2 : event.target.benefitSubTitle2.value,
+            benefitSubTitle3 : event.target.benefitSubTitle3.value,
+            benefitSubTitle4 : event.target.benefitSubTitle4.value,
+            benefitSubTitle5 : event.target.benefitSubTitle5.value,
+            benefitSubTitle6 : event.target.benefitSubTitle6.value,
+            benefitSubContent1 : event.target.benefitSubContent1.value,
+            benefitSubContent2 : event.target.benefitSubContent2.value,
+            benefitSubContent3 : event.target.benefitSubContent3.value,
+            benefitSubContent4 : event.target.benefitSubContent4.value,
+            benefitSubContent5 : event.target.benefitSubContent5.value,
+            benefitSubContent6 : event.target.benefitSubContent6.value,
+            benefitSubImg1 : event.target.benefitSubImg1.value,
+            benefitSubImg2 : '',
+            benefitSubImg3 : '',
+            benefitSubImg4 : '',
+            benefitSubImg5 : '',
+            benefitSubImg6 : '',
+            benefitSubImg1Upload : this.state.benefitSubImg1Upload ? this.state.benefitSubImg1Upload.value : null,
+            benefitSubImg2Upload : null,
+            benefitSubImg3Upload : null,
+            benefitSubImg4Upload : null,
+            benefitSubImg5Upload : null,
+            benefitSubImg6Upload : null
         }
         
         if(event.target.action3.value === 'create'){
@@ -86,20 +86,8 @@ class Session3 extends React.Component{
         }
     }
 
-    handleChange = (event, data) => {
-        /*
-        ( event, editor ) => {
-            const data = editor.getData();
-            console.log( { event, editor, data } );
-        } 
-        */
-        //let newValue = event.target.data;
-        this.setState({ ...this.state, benefitContent : data});
-    };
-
     render(){
-        const { benefitData, benefitErr, benefitIsLoading} = this.props.benefitReducer;
-       // const { kind01_data } = this.props.kind01Reducer;
+        const { benefitData, benefitErr, benefitIsLoading } = this.props.benefitReducer;
         const cid = this.props.match.params.cid.trim();
 
         let benefitContent = this.state.benefitContent;        
@@ -121,24 +109,23 @@ class Session3 extends React.Component{
 
         let themeNum = this.props.themeNum;
         let actionType = 'create';
-        //benefitContent = kind01_data && kind01_data.length > 0 && benefitContent === ' ' ? kind01_data[0].Benefit : this.state.benefitContent;
 
         if(benefitData && benefitData.length > 0){
             actionType = 'modify';
             benefitData.forEach(element => {
-                benefitContent = benefitContent !==" " ? benefitContent : element.benefitContent;                
-                benefitSubTitle1 = benefitSubTitle1 !==" " ? benefitSubTitle1 : element.benefitSubTitle1;
-                benefitSubTitle2 = benefitSubTitle2 !==" " ? benefitSubTitle2 : element.benefitSubTitle2;
-                benefitSubTitle3 = benefitSubTitle3 !==" " ? benefitSubTitle3 : element.benefitSubTitle3;
-                benefitSubTitle4 = benefitSubTitle4 !==" " ? benefitSubTitle4 : element.benefitSubTitle4;
-                benefitSubTitle5 = benefitSubTitle5 !==" " ? benefitSubTitle5 : element.benefitSubTitle5;
-                benefitSubTitle6 = benefitSubTitle6 !==" " ? benefitSubTitle6 : element.benefitSubTitle6;
-                benefitSubContent1 = benefitSubContent1 !==" " ? benefitSubContent1 : element.benefitSubContent1;
-                benefitSubContent2 = benefitSubContent2 !==" " ? benefitSubContent2 : element.benefitSubContent2;
-                benefitSubContent3 = benefitSubContent3 !==" " ? benefitSubContent3 : element.benefitSubContent3;
-                benefitSubContent4 = benefitSubContent4 !==" " ? benefitSubContent4 : element.benefitSubContent4;
-                benefitSubContent5 = benefitSubContent5 !==" " ? benefitSubContent5 : element.benefitSubContent5;
-                benefitSubContent6 = benefitSubContent6 !==" " ? benefitSubContent6 : element.benefitSubContent6;
+                benefitContent = benefitContent !=="" ? benefitContent : element.benefitContent;
+                benefitSubTitle1 = benefitSubTitle1 !=="" ? benefitSubTitle1 : element.benefitSubTitle1;
+                benefitSubTitle2 = benefitSubTitle2 !=="" ? benefitSubTitle2 : element.benefitSubTitle2;
+                benefitSubTitle3 = benefitSubTitle3 !=="" ? benefitSubTitle3 : element.benefitSubTitle3;
+                benefitSubTitle4 = benefitSubTitle4 !=="" ? benefitSubTitle4 : element.benefitSubTitle4;
+                benefitSubTitle5 = benefitSubTitle5 !=="" ? benefitSubTitle5 : element.benefitSubTitle5;
+                benefitSubTitle6 = benefitSubTitle6 !=="" ? benefitSubTitle6 : element.benefitSubTitle6;
+                benefitSubContent1 = benefitSubContent1 !=="" ? benefitSubContent1 : element.benefitSubContent1;
+                benefitSubContent2 = benefitSubContent2 !=="" ? benefitSubContent2 : element.benefitSubContent2;
+                benefitSubContent3 = benefitSubContent3 !=="" ? benefitSubContent3 : element.benefitSubContent3;
+                benefitSubContent4 = benefitSubContent4 !=="" ? benefitSubContent4 : element.benefitSubContent4;
+                benefitSubContent5 = benefitSubContent5 !=="" ? benefitSubContent5 : element.benefitSubContent5;
+                benefitSubContent6 = benefitSubContent6 !=="" ? benefitSubContent6 : element.benefitSubContent6;
                 benefitImg = benefitImg !==" " ? benefitImg : element.benefitImg;
                 benefitImg2 = benefitImg2 !==" " ? benefitImg2 : element.benefitImg2;
                 benefitSubImg1 = benefitSubImg1 !==" " ? benefitSubImg1 : element.benefitSubImg1;

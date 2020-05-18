@@ -8,18 +8,10 @@ class Session1 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            title: ' ',
-            title2: ' ',
-            title3: ' ',
-            companySubTitle1: ' ',
-            companySubTitle2: ' ',
-            companySubTitle3: ' ',
             companyBackgroundImg1: ' ',
             companyBackgroundImg1Upload:'',
             companyBackgroundImg2: ' ',
-            companyBackgroundImg2Upload:'',
-            companyBackgroundImg3: ' ',
-            companyBackgroundImg3Upload:''
+            companyBackgroundImg2Upload:''
         };
     }
 
@@ -37,18 +29,18 @@ class Session1 extends React.Component{
         const　comObj = {
             ono: cid,
             themeNum : event.target.themeNum.value,
-            title: '',
-            title2: '',
-            title3: '',
-            companySubTitle1: '',
-            companySubTitle2: '',
-            companySubTitle3: '',
-            companyBackgroundImg1:event.target.companyBackgroundImg1.value,
-            companyBackgroundImg2:event.target.companyBackgroundImg2.value,
-            companyBackgroundImg3:'',
-            UploadImg1: this.state.companyBackgroundImg1Upload ? this.state.companyBackgroundImg1Upload.value : null,
-            UploadImg2: this.state.companyBackgroundImg2Upload ? this.state.companyBackgroundImg2Upload.value : null,
-            uploadImg3: null
+            title : '',
+            title2 : '',
+            title3 : '',
+            companySubTitle1 : '',
+            companySubTitle2 : '',
+            companySubTitle3 : '',
+            companyBackgroundImg1 : event.target.companyBackgroundImg1.value,
+            companyBackgroundImg2 : event.target.companyBackgroundImg2.value,
+            companyBackgroundImg3 : '',
+            UploadImg1 : this.state.companyBackgroundImg1Upload ? this.state.companyBackgroundImg1Upload.value : null,
+            UploadImg2 : this.state.companyBackgroundImg2Upload ? this.state.companyBackgroundImg2Upload.value : null,
+            uploadImg3 : null
         }
 
         if(event.target.action1.value === 'create'){
@@ -62,7 +54,7 @@ class Session1 extends React.Component{
     }
     
     render(){
-        const { companyData, companyErr, companyIsLoading} = this.props.companyReducer;
+        const { companyData, companyErr, companyIsLoading } = this.props.companyReducer;
         const cid = this.props.match.params.cid.trim();
 
         let companyBackgroundImg1 = this.state.companyBackgroundImg1;
