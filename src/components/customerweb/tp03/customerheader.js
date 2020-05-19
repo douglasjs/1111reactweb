@@ -3,12 +3,15 @@ import envConfig from '../../../config/env';
 
 const NavBar = () => {
     return(
-        <div className="navbar-header">
-            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-            </button>
+        <div className="preloader-wrap">
+            <div className="preloader">
+                <span className="dot"></span>
+                <div className="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
 
     );
@@ -25,21 +28,41 @@ const NavMain = () => {
         { name: '聯絡我們', link: '#contact', enable: true }
     ]
     return (
-
-        <div className="navbar-collapse collapse clearfix">
-            <ul className="navigation clearfix">
-                {menuList.map((item, index) => {
-                let liclass = "dropdown"
-                if (item.name === "公司介紹") {liclass = "current dropdown"}
-                
-                return item.enable &&
-                    <li key={index} className={liclass}>
-                        <a href={item.link}>{item.name}</a>
-                    </li>
-                })}
-            </ul>
-        </div>
-
+        <header className="header-area-custom header-area sticky-header">
+            <div className="container-fluid">
+                <div className="row no-gutters align-items-center">
+                    <div className="col-5 col-lg-2">
+                        <div className="header-logo-area">
+                            <a href="\#">
+                                <img className="logo-main" src="image/tp03/logo.png" alt="Logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-9 d-none d-lg-block">
+                        <div className="header-navigation-area">
+                            <ul className="main-menu nav justify-content-center">
+                            {menuList.map((item, index) => {
+                                return item.enable &&
+                                    <li  key={index} className="full-width">
+                                        <a href={item.link}>{item.name}</a>
+                                    </li>
+                            })}
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-7 col-lg-1">
+                            <div className="header-action-area text-right">
+                                <button className="btn-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </header>
+        
     )
 }
 
@@ -52,7 +75,7 @@ function CustomerHeader(props) {
     const { contactData} = props.contactReducer;
     const { data } = props.datatableReducer;
     const cid = props.match.params.cid;
-    let logURL ="/image/logo-1111.png";
+    let logURL ="/image/logo.png";
 
     if(data && data.length > 0){
         logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
@@ -82,37 +105,13 @@ function CustomerHeader(props) {
     }
 
     return (
-        
-        <header className="main-header">
-            <div className="outer-container">
-                <div className="main-box clearfix">
-                    <div className="logo-box">
-                        <figure className="logo"><a href="/#"><img src="image/tp03/logo.png" alt="1111人力銀行" /></a></figure>
-                    </div>
-                    <div className="nav-outer clearfix">
-                        <div className="menu-area">
-                            <nav className="main-menu navbar-expand-lg">
-                                <NavBar logURL={logURL}/>
-                                <NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    
 
-            
-            <div className="sticky-header">
-                <div className="container clearfix">
-                    <figure className="logo-box"><a href="/#"><img src="image/tp03/small-logo.png" alt="1111人力銀行" /></a></figure>
-                    <div className="menu-area">
-                        <nav className="main-menu navbar-expand-lg">
-                            <NavBar logURL={logURL}/>
-                            <NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
-                        </nav>
+    
+                    <div>
+                        <NavBar logURL={logURL}/>
+                        <NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
                     </div>
-                </div>
-            </div>
-        </header>
                 
     );
 

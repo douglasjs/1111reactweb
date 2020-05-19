@@ -3,92 +3,78 @@
 function CompanyJobs() {
 
     return (
-        <div id="jobs" className="testimonial-landing-area custom-top">
+        <section id="jobs" className="service-style-three gray-bg centred">
+            <div className="anim-icon">
+                <div className="icon icon-1"></div>
+                <div className="icon icon-2 rotate-me"></div>
+                <div className="icon icon-3 float-bob-y"></div>
+                <div className="icon icon-4 float-bob-x"></div>
+                <div className="icon icon-5"></div>
+                <div className="icon icon-6 rotate-me"></div>
+            </div>
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-9 m-auto">
-                        <div className="testimonial-content-landing">
-                            
-                            <div className="testimonial-item testimonial-item--2">
-                                <figure className="client-thumb">
-                                    <img src="image/tp02/jobs/jobs_logo_01.png" alt="1111人力銀行職缺介紹" />
-                                </figure>
-
-                                <div className="client-quote">
-                                    <h5 className="text-brand">部落格寫手/文章編輯撰寫</h5>
-                                </div>
-
-                                <div className="client-info">
-                                    <h6 className="client-title">月薪 25,000元 至 38,000元</h6>
-                                    <span className="client-designation">台中市西屯區</span>
-                                </div>
-                                <div className="button-item mt-15">
-                                    <a target="_blank" href="https://www.1111.com.tw/corp/70449023/#c4" rel="noopener noreferrer" className="btn-brand btn-lg">我要應徵</a>
-                                </div>
-                            </div>
-                            
-                            <div className="testimonial-item testimonial-item--2">
-                                <figure className="client-thumb">
-                                    <img src="image/tp02/jobs/jobs_logo_02.png" alt="1111人力銀行職缺介紹" />
-                                </figure>
-
-                                <div className="client-quote">
-                                    <h5 className="text-brand">網路行銷企劃 助理</h5>
-                                </div>
-
-                               
-
-                                <div className="client-info">
-                                    <h6 className="client-title">月薪 25,000元 至 35,000元</h6>
-                                    <span className="client-designation">台中市西屯區</span>
-                                </div>
-                                <div className="button-item mt-15">
-                                    <a target="_blank" href="https://www.1111.com.tw/corp/70449023/#c4" rel="noopener noreferrer" className="btn-brand btn-lg">我要應徵</a>
-                                </div>
-                            </div>
-                            
-                            <div className="testimonial-item testimonial-item--2">
-                                <figure className="client-thumb">
-                                    <img src="image/tp02/jobs/jobs_logo_03.png" alt="1111人力銀行職缺介紹" />
-                                </figure>
-
-                                <div className="client-quote">
-                                    <h5 className="text-brand">美術網頁設計師</h5>
-                                </div>
-
-                                
-
-                                <div className="client-info">
-                                    <h6 className="client-title">月薪 25,000元 至 50,000元</h6>
-                                    <span className="client-designation">台中市西屯區</span>
-                                </div>
-                                <div className="button-item mt-15">
-                                    <a target="_blank" href="https://www.1111.com.tw/corp/70449023/#c4" rel="noopener noreferrer" className="btn-brand btn-lg">我要應徵</a>
-                                </div>
-                            </div>
-                            
-                            <div className="testimonial-item testimonial-item--2">
-                                <figure className="client-thumb">
-                                    <img src="image/tp02/jobs/jobs_logo_04.png" alt="1111人力銀行職缺介紹" />
-                                </figure>
-
-                                <div className="client-quote">
-                                    <h5 className="text-brand">網頁設計師(需有相關工作經驗)</h5>
-                                </div>
-
-                                <div className="client-info">
-                                    <h6 className="client-title">月薪 25,000元 至 40,000元</h6>
-                                    <span className="client-designation">台中市西屯區</span>
-                                </div>
-                                <div className="button-item mt-15">
-                                    <a target="_blank" href="https://www.1111.com.tw/corp/70449023/#c4"  rel="noopener noreferrer" className="btn-brand btn-lg">我要應徵</a>
-                                </div>
-                            </div>
+                <div className="sec-title">
+                    <h4>Jobs</h4>
+                    <h1>職缺介紹</h1>
+                </div>
+                <div className="three-column-carousel owl-carousel owl-theme owl-nav-none">
+                    <div className="service-block-three">
+                        <div className="inner-box">
+                            <div className="icon-box"><i className="flaticon-digital-marketing"></i></div>
+                            <h4><a href="/#">【中壢-儲備門市經理】</a></h4>
+                            <div className="text benefit-hide-text"><p>地區：桃園市中壢區</p></div>
+                            <div className="text benefit-hide-text"><p>月薪 38,000元起</p></div>
+                            <div className="text benefit-hide-text"><p>3年以上工作經驗 │大學、碩士、博士</p></div>
+                            <div className="btn-box p-t-20"><a className="btn-style-four" target="_blank" rel="noopener noreferrer" href="https://www.1111.com.tw/job/91284482/">我要應徵</a></div>
                         </div>
                     </div>
+                    
+                    <div className="service-block-three">
+                        <div className="inner-box">
+                            <div className="icon-box"><i className="flaticon-digital-marketing"></i></div>
+                            <h4><a href="/#">【台中-儲備門市經理】</a></h4>
+                            <div className="text benefit-hide-text"><p>地區：台中市南屯區</p></div>
+                            <div className="text benefit-hide-text"><p>月薪 35,000元起</p></div>
+                            <div className="text benefit-hide-text"><p>3年以上工作經驗 │大學、碩士、博士</p></div>
+                            <div className="btn-box p-t-20"><a className="btn-style-four" target="_blank" rel="noopener noreferrer" href="https://www.1111.com.tw/job/91284471/">我要應徵</a></div>
+                        </div>
+                    </div>
+                    
+                    <div className="service-block-three">
+                        <div className="inner-box">
+                            <div className="icon-box"><i className="flaticon-digital-marketing"></i></div>
+                            <h4><a href="/#">【板橋-儲備門市經理】</a></h4>
+                            <div className="text benefit-hide-text"><p>地區：新北市板橋區</p></div>
+                            <div className="text benefit-hide-text"><p>月薪 38,000元起</p></div>
+                            <div className="text benefit-hide-text"><p>3年以上工作經驗 │大學、碩士、博士</p></div>
+                            <div className="btn-box p-t-20"><a className="btn-style-four" target="_blank" rel="noopener noreferrer" href="https://www.1111.com.tw/job/91284463/">我要應徵</a></div>
+                        </div>
+                    </div>
+                    
+                    <div className="service-block-three">
+                        <div className="inner-box">
+                            <div className="icon-box"><i className="flaticon-digital-marketing"></i></div>
+                            <h4><a href="/#">【客服業務專員】</a></h4>
+                            <div className="text benefit-hide-text"><p>地區：桃園市桃園區</p></div>
+                            <div className="text benefit-hide-text"><p>月薪 38,000元起</p></div>
+                            <div className="text benefit-hide-text"><p>2年以上工作經驗 │大學、碩士、博士</p></div>
+                            <div className="btn-box p-t-20"><a className="btn-style-four" target="_blank" rel="noopener noreferrer" href="https://www.1111.com.tw/job/91284460/">我要應徵</a></div>
+                        </div>
+                    </div>
+                    
+                    <div className="service-block-three">
+                        <div className="inner-box">
+                            <div className="icon-box"><i className="flaticon-digital-marketing"></i></div>
+                            <h4><a href="/#">【新竹-儲備門市經理】</a></h4>
+                            <div className="text benefit-hide-text"><p>地區：新竹縣竹北市 </p></div>
+                            <div className="text benefit-hide-text"><p>月薪 38,000元起</p></div>
+                            <div className="text benefit-hide-text"><p>3年以上工作經驗 │大學、碩士、博士</p></div>
+                            <div className="btn-box p-t-20"><a className="btn-style-four" target="_blank" rel="noopener noreferrer" href="https://www.1111.com.tw/job/91284452/">我要應徵</a></div>
+                        </div>
+                    </div>                
                 </div>
             </div>
-        </div>
+        </section>
     )
 
 }

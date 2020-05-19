@@ -8,43 +8,22 @@ import useScript from '../../sharecomponents/usescript';
 function CustomerWeb(props) {
 
     const URL = [
-        '/assets/tp04/js/jquery.min.js',
-        '/assets/tp04/js/popper.min.js',
-        '/assets/tp04/js/bootstrap.min.js',
-        '/assets/tp04/js/parallax.min.js',
-        '/assets/tp04/js/owl.carousel.min.js',
-        '/assets/tp04/js/slick.min.js',
-        '/assets/tp04/js/jquery.meanmenu.js',
-        '/assets/tp04/js/jquery.appear.min.js',
-        '/assets/tp04/js/odometer.min.js',
-        '/assets/tp04/js/jquery.nice-select.min.js',
-        '/assets/tp04/js/jquery.magnific-popup.min.js',
-        '/assets/tp04/js/wow.min.js',
-        '/assets/tp04/js/jquery.ajaxchimp.min.js',
-        '/assets/tp04/js/form-validator.min.js',
-        '/assets/tp04/js/contact-form-script.js',
-        '/assets/tp04/js/main.js',
+        '/assets/tp04/vendors/modernizr.min.js',
+        '/assets/tp04/vendors/jquery.min.js',
+        '/assets/tp04/js/theme-vendors.js',
+        '/assets/tp04/js/theme.min.js',
         '/assets/tp04/js/goTopButton.js'
        ]
     useScript(URL);
 
 
     return (
-         
-        <div>
-
-            {/*<div className="preloader">
-                <div className="loader">
-                    <div className="shadow"></div>
-                    <div className="box"></div>
-                </div>
-            </div>*/}
-
+        
+        <div id="wrap">
             <CustomerHeader {...props}/>
             <CustomerMain {...props}/>
             <CustomerFoot {...props}/>
-
-        </div>    
+        </div>
       
     )
 

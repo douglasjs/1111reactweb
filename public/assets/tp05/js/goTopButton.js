@@ -39,7 +39,7 @@ const scrollToTop = () => {
 // When the button is clicked, run our ScrolltoTop function above!
 scrollToTopButton.onclick = function(e) {
   e.preventDefault();
-  window.open("https://www.1111.com.tw/corp/51395296/?agent=sticktop_51395296#c4");
+  window.open("https://www.1111.com.tw/corp/72189449/#c4");
   //scrollToTop();
 }
 
@@ -69,7 +69,8 @@ window.addEventListener("scroll", scrollFuncIcon);
 
 const scrollToTopIcon = () => {
   // Let's set a variable for the number of pixels we are from the top of the document.
-  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  const c = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+  //const c = document.documentElement.scrollTop || document.body.scrollTop;
   
   // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
   // We'll also animate that scroll with requestAnimationFrame:
@@ -79,6 +80,8 @@ const scrollToTopIcon = () => {
     // ScrollTo takes an x and a y coordinate.
     // Increase the '10' value to get a smoother/slower scroll!
     window.scrollTo(0, c - c / 10);
+  } else {
+	  window.location = window.location.origin + window.location.pathname + '#body-top';
   }
 };
 

@@ -11,34 +11,42 @@ class Session6 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            customizeEnable : '',
-            customizeName : '',
-            customizeTitle : '',
-            customizeSubTitle : '',
-            card1Title : '',
-            card1Content : '',
+            customizeEnable : ' ',
+            customizeName : ' ',
+            customizeTitle : ' ',
+            customizeSubTitle : ' ',
+            card1Title : ' ',
+            card1Content : ' ',
             card1Img : ' ',
             card1ImgUpload : '',
-            card2Title : '',
-            card2Content : '',
+            card2Title : ' ',
+            card2Content : ' ',
             card2Img : ' ',
             card2ImgUpload : '',
-            card3Title : '',
-            card3Content : '',
+            card3Title : ' ',
+            card3Content : ' ',
             card3Img : ' ',
             card3ImgUpload : '',
-            card4Title : '',
-            card4Content : '',
+            card4Title : ' ',
+            card4Content : ' ',
             card4Img : ' ',
             card4ImgUpload : '',
-            customizeTag1 : '',
-            customizeTag2 : '',
-            customizeTag3 : '',
-            customizeTag4 : '',
-            customizeURL1 : '',
-            customizeURL2 : '',
-            customizeURL3 : '',
-            customizeURL4 : ''
+            card5Title : ' ',
+            card5Content : ' ',
+            card5Img : ' ',
+            card5ImgUpload : '',
+            card6Title : ' ',
+            card6Content : ' ',
+            card6Img : ' ',
+            card6ImgUpload : '',
+            card7Title : ' ',
+            card7Content : ' ',
+            card7Img : ' ',
+            card7ImgUpload : '',
+            card8Title : ' ',
+            card8Content : ' ',
+            card8Img : ' ',
+            card8ImgUpload : ' '
         }
 
     }
@@ -51,29 +59,29 @@ class Session6 extends React.Component{
         const submitObj={
             ono: cid,
             themeNum : event.target.themeNum6.value,
-            customizeEnable : event.target.customizeEnable.checked,
-            customizeName : event.target.customizeName.value,
-            customizeTitle : event.target.customizeTitle.value,
-            customizeSubTitle : event.target.customizeSubTitle.value,
+            customizeEnable:  event.target.customizeEnable.checked,
+            customizeName:  event.target.customizeName.value,
+            customizeTitle:  event.target.customizeTitle.value,
+            customizeSubTitle:  event.target.customizeSubTitle.value,
 
-            card1Title : event.target.card1Title.value,
-            card1Content : event.target.card1Content.value,
-            card1Img : event.target.card1Img.value,
+            card1Title:  event.target.card1Title.value,
+            card1Content:  event.target.card1Content.value,
+            card1Img:  event.target.card1Img.value,
             card1ImgUpload : this.state.card1ImgUpload ? this.state.card1ImgUpload.value : null,
 
-            card2Title : event.target.card2Title.value,
-            card2Content : event.target.card2Content.value,
-            card2Img : event.target.card2Img.value,
+            card2Title:  event.target.card2Title.value,
+            card2Content:  event.target.card2Content.value,
+            card2Img:  event.target.card2Img.value,
             card2ImgUpload : this.state.card2ImgUpload ? this.state.card2ImgUpload.value : null,
 
-            card3Title : event.target.card3Title.value,
-            card3Content : event.target.card3Content.value,
-            card3Img : event.target.card3Img.value,
+            card3Title:  event.target.card3Title.value,
+            card3Content:  event.target.card3Content.value,
+            card3Img:  event.target.card3Img.value,
             card3ImgUpload : this.state.card3ImgUpload ? this.state.card3ImgUpload.value : null,
 
-            card4Title : event.target.card4Title.value,
-            card4Content : event.target.card4Content.value,
-            card4Img : event.target.card4Img.value,
+            card4Title:  event.target.card4Title.value,
+            card4Content:  event.target.card4Content.value,
+            card4Img:  event.target.card4Img.value,
             card4ImgUpload : this.state.card4ImgUpload ? this.state.card4ImgUpload.value : null,
 
             card5Title : '',
@@ -95,15 +103,37 @@ class Session6 extends React.Component{
             card8Content : '',
             card8Img : '',
             card8ImgUpload : null,
+
+            /*
+            card5Title:  event.target.card5Title.value,
+            card5Content:  event.target.card5Content.value,
+            card5Img:  event.target.card5Img.value,
+            card5ImgUpload : this.state.card5ImgUpload ? this.state.card5ImgUpload.value : null,
+
+            card6Title:  event.target.card6Title.value,
+            card6Content:  event.target.card6Content.value,
+            card6Img:  event.target.card6Img.value,
+            card6ImgUpload : this.state.card6ImgUpload ? this.state.card6ImgUpload.value : null,
+
+            card7Title:  event.target.card7Title.value,
+            card7Content:  event.target.card7Content.value,
+            card7Img:  event.target.card7Img.value,
+            card7ImgUpload : this.state.card7ImgUpload ? this.state.card7ImgUpload.value : null,
+
+            card8Title:  event.target.card8Title.value,
+            card8Content:  event.target.card8Content.value,
+            card8Img:  event.target.card8Img.value,
+            card8ImgUpload : this.state.card8ImgUpload ? this.state.card8ImgUpload.value : null,
+            */            
             
-            customizeTag1 : event.target.customizeTag1.value,
-            customizeTag2 : event.target.customizeTag2.value,
-            customizeTag3 : event.target.customizeTag3.value,
-            customizeTag4 : event.target.customizeTag4.value,
-            customizeURL1 : event.target.customizeURL1.value,
-            customizeURL2 : event.target.customizeURL2.value,
-            customizeURL3 : event.target.customizeURL3.value,
-            customizeURL4 : event.target.customizeURL4.value
+            customizeTag1: '',
+            customizeTag2: '',
+            customizeTag3: '',
+            customizeTag4: '',
+            customizeURL1: '',
+            customizeURL2: '',
+            customizeURL3: '',
+            customizeURL4: '' 
         }
 
         if(event.target.action6.value === 'create'){
@@ -135,15 +165,20 @@ class Session6 extends React.Component{
         let card4Title = this.state.card4Title;
         let card4Content  = this.state.card4Content;
         let card4Img = this.state.card4Img;
-        let customizeTag1 = this.state.customizeTag1;
-        let customizeTag2 = this.state.customizeTag2;
-        let customizeTag3 = this.state.customizeTag3;
-        let customizeTag4 = this.state.customizeTag4;
-        let customizeURL1 = this.state.customizeURL1;
-        let customizeURL2 = this.state.customizeURL2;
-        let customizeURL3 = this.state.customizeURL3;
-        let customizeURL4 = this.state.customizeURL4;
-        
+        /*
+        let card5Title = this.state.card5Title;
+        let card5Content  = this.state.card5Content;
+        let card5Img = this.state.card5Img;
+        let card6Title = this.state.card6Title;
+        let card6Content  = this.state.card6Content;
+        let card6Img = this.state.card6Img;
+        let card7Title = this.state.card7Title;
+        let card7Content  = this.state.card7Content;
+        let card7Img = this.state.card7Img;
+        let card8Title = this.state.card8Title;
+        let card8Content  = this.state.card8Content;
+        let card8Img = this.state.card8Img;
+        */
 
         const sessionName=  "自定義";
         let themeNum = this.props.themeNum;
@@ -152,43 +187,45 @@ class Session6 extends React.Component{
         if(customizeData && customizeData.length > 0){
             actionType = 'modify';
             customizeData.forEach(element => {
-                customizeEnable = customizeEnable !=="" ? customizeEnable : element.customizeEnable;
-                customizeName = customizeName !=="" ? customizeName : element.customizeName;
-                customizeTitle = customizeTitle !=="" ? customizeTitle : element.customizeTitle;
-                customizeSubTitle = customizeSubTitle !=="" ? customizeSubTitle : element.customizeSubTitle;
+                customizeEnable = customizeEnable !==" " ? customizeEnable : element.customizeEnable;
+                customizeName = customizeName !==" " ? customizeName : element.customizeName;
+                customizeTitle = customizeTitle !==" " ? customizeTitle : element.customizeTitle;
+                customizeSubTitle = customizeSubTitle !==" " ? customizeSubTitle : element.customizeSubTitle;
 
-                card1Title = card1Title !=="" ? card1Title : element.card1Title;
-                card1Content = card1Content !=="" ? card1Content : element.card1Content;
+                card1Title = card1Title !==" " ? card1Title : element.card1Title;
+                card1Content = card1Content !==" " ? card1Content : element.card1Content;
                 card1Img = card1Img !==" " ? card1Img : element.card1Img;
 
-                card2Title = card2Title !=="" ? card2Title : element.card2Title;
-                card2Content = card2Content !=="" ? card2Content : element.card2Content;
+                card2Title = card2Title !==" " ? card2Title : element.card2Title;
+                card2Content = card2Content !==" " ? card2Content : element.card2Content;
                 card2Img = card2Img !==" " ? card2Img : element.card2Img;
 
-                card3Title = card3Title !=="" ? card3Title : element.card3Title;
-                card3Content = card3Content !=="" ? card3Content : element.card3Content;
+                card3Title = card3Title !==" " ? card3Title : element.card3Title;
+                card3Content = card3Content !==" " ? card3Content : element.card3Content;
                 card3Img = card3Img !==" " ? card3Img : element.card3Img;
 
-                card4Title = card4Title !=="" ? card4Title : element.card4Title;
-                card4Content = card4Content !=="" ? card4Content : element.card4Content;
+                card4Title = card4Title !==" " ? card4Title : element.card4Title;
+                card4Content = card4Content !==" " ? card4Content : element.card4Content;
                 card4Img = card4Img !==" " ? card4Img : element.card4Img;
 
-                customizeTag1 = customizeTag1 !=="" ? customizeTag1 : element.customizeTag1;
-                customizeTag2 = customizeTag2 !=="" ? customizeTag2 : element.customizeTag2;
-                customizeTag3 = customizeTag3 !=="" ? customizeTag3 : element.customizeTag3;
-                customizeTag4 = customizeTag4 !=="" ? customizeTag4 : element.customizeTag4;
-                customizeURL1 = customizeURL1 !=="" ? customizeURL1 : element.customizeURL1;
-                customizeURL2 = customizeURL2 !=="" ? customizeURL2 : element.customizeURL2;
-                customizeURL3 = customizeURL3 !=="" ? customizeURL3 : element.customizeURL3;
-                customizeURL4 = customizeURL4 !=="" ? customizeURL4 : element.customizeURL4;
+                /*
+                card5Title = card5Title !==" " ? card5Title : element.card5Title;
+                card5Content = card5Content !==" " ? card5Content : element.card5Content;
+                card5Img = card5Img !==" " ? card5Img : element.card5Img;
+
+                card6Title = card6Title !==" " ? card6Title : element.card6Title;
+                card6Content = card6Content !==" " ? card6Content : element.card6Content;
+                card6Img = card6Img !==" " ? card6Img : element.card6Img;
+
+                card7Title = card7Title !==" " ? card7Title : element.card7Title;
+                card7Content = card7Content !==" " ? card7Content : element.card7Content;
+                card7Img = card7Img !==" " ? card7Img : element.card7Img;
+
+                card8Title = card8Title !==" " ? card8Title : element.card8Title;
+                card8Content = card8Content !==" " ? card8Content : element.card8Content;
+                card8Img = card8Img !==" " ? card8Img : element.card8Img;
+                */
             })
-        }
-        
-        if(actionType === 'create'){
-            customizeURL1 = `https://www.1111.com.tw/corp/${cid}/`
-            customizeURL2 = `https://www.1111.com.tw/corp/${cid}/`
-            customizeURL3 = `https://www.1111.com.tw/corp/${cid}/`
-            customizeURL4 = `https://www.1111.com.tw/corp/${cid}/`
         }
 
         // enable
@@ -221,6 +258,36 @@ class Session6 extends React.Component{
         }else{
             card4ImgUpload = this.state.card4Img !==' ' ?  this.state.card4ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card4Img}`;
         }
+
+        /*
+        let card5ImgUpload ="";
+        if(card5Img === " "){
+            card5ImgUpload = "/image/logo-1111.png";
+        }else{
+            card5ImgUpload = this.state.card5Img !==' ' ?  this.state.card5ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card5Img}`;
+        } 
+
+        let card6ImgUpload ="";
+        if(card6Img === " "){
+            card6ImgUpload = "/image/logo-1111.png";
+        }else{
+            card6ImgUpload = this.state.card6Img !==' ' ?  this.state.card6ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card6Img}`;
+        } 
+
+        let card7ImgUpload ="";
+        if(card7Img === " "){
+            card7ImgUpload = "/image/logo-1111.png";
+        }else{
+            card7ImgUpload = this.state.card7Img !==' ' ?  this.state.card7ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card7Img}`;
+        } 
+
+        let card8ImgUpload ="";
+        if(card8Img === " "){
+            card8ImgUpload = "/image/logo-1111.png";
+        }else{
+            card8ImgUpload = this.state.card8Img !==' ' ?  this.state.card8ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card8Img}`;
+        } 
+        */
 
         return(
             <div className="card shadow mb-4">
@@ -360,24 +427,16 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片1標題' notice='(字數限制為30個字以內)' inputName='card1Title' inputState={card1Title}
-                                                    stateObj={this} required={false} checkValue='30' />
+                                                <InputText title='卡片1標題' notice='(字數限制為8個字以內)' inputName='card1Title' inputState={card1Title}
+                                                    stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片1內文' notice='(字數限制為120個字以內)' inputName='card1Content' inputState={card1Content}
-                                                    rows='2' stateObj={this} required={false} checkValue='120' />
-                                            </div>
-                                            <div className="form-row row-style-w95">
-                                                <InputText title='卡片1標籤' notice='(字數限制為15個字以內)' inputName='customizeTag1' inputState={customizeTag1}
-                                                    stateObj={this} required={false} checkValue='15' />
-                                            </div>
-                                            <div className="form-row row-style-w95">
-                                                <InputText title='卡片1網址' notice='(請輸入網址)' inputName='customizeURL1' inputState={customizeURL1}
-                                                    stateObj={this} required={false} checkValue='200' />
+                                                <InputTextArea title='卡片1內文' notice='(字數限制為20個字以內)' inputName='card1Content' inputState={card1Content}
+                                                    rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <ImgUpload title='卡片1圖片' notice='(圖檔尺寸大小為 400*300，接受格式為png、jpg)' objName='card1Img' imgUpload={card1ImgUpload} 
-                                                    imgFileName={card1Img} parentObj={this} imgW={400} imgH={300} required={false} />
+                                                <ImgUpload title='卡片1圖片' notice='(圖檔尺寸大小為 350*350  ，接受格式為png、jpg)' objName='card1Img'  imgUpload={card1ImgUpload} 
+                                                    imgFileName={card1Img} parentObj={this} imgW={350} imgH={350} required={false} />
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
@@ -447,24 +506,16 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片2標題' notice='(字數限制為30個字以內)' inputName='card2Title' inputState={card2Title}
-                                                    stateObj={this} required={false} checkValue='30' />
+                                                <InputText title='卡片2標題' notice='(字數限制為8個字以內)' inputName='card2Title' inputState={card2Title}
+                                                    stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片2內文' notice='(字數限制為120個字以內)' inputName='card2Content' inputState={card2Content}
-                                                    rows='2' stateObj={this} required={false} checkValue='120' />
-                                            </div>
-                                            <div className="form-row row-style-w95">
-                                                <InputText title='卡片2標籤' notice='(字數限制為15個字以內)' inputName='customizeTag2' inputState={customizeTag2}
-                                                    stateObj={this} required={false} checkValue='15' />
-                                            </div>
-                                            <div className="form-row row-style-w95">
-                                                <InputText title='卡片2網址' notice='(請輸入網址)' inputName='customizeURL2' inputState={customizeURL2}
-                                                    stateObj={this} required={false} checkValue='200' />
+                                                <InputTextArea title='卡片2內文' notice='(字數限制為20個字以內)' inputName='card2Content' inputState={card2Content}
+                                                    rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <ImgUpload title='卡片2圖片' notice='(圖檔尺寸大小為 400*300，接受格式為png、jpg)' objName='card2Img' imgUpload={card2ImgUpload} 
-                                                    imgFileName={card2Img} parentObj={this} imgW={400} imgH={300} required={false} />
+                                                <ImgUpload title='卡片2圖片' notice='(圖檔尺寸大小為 350*350  ，接受格式為png、jpg)' objName='card2Img'  imgUpload={card2ImgUpload} 
+                                                    imgFileName={card2Img} parentObj={this} imgW={350} imgH={350} required={false} />
                                             </div>
                                        </div>
                                        <div className="col-md-6 mb-3">                                    
@@ -533,25 +584,17 @@ class Session6 extends React.Component{
                                 <div className="card-body collapse collapsed" id="collapseCard6-3">
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
-                                        <div className="form-row row-style-w95">
-                                                <InputText title='卡片3標題' notice='(字數限制為30個字以內)' inputName='card3Title' inputState={card3Title}
-                                                    stateObj={this} required={false} checkValue='30' />
+                                            <div className="form-row row-style-w95">
+                                                <InputText title='卡片3標題' notice='(字數限制為8個字以內)' inputName='card3Title' inputState={card3Title}
+                                                    stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片3內文' notice='(字數限制為120個字以內)' inputName='card3Content' inputState={card3Content}
-                                                    rows='2' stateObj={this} required={false} checkValue='120' />
-                                            </div>
-                                            <div className="form-row row-style-w95">
-                                                <InputText title='卡片3標籤' notice='(字數限制為15個字以內)' inputName='customizeTag3' inputState={customizeTag3}
-                                                    stateObj={this} required={false} checkValue='15' />
-                                            </div>
-                                            <div className="form-row row-style-w95">
-                                                <InputText title='卡片3網址' notice='(請輸入網址)' inputName='customizeURL3' inputState={customizeURL3}
-                                                    stateObj={this} required={false} checkValue='200' />
+                                                <InputTextArea title='卡片3內文' notice='(字數限制為20個字以內)' inputName='card3Content' inputState={card3Content}
+                                                    rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <ImgUpload title='卡片3圖片' notice='(圖檔尺寸大小為 400*300，接受格式為png、jpg)' objName='card3Img' imgUpload={card3ImgUpload} 
-                                                    imgFileName={card3Img} parentObj={this} imgW={400} imgH={300} required={false} />
+                                                <ImgUpload title='卡片3圖片' notice='(圖檔尺寸大小為 350*350  ，接受格式為png、jpg)' objName='card3Img'  imgUpload={card3ImgUpload} 
+                                                    imgFileName={card3Img} parentObj={this} imgW={350} imgH={350} required={false} />
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
@@ -620,25 +663,17 @@ class Session6 extends React.Component{
                                 <div className="card-body collapse collapsed" id="collapseCard6-4">
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
-                                        <div className="form-row row-style-w95">
-                                                <InputText title='卡片4標題' notice='(字數限制為30個字以內)' inputName='card4Title' inputState={card4Title}
-                                                    stateObj={this} required={false} checkValue='30' />
+                                            <div className="form-row row-style-w95">
+                                                <InputText title='卡片4標題' notice='(字數限制為8個字以內)' inputName='card4Title' inputState={card4Title}
+                                                    stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片4內文' notice='(字數限制為120個字以內)' inputName='card4Content' inputState={card4Content}
-                                                    rows='2' stateObj={this} required={false} checkValue='120' />
-                                            </div>
-                                            <div className="form-row row-style-w95">
-                                                <InputText title='卡片4標籤' notice='(字數限制為15個字以內)' inputName='customizeTag4' inputState={customizeTag4}
-                                                    stateObj={this} required={false} checkValue='15' />
-                                            </div>
-                                            <div className="form-row row-style-w95">
-                                                <InputText title='卡片4網址' notice='(請輸入網址)' inputName='customizeURL4' inputState={customizeURL4}
-                                                    stateObj={this} required={false} checkValue='200' />
+                                                <InputTextArea title='卡片4內文' notice='(字數限制為20個字以內)' inputName='card4Content' inputState={card4Content}
+                                                    rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <ImgUpload title='卡片4圖片' notice='(圖檔尺寸大小為 400*300，接受格式為png、jpg)' objName='card4Img' imgUpload={card4ImgUpload} 
-                                                    imgFileName={card4Img} parentObj={this} imgW={400} imgH={300} required={false} />
+                                                <ImgUpload title='卡片4圖片' notice='(圖檔尺寸大小為 350*350  ，接受格式為png、jpg)' objName='card4Img'  imgUpload={card4ImgUpload} 
+                                                    imgFileName={card4Img} parentObj={this} imgW={350} imgH={350} required={false} />
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    

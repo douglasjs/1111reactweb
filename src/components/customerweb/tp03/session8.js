@@ -2,47 +2,64 @@
 
 function CompanyContact() {
 
-    let imgURL = "url(image/tp03/background/testimonial-bg.png)";
-
     return (
-        <section id="contact" className="contact-section" style={{backgroundImage: imgURL}}>
-            <div className="container">
-                <div className="row">
-                    
-                    <div className="col-lg-12 col-md-12 col-sm-12 form-column">
-                        <div className="contact-form-area">
-                            <div className="sec-title centred">
-                                <h4 className="m-b-0">Contact</h4>
-                                <h1>聯絡我們</h1>
-                            </div>
-
-                            <form method="post" id="register_form" className="default-form" action="http://azim.commonsupport.com/Rivox/sendemail.php"> 
-                                <div className="row p-t-20">
-                                    <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-                                        <input type="text" name="username" placeholder="姓名*" required data-error="格式錯誤" />
-                                    </div>
-                                    <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-                                        <input type="email" name="email" placeholder="電子郵件*" data-error="郵件格式錯誤" required />
-                                    </div>
-                                    <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-                                        <input type="text" name="phone" placeholder="電話" required />
-                                    </div>
-                                    <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-                                        <input type="text" name="subject" placeholder="主題" required />
-                                    </div>
-                                    <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-                                        <textarea name="message" placeholder="問題"></textarea>
-                                    </div>
-                                    <div className="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                        <button type="submit" className="btn-style-two" name="submit-form">送出</button>
-                                    </div>
+        <div id="contact" className="finance-contact-area">
+            <div className="contact-request-area">
+                <div className="row no-gutters">
+                    <div className="col-lg-3 col-xl-5">
+                        <div className="requested-thumb bg-img" data-bg="image/tp03/contact-1.jpg"></div>
+                    </div>
+                    <div className="col-lg-9 col-xl-7">
+                        <div className="requested-content-wrap pt-30 bg-secondary">
+                            <div className="requested-content-inner">
+                                <div className="requested-content-header text-left">
+                                    <h5 className="text-white">Contact</h5>
+                                    <h4 className="font-weight-bold">聯絡我們</h4>
                                 </div>
-                            </form>
+                                <div className="contact-form-wrap pt-30 pb-30">
+                                    <form id="contact-form" action="http://whizthemes.com/mail-php/raju/arden/mail.php" method="post">
+                                        <div className="contact-from-content mtn-70 mtn-sm-30">
+                                            <div className="row">
+                                                <div className="col-md-6">
+                                                    <div className="form-input-item light">
+                                                        <input type="text" name="con_name" placeholder="姓名" required />
+                                                    </div>
+                                                </div>                                                
+                                                <div className="col-md-6">
+                                                    <div className="form-input-item light">
+                                                        <input type="text" name="con_phone" placeholder="連絡電話" />
+                                                    </div>
+                                                </div>
+                                                <div className="col-lg-12">
+                                                    <div className="form-input-item light">
+                                                        <input type="email" name="con_email" placeholder="電子郵件" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row align-items-end">
+                                                <div className="col-lg-12">
+                                                    <div className="form-input-item light">
+                                                        <label htmlFor="message" className="sr-only">Message</label>
+                                                        <textarea name="con_message" id="message" cols="30" rows="4" placeholder="您的訊息" required></textarea>
+                                                    </div>
+                                                </div>
+                                                <div className="col-lg-3">
+                                                    <div className="form-input-item light mt-i-30">
+                                                        <button className="btn btn-brand2">送出</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="form-message"></div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+        </div>
  
     )
 

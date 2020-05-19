@@ -1,156 +1,99 @@
 ﻿import React from 'react';
-import envConfig from '../../../config/env';
 
-class CompanyBenifit  extends React.Component {
+function CompanyBenifit() {
 
-    constructor(props){
-        super(props);
-        this.state={};
-    }
-
-    componentDidMount(){
-        const cid = this.props.match.params.cid;
-        this.props.getbenefitList(cid, this.props.themeNum);
-    }
-
-    render(){
-        const { benefitData } = this.props.benefitReducer;
-        const cid = this.props.match.params.cid.trim();
+    return (
         
-        let benefitContent;
-        let benefitImg;
-        let benefitImg2;
-        let benefitSubTitle1;
-        let benefitSubTitle2;
-        let benefitSubTitle3;
-        let benefitSubTitle4;
-        let benefitSubTitle5;
-        let benefitSubTitle6;
-        let benefitSubContent1;
-        let benefitSubContent2;
-        let benefitSubContent3;
-        let benefitSubContent4;
-        let benefitSubContent5;
-        let benefitSubContent6;
-        let benefitSubImg1;
+        <section id="benefit" className="vc_row pt-10 pb-10">
+			<div className="container">
+				
+				<div className="row">
 
-        if(benefitData && benefitData.length > 0){
-            benefitData.forEach(element => {
-                benefitContent =  element.benefitContent;
-                benefitImg = element.benefitImg;                
-                benefitImg2 = element.benefitImg2;
-                benefitSubTitle1 = element.benefitSubTitle1;
-                benefitSubTitle2 = element.benefitSubTitle2;
-                benefitSubTitle3 = element.benefitSubTitle2;
-                benefitSubTitle4 = element.benefitSubTitle4;
-                benefitSubTitle5 = element.benefitSubTitle5;
-                benefitSubTitle6 = element.benefitSubTitle6;
-                benefitSubContent1 = element.benefitSubContent1;
-                benefitSubContent2 = element.benefitSubContent2;
-                benefitSubContent3 = element.benefitSubContent3;
-                benefitSubContent4 = element.benefitSubContent4;
-                benefitSubContent5 = element.benefitSubContent5;
-                benefitSubContent6 = element.benefitSubContent6;
-                benefitSubImg1 = element.benefitSubImg1;
-            })
-        }
+					<div className="lqd-column col-md-10 col-md-offset-1">
 
-        // image
-        benefitImg = !benefitImg ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitImg}`;
-        benefitImg2 = !benefitImg2 ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitImg2}`;
-        benefitSubImg1 = !benefitSubImg1 ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitSubImg1}`;
+						<header className="fancy-title text-center mb-30" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":80,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
 
-        let benefitBgURL = "url(" + benefitSubImg1 + ")";
+							<h6 className="text-uppercase ltr-sp-2 font-size-13 font-weight-semibold text-secondary">Employee Benefit</h6>
+							<h2 className="mt-1 mb-2">員工福利</h2>
 
-        return (
-            <section  className="why-choose-us-area">
-                {benefitData && benefitData.length > 0 &&
-                <div id="benefit" className="container-fluid">
-                    <div className="row">
-                        <div className="col-lg-5 col-md-12">
-                            <div className="why-choose-us-slides owl-carousel owl-theme">
-                                <div className="why-choose-us-image bg1">
-                                    <img src={benefitImg} alt="員工福利" />
-                                </div>
+						</header>
 
-                                <div className="why-choose-us-image bg2">
-                                    <img src={benefitImg2} alt="員工福利" />
-                                </div>
+					</div>
 
-                            </div>
-                        </div>
+				</div>
 
-                        <div className="col-lg-7 col-md-12">
-                            <div className="why-choose-us-content text-left" style={{backgroundImage: benefitBgURL}}>
-                                <div className="content">
-                                    <div className="title">
-                                        <span className="sub-title">Your Benefits</span>
-                                        <h2>好 福 利</h2>
-                                        <p>{benefitContent}</p>
-                                    </div>
+				<div className="row" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"180","initValues":{"scale":0.8,"opacity":0},"animations":{"scale":1,"opacity":1}}'>
 
-                                    <ul className="features-list">
+					<div className="lqd-column col-md-6">
 
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-like"></i>
-                                            </div>
-                                            <span>{benefitSubTitle1}</span>
-                                            {benefitSubContent1}
-                                        </li>
+						<div className="iconbox iconbox-side iconbox-semiround iconbox-shadow iconbox-heading-sm iconbox-filled" id="ld_icon_box_5c4e9c4475e68">
+							<div className="iconbox-icon-wrap">
+								<span className="iconbox-icon-container">
+									<img src="./image/tp04/benefiticon01.svg" alt="福利" />
+								</span>
+							</div>
+							<div className="contents">
+								<h3 className="mb-2">獎金保險</h3>
+								<p>獎 金 類：全勤獎金、生日禮金、年終獎金、三節獎金、結婚禮金、彌月禮金。<br />保 險 類：勞保、健保、團保、勞退提撥金。</p>
+							</div>
+						</div>
 
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-customer-service"></i>
-                                            </div>
-                                            <span>{benefitSubTitle2}</span>
-                                            {benefitSubContent2}
-                                        </li>
+					</div>
 
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-care"></i>
-                                            </div>
-                                            <span>{benefitSubTitle3}</span>
-                                            {benefitSubContent3}
-                                            
-                                        </li>
+					<div className="lqd-column col-md-6">
 
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-team"></i>
-                                            </div>
-                                            <span>{benefitSubTitle4}</span>
-                                            {benefitSubContent4}
-                                        </li>
+						<div className="iconbox iconbox-side iconbox-semiround iconbox-shadow iconbox-heading-sm iconbox-filled" id="ld_icon_box_5c4e9c4475e69">
+							<div className="iconbox-icon-wrap">
+								<span className="iconbox-icon-container">
+									<img src="./image/tp04/benefiticon02.svg" alt="福利" />
+								</span>
+							</div>
+							<div className="contents">
+								<h3 className="mb-2">休閒娛樂</h3>
+								<p>員購優惠、家庭日聚餐、員工旅遊、尾牙活動。</p>
+							</div>
+						</div>
 
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-policy pl-10" ></i>
-                                            </div>
-                                            <span>{benefitSubTitle5}</span>
-                                            {benefitSubContent5}
-                                        </li>
+					</div>
 
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-education"></i>
-                                            </div>
-                                            <span>{benefitSubTitle6}</span>
-                                            {benefitSubContent6}                                            
-                                        </li>
+					<div className="lqd-column col-md-6">
 
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                }
-            </section>
-        )
+						<div className="iconbox iconbox-side iconbox-semiround iconbox-shadow iconbox-heading-sm iconbox-filled" id="ld_icon_box_5c4e9c4475e70">
+							<div className="iconbox-icon-wrap">
+								<span className="iconbox-icon-container">
+									<img src="./image/tp04/benefiticon03.svg" alt="福利" />
+								</span>
+							</div>
+							<div className="contents">
+								<h3 className="mb-2">訓練升遷</h3>
+								<p>OJT線上訓練、Off-JT外部訓練。<br />內部晉升考升遷。</p>
+							</div>
+						</div>
 
-    }
+					</div>
+
+					<div className="lqd-column col-md-6">
+
+						<div className="iconbox iconbox-side iconbox-semiround iconbox-shadow iconbox-heading-sm iconbox-filled" id="ld_icon_box_5c4e9c4475e71">
+							<div className="iconbox-icon-wrap">
+								<span className="iconbox-icon-container">
+									<img src="./image/tp04/benefiticon04.svg" alt="福利" />
+								</span>
+							</div>
+							<div className="contents">
+								<h3 className="mb-2">健康檢查</h3>
+								<p>「每年的健康檢查」是給員工健康的把關。</p>
+							</div>
+						</div>
+
+					</div>
+					
+				</div>
+
+			</div>
+		</section>
+    )
+
 }
 
 export default CompanyBenifit;

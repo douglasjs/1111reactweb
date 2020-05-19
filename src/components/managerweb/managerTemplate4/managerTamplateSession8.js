@@ -1,12 +1,16 @@
 import React from 'react';
 import InputSwitch from '../../sharecomponents/inputSwitch';
+import ImgUpload from '../../sharecomponents/imgUpload';
+import envConfig from '../../../config/env';
 import Msg from '../msg';
 
 class Session8 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            contactEnable : ''
+            contactEnable : ' ',
+            contactImg : ' ',
+            contactImgUpload : '',
         };     
     }
 
@@ -18,9 +22,9 @@ class Session8 extends React.Component{
         const submitObj={
             ono: cid,
             themeNum : event.target.themeNum8.value,
-            contactEnable : event.target.contactEnable.checked,
-            contactImg : '',
-            contactImgUpload : null
+            contactEnable:  event.target.contactEnable.checked,
+            contactImg:  event.target.contactImg.value,
+            contactImgUpload : this.state.contactImgUpload ? this.state.contactImgUpload.value : null
         }
 
         if(event.target.action8.value === 'create'){
@@ -32,20 +36,31 @@ class Session8 extends React.Component{
     }
 
     render(){
+        const cid = this.props.match.params.cid.trim();
         const { contactData, contactErr, contactIsLoading} = this.props.contactReducer;
 
 
         let contactEnable = this.state.contactEnable;
+        let contactImg = this.state.contactImg;
 
-        const sessionName = "聯絡我們";
+        const sessionName=  "聯絡我們";
         let themeNum = this.props.themeNum;
         let actionType = 'create';
 
         if(contactData && contactData.length > 0){
             actionType = 'modify';
             contactData.forEach(element => {
-                contactEnable = contactEnable !== ""  ? contactEnable : element.contactEnable;
+                contactEnable = contactEnable !==" "  ? contactEnable : element.contactEnable;
+                contactImg = contactImg !==" " ? contactImg : element.contactImg;
             })
+        }
+
+            
+        let contactImgUpload ="";
+        if(contactImg === " "){
+            contactImgUpload = "/image/logo-1111.png";
+        }else{
+            contactImgUpload = this.state.contactImg !==' ' ?  this.state.contactImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${contactImg}`;
         }
 
         return(
@@ -65,6 +80,8 @@ class Session8 extends React.Component{
                             </div>
                             <div className="form-row">
                                 <div className="col-md-6 mb-3">
+                                    <ImgUpload title={`${sessionName}背景圖片`} notice='(圖檔尺寸大小為 1920*1080 ，接受格式為png、jpg)' objName='contactImg'  imgUpload={contactImgUpload} 
+                                                    imgFileName={contactImg} parentObj={this} imgW={2400} imgH={1200} required={false} />
                                     <hr />
                                     <div  align="center"><button type='submit' id='action8' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
                                 </div>

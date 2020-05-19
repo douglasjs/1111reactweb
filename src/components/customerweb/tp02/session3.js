@@ -3,73 +3,52 @@
 function CompanyBenifit() {
 
     return (
-        <div id="benefit" className="service-area sm-top-custom bg-softWhite">
+        <section id="benefit" className="service-section feature-style-five">
+
+            <div className="anim-icon">
+                <div className="icon icon-1 rotate-me"></div>
+                <div className="icon icon-2"></div>
+                <div className="icon icon-3 float-bob-x"></div>
+            </div>
             <div className="container">
-                <div className="row align-items-center">
-                    <div className="col-lg-7 order-1 order-lg-0">
-                        <div className="service-inner-wrap service-business-classic">
-                            <div className="row">
-                                <div className="col-sm-6">
-                                    <div className="icon-box-item text-left">
-                                        <div className="icon-box__icon">
-                                            <img src="/image/tp02/benefit1.png" alt="福利" />
-                                        </div>
-                                        <div className="icon-box__txt">
-                                            <h6>法定項目</h6>
-                                            <p>勞保、健保、加班費、生理假、產假、勞退提撥金</p>
-                                        </div>
-                                    </div>
+                <div className="row">
+                    
+                    <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+                        <div className="image-box clearfix">
+                            <figure className="image image-1">
+                                <img src="image/tp02/feature-4.png" alt="1111人力銀行-員工福利" />
+                            </figure>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-md-12 col-sm-12 benefit-text content-column text-left">
+                        <div className="content-box">
+                            <div className="sec-title">
+                                <h4>BENEFIT</h4>
+                                <h1>員工福利</h1>
+                            </div>
+                            <div className="inner-box">
+                                <div className="single-item">
+                                    <div className="icon-box"><i className="flaticon-digital-marketing"></i></div>
+                                    <h3><a target="_blank" rel="noopener noreferrer" href="https://www.1111.com.tw/corp/9635172/#c3">獎 金 類</a></h3>
+                                    <div className="text">全勤獎金、年節獎金、激勵獎金、績效獎金</div>
                                 </div>
-
-                                <div className="col-sm-6">
-                                    <div className="icon-box-item text-left">
-                                        <div className="icon-box__icon">
-                                            <img src="/image/tp02/benefit2.png" alt="福利" />
-                                        </div>
-                                        <div className="icon-box__txt">
-                                            <h6>節慶福利</h6>
-                                            <p>年節禮券、生日禮券、春酒聚餐</p>
-                                        </div>
-                                    </div>
+                                <div className="single-item">
+                                    <div className="icon-box"><i className="flaticon-data"></i></div>
+                                    <h3><a target="_blank" rel="noopener noreferrer" href="https://www.1111.com.tw/corp/9635172/#c3">餐 飲 類</a></h3>
+                                    <div className="text">伙食津貼</div>
                                 </div>
-
-                                <div className="col-sm-6">
-                                    <div className="icon-box-item text-left">
-                                        <div className="icon-box__icon">
-                                           <img src="/image/tp02/benefit3.png" alt="福利" />
-                                        </div>
-                                        <div className="icon-box__txt">
-                                            <h6>獎金類</h6>
-                                            <p>全勤獎金、年節獎金、員工生日禮金、年終獎金、三節獎金、激勵獎金、績效獎金</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-sm-6">
-                                    <div className="icon-box-item text-left">
-                                        <div className="icon-box__icon">
-                                            <img src="/image/tp02/benefit4.png" alt="福利" />
-                                        </div>
-                                        <div className="icon-box__txt">
-                                            <h6>其他福利</h6>
-                                            <p>餐 飲 類：免費供餐<br />
-                                                補 助 類：員工國內、外進修補助、員工手機配發或補助<br />
-                                                其 　他：員工在職教育訓練、良好升遷制度</p>
-                                        </div>
-                                    </div>
+                                <div className="single-item">
+                                    <div className="icon-box"><i className="flaticon-dashboard"></i></div>
+                                    <h3><a target="_blank" rel="noopener noreferrer" href="https://www.1111.com.tw/corp/9635172/#c3">娛 樂 類</a></h3>
+                                    <div className="text">國內旅遊、員工定期聚餐、春酒、家庭日</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="col-lg-5 order-0 order-lg-1">
-                        <figure className="about-thumb about-thumb-right-align">
-                            <img src="/image/tp02/benifit-1.jpg" alt="1111人力銀行員工福利" />
-                        </figure>
-                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 
 }

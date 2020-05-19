@@ -1,196 +1,225 @@
 ﻿import React from 'react';
-import envConfig from '../../../config/env';
 
-class CompanyCustomize extends React.Component {
-    
-    constructor(props){
-        super(props);
-        this.state={};
-    }
+function CompanyCustomize() {
 
-    componentDidMount(){
-        const cid = this.props.match.params.cid;
-        this.props.getcustomizeList(cid, this.props.themeNum);
-    }
+    let imgURL1 = "url('./image/tp04/custom-1.jpg')";
+    let imgURL2 = "url('./image/tp04/custom-2.jpg')";
+    let imgURL3 = "url('./image/tp04/custom-3.jpg')";
+    let imgURL4 = "url('./image/tp04/custom-4.jpg')";
+    let imgURL5 = "url('./image/tp04/custom-5.jpg')";
+    let imgURL6 = "url('./image/tp04/custom-6.jpg')";
 
-    render(){
-
-        const cid = this.props.match.params.cid.trim();
-        const { customizeData } = this.props.customizeReducer;
-       
-        let customizeEnable;
-        let customizeTitle;
-        let customizeSubTitle;
-        let card1Title;
-        let card1Content;
-        let card1Img;
-        let card2Title;
-        let card2Content;
-        let card2Img;
-        let card3Title;
-        let card3Content;
-        let card3Img;
-        let card4Title;
-        let card4Content;
-        let card4Img;
-        let customizeTag1;
-        let customizeTag2;
-        let customizeTag3;
-        let customizeTag4;
-        let customizeURL1;
-        let customizeURL2;
-        let customizeURL3;
-        let customizeURL4;
-
-        if(customizeData && customizeData.length > 0){
-            customizeData.forEach(element => {
-                customizeEnable =  element.customizeEnable;
-                customizeTitle = element.customizeTitle;
-                customizeSubTitle = element.customizeSubTitle;
-                card1Title = element.card1Title;
-                card1Content = element.card1Content;
-                card1Img = element.card1Img;
-                card2Title = element.card2Title;
-                card2Content = element.card2Content;
-                card2Img = element.card2Img;
-                card3Title = element.card3Title;
-                card3Content = element.card3Content;
-                card3Img = element.card3Img;
-                card4Title = element.card4Title;
-                card4Content = element.card4Content;
-                card4Img = element.card4Img;
-                customizeTag1 = element.customizeTag1;
-                customizeTag2 = element.customizeTag2;
-                customizeTag3 = element.customizeTag3;
-                customizeTag4 = element.customizeTag4;
-                customizeURL1 = element.customizeURL1;
-                customizeURL2 = element.customizeURL2;
-                customizeURL3 = element.customizeURL3;
-                customizeURL4 = element.customizeURL4;
-            })
-        }
-
-        // image
-        card1Img = !card1Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card1Img}`;
-        card2Img = !card2Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card2Img}`;
-        card3Img = !card3Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card3Img}`;
-        card4Img = !card4Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card4Img}`;
-
-        return (
-            <section className="events-area pt-70 pb-50" style={customizeEnable? {} : {display: 'none'}}>
-                
-                {customizeData && customizeData.length > 0 &&
-                
-                <div id="custom" className="container">
-                    <div className="section-title">
-                        <h2>{customizeTitle}</h2>
-                        <p>{customizeSubTitle}</p>
-                    </div>
-                    <div className="single-events-box">
-                        <div className="events-box">
-                            <div className="events-image">
-                                <div className="image bg1">
-                                    <img src={card1Img} alt="自訂圖片" />
-                                </div>
-                            </div>
-
-                            <div className="events-content">
-                                <div className="content text-left">
-                                    <h3><a href="/#">{card1Title}</a></h3>
-                                    <p>{card1Content}</p>
-                                    <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag1}</span>
-                                    <a target="_blank" rel="noopener noreferrer" href={customizeURL1} className="join-now-btn">了解更多</a>
-                                </div>
-                            </div>
-                            <div className="box-shape">
-                                <img src="../../../assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
-                                <img src="../../../assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
-                            </div>
-                        
-                        </div>
-                    </div>
-
-                    <div className="single-events-box">
-                        <div className="events-box">
-                            <div className="events-image">
-                                <div className="image bg2">
-                                    <img src={card2Img} alt="自訂圖片" />
-                                </div>
-                            </div>
-
-                            <div className="events-content">
-                                <div className="content text-left">
-                                    <h3><a href="/#">{card2Title}</a></h3>
-                                    <p>{card2Content}</p>
-                                    <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag2}</span>
-                                    <a target="_blank" rel="noopener noreferrer" href={customizeURL2} className="join-now-btn">了解更多</a>
-                                </div>
-                            </div>
-                            <div className="box-shape">
-                                <img src="../../../assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
-                                <img src="../../../assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
-                            </div>
-                        
-                        </div>
-                    </div>
-
-                    <div className="single-events-box">
-                        <div className="events-box">
-                            <div className="events-image">
-                                <div className="image bg3">
-                                    <img src={card3Img} alt="自訂圖片" />
-                                </div>
-                            </div>
-
-                            <div className="events-content">
-                                <div className="content text-left">
-                                    <h3><a href="/#">{card3Title}</a></h3>
-                                    <p>{card3Content}</p>
-                                    <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag3}</span>
-                                    <a target="_blank" rel="noopener noreferrer" href={customizeURL3} className="join-now-btn">了解更多</a>
-                                    
-                                </div>
-                            </div>
-                            <div className="box-shape">
-                                <img src="../../../assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
-                                <img src="../../../assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
-                            </div>
-                        
-                        </div>
-                    </div>
-
-                    <div className="single-events-box">
-                        <div className="events-box">
-                            <div className="events-image">
-                                <div className="image bg4">
-                                    <img src={card4Img} alt="自訂圖片" />
-                                </div>
-                            </div>
-
-                            <div className="events-content">
-                                <div className="content text-left">
-                                    <h3><a href="/#">{card4Title}</a></h3>
-                                    <p>{card4Content}</p>
-                                    <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag4}</span>
-                                    <a target="_blank" rel="noopener noreferrer" href={customizeURL4} className="join-now-btn">了解更多</a>
-                                    <div className="box-shape">
-                                        <img src="../../../assets/tp04/img/box-shape3g.png" alt="自訂圖片" />
-                                        <img src="../../../assets/tp04/img/box-shape2g.png" alt="自訂圖片" />
-                                    </div>
-                                </div>
-                            </div>
-
+    return (
         
-                        </div>
-                    </div>
-                </div>
-                
-                }
-                
-            </section>
-        )
+        <section id="custom" className="vc_row pt-10 pb-10">
+			<div className="container">
+				<div className="row">
+					<div className="lqd-column col-md-10 col-md-offset-1">
 
-    }
+						<header className="fancy-title text-center mb-30" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":80,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+
+							<h6 className="text-uppercase ltr-sp-2 font-size-13 font-weight-semibold text-secondary">Environment</h6>
+							<h2 className="mt-1 mb-2">工作環境</h2>
+
+						</header>
+
+					</div>
+					<div className="lqd-column col-md-12">
+
+						<div className="liquid-portfolio-list">
+
+								<div
+									className="row liquid-portfolio-list-row"
+									data-columns="3"
+									data-liquid-masonry="true"
+									data-masonry-options='{ "layoutMode": "masonry", "alignMid": true }'
+									data-custom-animations="true"
+									data-ca-options='{"triggerHandler":"inview","animationTarget":".ld-pf-item","animateTargetsWhenVisible":"true","duration":"1400","delay":"180","easing":"easeOutQuint","initValues":{"translateY":75,"scale":0.75,"opacity":0},"animations":{"translateY":0,"scale":1,"opacity":1}}'
+								>
+									
+									<div className="hidden-sm-down lqd-column col-md-4 col-sm-6 col-xs-12 grid-stamp creative-masonry-grid-stamp"></div>
+							
+									<div className="lqd-column col-md-4 col-sm-6 col-xs-12 masonry-item ">
+										
+										<div className="ld-pf-item ld-pf-light pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid title-size-32 ld-pf-semiround">
+											
+											<div className="ld-pf-inner">
+												
+												<div className="ld-pf-image">
+													<figure style={{backgroundImage: imgURL2}}>
+														<img src="./image/tp04/custom-2.jpg" alt="1111人力銀行" />
+													</figure>
+												</div>
+							
+												<div className="ld-pf-bg bg-gradient-primary-bl opacity-08"></div>
+												
+												<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "duration": 200, "delay": 35, "offDuration": 100, "easing": "easeOutCubic", "initValues": { "translateX": 50, "rotateZ": -75, "opacity": 0, "transformOrigin": [0, "-100%", 0] }, "animations": { "translateX": 0, "rotateZ": 0, "opacity": 1, "transformOrigin": [0, "0%", 0] } }'>
+													<div className="ld-pf-details-inner">
+														<h3 className="ld-pf-title h4 font-weight-semibold" data-split-text="true" data-split-options='{ "type": "chars" }'>暢通的升遷管道</h3>
+													</div>
+												</div>
+												
+												<a href="https://www.1111.com.tw/corp/51395296/" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>暢通的升遷管道</a>
+												
+											</div>
+											
+										</div>
+										
+									</div>
+							
+									<div className="lqd-column col-md-4 col-sm-6 col-xs-12 masonry-item">
+										
+										<div className="ld-pf-item ld-pf-light pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid title-size-32 ld-pf-semiround">
+											
+											<div className="ld-pf-inner">
+												
+												<div className="ld-pf-image">
+													<figure style={{backgroundImage: imgURL1}}>
+														<img src="./image/tp04/custom-1.jpg" alt="1111人力銀行" />
+													</figure>
+												</div>
+							
+												<div className="ld-pf-bg bg-gradient-primary-bl opacity-08"></div>
+												
+												<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "duration": 200, "delay": 35, "offDuration": 100, "easing": "easeOutCubic", "initValues": { "translateX": 50, "rotateZ": -75, "opacity": 0, "transformOrigin": [0, "-100%", 0] }, "animations": { "translateX": 0, "rotateZ": 0, "opacity": 1, "transformOrigin": [0, "0%", 0] } }'>
+													<div className="ld-pf-details-inner">
+														<h3 className="ld-pf-title h4 font-weight-semibold" data-split-text="true" data-split-options='{ "type": "chars" }'>優惠的餐飲津貼</h3>
+													</div>
+												</div>
+												
+												<a href="https://www.1111.com.tw/corp/51395296/" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>優惠的餐飲津貼</a>
+												
+											</div>
+											
+										</div>
+										
+									</div>
+									
+									<div className="lqd-column col-md-4 col-sm-6 col-xs-12 masonry-item">
+										
+										<div className="ld-pf-item ld-pf-light pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid title-size-32 ld-pf-semiround">
+											
+											<div className="ld-pf-inner">
+												
+												<div className="ld-pf-image">
+													<figure style={{backgroundImage: imgURL3}}>
+														<img src="./image/tp04/custom-3.jpg" alt="1111人力銀行" />
+													</figure>
+												</div>
+							
+												<div className="ld-pf-bg bg-gradient-primary-bl opacity-08"></div>
+												
+												<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "duration": 200, "delay": 35, "offDuration": 100, "easing": "easeOutCubic", "initValues": { "translateX": 50, "rotateZ": -75, "opacity": 0, "transformOrigin": [0, "-100%", 0] }, "animations": { "translateX": 0, "rotateZ": 0, "opacity": 1, "transformOrigin": [0, "0%", 0] } }'>
+													<div className="ld-pf-details-inner">
+														<h3 className="ld-pf-title h4 font-weight-semibold" data-split-text="true" data-split-options='{ "type": "chars" }'>享有員工專屬折扣</h3>
+													</div>
+												</div>
+												
+												<a href="https://www.1111.com.tw/corp/51395296/" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>享有員工專屬折扣</a>
+												
+											</div>
+											
+										</div>
+										
+									</div>
+									
+									<div className="lqd-column col-md-4 col-sm-6 col-xs-12 masonry-item">
+										
+										<div className="ld-pf-item ld-pf-light pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid title-size-32 ld-pf-semiround">
+											
+											<div className="ld-pf-inner">
+												
+												<div className="ld-pf-image">
+													<figure style={{backgroundImage: imgURL4}}>
+														<img src="./image/tp04/custom-4.jpg" alt="1111人力銀行" />
+													</figure>
+												</div>
+							
+												<div className="ld-pf-bg bg-gradient-primary-bl opacity-08"></div>
+												
+												<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "duration": 200, "delay": 35, "offDuration": 100, "easing": "easeOutCubic", "initValues": { "translateX": 50, "rotateZ": -75, "opacity": 0, "transformOrigin": [0, "-100%", 0] }, "animations": { "translateX": 0, "rotateZ": 0, "opacity": 1, "transformOrigin": [0, "0%", 0] } }'>
+													<div className="ld-pf-details-inner">
+														<h3 className="ld-pf-title h4 font-weight-semibold" data-split-text="true" data-split-options='{ "type": "chars" }'>每年的健康檢查</h3>
+													</div>
+												</div>
+												
+												<a href="https://www.1111.com.tw/corp/51395296/" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>每年的健康檢查</a>
+												
+											</div>
+											
+										</div>
+										
+									</div>
+							
+									<div className="lqd-column col-md-4 col-sm-6 col-xs-12 masonry-item">
+										
+										<div className="ld-pf-item ld-pf-light pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid title-size-32 ld-pf-semiround">
+											
+											<div className="ld-pf-inner">
+												
+												<div className="ld-pf-image">
+													<figure style={{backgroundImage: imgURL5}}>
+														<img src="./image/tp04/custom-5.jpg" alt="1111人力銀行" />
+													</figure>
+												</div>
+							
+												<div className="ld-pf-bg bg-gradient-primary-bl opacity-08"></div>
+												
+												<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "duration": 200, "delay": 35, "offDuration": 100, "easing": "easeOutCubic", "initValues": { "translateX": 50, "rotateZ": -75, "opacity": 0, "transformOrigin": [0, "-100%", 0] }, "animations": { "translateX": 0, "rotateZ": 0, "opacity": 1, "transformOrigin": [0, "0%", 0] } }'>
+													<div className="ld-pf-details-inner">
+														<h3 className="ld-pf-title h4 font-weight-semibold" data-split-text="true" data-split-options='{ "type": "chars" }'>多元的訓練方式</h3>
+													</div>
+												</div>
+												
+												<a href="https://www.1111.com.tw/corp/51395296/" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>多元的訓練方式</a>
+												
+											</div>
+											
+										</div>
+										
+									</div>
+							
+									<div className="lqd-column col-md-4 col-sm-6 col-xs-12 hidden-sm-down show-xs-down masonry-item">
+										
+										<div className="ld-pf-item ld-pf-light pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid title-size-32 ld-pf-semiround">
+											
+											<div className="ld-pf-inner">
+												
+												<div className="ld-pf-image">
+													<figure style={{backgroundImage: imgURL6}}>
+														<img src="./image/tp04/custom-6.jpg" alt="1111人力銀行" />
+													</figure>
+												</div>
+							
+												<div className="ld-pf-bg bg-gradient-primary-bl opacity-08"></div>
+												
+												<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "duration": 200, "delay": 35, "offDuration": 100, "easing": "easeOutCubic", "initValues": { "translateX": 50, "rotateZ": -75, "opacity": 0, "transformOrigin": [0, "-100%", 0] }, "animations": { "translateX": 0, "rotateZ": 0, "opacity": 1, "transformOrigin": [0, "0%", 0] } }'>
+													<div className="ld-pf-details-inner">
+														<h3 className="ld-pf-title h4 font-weight-semibold" data-split-text="true" data-split-options='{ "type": "chars" }'>公平的獎金制度</h3>
+													</div>
+												</div>
+												
+												<a href="https://www.1111.com.tw/corp/51395296/#c4" className="liquid-overlay-link" target='_blank' rel='noopener noreferrer'>公平的獎金制度</a>
+												
+											</div>
+											
+										</div>
+										
+									</div>
+							
+								
+									
+								</div>
+								
+							</div>
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+    )
+
 }
 
 export default CompanyCustomize;
