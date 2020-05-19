@@ -52,7 +52,9 @@ class ManagerTemplate1 extends React.Component{
                 keywords: data[0].keywords,
                 description: data[0].description
             }
-            themNum = data[0].themeNum;
+            if(!themNum || themNum.length ===0 ){
+                themNum = data[0].themeNum;
+            }
         }
     
         return(
