@@ -203,34 +203,34 @@ class Session6 extends React.Component{
         }
         
         // enable
-        customizeEnable = customizeEnable ===" " ? false : customizeEnable;
+        customizeEnable = customizeEnable === "" ? false : customizeEnable;
         // image
-        let card1ImgUpload ="";
+        let card1ImgUpload = "";
         if(card1Img === " "){
             card1ImgUpload = "/image/logo-1111.png";
         }else{
-            card1ImgUpload = this.state.card1Img !==' ' ?  this.state.card1ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card1Img}`;
+            card1ImgUpload = this.state.card1Img !== ' ' ?  this.state.card1ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card1Img}`;
         }
 
-        let card2ImgUpload ="";
+        let card2ImgUpload = "";
         if(card2Img === " "){
             card2ImgUpload = "/image/logo-1111.png";
         }else{
-            card2ImgUpload = this.state.card2Img !==' ' ?  this.state.card2ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card2Img}`;
+            card2ImgUpload = this.state.card2Img !== ' ' ?  this.state.card2ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card2Img}`;
         }
 
-        let card3ImgUpload ="";
+        let card3ImgUpload = "";
         if(card3Img === " "){
             card3ImgUpload = "/image/logo-1111.png";
         }else{
-            card3ImgUpload = this.state.card3Img !==' ' ?  this.state.card3ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card3Img}`;
+            card3ImgUpload = this.state.card3Img !== ' ' ?  this.state.card3ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card3Img}`;
         }
 
-        let card4ImgUpload ="";
+        let card4ImgUpload = "";
         if(card4Img === " "){
             card4ImgUpload = "/image/logo-1111.png";
         }else{
-            card4ImgUpload = this.state.card4Img !==' ' ?  this.state.card4ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card4Img}`;
+            card4ImgUpload = this.state.card4Img !== ' ' ?  this.state.card4ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card4Img}`;
         }
 
         return(
