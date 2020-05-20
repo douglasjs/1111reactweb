@@ -1,23 +1,21 @@
 import React from 'react';
 import InputText from '../../sharecomponents/inputText';
 import InputTextArea from '../../sharecomponents/inputTextArea';
-import ImgUpload from '../../sharecomponents/imgUpload';
-import envConfig from '../../../config/env';
 import Msg from '../msg';
 
 class Session5 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            brandTitle: ' ',
-            brandTitleSub1: ' ',
-            brandTitleSub1Content: ' ',
-            brandTitleSub2: ' ',
-            brandTitleSub2Content: ' ',
-            brandTitleSub3: ' ',
-            brandTitleSub3Content: ' ',
-            brandImg : ' ',
-            brandImgUpload : ''
+            brandTitleSub1 : '',
+            brandTitleSub1Content : '',
+            brandTitleSub2 : '',
+            brandTitleSub2Content : '',
+            brandTitleSub3 : '',
+            brandTitleSub3Content : '',
+            brandURL1 : '',
+            brandURL2 : '',
+            brandURL3 : ''
         }
     }
 
@@ -26,26 +24,26 @@ class Session5 extends React.Component{
         const cid = this.props.match.params.cid;
 
         const submitObj = {
-            ono: cid,
+            ono : cid,
             themeNum : event.target.themeNum5.value,
-            brandTitle:  event.target.brandTitle.value,
-            brandTitleSub1:  event.target.brandTitleSub1.value,
-            brandTitleSub1Content:  event.target.brandTitleSub1Content.value,
-            brandTitleSub2:  event.target.brandTitleSub2.value,
-            brandTitleSub2Content:  event.target.brandTitleSub2Content.value,
-            brandTitleSub3:  event.target.brandTitleSub3.value,
-            brandTitleSub3Content:  event.target.brandTitleSub3Content.value,
-            brandImg : event.target.brandImg.value,
-            brandImgUpload: event.target.brandImgUpload ? this.state.brandImgUpload.value : null,
+            brandTitle : '',
+            brandTitleSub1 : event.target.brandTitleSub1.value,
+            brandTitleSub1Content : event.target.brandTitleSub1Content.value,
+            brandTitleSub2 : event.target.brandTitleSub2.value,
+            brandTitleSub2Content : event.target.brandTitleSub2Content.value,
+            brandTitleSub3 : event.target.brandTitleSub3.value,
+            brandTitleSub3Content : event.target.brandTitleSub3Content.value,
+            brandImg : '',
+            brandImgUpload : null,
             brandImg1 : '',
-            brandImg1Upload: null,
+            brandImg1Upload : null,
             brandImg2 : '',
-            brandImg2Upload: null,
+            brandImg2Upload : null,
             brandImg3 : '',
-            brandImg3Upload: null,
-            brandURL1 : '',
-            brandURL2 : '',
-            brandURL3 : ''
+            brandImg3Upload : null,
+            brandURL1 : event.target.brandURL1.value,
+            brandURL2 : event.target.brandURL2.value,
+            brandURL3 : event.target.brandURL3.value
         }
 
         console.log(event.target.action5.value);
@@ -62,14 +60,15 @@ class Session5 extends React.Component{
         const { brandData, brandErr, brandIsLoading} = this.props.brandReducer;
         const cid = this.props.match.params.cid.trim();
 
-        let brandTitle = this.state.brandTitle;
         let brandTitleSub1 = this.state.brandTitleSub1;
         let brandTitleSub1Content = this.state.brandTitleSub1Content;
         let brandTitleSub2 = this.state.brandTitleSub2;
         let brandTitleSub2Content = this.state.brandTitleSub2Content;
         let brandTitleSub3 = this.state.brandTitleSub3;
         let brandTitleSub3Content = this.state.brandTitleSub3Content;
-        let brandImg = this.state.brandImg;
+        let brandURL1 = this.state.brandURL1;
+        let brandURL2 = this.state.brandURL2;
+        let brandURL3 = this.state.brandURL3;
 
         let themeNum = this.props.themeNum;
         let actionType = 'create';
@@ -77,23 +76,30 @@ class Session5 extends React.Component{
         if(brandData && brandData.length > 0){
             actionType = 'modify';
             brandData.forEach(element => {
-                brandTitle = brandTitle !==" " ? brandTitle : element.brandTitle;
-                brandTitleSub1 = brandTitleSub1 !==" " ? brandTitleSub1 : element.brandTitleSub1;
-                brandTitleSub1Content = brandTitleSub1Content !==" " ? brandTitleSub1Content : element.brandTitleSub1Content;
-                brandTitleSub2 = brandTitleSub2 !==" " ? brandTitleSub2 : element.brandTitleSub2;
-                brandTitleSub2Content = brandTitleSub2Content !==" " ? brandTitleSub2Content : element.brandTitleSub2Content;
-                brandTitleSub3 = brandTitleSub3 !==" " ? brandTitleSub3 : element.brandTitleSub3;
-                brandTitleSub3Content = brandTitleSub3Content !==" " ? brandTitleSub3Content : element.brandTitleSub3Content;
-                brandImg = brandImg !==" " ? brandImg : element.brandImg;
+                brandTitleSub1 = brandTitleSub1 !== "" ? brandTitleSub1 : element.brandTitleSub1;
+                brandTitleSub1Content = brandTitleSub1Content !== "" ? brandTitleSub1Content : element.brandTitleSub1Content;
+                brandTitleSub2 = brandTitleSub2 !== "" ? brandTitleSub2 : element.brandTitleSub2;
+                brandTitleSub2Content = brandTitleSub2Content !== "" ? brandTitleSub2Content : element.brandTitleSub2Content;
+                brandTitleSub3 = brandTitleSub3 !== "" ? brandTitleSub3 : element.brandTitleSub3;
+                brandTitleSub3Content = brandTitleSub3Content !== "" ? brandTitleSub3Content : element.brandTitleSub3Content;
+                brandURL1 = brandURL1 !== "" ? brandURL1 : element.brandURL1;
+                brandURL2 = brandURL2 !== "" ? brandURL2 : element.brandURL2;
+                brandURL3 = brandURL3 !== "" ? brandURL3 : element.brandURL3;
             })
         }
 
-        // image
-        let brandImgUpload ="";
-        if(brandImg === " "){
-            brandImgUpload = "/image/logo-1111.png";
-        }else{
-            brandImgUpload = this.state.brandImg !==' ' ?  this.state.brandImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${brandImg}`;
+        if(actionType === 'create') {
+            if(brandURL1 === ''){
+                brandURL1 = `https://www.1111.com.tw/corp/${cid}/`;
+            }
+    
+            if(brandURL2 === ''){
+                brandURL2 = `https://www.1111.com.tw/corp/${cid}/`;
+            }
+    
+            if(brandURL3 === ''){
+                brandURL3 = `https://www.1111.com.tw/corp/${cid}/`;
+            }
         }
 
         return(
@@ -110,37 +116,42 @@ class Session5 extends React.Component{
                                     <Msg type ='ERROR' value = {brandErr} text= 'Opps! Error : ' />
                                     <input type="hidden" id="themeNum5" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
+                                    
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹主標題' notice='(字數限制為13個字以內)' inputName='brandTitle' inputState={brandTitle}
-                                            stateObj={this} required={true} checkValue='13' />
+                                        <InputText title='品牌介紹標題1' notice='(字數限制為7個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
+                                            stateObj={this} required={true} checkValue='7' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題1' notice='(字數限制為10個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
-                                            stateObj={this} required={true} checkValue='10' />
+                                        <InputTextArea title='品牌介紹標題1內文 ' notice='(字數限制為84個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
+                                            rows='4' stateObj={this} required={true} checkValue='84'/>
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題1內文 ' notice='(字數限制為135個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
-                                            rows='3' stateObj={this} required={true} checkValue='135'/>
+                                        <InputText title='品牌介紹連結1' notice='(請輸入網址)' inputName='brandURL1' inputState={brandURL1}
+                                            stateObj={this} required={true} checkValue='200' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題2' notice='(字數限制為10個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
-                                            stateObj={this} required={true} checkValue='10' />
+                                        <InputText title='品牌介紹標題2' notice='(字數限制為7個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
+                                            stateObj={this} required={true} checkValue='7' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題2內文 ' notice='(字數限制為135個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
-                                            rows='3' stateObj={this} required={true} checkValue='135' />
+                                        <InputTextArea title='品牌介紹標題2內文 ' notice='(字數限制為84個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
+                                            rows='4' stateObj={this} required={true} checkValue='84' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題3' notice='(字數限制為10個字以內)' inputName='brandTitleSub3' inputState={brandTitleSub3}
-                                            stateObj={this} required={true} checkValue='10' />
+                                        <InputText title='品牌介紹連結2' notice='(請輸入網址)' inputName='brandURL2' inputState={brandURL2}
+                                            stateObj={this} required={true} checkValue='200' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題3內文 ' notice='(字數限制為135個字以內)' inputName='brandTitleSub3Content' inputState={brandTitleSub3Content}
-                                            rows='3' stateObj={this} required={true} checkValue='135' />
+                                        <InputText title='品牌介紹標題3' notice='(字數限制為7個字以內)' inputName='brandTitleSub3' inputState={brandTitleSub3}
+                                            stateObj={this} required={true} checkValue='7' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='品牌介紹圖片' notice='(圖檔尺寸大小為 640*427 ，接受格式為png、jpg)' objName='brandImg'  imgUpload={brandImgUpload} 
-                                            imgFileName={brandImg} parentObj={this} imgW={640} imgH={427} required={true} />
+                                        <InputTextArea title='品牌介紹標題3內文 ' notice='(字數限制為84個字以內)' inputName='brandTitleSub3Content' inputState={brandTitleSub3Content}
+                                            rows='4' stateObj={this} required={true} checkValue='84' />
+                                    </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <InputText title='品牌介紹連結3' notice='(請輸入網址)' inputName='brandURL3' inputState={brandURL3}
+                                            stateObj={this} required={true} checkValue='200' />
                                     </div>
 
                                     <hr />
