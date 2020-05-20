@@ -111,7 +111,7 @@ class Session5 extends React.Component{
                                             rows='5' stateObj={this} required={true} checkValue='240'/>
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='了解更多網址2' notice='(請輸入網址)' inputName='brandURL1' inputState={brandURL1}
+                                        <InputText title='了解更多網址' notice='(請輸入網址)' inputName='brandURL1' inputState={brandURL1}
                                             stateObj={this} required={true} checkValue='200' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">

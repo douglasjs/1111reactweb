@@ -41,7 +41,7 @@ class CompanyBenifit  extends React.Component {
                 benefitImg2 = element.benefitImg2;
                 benefitSubTitle1 = element.benefitSubTitle1;
                 benefitSubTitle2 = element.benefitSubTitle2;
-                benefitSubTitle3 = element.benefitSubTitle2;
+                benefitSubTitle3 = element.benefitSubTitle3;
                 benefitSubTitle4 = element.benefitSubTitle4;
                 benefitSubTitle5 = element.benefitSubTitle5;
                 benefitSubTitle6 = element.benefitSubTitle6;
