@@ -1,6 +1,6 @@
 import React from 'react';
-import CKEditor from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import InputText from '../../sharecomponents/inputText';
+import InputTextArea from '../../sharecomponents/inputTextArea';
 import ImgUpload from '../../sharecomponents/imgUpload';
 import envConfig from '../../../config/env';
 import Msg from '../msg';
@@ -11,9 +11,22 @@ class Session3 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            benefitContent: ' ',
-            benefitImg : ' ',
-            benefitImgUpload : ''
+            benefitSubTitle1 : '',
+            benefitSubTitle2 : '',
+            benefitSubTitle3 : '',
+            benefitSubTitle4 : '',
+            benefitSubContent1 : '',
+            benefitSubContent2 : '',
+            benefitSubContent3 : '',
+            benefitSubContent4 : '',
+            benefitSubImg1 : ' ',
+            benefitSubImg2 : ' ',
+            benefitSubImg3 : ' ',
+            benefitSubImg4 : ' ',
+            benefitSubImg1Upload : '',
+            benefitSubImg2Upload : '',
+            benefitSubImg3Upload : '',
+            benefitSubImg4Upload : ''
         }
 
     }
@@ -23,37 +36,37 @@ class Session3 extends React.Component{
         const cid = this.props.match.params.cid;
 
         const benObj={
-            ono: cid,
+            ono : cid,
             themeNum : event.target.themeNum3.value,
-            benefitContent:  this.state.benefitContent,
-            benefitImg: event.target.benefitImg.value,
-            benefitImg2: '',
-            benefitImgUpload: this.state.benefitImgUpload ? this.state.benefitImgUpload.value : null,
-            benefitImg2Upload: null,
-            benefitSubTitle1: '',
-            benefitSubTitle2: '',
-            benefitSubTitle3: '',
-            benefitSubTitle4: '',
-            benefitSubTitle5: '',
-            benefitSubTitle6: '',
-            benefitSubContent1: '',
-            benefitSubContent2: '',
-            benefitSubContent3: '',
-            benefitSubContent4: '',
-            benefitSubContent5: '',
-            benefitSubContent6: '',
-            benefitSubImg1: '',
-            benefitSubImg2: '',
-            benefitSubImg3: '',
-            benefitSubImg4: '',
-            benefitSubImg5: '',
-            benefitSubImg6: '',
-            benefitSubImg1Upload: null,
-            benefitSubImg2Upload: null,
-            benefitSubImg3Upload: null,
-            benefitSubImg4Upload: null,
-            benefitSubImg5Upload: null,
-            benefitSubImg6Upload: null
+            benefitContent : '',
+            benefitImg : '',
+            benefitImg2 : '',
+            benefitImgUpload : null,
+            benefitImg2Upload : null,
+            benefitSubTitle1 : event.target.benefitSubTitle1.value,
+            benefitSubTitle2 : event.target.benefitSubTitle2.value,
+            benefitSubTitle3 : event.target.benefitSubTitle3.value,
+            benefitSubTitle4 : event.target.benefitSubTitle4.value,
+            benefitSubTitle5 : '',
+            benefitSubTitle6 : '',
+            benefitSubContent1 : event.target.benefitSubContent1.value,
+            benefitSubContent2 : event.target.benefitSubContent2.value,
+            benefitSubContent3 : event.target.benefitSubContent3.value,
+            benefitSubContent4 : event.target.benefitSubContent4.value,
+            benefitSubContent5 : '',
+            benefitSubContent6 : '',
+            benefitSubImg1 : event.target.benefitSubImg1.value,
+            benefitSubImg2 : event.target.benefitSubImg2.value,
+            benefitSubImg3 : event.target.benefitSubImg3.value,
+            benefitSubImg4 : event.target.benefitSubImg4.value,
+            benefitSubImg5 : '',
+            benefitSubImg6 : '',
+            benefitSubImg1Upload : this.state.benefitSubImg1Upload ? this.state.benefitSubImg1Upload.value : null,
+            benefitSubImg2Upload : this.state.benefitSubImg2Upload ? this.state.benefitSubImg2Upload.value : null,
+            benefitSubImg3Upload : this.state.benefitSubImg3Upload ? this.state.benefitSubImg3Upload.value : null,
+            benefitSubImg4Upload : this.state.benefitSubImg4Upload ? this.state.benefitSubImg4Upload.value : null,
+            benefitSubImg5Upload : null,
+            benefitSubImg6Upload : null
         }
         
         if(event.target.action3.value === 'create'){
@@ -65,42 +78,78 @@ class Session3 extends React.Component{
     }
 
     handleChange = (event, data) => {
-        /*
-        ( event, editor ) => {
-            const data = editor.getData();
-            console.log( { event, editor, data } );
-        } 
-        */
-        //let newValue = event.target.data;
         this.setState({ ...this.state, benefitContent : data});
     };
 
     render(){
         const { benefitData, benefitErr, benefitIsLoading} = this.props.benefitReducer;
-       // const { kind01_data } = this.props.kind01Reducer;
         const cid = this.props.match.params.cid.trim();
 
-        let benefitContent = this.state.benefitContent;
-        let benefitImg = this.state.benefitImg;
+        let benefitSubTitle1 = this.state.benefitSubTitle1;
+        let benefitSubTitle2 = this.state.benefitSubTitle2;
+        let benefitSubTitle3 = this.state.benefitSubTitle3;
+        let benefitSubTitle4 = this.state.benefitSubTitle4;
+
+        let benefitSubContent1 = this.state.benefitSubContent1;
+        let benefitSubContent2 = this.state.benefitSubContent2;
+        let benefitSubContent3 = this.state.benefitSubContent3;
+        let benefitSubContent4 = this.state.benefitSubContent4;
+
+        let benefitSubImg1 = this.state.benefitSubImg1;
+        let benefitSubImg2 = this.state.benefitSubImg2;
+        let benefitSubImg3 = this.state.benefitSubImg3;
+        let benefitSubImg4 = this.state.benefitSubImg4;
 
         let themeNum = this.props.themeNum;
         let actionType = 'create';
-        //benefitContent = kind01_data && kind01_data.length > 0 && benefitContent === ' ' ? kind01_data[0].Benefit : this.state.benefitContent;
 
         if(benefitData && benefitData.length > 0){
             actionType = 'modify';
             benefitData.forEach(element => {
-                benefitContent = benefitContent !==" " ? benefitContent : element.benefitContent;
-                benefitImg = benefitImg !==" " ? benefitImg : element.benefitImg;
+                benefitSubTitle1 = benefitSubTitle1 !== "" ? benefitSubTitle1 : element.benefitSubTitle1;
+                benefitSubTitle2 = benefitSubTitle2 !== "" ? benefitSubTitle2 : element.benefitSubTitle2;
+                benefitSubTitle3 = benefitSubTitle3 !== "" ? benefitSubTitle3 : element.benefitSubTitle3;
+                benefitSubTitle4 = benefitSubTitle4 !== "" ? benefitSubTitle4 : element.benefitSubTitle4;
+
+                benefitSubContent1 = benefitSubContent1 !== "" ? benefitSubContent1 : element.benefitSubContent1;
+                benefitSubContent2 = benefitSubContent2 !== "" ? benefitSubContent2 : element.benefitSubContent2;
+                benefitSubContent3 = benefitSubContent3 !== "" ? benefitSubContent3 : element.benefitSubContent3;
+                benefitSubContent4 = benefitSubContent4 !== "" ? benefitSubContent4 : element.benefitSubContent4;
+
+                benefitSubImg1 = benefitSubImg1 !== " " ? benefitSubImg1 : element.benefitSubImg1;
+                benefitSubImg2 = benefitSubImg2 !== " " ? benefitSubImg2 : element.benefitSubImg2;
+                benefitSubImg3 = benefitSubImg3 !== " " ? benefitSubImg3 : element.benefitSubImg3;
+                benefitSubImg4 = benefitSubImg4 !== " " ? benefitSubImg4 : element.benefitSubImg4;
             })
         }
 
         // image
-        let benefitImgUpload ="";
-        if(benefitImg === " "){
-            benefitImgUpload = "/image/logo-1111.png";
+        let benefitSubImg1Upload = "";
+        if(benefitSubImg1 === " "){
+            benefitSubImg1Upload = "/image/logo-1111.png";
         }else{
-            benefitImgUpload = this.state.benefitImg !==' ' ?  this.state.benefitImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitImg}`;
+            benefitSubImg1Upload = this.state.benefitSubImg1 !== ' ' ?  this.state.benefitSubImg1Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitSubImg1}`;
+        }
+
+        let benefitSubImg2Upload = "";
+        if(benefitSubImg2 === " "){
+            benefitSubImg2Upload = "/image/logo-1111.png";
+        }else{
+            benefitSubImg2Upload = this.state.benefitSubImg2 !== ' ' ?  this.state.benefitSubImg2Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitSubImg2}`;
+        }
+
+        let benefitSubImg3Upload = "";
+        if(benefitSubImg3 === " "){
+            benefitSubImg3Upload = "/image/logo-1111.png";
+        }else{
+            benefitSubImg3Upload = this.state.benefitSubImg3 !== ' ' ?  this.state.benefitSubImg3Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitSubImg3}`;
+        }
+
+        let benefitSubImg4Upload = "";
+        if(benefitSubImg4 === " "){
+            benefitSubImg4Upload = "/image/logo-1111.png";
+        }else{
+            benefitSubImg4Upload = this.state.benefitSubImg4 !== ' ' ?  this.state.benefitSubImg4Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitSubImg4}`;
         }
 
         return(
@@ -117,38 +166,111 @@ class Session3 extends React.Component{
                                     <Msg type ='ERROR' value = {benefitErr} text= 'Opps! Error : ' />
                                     <input type="hidden" id="themeNum3" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
-                                    <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='員工福利圖片' notice='(圖檔尺寸大小為 500*354 ，接受格式為png、jpg)' objName='benefitImg'  imgUpload={benefitImgUpload} imgFileName={benefitImg} 
-                                            parentObj={this}  imgW={500} imgH={354} required={true}/> 
-                                    </div>                                    
-                                    <div className="form-row row-style-w95-pt1">
-                                        <label><span className='text-danger'>*</span>員工福利內容 <em className='text-primary'>( 因版面有限，內容編排請特別注意，可搭配預覽確認是否超出顯示範圍 )</em> </label>
+                                    
+                                    <div className="card">
+                                        <a href="#collapseCard3-1" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard3-1">
+                                            <div className="card-header text-white bg-primary">小標題一</div>
+                                        </a>                                    
+                                        <div className="card-body collapse show" id="collapseCard3-1">
+                                            <div className="form-row">
+
+                                                <div className="col-md-10 mb-6">
+                                                    <div className="form-row">
+                                                        <InputText title='小標題1' notice='(字數限制為4個字以內)' inputName='benefitSubTitle1' inputState={benefitSubTitle1}
+                                                            stateObj={this} required={true} checkValue='4' />
+                                                    </div>
+                                                    <div className="form-row">
+                                                        <InputTextArea title='小標題1內容' notice='(字數限制為55個字以內)' inputName='benefitSubContent1' inputState={benefitSubContent1}
+                                                            rows='3' stateObj={this} required={true} checkValue='55' />
+                                                    </div>
+                                                    <div className="form-row row-style-w95-pt1">
+                                                        <ImgUpload title='小標題1圖片 上傳' notice='(圖檔尺寸大小為 56*56，接受格式為png、jpg)' objName='benefitSubImg1' imgUpload={benefitSubImg1Upload} 
+                                                            imgFileName={benefitSubImg1} parentObj={this} imgW={56} imgH={56} required={true} />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <CKEditor
-                                            id='benefitContent'
-                                            className='form-control'
-                                            editor={ ClassicEditor }
-                                            config={ {
-                                                toolbar: ['heading', '|','fontcolor', 'fontbackgroundcolor', 'bold', 'italic', 'blockQuote', 'link', 'numberedList', 'bulletedList', 'insertTable',
-                                                  'tableColumn', 'tableRow', 'mergeTableCells', '|', 'undo', 'redo']
-                                            } }  
-                                            data={benefitContent}
-                                            onInit={ editor => {
-                                                // You can store the "editor" and use when it is needed.
-                                                //console.log( 'Editor is ready to use!', editor );
-                                            } }
-                                            onChange={( event, editor ) => {
-                                                this.handleChange(event, editor.getData());
-                                            } }
-                                            onBlur={ ( event, editor ) => {
-                                                //console.log( 'Blur.', editor );
-                                            } }
-                                            onFocus={ ( event, editor ) => {
-                                                //console.log( 'Focus.', editor );
-                                            } }
-                                        />
+
+                                    <div className="card">
+                                        <a href="#collapseCard3-2" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard3-2">
+                                            <div className="card-header text-white bg-primary">小標題二</div>
+                                        </a>                                    
+                                        <div className="card-body collapse" id="collapseCard3-2">
+                                            <div className="form-row">
+
+                                                <div className="col-md-10 mb-6">
+                                                    <div className="form-row">
+                                                        <InputText title='小標題2' notice='(字數限制為9個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
+                                                            stateObj={this} required={true} checkValue='9' />
+                                                    </div>
+                                                    <div className="form-row row-style-w95-pt1">
+                                                        <InputTextArea title='小標題2內容' notice='(字數限制為50個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
+                                                            rows='3' stateObj={this} required={true} checkValue='50' />
+                                                    </div>
+                                                    <div className="form-row row-style-w95-pt1">
+                                                        <ImgUpload title='小標題2圖片 上傳' notice='(圖檔尺寸大小為 56*56，接受格式為png、jpg)' objName='benefitSubImg2' imgUpload={benefitSubImg2Upload} 
+                                                            imgFileName={benefitSubImg2} parentObj={this} imgW={56} imgH={56} required={true} />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <div className="card">
+                                        <a href="#collapseCard3-3" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard3-3">
+                                            <div className="card-header text-white bg-primary">小標題三</div>
+                                        </a>                                    
+                                        <div className="card-body collapse" id="collapseCard3-3">
+                                            <div className="form-row">
+
+                                                <div className="col-md-10 mb-6">
+                                                    <div className="form-row">
+                                                        <InputText title='小標題3' notice='(字數限制為9個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
+                                                            stateObj={this} required={true} checkValue='9' />
+                                                    </div>
+                                                    <div className="form-row row-style-w95-pt1">
+                                                        <InputTextArea title='小標題3內容' notice='(字數限制為50個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
+                                                            rows='3' stateObj={this} required={true} checkValue='50' />
+                                                    </div>
+                                                    <div className="form-row row-style-w95-pt1">
+                                                        <ImgUpload title='小標題3圖片 上傳' notice='(圖檔尺寸大小為 56*56，接受格式為png、jpg)' objName='benefitSubImg3' imgUpload={benefitSubImg3Upload} 
+                                                            imgFileName={benefitSubImg3} parentObj={this} imgW={56} imgH={56} required={true} />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="card">
+                                        <a href="#collapseCard3-4" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard3-4">
+                                            <div className="card-header text-white bg-primary">小標題四</div>
+                                        </a>                                    
+                                        <div className="card-body collapse" id="collapseCard3-4">
+                                            <div className="form-row">
+
+                                                <div className="col-md-10 mb-6">
+                                                    <div className="form-row">
+                                                        <InputText title='小標題4' notice='(字數限制為9個字以內)' inputName='benefitSubTitle4' inputState={benefitSubTitle4}
+                                                            stateObj={this} required={true} checkValue='9' />
+                                                    </div>
+                                                    <div className="form-row row-style-w95-pt1">
+                                                        <InputTextArea title='小標題4內容' notice='(字數限制為50個字以內)' inputName='benefitSubContent4' inputState={benefitSubContent4}
+                                                            rows='3' stateObj={this} required={true} checkValue='50' />
+                                                    </div>
+                                                    <div className="form-row row-style-w95-pt1">
+                                                        <ImgUpload title='小標題4圖片 上傳' notice='(圖檔尺寸大小為 56*56，接受格式為png、jpg)' objName='benefitSubImg4' imgUpload={benefitSubImg4Upload} 
+                                                            imgFileName={benefitSubImg4} parentObj={this} imgW={56} imgH={56} required={true} />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <hr />
                                     <div align="center"><button type='submit' id='action3' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
                                     
