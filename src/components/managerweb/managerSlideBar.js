@@ -58,10 +58,10 @@ function ManagerSlideBar(props) {
                     <h6 className="collapse-header">客製化網站模板設定</h6>
                     <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template1`, state: { detail: 'login' }}}>模板樣式 =1=</Link>
                     <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template4`, state: { detail: 'login' }}}>模板樣式 =4=</Link>
+                    <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template5`, state: { detail: 'login' }}}>模板樣式 =5=</Link>
                     
                     <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template2`, state: { detail: 'login' }}}>模板樣式 =2=</Link>
-                    <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template3`, state: { detail: 'login' }}}>模板樣式 =3=</Link>
-                    <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template5`, state: { detail: 'login' }}}>模板樣式 =5=</Link>
+                    <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template3`, state: { detail: 'login' }}}>模板樣式 =3=</Link>                    
                     <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template6`, state: { detail: 'login' }}}>模板樣式 =6=</Link>
                     {/**/}
 
