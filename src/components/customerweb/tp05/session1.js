@@ -38,6 +38,9 @@ class CompanyTitle extends React.Component{
         return (        
 
             <div className="home-area home-slides-two owl-carousel owl-theme">
+
+                {companyData && companyData.length > 0 && <div>
+                
                 <div className="banner-section" style={{backgroundImage: imgURL1}}>
                     <div className="d-table">
                         <div className="d-table-cell">
@@ -52,6 +55,9 @@ class CompanyTitle extends React.Component{
                         </div>
                     </div>
                 </div>
+
+                </div>}
+                
             </div>
         )
 
