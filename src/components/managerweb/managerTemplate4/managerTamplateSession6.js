@@ -13,6 +13,7 @@ class Session6 extends React.Component{
             customizeEnable : '',
             customizeName : '',
             customizeTitle : '',
+            customizeSubTitle : '',
             card1Title : '',
             card1Img : ' ',
             card1ImgUpload : '',
@@ -46,7 +47,7 @@ class Session6 extends React.Component{
             customizeEnable : event.target.customizeEnable.checked,
             customizeName : event.target.customizeName.value,
             customizeTitle : event.target.customizeTitle.value,
-            customizeSubTitle : '',
+            customizeSubTitle : event.target.customizeSubTitle.value,
 
             card1Title : event.target.card1Title.value,
             card1Content : '',
@@ -114,6 +115,7 @@ class Session6 extends React.Component{
         let customizeEnable = this.state.customizeEnable;
         let customizeName = this.state.customizeName;
         let customizeTitle = this.state.customizeTitle;
+        let customizeSubTitle = this.state.customizeSubTitle;
         let card1Title = this.state.card1Title;
         let card1Img = this.state.card1Img;
         let card2Title = this.state.card2Title;
@@ -137,6 +139,7 @@ class Session6 extends React.Component{
                 customizeEnable = customizeEnable !== "" ? customizeEnable : element.customizeEnable;
                 customizeName = customizeName !== "" ? customizeName : element.customizeName;
                 customizeTitle = customizeTitle !== "" ? customizeTitle : element.customizeTitle;
+                customizeSubTitle = customizeSubTitle !== "" ? customizeSubTitle : element.customizeSubTitle;
 
                 card1Title = card1Title !== "" ? card1Title : element.card1Title;
                 card1Img = card1Img !== " " ? card1Img : element.card1Img;
@@ -159,7 +162,7 @@ class Session6 extends React.Component{
         }
 
         // enable
-        customizeEnable = customizeEnable ===" " ? false : customizeEnable;
+        customizeEnable = customizeEnable === "" ? false : customizeEnable;
         // image
         let card1ImgUpload ="";
         if(card1Img === " "){
@@ -226,6 +229,10 @@ class Session6 extends React.Component{
                                 <div className="form-row row-style-w95-pt1">
                                     <InputText title='自訂區域主標題' notice='(字數限制為6個字以內)' inputName='customizeTitle' inputState={customizeTitle}
                                         stateObj={this} required={false} checkValue='6' />
+                                </div>
+                                <div className="form-row row-style-w95-pt1">
+                                    <InputText title='自訂區域副標題' notice='(字數限制為11個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
+                                        stateObj={this} required={false} checkValue='11' />
                                 </div>
                             </div>
                             <div className="col-md-6 mb-3">                                    
