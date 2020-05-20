@@ -2,8 +2,6 @@ import React from 'react';
 import InputSwitch from '../../sharecomponents/inputSwitch';
 import InputText from '../../sharecomponents/inputText';
 import InputTextArea from '../../sharecomponents/inputTextArea';
-import ImgUpload from '../../sharecomponents/imgUpload';
-import envConfig from '../../../config/env';
 import Msg from '../msg';
 
 class Session7 extends React.Component{
@@ -11,17 +9,18 @@ class Session7 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            qaEnable : ' ',
-            qa1Title : ' ',
-            qa1Content : ' ',
-            qa2Title : ' ',
-            qa2Content : ' ',
-            qa3Title : ' ',
-            qa3Content : ' ',
-            qa4Title : ' ',
-            qa4Content : ' ',
-            qa5Title : ' ',
-            qa5Content : ' ',
+            qaSubTitle : '',
+            qaEnable : '',
+            qa1Title : '',
+            qa1Content : '',
+            qa2Title : '',
+            qa2Content : '',
+            qa3Title : '',
+            qa3Content : '',
+            qa4Title : '',
+            qa4Content : '',
+            qa5Title : '',
+            qa5Content : '',
             qaImg : ' ',
             qaImgUpload : '',
         };     
@@ -41,22 +40,22 @@ class Session7 extends React.Component{
         const cid = this.props.match.params.cid;
 
         const submitObj={
-            ono: cid,
+            ono : cid,
             themeNum : event.target.themeNum7.value,
-            qaEnable:  event.target.qaEnable.checked,
-            qa1Title:  event.target.qa1Title.value,
-            qa1Content:  event.target.qa1Content.value,
-            qa2Title:  event.target.qa2Title.value,
-            qa2Content:  event.target.qa2Content.value,
-            qa3Title:  event.target.qa3Title.value,
-            qa3Content:  event.target.qa3Content.value,
-            qa4Title:  event.target.qa4Title.value,
-            qa4Content:  event.target.qa4Content.value,
-            qa5Title:  event.target.qa5Title.value,
-            qa5Content:  event.target.qa5Content.value,
-            qaSubTitle:  '',
-            qaImg:  event.target.qaImg.value,
-            qaImgUpload : this.state.qaImgUpload ? this.state.qaImgUpload.value : null
+            qaEnable : event.target.qaEnable.checked,
+            qa1Title : event.target.qa1Title.value,
+            qa1Content : event.target.qa1Content.value,
+            qa2Title : event.target.qa2Title.value,
+            qa2Content : event.target.qa2Content.value,
+            qa3Title : event.target.qa3Title.value,
+            qa3Content : event.target.qa3Content.value,
+            qa4Title : '',
+            qa4Content : '',
+            qa5Title : '',
+            qa5Content : '',
+            qaSubTitle : event.target.qaSubTitle.value,
+            qaImg : ' ',
+            qaImgUpload : null
         }
 
         if(event.target.action7.value === 'create'){
@@ -68,7 +67,6 @@ class Session7 extends React.Component{
     }
 
     render(){
-        const cid = this.props.match.params.cid.trim();
         const { qaData, qaErr, qaIsLoading} = this.props.qaReducer;
 
         let qaEnable = this.state.qaEnable;
@@ -78,11 +76,7 @@ class Session7 extends React.Component{
         let qa2Content = this.state.qa2Content;
         let qa3Title = this.state.qa3Title;
         let qa3Content = this.state.qa3Content;
-        let qa4Title = this.state.qa4Title;
-        let qa4Content = this.state.qa4Content;
-        let qa5Title = this.state.qa5Title;
-        let qa5Content = this.state.qa5Content;
-        let qaImg = this.state.qaImg;
+        let qaSubTitle = this.state.qaSubTitle;
 
         const sessionName=  "常見問題";
         let themeNum = this.props.themeNum;
@@ -91,27 +85,15 @@ class Session7 extends React.Component{
         if(qaData && qaData.length > 0){
             actionType = 'modify';
             qaData.forEach(element => {
-                qaEnable = qaEnable  !==" " ? qaEnable : element.qaEnable;
-                qa1Title = qa1Title !==" " ? qa1Title : element.qa1Title;
-                qa1Content = qa1Content !==" " ? qa1Content : element.qa1Content;
-                qa2Title = qa2Title !==" " ? qa2Title : element.qa2Title;
-                qa2Content = qa2Content !==" " ? qa2Content : element.qa2Content;
-                qa3Title = qa3Title !==" " ? qa3Title : element.qa3Title;
-                qa3Content = qa3Content !==" " ? qa3Content : element.qa3Content;
-                qa4Title = qa4Title !==" " ? qa4Title : element.qa4Title;
-                qa4Content = qa4Content !==" " ? qa4Content : element.qa4Content;
-                qa5Title = qa5Title !==" " ? qa5Title : element.qa5Title;
-                qa5Content = qa5Content !==" " ? qa5Content : element.qa5Content;
-                qaImg = qaImg !==" " ? qaImg : element.qaImg;
+                qaEnable = qaEnable  !== "" ? qaEnable : element.qaEnable;
+                qa1Title = qa1Title !== "" ? qa1Title : element.qa1Title;
+                qa1Content = qa1Content !== "" ? qa1Content : element.qa1Content;
+                qa2Title = qa2Title !== "" ? qa2Title : element.qa2Title;
+                qa2Content = qa2Content !== "" ? qa2Content : element.qa2Content;
+                qa3Title = qa3Title !== "" ? qa3Title : element.qa3Title;
+                qa3Content = qa3Content !== "" ? qa3Content : element.qa3Content;
+                qaSubTitle = qaSubTitle !== "" ? qaSubTitle : element.qaSubTitle;
             })
-        }
-
-        // image
-        let qaImgUpload ="";
-        if(qaImg === " "){
-            qaImgUpload = "/image/logo-1111.png";
-        }else{
-            qaImgUpload = this.state.qaImg !==' ' ?  this.state.qaImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${qaImg}`;
         }
         
         return(
@@ -131,64 +113,35 @@ class Session7 extends React.Component{
                                 <div className="form-row row-style-pt1">
                                     <div className="col-md-6 mb-3">
 
+                                        
+                                        <div className="form-row row-style-w95-pt1">
+                                            <InputTextArea title={`${sessionName}內容`} notice='(字數限制為20個字以內)' inputName='qaSubTitle' inputState={qaSubTitle}
+                                                rows='3' stateObj={this} required={false} checkValue='20' />
+                                        </div>
                                         <div className="form-row row-style-w95">
-                                            <InputText title={`${sessionName}1標題`} notice='(字數限制為30個字以內)' inputName='qa1Title' inputState={qa1Title}
-                                                stateObj={this} required={false} checkValue='30' />
+                                            <InputText title={`${sessionName}1標題`} notice='(字數限制為10個字以內)' inputName='qa1Title' inputState={qa1Title}
+                                                stateObj={this} required={false} checkValue='10' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputTextArea title={`${sessionName}1內容`} notice='(字數限制為135個字以內)' inputName='qa1Content' inputState={qa1Content}
-                                                rows='4' stateObj={this} required={false} checkValue='135' />
+                                            <InputTextArea title={`${sessionName}1內容`} notice='(字數限制為108個字以內)' inputName='qa1Content' inputState={qa1Content}
+                                                rows='4' stateObj={this} required={false} checkValue='108' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputText  title= {`${sessionName}2標題`} notice='(字數限制為30個字以內)' inputName='qa2Title' inputState={qa2Title}
-                                                stateObj={this} required={false} checkValue='30' />
+                                            <InputText  title= {`${sessionName}2標題`} notice='(字數限制為10個字以內)' inputName='qa2Title' inputState={qa2Title}
+                                                stateObj={this} required={false} checkValue='10' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputTextArea title={`${sessionName}2內容`} notice='(字數限制為135個字以內)' inputName='qa2Content' inputState={qa2Content}
-                                                rows='4' stateObj={this} required={false} checkValue='135' />
+                                            <InputTextArea title={`${sessionName}2內容`} notice='(字數限制為108個字以內)' inputName='qa2Content' inputState={qa2Content}
+                                                rows='4' stateObj={this} required={false} checkValue='108' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputText  title= {`${sessionName}3標題`} notice='(字數限制為30個字以內)' inputName='qa3Title' inputState={qa3Title}
-                                                stateObj={this} required={false} checkValue='30' />
+                                            <InputText  title= {`${sessionName}3標題`} notice='(字數限制為10個字以內)' inputName='qa3Title' inputState={qa3Title}
+                                                stateObj={this} required={false} checkValue='10' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputTextArea title={`${sessionName}3內容`} notice='(字數限制為135個字以內)' inputName='qa3Content' inputState={qa3Content}
-                                                rows='4' stateObj={this} required={false} checkValue='135' />
+                                            <InputTextArea title={`${sessionName}3內容`} notice='(字數限制為108個字以內)' inputName='qa3Content' inputState={qa3Content}
+                                                rows='4' stateObj={this} required={false} checkValue='108' />
                                         </div>
-                                        <div className="form-row row-style-w95-pt1">
-                                            <InputText  title= {`${sessionName}4標題`} notice='(字數限制為30個字以內)' inputName='qa4Title' inputState={qa4Title}
-                                                stateObj={this} required={false} checkValue='30' />
-                                        </div>
-                                        <div className="form-row row-style-w95-pt1">
-                                            <InputTextArea title={`${sessionName}4內容`} notice='(字數限制為135個字以內)' inputName='qa4Content' inputState={qa4Content}
-                                                rows='4' stateObj={this} required={false} checkValue='135' />
-                                        </div>
-                                        <div className="form-row row-style-w95-pt1">
-                                            <InputText  title= {`${sessionName}5標題`} notice='(字數限制為30個字以內)' inputName='qa5Title' inputState={qa5Title}
-                                                stateObj={this} required={false} checkValue='30' />
-                                        </div>
-                                        <div className="form-row row-style-w95-pt1">
-                                            <InputTextArea title={`${sessionName}5內容`} notice='(字數限制為135個字以內)' inputName='qa5Content' inputState={qa5Content}
-                                                rows='4' stateObj={this} required={false} checkValue='135' />
-                                        </div>
-                                        <div className="form-row row-style-w95-pt1">
-                                            <ImgUpload title='常見問題背景圖片' notice='(圖檔尺寸大小為 1920*1080  ，接受格式為png、jpg)' objName='qaImg'  imgUpload={qaImgUpload} 
-                                                imgFileName={qaImg} parentObj={this} imgW={1920} imgH={1080} required={false} />
-                                        </div>
-
-                                            {/*this.createQA(5).map((preName, index)=>{
-                                                const titleName = `${preName}Title`;
-                                                const contentName = `${preName}Content`;
-                                                const thatState = this.state;
-                                                return(
-                                                    <div key={index}>
-                                                        <InputText  title= {`${sessionName}${index+1}標題`} notice='(字數限制為30個字以內)' inputName={titleName} inputState={thatState[titleName]}
-                                                            stateObj={this} required={false} />
-                                                        <InputTextArea title={`${sessionName}${index+1}內容`}notice='(字數限制為135個字以內)' inputName={contentName} inputState={thatState[contentName]}
-                                                            rows='4' stateObj={this} required={false} />
-                                                    </div>
-                                                )
-                                            })*/}
 
                                         <hr />
                                         <div  align="center"><button type='submit' id='action7' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
