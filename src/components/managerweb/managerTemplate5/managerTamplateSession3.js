@@ -173,12 +173,12 @@ class Session3 extends React.Component{
                                            stateObj={this} required={true} checkValue='40' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='圖片一 上傳' notice='(圖檔尺寸大小為 850*760，接受格式為png、jpg)' objName='benefitImg'  imgUpload={benefitImgUpload} 
+                                        <ImgUpload title='圖片一 上傳' notice='(圖檔尺寸大小為 850*760，接受格式為png、jpg)' objName='benefitImg' imgUpload={benefitImgUpload} 
                                             imgFileName={benefitImg} parentObj={this} imgW={850} imgH={760} required={true} />                                               
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='圖片二 上傳' notice='(圖檔尺寸大小為 850*760，接受格式為png、jpg)' objName='benefitImg2'  imgUpload={benefitImg2Upload} imgFileName={benefitImg2} 
-                                            parentObj={this} imgW={850} imgH={760} required={true}/> 
+                                        <ImgUpload title='圖片二 上傳' notice='(圖檔尺寸大小為 850*760，接受格式為png、jpg)' objName='benefitImg2' imgUpload={benefitImg2Upload}
+                                            imgFileName={benefitImg2} parentObj={this} imgW={850} imgH={760} required={true}/> 
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='背景圖片 上傳' notice='(圖檔尺寸大小為 1330*660，接受格式為png、jpg)' objName='benefitSubImg1'  imgUpload={benefitSubImg1Upload} 
