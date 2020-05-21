@@ -19,7 +19,7 @@ class CompanyTitle extends React.Component{
 
         let companyBackgroundImg1;
         let companyBackgroundImg2;
-        //let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
+        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
 
         if(companyData && companyData.length > 0){
             companyData.forEach(element => {
@@ -36,24 +36,39 @@ class CompanyTitle extends React.Component{
         let imgURL2 = "url(" + companyBackgroundImg2 + ")";
 
         return (        
+            <div>
+                
+                {companyData && companyData.length > 0 &&
 
-            <div className="home-area home-slides-two owl-carousel owl-theme">
-                
-                <div className="banner-section" style={{backgroundImage: imgURL1}}>
-                    <div className="d-table">
-                        <div className="d-table-cell">
-                            <div className="container"></div>
+                    <div className="home-area home-slides-two owl-carousel owl-theme">
+                        
+                        <div className="banner-section" style={{backgroundImage: imgURL1}}>
+                            <div className="d-table">
+                                <div className="d-table-cell align-bottom text-center pb-20">
+                                    <div className="container">
+                                        <div className="btn-box">
+                                            <a href={companyurl} className="default-btn" target="_blank" rel="noopener noreferrer">我要應徵<span></span></a>                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className="banner-section" style={{backgroundImage: imgURL2}}>
-                    <div className="d-table">
-                        <div className="d-table-cell">
-                            <div className="container"></div>
+                        <div className="banner-section" style={{backgroundImage: imgURL2}}>
+                            <div className="d-table">
+                                <div className="d-table-cell align-bottom text-center pb-20">
+                                    <div className="container">
+                                        <div className="btn-box">
+                                            <a href={companyurl} className="default-btn" target="_blank" rel="noopener noreferrer">我要應徵<span></span></a>                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
-                </div>
-                
+
+                }
+
             </div>
         )
 
