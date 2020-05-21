@@ -211,8 +211,8 @@ class Session2 extends React.Component{
                                            stateObj={this} required={true} checkValue='25' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='主內容' notice='(字數限制為120個字以內)' inputName='introMainContent' inputState={introMainContent}
-                                           rows='5' stateObj={this} required={true} checkValue='120' />
+                                        <InputTextArea title='主內容' notice='(字數限制為250個字以內)' inputName='introMainContent' inputState={introMainContent}
+                                           rows='5' stateObj={this} required={true} checkValue='250' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='圖片一 上傳' notice='(圖檔尺寸大小為 360*300，接受格式為png、jpg)' objName='introSubTitle1Img'  imgUpload={introSubTitle1ImgUpload} 

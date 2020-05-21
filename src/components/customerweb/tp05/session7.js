@@ -50,6 +50,8 @@ class CompanyQA extends React.Component {
         // image
         qaImg = !qaImg ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${qaImg}`;
 
+        let qaImgURL = "url(" + qaImg + ")";
+
         return (
 
             <section className="faq-area pb-50" style={qaEnable? {} : {display: 'none'}}>
@@ -59,7 +61,7 @@ class CompanyQA extends React.Component {
                 <div id="faq" className="container-fluid p-0">
                     <div className="row m-0">
                         <div className="col-lg-6 col-md-12 p-0">
-                            <div className="faq-image">
+                            <div className="faq-image" style={{backgroundImage: qaImgURL}}>
                                 <img src={qaImg} alt="常見問題" />
                             </div>
                         </div>

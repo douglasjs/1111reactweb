@@ -60,7 +60,10 @@ class CompanyBenifit  extends React.Component {
         benefitImg2 = !benefitImg2 ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitImg2}`;
         benefitSubImg1 = !benefitSubImg1 ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitSubImg1}`;
 
+        let benefitImgURL = "url(" + benefitImg + ")";
+        let benefitImg2URL = "url(" + benefitImg2 + ")";
         let benefitBgURL = "url(" + benefitSubImg1 + ")";
+        //alert("左1" + benefitImg + "*左2" + benefitImg2 + "右" + benefitSubImg1);
 
         return (
             <section  className="why-choose-us-area">
@@ -69,11 +72,11 @@ class CompanyBenifit  extends React.Component {
                     <div className="row">
                         <div className="col-lg-5 col-md-12">
                             <div className="why-choose-us-slides owl-carousel owl-theme">
-                                <div className="why-choose-us-image bg1">
+                                <div className="why-choose-us-image" style={{backgroundImage: benefitImgURL}}>
                                     <img src={benefitImg} alt="員工福利" />
                                 </div>
 
-                                <div className="why-choose-us-image bg2">
+                                <div className="why-choose-us-image" style={{backgroundImage: benefitImg2URL}}>
                                     <img src={benefitImg2} alt="員工福利" />
                                 </div>
 

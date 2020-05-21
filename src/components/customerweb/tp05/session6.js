@@ -76,6 +76,11 @@ class CompanyCustomize extends React.Component {
         card3Img = !card3Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card3Img}`;
         card4Img = !card4Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card4Img}`;
 
+        let card1ImgURL = "url(" + card1Img + ")";
+        let card2ImgURL = "url(" + card2Img + ")";
+        let card3ImgURL = "url(" + card3Img + ")";
+        let card4ImgURL = "url(" + card4Img + ")";
+
         return (
             <section className="events-area pt-70 pb-50" style={customizeEnable? {} : {display: 'none'}}>
                 
@@ -89,7 +94,7 @@ class CompanyCustomize extends React.Component {
                     <div className="single-events-box">
                         <div className="events-box">
                             <div className="events-image">
-                                <div className="image bg1">
+                                <div className="image" style={{backgroundImage: card1ImgURL}}>
                                     <img src={card1Img} alt="自訂圖片" />
                                 </div>
                             </div>
@@ -113,7 +118,7 @@ class CompanyCustomize extends React.Component {
                     <div className="single-events-box">
                         <div className="events-box">
                             <div className="events-image">
-                                <div className="image bg2">
+                                <div className="image" style={{backgroundImage: card2ImgURL}}>
                                     <img src={card2Img} alt="自訂圖片" />
                                 </div>
                             </div>
@@ -137,7 +142,7 @@ class CompanyCustomize extends React.Component {
                     <div className="single-events-box">
                         <div className="events-box">
                             <div className="events-image">
-                                <div className="image bg3">
+                                <div className="image" style={{backgroundImage: card3ImgURL}}>
                                     <img src={card3Img} alt="自訂圖片" />
                                 </div>
                             </div>
@@ -162,7 +167,7 @@ class CompanyCustomize extends React.Component {
                     <div className="single-events-box">
                         <div className="events-box">
                             <div className="events-image">
-                                <div className="image bg4">
+                                <div className="image" style={{backgroundImage: card4ImgURL}}>
                                     <img src={card4Img} alt="自訂圖片" />
                                 </div>
                             </div>

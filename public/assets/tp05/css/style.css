@@ -6633,7 +6633,6 @@ FAQ Area CSS
 .faq-image {
   width: 100%;
   height: 100%;
-  background-image: url(../../assets/img/faq-img1.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

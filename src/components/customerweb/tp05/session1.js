@@ -35,16 +35,14 @@ class CompanyTitle extends React.Component{
         let imgURL1 = "url(" + companyBackgroundImg1 + ")";
         let imgURL2 = "url(" + companyBackgroundImg2 + ")";
 
-        return (        
+        return ( 
             <div>
-                
                 {companyData && companyData.length > 0 &&
-
                     <div className="home-area home-slides-two owl-carousel owl-theme">
                         
                         <div className="banner-section" style={{backgroundImage: imgURL1}}>
                             <div className="d-table">
-                                <div className="d-table-cell align-bottom text-center pb-20">
+                                <div className="d-table-cell text-center pb-20">
                                     <div className="container">
                                         <div className="btn-box">
                                             <a href={companyurl} className="default-btn" target="_blank" rel="noopener noreferrer">我要應徵<span></span></a>                             
@@ -55,7 +53,7 @@ class CompanyTitle extends React.Component{
                         </div>
                         <div className="banner-section" style={{backgroundImage: imgURL2}}>
                             <div className="d-table">
-                                <div className="d-table-cell align-bottom text-center pb-20">
+                                <div className="d-table-cell text-center pb-20">
                                     <div className="container">
                                         <div className="btn-box">
                                             <a href={companyurl} className="default-btn" target="_blank" rel="noopener noreferrer">我要應徵<span></span></a>                             
@@ -66,10 +64,9 @@ class CompanyTitle extends React.Component{
                         </div>
                         
                     </div>
-
                 }
-
             </div>
+               
         )
 
     }
