@@ -1,7 +1,5 @@
 import React from 'react';
 import InputSwitch from '../../sharecomponents/inputSwitch';
-import ImgUpload from '../../sharecomponents/imgUpload';
-import envConfig from '../../../config/env';
 import Msg from '../msg';
 
 class Session8 extends React.Component{
@@ -34,10 +32,8 @@ class Session8 extends React.Component{
     }
 
     render(){
-        const cid = this.props.match.params.cid.trim();
         const { contactData, contactErr, contactIsLoading} = this.props.contactReducer;
-
-
+        
         let contactEnable = this.state.contactEnable;
 
         const sessionName=  "聯絡我們";
