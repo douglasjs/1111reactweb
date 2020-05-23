@@ -202,12 +202,12 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題2' notice='(字數限制為9個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
-                                                            stateObj={this} required={true} checkValue='9' />
+                                                        <InputText title='小標題2' notice='(字數限制為4個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
+                                                            stateObj={this} required={true} checkValue='4' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題2內容' notice='(字數限制為50個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
-                                                            rows='3' stateObj={this} required={true} checkValue='50' />
+                                                        <InputTextArea title='小標題2內容' notice='(字數限制為55個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
+                                                            rows='3' stateObj={this} required={true} checkValue='55' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
                                                         <ImgUpload title='小標題2圖片 上傳' notice='(圖檔尺寸大小為 56*56，接受格式為png、jpg)' objName='benefitSubImg2' imgUpload={benefitSubImg2Upload} 
@@ -228,12 +228,12 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題3' notice='(字數限制為9個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
-                                                            stateObj={this} required={true} checkValue='9' />
+                                                        <InputText title='小標題3' notice='(字數限制為4個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
+                                                            stateObj={this} required={true} checkValue='4' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題3內容' notice='(字數限制為50個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
-                                                            rows='3' stateObj={this} required={true} checkValue='50' />
+                                                        <InputTextArea title='小標題3內容' notice='(字數限制為55個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
+                                                            rows='3' stateObj={this} required={true} checkValue='55' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
                                                         <ImgUpload title='小標題3圖片 上傳' notice='(圖檔尺寸大小為 56*56，接受格式為png、jpg)' objName='benefitSubImg3' imgUpload={benefitSubImg3Upload} 
@@ -254,12 +254,12 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題4' notice='(字數限制為9個字以內)' inputName='benefitSubTitle4' inputState={benefitSubTitle4}
-                                                            stateObj={this} required={true} checkValue='9' />
+                                                        <InputText title='小標題4' notice='(字數限制為4個字以內)' inputName='benefitSubTitle4' inputState={benefitSubTitle4}
+                                                            stateObj={this} required={true} checkValue='4' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題4內容' notice='(字數限制為50個字以內)' inputName='benefitSubContent4' inputState={benefitSubContent4}
-                                                            rows='3' stateObj={this} required={true} checkValue='50' />
+                                                        <InputTextArea title='小標題4內容' notice='(字數限制為55個字以內)' inputName='benefitSubContent4' inputState={benefitSubContent4}
+                                                            rows='3' stateObj={this} required={true} checkValue='55' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
                                                         <ImgUpload title='小標題4圖片 上傳' notice='(圖檔尺寸大小為 56*56，接受格式為png、jpg)' objName='benefitSubImg4' imgUpload={benefitSubImg4Upload} 
