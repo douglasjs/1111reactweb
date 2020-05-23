@@ -16,13 +16,7 @@ class Session7 extends React.Component{
             qa2Title : '',
             qa2Content : '',
             qa3Title : '',
-            qa3Content : '',
-            qa4Title : '',
-            qa4Content : '',
-            qa5Title : '',
-            qa5Content : '',
-            qaImg : ' ',
-            qaImgUpload : '',
+            qa3Content : ''
         };     
     }
 
