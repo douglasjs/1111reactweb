@@ -71,11 +71,6 @@ class CompanyContact extends React.Component {
 
         let imgURL = "url(image/tp02/background/testimonial-bg.png)";
 
-        /*const style = {
-            backgroundImage: imgURL,
-            contactEnable? {} : {display: 'none'}
-        };*/
-
         return (
             <div style={contactEnable? {} : {display: 'none'}}>
 
@@ -91,7 +86,7 @@ class CompanyContact extends React.Component {
                                     <h1>{emailMsg}</h1>
                                 </div>
 
-                                <form method="post" id="register_form" className="default-form" action="http://azim.commonsupport.com/Rivox/sendemail.php"> 
+                                <form method="post" id="register_form" className="default-form"> 
                                     <div className="row p-t-20">
                                         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
                                             <input type="text" name="username" placeholder="姓名*" required data-error="格式錯誤" onChange={this.handleChange('custName')} value={this.state.custName} />
@@ -118,7 +113,7 @@ class CompanyContact extends React.Component {
                     </div>
                 </div>
             </section>
-            
+
             </div>
     
         )
