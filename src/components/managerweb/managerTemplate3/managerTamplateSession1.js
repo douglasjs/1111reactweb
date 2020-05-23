@@ -10,13 +10,18 @@ class Session1 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            title: ' ',
-            companySubTitle1: ' ',
-            companySubTitle2: ' ',
-            companyBackgroundImg1: ' ',
-            companyBackgroundImg1Upload:'',
-            companyBackgroundImg2: ' ',
-            companyBackgroundImg2Upload:''
+            title : '',
+            title2 : '',
+            title3 : '',
+            companySubTitle1 : '',
+            companySubTitle2 : '',
+            companySubTitle3 : '',
+            companyBackgroundImg1 : ' ',
+            companyBackgroundImg1Upload : '',
+            companyBackgroundImg2 : ' ',
+            companyBackgroundImg2Upload : '',
+            companyBackgroundImg3 : ' ',
+            companyBackgroundImg3Upload : ''
         };
     }
 
@@ -32,38 +37,31 @@ class Session1 extends React.Component{
         const cid = this.props.match.params.cid;
 
         if(event.target.title.value){
-            if(event.target.title.value ===' '){
+            if(event.target.title.value === ''){
                 return false;
             }
         }
         if(event.target.companySubTitle1.value){
-            if(event.target.companySubTitle1.value ===' '){
+            if(event.target.companySubTitle1.value === ''){
                 return false;
             }
         }
-        /*
-        if(event.target.companyBackgroundImg1.value){
-            if(event.target.companyBackgroundImg1.value ===' '){
-                return false;
-            }
-        }
-        */
 
         const　comObj = {
-            ono: cid,
+            ono : cid,
             themeNum : event.target.themeNum.value,
-            title: event.target.title.value,
-            title2: '',
-            title3: '',
-            companySubTitle1: event.target.companySubTitle1.value,
-            companySubTitle2: event.target.companySubTitle2.value,
-            companySubTitle3: '',
-            companyBackgroundImg1:event.target.companyBackgroundImg1.value,
-            companyBackgroundImg2:event.target.companyBackgroundImg2.value,
-            companyBackgroundImg3:'',
-            UploadImg1: this.state.companyBackgroundImg1Upload ? this.state.companyBackgroundImg1Upload.value : null,
-            UploadImg2: this.state.companyBackgroundImg2Upload ? this.state.companyBackgroundImg2Upload.value : null,
-            uploadImg3: null
+            title : event.target.title.value,
+            title2 : event.target.title2.value,
+            title3 : event.target.title3.value,
+            companySubTitle1 : event.target.companySubTitle1.value,
+            companySubTitle2 : event.target.companySubTitle2.value,
+            companySubTitle3 : event.target.companySubTitle3.value,
+            companyBackgroundImg1 : event.target.companyBackgroundImg1.value,
+            companyBackgroundImg2 : event.target.companyBackgroundImg2.value,
+            companyBackgroundImg3 : event.target.companyBackgroundImg3.value,
+            UploadImg1 : this.state.companyBackgroundImg1Upload ? this.state.companyBackgroundImg1Upload.value : null,
+            UploadImg2 : this.state.companyBackgroundImg2Upload ? this.state.companyBackgroundImg2Upload.value : null,
+            uploadImg3 : this.state.companyBackgroundImg3Upload ? this.state.companyBackgroundImg3Upload.value : null
         }
 
         if(event.target.action1.value === 'create'){
@@ -81,42 +79,53 @@ class Session1 extends React.Component{
         const cid = this.props.match.params.cid.trim();
 
         let title = this.state.title;
+        let title2 = this.state.title2;
+        let title3 = this.state.title3;
         let companySubTitle1 = this.state.companySubTitle1;
         let companySubTitle2 = this.state.companySubTitle2;
+        let companySubTitle3 = this.state.companySubTitle3;
         let companyBackgroundImg1 = this.state.companyBackgroundImg1;
         let companyBackgroundImg2 = this.state.companyBackgroundImg2;
+        let companyBackgroundImg3 = this.state.companyBackgroundImg3;
         let themeNum = this.props.themeNum;
         let actionType = 'create';
 
         if(companyData && companyData.length > 0){
             actionType = 'modify';
             companyData.forEach(element => {
-                title = title !==" " ? title : element.title;
-                companySubTitle1 = companySubTitle1 !==" " ? companySubTitle1 : element.companySubTitle1;
-                companySubTitle2 = companySubTitle2 !==" " ? companySubTitle2 : element.companySubTitle2;
-                companyBackgroundImg1 = companyBackgroundImg1 !==" " ? companyBackgroundImg1 : element.companyBackgroundImg1;
-                companyBackgroundImg2 = companyBackgroundImg2 !==" " ? companyBackgroundImg2 : element.companyBackgroundImg2;
-
+                title = title !== "" ? title : element.title;
+                title2 = title2 !== "" ? title2 : element.title2;
+                title3 = title3 !== "" ? title3 : element.title3;
+                companySubTitle1 = companySubTitle1 !== "" ? companySubTitle1 : element.companySubTitle1;
+                companySubTitle2 = companySubTitle2 !== "" ? companySubTitle2 : element.companySubTitle2;
+                companySubTitle3 = companySubTitle3 !== "" ? companySubTitle3 : element.companySubTitle3;
+                companyBackgroundImg1 = companyBackgroundImg1 !== " " ? companyBackgroundImg1 : element.companyBackgroundImg1;
+                companyBackgroundImg2 = companyBackgroundImg2 !== " " ? companyBackgroundImg2 : element.companyBackgroundImg2;
+                companyBackgroundImg3 = companyBackgroundImg3 !== " " ? companyBackgroundImg3 : element.companyBackgroundImg3;
             })
         }
 
         // image
-        let companyBackgroundImg1Upload ="";
+        let companyBackgroundImg1Upload = "";
         if(companyBackgroundImg1 === " "){
            companyBackgroundImg1Upload = "/image/logo-1111.png";
         }else{
-           companyBackgroundImg1Upload = this.state.companyBackgroundImg1 !==' ' ?  this.state.companyBackgroundImg1Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg1}`;
+           companyBackgroundImg1Upload = this.state.companyBackgroundImg1 !== ' ' ?  this.state.companyBackgroundImg1Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg1}`;
         }
-        let companyBackgroundImg2Upload ="";
+
+        let companyBackgroundImg2Upload = "";
         if(companyBackgroundImg2 === " "){
            companyBackgroundImg2Upload = "/image/logo-1111.png";
         }else{
-           companyBackgroundImg2Upload = this.state.companyBackgroundImg2 !==' ' ?  this.state.companyBackgroundImg2Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg2}`;
+           companyBackgroundImg2Upload = this.state.companyBackgroundImg2 !== ' ' ?  this.state.companyBackgroundImg2Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg2}`;
         }
 
-
-       
-
+        let companyBackgroundImg3Upload = "";
+        if(companyBackgroundImg3 === " "){
+           companyBackgroundImg3Upload = "/image/logo-1111.png";
+        }else{
+           companyBackgroundImg3Upload = this.state.companyBackgroundImg3 !== ' ' ?  this.state.companyBackgroundImg3Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg3}`;
+        }
 
         return(
             <div className="card shadow mb-4">
@@ -133,24 +142,40 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題' notice='(字數限制為5個字以內)' inputName='title' inputState={title}
-                                           stateObj={this} required={true} checkValue='5' />
+                                        <InputText title='大標題 1' notice='(字數限制為4個字以內)' inputName='title' inputState={title}
+                                           stateObj={this} required={true} checkValue='4' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 1' notice='(字數限制為40個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           rows='3' stateObj={this} required={true} checkValue='40' />
+                                        <InputText title='大標題 2' notice='(字數限制為4個字以內)' inputName='title2' inputState={title2}
+                                           stateObj={this} required={true} checkValue='4' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 2' notice='(字數限制為15個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
-                                           rows='2' stateObj={this} required={true} checkValue='15' />
+                                        <InputText title='大標題 3' notice='(字數限制為4個字以內)' inputName='title3' inputState={title3}
+                                           stateObj={this} required={true} checkValue='4' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='背景圖片1' notice='(圖檔尺寸大小為 1920*1200 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
-                                            parentObj={this}  imgW={1920} imgH={1200} required={true}/> 
+                                        <InputTextArea title='副標題 1' notice='(字數限制為18個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           rows='2' stateObj={this} required={true} checkValue='18' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='背景圖片2' notice='(圖檔尺寸大小為 1920*1200 ，接受格式為png、jpg)' objName='companyBackgroundImg2'  imgUpload={companyBackgroundImg2Upload} imgFileName={companyBackgroundImg2} 
-                                            parentObj={this}  imgW={1920} imgH={1200} required={true}/> 
+                                        <InputTextArea title='副標題 2' notice='(字數限制為18個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
+                                           rows='2' stateObj={this} required={true} checkValue='18' />
+                                    </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <InputTextArea title='副標題 3' notice='(字數限制為18個字以內)' inputName='companySubTitle3' inputState={companySubTitle3}
+                                           rows='2' stateObj={this} required={true} checkValue='18' />
+                                    </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <ImgUpload title='背景圖片 1' notice='(圖檔尺寸大小為 1920*1000 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
+                                            parentObj={this}  imgW={1920} imgH={1000} required={true}/> 
+                                    </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <ImgUpload title='背景圖片 2' notice='(圖檔尺寸大小為 1920*1000 ，接受格式為png、jpg)' objName='companyBackgroundImg2'  imgUpload={companyBackgroundImg2Upload} imgFileName={companyBackgroundImg2} 
+                                            parentObj={this}  imgW={1920} imgH={1000} required={true}/> 
+                                    </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <ImgUpload title='背景圖片 3' notice='(圖檔尺寸大小為 1920*1000 ，接受格式為png、jpg)' objName='companyBackgroundImg3'  imgUpload={companyBackgroundImg3Upload} imgFileName={companyBackgroundImg3} 
+                                            parentObj={this}  imgW={1920} imgH={1000} required={true}/> 
                                     </div>
 
                                     <hr />
