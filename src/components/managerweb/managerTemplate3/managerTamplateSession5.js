@@ -9,15 +9,18 @@ class Session5 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            brandTitle: ' ',
-            brandTitleSub1: ' ',
-            brandTitleSub1Content: ' ',
-            brandTitleSub2: ' ',
-            brandTitleSub2Content: ' ',
-            brandTitleSub3: ' ',
-            brandTitleSub3Content: ' ',
+            brandTitleSub1 : '',
+            brandTitleSub1Content : '',
+            brandTitleSub2 : '',
+            brandTitleSub2Content : '',
             brandImg : ' ',
-            brandImgUpload : ''
+            brandImg1 : ' ',
+            brandImg2 : ' ',
+            brandImg3 : ' ',            
+            brandImg1Upload : '',
+            brandImg2Upload : '',
+            brandImg3Upload : '',
+            brandImg4Upload : ''
         }
     }
 
@@ -26,23 +29,23 @@ class Session5 extends React.Component{
         const cid = this.props.match.params.cid;
 
         const submitObj = {
-            ono: cid,
+            ono : cid,
             themeNum : event.target.themeNum5.value,
-            brandTitle:  event.target.brandTitle.value,
-            brandTitleSub1:  event.target.brandTitleSub1.value,
-            brandTitleSub1Content:  event.target.brandTitleSub1Content.value,
-            brandTitleSub2:  event.target.brandTitleSub2.value,
-            brandTitleSub2Content:  event.target.brandTitleSub2Content.value,
-            brandTitleSub3:  event.target.brandTitleSub3.value,
-            brandTitleSub3Content:  event.target.brandTitleSub3Content.value,
+            brandTitle : '',
+            brandTitleSub1 : event.target.brandTitleSub1.value,
+            brandTitleSub1Content : event.target.brandTitleSub1Content.value,
+            brandTitleSub2 : event.target.brandTitleSub2.value,
+            brandTitleSub2Content : event.target.brandTitleSub2Content.value,
+            brandTitleSub3 : '',
+            brandTitleSub3Content : '',
             brandImg : event.target.brandImg.value,
-            brandImgUpload: event.target.brandImgUpload ? this.state.brandImgUpload.value : null,
-            brandImg1 : '',
-            brandImg1Upload: null,
-            brandImg2 : '',
-            brandImg2Upload: null,
-            brandImg3 : '',
-            brandImg3Upload: null,
+            brandImgUpload : this.state.brandImgUpload ? this.state.brandImgUpload.value : null,
+            brandImg1 : event.target.brandImg1.value,
+            brandImg1Upload : this.state.brandImg1Upload ? this.state.brandImg1Upload.value : null,
+            brandImg2 : event.target.brandImg2.value,
+            brandImg2Upload : this.state.brandImg2Upload ? this.state.brandImg2Upload.value : null,
+            brandImg3 : event.target.brandImg3.value,
+            brandImg3Upload : this.state.brandImg3Upload ? this.state.brandImg3Upload.value : null,
             brandURL1 : '',
             brandURL2 : '',
             brandURL3 : ''
@@ -62,14 +65,14 @@ class Session5 extends React.Component{
         const { brandData, brandErr, brandIsLoading} = this.props.brandReducer;
         const cid = this.props.match.params.cid.trim();
 
-        let brandTitle = this.state.brandTitle;
         let brandTitleSub1 = this.state.brandTitleSub1;
         let brandTitleSub1Content = this.state.brandTitleSub1Content;
         let brandTitleSub2 = this.state.brandTitleSub2;
         let brandTitleSub2Content = this.state.brandTitleSub2Content;
-        let brandTitleSub3 = this.state.brandTitleSub3;
-        let brandTitleSub3Content = this.state.brandTitleSub3Content;
         let brandImg = this.state.brandImg;
+        let brandImg1 = this.state.brandImg1;
+        let brandImg2 = this.state.brandImg2;
+        let brandImg3 = this.state.brandImg3;
 
         let themeNum = this.props.themeNum;
         let actionType = 'create';
@@ -77,23 +80,44 @@ class Session5 extends React.Component{
         if(brandData && brandData.length > 0){
             actionType = 'modify';
             brandData.forEach(element => {
-                brandTitle = brandTitle !==" " ? brandTitle : element.brandTitle;
-                brandTitleSub1 = brandTitleSub1 !==" " ? brandTitleSub1 : element.brandTitleSub1;
-                brandTitleSub1Content = brandTitleSub1Content !==" " ? brandTitleSub1Content : element.brandTitleSub1Content;
-                brandTitleSub2 = brandTitleSub2 !==" " ? brandTitleSub2 : element.brandTitleSub2;
-                brandTitleSub2Content = brandTitleSub2Content !==" " ? brandTitleSub2Content : element.brandTitleSub2Content;
-                brandTitleSub3 = brandTitleSub3 !==" " ? brandTitleSub3 : element.brandTitleSub3;
-                brandTitleSub3Content = brandTitleSub3Content !==" " ? brandTitleSub3Content : element.brandTitleSub3Content;
-                brandImg = brandImg !==" " ? brandImg : element.brandImg;
+                brandTitleSub1 = brandTitleSub1 !== "" ? brandTitleSub1 : element.brandTitleSub1;
+                brandTitleSub1Content = brandTitleSub1Content !== "" ? brandTitleSub1Content : element.brandTitleSub1Content;
+                brandTitleSub2 = brandTitleSub2 !== "" ? brandTitleSub2 : element.brandTitleSub2;
+                brandTitleSub2Content = brandTitleSub2Content !== "" ? brandTitleSub2Content : element.brandTitleSub2Content;
+                brandImg = brandImg !== " " ? brandImg : element.brandImg;
+                brandImg1 = brandImg1 !== " " ? brandImg1 : element.brandImg1;
+                brandImg2 = brandImg2 !== " " ? brandImg2 : element.brandImg2;
+                brandImg3 = brandImg3 !== " " ? brandImg3 : element.brandImg3;
             })
         }
 
         // image
-        let brandImgUpload ="";
+        let brandImgUpload = "";
         if(brandImg === " "){
             brandImgUpload = "/image/logo-1111.png";
         }else{
-            brandImgUpload = this.state.brandImg !==' ' ?  this.state.brandImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${brandImg}`;
+            brandImgUpload = this.state.brandImg !== ' ' ?  this.state.brandImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${brandImg}`;
+        }
+
+        let brandImg1Upload = "";
+        if(brandImg1 === " "){
+            brandImg1Upload = "/image/logo-1111.png";
+        }else{
+            brandImg1Upload = this.state.brandImg1 !== ' ' ?  this.state.brandImg1Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${brandImg1}`;
+        }
+
+        let brandImg2Upload = "";
+        if(brandImg2 === " "){
+            brandImg2Upload = "/image/logo-1111.png";
+        }else{
+            brandImg2Upload = this.state.brandImg2 !== ' ' ?  this.state.brandImg2Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${brandImg2}`;
+        }
+
+        let brandImg3Upload = "";
+        if(brandImg3 === " "){
+            brandImg3Upload = "/image/logo-1111.png";
+        }else{
+            brandImg3Upload = this.state.brandImg3 !== ' ' ?  this.state.brandImg3Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${brandImg3}`;
         }
 
         return(
@@ -111,36 +135,36 @@ class Session5 extends React.Component{
                                     <input type="hidden" id="themeNum5" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹主標題' notice='(字數限制為13個字以內)' inputName='brandTitle' inputState={brandTitle}
-                                            stateObj={this} required={true} checkValue='13' />
+                                        <InputText title='品牌介紹標題 1' notice='(字數限制為16個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
+                                            stateObj={this} required={true} checkValue='16' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題1' notice='(字數限制為10個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
-                                            stateObj={this} required={true} checkValue='10' />
+                                        <InputTextArea title='品牌介紹內文 1 ' notice='(字數限制為90個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
+                                            rows='4' stateObj={this} required={true} checkValue='90'/>
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題1內文 ' notice='(字數限制為135個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
-                                            rows='3' stateObj={this} required={true} checkValue='135'/>
+                                        <InputText title='品牌介紹標題 2' notice='(字數限制為16個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
+                                            stateObj={this} required={true} checkValue='16' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題2' notice='(字數限制為10個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
-                                            stateObj={this} required={true} checkValue='10' />
+                                        <InputTextArea title='品牌介紹內文 2 ' notice='(字數限制為54個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
+                                            rows='3' stateObj={this} required={true} checkValue='54' />
+                                    </div>                                    
+                                    <div className="form-row row-style-w95-pt1">
+                                        <ImgUpload title='品牌介紹圖片 1' notice='(圖檔尺寸大小為 960*480 ，接受格式為png、jpg)' objName='brandImg'  imgUpload={brandImgUpload} 
+                                            imgFileName={brandImg} parentObj={this} imgW={960} imgH={480} required={true} />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題2內文 ' notice='(字數限制為135個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
-                                            rows='3' stateObj={this} required={true} checkValue='135' />
+                                        <ImgUpload title='品牌介紹圖片 2' notice='(圖檔尺寸大小為 480*480 ，接受格式為png、jpg)' objName='brandImg1'  imgUpload={brandImg1Upload} 
+                                            imgFileName={brandImg1} parentObj={this} imgW={480} imgH={480} required={true} />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題3' notice='(字數限制為10個字以內)' inputName='brandTitleSub3' inputState={brandTitleSub3}
-                                            stateObj={this} required={true} checkValue='10' />
-                                    </div>
+                                        <ImgUpload title='品牌介紹圖片 3' notice='(圖檔尺寸大小為 480*480 ，接受格式為png、jpg)' objName='brandImg2'  imgUpload={brandImg2Upload} 
+                                            imgFileName={brandImg2} parentObj={this} imgW={480} imgH={480} required={true} />
+                                    </div>                                    
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題3內文 ' notice='(字數限制為135個字以內)' inputName='brandTitleSub3Content' inputState={brandTitleSub3Content}
-                                            rows='3' stateObj={this} required={true} checkValue='135' />
-                                    </div>
-                                    <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='品牌介紹圖片' notice='(圖檔尺寸大小為 640*427 ，接受格式為png、jpg)' objName='brandImg'  imgUpload={brandImgUpload} 
-                                            imgFileName={brandImg} parentObj={this} imgW={640} imgH={427} required={true} />
+                                        <ImgUpload title='品牌介紹圖片 4' notice='(圖檔尺寸大小為 960*480 ，接受格式為png、jpg)' objName='brandImg3'  imgUpload={brandImg3Upload} 
+                                            imgFileName={brandImg3} parentObj={this} imgW={960} imgH={480} required={true} />
                                     </div>
 
                                     <hr />
