@@ -1,39 +1,73 @@
 ﻿import React from 'react';
+import envConfig from '../../../config/env';
 
-function CompanyTitle() {
+class CompanyTitle extends React.Component{
 
-    return (
-        
-		<section className="vc_row pt-110 pb-60 bg-cover bg-center-top" data-row-bg="./image/tp06/slider-1.jpg">
+    constructor(props){
+        super(props);
+        this.state={};
+    }
 
-			<span className="row-bg-loader"></span>
+   componentDidMount(){
+        const cid = this.props.match.params.cid;
+        this.props.getCompanyList(cid, this.props.themeNum? this.props.themeNum: 'tp01');
+    }
 
-			<div className="container">
-				<div className="row">
+    render(){
+        const cid = this.props.match.params.cid;
+        const { companyData } = this.props.companyReducer;
 
-					<div
-						className="lqd-column col-md-6 text-left"
-						data-custom-animations="true"
-						data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"120", "startDelay": 200,"easing":"easeOutQuint","direction":"forward","initValues":{"translateY":80,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+        let title;
+        let companySubTitle1;
+        let companyBackgroundImg1;
 
-						<h2
-							className="h1 pr-md-7 mb-30 text-white"
-							data-split-text="true"
-							data-split-options='{"type":"lines"}'
-							data-fittext="true"
-							data-fittext-options='{"compressor": 0.5, "maxFontSize": 54}'>
-							安心宣言.生態平衡.達人堅持
-						</h2>
+        if(companyData && companyData.length > 0){
+            companyData.forEach(element => {
+                title =  element.title;
+                companySubTitle1 = element.companySubTitle1;
+                companyBackgroundImg1 = element.companyBackgroundImg1;
+            })
+        }
 
-						<p className="mb-40 font-size-18 lh-175 text-fade-white-06 pr-md-5">每個品牌都是永豐餘生物科技對人、對環境的永續經營。 </p>
-					
+        // image
+        companyBackgroundImg1 = !companyBackgroundImg1 ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg1}`;
+
+		return (
+			
+			<section className="vc_row pt-110 pb-60 bg-cover bg-center-top" data-row-bg={companyBackgroundImg1}>
+
+				<span className="row-bg-loader"></span>
+
+				{companyData && companyData.length > 0 &&
+				<div className="container">
+					<div className="row">
+
+						<div
+							className="lqd-column col-md-6 text-left"
+							data-custom-animations="true"
+							data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"120", "startDelay": 200,"easing":"easeOutQuint","direction":"forward","initValues":{"translateY":80,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+
+							<h2
+								className="h1 pr-md-7 mb-30 text-white text-left"
+								data-split-text="true"
+								data-split-options='{"type":"lines"}'
+								data-fittext="true"
+								data-fittext-options='{"compressor": 0.5, "maxFontSize": 54}'>
+								{title}
+							</h2>
+
+							<p className="mb-40 font-size-18 lh-175 text-fade-white-06 pr-md-5">{companySubTitle1}</p>
+						
+						</div>
+
 					</div>
-
 				</div>
-			</div>
-		</section>
-    )
+				}
 
+			</section>
+		)
+
+	}
 }
 
 export default CompanyTitle;

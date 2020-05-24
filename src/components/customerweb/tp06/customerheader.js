@@ -1,16 +1,16 @@
 ﻿import React from 'react';
 import envConfig from '../../../config/env';
 
-const NavBar = () => {
+const NavBar = (props) => {
     return(
         <div className="col">
             <div className="navbar-header">
                 <a className="navbar-brand" href="/#" rel="home">
                     <span className="navbar-brand-inner">
-                        <img className="logo-dark" src="./image/tp06/logo.png" alt="1111人力銀行" />
-                        <img className="logo-sticky" src="./image/tp06/logo.png" alt="1111人力銀行" />
-                        <img className="mobile-logo-default" src="./image/tp06/logo.png" alt="1111人力銀行" />
-                        <img className="logo-default" src="./image/tp06/logo.png" alt="1111人力銀行" />
+                        <img className="logo-dark" src={props.logURL} alt="1111人力銀行" />
+                        <img className="logo-sticky" src={props.logURL} alt="1111人力銀行" />
+                        <img className="mobile-logo-default" src={props.logURL} alt="1111人力銀行" />
+                        <img className="logo-default" src={props.logURL} alt="1111人力銀行" />
                     </span>
                 </a>
                 <button type="button" className="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
@@ -27,15 +27,15 @@ const NavBar = () => {
     );
 };
 
-const NavMain = () => {
+const NavMain = (props) => {
     const menuList = [
         { name: '公司介紹', link: '#company', enable: true },
         { name: '員工福利', link: '#benefit', enable: true },
         { name: '職缺介紹', link: '#jobs', enable: true },
         { name: '品牌介紹', link: '#brand', enable: true },
-        { name: '自訂標籤', link: '#custom', enable: true },
-        { name: '常見問題', link: '#faq', enable: true },
-        { name: '聯絡我們', link: '#contact', enable: true }
+        { name: props.customizeName, link: '#custom', enable: props.customizeEnable },
+        { name: '常見問題', link: '#faq', enable: props.qaEnable },
+        { name: '聯絡我們', link: '#contact', enable: props.contactEnable }
     ]
     return (
 
