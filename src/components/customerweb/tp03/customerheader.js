@@ -17,15 +17,15 @@ const NavBar = () => {
     );
 };
 
-const NavMain = () => {
+const NavMain = (props) => {
     const menuList = [
         { name: '公司介紹', link: '#company', enable: true },
         { name: '員工福利', link: '#benefit', enable: true },
         { name: '職缺介紹', link: '#jobs', enable: true },
         { name: '品牌介紹', link: '#brand', enable: true },
-        { name: '自訂標籤', link: '#custom', enable: true },
-        { name: '常見問題', link: '#faq', enable: true },
-        { name: '聯絡我們', link: '#contact', enable: true }
+        { name: props.customizeName, link: '#custom', enable: props.customizeEnable },
+        { name: '常見問題', link: '#faq', enable: props.qaEnable },
+        { name: '聯絡我們', link: '#contact', enable: props.contactEnable }
     ]
     return (
         <header className="header-area-custom header-area sticky-header">
@@ -34,7 +34,7 @@ const NavMain = () => {
                     <div className="col-5 col-lg-2">
                         <div className="header-logo-area">
                             <a href="\#">
-                                <img className="logo-main" src="image/tp03/logo.png" alt="Logo" />
+                                <img className="logo-main" src={props.logURL} alt="Logo" />
                             </a>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ function CustomerHeader(props) {
     
                     <div>
                         <NavBar logURL={logURL}/>
-                        <NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
+                        <NavMain logURL={logURL} customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
                     </div>
                 
     );
