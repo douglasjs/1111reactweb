@@ -88,7 +88,7 @@ function CustomerHeader(props) {
             <div className="outer-container">
                 <div className="main-box clearfix">
                     <div className="logo-box">
-                        <figure className="logo"><a href="/#"><img src="image/tp02/logo.png" alt="1111人力銀行" /></a></figure>
+                        <figure className="logo"><a href="/#"><img src={logURL} alt="1111人力銀行" /></a></figure>
                     </div>
                     <div className="nav-outer clearfix">
                         <div className="menu-area">
@@ -104,7 +104,7 @@ function CustomerHeader(props) {
             
             <div className="sticky-header">
                 <div className="container clearfix">
-                    <figure className="logo-box"><a href="/#"><img src="image/tp02/small-logo.png" alt="1111人力銀行" /></a></figure>
+                    <figure className="logo-box"><a href="/#"><img src={logURL} alt="1111人力銀行" /></a></figure>
                     <div className="menu-area">
                         <nav className="main-menu navbar-expand-lg">
                             <NavBar logURL={logURL}/>
