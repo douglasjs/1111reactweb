@@ -106,7 +106,7 @@ class Session2 extends React.Component{
             introSubTitle3ImgText : '',
             introSubTitle3Img : '',
             introSubTitle3ImgUpload : null,     
-            introImgEnable : false,       
+            introImgEnable : event.target.introImgEnable.checked,
             intro1Img : event.target.intro1Img.value,
             intro2Img : event.target.intro2Img.value,
             intro3Img : event.target.intro3Img.value,
