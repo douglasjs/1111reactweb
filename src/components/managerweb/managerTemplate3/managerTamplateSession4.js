@@ -244,7 +244,7 @@ class Session4 extends React.Component{
         
         let submitObj;
         let checkName;
-        let tagName;
+        //let tagName;
         const { positionData } = this.props.positionReducer;
         let grpCount = { 
             "1": this.countGrpPosition(positionData, "1"),
@@ -256,7 +256,7 @@ class Session4 extends React.Component{
 
             kind00Data.forEach(  async element =>{
                 checkName =  `check_${element.eNo}`;
-                tagName = `tag_${element.eNo}`;
+                //tagName = `tag_${element.eNo}`;
                 
                 if(allTarget[checkName].checked){
         
@@ -264,11 +264,15 @@ class Session4 extends React.Component{
                             oNo: cid,
                             themeNum : event.target.themeNum4_position.value,
                             eNo:  element.eNo.toString(),
-                            position_group : allTarget[tagName].value,
+                            position_group : "1",
                             position_name:  element.Position,
                             position_salary:  element.Salary,
                             position_matter:  element.Matter,
-                            position_workCity: element.WorkCity
+                            position_workCity: element.WorkCity,
+                            position_dutyName: element.DutyArr[0].DutyName,
+                            position_FeatureName: '',
+                            position_experience: element.Experience,
+                            position_grade: element.Grade
                         };
                         await new Promise(resolve => this.props.createPosition(submitObj, this.handleUpdateTable, grpCount));
 
@@ -406,8 +410,8 @@ class Session4 extends React.Component{
                                             <div className="dataTables_length" id="dataTable_length">
 
                                                 <div id="dataTable_filter" className="dataTables_filter text-left">
-                                                    <a data-toggle="modal" href="#tmp1_addlable"><button className='btn btn-primary'>增加標籤 <i className="fas fa-folder-plus" value='Create' /></button></a>&nbsp;&nbsp;&nbsp;
-                                                    {actionType === 'modify' && <a data-toggle="modal" href="#tmp1_addjob"><button className='btn btn-primary' onClick={this.handleAddPosition}>增加職缺 <i className="fas fa-folder-plus" value='Create' /></button></a>}
+                                                    {/*<a data-toggle="modal" href="#tmp1_addlable"><button className='btn btn-primary'>增加標籤 <i className="fas fa-folder-plus" value='Create' /></button></a>&nbsp;&nbsp;&nbsp;*/}
+                                                    <a data-toggle="modal" href="#tmp1_addjob"><button className='btn btn-primary' onClick={this.handleAddPosition}>增加職缺 <i className="fas fa-folder-plus" value='Create' /></button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -486,7 +490,7 @@ class Session4 extends React.Component{
                                     
 
                                     <InputText title='標籤 1' notice='( 字數限制為4個字以內 )' inputName='groupName1' inputState={groupName1}
-                                                stateObj={this} required={true} checkValue='4' />
+                                                stateObj={this} required={false} checkValue='4' />
                                     <InputText title='標籤 2' notice='( 字數限制為4個字以內 )' inputName='groupName2' inputState={groupName2}
                                                 stateObj={this} required={false} checkValue='4' />
                                     <InputText title='標籤 3' notice='( 字數限制為4個字以內 )' inputName='groupName3' inputState={groupName3}
@@ -593,7 +597,7 @@ class Session4 extends React.Component{
                                                         <tr key={index}>
                                                             <td className='text-center'><input type="checkbox" name={`check_${element.eNo}`} value={element.eNo} onClick={this.handleCheckBox} /></td> 
                                                             <td>    
-                                                                <select className="form-control" id={`tag_${element.eNo}`} ref={`tag_${element.eNo}`}  required>
+                                                                <select className="form-control" id={`tag_${element.eNo}`} ref={`tag_${element.eNo}`}>
                                                                         {groupName1 && groupName1 !==" " && <option value="1">{groupName1}</option>}
                                                                         {groupName2 && groupName2 !==" " && <option value="2">{groupName2}</option>}
                                                                         {groupName3 && groupName3 !==" " &&<option value="3">{groupName3}</option>}

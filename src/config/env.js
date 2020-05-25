@@ -17,18 +17,18 @@ const envConfig = {
 }*/
 
 /* Benedik */
-
+/*
 const envConfig = {
     kind01API : 'http://benedik.ddns.net:8080/api/GetApi',
     kind00API : 'http://benedik.ddns.net:8080/api/GetApi',
     email: 'http://benedik.ddns.net:8080/api/email',
     WebAPI: 'http://benedik.ddns.net:8080/api'
 }
+*/
 
 
 
-
-/* Douglas 
+/* Douglas */
 
 const envConfig = {
     kind01API : 'http://benedik.ddns.net:8080/api/GetApi',
@@ -36,7 +36,7 @@ const envConfig = {
     email: 'http://benedik.ddns.net:8080/api/email',
     WebAPI: 'http://benedik.ddns.net:8080/api'
 
-}*/
+}
 
 
 export default envConfig;

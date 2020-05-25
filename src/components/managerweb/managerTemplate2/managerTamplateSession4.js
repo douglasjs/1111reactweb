@@ -244,7 +244,7 @@ class Session4 extends React.Component{
         
         let submitObj;
         let checkName;
-        let tagName;
+        //let tagName;
         const { positionData } = this.props.positionReducer;
         let grpCount = { 
             "1": this.countGrpPosition(positionData, "1"),
@@ -256,7 +256,7 @@ class Session4 extends React.Component{
 
             kind00Data.forEach(  async element =>{
                 checkName =  `check_${element.eNo}`;
-                tagName = `tag_${element.eNo}`;
+                //tagName = `tag_${element.eNo}`;
                 
                 if(allTarget[checkName].checked){
         
@@ -264,11 +264,15 @@ class Session4 extends React.Component{
                             oNo: cid,
                             themeNum : event.target.themeNum4_position.value,
                             eNo:  element.eNo.toString(),
-                            position_group : allTarget[tagName].value,
+                            position_group : '1',
                             position_name:  element.Position,
                             position_salary:  element.Salary,
                             position_matter:  element.Matter,
-                            position_workCity: element.WorkCity
+                            position_workCity: element.WorkCity,
+                            position_dutyName: element.DutyArr[0].DutyName,
+                            position_FeatureName: '',
+                            position_experience: element.Experience,
+                            position_grade: element.Grade
                         };
                         await new Promise(resolve => this.props.createPosition(submitObj, this.handleUpdateTable, grpCount));
 
@@ -406,8 +410,8 @@ class Session4 extends React.Component{
                                             <div className="dataTables_length" id="dataTable_length">
 
                                                 <div id="dataTable_filter" className="dataTables_filter text-left">
-                                                    <a data-toggle="modal" href="#tmp1_addlable"><button className='btn btn-primary'>增加標籤 <i className="fas fa-folder-plus" value='Create' /></button></a>&nbsp;&nbsp;&nbsp;
-                                                    {actionType === 'modify' && <a data-toggle="modal" href="#tmp1_addjob"><button className='btn btn-primary' onClick={this.handleAddPosition}>增加職缺 <i className="fas fa-folder-plus" value='Create' /></button></a>}
+                                                   {/* <a data-toggle="modal" href="#tmp1_addlable"><button className='btn btn-primary'>增加標籤 <i className="fas fa-folder-plus" value='Create' /></button></a>&nbsp;&nbsp;&nbsp; */}
+                                                    <a data-toggle="modal" href="#tmp1_addjob"><button className='btn btn-primary' onClick={this.handleAddPosition}>增加職缺 <i className="fas fa-folder-plus" value='Create' /></button></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -422,7 +426,8 @@ class Session4 extends React.Component{
                                                     <th onClick={()=>(this.handleShort('position_group'))}>標籤   {this.sortMark('position_group')}    </th>
                                                     <th onClick={()=>(this.handleShort('position_name'))}>職稱  {this.sortMark('position_name')} </th>
                                                     <th onClick={()=>(this.handleShort('position_salary'))}>薪資   {this.sortMark('position_salary')}  </th>
-                                                    <th onClick={()=>(this.handleShort('position_matter'))}>工作內容       {this.sortMark('position_matter')}  </th>
+                                                    <th onClick={()=>(this.handleShort('position_experience'))}>工作經驗       {this.sortMark('position_experience')}  </th>
+                                                    <th onClick={()=>(this.handleShort('position_grade'))}>學歷需求       {this.sortMark('position_grade')}  </th>
                                                     <th onClick={()=>(this.handleShort('position_workCity'))}>地點  {this.sortMark('position_workCity')}</th>                                        
                                                 </tr>
                                        
@@ -434,7 +439,8 @@ class Session4 extends React.Component{
                                                     <th>標籤</th>
                                                     <th>職稱</th>
                                                     <th>薪資  </th>
-                                                    <th width="30%">工作內容 </th>
+                                                    <th width="10%">工作經驗 </th>
+                                                    <th>學歷需求 </th>
                                                     <th>地點</th>
         
                                                 </tr>
@@ -449,7 +455,8 @@ class Session4 extends React.Component{
                                                             <td>{this.positionGroupMapping(element.position_group)} </td>
                                                             <td className='text-left'>{element.position_name} </td>
                                                             <td className='text-left'>{element.position_salary} </td>
-                                                            <td className='text-left line-4 width-100'>{element.position_matter} </td>
+                                                            <td className='text-left width-50'>{element.position_experience} </td>
+                                                            <td>{element.position_grade} </td>
                                                             <td>{element.position_workCity} </td>
                                                          
                                                         </tr>
@@ -486,7 +493,7 @@ class Session4 extends React.Component{
                                     
 
                                     <InputText title='標籤 1' notice='( 字數限制為4個字以內 )' inputName='groupName1' inputState={groupName1}
-                                                stateObj={this} required={true} checkValue='4' />
+                                                stateObj={this} required={false} checkValue='4' />
                                     <InputText title='標籤 2' notice='( 字數限制為4個字以內 )' inputName='groupName2' inputState={groupName2}
                                                 stateObj={this} required={false} checkValue='4' />
                                     <InputText title='標籤 3' notice='( 字數限制為4個字以內 )' inputName='groupName3' inputState={groupName3}
@@ -565,10 +572,11 @@ class Session4 extends React.Component{
                                                 <tr>
                                                     <th className='text-center'>選取</th>
                                                     <th width='150' onClick={()=>(this.handleShort('tag'))}>標籤   {this.sortMark('tag')}    </th>
-                                                    <th onClick={()=>(this.handleShort('position'))}>職稱  {this.sortMark('position')} </th>
-                                                    <th onClick={()=>(this.handleShort('salary'))}>薪資   {this.sortMark('salary')}  </th>
-                                                    <th onClick={()=>(this.handleShort('matter'))}>工作內容       {this.sortMark('matter')}  </th>
-                                                    <th onClick={()=>(this.handleShort('location'))}>地點  {this.sortMark('location')}</th>                                        
+                                                    <th onClick={()=>(this.handleShort('Position'))}>職稱  {this.sortMark('Position')} </th>
+                                                    <th onClick={()=>(this.handleShort('Salary'))}>薪資   {this.sortMark('Salary')}  </th>
+                                                    <th onClick={()=>(this.handleShort('Experience'))}>工作經驗       {this.sortMark('Experience')}  </th>
+                                                    <th onClick={()=>(this.handleShort('Grade'))}>學歷要求       {this.sortMark('Grade')}  </th>
+                                                    <th onClick={()=>(this.handleShort('WorkCity'))}>地點  {this.sortMark('WorkCity')}</th>                                        
                                                 </tr>
                                             </thead>
                                             <tfoot>
@@ -579,7 +587,8 @@ class Session4 extends React.Component{
                                                                 <th width='150'>標籤  </th>
                                                                 <th>職稱  </th>
                                                                 <th>薪資  </th>
-                                                                <th>工作內容 </th>
+                                                                <th>工作經驗 </th>
+                                                                <th>學歷要求 </th>
                                                                 <th>地點 </th>
                                                             </tr>
                                                     
@@ -593,7 +602,7 @@ class Session4 extends React.Component{
                                                         <tr key={index}>
                                                             <td className='text-center'><input type="checkbox" name={`check_${element.eNo}`} value={element.eNo} onClick={this.handleCheckBox} /></td> 
                                                             <td>    
-                                                                <select className="form-control" id={`tag_${element.eNo}`} ref={`tag_${element.eNo}`}  required>
+                                                                <select className="form-control" id={`tag_${element.eNo}`} ref={`tag_${element.eNo}`} >
                                                                         {groupName1 && groupName1 !==" " && <option value="1">{groupName1}</option>}
                                                                         {groupName2 && groupName2 !==" " && <option value="2">{groupName2}</option>}
                                                                         {groupName3 && groupName3 !==" " &&<option value="3">{groupName3}</option>}
@@ -601,7 +610,8 @@ class Session4 extends React.Component{
                                                             </td>                                                 
                                                             <td className='text-left'>{element.Position}</td>
                                                             <td className='text-left'>{element.Salary}</td>
-                                                            <td className='text-left'>{element.Matter.substring(0, 100)}</td>
+                                                            <td className='text-left'>{element.Experience.substring(0, 100)}</td>
+                                                            <td className='text-left'>{element.Grade}</td>
                                                             <td>{element.WorkCity}</td>
                                                         </tr>
                                                     )

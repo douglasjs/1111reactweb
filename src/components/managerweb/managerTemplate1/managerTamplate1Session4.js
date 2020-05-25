@@ -268,7 +268,11 @@ class Session4 extends React.Component{
                             position_name:  element.Position,
                             position_salary:  element.Salary,
                             position_matter:  element.Matter,
-                            position_workCity: element.WorkCity
+                            position_workCity: element.WorkCity,
+                            position_dutyName: '',
+                            position_FeatureName: '',
+                            position_experience: '',
+                            position_grade: ''
                         };
                         await new Promise(resolve => this.props.createPosition(submitObj, this.handleUpdateTable, grpCount));
 
