@@ -55,20 +55,20 @@ class CompanyJobs extends React.Component {
 													</p>
 										
 													<h6>{element.position_workCity}</h6>
-													<h5>農藝／畜產研究人員</h5>
+													<h5>{element.position_dutyName}</h5>
 														
 												</div>
 													
 												<div className="pricing-table-body">
 													<ul>
 														<li>{element.position_salary}</li>
-														<li>日班週休二日 </li>
+														<li>{element.position_experience}</li>
 													</ul>
 												</div>
 													
 												<div className="pricing-table-footer">
 													
-													<a href={positionURL} className="btn btn-sm btn-default btn-bordered round lh-15 px-2 btn-light">
+													<a href={positionURL} className="btn btn-sm btn-solid round lh-15 px-2">
 														<span>
 															<span className="btn-txt">有興趣</span>
 														</span>

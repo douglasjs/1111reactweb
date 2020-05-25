@@ -44,7 +44,7 @@ class CompanyJobs extends React.Component {
                                 <h4><a href={positionURL}>{element.position_name}</a></h4>
                                 <div className="text benefit-hide-text"><p>{element.position_workCity}</p></div>
                                 <div className="text benefit-hide-text"><p>{element.position_salary}</p></div>
-                                <div className="text benefit-hide-text"><p>3年以上工作經驗 │大學、碩士、博士</p></div>
+                                <div className="text benefit-hide-text"><p>{element.position_experience} │ {element.position_grade}</p></div>
                                 <div className="btn-box p-t-20"><a className="btn-style-four" target="_blank" rel="noopener noreferrer" href={positionURL}>我要應徵</a></div>
                             </div>
                         </div>

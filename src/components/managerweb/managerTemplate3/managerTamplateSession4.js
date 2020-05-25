@@ -396,6 +396,10 @@ class Session4 extends React.Component{
         }
         cityGroup = [...new Set(cityGroup)];
         dutyGroup = [...new Set(dutyGroup)];
+
+        const style = {
+            'display' : 'none'
+        }
        
         return(
             <div className="card shadow mb-4">
@@ -423,7 +427,7 @@ class Session4 extends React.Component{
                                       
                                                 <tr>
                                                     <th className='text-center'>刪除</th>
-                                                    <th onClick={()=>(this.handleShort('position_group'))}>標籤   {this.sortMark('position_group')}    </th>
+                                                    <th onClick={()=>(this.handleShort('position_group'))} style={style}>標籤   {this.sortMark('position_group')}    </th>
                                                     <th onClick={()=>(this.handleShort('position_name'))}>職稱  {this.sortMark('position_name')} </th>
                                                     <th onClick={()=>(this.handleShort('position_salary'))}>薪資   {this.sortMark('position_salary')}  </th>
                                                     <th onClick={()=>(this.handleShort('position_matter'))}>工作內容       {this.sortMark('position_matter')}  </th>
@@ -435,7 +439,7 @@ class Session4 extends React.Component{
                                         <tfoot>
                                             <tr>
                                                     <th className='text-center'>刪除</th>
-                                                    <th>標籤</th>
+                                                    <th style={style}>標籤</th>
                                                     <th>職稱</th>
                                                     <th>薪資  </th>
                                                     <th width="30%">工作內容 </th>
@@ -450,7 +454,7 @@ class Session4 extends React.Component{
                                                     return(
                                                         <tr key={index}>
                                                             <td className='text-center'><button id={`del_${element.eNo}`}  className='btn btn-primary' value={element.eNo} onClick={this.handlePositionDelete}>刪除 <i className="far fa-trash-alt" /></button></td>
-                                                            <td>{this.positionGroupMapping(element.position_group)} </td>
+                                                            <td style={style}>{this.positionGroupMapping(element.position_group)} </td>
                                                             <td className='text-left'>{element.position_name} </td>
                                                             <td className='text-left'>{element.position_salary} </td>
                                                             <td className='text-left line-4 width-100'>{element.position_matter} </td>
@@ -568,7 +572,7 @@ class Session4 extends React.Component{
                                             <thead>
                                                 <tr>
                                                     <th className='text-center'>選取</th>
-                                                    <th width='150' onClick={()=>(this.handleShort('tag'))}>標籤   {this.sortMark('tag')}    </th>
+                                                    <th width='150' onClick={()=>(this.handleShort('tag'))} style={style}>標籤   {this.sortMark('tag')}    </th>
                                                     <th onClick={()=>(this.handleShort('position'))}>職稱  {this.sortMark('position')} </th>
                                                     <th onClick={()=>(this.handleShort('salary'))}>薪資   {this.sortMark('salary')}  </th>
                                                     <th onClick={()=>(this.handleShort('matter'))}>工作內容       {this.sortMark('matter')}  </th>
@@ -580,7 +584,7 @@ class Session4 extends React.Component{
                                                     
                                                             <tr>
                                                                 <th className='text-center'>選取</th>
-                                                                <th width='150'>標籤  </th>
+                                                                <th width='150' style={style}>標籤  </th>
                                                                 <th>職稱  </th>
                                                                 <th>薪資  </th>
                                                                 <th>工作內容 </th>
@@ -596,7 +600,7 @@ class Session4 extends React.Component{
                                                     return(
                                                         <tr key={index}>
                                                             <td className='text-center'><input type="checkbox" name={`check_${element.eNo}`} value={element.eNo} onClick={this.handleCheckBox} /></td> 
-                                                            <td>    
+                                                            <td style={style}>    
                                                                 <select className="form-control" id={`tag_${element.eNo}`} ref={`tag_${element.eNo}`}>
                                                                         {groupName1 && groupName1 !==" " && <option value="1">{groupName1}</option>}
                                                                         {groupName2 && groupName2 !==" " && <option value="2">{groupName2}</option>}

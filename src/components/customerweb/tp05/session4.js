@@ -41,7 +41,7 @@ class CompanyJobs extends React.Component {
 
                                     </div>
 
-                                    <h3><a href={positionURL}>{element.position_name}</a></h3>
+                                    <h3><a href={positionURL} target="_blank" rel="noopener noreferrer">{element.position_name}</a></h3>
 
                                     <p className="salary-fmt">{element.position_salary}</p>
                                     <p>{element.position_workCity}</p>

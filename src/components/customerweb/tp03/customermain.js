@@ -44,7 +44,8 @@ function CustomerMain(props){
                 '/assets/tp03/css/pe-icon-7-stroke.min.css',
                 '/assets/tp03/css/font-awesome.min.css',
                 '/assets/tp03/css/bootstrap.min.css',
-                '/assets/tp03/css/topbutton.css'
+                '/assets/tp03/css/topbutton.css',
+                '/assets/tp03/css/line.css'
             ]
             let email;
             let themeNum;

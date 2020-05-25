@@ -29,9 +29,9 @@ class CompanyJobs extends React.Component {
                                     return(
                                 
                                 <div key={index} className="testimonial-item testimonial-item--2">
-                                    <figure className="client-thumb">
+                                    {/*<figure className="client-thumb">
                                         <img src="../../../image/tp03/jobs/jobs_logo_01.png" alt="1111人力銀行職缺介紹" />
-                                    </figure>
+                                    </figure>*/}
 
                                     <div className="client-quote">
                                         <h5 className="text-brand">{element.position_name}</h5>
@@ -40,6 +40,7 @@ class CompanyJobs extends React.Component {
                                     <div className="client-info">
                                         <h6 className="client-title">{element.position_salary}</h6>
                                         <span className="client-designation">{element.position_workCity}</span>
+                                        <p className="line-3">{element.position_matter}</p>
                                     </div>
                                     <div className="button-item mt-15">
                                         <a target="_blank" href={positionURL} rel="noopener noreferrer" className="btn-brand btn-lg">我要應徵</a>
