@@ -97,8 +97,7 @@ class CompanyCustomize extends React.Component {
 										data-columns="3"
 										data-liquid-masonry="true"
 										data-masonry-options='{ "layoutMode": "masonry", "alignMid": true }'
-										data-custom-animations="true"
-										data-ca-options='{"triggerHandler":"inview","animationTarget":".ld-pf-item","animateTargetsWhenVisible":"true","duration":"1400","delay":"180","easing":"easeOutQuint","initValues":{"translateY":75,"scale":0.75,"opacity":0},"animations":{"translateY":0,"scale":1,"opacity":1}}'
+										data-custom-animations="true"										
 									>
 										
 										<div className="hidden-sm-down lqd-column col-md-4 col-sm-6 col-xs-12 grid-stamp creative-masonry-grid-stamp"></div>

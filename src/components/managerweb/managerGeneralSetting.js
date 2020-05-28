@@ -370,14 +370,11 @@ class managerGeneralSetting extends React.Component{
                                     <select  className="form-control" id="themeNum" value={themeNum} onChange={this.handleChange('themeNum')} required>
                                             <option value=''>選擇版型...</option>
                                             <option value='tp01'>版型一</option>
-                                            <option value='tp04'>版型四</option>
-                                            <option value='tp05'>版型五</option>
-                                            
                                             <option value='tp02'>版型二</option>
                                             <option value='tp03'>版型三</option>
+                                            <option value='tp04'>版型四</option>
+                                            <option value='tp05'>版型五</option>
                                             <option value='tp06'>版型六</option>
-                                            {/**/}
-
                                     </select>
                                 </div>
                                 <div className="form-row">

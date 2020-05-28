@@ -392,7 +392,7 @@ small, .font_small { font-size: 0.667em; }
 
 .main-header P:empty { display: none; }
 
-.main-header-overlay { width: 100%; position: absolute; top: 0; left: 0; }
+.main-header-overlay { width: 100%; position: absolute; top: 0; left: 0; padding-left: 6rem;}
 
 .lqd-main-header-default .mainbar { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
@@ -9609,7 +9609,7 @@ MOBULE HEADER
    }
 }
 
-@media (min-width: 991px) { #brand .testimonial-quote p {min-height: 8.3em;} }
+@media (min-width: 991px) { #brand .testimonial-quote p {/*min-height: 8.3em;*/} }
 @media (min-width: 1200px) { #contact {padding-top: 75px;} 
   .split-inner {display: block; max-width: 100%; overflow: hidden; text-overflow: ellipsis;}
   
@@ -9617,7 +9617,7 @@ MOBULE HEADER
 
 #benefit {margin-top: 2em;}
 
-.min-h-768 {height:500px; min-height: 768px; vertical-align: middle; -ms-flex-align:center; }
+.min-h-768 {height:500px; min-height: 768px; vertical-align: middle; -ms-flex-align:center; padding-left: 6rem;}
 
 @media screen and (max-width: 1200px) {
 	.iconbox .iconbox-icon-container img[src$=".svg"], .iconbox .iconbox-icon-container object, .iconbox .iconbox-icon-container > svg, .iconbox .iconbox-icon-container > img {

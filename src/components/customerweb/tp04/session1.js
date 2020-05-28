@@ -57,7 +57,7 @@ class CompanyTitle extends React.Component{
 				<div className="container">
 					<div className="row d-flex flex-wrap align-items-center">
 
-						<div className="lqd-column col-lg-6 col-md-6 top-text-block text-left" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}' >
+						<div className="lqd-column col-lg-6 col-md-6 top-text-block" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}' >
 
 							<div className="ld-fancy-heading mask-text">
 								<h1
@@ -65,14 +65,14 @@ class CompanyTitle extends React.Component{
 									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
 									data-split-options='{"type":"lines"}'
 								>
-									<span className="ld-fh-txt">{title}</span>
+									<span className="ld-fh-txt text-left">{title}</span>
 								</h1>
 								<h4								
 									data-custom-animations="true"
 									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
 									data-split-options='{"type":"lines"}'
 								>
-									<span>{companySubTitle1}</span>
+									<span className="text-left">{companySubTitle1}</span>
 								</h4>
 							</div>
 
@@ -81,7 +81,7 @@ class CompanyTitle extends React.Component{
 									data-custom-animations="true"
 									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
 									data-split-options='{"type":"lines"}'>
-									<span className="ld-fh-txt hidden-sm-down text-justify">
+									<span className="ld-fh-txt hidden-sm-down text-justify line-2 text-left">
 										{companySubTitle2}<br />
 									</span>							
 								</p>

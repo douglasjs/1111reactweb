@@ -117,11 +117,11 @@ class Session1 extends React.Component{
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputTextArea title='副標題' notice='(字數限制為30個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           rows='3' stateObj={this} required={true} checkValue='30' />
+                                           rows='2' stateObj={this} required={true} checkValue='30' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputTextArea title='內文' notice='(字數限制為125個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
-                                           rows='2' stateObj={this} required={true} checkValue='125' />
+                                           rows='3' stateObj={this} required={true} checkValue='125' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='背景圖片1' notice='(圖檔尺寸大小為 1800*1100 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
