@@ -112,16 +112,16 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題' notice='(字數限制為14個字以內)' inputName='title' inputState={title}
-                                           stateObj={this} required={true} checkValue='14' />
+                                        <InputText title='大標題' notice='(字數限制為10個字以內)' inputName='title' inputState={title}
+                                           stateObj={this} required={true} checkValue='10' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題' notice='(字數限制為30個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           rows='2' stateObj={this} required={true} checkValue='30' />
+                                        <InputTextArea title='副標題' notice='(字數限制為22個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           rows='2' stateObj={this} required={true} checkValue='22' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='內文' notice='(字數限制為125個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
-                                           rows='3' stateObj={this} required={true} checkValue='125' />
+                                        <InputTextArea title='短文' notice='(字數限制為32個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
+                                           rows='2' stateObj={this} required={true} checkValue='32' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='背景圖片1' notice='(圖檔尺寸大小為 1800*1100 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 

@@ -327,6 +327,10 @@ div.ld-fancy-heading h1 {
   }
 }
 
-.mainbar {
+.navbar-header {
   background-color: #fff;
+}
+
+.fancy-box-cell {
+  text-align: left;
 }

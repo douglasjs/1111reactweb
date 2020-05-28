@@ -87,7 +87,7 @@ class CompanyJobs extends React.Component {
 						</div>
 							<div className="row">
 
-								<div className="lqd-column col-sm-6 mb-3 mb-md-0">
+								<div className="lqd-column col-sm-6 mb-3 mb-md-0 text-left">
 
 									<a target='_blank' rel='noopener noreferrer' href={companyurl} className="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-16 font-weight-semibold" >
 										<span>

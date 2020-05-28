@@ -81,7 +81,7 @@ class CompanyTitle extends React.Component{
 									data-custom-animations="true"
 									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
 									data-split-options='{"type":"lines"}'>
-									<span className="ld-fh-txt hidden-sm-down text-justify line-2 text-left">
+									<span className="ld-fh-txt hidden-sm-down text-justify line-2">
 										{companySubTitle2}<br />
 									</span>							
 								</p>
@@ -89,7 +89,7 @@ class CompanyTitle extends React.Component{
 							
 							<div className="row">
 
-								<div className="lqd-column col-sm-6 mb-3 mb-md-0">
+								<div className="lqd-column col-sm-6 mb-3 mb-md-0 text-left">
 
 									<a target='_blank' rel='noopener noreferrer' href={companyurl} className="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-18 font-weight-semibold" >
 										<span>

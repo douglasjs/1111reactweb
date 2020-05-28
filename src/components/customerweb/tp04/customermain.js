@@ -50,7 +50,7 @@ function CustomerMain(props){
             }
 
             return (
-                <main>
+                <main className="company mb-5">
 
                     <TitleSet title={webTitle} meta={companyMeta} style={styleSheet} logo={logURL} publicURL={webURL}/>
                     <CompanyTitle themeNum={themeNum} {...props}/>

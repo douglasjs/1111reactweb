@@ -6693,12 +6693,12 @@ MOBULE HEADER
   .ld-search-form .input-icon { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; width: 50px; height: 50px; right: 0; left: auto; color: #000; font-size: 36px; cursor: pointer; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border-radius: 3px; }
   .ld-search-form .input-icon:hover { background-color: rgba(0, 0, 0, 0.1); }
   .ld-search-form .input-icon i:before { content: '\e94a'; }
-  .main-header .navbar-brand { padding: 22px 0; }
+  .main-header .navbar-brand { padding: 22px 0; margin-right: auto; }
   .main-header .mobile-logo-default ~ .logo-default { display: none; }
   .main-header .main-nav { font-size: 14px; font-weight: 500; line-height: 1.5em; text-transform: none; letter-spacing: 0; text-align: left; }
   .main-header .main-nav > li > a { font-size: inherit; font-weight: inherit; line-height: inherit; text-transform: inherit; letter-spacing: inherit; }
   .navbar-header { padding-left: 25px; padding-right: 25px; }
-  .navbar-collapse { overflow-x: hidden; overflow-y: auto; color: #000; }
+  .navbar-collapse { overflow-x: hidden; overflow-y: auto; color: #000; background-color: #fff; }
   .navbar-collapse .social-icon li a { color: inherit; opacity: 0.7; }
   .navbar-collapse .social-icon li a:hover { opacity: 1; }
   .navbar-collapse .btn-naked, .navbar-collapse .btn-underlined { color: inherit; border-color: currentColor; }
@@ -9718,7 +9718,7 @@ MOBULE HEADER
 	} */
 }
 
-@media (max-width: 576px) { .min-h-768 { min-height: unset; height: unset} .ld-fancy-heading h1, .ld-fancy-heading h4{margin-bottom: 15px;line-height: 1}}
+@media (max-width: 576px) { .min-h-768 { min-height: unset; height: unset} .ld-fancy-heading h1, .ld-fancy-heading h4{margin-bottom: 15px;line-height: 1;text-align: left;}}
 @media (max-width: 576px) { .fancy-box-offer .fancy-box-cell[data-text="薪資"]:before { content: " "; margin-bottom: 0em; margin-top: 1.7em; } }
 @media (max-width: 576px) { #faq header.fancy-title { margin-bottom: 90px !important;} }
 @media (max-width: 576px) {  .mt-xs-15{margin-top: 15px;} }

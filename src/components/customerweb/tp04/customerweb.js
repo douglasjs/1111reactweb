@@ -24,7 +24,7 @@ function CustomerWeb(props) {
             <CustomerMain {...props}/>
             <CustomerFoot {...props}/>
         </div>
-      
+
     )
 
 }
