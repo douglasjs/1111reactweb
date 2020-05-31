@@ -98,7 +98,6 @@ class CompanyBenifit  extends React.Component {
 									<div className="contents">
 										<h3 className="font-weight-normal">{benefitSubTitle2}</h3>
 										<p>{benefitSubContent2}</p>
-										<br />
 									</div>
 								</div>
 
