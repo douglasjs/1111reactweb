@@ -1,0 +1,25 @@
+:root {
+  --color-primary: #85b815;
+  --color-secondary: #a0ce3a;
+  --color-gradient-start: #85b815;
+  --color-gradient-stop: #009100;
+  --color-dark: #006000;
+  --color-light: #f3f6ec;
+  --color-compared: #a0ce3a;
+  --color-button: #85b815;
+}
+
+#jobs .fancy-box-cell .btn {
+  background-color: #85b815;
+  color: #fff;
+}
+
+.ld-sf [type=submit] { 
+	background-color: #85b815;
+}
+
+.ld-sf [type=submit]:hover { 
+	background-color: #fff;
+	border: 1px solid #85b815;
+	color: #85b815;
+}

@@ -1,0 +1,8 @@
+:root {
+  --color-primary: #cd2122;
+  --color-gradient-start: #cd2122;
+  --color-gradient-stop: #cd2122;
+  --color-dark: #701213;
+  --color-light: #ffe2e2;/*第3*/
+  --color-lightest: #ffeeee;/*最淡*/
+}

@@ -1,0 +1,59 @@
+/*================================
+40. Event Home Hero Style Css
+==================================*/
+.event-hero-content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 30px;
+}
+
+.event-hero-content {
+  h4 {
+    color: $brandColor;
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    color: $white;
+    @include font-size(120px);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+
+    @media #{$xlmax-device, $lg-device} {
+      font-size: 80px;
+    }
+
+    @media #{$xs-device} {
+      font-size: 40px;
+    }
+  }
+}
+
+.event-countdown-wrap {
+  position: relative;
+  padding-top: 60px;
+  margin-top: 50px;
+
+  @media #{$sm-device} {
+    padding-top: 40px;
+    margin-top: 30px;
+  }
+
+  &:before {
+    background-color: $white;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 2px;
+    width: 350px;
+
+    @media #{$xs-device} {
+      width: 250px;
+    }
+  }
+}
