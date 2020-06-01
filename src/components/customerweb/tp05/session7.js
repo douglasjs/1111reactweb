@@ -13,6 +13,13 @@ class CompanyQA extends React.Component {
         this.props.getqaList(cid, this.props.themeNum);
     }
 
+    /*
+    handleLink = (number) =>{
+        const nowState = this.state[number];
+        this.setState({ number: !nowState });
+    }
+    */
+
     render(){
         const cid = this.props.match.params.cid.trim();
         const { qaData } = this.props.qaReducer;
@@ -71,12 +78,14 @@ class CompanyQA extends React.Component {
                                 <span className="sub-title">Frequently Asked Questions</span>
                                 <h2>常見問題</h2>
 
+
+
                                 <ul className="accordion">
                                     <li className="accordion-item">
-                                        <a className="accordion-title active" href="/#">
+                                        <button className="accordion-title active">
                                             <i className="fas fa-plus"></i>
                                             {qa1Title}
-                                        </a>
+                                        </button>
 
                                         <p className="accordion-content show">{qa1Content}</p>
                                     </li>
