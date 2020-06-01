@@ -523,7 +523,7 @@ class Session6 extends React.Component{
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
                                                 <InputTextArea title='卡片3標題' notice='(字數限制為36個字以內)' inputName='card3Title' inputState={card3Title}
-                                                    rows='2' stateObj={this} required={false} checkValue='100' />
+                                                    rows='2' stateObj={this} required={false} checkValue='36' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <InputTextArea title='卡片3內文' notice='(字數限制為100個字以內)' inputName='card3Content' inputState={card3Content}

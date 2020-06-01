@@ -59,13 +59,13 @@ class CompanyTitle extends React.Component{
 
 						<div className="lqd-column col-lg-6 col-md-6 top-text-block" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}' >
 
-							<div className="ld-fancy-heading mask-text">
+							<div className="ld-fancy-heading mask-text text-left">
 								<h1
 									data-custom-animations="true"
 									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
 									data-split-options='{"type":"lines"}'
 								>
-									<span className="ld-fh-txt text-left">{title}</span>
+									<span className="ld-fh-txt">{title}</span>
 								</h1>
 								<h4								
 									data-custom-animations="true"
@@ -76,7 +76,7 @@ class CompanyTitle extends React.Component{
 								</h4>
 							</div>
 
-							<div className="ld-fancy-heading mask-text mb-75">
+							<div className="ld-fancy-heading mask-text mb-75 text-left">
 								<p
 									data-custom-animations="true"
 									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
