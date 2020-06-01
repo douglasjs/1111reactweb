@@ -5508,7 +5508,7 @@ ul.pagination .page-numbers.current { color: #16171e; }
 
 .ld-masked-image figure { background-position: -90% 10%; background-size: 95%; background-repeat: no-repeat;}
 
-.ld-masked-image img { width: 100%; height: auto; max-height: 87vh; visibility: hidden; }
+.ld-masked-image img { width: 100%; height: auto; max-height: 87vh;}
 
 @media (min-width: 768px) { .ld-masked-image { position: absolute; right: -90vw; left: 42vw; } }
 
