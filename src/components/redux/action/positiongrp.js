@@ -56,7 +56,7 @@ const createPositionGrpSuccess = (response) =>{
     return {
 
         type: "CREATE_POSITIONGRP_SUCCESS",
-        positionGrpData: response,
+        positionGrpData: [response],
         positionGrpErr: null,
         positionGrpIsLoading: false,
     }

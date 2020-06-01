@@ -89,7 +89,8 @@ class Session7 extends React.Component{
                 qaSubTitle = qaSubTitle !== "" ? qaSubTitle : element.qaSubTitle;
             })
         }
-        
+        const loading = qaIsLoading ? '' : 'd-none';
+
         return(
             <div className="card shadow mb-4">
                 <a href="#collapseCard7" className="d-block card-header py-3 text-white bg-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard7">
@@ -97,7 +98,9 @@ class Session7 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard7">
                     <div className="card-body">
-                        
+                            <div class={`spinner-grow text-primary ${loading}`} role="status">
+                                            <span class="sr-only">Loading...</span>
+                            </div>
                             <form id='dataForm7' className={qaIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                                 <Msg type ='LOADING'  value = {qaIsLoading} text='Processing ' /> 
                                 <Msg type ='ERROR' value = {qaErr} text= 'Opps! Error : ' />

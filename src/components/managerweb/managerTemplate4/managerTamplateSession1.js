@@ -97,6 +97,8 @@ class Session1 extends React.Component{
            companyBackgroundImg1Upload = this.state.companyBackgroundImg1 !==' ' ?  this.state.companyBackgroundImg1Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg1}`;
         }
 
+        const loading = companyIsLoading ? '' : 'd-none';
+
         return(
             <div className="card shadow mb-4">
                 <a href="#collapseCard1" className="d-block card-header py-3 text-white bg-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard1">
@@ -106,6 +108,9 @@ class Session1 extends React.Component{
                     <div className="card-body">
                         <div className="form-row">
                             <div className="col-md-6 mb-3">
+                                <div class={`spinner-grow text-primary ${loading}`} role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
                                 <form id='dataForm1' className={companyIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                                     <Msg type ='LOADING'  value = {companyIsLoading} text='Processing ' /> 
                                     <Msg type ='ERROR' value = {companyErr} text= 'Opps! Error : ' />

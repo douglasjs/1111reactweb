@@ -56,7 +56,7 @@ const createbenefitSuccess = (response) =>{
     return {
 
         type: "CREATE_BENEFIT_SUCCESS",
-        benefitData: response,
+        benefitData: [response],
         benefitErr: null,
         benefitIsLoading: false,
     }

@@ -56,7 +56,7 @@ const createqaSuccess = (response) =>{
     return {
 
         type: "CREATE_QA_SUCCESS",
-        qaData: response,
+        qaData: [response],
         qaErr: null,
         qaIsLoading: false,
     }

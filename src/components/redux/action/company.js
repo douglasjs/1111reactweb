@@ -56,7 +56,7 @@ const createCompanySuccess = (response) =>{
     return {
 
         type: "CREATE_COM_SUCCESS",
-        companyData: response,
+        companyData: [response],
         companyErr: null,
         companyIsLoading: false,
     }
@@ -172,8 +172,8 @@ const updateCompany = (data) =>{
             })
             .then((response) => {
                 dispatch(editCompanySuccess(response.data));
+                //dispatch(getCompanyList(data.ono));
                 alert("更新資料完成");
-              //  dispatch(getCompanyList(data.ono));
             })
             .catch(err => {
                 dispatch(editCompanyError(err));

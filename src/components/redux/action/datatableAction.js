@@ -56,7 +56,7 @@ const createAllSuccess = (response) =>{
     return {
 
         type: "CREATE_ALL_SUCCESS",
-        data: response,
+        data: [response],
         err: null,
         isLoading: false,
     }

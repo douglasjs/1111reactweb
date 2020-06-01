@@ -56,7 +56,7 @@ const createPositionSuccess = (response) =>{
     return {
 
         type: "CREATE_POSITION_SUCCESS",
-        positionData: response,
+        positionData: [response],
         positionErr: null,
         positionIsLoading: false,
     }

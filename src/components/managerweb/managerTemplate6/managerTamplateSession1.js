@@ -76,7 +76,7 @@ class Session1 extends React.Component{
 
         let themeNum = this.props.themeNum;
         let actionType = 'create';
-
+        
         if(companyData && companyData.length > 0){
             actionType = 'modify';
             companyData.forEach(element => {

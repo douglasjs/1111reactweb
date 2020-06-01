@@ -56,7 +56,7 @@ const createbrandSuccess = (response) =>{
     return {
 
         type: "CREATE_BRAND_SUCCESS",
-        brandData: response,
+        brandData: [response],
         brandErr: null,
         brandIsLoading: false,
     }

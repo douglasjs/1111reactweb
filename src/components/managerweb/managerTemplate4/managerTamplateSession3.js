@@ -152,6 +152,8 @@ class Session3 extends React.Component{
             benefitSubImg4Upload = this.state.benefitSubImg4 !== ' ' ?  this.state.benefitSubImg4Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitSubImg4}`;
         }
 
+        const loading = benefitIsLoading ? '' : 'd-none';
+
         return(
             <div className="card shadow mb-4">
                 <a href="#collapseCard3" className="d-block card-header py-3 text-white bg-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard3">
@@ -161,6 +163,9 @@ class Session3 extends React.Component{
                     <div className="card-body">
                         <div className="form-row">
                             <div className="col-md-6 mb-3">
+                                <div class={`spinner-grow text-primary ${loading}`} role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
                                 <form id='dataForm3' className={benefitIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                                     <Msg type ='LOADING'  value = {benefitIsLoading} text='Processing ' /> 
                                     <Msg type ='ERROR' value = {benefitErr} text= 'Opps! Error : ' />

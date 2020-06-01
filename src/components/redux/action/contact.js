@@ -56,7 +56,7 @@ const createcontactSuccess = (response) =>{
     return {
 
         type: "CREATE_CONTACT_SUCCESS",
-        contactData: response,
+        contactData: [response],
         contactErr: null,
         contactIsLoading: false,
     }

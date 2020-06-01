@@ -56,7 +56,7 @@ const createintroductionSuccess = (response) =>{
     return {
 
         type: "CREATE_INTRO_SUCCESS",
-        introductionData: response,
+        introductionData: [response],
         introductionErr: null,
         introductionIsLoading: false,
     }

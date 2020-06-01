@@ -205,7 +205,8 @@ class Session6 extends React.Component{
         }else{
             card6ImgUpload = this.state.card6Img !==' ' ?  this.state.card6ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card6Img}`;
         } 
-
+        const loading = customizeIsLoading ? '' : 'd-none';
+        
         return(
             <div className="card shadow mb-4">
                 <a href="#collapseCard6" className="d-block card-header py-3 text-white bg-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6">
@@ -213,6 +214,9 @@ class Session6 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard6">
                 <div className="card-body">
+                    <div class={`spinner-grow text-primary ${loading}`} role="status">
+                                    <span class="sr-only">Loading...</span>
+                    </div>
                     <form id='dataForm6' className={customizeIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                         <Msg type ='LOADING'  value = {customizeIsLoading} text='Processing ' /> 
                         <Msg type ='ERROR' value = {customizeErr} text= 'Opps! Error : ' />

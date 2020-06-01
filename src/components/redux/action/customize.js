@@ -56,7 +56,7 @@ const createcustomizeSuccess = (response) =>{
     return {
 
         type: "CREATE_CUSTM_SUCCESS",
-        customizeData: response,
+        customizeData: [response],
         customizeErr: null,
         customizeIsLoading: false,
     }
