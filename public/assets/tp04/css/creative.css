@@ -220,7 +220,7 @@ h6 {
 
 @media (max-width: 1024px) {
   .top-link-icon {
-	display: inline-flex !important;
+	  display: inline-flex !important;
     bottom: 100px;
     right: 20px;
 	
@@ -229,7 +229,7 @@ h6 {
   .top-link {
     width: 100px;
     height: 100px;
-}
+  }
 }
 
 .top-link img {

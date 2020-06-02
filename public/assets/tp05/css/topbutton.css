@@ -20,14 +20,6 @@
   color: #848484;
 }
 
-/* Mobile Screen */
-@media (max-width: 1440px) {
-  .top-link-icon {
-    bottom: 100px;
-    right: 22px;
-  }
-}
-
 .top-link-icon.show {
   visibility: visible;
   opacity: 1;
@@ -72,8 +64,12 @@
   height: 12px;
 }
 
-/* Mobile Screen */
 @media (max-width: 1440px) {
+  .top-link-icon {
+    bottom: 100px;
+    right: 22px;
+  }
+
   .top-link {
     width: 100px;
     height: 100px;

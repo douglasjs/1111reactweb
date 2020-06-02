@@ -116,14 +116,6 @@ h6 {
   color: var(--color-primary);
 }
 
-/* Mobile Screen */
-@media (max-width: 1440px) {
-  .top-link-icon {
-    bottom: 100px;
-    right: 22px;
-  }
-}
-
 .top-link-icon .fa {
 	font-weight: 700;
 }
@@ -172,11 +164,28 @@ h6 {
   height: 12px;
 }
 
-/* Mobile Screen */
 @media (max-width: 1440px) {
+  .top-link-icon {
+    bottom: 100px;
+    right: 22px;
+  }
+
   .top-link {
     width: 100px;
     height: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .top-link-icon {
+	  display: inline-flex !important;
+    bottom: 100px;
+    right: 11px;	
+  }
+  
+  .top-link {
+    width: 80px;
+    height: 80px;
   }
 }
 
