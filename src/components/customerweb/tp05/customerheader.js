@@ -7,7 +7,7 @@ const NavBar = (props) => {
             <div className="container">
                 <div className="pearo-responsive-menu">
                     <div className="logo">
-                        <a href="/#">
+                        <a href={props.logoURL}>
                             <img src={props.logURL} alt="logo" />
                         </a>
                     </div>
@@ -33,14 +33,14 @@ const NavMain = (props) => {
         <div className="pearo-nav">
             <div className="container">
                 <nav className="navbar navbar-expand-md navbar-light">
-                    <a className="navbar-brand" href="/#">
+                    <a className="navbar-brand" href={props.logoURL}>
                         <img src={props.logURL} alt="logo" />
                     </a>
 
                     <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul className="navbar-nav">
                             <li className="nav-item hidden-md-down"><div className="top-header-logo align-items-center mtb-17">
-                                    <a href="/#">
+                                    <a href={props.logoURL}>
                                         <img src={props.logURL} alt="logo" />
                                     </a>
                                 </div>
@@ -66,10 +66,12 @@ function CustomerHeader(props) {
     const { contactData} = props.contactReducer;
     const { data } = props.datatableReducer;
     const cid = props.match.params.cid;
-    let logURL ="/image/logo-1111.png";
+    let logURL = "/image/logo-1111.png";
+    let logoURL = "https://1111.com.tw";
 
     if(data && data.length > 0){
         logURL = `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
+        logoURL = `https://www.1111.com.tw/corp/${cid}/`;
     }
 
     let customizeEnable;
@@ -101,8 +103,8 @@ function CustomerHeader(props) {
 
             <div className="navbar-area">
 
-                <NavBar logURL={logURL}/>
-                <NavMain logURL={logURL} customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
+                <NavBar logURL={logURL} logoURL={logoURL}/>
+                <NavMain logURL={logURL} logoURL={logoURL} customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
                 
             </div>
 

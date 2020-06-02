@@ -33,7 +33,7 @@ const NavMain = (props) => {
                 <div className="row no-gutters align-items-center">
                     <div className="col-5 col-lg-2">
                         <div className="header-logo-area">
-                            <a href="\#">
+                            <a href={props.logoURL}>
                                 <img className="logo-main" src={props.logURL} alt="Logo" />
                             </a>
                         </div>
@@ -75,10 +75,12 @@ function CustomerHeader(props) {
     const { contactData} = props.contactReducer;
     const { data } = props.datatableReducer;
     const cid = props.match.params.cid;
-    let logURL ="/image/logo.png";
+    let logURL = "/image/logo.png";
+    let logoURL = "https://1111.com.tw";
 
     if(data && data.length > 0){
-        logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
+        logURL = `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
+        logoURL = `https://www.1111.com.tw/corp/${cid}/`;
     }
 
     let customizeEnable;
@@ -110,7 +112,7 @@ function CustomerHeader(props) {
     
                     <div>
                         <NavBar logURL={logURL}/>
-                        <NavMain logURL={logURL} customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
+                        <NavMain logURL={logURL} logoURL={logoURL} customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
                     </div>
                 
     );

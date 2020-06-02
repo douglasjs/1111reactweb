@@ -53,10 +53,12 @@ function CustomerHeader(props) {
     const { contactData} = props.contactReducer;
     const { data } = props.datatableReducer;
     const cid = props.match.params.cid;
-    let logURL ="/image/logo-1111.png";
+    let logURL = "/image/logo-1111.png";
+    let logoURL = "https://1111.com.tw";
 
     if(data && data.length > 0){
-        logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
+        logURL = `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
+        logoURL = `https://www.1111.com.tw/corp/${cid}/`;
     }
 
     let customizeEnable;
@@ -88,7 +90,7 @@ function CustomerHeader(props) {
             <div className="outer-container">
                 <div className="main-box clearfix">
                     <div className="logo-box">
-                        <figure className="logo"><a href="/#"><img src={logURL} alt="1111人力銀行" /></a></figure>
+                        <figure className="logo"><a href={logoURL}><img src={logURL} alt="1111人力銀行" /></a></figure>
                     </div>
                     <div className="nav-outer clearfix">
                         <div className="menu-area">
@@ -104,7 +106,7 @@ function CustomerHeader(props) {
             
             <div className="sticky-header">
                 <div className="container clearfix">
-                    <figure className="logo-box"><a href="/#"><img src={logURL} alt="1111人力銀行" /></a></figure>
+                    <figure className="logo-box"><a href={logoURL}><img src={logURL} alt="1111人力銀行" /></a></figure>
                     <div className="menu-area">
                         <nav className="main-menu navbar-expand-lg">
                             <NavBar logURL={logURL}/>
