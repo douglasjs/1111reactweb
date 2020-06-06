@@ -82,7 +82,7 @@ class CompanyQA extends React.Component {
 
                                 <ul className="accordion">
                                     <li className="accordion-item">
-                                        <button className="accordion-title active">
+                                        <button className="accordion-title tp05_s7_button active text-left">
                                             <i className="fas fa-plus"></i>
                                             {qa1Title}
                                         </button>
@@ -91,37 +91,37 @@ class CompanyQA extends React.Component {
                                     </li>
                                     
                                     <li className="accordion-item">
-                                        <a className="accordion-title" href="/#">
+                                        <button className="accordion-title tp05_s7_button text-left">
                                             <i className="fas fa-plus"></i>
                                             {qa2Title}
-                                        </a>
+                                        </button>
 
                                         <p className="accordion-content">{qa2Content}</p>
                                     </li>
                                     
                                     <li className="accordion-item">
-                                        <a className="accordion-title" href="/#">
+                                        <button className="accordion-title tp05_s7_button text-left">
                                             <i className="fas fa-plus"></i>
                                             {qa3Title}
-                                        </a>
+                                        </button>
 
                                         <p className="accordion-content">{qa3Content}</p>
                                     </li>
 
                                     <li className="accordion-item">
-                                        <a className="accordion-title" href="/#">
+                                        <button className="accordion-title tp05_s7_button text-left">
                                             <i className="fas fa-plus"></i>
                                             {qa4Title}
-                                        </a>
+                                        </button>
 
                                         <p className="accordion-content">{qa4Content}</p>
                                     </li>
                                     
                                     <li className="accordion-item">
-                                        <a className="accordion-title" href="/#">
+                                        <button className="accordion-title tp05_s7_button text-left">
                                             <i className="fas fa-plus"></i>
                                             {qa5Title}
-                                        </a>
+                                        </button>
 
                                         <p className="accordion-content">{qa5Content}</p>
                                     </li>

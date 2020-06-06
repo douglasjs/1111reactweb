@@ -2139,6 +2139,12 @@
   font-size: 1rem !important;
 }
 
-.tp05_shadow{
+.tp05_shadow {
   text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.tp05_s7_button {
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
 }
