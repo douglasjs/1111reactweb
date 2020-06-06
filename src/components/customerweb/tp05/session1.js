@@ -17,12 +17,20 @@ class CompanyTitle extends React.Component{
         const cid = this.props.match.params.cid;
         const { companyData } = this.props.companyReducer;
 
+        let title;
+        let title2;
+        let companySubTitle1;
+        let companySubTitle2;
         let companyBackgroundImg1;
         let companyBackgroundImg2;
         let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
 
         if(companyData && companyData.length > 0){
             companyData.forEach(element => {
+                title = element.title;
+                title2 = element.title2;
+                companySubTitle1 = element.companySubTitle1;
+                companySubTitle2 = element.companySubTitle2;
                 companyBackgroundImg1 = element.companyBackgroundImg1;
                 companyBackgroundImg2 =  element.companyBackgroundImg2;
             })
@@ -44,8 +52,12 @@ class CompanyTitle extends React.Component{
                             <div className="d-table">
                                 <div className="d-table-cell text-center pb-20">
                                     <div className="container">
-                                        <div className="btn-box">
-                                            <a href={companyurl} className="default-btn" target="_blank" rel="noopener noreferrer">我要應徵<span></span></a>                             
+                                        <div className="banner-content s1_banner-content">
+                                            <h4 className="text-white tp05_shadow">{companySubTitle1}</h4>
+                                            <h1 className="tp05_shadow">{title}</h1>
+                                            <div className="btn-box">
+                                                <a href={companyurl} className="default-btn tp05_button" target="_blank" rel="noopener noreferrer">我要應徵 <span></span></a>                             
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -55,8 +67,12 @@ class CompanyTitle extends React.Component{
                             <div className="d-table">
                                 <div className="d-table-cell text-center pb-20">
                                     <div className="container">
-                                        <div className="btn-box">
-                                            <a href={companyurl} className="default-btn" target="_blank" rel="noopener noreferrer">我要應徵<span></span></a>                             
+                                        <div className="banner-content s1_banner-content">
+                                            <h4 className="text-white tp05_shadow">{companySubTitle2}</h4>
+                                            <h1 className="tp05_shadow">{title2}</h1>
+                                            <div className="btn-box">
+                                                <a href={companyurl} className="default-btn tp05_button" target="_blank" rel="noopener noreferrer">我要應徵 <span></span></a>                             
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -40,11 +40,8 @@
 /*================================================
 Default CSS
 =================================================*/
-/*
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;display=swap");
 @import url("https://fonts.googleapis.com/css?family=Microsoft JhengHei:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap");
-*/
-
 body {
   padding: 0;
   margin: 0;
@@ -3096,6 +3093,7 @@ Why Choose Us Area CSS
 
 .why-choose-us-content {
   background-color: #002e5b;
+  background-image: url(../img/why-choose-bg.jpg);
   background-position: right center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -6666,6 +6664,7 @@ FAQ Area CSS
 .faq-image {
   width: 100%;
   height: 100%;
+  background-image: url(../img/faq-img1.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7566,7 +7565,7 @@ Go Top CSS
 
 #jobs .owl-stage .single-services-box p,
 .single-services-box h3 a {
-	-webkit-line-clamp: 1;
+	-webkit-line-clamp: 2;
 }
 
 #jobs .owl-stage .single-services-box p,
@@ -7583,4 +7582,8 @@ Go Top CSS
 p.salary-fmt {
 	font-weight: bold;
 	color: #32aae0;
+}
+
+.pb-20 {
+	padding-bottom: 20px;
 }

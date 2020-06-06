@@ -64,10 +64,10 @@ class CompanyInfo extends React.Component{
                         </div>
 
                         <div className="col-lg-6 col-md-12">
-                            <div className="about-content text-left">
+                            <div className="about-content">
                                 <span>About Us</span>
                                 <h2>{introTitle}</h2>
-                                <p>{introMainContent}</p>
+                                <p className="text-left">{introMainContent}</p>
                                 <a target="_blank"  rel="noopener noreferrer" href={companyurl} className="default-btn">我要應徵<span></span></a>
                             </div>
                         </div>
