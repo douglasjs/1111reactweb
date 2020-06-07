@@ -177,11 +177,7 @@ class Session2 extends React.Component{
                         <form id='dataForm2' className={introductionIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                             <Msg type ='LOADING'  value = {introductionIsLoading} text='Processing ' /> 
                             <Msg type ='ERROR' value = {introductionErr} text= 'Opps! Error : ' />
-                            <input type="hidden" id="themeNum2" value={themeNum} />
-
-                            <div><img src="/image/sample_01/02.png" alt="Temp1_Company" width="50%"/></div>
-                            <div><a type="button" data-toggle="modal" href="#tmp1_company">觀看放大圖例</a></div>
-                            <hr />
+                            <input type="hidden" id="themeNum2" value={themeNum} />                            
 
                             <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                             
@@ -198,52 +194,88 @@ class Session2 extends React.Component{
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputTextArea title='主內容' notice='(字數限制為290個字以內)' inputName='introMainContent' inputState={introMainContent}
-                                           rows='5' stateObj={this} required={true} checkValue='290' />
+                                           rows='6' stateObj={this} required={true} checkValue='290' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputTextArea title='短文1內容' notice='(字數限制為13個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
-                                            rows='2' stateObj={this} required={true} checkValue='13' />
+                                            rows='1' stateObj={this} required={true} checkValue='13' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputTextArea title='短文2內容' notice='(字數限制為13個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
-                                            rows='2' stateObj={this} required={true} checkValue='13' />
+                                            rows='1' stateObj={this} required={true} checkValue='13' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputTextArea title='短文3內容' notice='(字數限制為13個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
-                                            rows='2' stateObj={this} required={true} checkValue='13' />
+                                            rows='1' stateObj={this} required={true} checkValue='13' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='圖片 上傳' notice='(圖檔尺寸大小為 750*590，接受格式為png、jpg)' objName='introSubTitle1Img'  imgUpload={introSubTitle1ImgUpload} 
                                             imgFileName={introSubTitle1Img} parentObj={this} imgW={750} imgH={590} required={true} />                                               
                                     </div>
+                                    <hr />
+                                    <div align="center">
+                                        <button type='submit' id='action2' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button>
+                                    </div>
                                 </div>
 
-                                <div className="col-md-6 mb-3">                                    
-                                    <div><img src="/image/sample_01/02-1.png" alt="Temp1_Company_title" width="100%"/></div>
+                                <div className="col-md-6 mb-3">
+                                    <div className="pic-bigger"><img src="/image/sample_02/02.png" alt="Temp2_Company" width="100%"/></div>
+                                    <div><a type="button" data-toggle="modal" href="#tmp2_company">觀看放大圖例</a></div>
                                     <hr />
                                     <div>
                                         <table border='1'>
                                             <thead>
-                                            <tr>
-                                                <th width="10%">項目</th>
-                                                <th width="35%">內容範例</th>
-                                                <th width="15%">規格</th>
-                                                <th width="40%">備註</th>
-                                            </tr>
+                                                <tr>
+                                                    <th width="10%">項目</th>
+                                                    <th width="35%">內容範例</th>
+                                                    <th width="15%">規格</th>
+                                                    <th width="40%">備註</th>
+                                                </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td>主標題</td>
-                                                <td align='left'>永豐餘品牌對人與環境的永續經營</td>
-                                                <td>15個字以內</td>
-                                                <td>不可空白</td>
-                                            </tr>
-                                            <tr>
-                                                <td>主內容</td>
-                                                <td align='left'>本公司擁有優秀的經營團隊，秉持著『◆安心宣言◆生態平衡◆達人堅持』的經營理念，追求企業永續經營及成長；除整體營運穩定外，獲利狀況也逐年提昇，是國內績優廠商之一。</td>
-                                                <td>80個字以內</td>
-                                                <td>不可空白</td>
-                                            </tr>
+                                                <tr>
+                                                    <td>主標題</td>
+                                                    <td align='left'>媽咪樂MHHS</td>
+                                                    <td>8個字以內</td>
+                                                    <td>不可空白</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>副標題</td>
+                                                    <td align='left'>新一代 居家服務集團</td>
+                                                    <td>8個字以內</td>
+                                                    <td>不可空白</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>主內容</td>
+                                                    <td align='left'>以「滿足人的需求」為出發，成立於1996年的「順遠工程」，秉持著服務社會的熱誠、改善環境的品質為理念，充分運用團隊管理的優勢，兢兢業業地塑造出積極、創新的立業精神，期許以專業的清潔施工技術，給予消費者一個最舒適的環境。
+    而企業內所提倡的三意，指的便是夥伴樂意、 顧客滿意、經營得意這三大目標。</td>
+                                                    <td>290個字以內</td>
+                                                    <td>不可空白</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>短文1內容</td>
+                                                    <td align='left'>深耕二十餘年，100%正職嚴選管家</td>
+                                                    <td>13個字以內</td>
+                                                    <td>不可空白</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>短文2內容</td>
+                                                    <td align='left'>投入百萬教育訓練預算，培育專業職人</td>
+                                                    <td>13個字以內</td>
+                                                    <td>不可空白</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>短文3內容</td>
+                                                    <td align='left'>比照公家機關休，員工每年享有旅遊福利</td>
+                                                    <td>13個字以內</td>
+                                                    <td>不可空白</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>圖片</td>
+                                                    <td align='left'>寬、高(px)</td>
+                                                    <td>750*590</td>
+                                                    <td>不可空白</td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -251,7 +283,7 @@ class Session2 extends React.Component{
                                 
                             </div>
 
-                            <div className="modal fade" id="tmp1_company">
+                            <div className="modal fade" id="tmp2_company">
                                 <div className="modal-dialog sample-img-width">
                                     <div className="modal-content">
                                         <div className="modal-header">
@@ -259,7 +291,7 @@ class Session2 extends React.Component{
                                             <button type="button" className="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <div className="modal-body text-center">
-                                            <img src="/image/sample_01/02.png" alt="tmp1_company" width="100%" />
+                                            <img src="/image/sample_02/02.png" alt="tmp2_company" width="100%" />
                                         </div>
                                         <div className="modal-footer">
                                             <p className="small">範例僅供參考</p>
@@ -267,11 +299,7 @@ class Session2 extends React.Component{
                                     </div>
                                 </div>
                             </div>
-
-                            <hr />
-                            <div align="center">
-                                <button type='submit' id='action2' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button>
-                            </div>
+                            
                         </form>
                     </div>
                  </div>

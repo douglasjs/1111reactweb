@@ -187,9 +187,9 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                             <div className="col-md-6 mb-3">                                    
-                                <div><img src="/image/sample_01/06.png" alt="Temp1_Customize" width="100%"/></div>
+                                <div className="height-sample"><img src="/image/sample_02/06.png" alt="Temp2_Customize" width="100%"/></div>
                                 <div>
-                                    <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                    <a type="button" data-toggle="modal" href="#tmp2_customize">
                                         觀看放大圖例
                                     </a>
                                 </div>
@@ -207,37 +207,19 @@ class Session6 extends React.Component{
                                         <tbody>
                                         <tr>
                                             <td>自訂選單名稱</td>
-                                            <td align='left'>有機食材</td>
+                                            <td align='left'>自訂抬頭</td>
                                             <td>4個字以內</td>
                                             <td>
                                                 不可空白<br />
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize_menu">觀看範例圖片</a>
+                                                <a type="button" data-toggle="modal" href="#tmp2_customize_menu">觀看範例圖片</a>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td>自訂區域主標題</td>
-                                            <td align='left'>有機食材宅配服務</td>
-                                            <td>10個字以內</td>
-                                            <td>
-                                                不可空白<br />
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize_title">觀看範例圖片</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>自訂區域副標題</td>
-                                            <td align='left'>GREEN 及 SAFE百寶箱組合週週送，各式生鮮、冷藏、冷凍有機食材宅配服務</td>
-                                            <td>40個字以內</td>
-                                            <td>
-                                                不可空白<br />
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize_title">觀看範例圖片</a>
-                                            </td>
-                                        </tr>
+                                        </tr>                                        
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_customize">
+                        <div className="modal fade" id="tmp2_customize">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -245,7 +227,7 @@ class Session6 extends React.Component{
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/06.png" alt="tmp1_customize" width="100%" />
+                                        <img src="/image/sample_02/06.png" alt="tmp2_customize" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>
@@ -253,7 +235,7 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_customize_menu">
+                        <div className="modal fade" id="tmp2_customize_menu">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -261,23 +243,7 @@ class Session6 extends React.Component{
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/06-0.png" alt="tmp1_customize_menu" width="100%" />
-                                    </div>
-                                    <div className="modal-footer">
-                                        <p className="small">範例僅供參考</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="modal fade" id="tmp1_customize_title">
-                            <div className="modal-dialog sample-img-width">
-                                <div className="modal-content">
-                                    <div className="modal-header">
-                                        <p className="modal-title">自定區域 - 標題範例</p>
-                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <div className="modal-body text-center">
-                                        <img src="/image/sample_01/06-1.png" alt="tmp1_customize_title" width="100%" />
+                                        <img src="/image/sample_02/06-0.png" alt="tmp2_customize_menu" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>
@@ -308,9 +274,9 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-2.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_02/06-1.png" alt="Temp2_Customize_1" width="100%"/></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp2_customize_1">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -328,26 +294,21 @@ class Session6 extends React.Component{
                                                     <tbody>
                                                     <tr>
                                                         <td>卡片1標題</td>
-                                                        <td align='left'>海水生態蝦仁</td>
-                                                        <td>8個字以內</td>
+                                                        <td align='left'>規模</td>
+                                                        <td>10個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片1內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>定期檢驗重金屬合格。</li>
-                                                                <li>定期檢驗無動物用藥殘留。</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
+                                                        <td align='left'>深耕二十餘年，100%正職嚴選管家。居家防疫從清潔消毒開始！提供管家到府清潔服務，提供專業防疫工具，為客戶創造健康的生活環境。 全台唯一TTQS銀質獎，數十年的專業清潔經驗，防疫期間管家施作服務全程配載口罩讓您安心。 定期清潔。單次清潔。</td>
+                                                        <td>100個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片1圖片</td>
                                                         <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
+                                                        <td>510*300</td>
+                                                        <td align='left'>
                                                             <ul>
                                                                 <li>接受格式為png、jpg</li>
                                                                 <li>不可空白</li>
@@ -358,6 +319,22 @@ class Session6 extends React.Component{
                                                 </table>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp2_customize_1">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片1範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_02/06-1.png" alt="tmp2_customize_1" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>
@@ -385,11 +362,11 @@ class Session6 extends React.Component{
                                                 <ImgUpload title='卡片2圖片' notice='(圖檔尺寸大小為 510*300  ，接受格式為png、jpg)' objName='card2Img'  imgUpload={card2ImgUpload} 
                                                     imgFileName={card2Img} parentObj={this} imgW={510} imgH={300} required={false} />
                                             </div>
-                                       </div>
-                                       <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-3.png" alt="Temp1_Customize" /></div>
+                                        </div>
+                                        <div className="col-md-6 mb-3">                                    
+                                            <div><img src="/image/sample_02/06-2.png" alt="Temp2_Customize_2" width="100%"/></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp2_customize_2">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -407,26 +384,21 @@ class Session6 extends React.Component{
                                                     <tbody>
                                                     <tr>
                                                         <td>卡片2標題</td>
-                                                        <td align='left'>安心鱸魚排</td>
-                                                        <td>8個字以內</td>
+                                                        <td align='left'>組織</td>
+                                                        <td>10個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片2內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>定期檢驗無動物用藥殘留</li>
-                                                                <li>定期檢驗鮮度(VBN)合格</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
+                                                        <td align='left'>廣納業界菁英，建立專業經理人領導團隊。定期或鐘點，年終打掃，煮飯打掃，到府清潔，收納整理，居家陪伴，家事管理，鐘點管家，居家服務。家常烹飪，大掃除，居家清潔，辦公室清潔，裝潢後清潔，寵物陪伴，海外管家，替手保母。複合式服務，客製化服務。客服迅速，待客如親。</td>
+                                                        <td>100個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片2圖片</td>
                                                         <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
+                                                        <td>510*300</td>
+                                                        <td align='left'>
                                                             <ul>
                                                                 <li>接受格式為png、jpg</li>
                                                                 <li>不可空白</li>
@@ -437,6 +409,22 @@ class Session6 extends React.Component{
                                                 </table>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp2_customize_2">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片2範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_02/06-2.png" alt="tmp2_customize_2" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>
@@ -466,9 +454,9 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_02/06-3.png" alt="Temp2_Customize_3" width="100%"/></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp2_customize_3">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -486,26 +474,21 @@ class Session6 extends React.Component{
                                                     <tbody>
                                                     <tr>
                                                         <td>卡片3標題</td>
-                                                        <td align='left'>蒲燒鯛魚腹排</td>
-                                                        <td>8個字以內</td>
+                                                        <td align='left'>產品</td>
+                                                        <td>10個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片3內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>無添加防腐劑</li>
-                                                                <li>無添加任何人工甘味劑</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
+                                                        <td align='left'>媽咪樂為全台規模最大的居家清潔服務公司，專精於家事清潔、居家打掃、家事管理等居家服務。數十年的專業經驗使媽咪樂榮獲全台唯一TTQS銀質獎，期望能提供更</td>
+                                                        <td>100個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片3圖片</td>
                                                         <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
+                                                        <td>510*300</td>
+                                                        <td align='left'>
                                                             <ul>
                                                                 <li>接受格式為png、jpg</li>
                                                                 <li>不可空白</li>
@@ -516,6 +499,22 @@ class Session6 extends React.Component{
                                                 </table>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp2_customize_3">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片3範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_02/06-3.png" alt="tmp2_customize_3" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>

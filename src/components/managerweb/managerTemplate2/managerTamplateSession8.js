@@ -60,7 +60,7 @@ class Session8 extends React.Component{
                             <input type="hidden" id="themeNum8" value={themeNum} />
                             <InputSwitch sessionName={sessionName} inputName='contactEnable' inputState={contactEnable} stateObj={this} />
                             <div className="form-row">
-                                <label> </label>
+                                <h3> 此版型的「{sessionName}」不須額外設定，背景圖片也為固定不可更換。<br /><br />請選擇是否開啟後直接儲存。</h3>
                             </div>
                             <div className="form-row">
                                 <div className="col-md-6 mb-3">
@@ -69,8 +69,8 @@ class Session8 extends React.Component{
                                     <div  align="center"><button type='submit' id='action8' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
                                 </div>
                                 <div className="col-md-6 mb-3">
-                                    <div><img src="/image/sample_01/08.png" alt="Temp1_Contact" width="100%"/></div>
-                                    <div><a type="button" data-toggle="modal" href="#tmp1_contact">觀看放大圖例</a></div>
+                                    <div><img src="/image/sample_02/08.png" alt="Temp2_Contact" width="100%"/></div>
+                                    <div><a type="button" data-toggle="modal" href="#tmp2_contact">觀看放大圖例</a></div>
                                     <hr />
                                     <div>
                                         <table border='1'>
@@ -100,7 +100,7 @@ class Session8 extends React.Component{
                                 </div>                                
                             </div>
                         </form>
-                        <div className="modal fade" id="tmp1_contact">
+                        <div className="modal fade" id="tmp2_contact">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -108,7 +108,7 @@ class Session8 extends React.Component{
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/08.png" alt="tmp1_contact" width="100%" />
+                                        <img src="/image/sample_02/08.png" alt="tmp2_contact" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>

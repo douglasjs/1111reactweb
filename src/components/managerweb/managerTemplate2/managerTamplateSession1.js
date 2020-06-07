@@ -128,7 +128,7 @@ class Session1 extends React.Component{
                                 </form>
                             </div>
                             <div className="col-md-6 mb-3">
-                                <div className="pic-bigger"><img src="/image/sample_01/01.png" alt="Temp1_Banner" width="100%"/></div>
+                                <div className="pic-bigger"><img src="/image/sample_02/01.png" alt="Temp2_Banner" width="100%"/></div>
                                 <div>
                                     <a type="button" data-toggle="modal" href="#tmp1_banner">
                                         觀看放大圖例
@@ -149,31 +149,25 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>背景圖</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>1920*1080</td>
-                                                <td>
+                                                <td>850*590</td>
+                                                <td className="text-left">
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
-                                                        <li>最多可上傳兩張底圖來輪播</li>
+                                                        <li>無輪播</li>
                                                     </ul>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>大標題</td>
-                                                <td align='left'>永豐餘生技</td>
-                                                <td>5個字以內</td>
+                                                <td align='left'>和媽咪樂MHHS一起創造未來！</td>
+                                                <td>13個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
-                                                <td>副標題1</td>
-                                                <td align='left'>期許作為一個專業及熱情的有機生活管家，貼心的讓客人輕鬆的享受有機生活。</td>
-                                                <td>40個字以內</td>
-                                                <td>不可空白</td>
-                                            </tr>
-                                            <tr>
-                                                <td>副標題2</td>
-                                                <td align='left'>歡迎優秀的朋友一起加入</td>
+                                                <td>副標題</td>
+                                                <td align='left'>如此偉大的旅程，我們才剛剛開始</td>
                                                 <td>15個字以內</td>
-                                                <td>可自行輸入</td>
+                                                <td>不可空白</td>
                                             </tr>
                                         </tbody>                                        
                                     </table>
@@ -190,7 +184,7 @@ class Session1 extends React.Component{
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div className="modal-body text-center">
-                                <img src="/image/sample_01/01.png" alt="tmp1_banner" width="100%" />
+                                <img src="/image/sample_02/01.png" alt="tmp1_banner" width="100%" />
                             </div>
                             <div className="modal-footer">
                                 <p className="small">範例僅供參考</p>
