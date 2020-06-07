@@ -162,7 +162,7 @@ class Session7 extends React.Component{
                                         <div  align="center"><button type='submit' id='action7' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
                                     </div>
                                     <div className="col-md-6 mb-3">
-                                        <div className="pic-bigger"><img src="/image/sample_02/07.png" alt="Temp1_FAQ" width="100%"/></div>
+                                        <div className="pic-bigger"><img src="/image/sample_02/07.png" alt="Temp2_FAQ" width="100%"/></div>
                                         <div><a type="button" data-toggle="modal" href="#tmp2_faq">觀看放大圖例</a></div>
                                         <hr />
                                         <div>
