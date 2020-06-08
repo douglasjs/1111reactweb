@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import validation from '../../sharecomponents/validation';
 //import envConfig from '../../../config/env';
 
 class CompanyContact extends React.Component {
@@ -12,6 +13,8 @@ class CompanyContact extends React.Component {
            custMsg: "",
            custMail: ""
         };
+        this.emailInput = React.createRef();
+        this.phoneInput = React.createRef();
     }
 
     componentDidMount(){
@@ -33,6 +36,19 @@ class CompanyContact extends React.Component {
         const { data } = this.props.datatableReducer;
         const { kind01_data } = this.props.kind01Reducer;
         
+
+        if(validation('custMail', this.state.custMail)!==""){
+            alert(validation('custMail', this.state.custMail));
+            this.emailInput.current.focus();
+            return;
+        }
+
+        if(validation('custMobile', this.state.custMobile)!==""){
+            alert(validation('custMobile', this.state.custMobile));
+            this.phoneInput.current.focus();
+            return;
+        }
+
         if(data && data.length > 0){
             const emailObj = {
                 oNo: this.props.match.params.cid.trim(),
@@ -92,10 +108,10 @@ class CompanyContact extends React.Component {
                                             <input type="text" name="username" placeholder="姓名*" required data-error="格式錯誤" onChange={this.handleChange('custName')} value={this.state.custName} />
                                         </div>
                                         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-                                            <input type="email" name="email" placeholder="電子郵件*" data-error="郵件格式錯誤" required onChange={this.handleChange('custMail')} value={this.state.custMail} />
+                                            <input type="email" name="email" placeholder="電子郵件*" data-error="郵件格式錯誤" required onChange={this.handleChange('custMail')} value={this.state.custMail}  ref={this.emailInput} />
                                         </div>
                                         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-                                            <input type="text" name="phone" placeholder="電話" required onChange={this.handleChange('custMobile')} value={this.state.custMobile} />
+                                            <input type="text" name="phone" placeholder="電話" required onChange={this.handleChange('custMobile')} value={this.state.custMobile}  ref={this.phoneInput}/>
                                         </div>
                                         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
                                             <input type="text" name="subject" placeholder="主題" required />

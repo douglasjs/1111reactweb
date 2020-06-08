@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import validation from '../../sharecomponents/validation';
 //import envConfig from '../../../config/env';
 
 class CompanyContact extends React.Component {
@@ -12,6 +13,8 @@ class CompanyContact extends React.Component {
            custMsg: "",
            custMail: ""
         };
+        this.emailInput = React.createRef();
+        this.phoneInput = React.createRef();
     }
 
     componentDidMount(){
@@ -33,6 +36,19 @@ class CompanyContact extends React.Component {
         const { data } = this.props.datatableReducer;
         const { kind01_data } = this.props.kind01Reducer;
         
+
+        if(validation('custMail', this.state.custMail)!==""){
+            alert(validation('custMail', this.state.custMail));
+            this.emailInput.current.focus();
+            return;
+        }
+
+        if(validation('custMobile', this.state.custMobile)!==""){
+            alert(validation('custMobile', this.state.custMobile));
+            this.phoneInput.current.focus();
+            return;
+        }
+
         if(data && data.length > 0){
             const emailObj = {
                 oNo: this.props.match.params.cid.trim(),
@@ -92,14 +108,14 @@ class CompanyContact extends React.Component {
 
                                 <div className="col-lg-6 col-md-6">
                                     <div className="form-group">
-                                        <input type="email" name="email" id="email" className="form-control" required data-error="Please enter your email" placeholder="您的信箱" onChange={this.handleChange('custMail')} value={this.state.custMail} />
+                                        <input type="email" name="email" id="email" className="form-control" required data-error="Please enter your email" placeholder="您的信箱" onChange={this.handleChange('custMail')} value={this.state.custMail}  ref={this.emailInput}/>
                                         <div className="help-block with-errors"></div>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-12 col-md-12">
                                     <div className="form-group">
-                                        <input type="text" name="phone_number" id="phone_number" required data-error="Please enter your number" className="form-control" placeholder="電話" onChange={this.handleChange('custMobile')} value={this.state.custMobile} />
+                                        <input type="text" name="phone_number" id="phone_number" required data-error="Please enter your number" className="form-control" placeholder="電話" onChange={this.handleChange('custMobile')} value={this.state.custMobile} ref={this.phoneInput}/>
                                         <div className="help-block with-errors"></div>
                                     </div>
                                 </div>

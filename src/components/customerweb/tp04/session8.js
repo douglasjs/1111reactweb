@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import validation from '../../sharecomponents/validation';
 //import envConfig from '../../../config/env';
 
 class CompanyContact extends React.Component {
@@ -12,6 +13,8 @@ class CompanyContact extends React.Component {
            custMsg: "",
            custMail: ""
         };
+        this.emailInput = React.createRef();
+        this.phoneInput = React.createRef();
     }
 
     componentDidMount(){
@@ -19,8 +22,9 @@ class CompanyContact extends React.Component {
         this.props.getkind01(cid);
         this.props.getcontactList(cid, this.props.themeNum);
     }
-
+    
     handleChange = name => event => {
+        console.log(event.type);
         if(name === "sentMail"){
             this.setState({...this.state, [name]: true});
         }else{
@@ -32,6 +36,18 @@ class CompanyContact extends React.Component {
         event.preventDefault();
         const { data } = this.props.datatableReducer;
         const { kind01_data } = this.props.kind01Reducer;
+
+        if(validation('custMail', this.state.custMail)!==""){
+            alert(validation('custMail', this.state.custMail));
+            this.emailInput.current.focus();
+            return;
+        }
+
+        if(validation('custMobile', this.state.custMobile)!==""){
+            alert(validation('custMobile', this.state.custMobile));
+            this.phoneInput.current.focus();
+            return;
+        }
         
         if(data && data.length > 0){
             const emailObj = {
@@ -108,10 +124,10 @@ class CompanyContact extends React.Component {
 													<input type="text" className="ld_sf_text" id="mce-NAME" name="NAME" placeholder="姓名" required onChange={this.handleChange('custName')} value={this.state.custName} />
 												</p>
 												<p className="ld_sf_paragraph pr-2">
-													<input type="email" className="ld_sf_text" id="mce-EMAIL" name="EMAIL" placeholder="Email" required onChange={this.handleChange('custMail')} value={this.state.custMail} />
+													<input type="email" className="ld_sf_text" id="mce-EMAIL" name="EMAIL" placeholder="Email" required onChange={this.handleChange('custMail')} value={this.state.custMail} ref={this.emailInput} />
 												</p>
 												<p className="ld_sf_paragraph pr-2">
-													<input type="text" className="ld_sf_text" id="mce-TEL" name="TEL" placeholder="電話" required onChange={this.handleChange('custMobile')} value={this.state.custMobile} />
+													<input type="text" className="ld_sf_text" id="mce-TEL" name="TEL" placeholder="電話" required onChange={this.handleChange('custMobile')} value={this.state.custMobile}  ref={this.phoneInput}/>
 												</p>
 												<p className="ld_sf_paragraph pr-2" rows="4">
 													<input type="text" className="ld_sf_text" id="mce-MSG" name="MSG" placeholder="訊息" required onChange={this.handleChange('custMsg')} value={this.state.custMsg} />
