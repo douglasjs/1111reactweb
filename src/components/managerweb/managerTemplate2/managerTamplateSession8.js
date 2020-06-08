@@ -59,12 +59,10 @@ class Session8 extends React.Component{
                             <Msg type ='ERROR' value = {contactErr} text= 'Opps! Error : ' />
                             <input type="hidden" id="themeNum8" value={themeNum} />
                             <InputSwitch sessionName={sessionName} inputName='contactEnable' inputState={contactEnable} stateObj={this} />
-                            <div className="form-row">
-                                <h3> 此版型的「{sessionName}」不須額外設定，背景圖片也為固定不可更換。<br /><br />請選擇是否開啟後直接儲存。</h3>
-                            </div>
+                            
                             <div className="form-row">
                                 <div className="col-md-6 mb-3">
-                                    
+                                    <h3> 此版型的「{sessionName}」不須額外設定，背景圖片也為固定不可更換。<br /><br />請選擇是否開啟後直接儲存。</h3>
                                     <hr />
                                     <div  align="center"><button type='submit' id='action8' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
                                 </div>
@@ -86,13 +84,8 @@ class Session8 extends React.Component{
                                             <tr>
                                                 <td>連絡我們背景圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>1920*1080</td>
-                                                <td>
-                                                    <ul>
-                                                        <li>接受格式為png、jpg</li>
-                                                        <li>不可空白</li>
-                                                    </ul>
-                                                </td>
+                                                <td>無須設定</td>
+                                                <td>固定不可變更</td>
                                             </tr>
                                             </tbody>
                                         </table>

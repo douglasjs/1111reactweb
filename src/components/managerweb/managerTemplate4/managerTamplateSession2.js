@@ -187,17 +187,13 @@ class Session2 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard2">
                     <div className="card-body">
-                        <div class={`spinner-grow text-primary ${loading}`} role="status">
-                            <span class="sr-only">Loading...</span>
+                        <div className={`spinner-grow text-primary ${loading}`} role="status">
+                            <span className="sr-only">Loading...</span>
                         </div>
                         <form id='dataForm2' className={introductionIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                             <Msg type ='LOADING'  value = {introductionIsLoading} text='Processing ' /> 
                             <Msg type ='ERROR' value = {introductionErr} text= 'Opps! Error : ' />
                             <input type="hidden" id="themeNum2" value={themeNum} />
-
-                            <div><img src="/image/sample_01/02.png" alt="Temp1_Company" width="50%"/></div>
-                            <div><a type="button" data-toggle="modal" href="#tmp1_company">觀看放大圖例</a></div>
-                            <hr />
 
                             <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                             
@@ -206,7 +202,7 @@ class Session2 extends React.Component{
                                 <div className="col-md-6 mb-3">
                                     <div className="form-row row-style-w95-pt1">
                                         <InputText title='主標題' notice='(字數限制為4個字以內)' inputName='introTitle' inputState={introTitle}
-                                           stateObj={this} required={true} checkValue='4' />
+                                           stateObj={this} required={true} checkValue='5' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputTextArea title='主內容' notice='(字數限制為230個字以內)' inputName='introMainContent' inputState={introMainContent}
@@ -227,31 +223,84 @@ class Session2 extends React.Component{
                                 </div>
 
                                 <div className="col-md-6 mb-3">                                    
-                                    <div><img src="/image/sample_01/02-1.png" alt="Temp1_Company_title" width="100%"/></div>
+                                    <div><img src="/image/sample_04/02.png" alt="Temp4_Company" width="100%"/></div>
+                                    <div><a type="button" data-toggle="modal" href="#tmp4_company">觀看放大圖例</a></div>
                                     <hr />
                                     <div>
                                         <table border='1'>
                                             <thead>
-                                            <tr>
-                                                <th width="10%">項目</th>
-                                                <th width="35%">內容範例</th>
-                                                <th width="15%">規格</th>
-                                                <th width="40%">備註</th>
-                                            </tr>
+                                                <tr>
+                                                    <th width="20%">項目</th>
+                                                    <th width="35%">內容範例</th>
+                                                    <th width="15%">規格</th>
+                                                    <th width="20%">備註</th>
+                                                </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td>主標題</td>
-                                                <td align='left'>永豐餘品牌對人與環境的永續經營</td>
-                                                <td>15個字以內</td>
-                                                <td>不可空白</td>
-                                            </tr>
-                                            <tr>
-                                                <td>主內容</td>
-                                                <td align='left'>本公司擁有優秀的經營團隊，秉持著『◆安心宣言◆生態平衡◆達人堅持』的經營理念，追求企業永續經營及成長；除整體營運穩定外，獲利狀況也逐年提昇，是國內績優廠商之一。</td>
-                                                <td>80個字以內</td>
-                                                <td>不可空白</td>
-                                            </tr>
+                                                <tr>
+                                                    <td>主標題</td>
+                                                    <td align='left'>加入亞尼克</td>
+                                                    <td>5個字以內</td>
+                                                    <td align='left'>
+                                                        <ul>
+                                                            <li>不可空白</li>
+                                                            <li><a type="button" data-toggle="modal" href="#tmp4_company_title">觀看範例圖片</a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>主內容</td>
+                                                    <td align='left'>
+                                                        20年來，亞尼克不斷在企業經營及產品品質上，以高標準自我要求，
+                                                        每個環節的層層把關，從原物料嚴選、製程控管，並且不停持續研發創新。
+                                                        讓我們從萬里小鎮，一間小小七坪蛋糕工作坊發跡，一路走來到現在，
+                                                        更擁有北中南全台擁有多家門市，並且持續擴大經營中，
+                                                        為的是將最好的甜點分享給更多的消費者。
+                                                    </td>
+                                                    <td>230個字以內</td>
+                                                    <td align='left'>
+                                                        <ul>
+                                                            <li>不可空白</li>
+                                                            <li><a type="button" data-toggle="modal" href="#tmp4_company_title">觀看範例圖片</a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>圖片 1</td>
+                                                    <td align='left'>寬、高(px)</td>
+                                                    <td>900*800</td>
+                                                    <td align='left'>
+                                                        <ul>
+                                                            <li>接受格式為png、jpg</li>
+                                                            <li>不可空白</li>
+                                                            <li><a type="button" data-toggle="modal" href="#tmp4_company_pic01">觀看範例圖片</a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>圖片 2</td>
+                                                    <td align='left'>寬、高(px)</td>
+                                                    <td>900*800</td>
+                                                    <td align='left'>
+                                                        <ul>
+                                                            <li>接受格式為png、jpg</li>
+                                                            <li>不可空白</li>
+                                                            <li><a type="button" data-toggle="modal" href="#tmp4_company_pic02">觀看範例圖片</a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>圖片 3</td>
+                                                    <td align='left'>寬、高(px)</td>
+                                                    <td>900*800</td>
+                                                    <td align='left'>
+                                                        <ul>
+                                                            <li>接受格式為png、jpg</li>
+                                                            <li>不可空白</li>
+                                                            <li><a type="button" data-toggle="modal" href="#tmp4_company_pic03">觀看範例圖片</a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -259,7 +308,7 @@ class Session2 extends React.Component{
                                 
                             </div>
 
-                            <div className="modal fade" id="tmp1_company">
+                            <div className="modal fade" id="tmp4_company">
                                 <div className="modal-dialog sample-img-width">
                                     <div className="modal-content">
                                         <div className="modal-header">
@@ -267,14 +316,82 @@ class Session2 extends React.Component{
                                             <button type="button" className="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <div className="modal-body text-center">
-                                            <img src="/image/sample_01/02.png" alt="tmp1_company" width="100%" />
+                                            <img src="/image/sample_04/02.png" alt="tmp4_company" width="100%" />
                                         </div>
                                         <div className="modal-footer">
                                             <p className="small">範例僅供參考</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>
+
+                            <div className="modal fade" id="tmp4_company_title">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">公司簡介 - 主標題/主內容 範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_04/02-1.png" alt="tmp4_company_title" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="modal fade" id="tmp4_company_pic01">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">公司簡介 - 圖片1 範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_04/02-2-1.png" alt="tmp4_company_pic01" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="modal fade" id="tmp4_company_pic02">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">公司簡介 - 圖片2 範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_04/02-2-2.png" alt="tmp4_company_pic02" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="modal fade" id="tmp4_company_pic03">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">公司簡介 - 圖片3 範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_04/02-2-3.png" alt="tmp4_company_pic03" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                             <hr />
                             <div align="center">

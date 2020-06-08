@@ -163,8 +163,8 @@ class Session3 extends React.Component{
                     <div className="card-body">
                         <div className="form-row">
                             <div className="col-md-6 mb-3">
-                                <div class={`spinner-grow text-primary ${loading}`} role="status">
-                                    <span class="sr-only">Loading...</span>
+                                <div className={`spinner-grow text-primary ${loading}`} role="status">
+                                    <span className="sr-only">Loading...</span>
                                 </div>
                                 <form id='dataForm3' className={benefitIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                                     <Msg type ='LOADING'  value = {benefitIsLoading} text='Processing ' /> 
@@ -282,9 +282,9 @@ class Session3 extends React.Component{
                                 </form>
                             </div>
                             <div className="col-md-6 mb-3">
-                                <div><img src="/image/sample_01/03.png" alt="Temp1_Benefit" width="100%"/></div>
+                                <div><img src="/image/sample_04/03.png" alt="Temp4_Benefit" width="100%"/></div>
                                 <div>
-                                    <a type="button" data-toggle="modal" href="#tmp1_benefit">
+                                    <a type="button" data-toggle="modal" href="#tmp4_benefit">
                                         觀看放大圖例
                                     </a>
                                 </div>
@@ -292,48 +292,157 @@ class Session3 extends React.Component{
                                 <div>
                                     <table border='1'>
                                         <thead>
-                                        <tr>
-                                            <th width="10%">項目</th>
-                                            <th width="35%">內容</th>
-                                            <th width="15%">規格</th>
-                                            <th width="40%">備註</th>
-                                        </tr>
+                                            <tr>
+                                                <th width="20%">項目</th>
+                                                <th width="35%">內容</th>
+                                                <th width="15%">規格</th>
+                                                <th width="20%">備註</th>
+                                            </tr>
                                         </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>員工福利圖片</td>
-                                            <td align='left'>寬、高(px)</td>
-                                            <td>500*354</td>
-                                            <td>
-                                                <ul>
-                                                    <li>接受格式為png、jpg</li>
-                                                    <li>無輪播</li>
-                                                    <li>不可空白</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>員工福利內容</td>
-                                            <td align='left'>
-                                            法定項目<br />
-                                                勞保、健保、男性員工陪產假、育嬰假、生理假、特別休假、員工體檢、勞退提撥金、職災保險<br />
-                                            福利制度<br />
-                                                獎 金 類：全勤獎金、年節獎金、員工生日禮金、年終獎金、三節獎金、禮品、績效獎金<br />
-                                                保 險 類：意外險、員工團保、員工及眷屬住院慰問金<br />
-                                                餐 飲 類：免費供餐<br />
-                                                娛 樂 類：自強活動、國內旅遊、尾牙、員工運動會<br />
-                                                補 助 類：員工結婚補助、生育補助、員工國內、外進修補助、員工及眷屬喪葬補助、員工購物優惠、社團補助<br />
-                                                其 　他：員工在職教育訓練、良好升遷制度<br />
-                                            </td>
-                                            <td>350個字以內</td>
-                                            <td>可自行編輯排版，不可空白</td>
-                                        </tr>
+                                        <tbody>                                            
+                                            <tr>
+                                                <td>小標題1</td>
+                                                <td align='left'>獎金保險</td>
+                                                <td>4個字以內</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_benefit_title01">觀看範例圖片</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小標題1 內容</td>
+                                                <td align='left'>獎 金 類：全勤獎金、生日禮金、年終獎金、三節獎金、結婚禮金、彌月禮金。保 險 類：勞保、健保、團保、勞退提撥金。</td>
+                                                <td>55個字以內</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_benefit_title01">觀看範例圖片</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小標題1 圖片</td>
+                                                <td align='left'>寬、高(px)</td>
+                                                <td>56*56</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>接受格式為png、jpg</li>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_benefit_title01">觀看範例圖片</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小標題2</td>
+                                                <td align='left'>休閒娛樂</td>
+                                                <td>4個字以內</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_benefit_title02">觀看範例圖片</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小標題2 內容</td>
+                                                <td align='left'>員購優惠、家庭日聚餐、員工旅遊、尾牙活動。</td>
+                                                <td>55個字以內</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_benefit_title02">觀看範例圖片</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小標題2 圖片</td>
+                                                <td align='left'>寬、高(px)</td>
+                                                <td>56*56</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>接受格式為png、jpg</li>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_benefit_title02">觀看範例圖片</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小標題3</td>
+                                                <td align='left'>訓練升遷</td>
+                                                <td>4個字以內</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_benefit_title03">觀看範例圖片</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小標題3 內容</td>
+                                                <td align='left'>OJT線上訓練、Off-JT外部訓練。內部晉升考升遷。</td>
+                                                <td>55個字以內</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_benefit_title03">觀看範例圖片</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小標題3 圖片</td>
+                                                <td align='left'>寬、高(px)</td>
+                                                <td>56*56</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>接受格式為png、jpg</li>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_benefit_title03">觀看範例圖片</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小標題4</td>
+                                                <td align='left'>健康檢查</td>
+                                                <td>4個字以內</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_benefit_title04">觀看範例圖片</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小標題4 內容</td>
+                                                <td align='left'>「每年的健康檢查」是給員工健康的把關。</td>
+                                                <td>55個字以內</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_benefit_title04">觀看範例圖片</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小標題4 圖片</td>
+                                                <td align='left'>寬、高(px)</td>
+                                                <td>56*56</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>接受格式為png、jpg</li>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_benefit_title04">觀看範例圖片</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_benefit">
+
+                        <div className="modal fade" id="tmp4_benefit">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -341,14 +450,82 @@ class Session3 extends React.Component{
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/03.png" alt="tmp1_benefit" width="100%" />
+                                        <img src="/image/sample_04/03.png" alt="tmp4_benefit" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
+
+                        <div className="modal fade" id="tmp4_benefit_title01">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_04/03-1.png" alt="tmp4_benefit_title01" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="modal fade" id="tmp4_benefit_title02">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_04/03-2.png" alt="tmp4_benefit_title02" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="modal fade" id="tmp4_benefit_title03">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_04/03-3.png" alt="tmp4_benefit_title03" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="modal fade" id="tmp4_benefit_title04">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_04/03-4.png" alt="tmp4_benefit_title04" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                   
                     </div>
                 </div>

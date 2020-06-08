@@ -108,8 +108,8 @@ class Session1 extends React.Component{
                     <div className="card-body">
                         <div className="form-row">
                             <div className="col-md-6 mb-3">
-                                <div class={`spinner-grow text-primary ${loading}`} role="status">
-                                    <span class="sr-only">Loading...</span>
+                                <div className={`spinner-grow text-primary ${loading}`} role="status">
+                                    <span className="sr-only">Loading...</span>
                                 </div>
                                 <form id='dataForm1' className={companyIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                                     <Msg type ='LOADING'  value = {companyIsLoading} text='Processing ' /> 
@@ -117,19 +117,19 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題' notice='(字數限制為10個字以內)' inputName='title' inputState={title}
-                                           stateObj={this} required={true} checkValue='10' />
+                                        <InputText title='大標題' notice='(字數限制為14個字以內)' inputName='title' inputState={title}
+                                           stateObj={this} required={true} checkValue='14' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題' notice='(字數限制為22個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           rows='2' stateObj={this} required={true} checkValue='22' />
+                                        <InputTextArea title='副標題' notice='(字數限制為30個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           rows='2' stateObj={this} required={true} checkValue='30' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='短文' notice='(字數限制為32個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
-                                           rows='2' stateObj={this} required={true} checkValue='32' />
+                                        <InputTextArea title='短文' notice='(字數限制為125個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
+                                           rows='2' stateObj={this} required={true} checkValue='125' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='背景圖片1' notice='(圖檔尺寸大小為 1800*1100 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
+                                        <ImgUpload title='背景圖片' notice='(圖檔尺寸大小為 1800*1100 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
                                             parentObj={this}  imgW={1800} imgH={1100} required={true}/> 
                                     </div>
                                     
@@ -140,9 +140,9 @@ class Session1 extends React.Component{
                                 </form>
                             </div>
                             <div className="col-md-6 mb-3">
-                                <div className="pic-bigger"><img src="/image/sample_01/01.png" alt="Temp1_Banner" width="100%"/></div>
+                                <div className="pic-bigger"><img src="/image/sample_04/01.png" alt="Temp4_Banner" width="100%"/></div>
                                 <div>
-                                    <a type="button" data-toggle="modal" href="#tmp1_banner">
+                                    <a type="button" data-toggle="modal" href="#tmp4_banner">
                                         觀看放大圖例
                                     </a>
                                 </div>
@@ -151,41 +151,43 @@ class Session1 extends React.Component{
                                     <table border='1'>
                                         <thead>
                                             <tr>
-                                                <th width="10%">項目</th>
+                                                <th width="20%">項目</th>
                                                 <th width="35%">內容</th>
                                                 <th width="15%">規格</th>
-                                                <th width="40%">備註</th>
+                                                <th width="20%">備註</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>背景圖</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>1920*1080</td>
-                                                <td>
+                                                <td>1800*1100</td>
+                                                <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
-                                                        <li>最多可上傳兩張底圖來輪播</li>
+                                                        <li>因特殊效果關係，請特別注意圖片主視覺位置，可參考比例說明</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_banner_pic">觀看範例圖片</a></li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp4_slide_sample">觀看範例圖片</a></li>
                                                     </ul>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>大標題</td>
-                                                <td align='left'>永豐餘生技</td>
-                                                <td>5個字以內</td>
+                                                <td align='left'>【Sharing melts our hearts. 分享｡讓心融化】</td>
+                                                <td>14個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
-                                                <td>副標題1</td>
-                                                <td align='left'>期許作為一個專業及熱情的有機生活管家，貼心的讓客人輕鬆的享受有機生活。</td>
-                                                <td>40個字以內</td>
+                                                <td>副標題</td>
+                                                <td align='left'>歡迎負責、熱情、有同理心的你</td>
+                                                <td>22個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
-                                                <td>副標題2</td>
-                                                <td align='left'>歡迎優秀的朋友一起加入</td>
-                                                <td>15個字以內</td>
-                                                <td>可自行輸入</td>
+                                                <td>短文</td>
+                                                <td align='left'>在餐廳裡，甜點是飽餐一頓的完美句點；在亞尼克，甜點是美好生活的幸福起點。</td>
+                                                <td>125個字以內</td>
+                                                <td>不可空白</td>
                                             </tr>
                                         </tbody>                                        
                                     </table>
@@ -194,7 +196,8 @@ class Session1 extends React.Component{
                         </div>
                     </div>
                 </div>
-                <div className="modal fade" id="tmp1_banner">
+
+                <div className="modal fade" id="tmp4_banner">
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -202,7 +205,7 @@ class Session1 extends React.Component{
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div className="modal-body text-center">
-                                <img src="/image/sample_01/01.png" alt="tmp1_banner" width="100%" />
+                                <img src="/image/sample_04/01.png" alt="tmp4_banner" width="100%" />
                             </div>
                             <div className="modal-footer">
                                 <p className="small">範例僅供參考</p>
@@ -210,6 +213,41 @@ class Session1 extends React.Component{
                         </div>
                     </div>
                 </div>
+
+                <div className="modal fade" id="tmp4_banner_pic">
+                    <div className="modal-dialog sample-img-width">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <p className="modal-title">主視覺範例</p>
+                                <button type="button" className="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div className="modal-body text-center">
+                                <img src="/image/sample_04/01-1.png" alt="tmp4_banner_pic" width="100%" />
+                            </div>
+                            <div className="modal-footer">
+                                <p className="small">範例僅供參考</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="modal fade" id="tmp4_slide_sample">
+                    <div className="modal-dialog sample-img-width">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <p className="modal-title">主視覺範例</p>
+                                <button type="button" className="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div className="modal-body text-center">
+                                <img src="/image/sample_04/slider_sample.jpg" alt="tmp4_slide_sample" width="100%" />
+                            </div>
+                            <div className="modal-footer">
+                                <p className="small">範例僅供參考</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
 
