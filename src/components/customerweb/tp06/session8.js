@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import validation from '../../sharecomponents/validation';
 
 class CompanyContact extends React.Component {
 
@@ -11,6 +12,8 @@ class CompanyContact extends React.Component {
            custMsg: "",
            custMail: ""
         };
+        this.emailInput = React.createRef();
+        this.phoneInput = React.createRef();
     }
 
     componentDidMount(){
@@ -32,6 +35,19 @@ class CompanyContact extends React.Component {
         const { data } = this.props.datatableReducer;
         const { kind01_data } = this.props.kind01Reducer;
         
+
+        if(validation('custMail', this.state.custMail)!==""){
+            alert(validation('custMail', this.state.custMail));
+            this.emailInput.current.focus();
+            return;
+        }
+
+        if(validation('custMobile', this.state.custMobile)!==""){
+            alert(validation('custMobile', this.state.custMobile));
+            this.phoneInput.current.focus();
+            return;
+        }
+
         if(data && data.length > 0){
             const emailObj = {
                 oNo: this.props.match.params.cid.trim(),
@@ -98,8 +114,8 @@ class CompanyContact extends React.Component {
 											<div className="row d-flex flex-wrap">
 												<div className="lqd-column col-md-6 mb-20">
 													<input className="lh-25 mb-30" type="text" name="name" aria-required="true" aria-invalid="false" placeholder="姓名" required onChange={this.handleChange('custName')} value={this.state.custName} />
-													<input className="lh-25 mb-30" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email" required onChange={this.handleChange('custMail')} value={this.state.custMail} />
-													<input className="lh-25 mb-30" type="tel" name="mobile" aria-required="true" aria-invalid="false" placeholder="手機" required onChange={this.handleChange('custMobile')} value={this.state.custMobile} />
+													<input className="lh-25 mb-30" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email" required onChange={this.handleChange('custMail')} value={this.state.custMail} ref={this.emailInput} />
+													<input className="lh-25 mb-30" type="tel" name="mobile" aria-required="true" aria-invalid="false" placeholder="手機" required onChange={this.handleChange('custMobile')} value={this.state.custMobile} ref={this.phoneInput}/>
 												</div>
 												<div className="lqd-column col-md-6 mb-20">
 													<textarea cols="10" rows="6" name="message" aria-required="true" aria-invalid="false" placeholder="訊息" required onChange={this.handleChange('custMsg')} value={this.state.custMsg} ></textarea>

@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import envConfig from '../../../config/env';
+import validation from '../../sharecomponents/validation';
 
 class CompanyContact extends React.Component {
 
@@ -12,6 +13,8 @@ class CompanyContact extends React.Component {
            custMsg: "",
            custMail: ""
         };
+        this.emailInput = React.createRef();
+        this.phoneInput = React.createRef();
     }
 
     componentDidMount(){
@@ -33,6 +36,19 @@ class CompanyContact extends React.Component {
         const { data } = this.props.datatableReducer;
         const { kind01_data } = this.props.kind01Reducer;
         
+
+        if(validation('custMail', this.state.custMail)!==""){
+            alert(validation('custMail', this.state.custMail));
+            this.emailInput.current.focus();
+            return;
+        }
+
+        if(validation('custMobile', this.state.custMobile)!==""){
+            alert(validation('custMobile', this.state.custMobile));
+            this.phoneInput.current.focus();
+            return;
+        }
+
         if(data && data.length > 0){
             const emailObj = {
                 oNo: this.props.match.params.cid.trim(),
@@ -106,10 +122,10 @@ class CompanyContact extends React.Component {
                                                     <input className="bg-white border-fade-black-03" type="text" name="name" aria-required="true" aria-invalid="false" placeholder="姓名" onChange={this.handleChange('custName')} value={this.state.custName} required />
                                                     </div>
                                                     <div className="col-md-6">
-                                                        <input className="bg-white border-fade-black-03" type="tel" name="mobile" aria-required="true" aria-invalid="false" placeholder="電話" onChange={this.handleChange('custMobile')} value={this.state.custMobile} required />
+                                                        <input className="bg-white border-fade-black-03" type="tel" name="mobile" aria-required="true" aria-invalid="false" placeholder="電話" onChange={this.handleChange('custMobile')} value={this.state.custMobile} required  ref={this.emailInput} />
                                                     </div>
                                                     <div className="col-md-12">
-                                                            <input className="bg-white border-fade-black-03" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email" onChange={this.handleChange('custMail')} value={this.state.custMail} required />
+                                                            <input className="bg-white border-fade-black-03" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email" onChange={this.handleChange('custMail')} value={this.state.custMail} required  ref={this.phoneInput} />
                                                     </div>
                                                         
                                                     <div className="col-md-12">

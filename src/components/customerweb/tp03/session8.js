@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import envConfig from '../../../config/env';
+import validation from '../../sharecomponents/validation';
 
 class CompanyContact extends React.Component {
 
@@ -12,6 +13,8 @@ class CompanyContact extends React.Component {
            custMsg: "",
            custMail: ""
         };
+        this.emailInput = React.createRef();
+        this.phoneInput = React.createRef();
     }
 
     componentDidMount(){
@@ -32,6 +35,19 @@ class CompanyContact extends React.Component {
         event.preventDefault();
         const { data } = this.props.datatableReducer;
         const { kind01_data } = this.props.kind01Reducer;
+
+
+        if(validation('custMail', this.state.custMail)!==""){
+            alert(validation('custMail', this.state.custMail));
+            this.emailInput.current.focus();
+            return;
+        }
+
+        if(validation('custMobile', this.state.custMobile)!==""){
+            alert(validation('custMobile', this.state.custMobile));
+            this.phoneInput.current.focus();
+            return;
+        }
         
         if(data && data.length > 0){
             const emailObj = {
@@ -100,12 +116,12 @@ class CompanyContact extends React.Component {
                                                     </div>                                                
                                                     <div className="col-md-6">
                                                         <div className="form-input-item light">
-                                                            <input type="text" name="con_phone" placeholder="連絡電話" onChange={this.handleChange('custMobile')} value={this.state.custMobile} />
+                                                            <input type="text" name="con_phone" placeholder="連絡電話" onChange={this.handleChange('custMobile')} value={this.state.custMobile} ref={this.phoneInput} />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12">
                                                         <div className="form-input-item light">
-                                                            <input type="email" name="con_email" placeholder="電子郵件" onChange={this.handleChange('custMail')} value={this.state.custMail} required />
+                                                            <input type="email" name="con_email" placeholder="電子郵件" onChange={this.handleChange('custMail')} value={this.state.custMail} ref={this.emailInput} required />
                                                         </div>
                                                     </div>
                                                 </div>
