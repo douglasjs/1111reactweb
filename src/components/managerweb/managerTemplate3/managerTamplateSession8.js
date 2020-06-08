@@ -90,28 +90,28 @@ class Session8 extends React.Component{
                                     <div><a type="button" data-toggle="modal" href="#tmp3_contact">觀看放大圖例</a></div>
                                     <hr />
                                     <div>
-                                        <table border='1'>
+                                        <table border='1' width="100%">
                                             <thead>
-                                            <tr>
-                                                <th width="20%">項目</th>
-                                                <th width="35%">內容</th>
-                                                <th width="15%">規格</th>
-                                                <th width="20%">備註</th>
-                                            </tr>
+                                                <tr>
+                                                    <th width="20%">項目</th>
+                                                    <th width="35%">內容</th>
+                                                    <th width="15%">規格</th>
+                                                    <th width="30%">備註</th>
+                                                </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td>連絡我們圖片</td>
-                                                <td>寬、高(px)</td>
-                                                <td>745*665</td>
-                                                <td align='left'>
-                                                    <ul>
-                                                        <li>接受格式為png、jpg</li>
-                                                        <li>不可空白</li>
-                                                        <li><a type="button" data-toggle="modal" href="#tmp3_contact_pic">觀看範例圖片</a></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
+                                                <tr>
+                                                    <td>連絡我們圖片</td>
+                                                    <td>寬、高(px)</td>
+                                                    <td>745*665</td>
+                                                    <td align='left'>
+                                                        <ul>
+                                                            <li>接受格式為png、jpg</li>
+                                                            <li>不可空白</li>
+                                                            <li><a type="button" data-toggle="modal" href="#tmp3_contact_pic">觀看範例圖片</a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>

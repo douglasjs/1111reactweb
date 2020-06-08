@@ -171,10 +171,6 @@ class Session2 extends React.Component{
                             <Msg type ='ERROR' value = {introductionErr} text= 'Opps! Error : ' />
                             <input type="hidden" id="themeNum2" value={themeNum} />
 
-                            <div><img src="/image/sample_01/02.png" alt="Temp1_Company" width="50%"/></div>
-                            <div><a type="button" data-toggle="modal" href="#tmp1_company">觀看放大圖例</a></div>
-                            <hr />
-
                             <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                             
                             <div className="form-row">
@@ -199,31 +195,63 @@ class Session2 extends React.Component{
                                 </div>
 
                                 <div className="col-md-6 mb-3">                                    
-                                    <div><img src="/image/sample_01/02-1.png" alt="Temp1_Company_title" width="100%"/></div>
+                                    <div><img src="/image/sample_06/02.png" alt="Temp6_Company_title" width="100%"/></div>
+                                    <div><a type="button" data-toggle="modal" href="#tmp6_company">觀看放大圖例</a></div>
                                     <hr />
                                     <div>
                                         <table border='1'>
                                             <thead>
-                                            <tr>
-                                                <th width="10%">項目</th>
-                                                <th width="35%">內容範例</th>
-                                                <th width="15%">規格</th>
-                                                <th width="40%">備註</th>
-                                            </tr>
+                                                <tr>
+                                                    <th width="10%">項目</th>
+                                                    <th width="45%">內容範例</th>
+                                                    <th width="15%">規格</th>
+                                                    <th width="30%">備註</th>
+                                                </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td>主標題</td>
-                                                <td align='left'>永豐餘品牌對人與環境的永續經營</td>
-                                                <td>15個字以內</td>
-                                                <td>不可空白</td>
-                                            </tr>
-                                            <tr>
-                                                <td>主內容</td>
-                                                <td align='left'>本公司擁有優秀的經營團隊，秉持著『◆安心宣言◆生態平衡◆達人堅持』的經營理念，追求企業永續經營及成長；除整體營運穩定外，獲利狀況也逐年提昇，是國內績優廠商之一。</td>
-                                                <td>80個字以內</td>
-                                                <td>不可空白</td>
-                                            </tr>
+                                                <tr>
+                                                    <td>主標題</td>
+                                                    <td align='left'>求職徵才的信賴品牌</td>
+                                                    <td>11個字以內</td>
+                                                    <td>
+                                                        不可空白<br />
+                                                        <a type="button" data-toggle="modal" href="#tmp6_company_title">觀看範例圖片</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>主內容</td>
+                                                    <td align='left'>
+                                                        1111人力銀行求職徵才的信賴品牌，榮獲2018年人力銀行服務業金牌大獎，提供最貼心的求才求職服務<br/>
+                                                        2019幸福企業擴大徵才活動，以推動企業多提供好的福利，吸引優秀的人才，創造更佳的績效！<br />
+                                                        以【熱誠】、【專業】為企業經營理念，堅持營造一個【人才、職缺、功能、媒合4個第1】求職求才媒合平台
+                                                    </td>
+                                                    <td>140個字以內</td>
+                                                    <td>
+                                                        不可空白<br />
+                                                        <a type="button" data-toggle="modal" href="#tmp6_company_content">觀看範例圖片</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>了解更多網址</td>
+                                                    <td align='left'>了解更多</td>
+                                                    <td>請輸入網址</td>
+                                                    <td>
+                                                        不可空白<br />
+                                                        <a type="button" data-toggle="modal" href="#tmp6_company_url">觀看範例圖片</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>圖片</td>
+                                                    <td>寬、高(px)</td>
+                                                    <td>1120*600</td>
+                                                    <td align='left'>
+                                                        <ul>
+                                                            <li>接受格式為png、jpg</li>
+                                                            <li>不可空白</li>
+                                                            <li><a type="button" data-toggle="modal" href="#tmp6_company_pic">觀看範例圖片</a></li>
+                                                        </ul>                                                
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -231,7 +259,7 @@ class Session2 extends React.Component{
                                 
                             </div>
 
-                            <div className="modal fade" id="tmp1_company">
+                            <div className="modal fade" id="tmp6_company">
                                 <div className="modal-dialog sample-img-width">
                                     <div className="modal-content">
                                         <div className="modal-header">
@@ -239,14 +267,78 @@ class Session2 extends React.Component{
                                             <button type="button" className="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <div className="modal-body text-center">
-                                            <img src="/image/sample_01/02.png" alt="tmp1_company" width="100%" />
+                                            <img src="/image/sample_06/02.png" alt="tmp6_company" width="100%" />
                                         </div>
                                         <div className="modal-footer">
                                             <p className="small">範例僅供參考</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>
+                            <div className="modal fade" id="tmp6_company_title">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">公司簡介 - 主標題 範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_06/02-1.png" alt="tmp6_company_title" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="modal fade" id="tmp6_company_content">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">公司簡介 - 主內容 範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_06/02-2.png" alt="tmp6_company_content" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="modal fade" id="tmp6_company_url">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">公司簡介 - 了解更多網址 範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_06/02-3.png" alt="tmp6_company_url" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="modal fade" id="tmp6_company_pic">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">公司簡介 - 圖片 範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_06/02-4.png" alt="tmp6_company_pic" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                             <hr />
                             <div align="center">
