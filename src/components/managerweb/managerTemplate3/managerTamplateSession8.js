@@ -86,28 +86,29 @@ class Session8 extends React.Component{
                                     <div  align="center"><button type='submit' id='action8' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
                                 </div>
                                 <div className="col-md-6 mb-3">
-                                    <div><img src="/image/sample_01/08.png" alt="Temp1_Contact" width="100%"/></div>
-                                    <div><a type="button" data-toggle="modal" href="#tmp1_contact">觀看放大圖例</a></div>
+                                    <div><img src="/image/sample_03/08.png" alt="Temp3_Contact" width="100%"/></div>
+                                    <div><a type="button" data-toggle="modal" href="#tmp3_contact">觀看放大圖例</a></div>
                                     <hr />
                                     <div>
                                         <table border='1'>
                                             <thead>
                                             <tr>
-                                                <th width="10%">項目</th>
+                                                <th width="20%">項目</th>
                                                 <th width="35%">內容</th>
                                                 <th width="15%">規格</th>
-                                                <th width="40%">備註</th>
+                                                <th width="20%">備註</th>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <td>連絡我們背景圖片</td>
+                                                <td>連絡我們圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>1920*1080</td>
-                                                <td>
+                                                <td>745*665</td>
+                                                <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
                                                         <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp3_contact_pic">觀看範例圖片</a></li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -117,7 +118,7 @@ class Session8 extends React.Component{
                                 </div>                                
                             </div>
                         </form>
-                        <div className="modal fade" id="tmp1_contact">
+                        <div className="modal fade" id="tmp3_contact">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -125,7 +126,23 @@ class Session8 extends React.Component{
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/08.png" alt="tmp1_contact" width="100%" />
+                                        <img src="/image/sample_03/08.png" alt="tmp3_contact" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp3_contact_pic">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">連絡我們範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_03/08-1.png" alt="tmp3_contact_pic" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>

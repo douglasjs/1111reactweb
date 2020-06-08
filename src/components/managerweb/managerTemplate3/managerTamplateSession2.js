@@ -41,47 +41,6 @@ class Session2 extends React.Component{
         }
     }
 
-    /*handleChange = name => event => {
-        let newValue = event.target.value;
-        this.setState({ ...this.state, [name]: newValue});
-
-    };
-
-    handleFileUpload = (name, stateName, uploadName) => event =>{
-        const infoArea = document.getElementById(name);
-        const input = event.target;
-   
-
-        if (input.files && input.files[0]) {
-            const file = event.target.files[0];
-            const reader = new FileReader();
-            reader.readAsDataURL(file);
-            reader.onloadend = () => {
-                
-                const img = new Image();
-                const that = this;
-                img.src=reader.result;
-
-                img.onload = function() {
-                   if(img.width > 724 || img.height > 500){
-                       alert('上傳圖片尺寸不合');
-                       return false;
-                   }else{
-                        that.setState( {...this.state,
-                            [uploadName]: {
-                                file: URL.createObjectURL(file),
-                                value : reader.result
-                            }
-                        });
-                        infoArea.textContent = '上傳檔案名稱: ' + file.name;
-                        const fileFullName = stateName + "_"+ file.name;
-                        that.setState({ ...this.state, [stateName]: fileFullName });
-                   }
-                };
-            };
-        }
-    }*/
-
     handleSubmit = (event) =>{
         event.preventDefault();
         const cid = this.props.match.params.cid.trim();
@@ -282,10 +241,6 @@ class Session2 extends React.Component{
                             <Msg type ='ERROR' value = {introductionErr} text= 'Opps! Error : ' />
                             <input type="hidden" id="themeNum2" value={themeNum} />
 
-                            <div><img src="/image/sample_01/02.png" alt="Temp1_Company" width="50%"/></div>
-                            <div><a type="button" data-toggle="modal" href="#tmp1_company">觀看放大圖例</a></div>
-                            <hr />
-
                             <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                             
                             <div className="form-row">
@@ -310,31 +265,44 @@ class Session2 extends React.Component{
                                 </div>
 
                                 <div className="col-md-6 mb-3">                                    
-                                    <div><img src="/image/sample_01/02-1.png" alt="Temp1_Company_title" width="100%"/></div>
+                                    <div><img src="/image/sample_03/02.png" alt="Temp3_Company" width="100%"/></div>
+                                    <div><a type="button" data-toggle="modal" href="#tmp3_company">觀看放大圖例</a></div>
                                     <hr />
                                     <div>
                                         <table border='1'>
                                             <thead>
-                                            <tr>
-                                                <th width="10%">項目</th>
-                                                <th width="35%">內容範例</th>
-                                                <th width="15%">規格</th>
-                                                <th width="40%">備註</th>
-                                            </tr>
+                                                <tr>
+                                                    <th width="20%">項目</th>
+                                                    <th width="35%">內容範例</th>
+                                                    <th width="15%">規格</th>
+                                                    <th width="20%">備註</th>
+                                                </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td>主標題</td>
-                                                <td align='left'>永豐餘品牌對人與環境的永續經營</td>
-                                                <td>15個字以內</td>
-                                                <td>不可空白</td>
-                                            </tr>
-                                            <tr>
-                                                <td>主內容</td>
-                                                <td align='left'>本公司擁有優秀的經營團隊，秉持著『◆安心宣言◆生態平衡◆達人堅持』的經營理念，追求企業永續經營及成長；除整體營運穩定外，獲利狀況也逐年提昇，是國內績優廠商之一。</td>
-                                                <td>80個字以內</td>
-                                                <td>不可空白</td>
-                                            </tr>
+                                                <tr>
+                                                    <td>公司介紹主標題</td>
+                                                    <td align='left'>服務至上的經營理念看不見的非凡用心</td>
+                                                    <td>16個字以內</td>
+                                                    <td>不可空白</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>公司介紹小標題</td>
+                                                    <td align='left'>京典臻品 JD Classic股份有限公司</td>
+                                                    <td>12個字以內</td>
+                                                    <td>不可空白</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>公司介紹主內容</td>
+                                                    <td align='left'>天天禧有限公司(京典臻品／時易藝品／京采水晶／京璽晶品)營業項目包括水晶礦石、烏拉圭紫水晶洞、巴西紫晶洞、黃水晶洞、鈦晶洞、意象晶洞、瑪瑙晶洞、紫晶鎮、愛心晶片、水晶聚寶盆批發零售買賣, 以技術為本服務至上的經營理念, 給予客戶最專業的服務與產品質量,。 我們重視每一位員工，除了有良好工作環境、也提供學習及成長的空間，歡迎有責任感，有熱誠的朋友一起加入我們的工作行列。</td>
+                                                    <td>100個字以內</td>
+                                                    <td>不可空白</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>公司介紹圖片</td>
+                                                    <td align='left'>寬、高(px)</td>
+                                                    <td>480*370</td>
+                                                    <td>不可空白</td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -342,7 +310,7 @@ class Session2 extends React.Component{
                                 
                             </div>
 
-                            <div className="modal fade" id="tmp1_company">
+                            <div className="modal fade" id="tmp3_company">
                                 <div className="modal-dialog sample-img-width">
                                     <div className="modal-content">
                                         <div className="modal-header">
@@ -350,7 +318,7 @@ class Session2 extends React.Component{
                                             <button type="button" className="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <div className="modal-body text-center">
-                                            <img src="/image/sample_01/02.png" alt="tmp1_company" width="100%" />
+                                            <img src="/image/sample_03/02.png" alt="tmp3_company" width="100%" />
                                         </div>
                                         <div className="modal-footer">
                                             <p className="small">範例僅供參考</p>
@@ -364,16 +332,14 @@ class Session2 extends React.Component{
                                 <div className="card">
                                     <a href="#collapseCard2-1" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard2-1">
                                         <div className="card-header text-white bg-primary">圖片輪播區</div>
-                                    </a>                                    
+                                    </a>
+                                    
                                     <div className="card-body collapse show" id="collapseCard2-1">
+                                        <div><img src="/image/sample_03/02-1.png" alt="Temp3_Company" width="100%"/></div>
+                                        <div><a type="button" data-toggle="modal" href="#tmp3_company2-1">觀看放大圖例</a></div>
+                                        <hr />
+                                        <div><InputSwitch sessionName="圖片輪播" inputName='introImgEnable' inputState={introImgEnable} stateObj={this} /></div>
                                         <div className="form-row">
-                                            
-                                            <div className="col-md-12 mb-6">                                                
-                                                <div className="form-row row-style-w95-pt1">
-                                                    <InputSwitch sessionName="圖片輪播" inputName='introImgEnable' inputState={introImgEnable} stateObj={this} />
-                                                </div>
-                                            </div>
-
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row row-style-w95-pt1">
                                                     <ImgUpload title='圖片1 上傳' notice='(圖檔尺寸大小為 300*200，接受格式為png、jpg)' objName='intro1Img' imgUpload={intro1ImgUpload} 
@@ -444,6 +410,22 @@ class Session2 extends React.Component{
                                                 </div>
                                             </div>
 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="modal fade" id="tmp3_company2-1">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">圖片輪播區範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_03/02-1.png" alt="tmp3_company2-1" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
                                         </div>
                                     </div>
                                 </div>

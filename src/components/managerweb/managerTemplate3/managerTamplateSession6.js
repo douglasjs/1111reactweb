@@ -256,9 +256,9 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                             <div className="col-md-6 mb-3">                                    
-                                <div><img src="/image/sample_01/06.png" alt="Temp1_Customize" width="100%"/></div>
+                                <div><img src="/image/sample_03/06.png" alt="Temp3_Customize" width="100%"/></div>
                                 <div>
-                                    <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                    <a type="button" data-toggle="modal" href="#tmp3_customize">
                                         觀看放大圖例
                                     </a>
                                 </div>
@@ -267,38 +267,38 @@ class Session6 extends React.Component{
                                     <table border='1'>
                                         <thead>
                                         <tr>
-                                            <th width="10%">項目</th>
+                                            <th width="20%">項目</th>
                                             <th width="35%">內容範例</th>
                                             <th width="15%">規格</th>
-                                            <th width="40%">備註</th>
+                                            <th width="20%">備註</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
                                             <td>自訂選單名稱</td>
-                                            <td align='left'>有機食材</td>
+                                            <td align='left'>媒體報導</td>
                                             <td>4個字以內</td>
                                             <td>
                                                 不可空白<br />
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize_menu">觀看範例圖片</a>
+                                                <a type="button" data-toggle="modal" href="#tmp3_customize_menu">觀看範例圖片</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>自訂區域主標題</td>
-                                            <td align='left'>有機食材宅配服務</td>
-                                            <td>10個字以內</td>
+                                            <td align='left'>媒體報導</td>
+                                            <td>6個字以內</td>
                                             <td>
                                                 不可空白<br />
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize_title">觀看範例圖片</a>
+                                                <a type="button" data-toggle="modal" href="#tmp3_customize_title">觀看範例圖片</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>自訂區域副標題</td>
-                                            <td align='left'>GREEN 及 SAFE百寶箱組合週週送，各式生鮮、冷藏、冷凍有機食材宅配服務</td>
-                                            <td>40個字以內</td>
+                                            <td align='left'>NEWS</td>
+                                            <td>10個字以內</td>
                                             <td>
                                                 不可空白<br />
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize_title">觀看範例圖片</a>
+                                                <a type="button" data-toggle="modal" href="#tmp3_customize_title">觀看範例圖片</a>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -306,7 +306,7 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_customize">
+                        <div className="modal fade" id="tmp3_customize">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -314,7 +314,7 @@ class Session6 extends React.Component{
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/06.png" alt="tmp1_customize" width="100%" />
+                                        <img src="/image/sample_03/06.png" alt="tmp3_customize" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>
@@ -322,7 +322,7 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_customize_menu">
+                        <div className="modal fade" id="tmp3_customize_menu">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -330,7 +330,7 @@ class Session6 extends React.Component{
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/06-0.png" alt="tmp1_customize_menu" width="100%" />
+                                        <img src="/image/sample_03/06-0.png" alt="tmp3_customize_menu" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>
@@ -338,7 +338,7 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_customize_title">
+                        <div className="modal fade" id="tmp3_customize_title">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -346,7 +346,7 @@ class Session6 extends React.Component{
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/06-1.png" alt="tmp1_customize_title" width="100%" />
+                                        <img src="/image/sample_03/06-1.png" alt="tmp3_customize_title" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>
@@ -377,9 +377,9 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-2.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_03/06-2-1.png" alt="Temp3_Customize_pic01" width="100%" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp3_customize_pic01">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -387,42 +387,37 @@ class Session6 extends React.Component{
                                             <div>
                                                 <table border='1'>
                                                     <thead>
-                                                    <tr>
-                                                        <th width="10%">項目</th>
-                                                        <th width="35%">內容範例</th>
-                                                        <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
-                                                    </tr>
+                                                        <tr>
+                                                            <th width="20%">項目</th>
+                                                            <th width="35%">內容範例</th>
+                                                            <th width="15%">規格</th>
+                                                            <th width="20%">備註</th>
+                                                        </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr>
-                                                        <td>卡片1標題</td>
-                                                        <td align='left'>海水生態蝦仁</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片1內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>定期檢驗重金屬合格。</li>
-                                                                <li>定期檢驗無動物用藥殘留。</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片1圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>接受格式為png、jpg</li>
-                                                                <li>不可空白</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
+                                                        <tr>
+                                                            <td>卡片1標題</td>
+                                                            <td align='left'>京典臻品JD Classic｜多樣化的紫晶洞、黃水晶</td>
+                                                            <td>36個字以內</td>
+                                                            <td>不可空白</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>卡片1內文</td>
+                                                            <td align='left'>快過年了，想要為家中增添新擺飾? 或是剛開幕想要買個聚寶盆擺起來招財又體面大方卻又怕網路上買得跟到時候收到的不一樣? 今天要推薦一間有</td>
+                                                            <td>100個字以內</td>
+                                                            <td>不可空白</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>卡片1圖片</td>
+                                                            <td align='left'>寬、高(px)</td>
+                                                            <td>500*315</td>
+                                                            <td align='left'>
+                                                                <ul>
+                                                                    <li>接受格式為png、jpg</li>
+                                                                    <li>不可空白</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -454,11 +449,11 @@ class Session6 extends React.Component{
                                                 <ImgUpload title='卡片2圖片' notice='(圖檔尺寸大小為 500*315，接受格式為png、jpg)' objName='card2Img' imgUpload={card2ImgUpload} 
                                                     imgFileName={card2Img} parentObj={this} imgW={500} imgH={315} required={false} />
                                             </div>
-                                       </div>
-                                       <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-3.png" alt="Temp1_Customize" /></div>
+                                        </div>
+                                        <div className="col-md-6 mb-3">                                    
+                                            <div><img src="/image/sample_03/06-2-2.png" alt="Temp3_Customize_pic02" width="100%" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp3_customize_pic02">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -466,42 +461,37 @@ class Session6 extends React.Component{
                                             <div>
                                                 <table border='1'>
                                                     <thead>
-                                                    <tr>
-                                                        <th width="10%">項目</th>
-                                                        <th width="35%">內容範例</th>
-                                                        <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
-                                                    </tr>
+                                                        <tr>
+                                                            <th width="20%">項目</th>
+                                                            <th width="35%">內容範例</th>
+                                                            <th width="15%">規格</th>
+                                                            <th width="20%">備註</th>
+                                                        </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr>
-                                                        <td>卡片2標題</td>
-                                                        <td align='left'>安心鱸魚排</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片2內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>定期檢驗無動物用藥殘留</li>
-                                                                <li>定期檢驗鮮度(VBN)合格</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片2圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>接受格式為png、jpg</li>
-                                                                <li>不可空白</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
+                                                        <tr>
+                                                            <td>卡片2標題</td>
+                                                            <td align='left'>京典臻品JD Classic｜台北、台中粉絲頁即將合體</td>
+                                                            <td>36個字以內</td>
+                                                            <td>不可空白</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>卡片2內文</td>
+                                                            <td align='left'>晶典臻品. 致晶典臻品水晶精靈村台中的小精靈～ 從今天這一刻開始晶典臻品自行宣布兩岸統一了！ 我們的粉絲頁將全省合併也就是說台北台中的粉絲頁即將合體不</td>
+                                                            <td>100個字以內</td>
+                                                            <td>不可空白</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>卡片2圖片</td>
+                                                            <td align='left'>寬、高(px)</td>
+                                                            <td>500*315</td>
+                                                            <td align='left'>
+                                                                <ul>
+                                                                    <li>接受格式為png、jpg</li>
+                                                                    <li>不可空白</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -535,9 +525,9 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_03/06-2-3.png" alt="Temp3_Customize_pic03" width="100%" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp3_customize_pic03">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -545,42 +535,37 @@ class Session6 extends React.Component{
                                             <div>
                                                 <table border='1'>
                                                     <thead>
-                                                    <tr>
-                                                        <th width="10%">項目</th>
-                                                        <th width="35%">內容範例</th>
-                                                        <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
-                                                    </tr>
+                                                        <tr>
+                                                            <th width="20%">項目</th>
+                                                            <th width="35%">內容範例</th>
+                                                            <th width="15%">規格</th>
+                                                            <th width="20%">備註</th>
+                                                        </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr>
-                                                        <td>卡片3標題</td>
-                                                        <td align='left'>蒲燒鯛魚腹排</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片3內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>無添加防腐劑</li>
-                                                                <li>無添加任何人工甘味劑</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片3圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>接受格式為png、jpg</li>
-                                                                <li>不可空白</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
+                                                        <tr>
+                                                            <td>卡片3標題</td>
+                                                            <td align='left'>京典臻品JD Classic｜[台中水晶店]大型水晶洞/聚寶盆哪買最便宜? 快來京典臻品JD Classic</td>
+                                                            <td>36個字以內</td>
+                                                            <td>不可空白</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>卡片3內文</td>
+                                                            <td align='left'>就是這家位於台中西屯區的「 京典臻品JD Classic 」天然水晶礦石專賣店！ 京典臻品JD Classic 可是烏拉圭&巴西水晶礦石的大盤商～. 想要什麼</td>
+                                                            <td>100個字以內</td>
+                                                            <td>不可空白</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>卡片3圖片</td>
+                                                            <td align='left'>寬、高(px)</td>
+                                                            <td>500*315</td>
+                                                            <td align='left'>
+                                                                <ul>
+                                                                    <li>接受格式為png、jpg</li>
+                                                                    <li>不可空白</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -614,9 +599,9 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-5.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_03/06-2-1.png" alt="Temp3_Customize_pic01" width="100%" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp3_customize_pic01">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -624,42 +609,37 @@ class Session6 extends React.Component{
                                             <div>
                                                 <table border='1'>
                                                     <thead>
-                                                    <tr>
-                                                        <th width="10%">項目</th>
-                                                        <th width="35%">內容範例</th>
-                                                        <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
-                                                    </tr>
+                                                        <tr>
+                                                            <th width="20%">項目</th>
+                                                            <th width="35%">內容範例</th>
+                                                            <th width="15%">規格</th>
+                                                            <th width="20%">備註</th>
+                                                        </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr>
-                                                        <td>卡片4標題</td>
-                                                        <td align='left'>一品鮑魚糙米粥</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片4內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>無添加防腐劑</li>
-                                                                <li>正黑豬及放山雞作為基底</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片4圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>接受格式為png、jpg</li>
-                                                                <li>不可空白</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
+                                                        <tr>
+                                                            <td>卡片4標題</td>
+                                                            <td align='left'>京典臻品JD Classic｜多樣化的紫晶洞、黃水晶</td>
+                                                            <td>36個字以內</td>
+                                                            <td>不可空白</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>卡片4內文</td>
+                                                            <td align='left'>快過年了，想要為家中增添新擺飾? 或是剛開幕想要買個聚寶盆擺起來招財又體面大方卻又怕網路上買得跟到時候收到的不一樣? 今天要推薦一間有</td>
+                                                            <td>100個字以內</td>
+                                                            <td>不可空白</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>卡片4圖片</td>
+                                                            <td align='left'>寬、高(px)</td>
+                                                            <td>500*315</td>
+                                                            <td align='left'>
+                                                                <ul>
+                                                                    <li>接受格式為png、jpg</li>
+                                                                    <li>不可空白</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -693,9 +673,9 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_03/06-2-2.png" alt="Temp3_Customize_pic02" width="100%" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp3_customize_pic02">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -703,42 +683,37 @@ class Session6 extends React.Component{
                                             <div>
                                                 <table border='1'>
                                                     <thead>
-                                                    <tr>
-                                                        <th width="10%">項目</th>
-                                                        <th width="35%">內容範例</th>
-                                                        <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
-                                                    </tr>
+                                                        <tr>
+                                                            <th width="20%">項目</th>
+                                                            <th width="35%">內容範例</th>
+                                                            <th width="15%">規格</th>
+                                                            <th width="20%">備註</th>
+                                                        </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr>
-                                                        <td>卡片5標題</td>
-                                                        <td align='left'>一品鮑魚糙米粥</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片5內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>無添加防腐劑</li>
-                                                                <li>正黑豬及放山雞作為基底</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片5圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>接受格式為png、jpg</li>
-                                                                <li>不可空白</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
+                                                        <tr>
+                                                            <td>卡片5標題</td>
+                                                            <td align='left'>京典臻品JD Classic｜台北、台中粉絲頁即將合體</td>
+                                                            <td>36個字以內</td>
+                                                            <td>不可空白</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>卡片5內文</td>
+                                                            <td align='left'>晶典臻品. 致晶典臻品水晶精靈村台中的小精靈～ 從今天這一刻開始晶典臻品自行宣布兩岸統一了！ 我們的粉絲頁將全省合併也就是說台北台中的粉絲頁即將合體不</td>
+                                                            <td>100個字以內</td>
+                                                            <td>不可空白</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>卡片5圖片</td>
+                                                            <td align='left'>寬、高(px)</td>
+                                                            <td>500*315</td>
+                                                            <td align='left'>
+                                                                <ul>
+                                                                    <li>接受格式為png、jpg</li>
+                                                                    <li>不可空白</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -772,9 +747,9 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_03/06-2-3.png" alt="Temp3_Customize_pic03" width="100%" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp3_customize_pic03">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -782,42 +757,37 @@ class Session6 extends React.Component{
                                             <div>
                                                 <table border='1'>
                                                     <thead>
-                                                    <tr>
-                                                        <th width="10%">項目</th>
-                                                        <th width="35%">內容範例</th>
-                                                        <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
-                                                    </tr>
+                                                        <tr>
+                                                            <th width="20%">項目</th>
+                                                            <th width="35%">內容範例</th>
+                                                            <th width="15%">規格</th>
+                                                            <th width="20%">備註</th>
+                                                        </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr>
-                                                        <td>卡片6標題</td>
-                                                        <td align='left'>一品鮑魚糙米粥</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片6內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>無添加防腐劑</li>
-                                                                <li>正黑豬及放山雞作為基底</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片6圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>接受格式為png、jpg</li>
-                                                                <li>不可空白</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
+                                                        <tr>
+                                                            <td>卡片6標題</td>
+                                                            <td align='left'>京典臻品JD Classic｜[台中水晶店]大型水晶洞/聚寶盆哪買最便宜? 快來京典臻品JD Classic</td>
+                                                            <td>36個字以內</td>
+                                                            <td>不可空白</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>卡片6內文</td>
+                                                            <td align='left'>就是這家位於台中西屯區的「 京典臻品JD Classic 」天然水晶礦石專賣店！ 京典臻品JD Classic 可是烏拉圭&巴西水晶礦石的大盤商～. 想要什麼</td>
+                                                            <td>100個字以內</td>
+                                                            <td>不可空白</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>卡片6圖片</td>
+                                                            <td align='left'>寬、高(px)</td>
+                                                            <td>500*315</td>
+                                                            <td align='left'>
+                                                                <ul>
+                                                                    <li>接受格式為png、jpg</li>
+                                                                    <li>不可空白</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -826,6 +796,61 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                         </div>
+
+
+
+                        <div className="modal fade" id="tmp3_customize_pic01">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片1/4 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_03/06-2-1.png" alt="tmp3_customize_pic01" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="modal fade" id="tmp3_customize_pic02">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片2/5 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_03/06-2-2.png" alt="tmp3_customize_pic02" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="modal fade" id="tmp3_customize_pic03">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片3/6 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_03/06-2-3.png" alt="tmp3_customize_pic03" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                         <hr />
                         <div  align="center">

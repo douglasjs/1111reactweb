@@ -153,40 +153,41 @@ class Session7 extends React.Component{
                                         <div  align="center"><button type='submit' id='action7' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
                                     </div>
                                     <div className="col-md-6 mb-3">
-                                        <div className="pic-bigger"><img src="/image/sample_01/07.png" alt="Temp1_FAQ" width="100%"/></div>
-                                        <div><a type="button" data-toggle="modal" href="#tmp1_faq">觀看放大圖例</a></div>
+                                        <div className="pic-bigger"><img src="/image/sample_03/07.png" alt="Temp3_FAQ" width="100%"/></div>
+                                        <div><a type="button" data-toggle="modal" href="#tmp3_faq">觀看放大圖例</a></div>
                                         <hr />
                                         <div>
                                         <table border='1'>
                                             <thead>
                                             <tr>
-                                                <th width="10%">項目</th>
+                                                <th width="20%">項目</th>
                                                 <th width="35%">內容</th>
                                                 <th width="15%">規格</th>
-                                                <th width="40%">備註</th>
+                                                <th width="20%">備註</th>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr>
                                                 <td>常見問題標題</td>
-                                                <td align='left'>公司經營理念?</td>
-                                                <td>30個字以內</td>
-                                                <td>至少2則以上內容，才能輪播；<br />最多能輸入5則。</td>
+                                                <td align='left'>京典臻品 JD Classic</td>
+                                                <td>15個字以內</td>
+                                                <td align='left'>3則常見問題</td>
                                             </tr>
                                             <tr>
                                                 <td>常見問題內容</td>
-                                                <td align='left'>本公司擁有優秀的經營團隊，秉持著『◆安心宣言◆生態平衡◆達人堅持』的經營理念，追求企業永續經營及成長；除整體營運穩定外，獲利狀況也逐年提昇，是國內績優廠商之一。 我們更希望能屏除一般人對於天然食物口味上的既定印象，帶給消費者既健康又安全、可口的好味道。</td>
-                                                <td>135個字以內</td>
-                                                <td>至少2則以上內容，才能輪播；<br />最多能輸入5則。</td>
+                                                <td align='left'>京典臻品JD Classic｜天然水晶礦石提供多元招財水晶開運方法最佳選擇，風水師推薦招財進寶盆、咬錢貔貅水晶、淨化磁場能量鎮宅之寶，水晶之王燕尾鈦晶手排提升 .</td>
+                                                <td>100個字以內</td>
+                                                <td align='left'>3則常見問題內容</td>
                                             </tr>
                                             <tr>
-                                                <td>常見問題背景圖片</td>
+                                                <td>常見問題圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>1920*1080</td>
-                                                <td>
+                                                <td>570*480</td>
+                                                <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
                                                         <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp3_faq_pic">觀看範例圖片</a></li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -197,7 +198,7 @@ class Session7 extends React.Component{
                             </div>
                         </form>
                     
-                        <div className="modal fade" id="tmp1_faq">
+                        <div className="modal fade" id="tmp3_faq">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -205,7 +206,24 @@ class Session7 extends React.Component{
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/07.png" alt="tmp1_faq" width="100%" />
+                                        <img src="/image/sample_03/07.png" alt="tmp3_faq" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="modal fade" id="tmp3_faq_pic">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">常見問題範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_03/07-1.png" alt="tmp3_faq_pic" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>

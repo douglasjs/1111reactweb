@@ -185,9 +185,9 @@ class Session1 extends React.Component{
                                 </form>
                             </div>
                             <div className="col-md-6 mb-3">
-                                <div className="pic-bigger"><img src="/image/sample_01/01.png" alt="Temp1_Banner" width="100%"/></div>
+                                <div className="pic-bigger"><img src="/image/sample_03/01.png" alt="Temp3_Banner" width="100%"/></div>
                                 <div>
-                                    <a type="button" data-toggle="modal" href="#tmp1_banner">
+                                    <a type="button" data-toggle="modal" href="#tmp3_banner">
                                         觀看放大圖例
                                     </a>
                                 </div>
@@ -206,31 +206,49 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>背景圖</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>1920*1080</td>
-                                                <td>
+                                                <td>1920*1000</td>
+                                                <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
-                                                        <li>最多可上傳兩張底圖來輪播</li>
+                                                        <li>可上傳三張底圖來輪播</li>
                                                     </ul>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>大標題</td>
-                                                <td align='left'>永豐餘生技</td>
-                                                <td>5個字以內</td>
+                                                <td>大標題1</td>
+                                                <td align='left'>全面徵才</td>
+                                                <td>4個字以內</td>
+                                                <td>不可空白</td>
+                                            </tr>
+                                            <tr>
+                                                <td>大標題2</td>
+                                                <td align='left'>有情</td>
+                                                <td>4個字以內</td>
+                                                <td>不可空白</td>
+                                            </tr>
+                                            <tr>
+                                                <td>大標題3</td>
+                                                <td align='left'>新的開始</td>
+                                                <td>4個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>副標題1</td>
-                                                <td align='left'>期許作為一個專業及熱情的有機生活管家，貼心的讓客人輕鬆的享受有機生活。</td>
-                                                <td>40個字以內</td>
+                                                <td align='left'>全職、兼職、打工、實習等多元工作機會</td>
+                                                <td>18個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>副標題2</td>
-                                                <td align='left'>歡迎優秀的朋友一起加入</td>
-                                                <td>15個字以內</td>
-                                                <td>可自行輸入</td>
+                                                <td align='left'>支持陪伴 珍惜每位夥伴的聲音</td>
+                                                <td>18個字以內</td>
+                                                <td>不可空白</td>
+                                            </tr>
+                                            <tr>
+                                                <td>副標題3</td>
+                                                <td align='left'>京典臻品 JD Classic集團歡迎您的加入</td>
+                                                <td>18個字以內</td>
+                                                <td>不可空白</td>
                                             </tr>
                                         </tbody>                                        
                                     </table>
@@ -239,7 +257,7 @@ class Session1 extends React.Component{
                         </div>
                     </div>
                 </div>
-                <div className="modal fade" id="tmp1_banner">
+                <div className="modal fade" id="tmp3_banner">
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -247,7 +265,7 @@ class Session1 extends React.Component{
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div className="modal-body text-center">
-                                <img src="/image/sample_01/01.png" alt="tmp1_banner" width="100%" />
+                                <img src="/image/sample_03/01.png" alt="tmp3_banner" width="100%" />
                             </div>
                             <div className="modal-footer">
                                 <p className="small">範例僅供參考</p>
