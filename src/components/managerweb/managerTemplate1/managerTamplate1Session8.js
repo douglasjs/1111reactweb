@@ -90,7 +90,7 @@ class Session8 extends React.Component{
                                     <div><a type="button" data-toggle="modal" href="#tmp1_contact">觀看放大圖例</a></div>
                                     <hr />
                                     <div>
-                                        <table border='1'>
+                                        <table border='1' width="100%">
                                             <thead>
                                             <tr>
                                                 <th width="10%">項目</th>

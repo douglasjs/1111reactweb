@@ -135,61 +135,61 @@ class Session5 extends React.Component{
                                 <div>
                                     <table border='1'>
                                         <thead>
-                                        <tr>
-                                            <th width="20%">項目</th>
-                                            <th width="35%">內容</th>
-                                            <th width="15%">規格</th>
-                                            <th width="30%">備註</th>
-                                        </tr>
+                                            <tr>
+                                                <th width="20%">項目</th>
+                                                <th width="35%">內容</th>
+                                                <th width="15%">規格</th>
+                                                <th width="30%">備註</th>
+                                            </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>品牌介紹主標題</td>
-                                            <td align='left'>持續為地球綠色能源貢獻一份心力</td>
-                                            <td>25個字以內</td>
-                                            <td>
-                                                不可空白<br />
-                                                <a type="button" data-toggle="modal" href="#tmp5_brand_title">觀看範例圖片</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>品牌介紹內文</td>
-                                            <td align='left'>
-                                                集陽綠能的團隊成員（在職成員）來自於不同產業（建設業、營造業、機械業、鋁業），
-                                                我們擁有來自不同產業的知識與專業。
-                                                集陽綠能擁有甲級電器承裝業＆５個成員擁有太陽能光電設置乙級技術士國家級證照。<br />
-                                                團隊的宣誓<br />
-                                                我們堅持使用高品質的物料與施工方式，不斷精進技術與優化成本<br />
-                                                團隊的願景<br />
-                                                深耕台灣太陽能產業的發展，將持續為地球綠色能源貢獻一份心力
-                                            </td>
-                                            <td>240個字以內</td>
-                                            <td>
-                                                不可空白<br />
-                                                <a type="button" data-toggle="modal" href="#tmp5_brand_content">觀看範例圖片</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>了解更多網址</td>
-                                            <td align='left'>了解更多</td>
-                                            <td>請輸入網址</td>
-                                            <td>
-                                                不可空白<br />
-                                                <a type="button" data-toggle="modal" href="#tmp5_brand_url">觀看範例圖片</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>品牌介紹圖片</td>
-                                            <td align='left'>寬、高(px)</td>
-                                            <td>560*480</td>
-                                            <td align='left'>
-                                                <ul>
-                                                    <li>接受格式為png、jpg</li>
-                                                    <li>不可空白</li>
-                                                    <li><a type="button" data-toggle="modal" href="#tmp5_brand_pic">觀看範例圖片</a></li>
-                                                </ul>                                                
-                                            </td>
-                                        </tr>
+                                            <tr>
+                                                <td>品牌介紹主標題</td>
+                                                <td align='left'>持續為地球綠色能源貢獻一份心力</td>
+                                                <td>25個字以內</td>
+                                                <td>
+                                                    不可空白<br />
+                                                    <a type="button" data-toggle="modal" href="#tmp5_brand_title">觀看範例圖片</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>品牌介紹內文</td>
+                                                <td align='left'>
+                                                    集陽綠能的團隊成員（在職成員）來自於不同產業（建設業、營造業、機械業、鋁業），
+                                                    我們擁有來自不同產業的知識與專業。
+                                                    集陽綠能擁有甲級電器承裝業＆５個成員擁有太陽能光電設置乙級技術士國家級證照。<br />
+                                                    團隊的宣誓<br />
+                                                    我們堅持使用高品質的物料與施工方式，不斷精進技術與優化成本<br />
+                                                    團隊的願景<br />
+                                                    深耕台灣太陽能產業的發展，將持續為地球綠色能源貢獻一份心力
+                                                </td>
+                                                <td>240個字以內</td>
+                                                <td>
+                                                    不可空白<br />
+                                                    <a type="button" data-toggle="modal" href="#tmp5_brand_content">觀看範例圖片</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>了解更多網址</td>
+                                                <td align='left'>了解更多</td>
+                                                <td>請輸入網址</td>
+                                                <td>
+                                                    不可空白<br />
+                                                    <a type="button" data-toggle="modal" href="#tmp5_brand_url">觀看範例圖片</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>品牌介紹圖片</td>
+                                                <td align='left'>寬、高(px)</td>
+                                                <td>560*480</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>接受格式為png、jpg</li>
+                                                        <li>不可空白</li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp5_brand_pic">觀看範例圖片</a></li>
+                                                    </ul>                                                
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
