@@ -21,7 +21,7 @@ class CompanyJobs extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-9 m-auto">
-                            <div className="testimonial-content-landing">
+                            <div className="testimonial-content-landing job-min-height">
                                 
                                 {Array.isArray(positionData) && positionData.filter( data => data.position_group === "1").map((element, index) => {
                                     let positionURL = "https://www.1111.com.tw/job/"+ element.eNo + "/";
