@@ -102,7 +102,7 @@ class Session8 extends React.Component{
                                             <tbody>
                                             <tr>
                                                 <td>連絡我們圖片</td>
-                                                <td align='left'>寬、高(px)</td>
+                                                <td>寬、高(px)</td>
                                                 <td>745*665</td>
                                                 <td align='left'>
                                                     <ul>

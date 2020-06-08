@@ -263,9 +263,9 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                             <div className="col-md-6 mb-3">                                    
-                                <div><img src="/image/sample_01/06.png" alt="Temp1_Customize" width="100%"/></div>
+                                <div><img src="/image/sample_05/06.png" alt="Temp5_Customize" width="100%"/></div>
                                 <div>
-                                    <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                    <a type="button" data-toggle="modal" href="#tmp5_customize">
                                         觀看放大圖例
                                     </a>
                                 </div>
@@ -283,29 +283,29 @@ class Session6 extends React.Component{
                                         <tbody>
                                         <tr>
                                             <td>自訂選單名稱</td>
-                                            <td align='left'>有機食材</td>
+                                            <td align='left'>綠能新訊</td>
                                             <td>4個字以內</td>
                                             <td>
                                                 不可空白<br />
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize_menu">觀看範例圖片</a>
+                                                <a type="button" data-toggle="modal" href="#tmp5_customize_menu">觀看範例圖片</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>自訂區域主標題</td>
-                                            <td align='left'>有機食材宅配服務</td>
+                                            <td align='left'>綠能新訊</td>
                                             <td>10個字以內</td>
                                             <td>
                                                 不可空白<br />
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize_title">觀看範例圖片</a>
+                                                <a type="button" data-toggle="modal" href="#tmp5_customize_title">觀看範例圖片</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>自訂區域副標題</td>
-                                            <td align='left'>GREEN 及 SAFE百寶箱組合週週送，各式生鮮、冷藏、冷凍有機食材宅配服務</td>
-                                            <td>40個字以內</td>
+                                            <td align='left'>能看出以後的趨勢，您們還在等甚麼呢?</td>
+                                            <td>50個字以內</td>
                                             <td>
                                                 不可空白<br />
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize_title">觀看範例圖片</a>
+                                                <a type="button" data-toggle="modal" href="#tmp5_customize_subtitle">觀看範例圖片</a>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -313,7 +313,7 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_customize">
+                        <div className="modal fade" id="tmp5_customize">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -321,7 +321,7 @@ class Session6 extends React.Component{
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/06.png" alt="tmp1_customize" width="100%" />
+                                        <img src="/image/sample_05/06.png" alt="tmp5_customize" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>
@@ -329,15 +329,15 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_customize_menu">
+                        <div className="modal fade" id="tmp5_customize_menu">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
-                                        <p className="modal-title">自定區域 - 自訂選單範例</p>
+                                        <p className="modal-title">自定區域 - 自訂選單 範例</p>
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/06-0.png" alt="tmp1_customize_menu" width="100%" />
+                                        <img src="/image/sample_05/06-0.png" alt="tmp5_customize_menu" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>
@@ -345,15 +345,31 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_customize_title">
+                        <div className="modal fade" id="tmp5_customize_title">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
-                                        <p className="modal-title">自定區域 - 標題範例</p>
+                                        <p className="modal-title">自定區域 - 標題 範例</p>
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/06-1.png" alt="tmp1_customize_title" width="100%" />
+                                        <img src="/image/sample_05/06-1.png" alt="tmp5_customize_title" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_subtitle">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 副標題 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-2.png" alt="tmp5_customize_subtitle" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>
@@ -392,9 +408,9 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-2.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_05/06-3-1.png" alt="Temp5_Customize_card1" width="100%" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp5_customize_card1">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -403,38 +419,58 @@ class Session6 extends React.Component{
                                                 <table border='1'>
                                                     <thead>
                                                     <tr>
-                                                        <th width="10%">項目</th>
+                                                        <th width="20%">項目</th>
                                                         <th width="35%">內容範例</th>
                                                         <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
+                                                        <th width="30%">備註</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
                                                     <tr>
                                                         <td>卡片1標題</td>
-                                                        <td align='left'>海水生態蝦仁</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
+                                                        <td align='left'>執政2年談能源 總統：綠電長期較核電經濟</td>
+                                                        <td>30個字以內</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card1_title">觀看範例圖片</a>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片1內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>定期檢驗重金屬合格。</li>
-                                                                <li>定期檢驗無動物用藥殘留。</li>
-                                                            </ul>
+                                                        <td align='left'>總統表示，2025年非核家園，屆時核一、核二以及核三廠都要退役，綠能要達到總發電量的20%，主要來源則是來自太陽能和風力。</td>
+                                                        <td>120個字以內</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card1_content">觀看範例圖片</a>
                                                         </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>卡片1標籤</td>
+                                                        <td align='left'>新聞新知, 綠能新訊</td>
+                                                        <td>120個字以內</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card1_tag">觀看範例圖片</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>卡片1網址</td>
+                                                        <td align='left'>了解更多</td>
+                                                        <td>請輸入網址</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card1_url">觀看範例圖片</a>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片1圖片</td>
                                                         <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
+                                                        <td>400*300</td>
+                                                        <td align='left'>
                                                             <ul>
                                                                 <li>接受格式為png、jpg</li>
                                                                 <li>不可空白</li>
+                                                                <li><a type="button" data-toggle="modal" href="#tmp5_customize_card1_pic">觀看範例圖片</a></li>
                                                             </ul>
                                                         </td>
                                                     </tr>
@@ -442,6 +478,102 @@ class Session6 extends React.Component{
                                                 </table>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card1">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片1 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-1.png" alt="tmp5_customize_card1" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card1_title">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片1標題 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-1-1.png" alt="tmp5_customize_card1_title" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card1_content">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片1內文 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-1-2.png" alt="tmp5_customize_card1_content" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card1_tag">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片1標籤 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-1-3.png" alt="tmp5_customize_card1_tag" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card1_url">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片1網址 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-1-4.png" alt="tmp5_customize_card1_url" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card1_pic">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片1圖片 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-1-5.png" alt="tmp5_customize_card1_pic" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>
@@ -477,11 +609,11 @@ class Session6 extends React.Component{
                                                 <ImgUpload title='卡片2圖片' notice='(圖檔尺寸大小為 400*300，接受格式為png、jpg)' objName='card2Img' imgUpload={card2ImgUpload} 
                                                     imgFileName={card2Img} parentObj={this} imgW={400} imgH={300} required={false} />
                                             </div>
-                                       </div>
-                                       <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-3.png" alt="Temp1_Customize" /></div>
+                                        </div>
+                                        <div className="col-md-6 mb-3">                                    
+                                            <div><img src="/image/sample_05/06-3-2.png" alt="Temp5_Customize_card2" width="100%" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp5_customize_card2">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -490,38 +622,58 @@ class Session6 extends React.Component{
                                                 <table border='1'>
                                                     <thead>
                                                     <tr>
-                                                        <th width="10%">項目</th>
+                                                        <th width="20%">項目</th>
                                                         <th width="35%">內容範例</th>
                                                         <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
+                                                        <th width="30%">備註</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
                                                     <tr>
                                                         <td>卡片2標題</td>
-                                                        <td align='left'>安心鱸魚排</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
+                                                        <td align='left'>電費收入穩定，可作為另類收益來源-投資再生能源 買題材股不如買電廠</td>
+                                                        <td>30個字以內</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card2_title">觀看範例圖片</a>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片2內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>定期檢驗無動物用藥殘留</li>
-                                                                <li>定期檢驗鮮度(VBN)合格</li>
-                                                            </ul>
+                                                        <td align='left'>對於追求收益與低波動的投資人來說，要參與綠電商機，近年出現了另一種思維下的全新投資工具——再生能源基礎建設證券，此種投資工具更適合長期布局。</td>
+                                                        <td>120個字以內</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card2_content">觀看範例圖片</a>
                                                         </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>卡片2標籤</td>
+                                                        <td align='left'>新聞新知, 綠能新訊</td>
+                                                        <td>120個字以內</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card2_tag">觀看範例圖片</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>卡片2網址</td>
+                                                        <td align='left'>了解更多</td>
+                                                        <td>請輸入網址</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card2_url">觀看範例圖片</a>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片2圖片</td>
                                                         <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
+                                                        <td>400*300</td>
+                                                        <td align='left'>
                                                             <ul>
                                                                 <li>接受格式為png、jpg</li>
                                                                 <li>不可空白</li>
+                                                                <li><a type="button" data-toggle="modal" href="#tmp5_customize_card2_pic">觀看範例圖片</a></li>
                                                             </ul>
                                                         </td>
                                                     </tr>
@@ -529,6 +681,102 @@ class Session6 extends React.Component{
                                                 </table>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card2">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片2 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-2.png" alt="tmp5_customize_card2" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card2_title">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片2標題 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-2-1.png" alt="tmp5_customize_card2_title" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card2_content">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片2內文 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-2-2.png" alt="tmp5_customize_card2_content" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card2_tag">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片2標籤 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-2-3.png" alt="tmp5_customize_card2_tag" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card2_url">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片2網址 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-2-4.png" alt="tmp5_customize_card2_url" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card2_pic">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片2圖片 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-2-5.png" alt="tmp5_customize_card2_pic" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>
@@ -566,9 +814,9 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_05/06-3-3.png" alt="Temp5_Customize_card3" width="100%" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp5_customize_card3">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -577,38 +825,58 @@ class Session6 extends React.Component{
                                                 <table border='1'>
                                                     <thead>
                                                     <tr>
-                                                        <th width="10%">項目</th>
+                                                        <th width="20%">項目</th>
                                                         <th width="35%">內容範例</th>
                                                         <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
+                                                        <th width="30%">備註</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
                                                     <tr>
                                                         <td>卡片3標題</td>
-                                                        <td align='left'>蒲燒鯛魚腹排</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
+                                                        <td align='left'>收益穩定 公民電廠上網就能買</td>
+                                                        <td>30個字以內</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card3_title">觀看範例圖片</a>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片3內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>無添加防腐劑</li>
-                                                                <li>無添加任何人工甘味劑</li>
-                                                            </ul>
+                                                        <td align='left'>國外綠能合作社已有二十多年歷史，台灣也有環保志願者仿效此模式，讓民眾可透過認購單片太陽能板的方式，成為大型電廠的合夥人。</td>
+                                                        <td>120個字以內</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card3_content">觀看範例圖片</a>
                                                         </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>卡片3標籤</td>
+                                                        <td align='left'>新聞新知, 綠能新訊</td>
+                                                        <td>120個字以內</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card3_tag">觀看範例圖片</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>卡片3網址</td>
+                                                        <td align='left'>了解更多</td>
+                                                        <td>請輸入網址</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card3_url">觀看範例圖片</a>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片3圖片</td>
                                                         <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
+                                                        <td>400*300</td>
+                                                        <td align='left'>
                                                             <ul>
                                                                 <li>接受格式為png、jpg</li>
                                                                 <li>不可空白</li>
+                                                                <li><a type="button" data-toggle="modal" href="#tmp5_customize_card3_pic">觀看範例圖片</a></li>
                                                             </ul>
                                                         </td>
                                                     </tr>
@@ -616,6 +884,102 @@ class Session6 extends React.Component{
                                                 </table>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card3">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片3 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-3.png" alt="tmp5_customize_card3" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card3_title">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片3標題 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-3-1.png" alt="tmp5_customize_card3_title" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card3_content">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片3內文 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-3-2.png" alt="tmp5_customize_card3_content" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card3_tag">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片3標籤 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-3-3.png" alt="tmp5_customize_card3_tag" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card3_url">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片3網址 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-3-4.png" alt="tmp5_customize_card3_url" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card3_pic">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片3圖片 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-3-5.png" alt="tmp5_customize_card3_pic" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>
@@ -653,9 +1017,9 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-5.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_05/06-3-4.png" alt="Temp5_Customize_card4" width="100%" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp5_customize_card4">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -664,118 +1028,58 @@ class Session6 extends React.Component{
                                                 <table border='1'>
                                                     <thead>
                                                     <tr>
-                                                        <th width="10%">項目</th>
+                                                        <th width="20%">項目</th>
                                                         <th width="35%">內容範例</th>
                                                         <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
+                                                        <th width="30%">備註</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
                                                     <tr>
                                                         <td>卡片4標題</td>
-                                                        <td align='left'>一品鮑魚糙米粥</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
+                                                        <td align='left'>推廣全民種電 電力燃氣供應家數增</td>
+                                                        <td>30個字以內</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card4_title">觀看範例圖片</a>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片4內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>無添加防腐劑</li>
-                                                                <li>正黑豬及放山雞作為基底</li>
-                                                            </ul>
+                                                        <td align='left'>政府推綠能，號召全民一起種電，據主計總處最新發布的工商普查，2016 年底電力及燃氣供應業家數較五年前增加 279%，主計總處說明，民間業者陸續投入綠能發電是關鍵。</td>
+                                                        <td>120個字以內</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card4_content">觀看範例圖片</a>
                                                         </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>卡片4標籤</td>
+                                                        <td align='left'>新聞新知</td>
+                                                        <td>120個字以內</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card4_tag">觀看範例圖片</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>卡片4網址</td>
+                                                        <td align='left'>了解更多</td>
+                                                        <td>請輸入網址</td>
+                                                        <td>
+                                                            不可空白<br />
+                                                            <a type="button" data-toggle="modal" href="#tmp5_customize_card4_url">觀看範例圖片</a>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>卡片4圖片</td>
                                                         <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>接受格式為png、jpg</li>
-                                                                <li>不可空白</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        {/*}
-                        <div>
-                            <div className="card">
-                                <a href="#collapseCard6-5" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6-5">
-                                    <div className="card-header text-white bg-primary">卡片 5</div>
-                                </a>
-                                <div className="card-body collapse collapsed" id="collapseCard6-5">
-                                    <div className="form-row">
-                                        <div className="col-md-6 mb-3">
-                                            <div className="form-row row-style-w95">
-                                                <InputText title='卡片5標題' notice='(字數限制為8個字以內)' inputName='card5Title' inputState={card5Title}
-                                                    stateObj={this} required={false} checkValue='8' />
-                                            </div>
-                                            <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片5內文' notice='(字數限制為20個字以內)' inputName='card5Content' inputState={card5Content}
-                                                    rows='2' stateObj={this} required={false} checkValue='20' />
-                                            </div>
-                                            <div className="form-row row-style-w95-pt1">
-                                                <ImgUpload title='卡片5圖片' notice='(圖檔尺寸大小為 350*350  ，接受格式為png、jpg)' objName='card5Img'  imgUpload={card5ImgUpload} 
-                                                    imgFileName={card5Img} parentObj={this} imgW={350} imgH={350} required={false} />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
-                                            <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
-                                                    觀看放大圖例
-                                                </a>
-                                            </div>
-                                            <hr />
-                                            <div>
-                                                <table border='1'>
-                                                    <thead>
-                                                    <tr>
-                                                        <th width="10%">項目</th>
-                                                        <th width="35%">內容範例</th>
-                                                        <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>卡片5標題</td>
-                                                        <td align='left'>一品鮑魚糙米粥</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片5內文</td>
+                                                        <td>400*300</td>
                                                         <td align='left'>
                                                             <ul>
-                                                                <li>無添加防腐劑</li>
-                                                                <li>正黑豬及放山雞作為基底</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片5圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
-                                                            <ul>
                                                                 <li>接受格式為png、jpg</li>
                                                                 <li>不可空白</li>
+                                                                <li><a type="button" data-toggle="modal" href="#tmp5_customize_card4_pic">觀看範例圖片</a></li>
                                                             </ul>
                                                         </td>
                                                     </tr>
@@ -787,81 +1091,98 @@ class Session6 extends React.Component{
                                 </div>
                             </div>
                         </div>
-
-
-
-                        <div>
-                            <div className="card">
-                                <a href="#collapseCard6-6" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6-6">
-                                    <div className="card-header text-white bg-primary">卡片 6</div>
-                                </a>
-                                <div className="card-body collapse collapsed" id="collapseCard6-6">
-                                    <div className="form-row">
-                                        <div className="col-md-6 mb-3">
-                                            <div className="form-row row-style-w95">
-                                                <InputText title='卡片6標題' notice='(字數限制為8個字以內)' inputName='card6Title' inputState={card6Title}
-                                                    stateObj={this} required={false} checkValue='8' />
-                                            </div>
-                                            <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片6內文' notice='(字數限制為20個字以內)' inputName='card6Content' inputState={card6Content}
-                                                    rows='2' stateObj={this} required={false} checkValue='20' />
-                                            </div>
-                                            <div className="form-row row-style-w95-pt1">
-                                                <ImgUpload title='卡片6圖片' notice='(圖檔尺寸大小為 350*350  ，接受格式為png、jpg)' objName='card6Img'  imgUpload={card6ImgUpload} 
-                                                    imgFileName={card6Img} parentObj={this} imgW={350} imgH={350} required={false} />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
-                                            <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
-                                                    觀看放大圖例
-                                                </a>
-                                            </div>
-                                            <hr />
-                                            <div>
-                                                <table border='1'>
-                                                    <thead>
-                                                    <tr>
-                                                        <th width="10%">項目</th>
-                                                        <th width="35%">內容範例</th>
-                                                        <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>卡片6標題</td>
-                                                        <td align='left'>一品鮑魚糙米粥</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片6內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>無添加防腐劑</li>
-                                                                <li>正黑豬及放山雞作為基底</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片6圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>接受格式為png、jpg</li>
-                                                                <li>不可空白</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
+                        <div className="modal fade" id="tmp5_customize_card4">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片4 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-4.png" alt="tmp5_customize_card4" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card4_title">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片4標題 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-4-1.png" alt="tmp5_customize_card4_title" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card4_content">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片4內文 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-4-2.png" alt="tmp5_customize_card4_content" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card4_tag">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片4標籤 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-4-3.png" alt="tmp5_customize_card4_tag" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card4_url">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片4網址 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-4-4.png" alt="tmp5_customize_card4_url" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_customize_card4_pic">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片4圖片 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/06-3-4-5.png" alt="tmp5_customize_card4_pic" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>
@@ -869,162 +1190,6 @@ class Session6 extends React.Component{
 
 
 
-                        <div>
-                            <div className="card">
-                                <a href="#collapseCard6-7" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6-7">
-                                    <div className="card-header text-white bg-primary">卡片 7</div>
-                                </a>
-                                <div className="card-body collapse collapsed" id="collapseCard6-7">
-                                    <div className="form-row">
-                                        <div className="col-md-6 mb-3">
-                                            <div className="form-row row-style-w95">
-                                                <InputText title='卡片7標題' notice='(字數限制為8個字以內)' inputName='card7Title' inputState={card7Title}
-                                                    stateObj={this} required={false} checkValue='8' />
-                                            </div>
-                                            <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片7內文' notice='(字數限制為20個字以內)' inputName='card7Content' inputState={card7Content}
-                                                    rows='2' stateObj={this} required={false} checkValue='20' />
-                                            </div>
-                                            <div className="form-row row-style-w95-pt1">
-                                                <ImgUpload title='卡片7圖片' notice='(圖檔尺寸大小為 350*350  ，接受格式為png、jpg)' objName='card7Img'  imgUpload={card7ImgUpload} 
-                                                    imgFileName={card7Img} parentObj={this} imgW={350} imgH={350} required={false} />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
-                                            <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
-                                                    觀看放大圖例
-                                                </a>
-                                            </div>
-                                            <hr />
-                                            <div>
-                                                <table border='1'>
-                                                    <thead>
-                                                    <tr>
-                                                        <th width="10%">項目</th>
-                                                        <th width="35%">內容範例</th>
-                                                        <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>卡片7標題</td>
-                                                        <td align='left'>一品鮑魚糙米粥</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片7內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>無添加防腐劑</li>
-                                                                <li>正黑豬及放山雞作為基底</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片7圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>接受格式為png、jpg</li>
-                                                                <li>不可空白</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div>
-                            <div className="card">
-                                <a href="#collapseCard6-8" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6-8">
-                                    <div className="card-header text-white bg-primary">卡片 8</div>
-                                </a>
-                                <div className="card-body collapse collapsed" id="collapseCard6-8">
-                                    <div className="form-row">
-                                        <div className="col-md-6 mb-3">
-                                            <div className="form-row row-style-w95">
-                                                <InputText title='卡片8標題' notice='(字數限制為8個字以內)' inputName='card8Title' inputState={card8Title}
-                                                    stateObj={this} required={false} checkValue='8' />
-                                            </div>
-                                            <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片8內文' notice='(字數限制為20個字以內)' inputName='card8Content' inputState={card8Content}
-                                                    rows='2' stateObj={this} required={false} checkValue='20' />
-                                            </div>
-                                            <div className="form-row row-style-w95-pt1">
-                                                <ImgUpload title='卡片8圖片' notice='(圖檔尺寸大小為 350*350  ，接受格式為png、jpg)' objName='card8Img'  imgUpload={card8ImgUpload} 
-                                                    imgFileName={card8Img} parentObj={this} imgW={350} imgH={350} required={false} />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
-                                            <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
-                                                    觀看放大圖例
-                                                </a>
-                                            </div>
-                                            <hr />
-                                            <div>
-                                                <table border='1'>
-                                                    <thead>
-                                                    <tr>
-                                                        <th width="10%">項目</th>
-                                                        <th width="35%">內容範例</th>
-                                                        <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>卡片8標題</td>
-                                                        <td align='left'>一品鮑魚糙米粥</td>
-                                                        <td>8個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片8內文</td>
-                                                        <td align='left'>
-                                                            <ul>
-                                                                <li>無添加防腐劑</li>
-                                                                <li>正黑豬及放山雞作為基底</li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>20個字以內</td>
-                                                        <td>不可空白</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>卡片8圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
-                                                        <td>350*350</td>
-                                                        <td>
-                                                            <ul>
-                                                                <li>接受格式為png、jpg</li>
-                                                                <li>不可空白</li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {*/}
 
                         <hr />
                         <div  align="center">

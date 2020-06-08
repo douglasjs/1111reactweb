@@ -65,15 +65,16 @@ class Session8 extends React.Component{
                             </div>
                             <div className="form-row">
                                 <div className="col-md-6 mb-3">
+                                    <h3> 此版型的「{sessionName}」不須額外設定，背景圖片也為固定不可更換。<br />請選擇是否開啟後直接儲存。</h3>
                                     <hr />
                                     <div  align="center"><button type='submit' id='action8' value={actionType} className="btn btn-facebook btn-block btn-width" ><i className="fas fa-save"></i> 儲存設定</button></div>
                                 </div>
                                 <div className="col-md-6 mb-3">
-                                    <div><img src="/image/sample_01/08.png" alt="Temp1_Contact" width="100%"/></div>
-                                    <div><a type="button" data-toggle="modal" href="#tmp1_contact">觀看放大圖例</a></div>
+                                    <div><img src="/image/sample_05/08.png" alt="Temp5_Contact" width="100%"/></div>
+                                    <div><a type="button" data-toggle="modal" href="#tmp5_contact">觀看放大圖例</a></div>
                                     <hr />
                                     <div>
-                                        <table border='1'>
+                                    <table border='1'>
                                             <thead>
                                             <tr>
                                                 <th width="10%">項目</th>
@@ -84,15 +85,10 @@ class Session8 extends React.Component{
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <td>連絡我們背景圖片</td>
-                                                <td align='left'>寬、高(px)</td>
-                                                <td>1920*1080</td>
-                                                <td>
-                                                    <ul>
-                                                        <li>接受格式為png、jpg</li>
-                                                        <li>不可空白</li>
-                                                    </ul>
-                                                </td>
+                                                <td>連絡我們</td>
+                                                <td>寬、高(px)</td>
+                                                <td>無須設定</td>
+                                                <td>固定不可變更</td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -100,7 +96,7 @@ class Session8 extends React.Component{
                                 </div>                                
                             </div>
                         </form>
-                        <div className="modal fade" id="tmp1_contact">
+                        <div className="modal fade" id="tmp5_contact">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -108,7 +104,7 @@ class Session8 extends React.Component{
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/08.png" alt="tmp1_contact" width="100%" />
+                                        <img src="/image/sample_05/08.png" alt="tmp5_contact" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>

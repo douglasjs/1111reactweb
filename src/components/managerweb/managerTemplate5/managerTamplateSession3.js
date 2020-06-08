@@ -162,27 +162,88 @@ class Session3 extends React.Component{
                 <div className="collapse collapsed" id="collapseCard3">
                     <div className="card-body">
                         <div className="form-row">
-                            <div className="col-md-6 mb-3">
+                            <div className="col-md-12">
                                 <form id='dataForm3' className={benefitIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
                                     <Msg type ='LOADING'  value = {benefitIsLoading} text='Processing ' /> 
                                     <Msg type ='ERROR' value = {benefitErr} text= 'Opps! Error : ' />
                                     <input type="hidden" id="themeNum3" value={themeNum} />
-                                    <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
-                                    <div className="form-row row-style-w95-pt1">
-                                        <InputText title='副標題' notice='(字數限制為40個字以內)' inputName='benefitContent' inputState={benefitContent}
-                                           stateObj={this} required={true} checkValue='40' />
-                                    </div>
-                                    <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='圖片一 上傳' notice='(圖檔尺寸大小為 850*760，接受格式為png、jpg)' objName='benefitImg' imgUpload={benefitImgUpload} 
-                                            imgFileName={benefitImg} parentObj={this} imgW={850} imgH={760} required={true} />                                               
-                                    </div>
-                                    <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='圖片二 上傳' notice='(圖檔尺寸大小為 850*760，接受格式為png、jpg)' objName='benefitImg2' imgUpload={benefitImg2Upload}
-                                            imgFileName={benefitImg2} parentObj={this} imgW={850} imgH={760} required={true}/> 
-                                    </div>
-                                    <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='背景圖片 上傳' notice='(圖檔尺寸大小為 1330*660，接受格式為png、jpg)' objName='benefitSubImg1'  imgUpload={benefitSubImg1Upload} 
-                                            imgFileName={benefitSubImg1} parentObj={this} imgW={1330} imgH={660} required={true} />                                               
+                                    <div className="form-row">
+                                        <div className="col-md-6 mb-3">
+                                            <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
+                                            <div className="form-row row-style-w95-pt1">
+                                                <InputText title='副標題' notice='(字數限制為40個字以內)' inputName='benefitContent' inputState={benefitContent}
+                                                stateObj={this} required={true} checkValue='40' />
+                                            </div>
+                                            <div className="form-row row-style-w95-pt1">
+                                                <ImgUpload title='圖片一 上傳' notice='(圖檔尺寸大小為 850*760，接受格式為png、jpg)' objName='benefitImg' imgUpload={benefitImgUpload} 
+                                                    imgFileName={benefitImg} parentObj={this} imgW={850} imgH={760} required={true} />                                               
+                                            </div>
+                                            <div className="form-row row-style-w95-pt1">
+                                                <ImgUpload title='圖片二 上傳' notice='(圖檔尺寸大小為 850*760，接受格式為png、jpg)' objName='benefitImg2' imgUpload={benefitImg2Upload}
+                                                    imgFileName={benefitImg2} parentObj={this} imgW={850} imgH={760} required={true}/> 
+                                            </div>
+                                            <div className="form-row row-style-w95-pt1">
+                                                <ImgUpload title='背景圖片 上傳' notice='(圖檔尺寸大小為 1330*660，接受格式為png、jpg)' objName='benefitSubImg1'  imgUpload={benefitSubImg1Upload} 
+                                                    imgFileName={benefitSubImg1} parentObj={this} imgW={1330} imgH={660} required={true} />                                               
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6 mb-3">
+                                            <div><img src="/image/sample_05/03.png" alt="Temp5_Benefit" width="100%"/></div>
+                                            <div>
+                                                <a type="button" data-toggle="modal" href="#tmp5_benefit">
+                                                    觀看放大圖例
+                                                </a>
+                                            </div>
+                                            <hr />
+                                            <div>
+                                                <table border='1'>
+                                                    <thead>
+                                                        <tr>
+                                                            <th width="20%">項目</th>
+                                                            <th width="35%">內容</th>
+                                                            <th width="15%">規格</th>
+                                                            <th width="30%">備註</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>副標題</td>
+                                                            <td align='left'>提供豐富的獎金福利制度，獎勵同仁的辛勞及貢獻</td>
+                                                            <td>40個字以內</td>
+                                                            <td>
+                                                                不可空白<br />
+                                                                <a type="button" data-toggle="modal" href="#tmp5_benefit_subtitle">觀看範例圖片</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>員工福利圖片一、二</td>
+                                                            <td align='left'>寬、高(px)</td>
+                                                            <td>850*760</td>
+                                                            <td align='left'>
+                                                                <ul>
+                                                                    <li>接受格式為png、jpg</li>
+                                                                    <li>兩張圖片輪播</li>
+                                                                    <li>不可空白</li>
+                                                                    <li><a type="button" data-toggle="modal" href="#tmp5_benefit_pic01">觀看範例圖片</a></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>員工福利背景圖片</td>
+                                                            <td align='left'>寬、高(px)</td>
+                                                            <td>1330*660</td>
+                                                            <td align='left'>
+                                                                <ul>
+                                                                    <li>接受格式為png、jpg</li>
+                                                                    <li>不可空白</li>
+                                                                    <li><a type="button" data-toggle="modal" href="#tmp5_benefit_pic02">觀看範例圖片</a></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div className="card">
@@ -200,6 +261,41 @@ class Session3 extends React.Component{
                                                     <div className="form-row row-style-w95-pt1">
                                                         <InputTextArea title='小標題1內容' notice='(字數限制為50個字以內)' inputName='benefitSubContent1' inputState={benefitSubContent1}
                                                             rows='3' stateObj={this} required={true} checkValue='50' />
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-6 mb-3">
+                                                    <div><img src="/image/sample_05/03-4-1.png" alt="tmp5_benefit_card1" width="100%"/></div>
+                                                    <div>
+                                                        <a type="button" data-toggle="modal" href="#tmp5_benefit_card1">
+                                                            觀看放大圖例
+                                                        </a>
+                                                    </div>
+                                                    <hr />
+                                                    <div>
+                                                        <table border='1'>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="20%">項目</th>
+                                                                    <th width="35%">內容</th>
+                                                                    <th width="15%">規格</th>
+                                                                    <th width="30%">備註</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>小標題1</td>
+                                                                    <td align='left'>獎金福利</td>
+                                                                    <td>9個字以內</td>
+                                                                    <td>不可空白</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>小標題1內容</td>
+                                                                    <td align='left'>全勤獎金、年終獎金、績效獎金</td>
+                                                                    <td>50個字以內</td>
+                                                                    <td>不可空白</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
 
@@ -224,6 +320,41 @@ class Session3 extends React.Component{
                                                             rows='3' stateObj={this} required={true} checkValue='50' />
                                                     </div>
                                                 </div>
+                                                <div className="col-md-6 mb-3">
+                                                    <div><img src="/image/sample_05/03-4-2.png" alt="tmp5_benefit_card2" width="100%"/></div>
+                                                    <div>
+                                                        <a type="button" data-toggle="modal" href="#tmp5_benefit_card2">
+                                                            觀看放大圖例
+                                                        </a>
+                                                    </div>
+                                                    <hr />
+                                                    <div>
+                                                        <table border='1'>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="20%">項目</th>
+                                                                    <th width="35%">內容</th>
+                                                                    <th width="15%">規格</th>
+                                                                    <th width="30%">備註</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>小標題2</td>
+                                                                    <td align='left'>補助津貼</td>
+                                                                    <td>9個字以內</td>
+                                                                    <td>不可空白</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>小標題2內容</td>
+                                                                    <td align='left'>進修補助 全勤津貼 伙食津貼</td>
+                                                                    <td>50個字以內</td>
+                                                                    <td>不可空白</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -244,6 +375,41 @@ class Session3 extends React.Component{
                                                     <div className="form-row row-style-w95-pt1">
                                                         <InputTextArea title='小標題3內容' notice='(字數限制為50個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
                                                             rows='3' stateObj={this} required={true} checkValue='50' />
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-6 mb-3">
+                                                    <div><img src="/image/sample_05/03-4-3.png" alt="tmp5_benefit_card3" width="100%"/></div>
+                                                    <div>
+                                                        <a type="button" data-toggle="modal" href="#tmp5_benefit_card3">
+                                                            觀看放大圖例
+                                                        </a>
+                                                    </div>
+                                                    <hr />
+                                                    <div>
+                                                        <table border='1'>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="20%">項目</th>
+                                                                    <th width="35%">內容</th>
+                                                                    <th width="15%">規格</th>
+                                                                    <th width="30%">備註</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>小標題3</td>
+                                                                    <td align='left'>休閒娛樂</td>
+                                                                    <td>9個字以內</td>
+                                                                    <td>不可空白</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>小標題3內容</td>
+                                                                    <td align='left'>國內員工旅遊 國外員工旅遊 尾牙/不定期餐敘</td>
+                                                                    <td>50個字以內</td>
+                                                                    <td>不可空白</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
 
@@ -268,6 +434,41 @@ class Session3 extends React.Component{
                                                             rows='3' stateObj={this} required={true} checkValue='50' />
                                                     </div>
                                                 </div>
+                                                <div className="col-md-6 mb-3">
+                                                    <div><img src="/image/sample_05/03-4-4.png" alt="tmp5_benefit_card4" width="100%"/></div>
+                                                    <div>
+                                                        <a type="button" data-toggle="modal" href="#tmp5_benefit_card4">
+                                                            觀看放大圖例
+                                                        </a>
+                                                    </div>
+                                                    <hr />
+                                                    <div>
+                                                        <table border='1'>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="20%">項目</th>
+                                                                    <th width="35%">內容</th>
+                                                                    <th width="15%">規格</th>
+                                                                    <th width="30%">備註</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>小標題4</td>
+                                                                    <td align='left'>其他福利</td>
+                                                                    <td>9個字以內</td>
+                                                                    <td>不可空白</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>小標題4內容</td>
+                                                                    <td align='left'>員工健康檢查 勞保、健保 福利制度</td>
+                                                                    <td>50個字以內</td>
+                                                                    <td>不可空白</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -288,6 +489,41 @@ class Session3 extends React.Component{
                                                     <div className="form-row row-style-w95-pt1">
                                                         <InputTextArea title='小標題內容5' notice='(字數限制為50個字以內)' inputName='benefitSubContent5' inputState={benefitSubContent5}
                                                             rows='3' stateObj={this} required={true} checkValue='50' />
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-6 mb-3">
+                                                    <div><img src="/image/sample_05/03-4-5.png" alt="tmp5_benefit_card5" width="100%"/></div>
+                                                    <div>
+                                                        <a type="button" data-toggle="modal" href="#tmp5_benefit_card5">
+                                                            觀看放大圖例
+                                                        </a>
+                                                    </div>
+                                                    <hr />
+                                                    <div>
+                                                        <table border='1'>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="20%">項目</th>
+                                                                    <th width="35%">內容</th>
+                                                                    <th width="15%">規格</th>
+                                                                    <th width="30%">備註</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>小標題5</td>
+                                                                    <td align='left'>福利設施</td>
+                                                                    <td>9個字以內</td>
+                                                                    <td>不可空白</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>小標題5內容</td>
+                                                                    <td align='left'>員工停車位</td>
+                                                                    <td>50個字以內</td>
+                                                                    <td>不可空白</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
 
@@ -312,6 +548,41 @@ class Session3 extends React.Component{
                                                             rows='3' stateObj={this} required={true} checkValue='50' />
                                                     </div>
                                                 </div>
+                                                <div className="col-md-6 mb-3">
+                                                    <div><img src="/image/sample_05/03-4-6.png" alt="tmp5_benefit_card6" width="100%"/></div>
+                                                    <div>
+                                                        <a type="button" data-toggle="modal" href="#tmp5_benefit_card6">
+                                                            觀看放大圖例
+                                                        </a>
+                                                    </div>
+                                                    <hr />
+                                                    <div>
+                                                        <table border='1'>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="20%">項目</th>
+                                                                    <th width="35%">內容</th>
+                                                                    <th width="15%">規格</th>
+                                                                    <th width="30%">備註</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>小標題6</td>
+                                                                    <td align='left'>餐 飲 類</td>
+                                                                    <td>9個字以內</td>
+                                                                    <td>不可空白</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>小標題6內容</td>
+                                                                    <td align='left'>伙食津貼</td>
+                                                                    <td>50個字以內</td>
+                                                                    <td>不可空白</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -323,58 +594,10 @@ class Session3 extends React.Component{
                                 </form>
                             </div>
                             <div className="col-md-6 mb-3">
-                                <div><img src="/image/sample_01/03.png" alt="Temp1_Benefit" width="100%"/></div>
-                                <div>
-                                    <a type="button" data-toggle="modal" href="#tmp1_benefit">
-                                        觀看放大圖例
-                                    </a>
-                                </div>
-                                <hr />
-                                <div>
-                                    <table border='1'>
-                                        <thead>
-                                        <tr>
-                                            <th width="10%">項目</th>
-                                            <th width="35%">內容</th>
-                                            <th width="15%">規格</th>
-                                            <th width="40%">備註</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>員工福利圖片</td>
-                                            <td align='left'>寬、高(px)</td>
-                                            <td>500*354</td>
-                                            <td>
-                                                <ul>
-                                                    <li>接受格式為png、jpg</li>
-                                                    <li>無輪播</li>
-                                                    <li>不可空白</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>員工福利內容</td>
-                                            <td align='left'>
-                                            法定項目<br />
-                                                勞保、健保、男性員工陪產假、育嬰假、生理假、特別休假、員工體檢、勞退提撥金、職災保險<br />
-                                            福利制度<br />
-                                                獎 金 類：全勤獎金、年節獎金、員工生日禮金、年終獎金、三節獎金、禮品、績效獎金<br />
-                                                保 險 類：意外險、員工團保、員工及眷屬住院慰問金<br />
-                                                餐 飲 類：免費供餐<br />
-                                                娛 樂 類：自強活動、國內旅遊、尾牙、員工運動會<br />
-                                                補 助 類：員工結婚補助、生育補助、員工國內、外進修補助、員工及眷屬喪葬補助、員工購物優惠、社團補助<br />
-                                                其 　他：員工在職教育訓練、良好升遷制度<br />
-                                            </td>
-                                            <td>350個字以內</td>
-                                            <td>可自行編輯排版，不可空白</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                
                             </div>
                         </div>
-                        <div className="modal fade" id="tmp1_benefit">
+                        <div className="modal fade" id="tmp5_benefit">
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
@@ -382,14 +605,158 @@ class Session3 extends React.Component{
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
-                                        <img src="/image/sample_01/03.png" alt="tmp1_benefit" width="100%" />
+                                        <img src="/image/sample_05/03.png" alt="tmp5_benefit" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
+                        <div className="modal fade" id="tmp5_benefit_subtitle">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利 - 副標題 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/03-1.png" alt="tmp5_benefit_subtitle" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_benefit_pic01">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利 - 圖片一、二 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/03-2.png" alt="tmp5_benefit_pic01" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_benefit_pic02">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利 - 背景圖片 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/03-3.png" alt="tmp5_benefit_pic02" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_benefit_card1">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利 - 小標題一 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/03-4-1.png" alt="tmp5_benefit_card1" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_benefit_card2">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利 - 小標題二 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/03-4-2.png" alt="tmp5_benefit_card2" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_benefit_card3">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利 - 小標題三 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/03-4-3.png" alt="tmp5_benefit_card3" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_benefit_card4">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利 - 小標題四 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/03-4-4.png" alt="tmp5_benefit_card4" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_benefit_card5">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利 - 小標題五 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/03-4-5.png" alt="tmp5_benefit_card5" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp5_benefit_card6">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">員工福利 - 小標題六 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_05/03-4-6.png" alt="tmp5_benefit_card6" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                   
                     </div>
                 </div>

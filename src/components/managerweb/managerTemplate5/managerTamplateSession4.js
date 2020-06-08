@@ -414,8 +414,9 @@ class Session4 extends React.Component{
                                             <div className="dataTables_length" id="dataTable_length">
 
                                                 <div id="dataTable_filter" className="dataTables_filter text-left">
-                                                    {/*<a data-toggle="modal" href="#tmp1_addlable"><button className='btn btn-primary'>增加標籤 <i className="fas fa-folder-plus" value='Create' /></button></a>&nbsp;&nbsp;&nbsp;*/}
-                                                    <a data-toggle="modal" href="#tmp1_addjob"><button className='btn btn-primary' onClick={this.handleAddPosition}>增加職缺 <i className="fas fa-folder-plus" value='Create' /></button></a>
+                                                    {/*<a data-toggle="modal" href="#tmp5_addlable"><button className='btn btn-primary'>增加標籤 <i className="fas fa-folder-plus" value='Create' /></button></a>&nbsp;&nbsp;&nbsp;*/}
+                                                    <a data-toggle="modal" href="#tmp5_addjob"><button className='btn btn-primary' onClick={this.handleAddPosition}>增加職缺 <i className="fas fa-folder-plus" value='Create' /></button></a>
+                                                    (<a type="button" data-toggle="modal" href="#tmp5_joblable_img">觀看圖例</a>)
                                                 </div>
                                             </div>
                                         </div>
@@ -473,13 +474,13 @@ class Session4 extends React.Component{
                 </div>
        
 
-                <div className="modal fade" id="tmp1_addlable">
+                <div className="modal fade" id="tmp5_addlable">
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
                                 <p className="modal-title">
                                     請設定標籤&nbsp;&nbsp;&nbsp;
-                                    (<a type="button" data-toggle="modal" href="#tmp1_joblable_img">觀看圖例</a>)
+                                    (<a type="button" data-toggle="modal" href="#tmp5_joblable_img">觀看圖例</a>)
                                 </p>
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
@@ -500,7 +501,7 @@ class Session4 extends React.Component{
                                     <hr />
                                     <div align="center">
                                         <button type='submit' id='actionTag' value={actionType} className="btn btn-facebook btn-width" ><i className="fas fa-save"></i> 儲存設定</button>
-                                        <button type='button' id='addPosition' data-toggle="modal" data-target="#tmp1_addjob" className={`btn btn-google btn-width ${groupEmpty}`}><i className="fas fa-newspaper"></i> 新增職缺</button>
+                                        <button type='button' id='addPosition' data-toggle="modal" data-target="#tmp5_addjob" className={`btn btn-google btn-width ${groupEmpty}`}><i className="fas fa-newspaper"></i> 新增職缺</button>
                                     </div>
                                 </form>
 
@@ -515,7 +516,7 @@ class Session4 extends React.Component{
 
 
 
-                <div className="modal fade" id="tmp1_joblable_img">
+                <div className="modal fade" id="tmp5_joblable_img">
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -523,7 +524,7 @@ class Session4 extends React.Component{
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div className="modal-body text-center">
-                                <img src="/image/sample_01/04.png" alt="tmp1_joblable_img" width="100%" />
+                                <img src="/image/sample_05/04.png" alt="tmp5_joblable_img" width="100%" />
                             </div>
                             <div className="modal-footer">
                                 <p className="small">範例僅供參考</p>
@@ -532,7 +533,7 @@ class Session4 extends React.Component{
                     </div>
                 </div>
            
-                <div className="modal fade" id="tmp1_addjob">
+                <div className="modal fade" id="tmp5_addjob">
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
                             <div className="modal-header">

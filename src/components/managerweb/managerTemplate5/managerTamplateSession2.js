@@ -197,10 +197,6 @@ class Session2 extends React.Component{
                             <Msg type ='ERROR' value = {introductionErr} text= 'Opps! Error : ' />
                             <input type="hidden" id="themeNum2" value={themeNum} />
 
-                            <div><img src="/image/sample_01/02.png" alt="Temp1_Company" width="50%"/></div>
-                            <div><a type="button" data-toggle="modal" href="#tmp1_company">觀看放大圖例</a></div>
-                            <hr />
-
                             <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                             
                             <div className="form-row">
@@ -225,31 +221,67 @@ class Session2 extends React.Component{
                                 </div>
 
                                 <div className="col-md-6 mb-3">                                    
-                                    <div><img src="/image/sample_01/02-1.png" alt="Temp1_Company_title" width="100%"/></div>
+                                    <div><img src="/image/sample_05/02.png" alt="Temp5_Company" width="100%"/></div>
+                                    <div><a type="button" data-toggle="modal" href="#tmp5_company">觀看放大圖例</a></div>
                                     <hr />
                                     <div>
                                         <table border='1'>
                                             <thead>
-                                            <tr>
-                                                <th width="10%">項目</th>
-                                                <th width="35%">內容範例</th>
-                                                <th width="15%">規格</th>
-                                                <th width="40%">備註</th>
-                                            </tr>
+                                                <tr>
+                                                    <th width="10%">項目</th>
+                                                    <th width="35%">內容範例</th>
+                                                    <th width="15%">規格</th>
+                                                    <th width="40%">備註</th>
+                                                </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td>主標題</td>
-                                                <td align='left'>永豐餘品牌對人與環境的永續經營</td>
-                                                <td>15個字以內</td>
-                                                <td>不可空白</td>
-                                            </tr>
-                                            <tr>
-                                                <td>主內容</td>
-                                                <td align='left'>本公司擁有優秀的經營團隊，秉持著『◆安心宣言◆生態平衡◆達人堅持』的經營理念，追求企業永續經營及成長；除整體營運穩定外，獲利狀況也逐年提昇，是國內績優廠商之一。</td>
-                                                <td>80個字以內</td>
-                                                <td>不可空白</td>
-                                            </tr>
+                                                <tr>
+                                                    <td>主標題</td>
+                                                    <td align='left'>集陽由來</td>
+                                                    <td>25個字以內</td>
+                                                    <td>
+                                                        不可空白<br />
+                                                        <a type="button" data-toggle="modal" href="#tmp5_company_title">觀看範例圖片</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>主內容</td>
+                                                    <td align='left'>
+                                                        集陽綠能是由一群”熱血，瘋狂，健康”的好友們一同創建的團隊。
+                                                        在一次的聚會中，大夥談及各自的工作近況，衍生聊到什麼行業是對社會有貢獻又能對自己未來交代的行業呢？
+                                                        然而提及到〔太陽能〕，因看見這個行業有著友善環境又響應多年來”節能減碳推動再生能源”的趨勢，太陽能資源豐富，且無需運輸，對環境污染低。
+                                                        進而感覺這是一份有責任感的行業，因此開啟了集陽綠能這班列車。
+                                                    </td>
+                                                    <td>250個字以內</td>
+                                                    <td>
+                                                        不可空白<br />
+                                                        <a type="button" data-toggle="modal" href="#tmp5_company_content">觀看範例圖片</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>圖片一</td>
+                                                    <td align='left'>寬、高(px)</td>
+                                                    <td>360*300</td>
+                                                    <td align='left'>
+                                                        <ul>
+                                                            <li>接受格式為png、jpg</li>
+                                                            <li>不可空白</li>
+                                                            <li><a type="button" data-toggle="modal" href="#tmp5_company_pic01">觀看範例圖片</a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>圖片二</td>
+                                                    <td align='left'>寬、高(px)</td>
+                                                    <td>360*300</td>
+                                                    <td align='left'>
+                                                        <ul>
+                                                            <li>接受格式為png、jpg</li>
+                                                            <li>不可空白</li>
+                                                            <li><a type="button" data-toggle="modal" href="#tmp5_company_pic02">觀看範例圖片</a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -257,7 +289,7 @@ class Session2 extends React.Component{
                                 
                             </div>
 
-                            <div className="modal fade" id="tmp1_company">
+                            <div className="modal fade" id="tmp5_company">
                                 <div className="modal-dialog sample-img-width">
                                     <div className="modal-content">
                                         <div className="modal-header">
@@ -265,7 +297,71 @@ class Session2 extends React.Component{
                                             <button type="button" className="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <div className="modal-body text-center">
-                                            <img src="/image/sample_01/02.png" alt="tmp1_company" width="100%" />
+                                            <img src="/image/sample_05/02.png" alt="tmp5_company" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="modal fade" id="tmp5_company_title">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">公司簡介 - 主標題 範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_05/02-1.png" alt="tmp5_company_title" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="modal fade" id="tmp5_company_content">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">公司簡介 - 主內容 範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_05/02-2.png" alt="tmp5_company_content" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="modal fade" id="tmp5_company_pic01">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">公司簡介 - 圖片一 範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_05/02-3-1.png" alt="tmp5_company_pic01" width="100%" />
+                                        </div>
+                                        <div className="modal-footer">
+                                            <p className="small">範例僅供參考</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="modal fade" id="tmp5_company_pic02">
+                                <div className="modal-dialog sample-img-width">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <p className="modal-title">公司簡介 - 圖片二 範例</p>
+                                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div className="modal-body text-center">
+                                            <img src="/image/sample_05/02-3-2.png" alt="tmp5_company_pic02" width="100%" />
                                         </div>
                                         <div className="modal-footer">
                                             <p className="small">範例僅供參考</p>
@@ -298,9 +394,9 @@ class Session2 extends React.Component{
                                             </div>
 
                                             <div className="col-md-6 mb-3">
-                                                <div><img src="/image/sample_01/02-2.png" alt="Temp1_Company_subtitle01" width="100%"/></div>
+                                                <div><img src="/image/sample_05/02-4-1.png" alt="Temp5_Company_subtitle01" width="100%"/></div>
                                                 <div>
-                                                    <a type="button" data-toggle="modal" href="#tmp1_company_subtitle01">
+                                                    <a type="button" data-toggle="modal" href="#tmp5_company_subtitle01">
                                                         觀看放大圖例
                                                     </a>
                                                 </div>
@@ -308,38 +404,26 @@ class Session2 extends React.Component{
                                                 <div>
                                                     <table border='1'>
                                                         <thead>
-                                                        <tr>
-                                                            <th width="10%">項目</th>
-                                                            <th width="35%">內容範例</th>
-                                                            <th width="15%">規格</th>
-                                                            <th width="40%">備註</th>
-                                                        </tr>
+                                                            <tr>
+                                                                <th width="20%">項目</th>
+                                                                <th width="35%">內容範例</th>
+                                                                <th width="15%">規格</th>
+                                                                <th width="30%">備註</th>
+                                                            </tr>
                                                         </thead>
                                                         <tbody>
-                                                        <tr>
-                                                            <td>小標題1</td>
-                                                            <td align='left'>有機食材宅配服務</td>
-                                                            <td>11個字以內</td>
-                                                            <td>不可空白</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>小標題1 內容</td>
-                                                            <td align='left'>全方位的食材供應，從生產處理保存運送至宅配到府，層層把關，全程安心無污染，產品定期專業檢測。</td>
-                                                            <td>55個字以內</td>
-                                                            <td>不可空白</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>小標題1 圖片</td>
-                                                            <td align='left'>寬、高(px)</td>
-                                                            <td>724*500</td>
-                                                            <td>不可空白</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>小標題1 圖片文字</td>
-                                                            <td align='left'>有機食材宅配服務，讓家人的健康，安心零負擔</td>
-                                                            <td>20個字以內</td>
-                                                            <td>不可空白</td>
-                                                        </tr>
+                                                            <tr>
+                                                                <td>小標題1</td>
+                                                                <td align='left'>安全</td>
+                                                                <td>10個字以內</td>
+                                                                <td>不可空白</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>小標題1 內容</td>
+                                                                <td align='left'>系統支架擁有結構技師簽證，且由結構技師設計規劃，並計算其結構強度及抗風係數，故結構及材料均符合結構設計規範要求，結構強度安全無虞。</td>
+                                                                <td>100個字以內</td>
+                                                                <td>不可空白</td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -348,15 +432,15 @@ class Session2 extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                            <div className="modal fade" id="tmp1_company_subtitle01">
-                                <div className="modal-dialog modal-xl">
+                            <div className="modal fade" id="tmp5_company_subtitle01">
+                                <div className="modal-dialog sample-img-width">
                                     <div className="modal-content">
                                         <div className="modal-header">
-                                            <p className="modal-title">公司簡介 - 小標題一範例</p>
+                                            <p className="modal-title">公司簡介 - 小標題一 範例</p>
                                             <button type="button" className="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <div className="modal-body text-center">
-                                            <img src="/image/sample_01/02-2.png" alt="tmp1_company_subtitle01" width="100%" />
+                                            <img src="/image/sample_05/02-4-1.png" alt="tmp5_company_subtitle01" width="100%" />
                                         </div>
                                         <div className="modal-footer">
                                             <p className="small">範例僅供參考</p>
@@ -389,48 +473,36 @@ class Session2 extends React.Component{
                                             </div>
 
                                             <div className="col-md-6 mb-3">
-                                                <div><img src="/image/sample_01/02-3.png" alt="Temp1_Company_subtitle02" width="100%"/></div>
+                                                <div><img src="/image/sample_05/02-4-2.png" alt="Temp5_Company_subtitle02" width="100%"/></div>
                                                 <div>
-                                                    <a type="button" data-toggle="modal" href="#tmp1_company_subtitle02">
+                                                    <a type="button" data-toggle="modal" href="#tmp5_company_subtitle02">
                                                         觀看放大圖例
                                                     </a>
                                                 </div>
                                                 <hr />
                                                 <div>
-                                                    <table border='1'>
+                                                <table border='1'>
                                                         <thead>
-                                                        <tr>
-                                                            <th width="10%">項目</th>
-                                                            <th width="35%">內容範例</th>
-                                                            <th width="15%">規格</th>
-                                                            <th width="40%">備註</th>
-                                                        </tr>
+                                                            <tr>
+                                                                <th width="20%">項目</th>
+                                                                <th width="35%">內容範例</th>
+                                                                <th width="15%">規格</th>
+                                                                <th width="30%">備註</th>
+                                                            </tr>
                                                         </thead>
                                                         <tbody>
-                                                        <tr>
-                                                            <td>小標題2</td>
-                                                            <td align='left'>有機零售實體通路</td>
-                                                            <td>11個字以內</td>
-                                                            <td>不可空白</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>小標題2 內容</td>
-                                                            <td align='left'>一直以來我們分享的是一種生活態度，堅持不提供對客人健康不利的產品。</td>
-                                                            <td>55個字以內</td>
-                                                            <td>不可空白</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>小標題2 圖片</td>
-                                                            <td align='left'>寬、高(px)</td>
-                                                            <td>724*500</td>
-                                                            <td>不可空白</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>小標題2 圖片文字</td>
-                                                            <td align='left'>豐收滿溢，開創了一片美好的自然天地</td>
-                                                            <td>20個字以內</td>
-                                                            <td>不可空白</td>
-                                                        </tr>
+                                                            <tr>
+                                                                <td>小標題2</td>
+                                                                <td align='left'>整合服務</td>
+                                                                <td>10個字以內</td>
+                                                                <td>不可空白</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>小標題2 內容</td>
+                                                                <td align='left'>從太陽能系統評估、設計、申請台電併聯、簽證、施工、申請躉售及補助，到施工完成後的監控、保養、維修，以上所有複雜的流程全部都可由集陽綠能幫您完成。</td>
+                                                                <td>100個字以內</td>
+                                                                <td>不可空白</td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -440,15 +512,15 @@ class Session2 extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                            <div className="modal fade" id="tmp1_company_subtitle02">
-                                <div className="modal-dialog modal-xl">
+                            <div className="modal fade" id="tmp5_company_subtitle02">
+                                <div className="modal-dialog sample-img-width">
                                     <div className="modal-content">
                                         <div className="modal-header">
-                                            <p className="modal-title">公司簡介 - 小標題二範例</p>
+                                            <p className="modal-title">公司簡介 - 小標題二 範例</p>
                                             <button type="button" className="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <div className="modal-body text-center">
-                                            <img src="/image/sample_01/02-3.png" alt="tmp1_company_subtitle02" width="100%" />
+                                            <img src="/image/sample_05/02-4-2.png" alt="tmp5_company_subtitle02" width="100%" />
                                         </div>
                                         <div className="modal-footer">
                                             <p className="small">範例僅供參考</p>
@@ -482,48 +554,36 @@ class Session2 extends React.Component{
                                             </div>
                                             
                                             <div className="col-md-6 mb-3">
-                                                <div><img src="/image/sample_01/02-4.png" alt="Temp1_Company_subtitle03" width="100%"/></div>
+                                                <div><img src="/image/sample_05/02-4-3.png" alt="Temp5_Company_subtitle03" width="100%"/></div>
                                                 <div>
-                                                    <a type="button" data-toggle="modal" href="#tmp1_company_subtitle03">
+                                                    <a type="button" data-toggle="modal" href="#tmp5_company_subtitle03">
                                                         觀看放大圖例
                                                     </a>
                                                 </div>
                                                 <hr />
                                                 <div>
-                                                    <table border='1'>
+                                                <table border='1'>
                                                         <thead>
-                                                        <tr>
-                                                            <th width="10%">項目</th>
-                                                            <th width="35%">內容範例</th>
-                                                            <th width="15%">規格</th>
-                                                            <th width="40%">備註</th>
-                                                        </tr>
+                                                            <tr>
+                                                                <th width="20%">項目</th>
+                                                                <th width="35%">內容範例</th>
+                                                                <th width="15%">規格</th>
+                                                                <th width="30%">備註</th>
+                                                            </tr>
                                                         </thead>
                                                         <tbody>
-                                                        <tr>
-                                                            <td>小標題3</td>
-                                                            <td align='left'>從農場到餐桌的餐飲通路</td>
-                                                            <td>11個字以內</td>
-                                                            <td>不可空白</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>小標題3 內容</td>
-                                                            <td align='left'>邀請您一同成為大地及社區的有機生活管家。</td>
-                                                            <td>55個字以內</td>
-                                                            <td>不可空白</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>小標題3 圖片</td>
-                                                            <td align='left'>寬、高(px)</td>
-                                                            <td>724*500</td>
-                                                            <td>不可空白</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>小標題3 圖片文字</td>
-                                                            <td align='left'>讓您每一口，都能體會到達人的精神與味覺滿足</td>
-                                                            <td>20個字以內</td>
-                                                            <td>不可空白</td>
-                                                        </tr>
+                                                            <tr>
+                                                                <td>小標題3</td>
+                                                                <td align='left'>國家證照的施工保證</td>
+                                                                <td>10個字以內</td>
+                                                                <td>不可空白</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>小標題3 內容</td>
+                                                                <td align='left'>集陽綠能有合格的甲級電器承裝業登記執照，具有專業的現場監造團隊 : 甲種電匠及太陽光電設置乙級技術士，及擁有經驗豐富的施工團隊。</td>
+                                                                <td>100個字以內</td>
+                                                                <td>不可空白</td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -533,15 +593,15 @@ class Session2 extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                            <div className="modal fade" id="tmp1_company_subtitle03">
-                                <div className="modal-dialog modal-xl">
+                            <div className="modal fade" id="tmp5_company_subtitle03">
+                                <div className="modal-dialog sample-img-width">
                                     <div className="modal-content">
                                         <div className="modal-header">
-                                            <p className="modal-title">公司簡介 - 小標題三範例</p>
+                                            <p className="modal-title">公司簡介 - 小標題三 範例</p>
                                             <button type="button" className="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <div className="modal-body text-center">
-                                            <img src="/image/sample_01/02-4.png" alt="tmp1_company_subtitle03" width="100%" />
+                                            <img src="/image/sample_05/02-4-3.png" alt="tmp5_company_subtitle03" width="100%" />
                                         </div>
                                         <div className="modal-footer">
                                             <p className="small">範例僅供參考</p>

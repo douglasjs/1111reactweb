@@ -169,63 +169,63 @@ class Session2 extends React.Component{
          if(intro2Img === " "){
             intro2ImgUpload = "/image/logo-1111.png";
          }else{
-            intro2ImgUpload = this.state.intro2Img !==' ' ?  this.state.intro2ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro2Img}`;
+            intro2ImgUpload = this.state.intro2Img !== ' ' ?  this.state.intro2ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro2Img}`;
          }
 
          let intro3ImgUpload = "";
          if(intro3Img === " "){
             intro3ImgUpload = "/image/logo-1111.png";
          }else{
-            intro3ImgUpload = this.state.intro3Img !==' ' ?  this.state.intro3ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro3Img}`;
+            intro3ImgUpload = this.state.intro3Img !== ' ' ?  this.state.intro3ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro3Img}`;
          }
 
          let intro4ImgUpload ="";
          if(intro4Img === " "){
             intro4ImgUpload = "/image/logo-1111.png";
          }else{
-            intro4ImgUpload = this.state.intro4Img !==' ' ?  this.state.intro4ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro4Img}`;
+            intro4ImgUpload = this.state.intro4Img !== ' ' ?  this.state.intro4ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro4Img}`;
          }
 
          let intro5ImgUpload ="";
          if(intro5Img === " "){
             intro5ImgUpload = "/image/logo-1111.png";
          }else{
-            intro5ImgUpload = this.state.intro5Img !==' ' ?  this.state.intro5ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro5Img}`;
+            intro5ImgUpload = this.state.intro5Img !== ' ' ?  this.state.intro5ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro5Img}`;
          }
 
          let intro6ImgUpload ="";
          if(intro6Img === " "){
             intro6ImgUpload = "/image/logo-1111.png";
          }else{
-            intro6ImgUpload = this.state.intro6Img !==' ' ?  this.state.intro6ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro6Img}`;
+            intro6ImgUpload = this.state.intro6Img !== ' ' ?  this.state.intro6ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro6Img}`;
          }
 
          let intro7ImgUpload ="";
          if(intro7Img === " "){
             intro7ImgUpload = "/image/logo-1111.png";
          }else{
-            intro7ImgUpload = this.state.intro7Img !==' ' ?  this.state.intro7ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro7Img}`;
+            intro7ImgUpload = this.state.intro7Img !== ' ' ?  this.state.intro7ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro7Img}`;
          }
 
          let intro8ImgUpload ="";
          if(intro8Img === " "){
             intro8ImgUpload = "/image/logo-1111.png";
          }else{
-            intro8ImgUpload = this.state.intro8Img !==' ' ?  this.state.intro8ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro8Img}`;
+            intro8ImgUpload = this.state.intro8Img !== ' ' ?  this.state.intro8ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro8Img}`;
          }
 
          let intro9ImgUpload ="";
          if(intro9Img === " "){
             intro9ImgUpload = "/image/logo-1111.png";
          }else{
-            intro9ImgUpload = this.state.intro9Img !==' ' ?  this.state.intro9ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro9Img}`;
+            intro9ImgUpload = this.state.intro9Img !== ' ' ?  this.state.intro9ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro9Img}`;
          }
 
          let intro10ImgUpload ="";
          if(intro10Img === " "){
             intro10ImgUpload = "/image/logo-1111.png";
          }else{
-            intro10ImgUpload = this.state.intro10Img !==' ' ?  this.state.intro10ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro10Img}`;
+            intro10ImgUpload = this.state.intro10Img !== ' ' ?  this.state.intro10ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${intro10Img}`;
          }
 
 
