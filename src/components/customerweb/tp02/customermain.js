@@ -22,6 +22,7 @@ function CustomerMain(props){
                 description: '找工作送1萬元！前1,000名不必抽、人人有獎，1111推動幸福企業提供高薪、最好的福利等你來，找到工作立即送1萬元大紅包！速分享好友，他拿1萬元，你也有分享獎金1千元'
             }
             let styleSheet = [
+                '/assets/tp02/css/blue.css',
                 '/assets/tp02/css/responsive.css',
                 '/assets/tp02/css/topbutton.css'
             ]
@@ -40,7 +41,7 @@ function CustomerMain(props){
                     keywords: data[0].keyword,
                     description: data[0].description
                 }
-                styleSheet[2] = `/assets/tp02/css/${data[0].styleType}`;
+                styleSheet[0] = `/assets/tp02/css/${data[0].styleType}`;
                 logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
                 webURL = `https://1111.com.tw/brand/${cid}/${data[0].companyEName}`;
                 styleType = data[0].styleType;

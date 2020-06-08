@@ -27,6 +27,7 @@ function CustomerMain(props){
                 '/assets/tp06/vendors/font-awesome/css/font-awesome.min.css',
                 '/assets/tp06/css/theme-vendors.min.css',
                 '/assets/tp06/css/theme.min.css',
+                '/assets/tp06/css/blue.css',
                 '/assets/tp06/css/virtus-2.css',
             ]
             let email;
@@ -44,7 +45,7 @@ function CustomerMain(props){
                     keywords: data[0].keyword,
                     description: data[0].description
                 }
-                styleSheet[6] = `/assets/tp06/css/${data[0].styleType}`;
+                styleSheet[5] = `/assets/tp06/css/${data[0].styleType}`;
                 logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
                 webURL = `https://1111.com.tw/brand/${cid}/${data[0].companyEName}`;
                 styleType = data[0].styleType;
