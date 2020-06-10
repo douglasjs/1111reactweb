@@ -41,6 +41,7 @@ class CompanyCustomize extends React.Component {
         let customizeURL2;
         let customizeURL3;
         let customizeURL4;
+        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
 
         if(customizeData && customizeData.length > 0){
             customizeData.forEach(element => {
@@ -101,7 +102,7 @@ class CompanyCustomize extends React.Component {
 
                             <div className="events-content">
                                 <div className="content text-left">
-                                    <h3><a href="/#">{card1Title}</a></h3>
+                                    <h3><a href={companyurl}>{card1Title}</a></h3>
                                     <p>{card1Content}</p>
                                     <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag1}</span>
                                     <a target="_blank" rel="noopener noreferrer" href={customizeURL1} className="join-now-btn">了解更多</a>
@@ -125,7 +126,7 @@ class CompanyCustomize extends React.Component {
 
                             <div className="events-content">
                                 <div className="content text-left">
-                                    <h3><a href="/#">{card2Title}</a></h3>
+                                    <h3><a href={companyurl}>{card2Title}</a></h3>
                                     <p>{card2Content}</p>
                                     <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag2}</span>
                                     <a target="_blank" rel="noopener noreferrer" href={customizeURL2} className="join-now-btn">了解更多</a>
@@ -149,7 +150,7 @@ class CompanyCustomize extends React.Component {
 
                             <div className="events-content">
                                 <div className="content text-left">
-                                    <h3><a href="/#">{card3Title}</a></h3>
+                                    <h3><a href={companyurl}>{card3Title}</a></h3>
                                     <p>{card3Content}</p>
                                     <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag3}</span>
                                     <a target="_blank" rel="noopener noreferrer" href={customizeURL3} className="join-now-btn">了解更多</a>
@@ -174,7 +175,7 @@ class CompanyCustomize extends React.Component {
 
                             <div className="events-content">
                                 <div className="content text-left">
-                                    <h3><a href="/#">{card4Title}</a></h3>
+                                    <h3><a href={companyurl}>{card4Title}</a></h3>
                                     <p>{card4Content}</p>
                                     <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag4}</span>
                                     <a target="_blank" rel="noopener noreferrer" href={customizeURL4} className="join-now-btn">了解更多</a>

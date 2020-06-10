@@ -97,7 +97,7 @@ class CompanyCustomize extends React.Component {
                                             <img src={card1Img} alt="1111人力銀行客制化" />
                                         </div>
                                         <div className="service-item__txt text-left">
-                                            <h2 className="h6">{card1Title}</h2>
+                                            <h2 className="h6 card_height">{card1Title}</h2>
                                             <p className="p-hide-text-custom">{card1Content}</p>
                                         </div>
                                     </div>
@@ -107,7 +107,7 @@ class CompanyCustomize extends React.Component {
                                             <img src={card2Img} alt="1111人力銀行客制化" />
                                         </div>
                                         <div className="service-item__txt text-left">
-                                            <h2 className="h6">{card2Title}</h2>
+                                            <h2 className="h6 card_height">{card2Title}</h2>
                                             <p className="p-hide-text-custom">{card2Content}</p>
                                         </div>
                                     </div>
@@ -117,7 +117,7 @@ class CompanyCustomize extends React.Component {
                                             <img src={card3Img} alt="1111人力銀行客制化" />
                                         </div>
                                         <div className="service-item__txt text-left">
-                                            <h2 className="h6">{card3Title}</h2>
+                                            <h2 className="h6 card_height">{card3Title}</h2>
                                             <p className="p-hide-text-custom">{card3Content}</p>
                                         </div>
                                     </div>
@@ -127,7 +127,7 @@ class CompanyCustomize extends React.Component {
                                             <img src={card4Img} alt="1111人力銀行客制化" />	
                                         </div>
                                         <div className="service-item__txt text-left">
-                                            <h2 className="h6">{card4Title}</h2>
+                                            <h2 className="h6 card_height">{card4Title}</h2>
                                             <p className="p-hide-text-custom">{card4Content}</p>
                                         </div>
                                     </div>
@@ -137,7 +137,7 @@ class CompanyCustomize extends React.Component {
                                             <img src={card5Img} alt="1111人力銀行客制化" />	
                                         </div>
                                         <div className="service-item__txt text-left">
-                                            <h2 className="h6">{card5Title}</h2>
+                                            <h2 className="h6 card_height">{card5Title}</h2>
                                             <p className="p-hide-text-custom">{card5Content}</p>
                                         </div>
                                     </div>
@@ -147,7 +147,7 @@ class CompanyCustomize extends React.Component {
                                             <img src={card6Img} alt="1111人力銀行客制化" />	
                                         </div>
                                         <div className="service-item__txt text-left">
-                                            <h2 className="h6">{card6Title}</h2>
+                                            <h2 className="h6 card_height">{card6Title}</h2>
                                             <p className="p-hide-text-custom">{card6Content}</p>
                                         </div>
                                     </div>

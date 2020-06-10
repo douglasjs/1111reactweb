@@ -189,8 +189,8 @@ class Session3 extends React.Component{
                                                             rows='3' stateObj={this} required={true} checkValue='55' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <ImgUpload title='小標題1圖片 上傳' notice='(圖檔尺寸大小為 56*56，接受格式為png、jpg)' objName='benefitSubImg1' imgUpload={benefitSubImg1Upload} 
-                                                            imgFileName={benefitSubImg1} parentObj={this} imgW={56} imgH={56} required={true} />
+                                                        <ImgUpload title='小標題1圖片 上傳' notice='(圖檔尺寸大小為 70*70，接受格式為png、jpg)' objName='benefitSubImg1' imgUpload={benefitSubImg1Upload} 
+                                                            imgFileName={benefitSubImg1} parentObj={this} imgW={70} imgH={70} required={true} />
                                                     </div>
                                                 </div>
 
@@ -215,8 +215,8 @@ class Session3 extends React.Component{
                                                             rows='3' stateObj={this} required={true} checkValue='55' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <ImgUpload title='小標題2圖片 上傳' notice='(圖檔尺寸大小為 56*56，接受格式為png、jpg)' objName='benefitSubImg2' imgUpload={benefitSubImg2Upload} 
-                                                            imgFileName={benefitSubImg2} parentObj={this} imgW={56} imgH={56} required={true} />
+                                                        <ImgUpload title='小標題2圖片 上傳' notice='(圖檔尺寸大小為 70*70，接受格式為png、jpg)' objName='benefitSubImg2' imgUpload={benefitSubImg2Upload} 
+                                                            imgFileName={benefitSubImg2} parentObj={this} imgW={70} imgH={70} required={true} />
                                                     </div>
                                                 </div>
 
@@ -241,8 +241,8 @@ class Session3 extends React.Component{
                                                             rows='3' stateObj={this} required={true} checkValue='55' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <ImgUpload title='小標題3圖片 上傳' notice='(圖檔尺寸大小為 56*56，接受格式為png、jpg)' objName='benefitSubImg3' imgUpload={benefitSubImg3Upload} 
-                                                            imgFileName={benefitSubImg3} parentObj={this} imgW={56} imgH={56} required={true} />
+                                                        <ImgUpload title='小標題3圖片 上傳' notice='(圖檔尺寸大小為 70*70，接受格式為png、jpg)' objName='benefitSubImg3' imgUpload={benefitSubImg3Upload} 
+                                                            imgFileName={benefitSubImg3} parentObj={this} imgW={70} imgH={70} required={true} />
                                                     </div>
                                                 </div>
 
@@ -267,8 +267,8 @@ class Session3 extends React.Component{
                                                             rows='3' stateObj={this} required={true} checkValue='55' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <ImgUpload title='小標題4圖片 上傳' notice='(圖檔尺寸大小為 56*56，接受格式為png、jpg)' objName='benefitSubImg4' imgUpload={benefitSubImg4Upload} 
-                                                            imgFileName={benefitSubImg4} parentObj={this} imgW={56} imgH={56} required={true} />
+                                                        <ImgUpload title='小標題4圖片 上傳' notice='(圖檔尺寸大小為 70*70，接受格式為png、jpg)' objName='benefitSubImg4' imgUpload={benefitSubImg4Upload} 
+                                                            imgFileName={benefitSubImg4} parentObj={this} imgW={70} imgH={70} required={true} />
                                                     </div>
                                                 </div>
 
@@ -325,7 +325,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題1 圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>56*56</td>
+                                                <td>70*70</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
@@ -359,7 +359,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題2 圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>56*56</td>
+                                                <td>70*70</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
@@ -393,7 +393,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題3 圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>56*56</td>
+                                                <td>70*70</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
@@ -427,7 +427,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題4 圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>56*56</td>
+                                                <td>70*70</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>

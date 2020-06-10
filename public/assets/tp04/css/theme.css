@@ -5342,7 +5342,7 @@ body.archive.woocommerce #content ~ .lqd-main-footer-default {
 }
 .ld-sf {
   position: relative;
-  margin-bottom: 2em;
+  /*margin-bottom: 2em;*/
   /*
   * Form sizes
   */

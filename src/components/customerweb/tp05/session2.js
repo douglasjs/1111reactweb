@@ -57,13 +57,13 @@ class CompanyInfo extends React.Component{
                 <div id="company" className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-12 hide-xs">
-                            <div className="about-image">
+                            <div className="about-image text-left">
                                 <img src={introSubTitle1Img} alt="公司介紹" />
                                 <img src={introSubTitle2Img} alt="公司介紹" />
                             </div>
                         </div>
 
-                        <div className="col-lg-6 col-md-12">
+                        <div className="col-lg-6 col-md-12 text-left">
                             <div className="about-content">
                                 <span>About Us</span>
                                 <h2>{introTitle}</h2>

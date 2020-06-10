@@ -50,14 +50,12 @@ class CompanyTitle extends React.Component{
                         
                         <div className="banner-section" style={{backgroundImage: imgURL1}}>
                             <div className="d-table">
-                                <div className="d-table-cell text-center pb-20">
+                                <div className="d-table-cell text-center">
                                     <div className="container">
                                         <div className="banner-content s1_banner-content">
                                             <h4 className="text-white tp05_shadow">{companySubTitle1}</h4>
                                             <h1 className="tp05_shadow">{title}</h1>
-                                            <div className="btn-box">
-                                                <a href={companyurl} className="default-btn tp05_button" target="_blank" rel="noopener noreferrer">我要應徵 <span></span></a>                             
-                                            </div>
+                                            <a href={companyurl} className="default-btn pt-10" target="_blank" rel="noopener noreferrer">我要應徵 <span></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -65,14 +63,12 @@ class CompanyTitle extends React.Component{
                         </div>
                         <div className="banner-section" style={{backgroundImage: imgURL2}}>
                             <div className="d-table">
-                                <div className="d-table-cell text-center pb-20">
+                                <div className="d-table-cell text-center">
                                     <div className="container">
                                         <div className="banner-content s1_banner-content">
                                             <h4 className="text-white tp05_shadow">{companySubTitle2}</h4>
                                             <h1 className="tp05_shadow">{title2}</h1>
-                                            <div className="btn-box">
-                                                <a href={companyurl} className="default-btn tp05_button" target="_blank" rel="noopener noreferrer">我要應徵 <span></span></a>                             
-                                            </div>
+                                            <a href={companyurl} className="default-btn pt-10" target="_blank" rel="noopener noreferrer">我要應徵 <span></span></a>
                                         </div>
                                     </div>
                                 </div>

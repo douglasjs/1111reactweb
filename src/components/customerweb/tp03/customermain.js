@@ -93,7 +93,7 @@ function CustomerMain(props){
                             <div className="off-canvas-content">
                                 <div className="off-canvas-header">
                                     <div className="logo-area">
-                                        <a href="/#"><img src="image/tp03/logo.png" alt="Logo" /></a>
+                                        <a href={goButtonURL}><img src="image/tp03/logo.png" alt="Logo" /></a>
                                     </div>
                                     <div className="close-action">
                                         <button className="btn-close"><i className="pe-7s-close"></i></button>

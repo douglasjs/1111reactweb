@@ -1931,7 +1931,7 @@ body.archive.woocommerce #content ~ .lqd-main-footer-default { margin-top: 0; }
 @-webkit-keyframes formRotate360 { to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 @keyframes formRotate360 { to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 
-.ld-sf { position: relative; margin-bottom: 2em; /* Form sizes */ /* Input style */ /* Button positions */ /* Button style */ /* Shadows */ /* Shapes */ /* Border thickness */ /* Button Stats */ }
+.ld-sf { position: relative; /*margin-bottom: 2em;*/ /* Form sizes */ /* Input style */ /* Button positions */ /* Button style */ /* Shadows */ /* Shapes */ /* Border thickness */ /* Button Stats */ }
 
 .ld-sf input:focus { outline: none; }
 
@@ -9617,7 +9617,7 @@ MOBULE HEADER
 
 #benefit {margin-top: 2em;}
 
-.min-h-768 {height:500px; min-height: 768px; vertical-align: middle; -ms-flex-align:center; padding-left: 6rem;}
+.min-h-768 {height:500px; min-height: 768px; vertical-align: middle; -ms-flex-align:center; padding-left: 15%;}
 
 @media screen and (max-width: 1200px) {
 	.iconbox .iconbox-icon-container img[src$=".svg"], .iconbox .iconbox-icon-container object, .iconbox .iconbox-icon-container > svg, .iconbox .iconbox-icon-container > img {

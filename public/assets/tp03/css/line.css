@@ -31,3 +31,15 @@
 .job-min-height {
     min-height: 300px;
 }
+
+/* card height */
+
+.card_height {
+    height: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+    .card_height {
+        height: auto;
+    }
+}
