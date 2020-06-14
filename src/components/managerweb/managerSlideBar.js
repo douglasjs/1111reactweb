@@ -51,11 +51,11 @@ function ManagerSlideBar(props) {
               <li className="nav-item">
                 <a className="nav-link collapsed" href="/#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                   <i className="fas fa-fw fa-wrench"></i>
-                  <span>客製化網站模板設定</span>
+                  <span>模板設定</span>
                 </a>
                 <div id="collapseUtilities" className="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                   <div className="bg-white py-2 collapse-inner rounded">
-                    <h6 className="collapse-header">客製化網站模板設定</h6>
+                    <h6 className="collapse-header">模板設定</h6>
                     <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template1`, state: { detail: 'login' }}}>模板樣式 =1=</Link>
                     <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template2`, state: { detail: 'login' }}}>模板樣式 =2=</Link>
                     <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template3`, state: { detail: 'login' }}}>模板樣式 =3=</Link> 
@@ -65,6 +65,21 @@ function ManagerSlideBar(props) {
                   </div>
                 </div>
               </li>
+
+{/*
+              <li className="nav-item">
+                <a className="nav-link collapsed" href="/#" data-toggle="collapse" data-target="#collapsePictures" aria-expanded="true" aria-controls="collapsePictures">
+                  <i className="fas fa-fw fa-file"></i>
+                  <span>參考圖庫</span>
+                </a>
+                <div id="collapsePictures" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                  <div className="bg-white py-2 collapse-inner rounded">
+                    <h6 className="collapse-header">參考圖庫</h6>
+                    <Link className="collapse-item" to={{pathname:`/managerweb/managerPictures`, state: { detail: 'login' }}}>圖庫</Link>
+                  </div>
+                </div>
+              </li>
+*/}
 
               <hr className="sidebar-divider d-none d-md-block" />
 

@@ -1,11 +1,11 @@
 import React from 'react';
 
-function ManagerTemplate2(){
+function ManagerPictures(){
     return(
         <div className="container-fluid">
-            managerTemplate2
+            managerPictures
         </div>
     )
 }
 
-export default ManagerTemplate2;
+export default ManagerPictures;
