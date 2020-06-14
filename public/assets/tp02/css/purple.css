@@ -1076,7 +1076,7 @@ width: 100%;
 .banner-section .content-box{
   position: relative;
   display: block;
-  margin-right: -15px;
+  margin-right: -10px;
 }
 
 .banner-section .content-box:before{

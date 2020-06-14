@@ -1876,3 +1876,9 @@
 .text-left {
   text-align: left;
 }
+
+@media (min-width: 500px) {
+	.s1_width {
+    width: 80%;
+  }
+}

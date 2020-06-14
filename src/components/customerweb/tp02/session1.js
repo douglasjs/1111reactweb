@@ -54,7 +54,7 @@ class CompanyTitle extends React.Component{
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-12 col-sm-12 content-column">
-                            <div className="content-box text-left">
+                            <div className="content-box text-left s1_width">
                                 <h1>{title}</h1>
                                 <div className="text">{companySubTitle1}</div>
                                 <div className="btn-box">
