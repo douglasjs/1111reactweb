@@ -7959,7 +7959,7 @@ MOBULE HEADER
 @media screen and (max-width: 991px) { .countdown .countdown-section { -ms-flex-preferred-size: 45%; flex-basis: 45%; margin: 0.2352941176em 0; }
   .countdown .countdown-section:nth-child(3) + .countdown-sep { display: none; } }
 
-@media screen and (max-width: 480px) { .ld-fancy-heading h1{font-size: 36px;line-height: 1.4em;}.ld-fancy-heading h4{font-size: 20px;line-height: 1.7em;} .fancy-title h2, .fancy-box-header h3{font-size: 29px;} }
+@media screen and (max-width: 480px) { .ld-fancy-heading h1{font-size: 36px !important;line-height: 1.4em !important;}.ld-fancy-heading h4{font-size: 20px;line-height: 1.7em;} .fancy-title h2, .fancy-box-header h3{font-size: 29px;} }
 @media screen and (max-width: 480px) { .fancy-box .fancy-box-cell h3.text-primary {font-size: 20px;} }
 @media screen and (max-width: 480px) { .countdown .countdown-section { -ms-flex-preferred-size: 100%; flex-basis: 100%; }
   .countdown .countdown-sep { display: none; } }
