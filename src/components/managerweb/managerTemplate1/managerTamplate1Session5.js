@@ -160,10 +160,10 @@ class Session5 extends React.Component{
                                     <table border='1'>
                                         <thead>
                                         <tr>
-                                            <th width="10%">項目</th>
+                                            <th width="20%">項目</th>
                                             <th width="35%">內容</th>
                                             <th width="15%">規格</th>
-                                            <th width="40%">備註</th>
+                                            <th width="30%">備註</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -229,15 +229,15 @@ class Session5 extends React.Component{
                                         </tr>
                                         <tr>
                                             <td>品牌介紹圖片</td>
-                                            <td align='left'>寬、高(px)</td>
+                                            <td>寬、高(px)</td>
                                             <td>640*427</td>
-                                            <td>
+                                            <td align='left'>
                                                 <ul>
                                                     <li>接受格式為png、jpg</li>
                                                     <li>無輪播</li>
                                                     <li>不可空白</li>
-                                                </ul>
-                                                <a type="button" data-toggle="modal" href="#tmp1_brand">觀看範例圖片</a>
+                                                    <li><a type="button" data-toggle="modal" href="#tmp1_brand_pic">觀看範例圖片</a></li>
+                                                </ul>                                                
                                             </td>
                                         </tr>
                                         </tbody>
@@ -267,7 +267,7 @@ class Session5 extends React.Component{
                             <div className="modal-dialog modal-lg">
                                 <div className="modal-content">
                                     <div className="modal-header">
-                                        <p className="modal-title">品牌介紹 - 副標題1範例</p>
+                                        <p className="modal-title">品牌介紹 - 副標題1 範例</p>
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
@@ -284,7 +284,7 @@ class Session5 extends React.Component{
                             <div className="modal-dialog modal-lg">
                                 <div className="modal-content">
                                     <div className="modal-header">
-                                        <p className="modal-title">品牌介紹 - 副標題2範例</p>
+                                        <p className="modal-title">品牌介紹 - 副標題2 範例</p>
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
@@ -301,7 +301,7 @@ class Session5 extends React.Component{
                             <div className="modal-dialog modal-lg">
                                 <div className="modal-content">
                                     <div className="modal-header">
-                                        <p className="modal-title">品牌介紹 - 副標題3範例</p>
+                                        <p className="modal-title">品牌介紹 - 副標題3 範例</p>
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
@@ -312,7 +312,24 @@ class Session5 extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
+
+                        <div className="modal fade" id="tmp1_brand_pic">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">品牌介紹 - 圖片 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_01/05-4.png" alt="tmp1_brand_pic" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

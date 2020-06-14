@@ -330,10 +330,10 @@ class Session6 extends React.Component{
                                     <table border='1'>
                                         <thead>
                                         <tr>
-                                            <th width="10%">項目</th>
+                                            <th width="20%">項目</th>
                                             <th width="35%">內容範例</th>
                                             <th width="15%">規格</th>
-                                            <th width="40%">備註</th>
+                                            <th width="30%">備註</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -389,7 +389,7 @@ class Session6 extends React.Component{
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
-                                        <p className="modal-title">自定區域 - 自訂選單範例</p>
+                                        <p className="modal-title">自定區域 - 自訂選單 範例</p>
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
@@ -405,7 +405,7 @@ class Session6 extends React.Component{
                             <div className="modal-dialog sample-img-width">
                                 <div className="modal-content">
                                     <div className="modal-header">
-                                        <p className="modal-title">自定區域 - 標題範例</p>
+                                        <p className="modal-title">自定區域 - 主/副標題 範例</p>
                                         <button type="button" className="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div className="modal-body text-center">
@@ -442,7 +442,7 @@ class Session6 extends React.Component{
                                         <div className="col-md-6 mb-3">                                    
                                             <div><img src="/image/sample_01/06-2.png" alt="Temp1_Customize" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp1_customize_card01">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -451,10 +451,10 @@ class Session6 extends React.Component{
                                                 <table border='1'>
                                                     <thead>
                                                     <tr>
-                                                        <th width="10%">項目</th>
+                                                        <th width="20%">項目</th>
                                                         <th width="35%">內容範例</th>
                                                         <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
+                                                        <th width="30%">備註</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
@@ -477,9 +477,9 @@ class Session6 extends React.Component{
                                                     </tr>
                                                     <tr>
                                                         <td>卡片1圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
+                                                        <td>寬、高(px)</td>
                                                         <td>350*350</td>
-                                                        <td>
+                                                        <td align='left'>
                                                             <ul>
                                                                 <li>接受格式為png、jpg</li>
                                                                 <li>不可空白</li>
@@ -490,6 +490,22 @@ class Session6 extends React.Component{
                                                 </table>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp1_customize_card01">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片一 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_01/06-1-1.png" alt="tmp1_customize_card01" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>
@@ -521,7 +537,7 @@ class Session6 extends React.Component{
                                        <div className="col-md-6 mb-3">                                    
                                             <div><img src="/image/sample_01/06-3.png" alt="Temp1_Customize" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp1_customize_card02">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -530,10 +546,10 @@ class Session6 extends React.Component{
                                                 <table border='1'>
                                                     <thead>
                                                     <tr>
-                                                        <th width="10%">項目</th>
+                                                        <th width="20%">項目</th>
                                                         <th width="35%">內容範例</th>
                                                         <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
+                                                        <th width="30%">備註</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
@@ -556,9 +572,9 @@ class Session6 extends React.Component{
                                                     </tr>
                                                     <tr>
                                                         <td>卡片2圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
+                                                        <td>寬、高(px)</td>
                                                         <td>350*350</td>
-                                                        <td>
+                                                        <td align='left'>
                                                             <ul>
                                                                 <li>接受格式為png、jpg</li>
                                                                 <li>不可空白</li>
@@ -569,6 +585,22 @@ class Session6 extends React.Component{
                                                 </table>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp1_customize_card02">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片二 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_01/06-1-2.png" alt="tmp1_customize_card02" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>
@@ -600,7 +632,7 @@ class Session6 extends React.Component{
                                         <div className="col-md-6 mb-3">                                    
                                             <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp1_customize_card03">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -609,10 +641,10 @@ class Session6 extends React.Component{
                                                 <table border='1'>
                                                     <thead>
                                                     <tr>
-                                                        <th width="10%">項目</th>
+                                                        <th width="20%">項目</th>
                                                         <th width="35%">內容範例</th>
                                                         <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
+                                                        <th width="30%">備註</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
@@ -635,9 +667,9 @@ class Session6 extends React.Component{
                                                     </tr>
                                                     <tr>
                                                         <td>卡片3圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
+                                                        <td>寬、高(px)</td>
                                                         <td>350*350</td>
-                                                        <td>
+                                                        <td align='left'>
                                                             <ul>
                                                                 <li>接受格式為png、jpg</li>
                                                                 <li>不可空白</li>
@@ -648,6 +680,22 @@ class Session6 extends React.Component{
                                                 </table>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp1_customize_card03">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片三 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_01/06-1-3.png" alt="tmp1_customize_card03" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>
@@ -679,7 +727,7 @@ class Session6 extends React.Component{
                                         <div className="col-md-6 mb-3">                                    
                                             <div><img src="/image/sample_01/06-5.png" alt="Temp1_Customize" /></div>
                                             <div>
-                                                <a type="button" data-toggle="modal" href="#tmp1_customize">
+                                                <a type="button" data-toggle="modal" href="#tmp1_customize_card04">
                                                     觀看放大圖例
                                                 </a>
                                             </div>
@@ -688,10 +736,10 @@ class Session6 extends React.Component{
                                                 <table border='1'>
                                                     <thead>
                                                     <tr>
-                                                        <th width="10%">項目</th>
+                                                        <th width="20%">項目</th>
                                                         <th width="35%">內容範例</th>
                                                         <th width="15%">規格</th>
-                                                        <th width="40%">備註</th>
+                                                        <th width="30%">備註</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
@@ -714,9 +762,9 @@ class Session6 extends React.Component{
                                                     </tr>
                                                     <tr>
                                                         <td>卡片4圖片</td>
-                                                        <td align='left'>寬、高(px)</td>
+                                                        <td>寬、高(px)</td>
                                                         <td>350*350</td>
-                                                        <td>
+                                                        <td align='left'>
                                                             <ul>
                                                                 <li>接受格式為png、jpg</li>
                                                                 <li>不可空白</li>
@@ -727,6 +775,22 @@ class Session6 extends React.Component{
                                                 </table>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp1_customize_card04">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">自定區域 - 卡片四 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_01/06-1-4.png" alt="tmp1_customize_card04" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
                                     </div>
                                 </div>
                             </div>

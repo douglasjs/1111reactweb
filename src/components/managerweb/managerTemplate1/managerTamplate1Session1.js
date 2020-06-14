@@ -179,35 +179,44 @@ class Session1 extends React.Component{
                                                 <th width="40%">備註</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>背景圖</td>
-                                                <td align='left'>寬、高(px)</td>
-                                                <td>1920*1080</td>
-                                                <td>
-                                                    <ul>
-                                                        <li>接受格式為png、jpg</li>
-                                                        <li>最多可上傳兩張底圖來輪播</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
+                                        <tbody>                                            
                                             <tr>
                                                 <td>大標題</td>
                                                 <td align='left'>永豐餘生技</td>
                                                 <td>5個字以內</td>
-                                                <td>不可空白</td>
+                                                <td>
+                                                    不可空白<br />
+                                                    <a type="button" data-toggle="modal" href="#tmp1_banner_title">觀看範例圖片</a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>副標題1</td>
                                                 <td align='left'>期許作為一個專業及熱情的有機生活管家，貼心的讓客人輕鬆的享受有機生活。</td>
                                                 <td>40個字以內</td>
-                                                <td>不可空白</td>
+                                                <td>
+                                                    不可空白<br />
+                                                    <a type="button" data-toggle="modal" href="#tmp1_banner_subtitle_01">觀看範例圖片</a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>副標題2</td>
                                                 <td align='left'>歡迎優秀的朋友一起加入</td>
                                                 <td>15個字以內</td>
-                                                <td>可自行輸入</td>
+                                                <td>
+                                                    不可空白<br />
+                                                    <a type="button" data-toggle="modal" href="#tmp1_banner_subtitle_02">觀看範例圖片</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>背景圖</td>
+                                                <td>寬、高(px)</td>
+                                                <td>1920*1080</td>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>接受格式為png、jpg</li>
+                                                        <li>最多可上傳兩張底圖來輪播</li>
+                                                    </ul>
+                                                </td>
                                             </tr>
                                         </tbody>                                        
                                     </table>
@@ -225,6 +234,54 @@ class Session1 extends React.Component{
                             </div>
                             <div className="modal-body text-center">
                                 <img src="/image/sample_01/01.png" alt="tmp1_banner" width="100%" />
+                            </div>
+                            <div className="modal-footer">
+                                <p className="small">範例僅供參考</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="tmp1_banner_title">
+                    <div className="modal-dialog sample-img-width">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <p className="modal-title">主視覺 - 大標題 範例</p>
+                                <button type="button" className="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div className="modal-body text-center">
+                                <img src="/image/sample_01/01-1.png" alt="tmp1_banner_title" width="100%" />
+                            </div>
+                            <div className="modal-footer">
+                                <p className="small">範例僅供參考</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="tmp1_banner_subtitle_01">
+                    <div className="modal-dialog sample-img-width">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <p className="modal-title">主視覺 - 副標題1 範例</p>
+                                <button type="button" className="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div className="modal-body text-center">
+                                <img src="/image/sample_01/01-2.png" alt="tmp1_banner_subtitle_01" width="100%" />
+                            </div>
+                            <div className="modal-footer">
+                                <p className="small">範例僅供參考</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="tmp1_banner_subtitle_02">
+                    <div className="modal-dialog sample-img-width">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <p className="modal-title">主視覺 - 副標題2 範例</p>
+                                <button type="button" className="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div className="modal-body text-center">
+                                <img src="/image/sample_01/01-3.png" alt="tmp1_banner_subtitle_02" width="100%" />
                             </div>
                             <div className="modal-footer">
                                 <p className="small">範例僅供參考</p>

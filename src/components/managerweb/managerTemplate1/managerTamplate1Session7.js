@@ -201,10 +201,10 @@ class Session7 extends React.Component{
                                         <table border='1'>
                                             <thead>
                                             <tr>
-                                                <th width="10%">項目</th>
+                                                <th width="20%">項目</th>
                                                 <th width="35%">內容</th>
                                                 <th width="15%">規格</th>
-                                                <th width="40%">備註</th>
+                                                <th width="30%">備註</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -212,19 +212,25 @@ class Session7 extends React.Component{
                                                 <td>常見問題標題</td>
                                                 <td align='left'>公司經營理念?</td>
                                                 <td>30個字以內</td>
-                                                <td>至少2則以上內容，才能輪播；<br />最多能輸入5則。</td>
+                                                <td>
+                                                    能輸入5則常見問題<br />
+                                                    <a type="button" data-toggle="modal" href="#tmp1_faq_title">觀看放大圖例</a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>常見問題內容</td>
                                                 <td align='left'>本公司擁有優秀的經營團隊，秉持著『◆安心宣言◆生態平衡◆達人堅持』的經營理念，追求企業永續經營及成長；除整體營運穩定外，獲利狀況也逐年提昇，是國內績優廠商之一。 我們更希望能屏除一般人對於天然食物口味上的既定印象，帶給消費者既健康又安全、可口的好味道。</td>
                                                 <td>135個字以內</td>
-                                                <td>至少2則以上內容，才能輪播；<br />最多能輸入5則。</td>
+                                                <td>
+                                                    能輸入5則常見問題內容<br />
+                                                    <a type="button" data-toggle="modal" href="#tmp1_faq_content">觀看放大圖例</a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>常見問題背景圖片</td>
-                                                <td align='left'>寬、高(px)</td>
-                                                <td>1920*1080</td>
-                                                <td>
+                                                <td>寬、高(px)</td>
+                                                <td>1920*400</td>
+                                                <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
                                                         <li>不可空白</li>
@@ -247,6 +253,38 @@ class Session7 extends React.Component{
                                     </div>
                                     <div className="modal-body text-center">
                                         <img src="/image/sample_01/07.png" alt="tmp1_faq" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp1_faq_title">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">常見問題 - 標題 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_01/07-1.png" alt="tmp1_faq_title" width="100%" />
+                                    </div>
+                                    <div className="modal-footer">
+                                        <p className="small">範例僅供參考</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal fade" id="tmp1_faq_content">
+                            <div className="modal-dialog sample-img-width">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <p className="modal-title">常見問題 - 內容 範例</p>
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div className="modal-body text-center">
+                                        <img src="/image/sample_01/07-2.png" alt="tmp1_faq_content" width="100%" />
                                     </div>
                                     <div className="modal-footer">
                                         <p className="small">範例僅供參考</p>

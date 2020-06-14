@@ -93,18 +93,18 @@ class Session8 extends React.Component{
                                         <table border='1' width="100%">
                                             <thead>
                                             <tr>
-                                                <th width="10%">項目</th>
+                                                <th width="20%">項目</th>
                                                 <th width="35%">內容</th>
                                                 <th width="15%">規格</th>
-                                                <th width="40%">備註</th>
+                                                <th width="30%">備註</th>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr>
                                                 <td>連絡我們背景圖片</td>
-                                                <td align='left'>寬、高(px)</td>
+                                                <td>寬、高(px)</td>
                                                 <td>1920*1080</td>
-                                                <td>
+                                                <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
                                                         <li>不可空白</li>
