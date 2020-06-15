@@ -65,21 +65,18 @@ function ManagerSlideBar(props) {
                   </div>
                 </div>
               </li>
-
-{/*
               <li className="nav-item">
                 <a className="nav-link collapsed" href="/#" data-toggle="collapse" data-target="#collapsePictures" aria-expanded="true" aria-controls="collapsePictures">
-                  <i className="fas fa-fw fa-file"></i>
+                  <i className="fas fa-fw fa-images"></i>
                   <span>參考圖庫</span>
                 </a>
                 <div id="collapsePictures" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                   <div className="bg-white py-2 collapse-inner rounded">
                     <h6 className="collapse-header">參考圖庫</h6>
-                    <Link className="collapse-item" to={{pathname:`/managerweb/managerPictures`, state: { detail: 'login' }}}>圖庫</Link>
+                    <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/imageGallery`, state: { detail: 'login' }}}>圖庫</Link>
                   </div>
                 </div>
               </li>
-*/}
 
               <hr className="sidebar-divider d-none d-md-block" />
 

@@ -2,6 +2,8 @@ import React from 'react';
 import CustomerWeb from './components/customerweb/index';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
+import TagManager from 'react-gtm-module'
+
 //Redux 
 import {bindActionCreators} from 'redux';
 import {connect, Provider} from 'react-redux';
@@ -23,7 +25,7 @@ import ManagerTemplate4 from './components/managerweb/managerTemplate4/managerTe
 import ManagerTemplate5 from './components/managerweb/managerTemplate5/managerTemplate5';
 import ManagerTemplate6 from './components/managerweb/managerTemplate6/managerTemplate6';
 import ManagerLogin from './components/managerweb/managerLogin';
-
+import imageGallery from './components/managerweb/managerPictures';
 
 import './App.css';
 
@@ -41,6 +43,12 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
+const tagManagerArgs = {
+  gtmId: 'GTM-TCHT6C6'
+}
+
+TagManager.initialize(tagManagerArgs)
+
 const WithManagerMain = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerMain));
 const WithGerneralSetting = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerGeneralSetting));
 const WithManagerTemplate1 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate1));
@@ -49,6 +57,7 @@ const WithManagerTemplate3 = withManagerWeb(connect(mapStateToProps, mapDispatch
 const WithManagerTemplate4 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate4));
 const WithManagerTemplate5 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate5));
 const WithManagerTemplate6 = withManagerWeb(connect(mapStateToProps, mapDispatchToProps)(ManagerTemplate6));
+const WithImageGallery = withManagerWeb(imageGallery);
 const ConnectCustomerWeb = connect(mapStateToProps, mapDispatchToProps)(CustomerWeb);
 
 function App() {
@@ -73,6 +82,7 @@ function App() {
                   <Route exact path="/managerweb/:cid/template5" component={WithManagerTemplate5} />
                   <Route exact path="/managerweb/:cid/template6" component={WithManagerTemplate6} />
                   <Route exact path="/managerweb/:cid/preview/:themNum" component={ConnectCustomerWeb} />
+                  <Route exact path="/managerweb/:cid/imageGallery" component={WithImageGallery} />
                   <Route exact path="/:cid/:enName" component={ConnectCustomerWeb} />
               </Switch>
              </BrowserRouter>

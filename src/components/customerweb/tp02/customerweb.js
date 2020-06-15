@@ -13,7 +13,6 @@ function CustomerWeb(props) {
         '/assets/tp02/js/bootstrap.min.js',
         '/assets/tp02/js/owl.js',
         '/assets/tp02/js/wow.js',
-        '/assets/tp02/js/validation.js',
         '/assets/tp02/js/jquery.fancybox.js',
         '/assets/tp02/js/appear.js',
         '/assets/tp02/js/aos.js',
