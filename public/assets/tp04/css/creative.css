@@ -295,7 +295,7 @@ div.ld-fancy-heading h1 {
 }
 
 .brand-content {
-  min-height: 5em !important;
+  height: 180px !important;
 }
 
 @media (max-width: 1440px) {
@@ -316,6 +316,9 @@ div.ld-fancy-heading h1 {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .brand-content {
+    height: auto !important;
+  }
 }
 
 @media (max-width: 375px) {
@@ -324,6 +327,9 @@ div.ld-fancy-heading h1 {
   }
   .main-header-overlay{
     padding-left: 1rem;
+  }
+  .brand-content {
+    height: auto !important;
   }
 }
 

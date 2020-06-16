@@ -131,8 +131,8 @@ class Session5 extends React.Component{
                                             stateObj={this} required={true} checkValue='4' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題1內文 ' notice='(字數限制為120個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
-                                            rows='3' stateObj={this} required={true} checkValue='120'/>
+                                        <InputTextArea title='品牌介紹副標題1內文 ' notice='(字數限制為104個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
+                                            rows='3' stateObj={this} required={true} checkValue='104'/>
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputText title='品牌介紹小標題1' notice='(字數限制為8個字以內)' inputName='brandURL1' inputState={brandURL1}
@@ -147,8 +147,8 @@ class Session5 extends React.Component{
                                             stateObj={this} required={true} checkValue='4' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題2內文 ' notice='(字數限制為120個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
-                                            rows='3' stateObj={this} required={true} checkValue='120' />
+                                        <InputTextArea title='品牌介紹副標題2內文 ' notice='(字數限制為104個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
+                                            rows='3' stateObj={this} required={true} checkValue='104' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputText title='品牌介紹小標題2' notice='(字數限制為8個字以內)' inputName='brandURL2' inputState={brandURL2}
@@ -195,7 +195,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹標題1內文</td>
                                                 <td align='left'>【食材安心】、【製作用心】、【銷售放心】，是亞尼克一直堅持的理念，亞尼克打破傳統以來，好蛋糕必須高價位的刻板印象，用高品質，高成本的原料但平易近人的價位，讓來到亞尼克享用甜點的客人，感受到物超所值的幸福滋味。</td>
-                                                <td>120個字以內</td>
+                                                <td>104個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp4_brand_content01">觀看範例圖片</a>
@@ -234,7 +234,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹標題2內文</td>
                                                 <td align='left'>20年來「不偷工、不減料、新鮮製作、新鮮販售」，希望精心製作的甜點，能讓顧客吃過後，洋溢著幸福的微笑，就像拍照時Say Cheese一樣的開心！</td>
-                                                <td>120個字以內</td>
+                                                <td>104個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp4_brand_content02">觀看範例圖片</a>
