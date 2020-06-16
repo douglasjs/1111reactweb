@@ -131,3 +131,15 @@
   font-size: 30px;
   font-weight: bold;
 }
+
+.pictures_pt{
+  padding-top: 3rem;
+}
+
+.pictures_pb{
+  padding-bottom: 3rem;
+}
+
+.text-black {
+  color: black;
+}
