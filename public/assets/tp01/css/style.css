@@ -96,7 +96,7 @@ h6 {
 .main-nav > li > a {
   font-size: 17px;
   letter-spacing: 0.02em;
-  color: #fff;
+  color: #000;
 }
 
 .main-nav > li.is-active > a,
@@ -632,11 +632,11 @@ h6 {
   color: var(--color-primary) !important;
 }
 
-@media screen and (min-width: 1025px) {
+/*@media screen and (min-width: 1025px) {
   .mainbar-wrap:not(.is-stuck) .nav-header-text {
     text-shadow:1px 1px #000000;
   }
-}
+}*/
 
 @media screen and (max-width: 1199px){
   .main-header .navbar-header { 
@@ -714,4 +714,14 @@ h6 {
 
 .text-gray {
   color: #333333 !important;
+}
+
+@media screen and (max-width: 1199px){
+  .main-header .navbar-brand {
+      margin-right: auto;
+  }
+  ul.nav.main-nav > li > a {
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
 }

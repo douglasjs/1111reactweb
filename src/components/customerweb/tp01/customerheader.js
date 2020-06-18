@@ -37,7 +37,7 @@ const NavMain = (props) => {
     ]
 
     return (
-        <div className="collapse navbar-collapse" id="main-header-collapse">
+        <div className="collapse navbar-collapse" id="main-header-collapse" aria-expanded="false" role="tablist">
             <ul id="primary-nav" className="main-nav nav align-items-lg-stretch justify-content-lg-end" data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }'>
                 {menuList.map((item, index) => {
                     return item.enable &&
@@ -101,14 +101,15 @@ function CustomerHeader(props) {
     }
 
     return (
-            <header className="main-header main-header-overlay" data-react-to-megamenu="true" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
+            <header className="main-header main-header-overlay bg-white" data-sticky-header="true">
                 <div className="mainbar-wrap">
-                <span className="megamenu-hover-bg"></span>
-                <div className="container-fluid mainbar-container">
+                <div className="container mainbar-container">
                     <div className="mainbar">
-                        <div className="row mainbar-row align-items-lg-stretch px-4">
-                            <div className="col-auto">
+                        <div className="row mainbar-row align-items-lg-stretch">
+                            <div className="col">
                                 <NavBar logURL={logURL} logoURL={logoURL}/>
+                            </div>
+                            <div className="col text-right">
                                 <NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
                             </div>
                         </div>
