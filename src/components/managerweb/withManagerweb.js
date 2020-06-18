@@ -52,8 +52,10 @@ const withManagerWeb = Componet => props => {
         <div id="page-top">
             <TitleSet title={companyName} meta={companyMeta} style={styleSheet} script={URL} />
             <div id="wrapper">
-                <ManagerSlideBar {...props}/>
-                <div id="content-wrapper" className="d-flex flex-column">
+
+                <div className="slidebar-fix"><ManagerSlideBar {...props}/></div>                
+                
+                <div id="content-wrapper" className="d-flex flex-column content-position">
                     <div id="content">
                         <ManagerContentMainToolbar  {...props}/>
                         <Componet {...props}/>
