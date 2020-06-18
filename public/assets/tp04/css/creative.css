@@ -294,7 +294,7 @@ div.ld-fancy-heading h1 {
   -webkit-line-clamp: 5 !important;
 }
 
-.brand-content {
+.brand-content-tp04 {
   height: 180px !important;
 }
 
@@ -316,7 +316,7 @@ div.ld-fancy-heading h1 {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .brand-content {
+  .brand-content-tp04 {
     height: auto !important;
   }
 }
@@ -328,7 +328,7 @@ div.ld-fancy-heading h1 {
   .main-header-overlay{
     padding-left: 1rem;
   }
-  .brand-content {
+  .brand-content-tp04 {
     height: auto !important;
   }
 }

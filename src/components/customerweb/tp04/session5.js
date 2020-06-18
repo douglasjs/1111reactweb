@@ -67,7 +67,7 @@ class CompanyBrand extends React.Component {
 
 								<div className="testimonial testimonial-quote-filled text-center">
 
-									<div className="testimonial-quote bg-light-creative">
+									<div className="testimonial-quote bg-light-creative brand-content-tp04">
 										<blockquote>
 											<p className="font-size-18 line-4">{brandTitleSub1Content}</p>
 										</blockquote>
@@ -92,7 +92,7 @@ class CompanyBrand extends React.Component {
 
 								<div className="testimonial testimonial-quote-filled text-center testimonial-quote-shadowed">
 
-									<div className="testimonial-quote brand-content" >
+									<div className="testimonial-quote brand-content brand-content-tp04" >
 										<blockquote>
 											<p className="font-size-18 line-4">{brandTitleSub2Content}</p>
 										</blockquote>
