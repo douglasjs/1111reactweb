@@ -13,6 +13,8 @@ function InputText(props){
         that.setState({ ...that.state, [name]: word});
     };
 
+    console.log(props);
+
     return(
         <div className="form-row">
 
