@@ -5,6 +5,7 @@ function InputText(props){
     
     const handleChange = ( name, that, checkValue, title, required ) => event => {
         let word = event.target.value;
+        console.log(word);
         if (required === "true"){word = emptyCheck(word, title);}        
         word = numCheck(word, checkValue, title );
         that.setState({ ...that.state, [name]: word});
