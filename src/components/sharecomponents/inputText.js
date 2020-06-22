@@ -5,10 +5,7 @@ function InputText(props){
     
     const handleChange = ( name, that, checkValue, title, required ) => event => {
         let word = event.target.value;
-        console.log(word);
-        
-        console.log(required);
-        if (required === true){word = emptyCheck(word, title);console.log(emptyCheck(word, title))}        
+        if (required === true){word = emptyCheck(word, title)};       
         word = numCheck(word, checkValue, title );
         that.setState({ ...that.state, [name]: word});
     };
@@ -25,7 +22,7 @@ function InputText(props){
                 <em className='text-primary'>{props.notice} </em>
             </label>
             <input type="text" className={`form-control`} id={props.inputName} placeholder={props.title}   
-            value={props.inputState} onChange={handleChange(props.inputName, props.stateObj, props.checkValue, props.title)}  required={props.required} />
+            value={props.inputState} onChange={handleChange(props.inputName, props.stateObj, props.checkValue, props.title, props.required)} />
                 
             { /*props.required &&
                 <div className="invalid-feedback">
