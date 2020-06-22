@@ -12,10 +12,10 @@ function strNumLimite( str, number ){
     return str.substring(0,str.length-1 > number ? number-1: str.length-1 );
 }
 
-const emptyCheck = (value, title) => {
+const emptyCheck = (value, title, oldValue) => {
     if (value.length === 0){
         alert(title + '不可以空白');
-        return " ";
+        return oldValue;
     }else{
         return value;
     }
