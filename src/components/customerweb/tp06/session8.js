@@ -69,11 +69,11 @@ class CompanyContact extends React.Component {
 
     render(){
         const { contactData} = this.props.contactReducer;
-        const { email_data } = this.props.emailReducer;
+        //const { email_data } = this.props.emailReducer;
 
         let contactEnable;
 
-        const emailMsg = email_data && email_data.length > 0 ? email_data[0].msg : ""; 
+        //const emailMsg = email_data && email_data.length > 0 ? email_data[0].msg : ""; 
 
         if(contactData && contactData.length > 0){
             contactData.forEach(element => {
@@ -96,7 +96,7 @@ class CompanyContact extends React.Component {
 									<header className="fancy-title">
 										<h2 className="text-left">聯絡我們</h2>
 										<p>We are here to answer any question you may have</p>
-										<p>{emailMsg}</p>
+										{/*<p>{emailMsg}</p>*/}
 									</header>
 
 								</div>

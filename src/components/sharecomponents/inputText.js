@@ -7,7 +7,6 @@ function InputText(props){
         let word = event.target.value.trimStart();
         if (required === true){word = emptyCheck(word, title, that.state[name])};    
         word = numCheck(word, checkValue, title );
-        console.log(word);
         that.setState({ ...that.state, [name]: word});
     };
 

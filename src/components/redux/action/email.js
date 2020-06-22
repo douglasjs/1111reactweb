@@ -52,7 +52,8 @@ const getEmail = (data) =>{
             })
             .then(response => {
                 //setTimeout(() => {
-                    dispatch(getEmailSuccess(response.data));
+                dispatch(getEmailSuccess(response.data));
+                alert("感謝您！您寶貴的意見，已成功送出！");
                 //}, 1000);
               }
             

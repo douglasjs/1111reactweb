@@ -71,12 +71,12 @@ class CompanyContact extends React.Component {
     render(){
         //const cid = this.props.match.params.cid.trim();
         const { contactData} = this.props.contactReducer;
-        const { email_data } = this.props.emailReducer;
+        //const { email_data } = this.props.emailReducer;
        
 
         let contactEnable;
 
-        const emailMsg = email_data && email_data.length > 0 ? email_data[0].msg : ""; 
+        //const emailMsg = email_data && email_data.length > 0 ? email_data[0].msg : ""; 
 
 
         if(contactData && contactData.length > 0){
@@ -99,7 +99,7 @@ class CompanyContact extends React.Component {
                                 <div className="sec-title centred">
                                     <h4 className="m-b-0">Contact</h4>
                                     <h1>聯絡我們</h1>
-                                    <h1>{emailMsg}</h1>
+                                    {/*<h1>{emailMsg}</h1>*/}
                                 </div>
 
                                 <form method="post" id="register_form" className="default-form"> 

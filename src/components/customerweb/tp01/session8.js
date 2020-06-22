@@ -71,13 +71,13 @@ class CompanyContact extends React.Component {
     render(){
         const cid = this.props.match.params.cid.trim();
         const { contactData} = this.props.contactReducer;
-        const { email_data } = this.props.emailReducer;
+        //const { email_data } = this.props.emailReducer;
        
 
         let contactEnable;
         let contactImg;
 
-        const emailMsg = email_data && email_data.length > 0 ? email_data[0].msg : ""; 
+        //const emailMsg = email_data && email_data.length > 0 ? email_data[0].msg : ""; 
 
 
         if(contactData && contactData.length > 0){
@@ -99,7 +99,7 @@ class CompanyContact extends React.Component {
         return (
             <section id="contact" className="vc_row bg-cover bg-center" style={contactEnable? {} : {display: 'none'}}>
                 <div className="alert alert-primary" role="alert" hidden={this.state.sentMail}>
-                    <strong>聯絡我們:{emailMsg} &nbsp;</strong> 
+                    <strong>聯絡我們:{/*{emailMsg}*/} &nbsp;</strong> 
                     <button type="button" className="close" onClick={this.handleChange("sentMail")}>
                         <span aria-hidden="true">&times;</span>
                     </button>

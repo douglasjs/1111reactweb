@@ -71,13 +71,13 @@ class CompanyContact extends React.Component {
     render(){
         const cid = this.props.match.params.cid.trim();
         const { contactData} = this.props.contactReducer;
-        const { email_data } = this.props.emailReducer;
+        //const { email_data } = this.props.emailReducer;
        
 
         let contactEnable;
         let contactImg;
 
-        const emailMsg = email_data && email_data.length > 0 ? email_data[0].msg : ""; 
+        //const emailMsg = email_data && email_data.length > 0 ? email_data[0].msg : ""; 
 
 
         if(contactData && contactData.length > 0){
@@ -103,7 +103,7 @@ class CompanyContact extends React.Component {
                                     <div className="requested-content-header text-left">
                                         <h5 className="text-white">Contact</h5>
                                         <h4 className="font-weight-bold">聯絡我們</h4>
-                                        <h4 className="font-weight-bold">{emailMsg}</h4>
+                                        {/*<h4 className="font-weight-bold">{emailMsg}</h4>*/}
                                     </div>
                                     <div className="contact-form-wrap pt-30 pb-30">
                                         <form id="contact-form" method="post">
