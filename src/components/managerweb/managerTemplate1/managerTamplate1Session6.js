@@ -296,9 +296,9 @@ class Session6 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard6">
                 <div className="card-body">
+                    <Msg type ='LOADING'  value = {customizeIsLoading} text='Processing ' /> 
+                    <Msg type ='ERROR' value = {customizeErr} text= 'Opps! Error : ' />
                     <form id='dataForm6' className={customizeIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                        <Msg type ='LOADING'  value = {customizeIsLoading} text='Processing ' /> 
-                        <Msg type ='ERROR' value = {customizeErr} text= 'Opps! Error : ' />
                         <input type="hidden" id="themeNum6" value={themeNum} />
  
                         <InputSwitch sessionName={sessionName} inputName='customizeEnable' inputState={customizeEnable} stateObj={this} />

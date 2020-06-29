@@ -205,7 +205,6 @@ class Session6 extends React.Component{
         }else{
             card6ImgUpload = this.state.card6Img !==' ' ?  this.state.card6ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card6Img}`;
         } 
-        const loading = customizeIsLoading ? '' : 'd-none';
         
         return(
             <div className="card shadow mb-4">
@@ -214,12 +213,9 @@ class Session6 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard6">
                 <div className="card-body">
-                    <div className={`spinner-grow text-primary ${loading}`} role="status">
-                                    <span className="sr-only">Loading...</span>
-                    </div>
+                    <Msg type ='LOADING'  value = {customizeIsLoading} text='Processing ' /> 
+                    <Msg type ='ERROR' value = {customizeErr} text= 'Opps! Error : ' />
                     <form id='dataForm6' className={customizeIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                        <Msg type ='LOADING'  value = {customizeIsLoading} text='Processing ' /> 
-                        <Msg type ='ERROR' value = {customizeErr} text= 'Opps! Error : ' />
                         <input type="hidden" id="themeNum6" value={themeNum} />
  
                         <InputSwitch sessionName={sessionName} inputName='customizeEnable' inputState={customizeEnable} stateObj={this} />

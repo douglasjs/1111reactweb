@@ -178,7 +178,6 @@ class Session2 extends React.Component{
             introSubTitle3ImgUpload = this.state.introSubTitle3Img !== ' ' ?  this.state.introSubTitle3ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${introSubTitle3Img}`;
          }
         
-        const loading = introductionIsLoading ? '' : 'd-none';
 
         return(
             <div className="card shadow mb-4">
@@ -187,12 +186,9 @@ class Session2 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard2">
                     <div className="card-body">
-                        <div className={`spinner-grow text-primary ${loading}`} role="status">
-                            <span className="sr-only">Loading...</span>
-                        </div>
+                        <Msg type ='LOADING'  value = {introductionIsLoading} text='Processing ' /> 
+                        <Msg type ='ERROR' value = {introductionErr} text= 'Opps! Error : ' />
                         <form id='dataForm2' className={introductionIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                            <Msg type ='LOADING'  value = {introductionIsLoading} text='Processing ' /> 
-                            <Msg type ='ERROR' value = {introductionErr} text= 'Opps! Error : ' />
                             <input type="hidden" id="themeNum2" value={themeNum} />
 
                             <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>

@@ -109,11 +109,11 @@ class Session5 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard5">
                     <div className="card-body">
-                        <div className="form-row">
+                        <Msg type ='LOADING'  value = {brandIsLoading} text='Processing ' /> 
+                        <Msg type ='ERROR' value = {brandErr} text= 'Opps! Error : ' />
+                        <div className={brandIsLoading ? 'd-none' : 'form-row'}>
                             <div className="col-md-6 mb-3">
                                 <form id='dataForm5' className={brandIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                                    <Msg type ='LOADING'  value = {brandIsLoading} text='Processing ' /> 
-                                    <Msg type ='ERROR' value = {brandErr} text= 'Opps! Error : ' />
                                     <input type="hidden" id="themeNum5" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     
