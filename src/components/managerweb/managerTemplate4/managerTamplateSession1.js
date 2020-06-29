@@ -97,8 +97,6 @@ class Session1 extends React.Component{
            companyBackgroundImg1Upload = this.state.companyBackgroundImg1 !==' ' ?  this.state.companyBackgroundImg1Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg1}`;
         }
 
-        const loading = companyIsLoading ? '' : 'd-none';
-
         return(
             <div className="card shadow mb-4">
                 <a href="#collapseCard1" className="d-block card-header py-3 text-white bg-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard1">
@@ -106,14 +104,15 @@ class Session1 extends React.Component{
                 </a>
                 <div className="collapse show" id="collapseCard1">
                     <div className="card-body">
-                        <div className="form-row">
+                        
+                        <Msg type ='LOADING'  value = {companyIsLoading} text='Processing ' /> 
+                        <Msg type ='ERROR' value = {companyErr} text= 'Opps! Error : ' />
+                        <div  className={companyIsLoading ? 'd-none' : 'form-row'} >
+                            
                             <div className="col-md-6 mb-3">
-                                <div className={`spinner-grow text-primary ${loading}`} role="status">
-                                    <span className="sr-only">Loading...</span>
-                                </div>
-                                <form id='dataForm1' className={companyIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                                    <Msg type ='LOADING'  value = {companyIsLoading} text='Processing ' /> 
-                                    <Msg type ='ERROR' value = {companyErr} text= 'Opps! Error : ' />
+
+                                <form id='dataForm1'  onSubmit={this.handleSubmit}>
+                                
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">

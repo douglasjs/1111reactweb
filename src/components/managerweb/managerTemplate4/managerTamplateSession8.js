@@ -47,7 +47,6 @@ class Session8 extends React.Component{
                 contactEnable = contactEnable !== ""  ? contactEnable : element.contactEnable;
             })
         }
-        const loading = contactIsLoading ? '' : 'd-none';
 
         return(
             <div className="card shadow mb-4">
@@ -56,12 +55,10 @@ class Session8 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="Session8">
                     <div className="card-body">
-                        <div className={`spinner-grow text-primary ${loading}`} role="status">
-                                            <span className="sr-only">Loading...</span>
-                       </div>
+                        <Msg type ='LOADING'  value = {contactIsLoading} text='Processing ' /> 
+                        <Msg type ='ERROR' value = {contactErr} text= 'Opps! Error : ' />
                         <form id='dataForm8' className={contactIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                            <Msg type ='LOADING'  value = {contactIsLoading} text='Processing ' /> 
-                            <Msg type ='ERROR' value = {contactErr} text= 'Opps! Error : ' />
+
                             <input type="hidden" id="themeNum8" value={themeNum} />
                             <InputSwitch sessionName={sessionName} inputName='contactEnable' inputState={contactEnable} stateObj={this} />
                             

@@ -10,7 +10,7 @@ const Msg = (props) =>{
 
             return(value && 
                     <div className="row-expand-slide-appear">
-                         <h4 className = "p-3 mb-2  bg-primary text-white rounded">{text} <i className= 'fa fa-spinner fa-spin' /></h4>
+                         <h4 className = "p-3 mb-2  bg-info text-white rounded">{text} <i className= 'fa fa-spinner fa-spin' /></h4>
                     </div>
                 );
 

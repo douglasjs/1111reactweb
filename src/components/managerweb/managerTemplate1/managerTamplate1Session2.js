@@ -213,9 +213,9 @@ class Session2 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard2">
                     <div className="card-body">
+                        <Msg type ='LOADING'  value = {introductionIsLoading} text='Processing ' /> 
+                        <Msg type ='ERROR' value = {introductionErr} text= 'Opps! Error : ' />
                         <form id='dataForm2' className={introductionIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                            <Msg type ='LOADING'  value = {introductionIsLoading} text='Processing ' /> 
-                            <Msg type ='ERROR' value = {introductionErr} text= 'Opps! Error : ' />
                             <input type="hidden" id="themeNum2" value={themeNum} />
 
                             <div><img src="/image/sample_01/02.png" alt="Temp1_Company" width="50%"/></div>

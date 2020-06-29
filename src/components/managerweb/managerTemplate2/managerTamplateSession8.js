@@ -54,9 +54,10 @@ class Session8 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="Session8">
                     <div className="card-body">
+                        <Msg type ='LOADING'  value = {contactIsLoading} text='Processing ' /> 
+                        <Msg type ='ERROR' value = {contactErr} text= 'Opps! Error : ' />
                         <form id='dataForm8' className={contactIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                            <Msg type ='LOADING'  value = {contactIsLoading} text='Processing ' /> 
-                            <Msg type ='ERROR' value = {contactErr} text= 'Opps! Error : ' />
+
                             <input type="hidden" id="themeNum8" value={themeNum} />
                             <InputSwitch sessionName={sessionName} inputName='contactEnable' inputState={contactEnable} stateObj={this} />
                             

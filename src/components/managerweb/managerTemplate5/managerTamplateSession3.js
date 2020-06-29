@@ -161,11 +161,11 @@ class Session3 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard3">
                     <div className="card-body">
-                        <div className="form-row">
+                        <Msg type ='LOADING'  value = {benefitIsLoading} text='Processing ' /> 
+                        <Msg type ='ERROR' value = {benefitErr} text= 'Opps! Error : ' />
+                        <div className={benefitIsLoading ? 'd-none' : 'form-row'}>
                             <div className="col-md-12">
                                 <form id='dataForm3' className={benefitIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                                    <Msg type ='LOADING'  value = {benefitIsLoading} text='Processing ' /> 
-                                    <Msg type ='ERROR' value = {benefitErr} text= 'Opps! Error : ' />
                                     <input type="hidden" id="themeNum3" value={themeNum} />
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">

@@ -121,10 +121,9 @@ class Session7 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard7">
                     <div className="card-body">
-                        
+                            <Msg type ='LOADING'  value = {qaIsLoading} text='Processing ' /> 
+                            <Msg type ='ERROR' value = {qaErr} text= 'Opps! Error : ' />
                             <form id='dataForm7' className={qaIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                                <Msg type ='LOADING'  value = {qaIsLoading} text='Processing ' /> 
-                                <Msg type ='ERROR' value = {qaErr} text= 'Opps! Error : ' />
                                 <input type="hidden" id="themeNum7" value={themeNum} />
                                 <InputSwitch sessionName={sessionName} inputName='qaEnable' inputState={qaEnable} stateObj={this} />
                                 

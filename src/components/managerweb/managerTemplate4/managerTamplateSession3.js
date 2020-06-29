@@ -152,8 +152,6 @@ class Session3 extends React.Component{
             benefitSubImg4Upload = this.state.benefitSubImg4 !== ' ' ?  this.state.benefitSubImg4Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${benefitSubImg4}`;
         }
 
-        const loading = benefitIsLoading ? '' : 'd-none';
-
         return(
             <div className="card shadow mb-4">
                 <a href="#collapseCard3" className="d-block card-header py-3 text-white bg-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard3">
@@ -161,14 +159,12 @@ class Session3 extends React.Component{
                 </a>
                 <div className="collapse collapsed" id="collapseCard3">
                     <div className="card-body">
-                        <div className="form-row">
+                        <Msg type ='LOADING'  value = {benefitIsLoading} text='Processing ' /> 
+                        <Msg type ='ERROR' value = {benefitErr} text= 'Opps! Error : ' />
+                        <div className={benefitIsLoading ? 'd-none' : 'form-row'}>
                             <div className="col-md-6 mb-3">
-                                <div className={`spinner-grow text-primary ${loading}`} role="status">
-                                    <span className="sr-only">Loading...</span>
-                                </div>
-                                <form id='dataForm3' className={benefitIsLoading ? 'd-none' : ''}  onSubmit={this.handleSubmit}>
-                                    <Msg type ='LOADING'  value = {benefitIsLoading} text='Processing ' /> 
-                                    <Msg type ='ERROR' value = {benefitErr} text= 'Opps! Error : ' />
+                                <form id='dataForm3'  onSubmit={this.handleSubmit}>
+
                                     <input type="hidden" id="themeNum3" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     
