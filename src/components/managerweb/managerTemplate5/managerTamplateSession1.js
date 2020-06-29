@@ -1,6 +1,5 @@
 import React from 'react';
 import InputText from '../../sharecomponents/inputText';
-import InputTextArea from '../../sharecomponents/inputTextArea';
 import ImgUpload from '../../sharecomponents/imgUpload';
 import Msg from '../msg';
 import envConfig from '../../../config/env';
@@ -126,12 +125,12 @@ class Session1 extends React.Component{
                                            stateObj={this} required={true} checkValue='8' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 1' notice='(字數限制為18個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           rows='2' stateObj={this} required={true} checkValue='18' />
+                                        <InputText title='副標題 1' notice='(字數限制為18個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           stateObj={this} required={true} checkValue='18' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 2' notice='(字數限制為18個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
-                                           rows='2' stateObj={this} required={true} checkValue='18' />
+                                        <InputText title='副標題 2' notice='(字數限制為18個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
+                                           stateObj={this} required={true} checkValue='18' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='背景圖片1' notice='(圖檔尺寸大小為 1920*570 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
