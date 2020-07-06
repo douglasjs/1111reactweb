@@ -141,17 +141,17 @@ const createcontact = (data) =>{
   
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'C'}; 
             dispatch(createcontactStart());
             axios({
                 method: 'post',
                 url: `${envConfig.WebAPI}/contact/`,
-                data
+                data: submitData
             })
             .then((response)=>{
                 dispatch(createcontactSuccess(response.data));
                 alert("新增資料完成");
-               // dispatch(getcontactList(data.ono));
+                dispatch(getcontactList(data.ono, data.themeNum));
             })
             .catch(err => {
                 dispatch(createcontactError(err));
@@ -165,12 +165,12 @@ const updatecontact = (data) =>{
     console.log(data);
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'U'}; 
             dispatch(editcontactStart());
             axios({
-                method: 'put',
-                url: `${envConfig.WebAPI}/contact/${data.ono}`,
-                data
+                method: 'post',
+                url: `${envConfig.WebAPI}/contact/`,
+                data: submitData
             })
             .then((response) => {
                 dispatch(editcontactSuccess(response.data));

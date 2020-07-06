@@ -141,17 +141,17 @@ const createcustomize = (data) =>{
   
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'C'}; 
             dispatch(createcustomizeStart());
             axios({
                 method: 'post',
                 url: `${envConfig.WebAPI}/customize/`,
-                data
+                data: submitData
             })
             .then((response)=>{
                 dispatch(createcustomizeSuccess(response.data));
                 alert("新增資料完成");
-               // dispatch(getcustomizeList(data.ono));
+                dispatch(getcustomizeList(data.ono, data.themeNum));
             })
             .catch(err => {
                 dispatch(createcustomizeError(err));
@@ -165,12 +165,12 @@ const updatecustomize = (data) =>{
     console.log(data);
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'U'}; 
             dispatch(editcustomizeStart());
             axios({
-                method: 'put',
-                url: `${envConfig.WebAPI}/customize/${data.ono}`,
-                data
+                method: 'post',
+                url: `${envConfig.WebAPI}/customize/`,
+                data: submitData
             })
             .then((response) => {
                 dispatch(editcustomizeSuccess(response.data));

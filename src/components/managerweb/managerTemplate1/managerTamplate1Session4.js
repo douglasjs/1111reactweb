@@ -252,7 +252,7 @@ class Session4 extends React.Component{
             "3": this.countGrpPosition(positionData, "3"),
         };
 
-        if(kind00Data && kind00Data.length > 0){
+        if(kind00Data && kind00Data.length > 0 && kind00Data[0].oNo!==0){
 
             kind00Data.forEach(  async element =>{
                 checkName =  `check_${element.eNo}`;

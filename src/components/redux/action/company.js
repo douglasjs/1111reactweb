@@ -140,17 +140,17 @@ const createCompany = (data) =>{
   
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'C'}; 
             dispatch(createCompanyStart());
             axios({
                 method: 'post',
                 url: `${envConfig.WebAPI}/company/`,
-                data
+                data: submitData
             })
             .then((response)=>{
                 dispatch(createCompanySuccess(response.data));
                 alert("新增資料完成");
-               // dispatch(getCompanyList(data.ono));
+                dispatch(getCompanyList(data.ono, data.themeNum));
             })
             .catch(err => {
                 dispatch(createCompanyError(err));
@@ -163,12 +163,12 @@ const createCompany = (data) =>{
 const updateCompany = (data) =>{
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'U'}; 
             dispatch(editCompanyStart());
             axios({
-                method: 'put',
-                url: `${envConfig.WebAPI}/company/${data.ono}`,
-                data
+                method: 'post',
+                url: `${envConfig.WebAPI}/company/`,
+                data: submitData
             })
             .then((response) => {
                 dispatch(editCompanySuccess(response.data));

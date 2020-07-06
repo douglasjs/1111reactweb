@@ -146,11 +146,12 @@ const createPosition = (data, updateTable,grpCount) =>{
             if(grpCount[grpName] >= 5){
                 alert(data.position_name + " 超過5個請選其他標籤" );
             }else{
+                const submitData = {...data, postType: 'C'}; 
                 dispatch(createPositionStart());
                 axios({
                     method: 'post',
                     url: `${envConfig.WebAPI}/Position/`,
-                    data
+                    data: submitData
                 })
                 .then((response)=>{
                     updateTable({type: 'created', name: data.position_name, [grpName]:grpCount[grpName]+1, grpName  });
@@ -176,7 +177,15 @@ const deletePosition = (data) =>{
         
       
             dispatch(deletePositionStart());
+            const submitData = {...data, postType: 'D'}; 
+            /*
             axios.delete(`${envConfig.WebAPI}/Position/`, { data })
+            */
+            axios({
+                method: 'post',
+                url: `${envConfig.WebAPI}/Position/`,
+                data: submitData
+            })
             .then((response) => {
                 dispatch(deletePositionSuccess(response.data));
                 alert("資料刪除完成");

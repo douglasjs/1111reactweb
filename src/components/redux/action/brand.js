@@ -138,17 +138,17 @@ const getbrandList = (ono, themeNum) =>{
 const createbrand = (data) =>{
     return (dispatch) =>{
         
-            console.log(data);
+            const submitData = {...data, postType: 'C'}; 
             dispatch(createbrandStart());
             axios({
                 method: 'post',
                 url: `${envConfig.WebAPI}/brand/`,
-                data
+                data: submitData
             })
             .then((response)=>{
                 dispatch(createbrandSuccess(response.data));
                 alert("新增資料完成");
-               // dispatch(getbrandList(data.ono));
+                dispatch(getbrandList(data.ono,data.themeNum));
             })
             .catch(err => {
                 dispatch(createbrandError(err));
@@ -162,12 +162,12 @@ const updatebrand = (data) =>{
     
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'U'}; 
             dispatch(editbrandStart());
             axios({
-                method: 'put',
+                method: 'post',
                 url: `${envConfig.WebAPI}/brand/${data.ono}`,
-                data
+                data: submitData
             })
             .then((response) => {
                 dispatch(editbrandSuccess(response.data));
