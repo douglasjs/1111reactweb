@@ -423,11 +423,11 @@ class managerGeneralSetting extends React.Component{
                                   </div>
                               </div>
                               <div className="col-md-6 mb-3">
-                                  <label><span className='text-danger'>*</span> 公司英文名稱</label>
+                                  <label>公司英文名稱</label>
                                   <input type="text" className={`form-control`} id="companyEName"  placeholder="公司英文名稱"
-                                     value={companyEName} onChange={this.handleChange('companyEName')} required />
+                                     value={companyEName} onChange={this.handleChange('companyEName')} />
                                   <div className="invalid-feedback">
-                                        公司英文名稱不可以空白
+                                        公司英文名稱
                                   </div>
                               </div>
                           </div>
