@@ -9,7 +9,7 @@ function createArray( preName, psotName , number, thatState){
 }
 
 function strNumLimite( str, number ){
-    return str.substring(0,str.length-1 > number ? number-1: str.length-1 );
+    return str.substring(0,str.length-1 > number ? number: str.length-1 );
 }
 
 const emptyCheck = (value, title, oldValue) => {

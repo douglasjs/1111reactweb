@@ -82,8 +82,8 @@ class CompanyCustomize extends React.Component {
 
 							<header className="fancy-title text-center mb-30" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":80,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
 
-								<h6 className="text-uppercase ltr-sp-2 font-size-13 font-weight-semibold text-secondary">{customizeSubTitle}</h6>
-								<h2 className="mt-1 mb-2">{customizeTitle}</h2>
+								<h6 className="text-uppercase ltr-sp-2 font-size-13 font-weight-semibold text-secondary line-1">{customizeSubTitle}</h6>
+								<h2 className="mt-1 mb-2 line-1">{customizeTitle}</h2>
 
 							</header>
 

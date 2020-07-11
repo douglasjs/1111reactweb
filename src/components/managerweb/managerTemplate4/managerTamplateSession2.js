@@ -197,12 +197,12 @@ class Session2 extends React.Component{
 
                                 <div className="col-md-6 mb-3">
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='主標題' notice='(字數限制為4個字以內)' inputName='introTitle' inputState={introTitle}
-                                           stateObj={this} required={true} checkValue='5' />
+                                        <InputText title='主標題' notice='(字數限制為13個字以內)' inputName='introTitle' inputState={introTitle}
+                                           stateObj={this} required={true} checkValue='13' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='主內容' notice='(字數限制為230個字以內)' inputName='introMainContent' inputState={introMainContent}
-                                           rows='5' stateObj={this} required={true} checkValue='230' />
+                                        <InputTextArea title='主內容' notice='(字數限制為260個字以內)' inputName='introMainContent' inputState={introMainContent}
+                                           rows='5' stateObj={this} required={true} checkValue='260' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='圖片1 上傳' notice='(圖檔尺寸大小為 900*800，接受格式為png、jpg)' objName='introSubTitle1Img'  imgUpload={introSubTitle1ImgUpload} 
@@ -236,7 +236,7 @@ class Session2 extends React.Component{
                                                 <tr>
                                                     <td>主標題</td>
                                                     <td align='left'>加入亞尼克</td>
-                                                    <td>5個字以內</td>
+                                                    <td>13個字以內</td>
                                                     <td align='left'>
                                                         <ul>
                                                             <li>不可空白</li>
@@ -253,7 +253,7 @@ class Session2 extends React.Component{
                                                         更擁有北中南全台擁有多家門市，並且持續擴大經營中，
                                                         為的是將最好的甜點分享給更多的消費者。
                                                     </td>
-                                                    <td>230個字以內</td>
+                                                    <td>260個字以內</td>
                                                     <td align='left'>
                                                         <ul>
                                                             <li>不可空白</li>

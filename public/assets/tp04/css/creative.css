@@ -266,7 +266,7 @@ div.ld-fancy-heading h1 {
 }
 
 /* Max line */
-.line-1 ,.line-2 ,.line-3 ,.line-4 ,.line-5 {
+.line-1, .line-2, .line-3, .line-4, .line-5, .line-10 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -292,6 +292,10 @@ div.ld-fancy-heading h1 {
 
 .line-5 {
   -webkit-line-clamp: 5 !important;
+}
+
+.line-10 {
+  -webkit-line-clamp: 10 !important;
 }
 
 .brand-content-tp04 {
@@ -330,6 +334,9 @@ div.ld-fancy-heading h1 {
   }
   .brand-content-tp04 {
     height: auto !important;
+  }
+  .d-flex > .lqd-column:not([class*=col-xs-]) {
+    width: 345px;
   }
 }
 

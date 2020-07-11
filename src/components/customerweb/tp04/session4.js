@@ -58,12 +58,12 @@ class CompanyJobs extends React.Component {
 										<p className="line-3">{element.position_matter}</p>						
 									</div>
 								
-									<div className="fancy-box-cell" data-text="地區">
+									<div className="fancy-box-cell" data-text="">
 										<p>{element.position_workCity}</p>
 									</div>
 								
-									<div className="fancy-box-cell" data-text="時薪">
-										<p>{element.position_salary}</p>
+									<div className="fancy-box-cell" data-text="">
+										<p><strong>{element.position_salary}</strong></p>
 									</div>
 								
 									

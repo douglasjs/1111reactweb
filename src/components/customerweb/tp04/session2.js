@@ -104,8 +104,8 @@ class CompanyInfo extends React.Component{
 							<header className="fancy-title mb-60">
 
 								<h6 className="text-uppercase ltr-sp-2 font-size-13 font-weight-semibold text-secondary">COMPANY</h6>
-								<h2 className="mt-1 mb-2">{introTitle}</h2>
-								<p>{introMainContent}</p>
+								<h2 className="mt-1 mb-2 line-1">{introTitle}</h2>
+								<p  className="line-10">{introMainContent}</p>
 							</header>
 
 							<a target='_blank' rel='noopener noreferrer' href={companyurl} className="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-18 font-weight-semibold" >

@@ -54,7 +54,7 @@ class CompanyQA extends React.Component {
 
 								<h6 className="text-uppercase ltr-sp-2 font-size-13 font-weight-semibold text-secondary">Have a question?</h6>
 								<h2 className="mt-1 mb-2">常見問題</h2>
-								<p>{qaSubTitle}</p>
+								<p className="line-4">{qaSubTitle}</p>
 
 							</header>
 
