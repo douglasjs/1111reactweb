@@ -610,7 +610,7 @@ class Session4 extends React.Component{
                                                             </td>                                                 
                                                             <td className='text-left'>{element.Position}</td>
                                                             <td className='text-left'>{element.Salary}</td>
-                                                            <td className='text-left'>{element.Matter.substring(0, 100)}</td>
+                                                            <td className='text-left line-4'>{element.Matter.substring(0, 100)}</td>
                                                             <td>{element.WorkCity}</td>
                                                         </tr>
                                                     )
