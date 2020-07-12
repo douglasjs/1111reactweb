@@ -137,16 +137,16 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題' notice='(字數限制為5個字以內)' inputName='title' inputState={title}
-                                           stateObj={this} required={true} checkValue='5' />
+                                        <InputText title='大標題' notice='(字數限制為12個字以內)' inputName='title' inputState={title}
+                                           stateObj={this} required={true} checkValue='12' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 1' notice='(字數限制為40個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           rows='3' stateObj={this} required={true} checkValue='40' />
+                                        <InputTextArea title='副標題 1' notice='(字數限制為50個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           rows='2' stateObj={this} required={true} checkValue='50' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 2' notice='(字數限制為15個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
-                                           rows='2' stateObj={this} required={true} checkValue='15' />
+                                        <InputTextArea title='副標題 2' notice='(字數限制為36個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
+                                           rows='2' stateObj={this} required={true} checkValue='36' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='背景圖片1' notice='(圖檔尺寸大小為 1920*1200 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
@@ -185,7 +185,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>大標題</td>
                                                 <td align='left'>永豐餘生技</td>
-                                                <td>5個字以內</td>
+                                                <td>12個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_banner_title">觀看範例圖片</a>
@@ -194,7 +194,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>副標題1</td>
                                                 <td align='left'>期許作為一個專業及熱情的有機生活管家，貼心的讓客人輕鬆的享受有機生活。</td>
-                                                <td>40個字以內</td>
+                                                <td>50個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_banner_subtitle_01">觀看範例圖片</a>
@@ -203,7 +203,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>副標題2</td>
                                                 <td align='left'>歡迎優秀的朋友一起加入</td>
-                                                <td>15個字以內</td>
+                                                <td>36個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_banner_subtitle_02">觀看範例圖片</a>
@@ -212,7 +212,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>背景圖</td>
                                                 <td>寬、高(px)</td>
-                                                <td>1920*1080</td>
+                                                <td>1920*1200</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>

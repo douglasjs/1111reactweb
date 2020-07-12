@@ -228,12 +228,12 @@ class Session2 extends React.Component{
 
                                 <div className="col-md-6 mb-3">
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='主標題' notice='(字數限制為15個字以內)' inputName='introTitle' inputState={introTitle}
-                                           stateObj={this} required={true} checkValue='15' />
+                                        <InputText title='主標題' notice='(字數限制為21個字以內)' inputName='introTitle' inputState={introTitle}
+                                           stateObj={this} required={true} checkValue='21' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='主內容' notice='(字數限制為80個字以內)' inputName='introMainContent' inputState={introMainContent}
-                                           rows='5' stateObj={this} required={true} checkValue='80' />
+                                        <InputTextArea title='主內容' notice='(字數限制為92個字以內)' inputName='introMainContent' inputState={introMainContent}
+                                           rows='4' stateObj={this} required={true} checkValue='92' />
                                     </div>
                                 </div>
 
@@ -255,7 +255,7 @@ class Session2 extends React.Component{
                                             <tr>
                                                 <td>主標題</td>
                                                 <td align='left'>永豐餘品牌對人與環境的永續經營</td>
-                                                <td>15個字以內</td>
+                                                <td>21個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_company_title">觀看範例圖片</a>
@@ -264,7 +264,7 @@ class Session2 extends React.Component{
                                             <tr>
                                                 <td>主內容</td>
                                                 <td align='left'>本公司擁有優秀的經營團隊，秉持著『◆安心宣言◆生態平衡◆達人堅持』的經營理念，追求企業永續經營及成長；除整體營運穩定外，獲利狀況也逐年提昇，是國內績優廠商之一。</td>
-                                                <td>80個字以內</td>
+                                                <td>92個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_company_content">觀看範例圖片</a>
@@ -360,8 +360,8 @@ class Session2 extends React.Component{
                                                         stateObj={this} required={true} checkValue='11' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題1內容' notice='(字數限制為55個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
-                                                        rows='3' stateObj={this} required={true} checkValue='55' />
+                                                    <InputTextArea title='小標題1內容' notice='(字數限制為38個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
+                                                        rows='3' stateObj={this} required={true} checkValue='38' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
                                                     <InputText title='小標題1圖片文字' notice='(字數限制為20個字以內)' inputName='introSubTitle1ImgText' inputState={introSubTitle1ImgText}
@@ -401,7 +401,7 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題1 內容</td>
                                                                 <td align='left'>全方位的食材供應，從生產處理保存運送至宅配到府，層層把關，全程安心無污染，產品定期專業檢測。</td>
-                                                                <td>55個字以內</td>
+                                                                <td>38個字以內</td>
                                                                 <td>
                                                                     不可空白<br />
                                                                     <a type="button" data-toggle="modal" href="#temp1_Company_card01_content">觀看範例圖片</a>
@@ -532,8 +532,8 @@ class Session2 extends React.Component{
                                                         stateObj={this} required={true} checkValue='11' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題2內容' notice='(字數限制為55個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
-                                                        rows='3' stateObj={this} required={true} checkValue='55' />
+                                                    <InputTextArea title='小標題2內容' notice='(字數限制為38個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
+                                                        rows='3' stateObj={this} required={true} checkValue='38' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
                                                     <InputText title='小標題2圖片文字' notice='(字數限制為20個字以內)' inputName='introSubTitle2ImgText' inputState={introSubTitle2ImgText}
@@ -572,7 +572,7 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題2 內容</td>
                                                                 <td align='left'>一直以來我們分享的是一種生活態度，堅持不提供對客人健康不利的產品。</td>
-                                                                <td>55個字以內</td>
+                                                                <td>38個字以內</td>
                                                                 <td>
                                                                     不可空白<br />
                                                                     <a type="button" data-toggle="modal" href="#temp1_Company_card02_content">觀看範例圖片</a>
@@ -705,8 +705,8 @@ class Session2 extends React.Component{
                                                         stateObj={this} required={true} checkValue='11' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題3內容' notice='(字數限制為55個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
-                                                        rows='3' stateObj={this} required={true} checkValue='55' />
+                                                    <InputTextArea title='小標題3內容' notice='(字數限制為38個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
+                                                        rows='3' stateObj={this} required={true} checkValue='38' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
                                                     <InputText title='小標題3圖片文字' notice='(字數限制為20個字以內)' inputName='introSubTitle3ImgText' inputState={introSubTitle3ImgText}
@@ -745,7 +745,7 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題3 內容</td>
                                                                 <td align='left'>邀請您一同成為大地及社區的有機生活管家。</td>
-                                                                <td>55個字以內</td>
+                                                                <td>38個字以內</td>
                                                                 <td>
                                                                     不可空白<br />
                                                                     <a type="button" data-toggle="modal" href="#temp1_Company_card03_content">觀看範例圖片</a>

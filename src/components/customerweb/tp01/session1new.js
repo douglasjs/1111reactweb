@@ -55,7 +55,7 @@ class CompanyTitle extends React.Component{
                             <div className="container">
                                 <div className="row">
                 
-                                    <div className="lqd-column col-md-10 col-md-offset-1 text-center py-7" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":31,"translateZ":-108,"opacity":0},"animations":{"translateY":0,"translateZ":0,"opacity":1}}'>
+                                    <div className="lqd-column col-md-10 col-md-offset-1 text-center pt-30_percent" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":31,"translateZ":-108,"opacity":0},"animations":{"translateY":0,"translateZ":0,"opacity":1}}'>
                 
                                         <header className="fancy-title pt-3">
                                             <h6 className="text-white lh-15 mb-4"><span className="font-size-3-3x lh-1 font-weight-bold text-shodow line-1">{title}</span></h6>
