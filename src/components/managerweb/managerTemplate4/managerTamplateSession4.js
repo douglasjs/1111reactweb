@@ -416,7 +416,7 @@ class Session4 extends React.Component{
                                                 <div id="dataTable_filter" className="dataTables_filter text-left">
                                                     {/*<a data-toggle="modal" href="#tmp4_addlable"><button className='btn btn-primary'>增加標籤 <i className="fas fa-folder-plus" value='Create' /></button></a>&nbsp;&nbsp;&nbsp;*/}
                                                     <a data-toggle="modal" href="#tmp4_addjob"><button className='btn btn-primary' onClick={this.handleAddPosition}>增加職缺 <i className="fas fa-folder-plus" value='Create' /></button></a>
-                                                    (<a type="button" data-toggle="modal" href="#tmp4_joblable_img">觀看圖例</a>)
+                                                    <div className="">職缺數量建議最多五筆，版面較容易瀏覽(<a type="button" data-toggle="modal" href="#tmp4_joblable_img">觀看圖例</a>)</div>
                                                 </div>
                                             </div>
                                         </div>

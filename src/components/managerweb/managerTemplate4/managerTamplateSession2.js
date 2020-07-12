@@ -312,7 +312,7 @@ class Session2 extends React.Component{
                                             <button type="button" className="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <div className="modal-body text-center">
-                                            <img src="/image/sample_04/02.png" alt="tmp4_company" width="100%" />
+                                            <img src="/image/sample_04/02-0.png" alt="tmp4_company" width="100%" />
                                         </div>
                                         <div className="modal-footer">
                                             <p className="small">範例僅供參考</p>

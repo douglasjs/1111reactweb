@@ -117,7 +117,7 @@ class Session1 extends React.Component{
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputText title='大標題' notice='(字數限制為33個字以內)' inputName='title' inputState={title}
-                                           stateObj={this} required={true} checkValue='30' />
+                                           stateObj={this} required={true} checkValue='33' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputText title='副標題' notice='(字數限制為22個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}

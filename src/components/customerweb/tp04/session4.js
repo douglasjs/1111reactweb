@@ -55,7 +55,7 @@ class CompanyJobs extends React.Component {
 								<div key={index} className="fancy-box fancy-box-offer fancy-box-heading-sm">	
 									<div className="fancy-box-cell fancy-box-header">		
 										<h3 className="text-primary">{element.position_name}</h3>
-										<p className="line-3">{element.position_matter}</p>						
+										<p className="position_matter-line">{element.position_matter}</p>						
 									</div>
 								
 									<div className="fancy-box-cell" data-text="">
