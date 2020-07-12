@@ -16,7 +16,7 @@ class CompanyJobs extends React.Component {
     render(){
 		const cid = this.props.match.params.cid;
 		const { positionData } = this.props.positionReducer;
-		let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
+		let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
 
 		return (
 			

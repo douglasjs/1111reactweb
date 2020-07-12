@@ -22,7 +22,7 @@ class CompanyInfo extends React.Component{
         let introSubTitle1Img;       
 		let introSubTitle2Img;
 		let introSubTitle3Img;
-        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
+        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
 
         if(introductionData && introductionData.length > 0){
             introductionData.forEach(element => {
