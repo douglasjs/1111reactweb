@@ -111,7 +111,7 @@ class CompanyContact extends React.Component {
                             <div className="row">
                                 <div className="lqd-column col-lg-6 col-md-10 col-lg-offset-3 col-md-offset-1 px-5">
                                     <header className="fancy-title fancy-title-1111">
-                                        <h2 className="mb-1">聯絡我們</h2>
+                                        <h2 className="mb-1 tp01-title-font-size">聯絡我們</h2>
                                         <p className="mt-0">有任何問題歡迎與我們聯繫</p>
                                     </header>
     

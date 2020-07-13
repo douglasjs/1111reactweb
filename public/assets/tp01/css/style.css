@@ -651,7 +651,7 @@ h6 {
 
 
 /* Max line */
-.line-1 ,.line-2 ,.line-3 ,.line-4 ,.line-5 ,.line-15 {
+.tp01_line-1, .tp01_line-2, .tp01_line-3, .tp01_line-4, .tp01_line-5, .tp01_line-10, .tp01_line-15 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -659,28 +659,32 @@ h6 {
   word-break: break-all;
 }
 
-.line-1 {
+.tp01_line-1 {
   -webkit-line-clamp: 1;
 }
 
-.line-2 {
+.tp01_line-2 {
   -webkit-line-clamp: 2;
 }
 
-.line-3 {
+.tp01_line-3 {
   -webkit-line-clamp: 3;
 }
 
-.line-4 {
+.tp01_line-4 {
   -webkit-line-clamp: 4;
 }
 
-.line-5 {
+.tp01_line-5 {
   -webkit-line-clamp: 5;
 }
 
-.line-10 {
+.tp01_line-10 {
   -webkit-line-clamp: 10;
+}
+
+.tp01_line-15 {
+  -webkit-line-clamp: 15;
 }
 
 /* Max Height */
@@ -745,5 +749,11 @@ h6 {
 @media screen and (max-width: 768px){
   .pt-30_percent{
     padding-top: 20%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .tp01-title-font-size{
+    font-size: 24px !important;
   }
 }

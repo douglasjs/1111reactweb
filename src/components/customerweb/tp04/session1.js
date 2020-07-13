@@ -18,6 +18,7 @@ class CompanyTitle extends React.Component{
         const { companyData } = this.props.companyReducer;
 
 		let title;
+		let title2;
 		let companySubTitle1;
 		let companySubTitle2;
 		let companyBackgroundImg1;
@@ -26,6 +27,7 @@ class CompanyTitle extends React.Component{
         if(companyData && companyData.length > 0){
             companyData.forEach(element => {
 				title = element.title;
+				title2 = element.title2;
 				companySubTitle1 = element.companySubTitle1;
 				companySubTitle2 = element.companySubTitle2;
                 companyBackgroundImg1 = element.companyBackgroundImg1;
@@ -65,7 +67,7 @@ class CompanyTitle extends React.Component{
 									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
 									data-split-options='{"type":"lines"}'
 								>
-									<span className="ld-fh-txt line-3">{title}</span>
+									<span className="ld-fh-txt line-3">{title}<br />{title2}</span>
 								</h1>
 								<h4								
 									data-custom-animations="true"

@@ -102,8 +102,8 @@ class CompanyCustomize extends React.Component {
                         <div className="lqd-column col-md-12">
     
                             <header className="fancy-title mb-30" id="fancy-title-unlimited-classes">
-                                <h2 className="text-uppercase ltr-sp-0 line-1 text-left">{customizeTitle} </h2>
-                                <p className="line-1 text-left">{customizeSubTitle} </p>
+                                <h2 className="text-uppercase ltr-sp-0 tp01_line-1 text-left tp01-title-font-size">{customizeTitle} </h2>
+                                <p className="tp01_line-1 text-left">{customizeSubTitle} </p>
                             </header>
     
                         </div>
@@ -123,8 +123,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card1Title}</h3>
-                                                    <span className="trainer line-2">{card1Content}</span>
+                                                    <h3 className="tp01_line-1">{card1Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card1Content}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,8 +139,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card2Title}</h3>
-                                                    <span className="trainer line-2">{card2Content}</span>
+                                                    <h3 className="tp01_line-1">{card2Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card2Content}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,8 +155,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">    
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card3Title}</h3>
-                                                    <span className="trainer line-2">{card3Content}</span>
+                                                    <h3 className="tp01_line-1">{card3Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card3Content}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -171,8 +171,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card4Title}</h3>
-                                                    <span className="trainer line-2">{card4Content}</span>
+                                                    <h3 className="tp01_line-1">{card4Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card4Content}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -188,8 +188,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card5Title}</h3>
-                                                    <span className="trainer line-2">{card5Content}</span>
+                                                    <h3 className="tp01_line-1">{card5Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card5Content}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -204,8 +204,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card6Title}</h3>
-                                                    <span className="trainer line-2">{card6Content}</span>
+                                                    <h3 className="tp01_line-1">{card6Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card6Content}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -220,8 +220,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card7Title}</h3>
-                                                    <span className="trainer line-2">{card7Content}</span>
+                                                    <h3 className="tp01_line-1">{card7Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card7Content}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -236,8 +236,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card8Title}</h3>
-                                                    <span className="trainer line-2">{card8Content}</span>
+                                                    <h3 className="tp01_line-1">{card8Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card8Content}</span>
                                                 </div>
                                             </div>
                                         </div>

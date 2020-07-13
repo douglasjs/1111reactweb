@@ -24,7 +24,7 @@ class CompanyJobs extends React.Component {
         let groupName1;
         let groupName2;
         let groupName3;
-        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
+        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
 
         if(positionGrpData && positionGrpData.length > 0){
             positionGrpData.forEach( element  => {
@@ -41,7 +41,7 @@ class CompanyJobs extends React.Component {
     
                         <div className="lqd-column">
     
-                            <h3 className="text-center">職缺介紹</h3>
+                            <h2 className="text-center tp01-title-font-size">職缺介紹</h2>
     
                             <div className="tabs tabs-nav-centered tabs-nav-items-bordered jobs-nav-active-filled">
 

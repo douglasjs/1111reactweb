@@ -11,6 +11,7 @@ class Session1 extends React.Component{
         super(props);
         this.state={
             title : '',
+            title2 : '',
             companySubTitle1 : '',
             companySubTitle2 : '',
             companyBackgroundImg1 : ' ',
@@ -44,7 +45,7 @@ class Session1 extends React.Component{
             ono: cid,
             themeNum : event.target.themeNum.value,
             title : event.target.title.value,
-            title2 : '',
+            title2 : event.target.title2.value,
             title3 : '',
             companySubTitle1 : event.target.companySubTitle1.value,
             companySubTitle2 : event.target.companySubTitle2.value,
@@ -72,6 +73,7 @@ class Session1 extends React.Component{
         const cid = this.props.match.params.cid.trim();
 
         let title = this.state.title;
+        let title2 = this.state.title2;
         let companySubTitle1 = this.state.companySubTitle1;
         let companySubTitle2 = this.state.companySubTitle2;
         let companyBackgroundImg1 = this.state.companyBackgroundImg1;
@@ -82,6 +84,7 @@ class Session1 extends React.Component{
             actionType = 'modify';
             companyData.forEach(element => {
                 title = title !== "" ? title : element.title;
+                title2 = title2 !== "" ? title2 : element.title2;
                 companySubTitle1 = companySubTitle1 !== "" ? companySubTitle1 : element.companySubTitle1;
                 companySubTitle2 = companySubTitle2 !== "" ? companySubTitle2 : element.companySubTitle2;
                 companyBackgroundImg1 = companyBackgroundImg1 !== " " ? companyBackgroundImg1 : element.companyBackgroundImg1;
@@ -117,7 +120,11 @@ class Session1 extends React.Component{
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputText title='大標題' notice='(字數限制為33個字以內)' inputName='title' inputState={title}
-                                           stateObj={this} required={true} checkValue='33' />
+                                           stateObj={this} required={true} checkValue='100' />
+                                    </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <InputText title='大標題2' notice='(字數限制為33個字以內)' inputName='title2' inputState={title2}
+                                           stateObj={this} required={true} checkValue='11' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputText title='副標題' notice='(字數限制為22個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}

@@ -35,7 +35,7 @@ class CompanyBenifit  extends React.Component {
         const styleImg = {};
 
         return (
-            <section id="benefit" className="vc_row bg-cover bg-center-bottom pt-10" style={style}>
+            <section id="benefit" className="vc_row bg-cover bg-center-bottom pt-10 pb-3" style={style}>
                 {benefitData && benefitData.length > 0 &&
                 <div className="container">
                     <div className="row d-flex flex-wrap align-items-center">
@@ -60,7 +60,7 @@ class CompanyBenifit  extends React.Component {
         
                         <div className="lqd-column col-xs-12 col-md-6 pl-md-7">
     
-                            <div className="ld-fancy-heading benefit-margin-custom line-10 max-hight-410 over-div-hide text-left" dangerouslySetInnerHTML={{__html: benefitContent}}/>
+                            <div className="ld-fancy-heading benefit-margin-custom tp01_line-10 max-hight-410 over-div-hide text-left" dangerouslySetInnerHTML={{__html: benefitContent}}/>
     
                         </div>
     
