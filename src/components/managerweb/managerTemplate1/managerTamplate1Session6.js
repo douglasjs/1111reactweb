@@ -306,15 +306,15 @@ class Session6 extends React.Component{
                         <div className="form-row row-style-pt1">
                             <div className="col-md-6 mb-3">
                                 <div className="form-row row-style-w95">
-                                    <InputText title='自訂選單名稱' notice='(即為在主選單上顯示的名稱，字數限制為4個字以內)' inputName='customizeName' inputState={customizeName}
+                                    <InputText title='自訂選單名稱' notice='(即為在主選單上顯示的名稱，建議字數為4個字以內)' inputName='customizeName' inputState={customizeName}
                                         stateObj={this} required={false} checkValue='4' />
                                 </div>
                                 <div className="form-row row-style-w95-pt1">
-                                    <InputText title='自訂區域主標題' notice='(字數限制為10個字以內)' inputName='customizeTitle' inputState={customizeTitle}
+                                    <InputText title='自訂區域主標題' notice='(建議字數為10個字以內)' inputName='customizeTitle' inputState={customizeTitle}
                                         stateObj={this} required={false} checkValue='10' />
                                 </div>
                                 <div className="form-row row-style-w95-pt1">
-                                    <InputTextArea title='自訂區域副標題' notice='(字數限制為40個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
+                                    <InputTextArea title='自訂區域副標題' notice='(建議字數為40個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
                                         rows='3' stateObj={this} required={false} checkValue='40' />
                                 </div>
                             </div>
@@ -427,11 +427,11 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片1標題' notice='(字數限制為8個字以內)' inputName='card1Title' inputState={card1Title}
+                                                <InputText title='卡片1標題' notice='(建議字數為8個字以內)' inputName='card1Title' inputState={card1Title}
                                                     stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片1內文' notice='(字數限制為20個字以內)' inputName='card1Content' inputState={card1Content}
+                                                <InputTextArea title='卡片1內文' notice='(建議字數為20個字以內)' inputName='card1Content' inputState={card1Content}
                                                     rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -522,11 +522,11 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片2標題' notice='(字數限制為8個字以內)' inputName='card2Title' inputState={card2Title}
+                                                <InputText title='卡片2標題' notice='(建議字數為8個字以內)' inputName='card2Title' inputState={card2Title}
                                                     stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片2內文' notice='(字數限制為20個字以內)' inputName='card2Content' inputState={card2Content}
+                                                <InputTextArea title='卡片2內文' notice='(建議字數為20個字以內)' inputName='card2Content' inputState={card2Content}
                                                     rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -617,11 +617,11 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片3標題' notice='(字數限制為8個字以內)' inputName='card3Title' inputState={card3Title}
+                                                <InputText title='卡片3標題' notice='(建議字數為8個字以內)' inputName='card3Title' inputState={card3Title}
                                                     stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片3內文' notice='(字數限制為20個字以內)' inputName='card3Content' inputState={card3Content}
+                                                <InputTextArea title='卡片3內文' notice='(建議字數為20個字以內)' inputName='card3Content' inputState={card3Content}
                                                     rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -712,11 +712,11 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片4標題' notice='(字數限制為8個字以內)' inputName='card4Title' inputState={card4Title}
+                                                <InputText title='卡片4標題' notice='(建議字數為8個字以內)' inputName='card4Title' inputState={card4Title}
                                                     stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片4內文' notice='(字數限制為20個字以內)' inputName='card4Content' inputState={card4Content}
+                                                <InputTextArea title='卡片4內文' notice='(建議字數為20個字以內)' inputName='card4Content' inputState={card4Content}
                                                     rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -808,11 +808,11 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片5標題' notice='(字數限制為8個字以內)' inputName='card5Title' inputState={card5Title}
+                                                <InputText title='卡片5標題' notice='(建議字數為8個字以內)' inputName='card5Title' inputState={card5Title}
                                                     stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片5內文' notice='(字數限制為20個字以內)' inputName='card5Content' inputState={card5Content}
+                                                <InputTextArea title='卡片5內文' notice='(建議字數為20個字以內)' inputName='card5Content' inputState={card5Content}
                                                     rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -887,11 +887,11 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片6標題' notice='(字數限制為8個字以內)' inputName='card6Title' inputState={card6Title}
+                                                <InputText title='卡片6標題' notice='(建議字數為8個字以內)' inputName='card6Title' inputState={card6Title}
                                                     stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片6內文' notice='(字數限制為20個字以內)' inputName='card6Content' inputState={card6Content}
+                                                <InputTextArea title='卡片6內文' notice='(建議字數為20個字以內)' inputName='card6Content' inputState={card6Content}
                                                     rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -966,11 +966,11 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片7標題' notice='(字數限制為8個字以內)' inputName='card7Title' inputState={card7Title}
+                                                <InputText title='卡片7標題' notice='(建議字數為8個字以內)' inputName='card7Title' inputState={card7Title}
                                                     stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片7內文' notice='(字數限制為20個字以內)' inputName='card7Content' inputState={card7Content}
+                                                <InputTextArea title='卡片7內文' notice='(建議字數為20個字以內)' inputName='card7Content' inputState={card7Content}
                                                     rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -1045,11 +1045,11 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片8標題' notice='(字數限制為8個字以內)' inputName='card8Title' inputState={card8Title}
+                                                <InputText title='卡片8標題' notice='(建議字數為8個字以內)' inputName='card8Title' inputState={card8Title}
                                                     stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片8內文' notice='(字數限制為20個字以內)' inputName='card8Content' inputState={card8Content}
+                                                <InputTextArea title='卡片8內文' notice='(建議字數為20個字以內)' inputName='card8Content' inputState={card8Content}
                                                     rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">

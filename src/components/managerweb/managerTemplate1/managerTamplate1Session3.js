@@ -118,8 +118,8 @@ class Session3 extends React.Component{
                                     <input type="hidden" id="themeNum3" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='員工福利圖片' notice='(圖檔尺寸大小為 500*350 ，接受格式為png、jpg)' objName='benefitImg'  imgUpload={benefitImgUpload} imgFileName={benefitImg} 
-                                            parentObj={this}  imgW={500} imgH={350} required={true}/> 
+                                        <ImgUpload title='員工福利圖片' notice='(圖檔尺寸大小為 625*395 ，接受格式為png、jpg)' objName='benefitImg'  imgUpload={benefitImgUpload} imgFileName={benefitImg} 
+                                            parentObj={this}  imgW={625} imgH={395} required={true}/> 
                                     </div>                                    
                                     <div className="form-row row-style-w95-pt1">
                                         <label><span className='text-danger'>*</span>員工福利內容 <em className='text-primary'>( 因版面有限，內容編排請特別注意，可搭配預覽確認是否超出顯示範圍 )</em> </label>

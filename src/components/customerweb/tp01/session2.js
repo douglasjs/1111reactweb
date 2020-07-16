@@ -78,7 +78,7 @@ class CompanyInfo extends React.Component{
                         </div>
                         <div className="lqd-column col-md-12">
     
-                            <div className="tabs tabs-nav-side tabs-nav-side-alt tabs-nav-side-block flex-lg-row-reverse">
+                            <div className="tabs tabs-nav-side tabs-nav-side-alt tabs-nav-side-block flex-lg-row-reverse company_pb-50px-400">
     
                                 <ul className="nav tabs-nav" role="tablist">
                                     <li role="presentation" className="active">
@@ -101,11 +101,11 @@ class CompanyInfo extends React.Component{
                                     </li>
                                 </ul>
     
-                                <div className="tabs-content">
+                                <div className="tabs-content company_height_300px_400-content">
     
                                     <div role="tabpanel" className="tabs-pane fade active in" id="ld-tab-pane-48">
     
-                                        <div className="fancy-box fancy-box-case-study scheme-light" data-hover3d="true">
+                                        <div className="fancy-box fancy-box-case-study scheme-light company_height_300px_400" data-hover3d="true">
                                             <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
                                                 <div className="cb-img-container border-radius-5">
                                                     <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">
@@ -122,7 +122,7 @@ class CompanyInfo extends React.Component{
         
                                     <div role="tabpanel" className="tabs-pane fade" id="ld-tab-pane-49">
     
-                                        <div className="fancy-box fancy-box-case-study scheme-light" data-hover3d="true">
+                                        <div className="fancy-box fancy-box-case-study scheme-light company_height_300px_400" data-hover3d="true">
                                             <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
                                                 <div className="cb-img-container border-radius-5">
                                                     <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">
@@ -139,7 +139,7 @@ class CompanyInfo extends React.Component{
             
                                     <div role="tabpanel" className="tabs-pane fade" id="ld-tab-pane-50">
     
-                                        <div className="fancy-box fancy-box-case-study scheme-light" data-hover3d="true">
+                                        <div className="fancy-box fancy-box-case-study scheme-light company_height_300px_400" data-hover3d="true">
                                             <div className="fancy-box-contents border-radius-5" data-stacking-factor="0.5">
                                                 <div className="cb-img-container border-radius-5">
                                                     <figure className="fancy-box-image border-radius-5 loaded" data-responsive-bg="true">

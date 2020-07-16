@@ -377,7 +377,7 @@ h6 {
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 7;
-      word-break: break-all;v
+      word-break: break-all;
       line-height: 30px;
       height: auto;
       padding-bottom: 0px;
@@ -708,6 +708,10 @@ h6 {
   max-height: 410px;
 }
 
+.benefit-max-hight{
+  max-height: 410px;
+}
+
 .over-div-hide {
   overflow:hidden;
 }
@@ -750,10 +754,32 @@ h6 {
   .pt-30_percent{
     padding-top: 20%;
   }
+
+  .benefit_pt-768{
+    padding-top: 20px;
+  }
+  .benefit_mb-768{
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 400px){
   .tp01-title-font-size{
     font-size: 24px !important;
+  }
+
+  .company_pb-50px-400{
+    padding-bottom: 50px;
+  }
+  .company_height_300px_400 {
+    height: 300px !important;
+  }
+
+  .company_height_300px_400-content {
+    height: 300px;
+  }
+
+  .benefit-max-hight {
+    max-height: 500px;
   }
 }

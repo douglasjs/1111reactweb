@@ -228,11 +228,11 @@ class Session2 extends React.Component{
 
                                 <div className="col-md-6 mb-3">
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='主標題' notice='(字數限制為21個字以內)' inputName='introTitle' inputState={introTitle}
+                                        <InputText title='主標題' notice='(建議字數為21個字以內)' inputName='introTitle' inputState={introTitle}
                                            stateObj={this} required={true} checkValue='21' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='主內容' notice='(字數限制為92個字以內)' inputName='introMainContent' inputState={introMainContent}
+                                        <InputTextArea title='主內容' notice='(建議字數為92個字以內)' inputName='introMainContent' inputState={introMainContent}
                                            rows='4' stateObj={this} required={true} checkValue='92' />
                                     </div>
                                 </div>
@@ -356,15 +356,15 @@ class Session2 extends React.Component{
 
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <InputText title='小標題1' notice='(字數限制為11個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
+                                                    <InputText title='小標題1' notice='(建議字數為11個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
                                                         stateObj={this} required={true} checkValue='11' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題1內容' notice='(字數限制為38個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
+                                                    <InputTextArea title='小標題1內容' notice='(建議字數為38個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
                                                         rows='3' stateObj={this} required={true} checkValue='38' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputText title='小標題1圖片文字' notice='(字數限制為20個字以內)' inputName='introSubTitle1ImgText' inputState={introSubTitle1ImgText}
+                                                    <InputText title='小標題1圖片文字' notice='(建議字數為20個字以內)' inputName='introSubTitle1ImgText' inputState={introSubTitle1ImgText}
                                                         stateObj={this} required={true} checkValue='20' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
@@ -528,15 +528,15 @@ class Session2 extends React.Component{
 
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <InputText title='小標題2' notice='(字數限制為11個字以內)' inputName='introSubTitle2' inputState={introSubTitle2}
+                                                    <InputText title='小標題2' notice='(建議字數為11個字以內)' inputName='introSubTitle2' inputState={introSubTitle2}
                                                         stateObj={this} required={true} checkValue='11' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題2內容' notice='(字數限制為38個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
+                                                    <InputTextArea title='小標題2內容' notice='(建議字數為38個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
                                                         rows='3' stateObj={this} required={true} checkValue='38' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputText title='小標題2圖片文字' notice='(字數限制為20個字以內)' inputName='introSubTitle2ImgText' inputState={introSubTitle2ImgText}
+                                                    <InputText title='小標題2圖片文字' notice='(建議字數為20個字以內)' inputName='introSubTitle2ImgText' inputState={introSubTitle2ImgText}
                                                         stateObj={this} required={true} checkValue='20' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
@@ -701,15 +701,15 @@ class Session2 extends React.Component{
 
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <InputText title='小標題3' notice='(字數限制為11個字以內)' inputName='introSubTitle3' inputState={introSubTitle3}
+                                                    <InputText title='小標題3' notice='(建議字數為11個字以內)' inputName='introSubTitle3' inputState={introSubTitle3}
                                                         stateObj={this} required={true} checkValue='11' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題3內容' notice='(字數限制為38個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
+                                                    <InputTextArea title='小標題3內容' notice='(建議字數為38個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
                                                         rows='3' stateObj={this} required={true} checkValue='38' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputText title='小標題3圖片文字' notice='(字數限制為20個字以內)' inputName='introSubTitle3ImgText' inputState={introSubTitle3ImgText}
+                                                    <InputText title='小標題3圖片文字' notice='(建議字數為20個字以內)' inputName='introSubTitle3ImgText' inputState={introSubTitle3ImgText}
                                                         stateObj={this} required={true} checkValue='20' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">

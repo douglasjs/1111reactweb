@@ -111,36 +111,36 @@ class Session5 extends React.Component{
                                     <input type="hidden" id="themeNum5" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹主標題' notice='(字數限制為14個字以內)' inputName='brandTitle' inputState={brandTitle}
+                                        <InputText title='品牌介紹主標題' notice='(建議字數為14個字以內)' inputName='brandTitle' inputState={brandTitle}
                                             stateObj={this} required={true} checkValue='14' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題1' notice='(字數限制為30個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
+                                        <InputText title='品牌介紹副標題1' notice='(建議字數為30個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
                                             stateObj={this} required={true} checkValue='30' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題1內文 ' notice='(字數限制為136個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
+                                        <InputTextArea title='品牌介紹副標題1內文 ' notice='(建議字數為136個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
                                             rows='3' stateObj={this} required={true} checkValue='136'/>
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題2' notice='(字數限制為10個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
+                                        <InputText title='品牌介紹副標題2' notice='(建議字數為10個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
                                             stateObj={this} required={true} checkValue='10' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題2內文 ' notice='(字數限制為135個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
+                                        <InputTextArea title='品牌介紹副標題2內文 ' notice='(建議字數為135個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
                                             rows='3' stateObj={this} required={true} checkValue='135' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題3' notice='(字數限制為10個字以內)' inputName='brandTitleSub3' inputState={brandTitleSub3}
+                                        <InputText title='品牌介紹副標題3' notice='(建議字數為10個字以內)' inputName='brandTitleSub3' inputState={brandTitleSub3}
                                             stateObj={this} required={true} checkValue='10' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題3內文 ' notice='(字數限制為135個字以內)' inputName='brandTitleSub3Content' inputState={brandTitleSub3Content}
+                                        <InputTextArea title='品牌介紹副標題3內文 ' notice='(建議字數為135個字以內)' inputName='brandTitleSub3Content' inputState={brandTitleSub3Content}
                                             rows='3' stateObj={this} required={true} checkValue='135' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='品牌介紹圖片' notice='(圖檔尺寸大小為 640*427 ，接受格式為png、jpg)' objName='brandImg'  imgUpload={brandImgUpload} 
-                                            imgFileName={brandImg} parentObj={this} imgW={640} imgH={427} required={true} />
+                                        <ImgUpload title='品牌介紹圖片' notice='(圖檔尺寸大小為 555*370 ，接受格式為png、jpg)' objName='brandImg'  imgUpload={brandImgUpload} 
+                                            imgFileName={brandImg} parentObj={this} imgW={555} imgH={370} required={true} />
                                     </div>
 
                                     <hr />
