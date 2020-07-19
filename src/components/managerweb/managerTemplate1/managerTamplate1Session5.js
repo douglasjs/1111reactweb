@@ -111,32 +111,32 @@ class Session5 extends React.Component{
                                     <input type="hidden" id="themeNum5" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹主標題' notice='(建議字數為14個字以內)' inputName='brandTitle' inputState={brandTitle}
-                                            stateObj={this} required={true} checkValue='14' />
+                                        <InputText title='品牌介紹主標題' notice='(建議字數為13個字以內)' inputName='brandTitle' inputState={brandTitle}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題1' notice='(建議字數為30個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
-                                            stateObj={this} required={true} checkValue='30' />
+                                        <InputText title='品牌介紹副標題1' notice='(建議字數為13個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題1內文 ' notice='(建議字數為136個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
-                                            rows='3' stateObj={this} required={true} checkValue='136'/>
+                                        <InputTextArea title='品牌介紹副標題1內文 ' notice='(建議字數為135個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
+                                            rows='3' stateObj={this} required={true} checkValue='500'/>
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題2' notice='(建議字數為10個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
-                                            stateObj={this} required={true} checkValue='10' />
+                                        <InputText title='品牌介紹副標題2' notice='(建議字數為13個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputTextArea title='品牌介紹副標題2內文 ' notice='(建議字數為135個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
-                                            rows='3' stateObj={this} required={true} checkValue='135' />
+                                            rows='3' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題3' notice='(建議字數為10個字以內)' inputName='brandTitleSub3' inputState={brandTitleSub3}
-                                            stateObj={this} required={true} checkValue='10' />
+                                        <InputText title='品牌介紹副標題3' notice='(建議字數為13個字以內)' inputName='brandTitleSub3' inputState={brandTitleSub3}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputTextArea title='品牌介紹副標題3內文 ' notice='(建議字數為135個字以內)' inputName='brandTitleSub3Content' inputState={brandTitleSub3Content}
-                                            rows='3' stateObj={this} required={true} checkValue='135' />
+                                            rows='3' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='品牌介紹圖片' notice='(圖檔尺寸大小為 555*370 ，接受格式為png、jpg)' objName='brandImg'  imgUpload={brandImgUpload} 
@@ -169,14 +169,14 @@ class Session5 extends React.Component{
                                         <tbody>
                                         <tr>
                                             <td>品牌介紹主標題</td>
-                                            <td align='left'>專業及熱情的有機生活管家</td>
-                                            <td>13個字以內</td>
+                                            <td align='left'>1流的人才，進入1流的企業</td>
+                                            <td>建議13個字以內</td>
                                             <td>不可空白</td>
                                         </tr>
                                         <tr>
                                             <td>品牌介紹副標題1</td>
-                                            <td align='left'>安心宣言</td>
-                                            <td>10個字以內</td>
+                                            <td align='left'>人力銀行指標品牌</td>
+                                            <td>建議13個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand_subtitle01">觀看範例圖片</a>
@@ -184,8 +184,8 @@ class Session5 extends React.Component{
                                         </tr>
                                         <tr>
                                             <td>品牌介紹副標題1 內文</td>
-                                            <td align='left'>全方位的食材供應，從生產處理保存運送至宅配到府，層層把關，全程安心無污染，產品定期專業檢測。提昇您對於味覺的層次，講求食材的等級，與傳遞純淨飲食的生活態度。每週變化的菜單，提供搭配的烹調食譜，信手拈來，就是一桌美味盛宴。讓家人的健康，安心零負擔、三餐沒煩惱!</td>
-                                            <td>135個字以內</td>
+                                            <td align='left'>於 1998 年成立，累積超過 800 萬份求職履歷，20 萬以上徵才廠商！1111 不只是一般人力銀行，更是追求創新卓越的人才銀行！</td>
+                                            <td>建議135個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand_subtitle01">觀看範例圖片</a>
@@ -193,8 +193,8 @@ class Session5 extends React.Component{
                                         </tr>
                                         <tr>
                                             <td>品牌介紹副標題2</td>
-                                            <td align='left'>生態平衡</td>
-                                            <td>10個字以內</td>
+                                            <td align='left'>專屬客服一流服務</td>
+                                            <td>建議13個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand_subtitle02">觀看範例圖片</a>
@@ -202,8 +202,8 @@ class Session5 extends React.Component{
                                         </tr>
                                         <tr>
                                             <td>品牌介紹副標題2 內文</td>
-                                            <td align='left'>夢中的淨土，得天獨厚的生產環境。遠眺，依山傍海的自然環境；近觀，質樸純善的人文氣息。豐收滿溢，開創了一片美好的自然天地。如此的好山、好水、好空氣，一切的視覺感動，幸福無限，生生不息</td>
-                                            <td>135個字以內</td>
+                                            <td align='left'>全國唯一擁有 400 多位人資客服人員，隨時協助您解決找尋人才或者系統上的各項問題！</td>
+                                            <td>建議135個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand_subtitle02">觀看範例圖片</a>
@@ -211,8 +211,8 @@ class Session5 extends React.Component{
                                         </tr>
                                         <tr>
                                             <td>品牌介紹副標題3</td>
-                                            <td align='left'>達人堅持</td>
-                                            <td>10個字以內</td>
+                                            <td align='left'>特色求職工具，吸引人才加入</td>
+                                            <td>建議13個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand_subtitle03">觀看範例圖片</a>
@@ -220,8 +220,8 @@ class Session5 extends React.Component{
                                         </tr>
                                         <tr>
                                             <td>品牌介紹副標題3 內文</td>
-                                            <td align='left'>樸拙的生命，健康心靈；靈活身手，堅毅自信。嚴選的優良品種，以回歸大地的自然方式，用心栽培。每項食材的背後，近乎苛求，經歷了無數的執著篩選與專業考驗。一片菜葉、一顆果實，讓您每一口，都能體會到達人的精神與味覺滿足。慢慢喚醒您對於自然的記憶，進而更加珍惜大地的賜與。從外觀的包裝設計、到精選的純淨食材，交付到您手中的百寶箱，是我們謙卑的驕傲。</td>
-                                            <td>135個字以內</td>
+                                            <td align='left'>求職工具. 工欲善其事，必先利其器！履歷準備好，工作更好找！</td>
+                                            <td>建議135個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand_subtitle03">觀看範例圖片</a>
@@ -230,7 +230,7 @@ class Session5 extends React.Component{
                                         <tr>
                                             <td>品牌介紹圖片</td>
                                             <td>寬、高(px)</td>
-                                            <td>640*427</td>
+                                            <td>555*370</td>
                                             <td align='left'>
                                                 <ul>
                                                     <li>接受格式為png、jpg</li>

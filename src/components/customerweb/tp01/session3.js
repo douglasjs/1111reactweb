@@ -61,7 +61,7 @@ class CompanyBenifit  extends React.Component {
                         <div className="lqd-column col-xs-12 col-md-6 pl-md-7">
 
                             <div className="ld-fancy-heading benefit-margin-custom text-left benefit_mb-768">
-                                <h2 className="text-black" data-text-rotator="true">
+                                <h2 className="text-black tp01-title-font-size" data-text-rotator="true">
                                     <span className="ld-fh-txt">員工福利</span>
                                 </h2>
                                 

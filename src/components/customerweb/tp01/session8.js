@@ -116,27 +116,26 @@ class CompanyContact extends React.Component {
                                     </header>
     
                                         <div className="contact-form contact-form-inputs-filled contact-form-button-block font-size-14 pt-10">
-                                        <form method="post" noValidate>
-                                            <div className="row">
-                                                <div className="col-md-6">
-                                                    <input className="bg-white border-fade-black-03" type="text" name="name" aria-required="true" aria-invalid="false" placeholder="姓名" onChange={this.handleChange('custName')} value={this.state.custName} required />
+                                            <form method="post" noValidate>
+                                                <div className="row">
+                                                    <div className="col-md-6">
+                                                        <input className="bg-white border-fade-black-03" type="text" name="name" aria-required="true" aria-invalid="false" placeholder="姓名" onChange={this.handleChange('custName')} value={this.state.custName} required />
                                                     </div>
                                                     <div className="col-md-6">
                                                         <input className="bg-white border-fade-black-03" type="tel" name="mobile" aria-required="true" aria-invalid="false" placeholder="電話" onChange={this.handleChange('custMobile')} value={this.state.custMobile} required  ref={this.emailInput} />
                                                     </div>
                                                     <div className="col-md-12">
-                                                            <input className="bg-white border-fade-black-03" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email" onChange={this.handleChange('custMail')} value={this.state.custMail} required  ref={this.phoneInput} />
+                                                        <input className="bg-white border-fade-black-03" type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email" onChange={this.handleChange('custMail')} value={this.state.custMail} required  ref={this.phoneInput} />
                                                     </div>
-                                                        
                                                     <div className="col-md-12">
-                                                                <textarea className="bg-white border-fade-black-03" cols="10" rows="3" name="message" aria-required="true" aria-invalid="false" placeholder="訊息" onChange={this.handleChange('custMsg')} value={this.state.custMsg} required></textarea>
-                                                            </div>
-                                                    <div className="col-md-12 text-md-right">
-                                                                <input className="font-weight-bold font-size-14 ltr-sp-1" type="submit" value="送出" onClick={this.habdleSubmit} />
+                                                        <textarea className="bg-white border-fade-black-03" cols="10" rows="3" name="message" aria-required="true" aria-invalid="false" placeholder="訊息" onChange={this.handleChange('custMsg')} value={this.state.custMsg} required></textarea>
                                                     </div>
+                                                    <div className="col-md-12 text-md-right">
+                                                        <input className="font-weight-bold font-size-18 ltr-sp-1" type="submit" value="送出" onClick={this.habdleSubmit} />
+                                                    </div>                                                    
                                                 </div>
                                             </form>
-                                                        <div className="contact-form-result hidden"></div>
+                                            <div className="contact-form-result hidden"></div>
                                         </div>
                                     </div>
                                 </div>

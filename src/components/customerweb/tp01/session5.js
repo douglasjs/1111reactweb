@@ -66,7 +66,7 @@ class CompanyBrand extends React.Component {
                             <div className="accordion accordion-md accordion-title-underlined accordion-expander-left accordion-active-color-primary" id="vc_accordion_5c77a7f9d2896" role="tablist">
                                 <div className="accordion-item panel active">
                                     <div className="accordion-heading" role="tab" id="heading_accordion-1">
-                                        <h4 className="accordion-title font-size-17 lh-15 tp01_line-1 text-left">
+                                        <h4 className="accordion-title font-size-17 lh-15 tp01_brand_title_line text-left">
                                             <a data-toggle="collapse" data-parent="#vc_accordion_5c77a7f9d2896" href="#accordion-1" aria-expanded="true" aria-controls="accordion-1">
                                                 {brandTitleSub1}
                                                 <span className="accordion-expander">
@@ -85,7 +85,7 @@ class CompanyBrand extends React.Component {
     
                                 <div className="accordion-item panel">
                                     <div className="accordion-heading" role="tab" id="heading_accordion-2">
-                                        <h4 className="accordion-title font-size-17 lh-15 tp01_line-1 text-left">
+                                        <h4 className="accordion-title font-size-17 lh-15 tp01_brand_title_line text-left">
                                             <a className="collapsed" data-toggle="collapse" data-parent="#vc_accordion_5c77a7f9d2896" href="#accordion-2" aria-expanded="false" aria-controls="accordion-2">
                                                 {brandTitleSub2}
                                                 <span className="accordion-expander">
@@ -104,7 +104,7 @@ class CompanyBrand extends React.Component {
     
                                 <div className="accordion-item panel">
                                     <div className="accordion-heading" role="tab" id="heading_accordion-3">
-                                        <h4 className="accordion-title font-size-17 lh-15 tp01_line-1 text-left">
+                                        <h4 className="accordion-title font-size-17 lh-15 tp01_brand_title_line text-left">
                                             <a className="collapsed" data-toggle="collapse" data-parent="#vc_accordion_5c77a7f9d2896" href="#accordion-3" aria-expanded="false" aria-controls="accordion-3">
                                                 {brandTitleSub3}
                                                 <span className="accordion-expander">

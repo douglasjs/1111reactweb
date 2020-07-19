@@ -133,43 +133,43 @@ class Session7 extends React.Component{
 
                                         <div className="form-row row-style-w95">
                                             <InputText title={`${sessionName}1標題`} notice='(建議字數為30個字以內)' inputName='qa1Title' inputState={qa1Title}
-                                                stateObj={this} required={false} checkValue='30' />
+                                                stateObj={this} required={false} checkValue='100' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
                                             <InputTextArea title={`${sessionName}1內容`} notice='(建議字數為135個字以內)' inputName='qa1Content' inputState={qa1Content}
-                                                rows='4' stateObj={this} required={false} checkValue='135' />
+                                                rows='4' stateObj={this} required={false} checkValue='500' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
                                             <InputText  title= {`${sessionName}2標題`} notice='(建議字數為30個字以內)' inputName='qa2Title' inputState={qa2Title}
-                                                stateObj={this} required={false} checkValue='30' />
+                                                stateObj={this} required={false} checkValue='100' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
                                             <InputTextArea title={`${sessionName}2內容`} notice='(建議字數為135個字以內)' inputName='qa2Content' inputState={qa2Content}
-                                                rows='4' stateObj={this} required={false} checkValue='135' />
+                                                rows='4' stateObj={this} required={false} checkValue='500' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
                                             <InputText  title= {`${sessionName}3標題`} notice='(建議字數為30個字以內)' inputName='qa3Title' inputState={qa3Title}
-                                                stateObj={this} required={false} checkValue='30' />
+                                                stateObj={this} required={false} checkValue='100' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
                                             <InputTextArea title={`${sessionName}3內容`} notice='(建議字數為135個字以內)' inputName='qa3Content' inputState={qa3Content}
-                                                rows='4' stateObj={this} required={false} checkValue='135' />
+                                                rows='4' stateObj={this} required={false} checkValue='500' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
                                             <InputText  title= {`${sessionName}4標題`} notice='(建議字數為30個字以內)' inputName='qa4Title' inputState={qa4Title}
-                                                stateObj={this} required={false} checkValue='30' />
+                                                stateObj={this} required={false} checkValue='100' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
                                             <InputTextArea title={`${sessionName}4內容`} notice='(建議字數為135個字以內)' inputName='qa4Content' inputState={qa4Content}
-                                                rows='4' stateObj={this} required={false} checkValue='135' />
+                                                rows='4' stateObj={this} required={false} checkValue='500' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
                                             <InputText  title= {`${sessionName}5標題`} notice='(建議字數為30個字以內)' inputName='qa5Title' inputState={qa5Title}
-                                                stateObj={this} required={false} checkValue='30' />
+                                                stateObj={this} required={false} checkValue='100' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
                                             <InputTextArea title={`${sessionName}5內容`} notice='(建議字數為135個字以內)' inputName='qa5Content' inputState={qa5Content}
-                                                rows='4' stateObj={this} required={false} checkValue='135' />
+                                                rows='4' stateObj={this} required={false} checkValue='500' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
                                             <ImgUpload title='常見問題背景圖片' notice='(圖檔尺寸大小為 1920*1080  ，接受格式為png、jpg)' objName='qaImg'  imgUpload={qaImgUpload} 
@@ -210,8 +210,8 @@ class Session7 extends React.Component{
                                             <tbody>
                                             <tr>
                                                 <td>常見問題標題</td>
-                                                <td align='left'>公司經營理念?</td>
-                                                <td>30個字以內</td>
+                                                <td align='left'>公司的介紹</td>
+                                                <td>建議30個字以內</td>
                                                 <td>
                                                     能輸入5則常見問題<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_faq_title">觀看放大圖例</a>
@@ -219,8 +219,8 @@ class Session7 extends React.Component{
                                             </tr>
                                             <tr>
                                                 <td>常見問題內容</td>
-                                                <td align='left'>本公司擁有優秀的經營團隊，秉持著『◆安心宣言◆生態平衡◆達人堅持』的經營理念，追求企業永續經營及成長；除整體營運穩定外，獲利狀況也逐年提昇，是國內績優廠商之一。 我們更希望能屏除一般人對於天然食物口味上的既定印象，帶給消費者既健康又安全、可口的好味道。</td>
-                                                <td>135個字以內</td>
+                                                <td align='left'>1111人力銀行為全球華人集團之子公司，成立於1998年。求職徵才的信賴品牌， 榮獲2018年人力銀行服務業金牌大獎，提供最貼心的求才求職服務。 今年更推出2019幸福企業擴大徵才活動，以推動企業多提供。</td>
+                                                <td>建議135個字以內</td>
                                                 <td>
                                                     能輸入5則常見問題內容<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_faq_content">觀看放大圖例</a>

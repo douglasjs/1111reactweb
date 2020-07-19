@@ -184,8 +184,8 @@ class Session1 extends React.Component{
                                         <tbody>                                            
                                             <tr>
                                                 <td>大標題</td>
-                                                <td align='left'>永豐餘生技</td>
-                                                <td>12個字以內</td>
+                                                <td align='left'>1111人力銀行</td>
+                                                <td>建議12個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_banner_title">觀看範例圖片</a>
@@ -193,8 +193,8 @@ class Session1 extends React.Component{
                                             </tr>
                                             <tr>
                                                 <td>副標題1</td>
-                                                <td align='left'>期許作為一個專業及熱情的有機生活管家，貼心的讓客人輕鬆的享受有機生活。</td>
-                                                <td>50個字以內</td>
+                                                <td align='left'>找工作、找人才、找幸福企業</td>
+                                                <td>建議13個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_banner_subtitle_01">觀看範例圖片</a>
@@ -203,7 +203,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>副標題2</td>
                                                 <td align='left'>歡迎優秀的朋友一起加入</td>
-                                                <td>36個字以內</td>
+                                                <td>建議11個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_banner_subtitle_02">觀看範例圖片</a>
@@ -212,7 +212,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>背景圖</td>
                                                 <td>寬、高(px)</td>
-                                                <td>1920*1200</td>
+                                                <td>1920*570</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>

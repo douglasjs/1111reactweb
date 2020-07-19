@@ -77,7 +77,7 @@ class CompanyQA extends React.Component {
     
                                     <div className="col-md-2 col-xs-6 col-xs-offset-3 col-md-offset-0 mb-4 mb-md-0 faq-hidden"></div>
     
-                                    <div className="col-md-10 col-xs-12 pl-md-4">
+                                    <div className="col-md-12 col-xs-12 pl-md-4">
     
                                         <div className="img-mask-custom carousel-items row testimonials-quotes row carousel-quotes-1 carousel-nav-light carousel-nav-hover-light carousel-nav-border-none " data-lqd-flickity='{ "prevNextButtons": true, "navStyle": 1, "navOffsets": { "nav": { "left": 15 } }, "rightToLeft": true }'>
     

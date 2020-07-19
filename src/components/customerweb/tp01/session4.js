@@ -87,14 +87,14 @@ class CompanyJobs extends React.Component {
                                                   return(                                                      
                                                         <div key={index} className="jobs-table-row">
                                                             <div className="cell text-left" data-title="職缺：">{element.position_name}</div>
-                                                            <div className="cell" data-title="薪資：">{element.position_salary}</div>
-                                                            <div className="cell text-left" data-title="說明">
+                                                            <div className="cell text-left" data-title="薪資：">{element.position_salary}</div>
+                                                            <div className="cell text-left" data-title="說明：">
                                                                 <p className="jobs-hide-text">
                                                                     {element.position_matter}
                                                                 </p>
                                                             </div>
-                                                            <div className="cell" data-title="地點："> {element.position_workCity}</div>
-                                                            <div className="cell" data-title="加入：">
+                                                            <div className="cell text-left" data-title="地點："> {element.position_workCity}</div>
+                                                            <div className="cell text-left" data-title="加入：">
                                                                 <a href={positionURL} target='_blank' rel="noopener noreferrer" className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
                                                                     <span>
                                                                         <span className="btn-txt">應徵</span>
@@ -128,14 +128,14 @@ class CompanyJobs extends React.Component {
                                                 return(
                                                         <div key={index} className="jobs-table-row">
                                                             <div className="cell text-left" data-title="職缺：">{element.position_name}</div>
-                                                            <div className="cell" data-title="薪資：">{element.position_salary}</div>
-                                                            <div className="cell text-left" data-title="說明">
+                                                            <div className="cell text-left" data-title="薪資：">{element.position_salary}</div>
+                                                            <div className="cell text-left" data-title="說明：">
                                                                 <p className="jobs-hide-text">
                                                                     {element.position_matter}
                                                                 </p>
                                                             </div>
-                                                            <div className="cell" data-title="地點："> {element.position_workCity}</div>
-                                                            <div className="cell" data-title="加入：">
+                                                            <div className="cell text-left" data-title="地點："> {element.position_workCity}</div>
+                                                            <div className="cell text-left" data-title="加入：">
                                                                 <a href={positionURL} target='_blank' rel="noopener noreferrer" className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
                                                                     <span>
                                                                         <span className="btn-txt">應徵</span>
@@ -169,14 +169,14 @@ class CompanyJobs extends React.Component {
                                                 return(
                                                         <div key={index} className="jobs-table-row">
                                                             <div className="cell text-left" data-title="職缺：">{element.position_name}</div>
-                                                            <div className="cell" data-title="薪資：">{element.position_salary}</div>
-                                                            <div className="cell text-left" data-title="說明">
+                                                            <div className="cell text-left" data-title="薪資：">{element.position_salary}</div>
+                                                            <div className="cell text-left" data-title="說明：">
                                                                 <p className="jobs-hide-text">
                                                                     {element.position_matter}
                                                                 </p>
                                                             </div>
-                                                            <div className="cell" data-title="地點："> {element.position_workCity}</div>
-                                                            <div className="cell" data-title="加入：">
+                                                            <div className="cell text-left" data-title="地點："> {element.position_workCity}</div>
+                                                            <div className="cell text-left" data-title="加入：">
                                                                 <a href={positionURL} target='_blank' rel="noopener noreferrer" className="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-18 lh-15 font-weight-bold ltr-sp-05 mb-2">
                                                                     <span>
                                                                         <span className="btn-txt">應徵</span>
