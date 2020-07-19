@@ -85,7 +85,7 @@ class CompanyContact extends React.Component {
             })
         }
 
-        let imgURL = "url(image/tp02/background/testimonial-bg.png)";
+        let imgURL = "url(/image/tp02/background/testimonial-bg.png)";
 
         return (
             <div style={contactEnable? {} : {display: 'none'}}>

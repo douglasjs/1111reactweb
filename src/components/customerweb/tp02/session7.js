@@ -59,7 +59,7 @@ class CompanyQA extends React.Component {
                         </div>
                         <div className="carousel-content centred">
                             <div className="testimonial-carousel owl-carousel owl-theme nav-style-one owl-dots-none">
-                                <div className="content-box">
+                                <div className="content-box text-center">
                                     <div className="author-info">
                                         <span className="designation">Q1.</span>
                                         <h4 className="name">{qa1Title}</h4>

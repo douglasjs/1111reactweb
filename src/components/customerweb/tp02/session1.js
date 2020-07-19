@@ -39,7 +39,7 @@ class CompanyTitle extends React.Component{
         // image
         companyBackgroundImg1 = !companyBackgroundImg1 ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg1}`;
 
-        let imgURL = "url(image/tp02/background/banner-1_"+ styleType + ".png)";
+        let imgURL = "url(/image/tp02/background/banner-1_"+ styleType + ".png)";
 
         return (
             

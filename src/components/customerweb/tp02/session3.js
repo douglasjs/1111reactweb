@@ -55,7 +55,7 @@ class CompanyBenifit  extends React.Component {
                     <div className="row">
                         
                         <div className="col-lg-6 col-md-12 col-sm-12 image-column">
-                            <div className="image-box clearfix">
+                            <div className="image-box clearfix text-left">
                                 <figure className="image image-1">
                                     <img src={benefitImg} alt="1111人力銀行-員工福利" />
                                 </figure>
