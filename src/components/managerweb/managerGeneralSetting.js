@@ -67,7 +67,7 @@ class managerGeneralSetting extends React.Component{
                 img.src=reader.result;
 
                 img.onload = function() {
-                   if(img.width > 130 || img.height > 40){
+                   if(img.width > 260 || img.height > 80){
                        alert('上傳圖片尺寸不合');
                        return false;
                    }else{
@@ -470,7 +470,7 @@ class managerGeneralSetting extends React.Component{
                               </div>
                           </div>                          
                           <div className="form-row">
-                                <label><span className='text-danger'>*</span> 公司LOGO上傳</label><em className='text-primary'>(圖檔尺寸大小為 130*40，接受格式為png)</em> 
+                                <label><span className='text-danger'>*</span> 公司LOGO上傳</label><em className='text-primary'>(圖檔尺寸大小為 260*80，接受格式為png)</em> 
                           </div>
                           <div className="form-row">
                               <div className="col-md-6 mb-3">
