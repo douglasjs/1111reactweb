@@ -15,7 +15,8 @@ function strNumLimite( str, number ){
 const emptyCheck = (value, title, oldValue) => {
     if (value.length === 0){
         alert(title + '不可以空白');
-        return oldValue;
+        /*return oldValue;*/
+        return " ";
     }else{
         return value;
     }
