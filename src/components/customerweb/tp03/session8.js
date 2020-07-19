@@ -133,7 +133,7 @@ class CompanyContact extends React.Component {
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-3">
-                                                        <div className="form-input-item light mt-i-30">
+                                                        <div className="form-input-item light mt-i-30 text-left">
                                                             <button className="btn btn-brand2" onClick={this.habdleSubmit} >送出</button>
                                                         </div>
                                                     </div>
