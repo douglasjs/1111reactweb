@@ -219,7 +219,7 @@ class Session2 extends React.Component{
                                 </div>
 
                                 <div className="col-md-6 mb-3">                                    
-                                    <div><img src="/image/sample_04/02.png" alt="Temp4_Company" width="100%"/></div>
+                                    <div><img src="/image/sample_04/02-0.png" alt="Temp4_Company" width="100%"/></div>
                                     <div><a type="button" data-toggle="modal" href="#tmp4_company">觀看放大圖例</a></div>
                                     <hr />
                                     <div>
