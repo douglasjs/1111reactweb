@@ -55,7 +55,7 @@ class CompanyBenifit  extends React.Component {
                     <div className="row">
                         
                         <div className="col-lg-6 col-md-12 col-sm-12 image-column">
-                            <div className="image-box clearfix text-left">
+                            <div className="image-box clearfix beneft_text-align">
                                 <figure className="image image-1">
                                     <img src={benefitImg} alt="1111人力銀行-員工福利" />
                                 </figure>
@@ -68,17 +68,17 @@ class CompanyBenifit  extends React.Component {
                                     <h1>員工福利</h1>
                                 </div>
                                 <div className="inner-box">
-                                    <div className="single-item">
+                                    <div className="single-item benefit_min-hight">
                                         <div className="icon-box"><i className="flaticon-digital-marketing"></i></div>
                                         <h3><a target="_blank" rel="noopener noreferrer" href={companyurl}>{benefitSubTitle1}</a></h3>
                                         <div className="text">{benefitSubContent1}</div>
                                     </div>
-                                    <div className="single-item">
+                                    <div className="single-item benefit_min-hight">
                                         <div className="icon-box"><i className="flaticon-data"></i></div>
                                         <h3><a target="_blank" rel="noopener noreferrer" href={companyurl}>{benefitSubTitle2}</a></h3>
                                         <div className="text">{benefitSubContent2}</div>
                                     </div>
-                                    <div className="single-item">
+                                    <div className="single-item benefit_min-hight">
                                         <div className="icon-box"><i className="flaticon-dashboard"></i></div>
                                         <h3><a target="_blank" rel="noopener noreferrer" href={companyurl}>{benefitSubTitle3}</a></h3>
                                         <div className="text">{benefitSubContent3}</div>

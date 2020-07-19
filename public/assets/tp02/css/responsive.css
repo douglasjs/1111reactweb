@@ -1873,12 +1873,34 @@
   	}
 }
 
+@media (min-width: 500px) {
+	.s1_width {
+    width: 80%;
+  }
+}
+
 .text-left {
   text-align: left;
 }
 
-@media (min-width: 500px) {
-	.s1_width {
-    width: 80%;
+.beneft_text-align {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .beneft_text-align {
+    right: 0px !important;
+  }
+  .benefit_min-hight {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .beneft_text-align {
+    right: 0px !important;
+  }
+  .benefit_min-hight {
+    min-height: 125px;
   }
 }

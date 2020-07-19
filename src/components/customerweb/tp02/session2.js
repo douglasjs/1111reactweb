@@ -41,7 +41,7 @@ class CompanyInfo extends React.Component{
         // image
         introSubTitle1Img = !introSubTitle1Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${introSubTitle1Img}`;
 
-        let imgURL = "url(images/background/about-bg.png)";
+        let imgURL = "url(/images/background/about-bg.png)";
 
         return (
             <section id="company" className="about-section" style={{backgroundImage: imgURL}}>
