@@ -287,10 +287,11 @@ class Session4 extends React.Component{
     };
 
     handleCheckBox = (event)=>{
-        const name = `tag_${event.target.value}`;
-        const grpName = this.refs[name].value;
+        //const name = `tag_${event.target.value}`;
+        const grpName = "1";
+        console.log(this.state[grpName]);
         if(this.state[grpName] >= 5){
-            alert("已滿5個請選擇其他標籤");
+            alert("已滿5筆職缺資訊");
             event.target.checked=false;
         }else{
             this.setState({...this.state, [grpName]: this.state[grpName]+1 })
