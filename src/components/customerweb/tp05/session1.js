@@ -55,7 +55,7 @@ class CompanyTitle extends React.Component{
                                         <div className="banner-content s1_banner-content">
                                             <h4 className="text-white tp05_shadow">{companySubTitle1}</h4>
                                             <h1 className="tp05_shadow">{title}</h1>
-                                            <a href={companyurl} className="default-btn pt-10" target="_blank" rel="noopener noreferrer">我要應徵 <span></span></a>
+                                            <a href={companyurl} className="default-btn pt-10 tp05_hover-btn" target="_blank" rel="noopener noreferrer">我要應徵</a>
                                         </div>
                                     </div>
                                 </div>
@@ -68,7 +68,7 @@ class CompanyTitle extends React.Component{
                                         <div className="banner-content s1_banner-content">
                                             <h4 className="text-white tp05_shadow">{companySubTitle2}</h4>
                                             <h1 className="tp05_shadow">{title2}</h1>
-                                            <a href={companyurl} className="default-btn pt-10" target="_blank" rel="noopener noreferrer">我要應徵 <span></span></a>
+                                            <a href={companyurl} className="default-btn pt-10 tp05_hover-btn" target="_blank" rel="noopener noreferrer">我要應徵</a>
                                         </div>
                                     </div>
                                 </div>

@@ -53,7 +53,7 @@ class CompanyBrand extends React.Component {
                                 <span>Brands</span>
                                 <h2>{brandTitle}</h2>
                                 <p>{brandTitleSub1Content}</p>
-                                <a className="default-btn" href={brandURL1} target="_blank" rel="noopener noreferrer">了解更多<span></span></a>
+                                <a className="default-btn tp05_hover-btn" href={brandURL1} target="_blank" rel="noopener noreferrer">了解更多</a>
                             </div>
                         </div>
                     </div>

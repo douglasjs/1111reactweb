@@ -277,7 +277,6 @@ img {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 0;
-  text-transform: uppercase;
   color: #002e5b;
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
@@ -7586,4 +7585,20 @@ p.salary-fmt {
 
 .pb-20 {
 	padding-bottom: 20px;
+}
+
+.tp05_position_btn {
+  background-color: #ffffff;
+  color: #002e5b;
+  border-color: #002e5b;
+  border-style: solid;
+}
+
+.tp05_position_btn:visited {
+  color: #002e5b;
+}
+
+.tp05_hover-btn:hover {
+  color: #ffffff;
+  background-color: #3aade1;
 }

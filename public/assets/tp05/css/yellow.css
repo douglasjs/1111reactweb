@@ -245,7 +245,6 @@ img {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 0;
-  text-transform: uppercase;
   color: #242424;
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
@@ -7551,4 +7550,20 @@ Go Top CSS
 p.salary-fmt {
 	font-weight: bold;
 	color: #eab210;
+}
+
+.tp05_position_btn {
+  background-color: #ffffff;
+  color: #eab210;
+  border-color: #eab210;
+  border-style: solid;
+}
+
+.tp05_position_btn:visited {
+  color: #eab210;
+}
+
+.tp05_hover-btn:hover {
+  color: #000000;
+  background-color: #eae610;
 }

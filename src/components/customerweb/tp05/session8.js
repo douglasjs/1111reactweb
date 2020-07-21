@@ -130,7 +130,7 @@ class CompanyContact extends React.Component {
 
                                 <div className="col-lg-12 col-md-12">
                                     {/*<button type="submit" className="default-btn" onClick={this.habdleSubmit}> 送出 <span></span></button>*/}
-                                    <input className="default-btn" type="submit" value="送出" onClick={this.habdleSubmit} />
+                                    <input className="default-btn tp05_hover-btn" type="submit" value="送出" onClick={this.habdleSubmit} />
                                     <div className="clearfix"></div>
                                 </div>
                             </div>

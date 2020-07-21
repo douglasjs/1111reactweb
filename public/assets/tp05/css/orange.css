@@ -163,7 +163,7 @@ img {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: #fe8300;
+  background-color: #fe6500;
   -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
@@ -245,7 +245,6 @@ img {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 0;
-  text-transform: uppercase;
   color: #242424;
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
@@ -3433,7 +3432,7 @@ Pricing Area CSS
 }
 
 .single-pricing-box .book-now-btn .default-btn span {
-  background-color: #fe8300;
+  background-color: #fe6500;
 }
 
 .single-pricing-box .book-now-btn .default-btn:hover {
@@ -7551,4 +7550,20 @@ Go Top CSS
 p.salary-fmt {
 	font-weight: bold;
 	color: #fe8300;
+}
+
+.tp05_position_btn {
+  background-color: #ffffff;
+  color: #fe8300;
+  border-color: #fe8300;
+  border-style: solid;
+}
+
+.tp05_position_btn:visited {
+  color: #fe8300;
+}
+
+.tp05_hover-btn:hover {
+  color: #ffffff;
+  background-color: #fe6500;
 }
