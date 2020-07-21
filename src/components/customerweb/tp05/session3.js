@@ -87,7 +87,7 @@ class CompanyBenifit  extends React.Component {
                             <div className="why-choose-us-content text-left" style={{backgroundImage: benefitBgURL}}>
                                 <div className="content">
                                     <div className="title">
-                                        <span className="sub-title">Your Benefits</span>
+                                        <span className="sub-title text-white">Your Benefits</span>
                                         <h2>好 福 利</h2>
                                         <p>{benefitContent}</p>
                                     </div>
