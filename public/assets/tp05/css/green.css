@@ -2858,7 +2858,7 @@ Services Area CSS
 
 .services-slides.owl-theme .owl-dots .owl-dot span {
   width: 15px;
-  height: 2px;
+  height: 10px;
   margin: 0 3px;
   background-color: #afaaaf;
   -webkit-transition: 0.5s;
@@ -3243,7 +3243,7 @@ Why Choose Us Area CSS
 
 .why-choose-us-slides.owl-theme .owl-dots .owl-dot span {
   width: 15px;
-  height: 2px;
+  height: 10px;
   margin: 0 3px;
   background-color: #ffffff;
   -webkit-transition: 0.5s;
