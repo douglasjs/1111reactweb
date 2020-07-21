@@ -43,7 +43,7 @@ class CompanyBrand extends React.Component {
 							<div className="lqd-column col-md-6 pl-md-6 pr-md-7 text-left">
 
 								<header className="fancy-title mb-15">
-									<h3 className="mt-0 mb-2 pr-md-5">{brandTitle}</h3>
+									<h2 className="mt-0 mb-2 pr-md-5">{brandTitle}</h2>
 									<p className="text-justify">{brandTitleSub1Content}</p>
 								</header>
 

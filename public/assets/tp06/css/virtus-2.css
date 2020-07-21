@@ -192,3 +192,19 @@ h6 {
 .top-link img {
   width: 100%;
 }
+
+.tp06_benefit-mheight-137 {
+  min-height: 137px;
+}
+
+@media (max-width: 768px) {
+  .tp06_benefit-mheight-137 {
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 1199px){
+  .main-header .navbar-brand {
+      margin-right: auto;
+  }
+}

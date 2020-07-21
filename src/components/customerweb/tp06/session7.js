@@ -44,7 +44,7 @@ class CompanyQA extends React.Component {
 							
 							<div className="lqd-column m-3">
 
-								<header className="fancy-heading">
+								<header className="fancy-heading pb-2">
 									<h2>常見問題</h2>
 								</header>
 

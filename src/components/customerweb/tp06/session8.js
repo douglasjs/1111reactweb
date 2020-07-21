@@ -118,12 +118,14 @@ class CompanyContact extends React.Component {
 													<input className="lh-25 mb-30" type="tel" name="mobile" aria-required="true" aria-invalid="false" placeholder="手機" required onChange={this.handleChange('custMobile')} value={this.state.custMobile} ref={this.phoneInput}/>
 												</div>
 												<div className="lqd-column col-md-6 mb-20">
-													<textarea cols="10" rows="6" name="message" aria-required="true" aria-invalid="false" placeholder="訊息" required onChange={this.handleChange('custMsg')} value={this.state.custMsg} ></textarea>
-												</div>												
-												<div className="lqd-column col-md-6 text-md-right">
-													<input type="submit" value="送出" className="font-size-17 ltr-sp-1 font-weight-bold" onClick={this.habdleSubmit}/>
+													<textarea className="pb-1" cols="10" rows="6" name="message" aria-required="true" aria-invalid="false" placeholder="訊息" required onChange={this.handleChange('custMsg')} value={this.state.custMsg} ></textarea>
 												</div>
 											</div>
+                                            <div className="row d-flex flex-wrap">
+                                                <div className="lqd-column col-md-6 text-md-right">
+													<input type="submit" value="送出" className="font-size-17 ltr-sp-1 font-weight-bold" onClick={this.habdleSubmit}/>
+												</div>
+                                            </div>
 										</form>
 										<div className="contact-form-result hidden"></div>
 									</div>

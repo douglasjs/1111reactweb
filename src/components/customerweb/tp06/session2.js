@@ -65,7 +65,7 @@ class CompanyInfo extends React.Component{
 							<div className="lqd-column col-md-6 pl-md-6 pr-md-7 text-justify">
 
 								<header className="fancy-title mb-15">
-									<h3 className="mt-0">{introTitle}</h3>
+									<h2 className="mt-0">{introTitle}</h2>
 									<p className="text-justify">{introMainContent}</p>
 								</header>
 
