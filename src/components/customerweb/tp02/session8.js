@@ -120,7 +120,7 @@ class CompanyContact extends React.Component {
                                             <textarea name="message" placeholder="問題" onChange={this.handleChange('custMsg')} value={this.state.custMsg}></textarea>
                                         </div>
                                         <div className="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                            <button type="submit" className="btn-style-two" name="submit-form" onClick={this.habdleSubmit}>送出</button>
+                                            <button type="submit" className="btn-style-three" name="submit-form" onClick={this.habdleSubmit}>送出</button>
                                         </div>
                                     </div>
                                 </form>

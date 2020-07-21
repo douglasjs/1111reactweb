@@ -63,7 +63,7 @@ class CompanyInfo extends React.Component{
                                     <li>{introSubTitle3Content}</li>
                                 </ul>
                                 <div className="btn-box">
-                                    <a className="btn-style-two" target="_blank" rel="noopener noreferrer" href={companyurl}>立即應徵</a>
+                                    <a className="btn-style-three" target="_blank" rel="noopener noreferrer" href={companyurl}>立即應徵</a>
                                 </div>
                             </div>
                         </div>

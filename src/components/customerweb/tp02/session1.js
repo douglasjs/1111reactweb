@@ -58,7 +58,7 @@ class CompanyTitle extends React.Component{
                                 <h1>{title}</h1>
                                 <div className="text">{companySubTitle1}</div>
                                 <div className="btn-box">
-                                    <a className="btn-style-two" target="_blank" rel="noopener noreferrer" href={companyurl}>徵的就是你!</a>
+                                    <a className="btn-style-three" target="_blank" rel="noopener noreferrer" href={companyurl}>徵的就是你!</a>
                                 </div>
                             </div>
                         </div>
