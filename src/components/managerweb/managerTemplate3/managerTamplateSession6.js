@@ -248,12 +248,12 @@ class Session6 extends React.Component{
                                         stateObj={this} required={false} checkValue='4' />
                                 </div>
                                 <div className="form-row row-style-w95-pt1">
-                                    <InputText title='自訂區域主標題' notice='(字數限制為6個字以內)' inputName='customizeTitle' inputState={customizeTitle}
-                                        stateObj={this} required={false} checkValue='6' />
+                                    <InputText title='自訂區域主標題' notice='(建議字數為8個字以內)' inputName='customizeTitle' inputState={customizeTitle}
+                                        stateObj={this} required={false} checkValue='100' />
                                 </div>
                                 <div className="form-row row-style-w95-pt1">
-                                    <InputText title='自訂區域副標題' notice='(字數限制為10個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
-                                        stateObj={this} required={false} checkValue='10' />
+                                    <InputText title='自訂區域副標題' notice='(建議字數為12個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
+                                        stateObj={this} required={false} checkValue='100' />
                                 </div>
                             </div>
                             <div className="col-md-6 mb-3">                                    
@@ -287,7 +287,7 @@ class Session6 extends React.Component{
                                         <tr>
                                             <td>自訂區域主標題</td>
                                             <td align='left'>媒體報導</td>
-                                            <td>6個字以內</td>
+                                            <td>建議8個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp3_customize_title">觀看範例圖片</a>
@@ -296,7 +296,7 @@ class Session6 extends React.Component{
                                         <tr>
                                             <td>自訂區域副標題</td>
                                             <td align='left'>NEWS</td>
-                                            <td>10個字以內</td>
+                                            <td>建議12個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp3_customize_title">觀看範例圖片</a>
@@ -365,12 +365,12 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputTextArea title='卡片1標題' notice='(字數限制為36個字以內)' inputName='card1Title' inputState={card1Title}
-                                                    rows='2' stateObj={this} required={false} checkValue='36' />
+                                                <InputTextArea title='卡片1標題' notice='(建議字數為36個字以內)' inputName='card1Title' inputState={card1Title}
+                                                    rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片1內文' notice='(字數限制為100個字以內)' inputName='card1Content' inputState={card1Content}
-                                                    rows='3' stateObj={this} required={false} checkValue='100' />
+                                                <InputTextArea title='卡片1內文' notice='(建議字數為105個字以內)' inputName='card1Content' inputState={card1Content}
+                                                    rows='3' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='卡片1圖片' notice='(圖檔尺寸大小為 500*315，接受格式為png、jpg)' objName='card1Img' imgUpload={card1ImgUpload} 
@@ -399,13 +399,13 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片1標題</td>
                                                             <td align='left'>京典臻品JD Classic｜多樣化的紫晶洞、黃水晶</td>
-                                                            <td>36個字以內</td>
+                                                            <td>建議36個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
                                                             <td>卡片1內文</td>
                                                             <td align='left'>快過年了，想要為家中增添新擺飾? 或是剛開幕想要買個聚寶盆擺起來招財又體面大方卻又怕網路上買得跟到時候收到的不一樣? 今天要推薦一間有</td>
-                                                            <td>100個字以內</td>
+                                                            <td>建議105個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
@@ -439,12 +439,12 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputTextArea title='卡片2標題' notice='(字數限制為36個字以內)' inputName='card2Title' inputState={card2Title}
-                                                    rows='2' stateObj={this} required={false} checkValue='36' />
+                                                <InputTextArea title='卡片2標題' notice='(建議字數為36個字以內)' inputName='card2Title' inputState={card2Title}
+                                                    rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片2內文' notice='(字數限制為100個字以內)' inputName='card2Content' inputState={card2Content}
-                                                    rows='3' stateObj={this} required={false} checkValue='100' />
+                                                <InputTextArea title='卡片2內文' notice='(建議字數為105個字以內)' inputName='card2Content' inputState={card2Content}
+                                                    rows='3' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='卡片2圖片' notice='(圖檔尺寸大小為 500*315，接受格式為png、jpg)' objName='card2Img' imgUpload={card2ImgUpload} 
@@ -473,13 +473,13 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片2標題</td>
                                                             <td align='left'>京典臻品JD Classic｜台北、台中粉絲頁即將合體</td>
-                                                            <td>36個字以內</td>
+                                                            <td>建議36個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
                                                             <td>卡片2內文</td>
                                                             <td align='left'>晶典臻品. 致晶典臻品水晶精靈村台中的小精靈～ 從今天這一刻開始晶典臻品自行宣布兩岸統一了！ 我們的粉絲頁將全省合併也就是說台北台中的粉絲頁即將合體不</td>
-                                                            <td>100個字以內</td>
+                                                            <td>建議105個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
@@ -513,12 +513,12 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputTextArea title='卡片3標題' notice='(字數限制為36個字以內)' inputName='card3Title' inputState={card3Title}
-                                                    rows='2' stateObj={this} required={false} checkValue='36' />
+                                                <InputTextArea title='卡片3標題' notice='(建議字數為36個字以內)' inputName='card3Title' inputState={card3Title}
+                                                    rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片3內文' notice='(字數限制為100個字以內)' inputName='card3Content' inputState={card3Content}
-                                                    rows='3' stateObj={this} required={false} checkValue='100' />
+                                                <InputTextArea title='卡片3內文' notice='(建議字數為105個字以內)' inputName='card3Content' inputState={card3Content}
+                                                    rows='3' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='卡片3圖片' notice='(圖檔尺寸大小為 500*315，接受格式為png、jpg)' objName='card3Img' imgUpload={card3ImgUpload} 
@@ -547,13 +547,13 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片3標題</td>
                                                             <td align='left'>京典臻品JD Classic｜[台中水晶店]大型水晶洞/聚寶盆哪買最便宜? 快來京典臻品JD Classic</td>
-                                                            <td>36個字以內</td>
+                                                            <td>建議36個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
                                                             <td>卡片3內文</td>
                                                             <td align='left'>就是這家位於台中西屯區的「 京典臻品JD Classic 」天然水晶礦石專賣店！ 京典臻品JD Classic 可是烏拉圭&巴西水晶礦石的大盤商～. 想要什麼</td>
-                                                            <td>100個字以內</td>
+                                                            <td>建議105個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
@@ -587,12 +587,12 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputTextArea title='卡片4標題' notice='(字數限制為36個字以內)' inputName='card4Title' inputState={card4Title}
-                                                    rows='2' stateObj={this} required={false} checkValue='36' />
+                                                <InputTextArea title='卡片4標題' notice='(建議字數為36個字以內)' inputName='card4Title' inputState={card4Title}
+                                                    rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片4內文' notice='(字數限制為100個字以內)' inputName='card4Content' inputState={card4Content}
-                                                    rows='3' stateObj={this} required={false} checkValue='100' />
+                                                <InputTextArea title='卡片4內文' notice='(建議字數為105個字以內)' inputName='card4Content' inputState={card4Content}
+                                                    rows='3' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='卡片4圖片' notice='(圖檔尺寸大小為 500*315，接受格式為png、jpg)' objName='card4Img' imgUpload={card4ImgUpload} 
@@ -621,13 +621,13 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片4標題</td>
                                                             <td align='left'>京典臻品JD Classic｜多樣化的紫晶洞、黃水晶</td>
-                                                            <td>36個字以內</td>
+                                                            <td>建議36個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
                                                             <td>卡片4內文</td>
                                                             <td align='left'>快過年了，想要為家中增添新擺飾? 或是剛開幕想要買個聚寶盆擺起來招財又體面大方卻又怕網路上買得跟到時候收到的不一樣? 今天要推薦一間有</td>
-                                                            <td>100個字以內</td>
+                                                            <td>建議105個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
@@ -661,12 +661,12 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputTextArea title='卡片5標題' notice='(字數限制為36個字以內)' inputName='card5Title' inputState={card5Title}
-                                                    rows='2' stateObj={this} required={false} checkValue='36' />
+                                                <InputTextArea title='卡片5標題' notice='(建議字數為36個字以內)' inputName='card5Title' inputState={card5Title}
+                                                    rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片5內文' notice='(字數限制為100個字以內)' inputName='card5Content' inputState={card5Content}
-                                                    rows='3' stateObj={this} required={false} checkValue='100' />
+                                                <InputTextArea title='卡片5內文' notice='(建議字數為105個字以內)' inputName='card5Content' inputState={card5Content}
+                                                    rows='3' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='卡片5圖片' notice='(圖檔尺寸大小為 500*315，接受格式為png、jpg)' objName='card5Img' imgUpload={card5ImgUpload} 
@@ -695,13 +695,13 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片5標題</td>
                                                             <td align='left'>京典臻品JD Classic｜台北、台中粉絲頁即將合體</td>
-                                                            <td>36個字以內</td>
+                                                            <td>建議36個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
                                                             <td>卡片5內文</td>
                                                             <td align='left'>晶典臻品. 致晶典臻品水晶精靈村台中的小精靈～ 從今天這一刻開始晶典臻品自行宣布兩岸統一了！ 我們的粉絲頁將全省合併也就是說台北台中的粉絲頁即將合體不</td>
-                                                            <td>100個字以內</td>
+                                                            <td>建議105個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
@@ -735,12 +735,12 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputTextArea title='卡片6標題' notice='(字數限制為36個字以內)' inputName='card6Title' inputState={card6Title}
-                                                    rows='2' stateObj={this} required={false} checkValue='36' />
+                                                <InputTextArea title='卡片6標題' notice='(建議字數為36個字以內)' inputName='card6Title' inputState={card6Title}
+                                                    rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片6內文' notice='(字數限制為100個字以內)' inputName='card6Content' inputState={card6Content}
-                                                    rows='3' stateObj={this} required={false} checkValue='100' />
+                                                <InputTextArea title='卡片6內文' notice='(建議字數為105個字以內)' inputName='card6Content' inputState={card6Content}
+                                                    rows='3' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='卡片6圖片' notice='(圖檔尺寸大小為 500*315，接受格式為png、jpg)' objName='card6Img' imgUpload={card6ImgUpload} 
@@ -769,13 +769,13 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片6標題</td>
                                                             <td align='left'>京典臻品JD Classic｜[台中水晶店]大型水晶洞/聚寶盆哪買最便宜? 快來京典臻品JD Classic</td>
-                                                            <td>36個字以內</td>
+                                                            <td>建議36個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
                                                             <td>卡片6內文</td>
                                                             <td align='left'>就是這家位於台中西屯區的「 京典臻品JD Classic 」天然水晶礦石專賣店！ 京典臻品JD Classic 可是烏拉圭&巴西水晶礦石的大盤商～. 想要什麼</td>
-                                                            <td>100個字以內</td>
+                                                            <td>建議105個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>

@@ -495,11 +495,11 @@ class Session4 extends React.Component{
                                     <input type="hidden" id="themeNum4" value={themeNum} />
                                     
 
-                                    <InputText title='標籤 1' notice='( 字數限制為4個字以內 )' inputName='groupName1' inputState={groupName1}
+                                    <InputText title='標籤 1' notice='( 建議字數為4個字以內 )' inputName='groupName1' inputState={groupName1}
                                                 stateObj={this} required={false} checkValue='4' />
-                                    <InputText title='標籤 2' notice='( 字數限制為4個字以內 )' inputName='groupName2' inputState={groupName2}
+                                    <InputText title='標籤 2' notice='( 建議字數為4個字以內 )' inputName='groupName2' inputState={groupName2}
                                                 stateObj={this} required={false} checkValue='4' />
-                                    <InputText title='標籤 3' notice='( 字數限制為4個字以內 )' inputName='groupName3' inputState={groupName3}
+                                    <InputText title='標籤 3' notice='( 建議字數為4個字以內 )' inputName='groupName3' inputState={groupName3}
                                                 stateObj={this} required={false} checkValue='4' />
                                  
                                     <hr />

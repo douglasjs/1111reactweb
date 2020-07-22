@@ -248,16 +248,16 @@ class Session2 extends React.Component{
 
                                 <div className="col-md-6 mb-3">
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='公司介紹主標題' notice='(字數限制為16個字以內)' inputName='introTitle' inputState={introTitle}
-                                           stateObj={this} required={true} checkValue='16' />
+                                        <InputText title='公司介紹主標題' notice='(建議字數為28個字以內)' inputName='introTitle' inputState={introTitle}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row">
-                                        <InputText title='公司介紹小標題' notice='(字數限制為12個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
-                                            stateObj={this} required={true} checkValue='12' />
+                                        <InputText title='公司介紹小標題' notice='(建議字數為19個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='公司介紹主內容' notice='(字數限制為100個字以內)' inputName='introMainContent' inputState={introMainContent}
-                                           rows='5' stateObj={this} required={true} checkValue='100' />
+                                        <InputTextArea title='公司介紹主內容' notice='(建議字數為208個字以內)' inputName='introMainContent' inputState={introMainContent}
+                                           rows='5' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='公司介紹圖片 上傳' notice='(圖檔尺寸大小為 480*370，接受格式為png、jpg)' objName='introSubTitle1Img' imgUpload={introSubTitle1ImgUpload} 
@@ -283,19 +283,19 @@ class Session2 extends React.Component{
                                                 <tr>
                                                     <td>公司介紹主標題</td>
                                                     <td align='left'>服務至上的經營理念看不見的非凡用心</td>
-                                                    <td>16個字以內</td>
+                                                    <td>建議28個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>
                                                     <td>公司介紹小標題</td>
                                                     <td align='left'>京典臻品 JD Classic股份有限公司</td>
-                                                    <td>12個字以內</td>
+                                                    <td>建議19個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>
                                                     <td>公司介紹主內容</td>
                                                     <td align='left'>天天禧有限公司(京典臻品／時易藝品／京采水晶／京璽晶品)營業項目包括水晶礦石、烏拉圭紫水晶洞、巴西紫晶洞、黃水晶洞、鈦晶洞、意象晶洞、瑪瑙晶洞、紫晶鎮、愛心晶片、水晶聚寶盆批發零售買賣, 以技術為本服務至上的經營理念, 給予客戶最專業的服務與產品質量,。 我們重視每一位員工，除了有良好工作環境、也提供學習及成長的空間，歡迎有責任感，有熱誠的朋友一起加入我們的工作行列。</td>
-                                                    <td>100個字以內</td>
+                                                    <td>建議208個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>
