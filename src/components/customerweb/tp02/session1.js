@@ -22,7 +22,7 @@ class CompanyTitle extends React.Component{
 		let companySubTitle1;
         let companyBackgroundImg1;
         let styleType;
-        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
+        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
 
         if(companyData && companyData.length > 0){
             companyData.forEach(element => {

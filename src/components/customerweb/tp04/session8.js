@@ -132,8 +132,8 @@ class CompanyContact extends React.Component {
 												<p className="ld_sf_paragraph pr-2" rows="4">
 													<input type="text" className="ld_sf_text" id="mce-MSG" name="MSG" placeholder="訊息" required onChange={this.handleChange('custMsg')} value={this.state.custMsg} />
 												</p>																							
-												<div className="lqd-column col-md-offset-3 col-md-6 text-md-right">
-													<input type="submit" value="送出" className="font-size-16 text-uppercase ltr-sp-2 font-weight-semibold w-100" onClick={this.habdleSubmit} />
+												<div className="lqd-column col-md-offset-3 col-md-6">
+													<input type="submit" value="送出" className="btn btn-solid circle btn-bordered border-thin font-size-16 font-weight-semibold" onClick={this.habdleSubmit} />
 												</div>
 											</form>
 											<div className="ld_sf_response"></div>

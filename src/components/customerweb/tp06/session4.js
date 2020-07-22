@@ -13,9 +13,11 @@ class CompanyJobs extends React.Component {
     }
 
     render(){
+		const cid = this.props.match.params.cid;
         const { positionData } = this.props.positionReducer;
 
 		let imgURL = "url(../../../image/tp06/jobs_bg-1.jpg)";
+		let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
 
 		return (
 			
@@ -88,10 +90,9 @@ class CompanyJobs extends React.Component {
 						
 						</div>
 							
-								<a href="https://www.1111.com.tw/corp/50750609/" className="mt-40 btn btn-sm btn-solid round lh-15 px-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+								<a href={companyurl} className="mt-40 btn btn-sm btn-solid round lh-15 px-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
 									<span>
 										<span className="btn-txt">所有職缺</span>
-										<span className="btn-icon"><i className="fa fa-angle-right"></i></span>
 									</span>
 								</a>
 								

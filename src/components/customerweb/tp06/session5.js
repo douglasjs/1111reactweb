@@ -20,7 +20,7 @@ class CompanyBrand extends React.Component {
 		let brandTitleSub1Content;
 		let brandURL1;
 		let brandURL2;
-		let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
+		let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
 
         if(brandData && brandData.length > 0){
             brandData.forEach(element => {
