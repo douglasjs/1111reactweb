@@ -10875,7 +10875,8 @@ width: 100%;
 	overflow: hidden;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 
 .about-section .content-box .text {
