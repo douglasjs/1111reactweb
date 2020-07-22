@@ -177,16 +177,16 @@ class Session2 extends React.Component{
 
                                 <div className="col-md-6 mb-3">
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='主標題' notice='(字數限制為11個字以內)' inputName='introTitle' inputState={introTitle}
-                                           stateObj={this} required={true} checkValue='11' />
+                                        <InputText title='主標題' notice='(建議字數為11個字以內)' inputName='introTitle' inputState={introTitle}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='主內容' notice='(字數限制為140個字以內)' inputName='introMainContent' inputState={introMainContent}
-                                           rows='5' stateObj={this} required={true} checkValue='140' />
+                                        <InputTextArea title='主內容' notice='(建議字數為140個字以內)' inputName='introMainContent' inputState={introMainContent}
+                                           rows='5' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row">
                                         <InputText title='了解更多網址' notice='(請輸入網址)' inputName='introSubTitle1' inputState={introSubTitle1}
-                                            stateObj={this} required={true} checkValue='200' />
+                                            stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='圖片 上傳' notice='(圖檔尺寸大小為 1120*600，接受格式為png、jpg)' objName='introSubTitle1Img' imgUpload={introSubTitle1ImgUpload} 
@@ -212,7 +212,7 @@ class Session2 extends React.Component{
                                                 <tr>
                                                     <td>主標題</td>
                                                     <td align='left'>求職徵才的信賴品牌</td>
-                                                    <td>11個字以內</td>
+                                                    <td>建議11個字以內</td>
                                                     <td>
                                                         不可空白<br />
                                                         <a type="button" data-toggle="modal" href="#tmp6_company_title">觀看範例圖片</a>
@@ -225,7 +225,7 @@ class Session2 extends React.Component{
                                                         2019幸福企業擴大徵才活動，以推動企業多提供好的福利，吸引優秀的人才，創造更佳的績效！<br />
                                                         以【熱誠】、【專業】為企業經營理念，堅持營造一個【人才、職缺、功能、媒合4個第1】求職求才媒合平台
                                                     </td>
-                                                    <td>140個字以內</td>
+                                                    <td>建議140個字以內</td>
                                                     <td>
                                                         不可空白<br />
                                                         <a type="button" data-toggle="modal" href="#tmp6_company_content">觀看範例圖片</a>

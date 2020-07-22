@@ -110,16 +110,16 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題' notice='(字數限制為12個字以內)' inputName='title' inputState={title}
-                                           stateObj={this} required={true} checkValue='12' />
+                                        <InputText title='大標題' notice='(建議字數為12個字以內)' inputName='title' inputState={title}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題' notice='(字數限制為25個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           rows='2' stateObj={this} required={true} checkValue='25' />
+                                        <InputTextArea title='副標題' notice='(建議字數為25個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           rows='2' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='背景圖片1' notice='(圖檔尺寸大小為 1920*800 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
-                                            parentObj={this}  imgW={1920} imgH={800} required={true}/> 
+                                        <ImgUpload title='背景圖片1' notice='(圖檔尺寸大小為 1920*600 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
+                                            parentObj={this}  imgW={1920} imgH={600} required={true}/> 
                                     </div>
 
                                     <hr />
@@ -150,7 +150,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>大標題</td>
                                                 <td align='left'></td>
-                                                <td>12個字以內</td>
+                                                <td>建議12個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp6_banner_title">觀看範例圖片</a>
@@ -159,7 +159,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>副標題</td>
                                                 <td align='left'></td>
-                                                <td>25個字以內</td>
+                                                <td>建議25個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp6_banner_subtitle">觀看範例圖片</a>

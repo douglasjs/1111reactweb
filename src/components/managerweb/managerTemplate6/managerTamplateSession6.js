@@ -237,16 +237,16 @@ class Session6 extends React.Component{
                         <div className="form-row row-style-pt1">
                             <div className="col-md-6 mb-3">
                                 <div className="form-row row-style-w95">
-                                    <InputText title='自訂選單名稱' notice='(即為在主選單上顯示的名稱，字數限制為4個字以內)' inputName='customizeName' inputState={customizeName}
+                                    <InputText title='自訂選單名稱' notice='(即為在主選單上顯示的名稱，限制字數為4個字以內)' inputName='customizeName' inputState={customizeName}
                                         stateObj={this} required={false} checkValue='4' />
                                 </div>
                                 <div className="form-row row-style-w95-pt1">
-                                    <InputText title='自訂區域主標題' notice='(字數限制為6個字以內)' inputName='customizeTitle' inputState={customizeTitle}
-                                        stateObj={this} required={false} checkValue='6' />
+                                    <InputText title='自訂區域主標題' notice='(建議字數為6個字以內)' inputName='customizeTitle' inputState={customizeTitle}
+                                        stateObj={this} required={false} checkValue='100' />
                                 </div>
                                 <div className="form-row row-style-w95-pt1">
-                                    <InputTextArea title='自訂區域副標題' notice='(字數限制為66個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
-                                        rows='3' stateObj={this} required={false} checkValue='66' />
+                                    <InputTextArea title='自訂區域副標題' notice='(建議字數為66個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
+                                        rows='3' stateObj={this} required={false} checkValue='300' />
                                 </div>
                             </div>
                             <div className="col-md-6 mb-3">                                    
@@ -280,7 +280,7 @@ class Session6 extends React.Component{
                                         <tr>
                                             <td>自訂區域主標題</td>
                                             <td align='left'>幸福企業</td>
-                                            <td>6個字以內</td>
+                                            <td>建議6個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_title">觀看範例圖片</a>
@@ -289,7 +289,7 @@ class Session6 extends React.Component{
                                         <tr>
                                             <td>自訂區域副標題</td>
                                             <td align='left'>1111提供完善的薪資制度、福利措施與舒適的工作環境，使員工能全力發揮所長</td>
-                                            <td>66個字以內</td>
+                                            <td>建議66個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_subtitle">觀看範例圖片</a>
@@ -374,12 +374,12 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片1標題' notice='(字數限制為8個字以內)' inputName='card1Title' inputState={card1Title}
-                                                    stateObj={this} required={false} checkValue='8' />
+                                                <InputText title='卡片1標題' notice='(建議字數為8個字以內)' inputName='card1Title' inputState={card1Title}
+                                                    stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片1副標題' notice='(字數限制為10個字以內)' inputName='card1Content' inputState={card1Content}
-                                                    rows='1' stateObj={this} required={false} checkValue='10' />
+                                                <InputTextArea title='卡片1副標題' notice='(建議字數為10個字以內)' inputName='card1Content' inputState={card1Content}
+                                                    rows='1' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='卡片1圖片' notice='(圖檔尺寸大小為 720*520，接受格式為png、jpg)' objName='card1Img'  imgUpload={card1ImgUpload} 
@@ -408,7 +408,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片1標題</td>
                                                             <td align='left'>年度盛事</td>
-                                                            <td>8個字以內</td>
+                                                            <td>建議8個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_card01_title">觀看範例圖片</a>
@@ -417,7 +417,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片1副標題</td>
                                                             <td align='left'>年終獎金與尾牙摸彩</td>
-                                                            <td>10個字以內</td>
+                                                            <td>建議10個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_card01_title">觀看範例圖片</a>
@@ -487,12 +487,12 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片2標題' notice='(字數限制為8個字以內)' inputName='card2Title' inputState={card2Title}
-                                                    stateObj={this} required={false} checkValue='8' />
+                                                <InputText title='卡片2標題' notice='(建議字數為8個字以內)' inputName='card2Title' inputState={card2Title}
+                                                    stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片2副標題' notice='(字數限制為10個字以內)' inputName='card2Content' inputState={card2Content}
-                                                    rows='1' stateObj={this} required={false} checkValue='10' />
+                                                <InputTextArea title='卡片2副標題' notice='(建議字數為10個字以內)' inputName='card2Content' inputState={card2Content}
+                                                    rows='1' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='卡片2圖片' notice='(圖檔尺寸大小為 720*520，接受格式為png、jpg)' objName='card2Img'  imgUpload={card2ImgUpload} 
@@ -521,7 +521,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片2標題</td>
                                                             <td align='left'>員工餐廳</td>
-                                                            <td>8個字以內</td>
+                                                            <td>建議8個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_card02_title">觀看範例圖片</a>
@@ -530,7 +530,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片2副標題</td>
                                                             <td align='left'>關心員工健康的生活，提供均衡營養的午餐</td>
-                                                            <td>10個字以內</td>
+                                                            <td>建議10個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_card02_title">觀看範例圖片</a>
@@ -600,12 +600,12 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片3標題' notice='(字數限制為8個字以內)' inputName='card3Title' inputState={card3Title}
-                                                    stateObj={this} required={false} checkValue='8' />
+                                                <InputText title='卡片3標題' notice='(建議字數為8個字以內)' inputName='card3Title' inputState={card3Title}
+                                                    stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片3副標題' notice='(字數限制為10個字以內)' inputName='card3Content' inputState={card3Content}
-                                                    rows='1' stateObj={this} required={false} checkValue='10' />
+                                                <InputTextArea title='卡片3副標題' notice='(建議字數為10個字以內)' inputName='card3Content' inputState={card3Content}
+                                                    rows='1' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='卡片3圖片' notice='(圖檔尺寸大小為 720*520，接受格式為png、jpg)' objName='card3Img'  imgUpload={card3ImgUpload} 
@@ -634,7 +634,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片3標題</td>
                                                             <td align='left'>員工按摩</td>
-                                                            <td>8個字以內</td>
+                                                            <td>建議8個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_card03_title">觀看範例圖片</a>
@@ -643,7 +643,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片3副標題</td>
                                                             <td align='left'>四位專業按摩師為員工提供按摩服務</td>
-                                                            <td>10個字以內</td>
+                                                            <td>建議10個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_card03_title">觀看範例圖片</a>
@@ -713,12 +713,12 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片4標題' notice='(字數限制為8個字以內)' inputName='card4Title' inputState={card4Title}
-                                                    stateObj={this} required={false} checkValue='8' />
+                                                <InputText title='卡片4標題' notice='(建議字數為8個字以內)' inputName='card4Title' inputState={card4Title}
+                                                    stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片4副標題' notice='(字數限制為10個字以內)' inputName='card4Content' inputState={card4Content}
-                                                    rows='1' stateObj={this} required={false} checkValue='10' />
+                                                <InputTextArea title='卡片4副標題' notice='(建議字數為10個字以內)' inputName='card4Content' inputState={card4Content}
+                                                    rows='1' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='卡片4圖片' notice='(圖檔尺寸大小為 720*520，接受格式為png、jpg)' objName='card4Img'  imgUpload={card4ImgUpload} 
@@ -747,7 +747,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片4標題</td>
                                                             <td align='left'>辦公環境</td>
-                                                            <td>8個字以內</td>
+                                                            <td>建議8個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_card04_title">觀看範例圖片</a>
@@ -756,7 +756,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片4副標題</td>
                                                             <td align='left'>讓員工在優良的環境下發揮最高工作效率</td>
-                                                            <td>10個字以內</td>
+                                                            <td>建議10個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_card04_title">觀看範例圖片</a>
@@ -826,12 +826,12 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片5標題' notice='(字數限制為8個字以內)' inputName='card5Title' inputState={card5Title}
-                                                    stateObj={this} required={false} checkValue='8' />
+                                                <InputText title='卡片5標題' notice='(建議字數為8個字以內)' inputName='card5Title' inputState={card5Title}
+                                                    stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片5副標題' notice='(字數限制為10個字以內)' inputName='card5Content' inputState={card5Content}
-                                                    rows='1' stateObj={this} required={false} checkValue='10' />
+                                                <InputTextArea title='卡片5副標題' notice='(建議字數為10個字以內)' inputName='card5Content' inputState={card5Content}
+                                                    rows='1' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='卡片5圖片' notice='(圖檔尺寸大小為 720*520，接受格式為png、jpg)' objName='card5Img'  imgUpload={card5ImgUpload} 
@@ -860,7 +860,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片5標題</td>
                                                             <td align='left'>公司環境</td>
-                                                            <td>8個字以內</td>
+                                                            <td>建議8個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_card05_title">觀看範例圖片</a>
@@ -869,7 +869,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片5副標題</td>
                                                             <td align='left'>在有限空間裡營造出創新優質的工作場所</td>
-                                                            <td>10個字以內</td>
+                                                            <td>建議10個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_card05_title">觀看範例圖片</a>
@@ -939,12 +939,12 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片6標題' notice='(字數限制為8個字以內)' inputName='card6Title' inputState={card6Title}
-                                                    stateObj={this} required={false} checkValue='8' />
+                                                <InputText title='卡片6標題' notice='(建議字數為8個字以內)' inputName='card6Title' inputState={card6Title}
+                                                    stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片6副標題' notice='(字數限制為10個字以內)' inputName='card6Content' inputState={card6Content}
-                                                    rows='1' stateObj={this} required={false} checkValue='10' />
+                                                <InputTextArea title='卡片6副標題' notice='(建議字數為10個字以內)' inputName='card6Content' inputState={card6Content}
+                                                    rows='1' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='卡片6圖片' notice='(圖檔尺寸大小為 720*520，接受格式為png、jpg)' objName='card6Img'  imgUpload={card6ImgUpload} 
@@ -973,7 +973,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片6標題</td>
                                                             <td align='left'>打造四個第1</td>
-                                                            <td>8個字以內</td>
+                                                            <td>建議8個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_card06_title">觀看範例圖片</a>
@@ -982,7 +982,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片6副標題</td>
                                                             <td align='left'>堅持營造人才、職缺、功能、媒合4個第1</td>
-                                                            <td>10個字以內</td>
+                                                            <td>建議10個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp6_customize_card06_title">觀看範例圖片</a>
