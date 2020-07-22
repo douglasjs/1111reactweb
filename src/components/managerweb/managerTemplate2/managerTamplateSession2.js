@@ -186,28 +186,28 @@ class Session2 extends React.Component{
 
                                 <div className="col-md-6 mb-3">
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='主標題' notice='(字數限制為8個字以內)' inputName='introTitle' inputState={introTitle}
-                                           stateObj={this} required={true} checkValue='8' />
+                                        <InputText title='主標題' notice='(建議字數為8個字以內)' inputName='introTitle' inputState={introTitle}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row">
-                                        <InputText title='副標題' notice='(字數限制為8個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
-                                            stateObj={this} required={true} checkValue='8' />
+                                        <InputText title='副標題' notice='(建議字數為14個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='主內容' notice='(字數限制為290個字以內)' inputName='introMainContent' inputState={introMainContent}
-                                           rows='6' stateObj={this} required={true} checkValue='290' />
+                                        <InputTextArea title='主內容' notice='(建議字數為140個字以內)' inputName='introMainContent' inputState={introMainContent}
+                                           rows='6' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='短文1內容' notice='(字數限制為13個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
-                                            rows='1' stateObj={this} required={true} checkValue='13' />
+                                        <InputTextArea title='短文1內容' notice='(建議字數為18個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
+                                            rows='1' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='短文2內容' notice='(字數限制為13個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
-                                            rows='1' stateObj={this} required={true} checkValue='13' />
+                                        <InputTextArea title='短文2內容' notice='(建議字數為18個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
+                                            rows='1' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='短文3內容' notice='(字數限制為13個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
-                                            rows='1' stateObj={this} required={true} checkValue='13' />
+                                        <InputTextArea title='短文3內容' notice='(建議字數為18個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
+                                            rows='1' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='圖片 上傳' notice='(圖檔尺寸大小為 750*590，接受格式為png、jpg)' objName='introSubTitle1Img'  imgUpload={introSubTitle1ImgUpload} 
@@ -237,38 +237,38 @@ class Session2 extends React.Component{
                                                 <tr>
                                                     <td>主標題</td>
                                                     <td align='left'>媽咪樂MHHS</td>
-                                                    <td>8個字以內</td>
+                                                    <td>建議8個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>
                                                     <td>副標題</td>
                                                     <td align='left'>新一代 居家服務集團</td>
-                                                    <td>8個字以內</td>
+                                                    <td>建議14個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>
                                                     <td>主內容</td>
                                                     <td align='left'>以「滿足人的需求」為出發，成立於1996年的「順遠工程」，秉持著服務社會的熱誠、改善環境的品質為理念，充分運用團隊管理的優勢，兢兢業業地塑造出積極、創新的立業精神，期許以專業的清潔施工技術，給予消費者一個最舒適的環境。
     而企業內所提倡的三意，指的便是夥伴樂意、 顧客滿意、經營得意這三大目標。</td>
-                                                    <td>290個字以內</td>
+                                                    <td>建議140個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>
                                                     <td>短文1內容</td>
                                                     <td align='left'>深耕二十餘年，100%正職嚴選管家</td>
-                                                    <td>13個字以內</td>
+                                                    <td>建議18個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>
                                                     <td>短文2內容</td>
                                                     <td align='left'>投入百萬教育訓練預算，培育專業職人</td>
-                                                    <td>13個字以內</td>
+                                                    <td>建議18個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>
                                                     <td>短文3內容</td>
                                                     <td align='left'>比照公家機關休，員工每年享有旅遊福利</td>
-                                                    <td>13個字以內</td>
+                                                    <td>建議18個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>

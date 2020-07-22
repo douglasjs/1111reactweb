@@ -109,12 +109,12 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題' notice='(字數限制為13個字以內)' inputName='title' inputState={title}
-                                           stateObj={this} required={true} checkValue='13' />
+                                        <InputText title='大標題' notice='(建議字數為14個字以內)' inputName='title' inputState={title}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題' notice='(字數限制為15個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           rows='2' stateObj={this} required={true} checkValue='15' />
+                                        <InputTextArea title='副標題' notice='(建議字數為15個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           rows='2' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='圖片' notice='(圖檔尺寸大小為 850*590 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
@@ -160,13 +160,13 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>大標題</td>
                                                 <td align='left'>和媽咪樂MHHS一起創造未來！</td>
-                                                <td>13個字以內</td>
+                                                <td>建議14個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>副標題</td>
                                                 <td align='left'>如此偉大的旅程，我們才剛剛開始</td>
-                                                <td>15個字以內</td>
+                                                <td>建議15個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                         </tbody>                                        

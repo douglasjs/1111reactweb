@@ -125,28 +125,28 @@ class Session3 extends React.Component{
                                     <input type="hidden" id="themeNum3" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row">
-                                        <InputText title='小標題1' notice='(字數限制為10個字以內)' inputName='benefitSubTitle1' inputState={benefitSubTitle1}
-                                            stateObj={this} required={true} checkValue='10' />
+                                        <InputText title='小標題1' notice='(建議字數為10個字以內)' inputName='benefitSubTitle1' inputState={benefitSubTitle1}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='小標題1內容' notice='(字數限制為30個字以內)' inputName='benefitSubContent1' inputState={benefitSubContent1}
-                                            rows='3' stateObj={this} required={true} checkValue='30' />
+                                        <InputTextArea title='小標題1內容' notice='(建議字數為18個字以內)' inputName='benefitSubContent1' inputState={benefitSubContent1}
+                                            rows='3' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row">
-                                        <InputText title='小標題2' notice='(字數限制為10個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
-                                            stateObj={this} required={true} checkValue='10' />
+                                        <InputText title='小標題2' notice='(建議字數為10個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='小標題2內容' notice='(字數限制為30個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
-                                            rows='3' stateObj={this} required={true} checkValue='30' />
+                                        <InputTextArea title='小標題2內容' notice='(建議字數為18個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
+                                            rows='3' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row">
-                                        <InputText title='小標題3' notice='(字數限制為10個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
-                                            stateObj={this} required={true} checkValue='10' />
+                                        <InputText title='小標題3' notice='(建議字數為10個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='小標題3內容' notice='(字數限制為30個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
-                                            rows='3' stateObj={this} required={true} checkValue='30' />
+                                        <InputTextArea title='小標題3內容' notice='(建議字數為18個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
+                                            rows='3' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='員工福利圖片' notice='(圖檔尺寸大小為 665*630 ，接受格式為png、jpg)' objName='benefitImg'  imgUpload={benefitImgUpload} imgFileName={benefitImg} 
@@ -192,37 +192,37 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>員工福利小標題1</td>
                                                 <td align='left'>獎 金 類</td>
-                                                <td>10個字以內</td>
+                                                <td>建議10個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>員工福利小標題1內容</td>
                                                 <td align='left'>全勤獎金、年節獎金、激勵獎金、績效獎金</td>
-                                                <td>30個字以內</td>
+                                                <td>建議18個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>員工福利小標題2</td>
                                                 <td align='left'>餐 飲 類</td>
-                                                <td>10個字以內</td>
+                                                <td>建議10個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>員工福利小標題2內容</td>
                                                 <td align='left'>伙食津貼</td>
-                                                <td>30個字以內</td>
+                                                <td>建議18個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>員工福利小標題3</td>
                                                 <td align='left'>娛 樂 類</td>
-                                                <td>10個字以內</td>
+                                                <td>建議10個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>員工福利小標題3內容</td>
                                                 <td align='left'>國內旅遊、員工定期聚餐、春酒、家庭日</td>
-                                                <td>30個字以內</td>
+                                                <td>建議18個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                         </tbody>

@@ -118,40 +118,40 @@ class Session5 extends React.Component{
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹標題1' notice='(字數限制為7個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
-                                            stateObj={this} required={true} checkValue='7' />
+                                        <InputText title='品牌介紹標題1' notice='(建議字數為7個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹標題1內文 ' notice='(字數限制為84個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
-                                            rows='4' stateObj={this} required={true} checkValue='84'/>
+                                        <InputTextArea title='品牌介紹標題1內文 ' notice='(建議字數為48個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
+                                            rows='4' stateObj={this} required={true} checkValue='300'/>
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputText title='品牌介紹連結1' notice='(請輸入網址)' inputName='brandURL1' inputState={brandURL1}
-                                            stateObj={this} required={true} checkValue='200' />
+                                            stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹標題2' notice='(字數限制為7個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
-                                            stateObj={this} required={true} checkValue='7' />
+                                        <InputText title='品牌介紹標題2' notice='(建議字數為7個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹標題2內文 ' notice='(字數限制為84個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
-                                            rows='4' stateObj={this} required={true} checkValue='84' />
+                                        <InputTextArea title='品牌介紹標題2內文 ' notice='(建議字數為48個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
+                                            rows='4' stateObj={this} required={true} checkValue='300' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputText title='品牌介紹連結2' notice='(請輸入網址)' inputName='brandURL2' inputState={brandURL2}
-                                            stateObj={this} required={true} checkValue='200' />
+                                            stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹標題3' notice='(字數限制為7個字以內)' inputName='brandTitleSub3' inputState={brandTitleSub3}
-                                            stateObj={this} required={true} checkValue='7' />
+                                        <InputText title='品牌介紹標題3' notice='(建議字數為7個字以內)' inputName='brandTitleSub3' inputState={brandTitleSub3}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹標題3內文 ' notice='(字數限制為84個字以內)' inputName='brandTitleSub3Content' inputState={brandTitleSub3Content}
-                                            rows='4' stateObj={this} required={true} checkValue='84' />
+                                        <InputTextArea title='品牌介紹標題3內文 ' notice='(建議字數為48個字以內)' inputName='brandTitleSub3Content' inputState={brandTitleSub3Content}
+                                            rows='4' stateObj={this} required={true} checkValue='300' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputText title='品牌介紹連結3' notice='(請輸入網址)' inputName='brandURL3' inputState={brandURL3}
-                                            stateObj={this} required={true} checkValue='200' />
+                                            stateObj={this} required={true} checkValue='500' />
                                     </div>
 
                                     <hr />
@@ -181,7 +181,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹標題1</td>
                                                 <td align='left'>我們的目標</td>
-                                                <td>7個字以內</td>
+                                                <td>建議7個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp2_brand_subtitle01">觀看範例圖片</a>
@@ -190,7 +190,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹標題1內文</td>
                                                 <td align='left'>針對每次服務進行「星評」媽咪樂接收您的聲音最即時，守護您的環境與健康！</td>
-                                                <td>84個字以內</td>
+                                                <td>建議48個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp2_brand_subtitle01">觀看範例圖片</a>
@@ -208,7 +208,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹標題2</td>
                                                 <td align='left'>我們的價值觀</td>
-                                                <td>7個字以內</td>
+                                                <td>建議7個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp2_brand_subtitle02">觀看範例圖片</a>
@@ -217,7 +217,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹標題2內文</td>
                                                 <td align='left'>每次服務管家打卡即時通知無時差，為家裡的安全把關！</td>
-                                                <td>84個字以內</td>
+                                                <td>建議48個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp2_brand_subtitle02">觀看範例圖片</a>
@@ -235,7 +235,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹標題3</td>
                                                 <td align='left'>業界領導品牌</td>
-                                                <td>7個字以內</td>
+                                                <td>建議7個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp2_brand_subtitle03">觀看範例圖片</a>
@@ -244,7 +244,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹標題3內文</td>
                                                 <td align='left'>一覽服務合約狀態、起迄日期，及每次服務人員名單，省下紀錄及搜尋時間！</td>
-                                                <td>84個字以內</td>
+                                                <td>建議48個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp2_brand_subtitle03">觀看範例圖片</a>
