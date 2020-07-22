@@ -124,32 +124,32 @@ class Session5 extends React.Component{
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹標題1' notice='(字數限制為4個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
-                                            stateObj={this} required={true} checkValue='4' />
+                                        <InputText title='品牌介紹標題1' notice='(建議字數為4個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題1內文 ' notice='(字數限制為104個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
-                                            rows='3' stateObj={this} required={true} checkValue='104'/>
+                                        <InputTextArea title='品牌介紹副標題1內文 ' notice='(建議字數為104個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
+                                            rows='3' stateObj={this} required={true} checkValue='500'/>
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹小標題1' notice='(字數限制為8個字以內)' inputName='brandURL1' inputState={brandURL1}
-                                            stateObj={this} required={true} checkValue='8' />
+                                        <InputText title='品牌介紹小標題1' notice='(建議字數為8個字以內)' inputName='brandURL1' inputState={brandURL1}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='品牌介紹圖片1 上傳' notice='(圖檔尺寸大小為 140*140 ，接受格式為png、jpg)' objName='brandImg1'  imgUpload={brandImg1Upload} 
                                             imgFileName={brandImg1} parentObj={this} imgW={140} imgH={140} required={true} />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹標題2' notice='(字數限制為4個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
-                                            stateObj={this} required={true} checkValue='4' />
+                                        <InputText title='品牌介紹標題2' notice='(建議字數為4個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題2內文 ' notice='(字數限制為104個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
-                                            rows='3' stateObj={this} required={true} checkValue='104' />
+                                        <InputTextArea title='品牌介紹副標題2內文 ' notice='(建議字數為104個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
+                                            rows='3' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹小標題2' notice='(字數限制為8個字以內)' inputName='brandURL2' inputState={brandURL2}
-                                            stateObj={this} required={true} checkValue='8' />
+                                        <InputText title='品牌介紹小標題2' notice='(建議字數為8個字以內)' inputName='brandURL2' inputState={brandURL2}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='品牌介紹圖片2 上傳' notice='(圖檔尺寸大小為 140*140 ，接受格式為png、jpg)' objName='brandImg2'  imgUpload={brandImg2Upload} 
@@ -183,7 +183,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹標題1</td>
                                                 <td align='left'>亞尼克</td>
-                                                <td>4個字以內</td>
+                                                <td>建議4個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp4_brand_title01">觀看範例圖片</a>
@@ -192,7 +192,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹標題1內文</td>
                                                 <td align='left'>【食材安心】、【製作用心】、【銷售放心】，是亞尼克一直堅持的理念，亞尼克打破傳統以來，好蛋糕必須高價位的刻板印象，用高品質，高成本的原料但平易近人的價位，讓來到亞尼克享用甜點的客人，感受到物超所值的幸福滋味。</td>
-                                                <td>104個字以內</td>
+                                                <td>建議104個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp4_brand_content01">觀看範例圖片</a>
@@ -201,7 +201,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹小標題1</td>
                                                 <td align='left'>Yannick</td>
-                                                <td>8個字以內</td>
+                                                <td>建議8個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp4_brand_subtitle01">觀看範例圖片</a>
@@ -222,7 +222,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹標題2</td>
                                                 <td align='left'>亞尼克</td>
-                                                <td>4個字以內</td>
+                                                <td>建議4個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp4_brand_title02">觀看範例圖片</a>
@@ -231,7 +231,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹標題2內文</td>
                                                 <td align='left'>20年來「不偷工、不減料、新鮮製作、新鮮販售」，希望精心製作的甜點，能讓顧客吃過後，洋溢著幸福的微笑，就像拍照時Say Cheese一樣的開心！</td>
-                                                <td>104個字以內</td>
+                                                <td>建議104個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp4_brand_content02">觀看範例圖片</a>
@@ -240,7 +240,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹小標題2</td>
                                                 <td align='left'>Yannick</td>
-                                                <td>8個字以內</td>
+                                                <td>建議8個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp4_brand_subtitle02">觀看範例圖片</a>

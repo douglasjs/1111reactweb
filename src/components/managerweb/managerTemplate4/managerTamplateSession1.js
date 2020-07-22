@@ -119,20 +119,20 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題' notice='(字數限制為33個字以內)' inputName='title' inputState={title}
+                                        <InputText title='大標題' notice='(建議字數為33個字以內)' inputName='title' inputState={title}
                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題2' notice='(字數限制為33個字以內)' inputName='title2' inputState={title2}
-                                           stateObj={this} required={true} checkValue='11' />
+                                        <InputText title='大標題2' notice='(建議字數為33個字以內)' inputName='title2' inputState={title2}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='副標題' notice='(字數限制為22個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           stateObj={this} required={true} checkValue='22' />
+                                        <InputText title='副標題' notice='(建議字數為22個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='短文' notice='(字數限制為96個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
-                                           rows='4' stateObj={this} required={true} checkValue='96' />
+                                        <InputTextArea title='短文' notice='(建議字數為96個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
+                                           rows='4' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='背景圖片' notice='(圖檔尺寸大小為 1800*1100 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
@@ -178,21 +178,27 @@ class Session1 extends React.Component{
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>大標題</td>
+                                                <td>大標題1</td>
                                                 <td align='left'>【Sharing melts our hearts.分享｡讓心融化】</td>
-                                                <td>字數限制為30個字以內</td>
+                                                <td>建議33個字以內</td>
+                                                <td>不可空白</td>
+                                            </tr>
+                                            <tr>
+                                                <td>大標題2</td>
+                                                <td align='left'>【Sharing melts our hearts.分享｡讓心融化】</td>
+                                                <td>建議33個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>副標題</td>
                                                 <td align='left'>歡迎負責、熱情、有同理心的你</td>
-                                                <td>22個字以內</td>
+                                                <td>建議22個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>短文</td>
                                                 <td align='left'>在餐廳裡，甜點是飽餐一頓的完美句點；在亞尼克，甜點是美好生活的幸福起點。</td>
-                                                <td>96個字以內</td>
+                                                <td>建議96個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                         </tbody>                                        
