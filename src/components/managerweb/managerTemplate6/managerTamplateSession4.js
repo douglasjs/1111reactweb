@@ -1,6 +1,7 @@
 import React from 'react';
 import Msg from '../msg';
 import InputText from '../../sharecomponents/inputText';
+import {newArryMaker} from '../../sharecomponents/toolFunction';
 
 class Session4 extends React.Component{
 
@@ -387,16 +388,10 @@ class Session4 extends React.Component{
         const dataID = (kind00Data && kind00Data.length > 0 && kind00Data[0].oNo!==0) ? kind00Data[0].oNo: 0;
 
         if( dataID!==0 ){
-               
-            kind00Data.forEach( element => {
-                cityGroup.push(element.WorkCity);
-                dutyGroup.push(element.DutyArr[0]);
-            })
-
+            cityGroup = newArryMaker('city', kind00Data );
+            dutyGroup = newArryMaker('duty', kind00Data );
         }
-        cityGroup = [...new Set(cityGroup)];
-        dutyGroup = [...new Set(dutyGroup)];
-
+        
         const style = {
             'display' : 'none'
         }
