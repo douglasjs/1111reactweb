@@ -10,7 +10,7 @@ class CompanyTitle extends React.Component{
 
    componentDidMount(){
         const cid = this.props.match.params.cid;
-        this.props.getCompanyList(cid, this.props.themeNum? this.props.themeNum: 'tp05');
+        this.props.getCompanyList(cid, this.props.themeNum? this.props.themeNum: 'tp04');
     }
 
     render(){
