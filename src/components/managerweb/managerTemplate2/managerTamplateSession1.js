@@ -14,6 +14,10 @@ class Session1 extends React.Component{
             companySubTitle1 : '',
             companyBackgroundImg1 : ' ',
             companyBackgroundImg1Upload : '',
+            companyBackgroundImg2 : ' ',
+            companyBackgroundImg2Upload : '',
+            companyBackgroundImg3 : ' ',
+            companyBackgroundImg3Upload : '',
         };
     }
 
@@ -49,11 +53,11 @@ class Session1 extends React.Component{
             companySubTitle2 : '',
             companySubTitle3 : '',
             companyBackgroundImg1 : event.target.companyBackgroundImg1.value,
-            companyBackgroundImg2 : '',
-            companyBackgroundImg3 : '',
+            companyBackgroundImg2 : event.target.companyBackgroundImg2.value,
+            companyBackgroundImg3 : event.target.companyBackgroundImg3.value,
             UploadImg1 : this.state.companyBackgroundImg1Upload ? this.state.companyBackgroundImg1Upload.value : null,
-            UploadImg2 : null,
-            uploadImg3 : null
+            UploadImg2 : this.state.companyBackgroundImg2Upload ? this.state.companyBackgroundImg2Upload.value : null,
+            uploadImg3 : this.state.companyBackgroundImg3Upload ? this.state.companyBackgroundImg3Upload.value : null
         }
 
         if(event.target.action1.value === 'create'){
@@ -73,6 +77,8 @@ class Session1 extends React.Component{
         let title = this.state.title;
         let companySubTitle1 = this.state.companySubTitle1;
         let companyBackgroundImg1 = this.state.companyBackgroundImg1;
+        let companyBackgroundImg2 = this.state.companyBackgroundImg2;
+        let companyBackgroundImg3 = this.state.companyBackgroundImg3;
         let themeNum = this.props.themeNum;
         let actionType = 'create';
 
@@ -83,15 +89,31 @@ class Session1 extends React.Component{
                 title = title !== "" ? title : element.title;
                 companySubTitle1 = companySubTitle1 !== "" ? companySubTitle1 : element.companySubTitle1;
                 companyBackgroundImg1 = companyBackgroundImg1 !== " " ? companyBackgroundImg1 : element.companyBackgroundImg1;
+                companyBackgroundImg2 = companyBackgroundImg2 !== " " ? companyBackgroundImg2 : element.companyBackgroundImg2;
+                companyBackgroundImg3 = companyBackgroundImg3 !== " " ? companyBackgroundImg3 : element.companyBackgroundImg3;
             })
         }
 
         // image
         let companyBackgroundImg1Upload = "";
-        if(companyBackgroundImg1 === " "){
+        if(companyBackgroundImg1 === ""){
            companyBackgroundImg1Upload = "/image/logo-1111.png";
         }else{
            companyBackgroundImg1Upload = this.state.companyBackgroundImg1 !== ' ' ?  this.state.companyBackgroundImg1Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg1}`;
+        }
+
+        let companyBackgroundImg2Upload = "";
+        if(companyBackgroundImg2 === ""){
+           companyBackgroundImg2Upload = "/image/logo-1111.png";
+        }else{
+           companyBackgroundImg2Upload = this.state.companyBackgroundImg2 !== ' ' ?  this.state.companyBackgroundImg2Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg2}`;
+        }
+
+        let companyBackgroundImg3Upload = "";
+        if(companyBackgroundImg3 === ""){
+           companyBackgroundImg3Upload = "/image/logo-1111.png";
+        }else{
+           companyBackgroundImg3Upload = this.state.companyBackgroundImg3 !== ' ' ?  this.state.companyBackgroundImg3Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg3}`;
         }
 
         return(
@@ -117,8 +139,16 @@ class Session1 extends React.Component{
                                            rows='2' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='圖片' notice='(圖檔尺寸大小為 850*590 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
+                                        <ImgUpload title='圖片' notice='(圖檔尺寸大小為 850*590 ，接受格式為png、jpg)' objName='companyBackgroundImg1' imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
                                             parentObj={this}  imgW={850} imgH={590} required={true}/> 
+                                    </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <ImgUpload title='正常Logo-圖片' notice='(圖檔尺寸大小為 290*60 ，接受格式為png)' objName='companyBackgroundImg2' imgUpload={companyBackgroundImg2Upload} imgFileName={companyBackgroundImg2} 
+                                            parentObj={this}  imgW={290} imgH={60} required={true}/> 
+                                    </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <ImgUpload title='反白Logo-圖片' notice='(圖檔尺寸大小為 425*120 ，接受格式為png)' objName='companyBackgroundImg3' imgUpload={companyBackgroundImg3Upload} imgFileName={companyBackgroundImg3} 
+                                            parentObj={this}  imgW={425} imgH={120} required={true}/> 
                                     </div>
 
                                     <hr />
