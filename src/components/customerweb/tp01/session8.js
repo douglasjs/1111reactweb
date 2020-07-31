@@ -98,12 +98,12 @@ class CompanyContact extends React.Component {
 
         return (
             <section id="contact" className="vc_row bg-cover bg-center" style={contactEnable? {} : {display: 'none'}}>
-                <div className="alert alert-primary" role="alert" hidden={this.state.sentMail}>
-                    <strong>聯絡我們:{/*{emailMsg}*/} &nbsp;</strong> 
+                {/*<div className="alert alert-primary" role="alert" hidden={this.state.sentMail}>
+                    <strong>聯絡我們:{emailMsg} &nbsp;</strong> 
                     <button type="button" className="close" onClick={this.handleChange("sentMail")}>
                         <span aria-hidden="true">&times;</span>
                     </button>
-                </div>
+                </div>*/}
                 <div className="container-fluid">
                     <div className="row d-flex flex-wrap align-items-stretch  box-shadow-3 " style={style}>
                         <div className="lqd-column col-md-6 col-xs-12 px-0 pt-20 pb-10" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"120","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":30,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
