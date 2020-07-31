@@ -11,6 +11,7 @@ class Session1 extends React.Component{
         super(props);
         this.state={
             title : '',
+            title2 : '',
             companySubTitle1 : '',
             companyBackgroundImg1 : ' ',
             companyBackgroundImg1Upload : '',
@@ -47,7 +48,7 @@ class Session1 extends React.Component{
             ono: cid,
             themeNum : event.target.themeNum.value,
             title : event.target.title.value,
-            title2 : '',
+            title2 : event.target.title2.value,
             title3 : '',
             companySubTitle1 : event.target.companySubTitle1.value,
             companySubTitle2 : '',
@@ -75,6 +76,7 @@ class Session1 extends React.Component{
         const cid = this.props.match.params.cid.trim();
 
         let title = this.state.title;
+        let title2 = this.state.title2;
         let companySubTitle1 = this.state.companySubTitle1;
         let companyBackgroundImg1 = this.state.companyBackgroundImg1;
         let companyBackgroundImg2 = this.state.companyBackgroundImg2;
@@ -87,6 +89,7 @@ class Session1 extends React.Component{
             actionType = 'modify';
             companyData.forEach(element => {
                 title = title !== "" ? title : element.title;
+                title2 = title2 !== "" ? title2 : element.title2;
                 companySubTitle1 = companySubTitle1 !== "" ? companySubTitle1 : element.companySubTitle1;
                 companyBackgroundImg1 = companyBackgroundImg1 !== " " ? companyBackgroundImg1 : element.companyBackgroundImg1;
                 companyBackgroundImg2 = companyBackgroundImg2 !== " " ? companyBackgroundImg2 : element.companyBackgroundImg2;
@@ -131,7 +134,11 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題' notice='(建議字數為14個字以內)' inputName='title' inputState={title}
+                                        <InputText title='大標題1' notice='(建議字數為7個字以內)' inputName='title' inputState={title}
+                                           stateObj={this} required={true} checkValue='100' />
+                                    </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <InputText title='大標題2' notice='(建議字數為7個字以內)' inputName='title2' inputState={title2}
                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
