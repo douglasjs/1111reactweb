@@ -724,6 +724,7 @@ h6 {
   color: #333333 !important;
 }
 
+
 @media screen and (max-width: 1199px){
   .main-header .navbar-brand {
       margin-right: auto;
@@ -747,6 +748,12 @@ h6 {
 @media screen and (max-width: 1024px){
   .pt-30_percent{
     padding-top: 10%;
+  }
+}
+
+@media screen and (min-width: 1300px){
+  .tp01_s6_title_width-90pre {
+    width: 90%;
   }
 }
 
