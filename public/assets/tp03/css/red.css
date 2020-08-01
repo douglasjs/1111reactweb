@@ -12768,7 +12768,7 @@ only screen and (min-width:768px) and (max-width:991.98px) {
 	-webkit-line-clamp: 5;
 }
 #company .section-title p {
-    -webkit-line-clamp: 8;
+    -webkit-line-clamp: 7;
 }
 
 .tp-parallax-wrap h4,

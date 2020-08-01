@@ -1887,12 +1887,27 @@
   text-align: left;
 }
 
+.tp02_pb-1rem {
+  padding-bottom: 1rem;
+}
+
+.benefit_min-hight {
+  min-height: 155px;
+  margin-bottom: 10px !important;
+}
+
+@media (max-width: 1024px) {
+  .beneft_text-align {
+    right: 0px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .beneft_text-align {
     right: 0px !important;
   }
   .benefit_min-hight {
-    min-height: 100px;
+    min-height: 144px;
   }
 }
 
@@ -1901,6 +1916,6 @@
     right: 0px !important;
   }
   .benefit_min-hight {
-    min-height: 125px;
+    min-height: 140px;
   }
 }

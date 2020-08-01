@@ -724,6 +724,10 @@ h6 {
   color: #333333 !important;
 }
 
+.tp01_s5_subtitle_height {
+  height: 75px;
+  line-height: 50px !important;
+}
 
 @media screen and (max-width: 1199px){
   .main-header .navbar-brand {
@@ -736,7 +740,7 @@ h6 {
 }
 
 .pt-30_percent{
-  padding-top: 20%;
+  padding-top: 17%;
 }
 
 @media screen and (max-width: 1440px){
@@ -800,5 +804,10 @@ h6 {
 
   .benefit-max-hight {
     max-height: 500px;
+  }
+
+  .tp01_s5_subtitle_height {
+    height: 80px;
+    line-height: 30px !important;
   }
 }

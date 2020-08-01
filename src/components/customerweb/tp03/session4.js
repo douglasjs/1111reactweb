@@ -20,6 +20,14 @@ class CompanyJobs extends React.Component {
             <div id="jobs" className="testimonial-landing-area custom-top">
                 <div className="container">
                     <div className="row">
+                        <div className="col-lg-6 m-auto text-center">
+                            <div className="section-title mb-0">
+                                <h5>jobs</h5>
+                                <h4 className="font-weight-bold">職缺介紹</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
                         <div className="col-lg-9 m-auto">
                             <div className="testimonial-content-landing job-min-height">
                                 
@@ -43,7 +51,7 @@ class CompanyJobs extends React.Component {
                                         <p className="line-3">{element.position_matter}</p>
                                     </div>
                                     <div className="button-item mt-15">
-                                        <a target="_blank" href={positionURL} rel="noopener noreferrer" className="btn-brand btn-lg">我要應徵</a>
+                                        <a target="_blank" href={positionURL} rel="noopener noreferrer" className="btn-brand btn-lg text-white">我要應徵</a>
                                     </div>
                                 </div>
 

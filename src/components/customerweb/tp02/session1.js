@@ -57,7 +57,8 @@ class CompanyTitle extends React.Component{
                     <div className="row">
                         <div className="col-lg-6 col-md-12 col-sm-12 content-column">
                             <div className="content-box text-left s1_width">
-                                <h1>{title}<br />{title2}</h1>
+                                <h1 className="mb-0">{title}</h1>                                
+                                <h1>{title2}</h1>
                                 <div className="text">{companySubTitle1}</div>
                                 <div className="btn-box">
                                     <a className="btn-style-three" target="_blank" rel="noopener noreferrer" href={companyurl}>徵的就是你!</a>
