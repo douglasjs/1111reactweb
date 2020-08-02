@@ -66,8 +66,8 @@ class CompanyInfo extends React.Component{
                         <div className="col-lg-6 col-md-12 text-left">
                             <div className="about-content">
                                 <span>About Us</span>
-                                <h2>{introTitle}</h2>
-                                <p className="text-left">{introMainContent}</p>
+                                <h2 className="tp05_line-1">{introTitle}</h2>
+                                <p className="text-left tp05_line-9">{introMainContent}</p>
                                 <a target="_blank"  rel="noopener noreferrer" href={companyurl} className="default-btn tp05_hover-btn">我要應徵</a>
                             </div>
                         </div>

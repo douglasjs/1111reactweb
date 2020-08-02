@@ -13,10 +13,10 @@ $value_eight: 1267px;
 @media only #{$media} and ($feature_max : $value_two) {
 
     body {
-        font-size: 13px;
+        font-size: 15px;
     }
     p {
-        font-size: 13px;
+        font-size: 15px;
     }
     .ptb-100 {
         padding: {
@@ -43,7 +43,7 @@ $value_eight: 1267px;
         }
         p {
             max-width: 100%;
-            font-size: 13px;
+            font-size: 15px;
             margin: {
                 left: 0;
                 top: 8px;
@@ -53,7 +53,7 @@ $value_eight: 1267px;
         }
     }
     .default-btn {
-        font-size: 13px;
+        font-size: 15px;
         padding: {
             left: 30px;
             right: 30px;
@@ -62,7 +62,7 @@ $value_eight: 1267px;
         };
     }
     .optional-btn {
-        font-size: 13px;
+        font-size: 15px;
         padding: {
             left: 30px;
             right: 30px;
@@ -98,7 +98,7 @@ $value_eight: 1267px;
                 li {
                     text-align: center;
                     padding-left: 0;
-                    font-size: 13px;
+                    font-size: 15px;
                     margin: {
                         right: 10px;
                         left: 10px;
@@ -114,7 +114,7 @@ $value_eight: 1267px;
 
                         &.default-btn {
                             top: 5px;
-                            font-size: 13px;
+                            font-size: 15px;
                         }
                     }
                     &:last-child {
@@ -333,11 +333,11 @@ $value_eight: 1267px;
         margin-top: 10px;
 
         p {
-            font-size: 13px;
+            font-size: 15px;
         }
         .read-more-btn {
             margin-top: 3px;
-            font-size: 13px;
+            font-size: 15px;
         }
     }
     .about-boxes-area {
@@ -396,7 +396,7 @@ $value_eight: 1267px;
             font-size: 16px;
         }
         p {
-            font-size: 13px;
+            font-size: 15px;
         }
     }
     .about-img {
@@ -439,7 +439,7 @@ $value_eight: 1267px;
         }
         .read-more-btn {
             margin-top: 5px;
-            font-size: 13px;
+            font-size: 15px;
         }
     }
     .services-slides {
@@ -475,7 +475,7 @@ $value_eight: 1267px;
             }
             .read-more-btn {
                 margin-top: 0;
-                font-size: 13px;
+                font-size: 15px;
             }
         }
     }
@@ -553,7 +553,7 @@ $value_eight: 1267px;
                     font-size: 25px;
                 }
                 p {
-                    font-size: 13px;
+                    font-size: 15px;
                 }
             }
             .features-list {
@@ -582,7 +582,7 @@ $value_eight: 1267px;
                         };
                     }
                     span {
-                        font-size: 13px;
+                        font-size: 15px;
                     }
                 }
             }
@@ -596,7 +596,7 @@ $value_eight: 1267px;
             font-size: 25px;
         }
         p {
-            font-size: 13px;
+            font-size: 15px;
             margin-top: 7px;
         }
         .image {
@@ -610,7 +610,7 @@ $value_eight: 1267px;
 
         .tabs {
             li {
-                font-size: 13px;
+                font-size: 15px;
 
                 a {
                     padding: 9px 16.1px 7px;
@@ -621,7 +621,7 @@ $value_eight: 1267px;
             padding: 15px;
 
             p {
-                font-size: 13px;
+                font-size: 15px;
             }
             form {
                 .nice-select {
@@ -699,7 +699,7 @@ $value_eight: 1267px;
             font-size: 25px;
         }
         p {
-            font-size: 13px;
+            font-size: 15px;
             margin-top: 5px;
         }
         .default-btn {
@@ -787,7 +787,7 @@ $value_eight: 1267px;
                         font-size: 15px;
                     }
                     span {
-                        font-size: 13px;
+                        font-size: 15px;
                         margin-top: 4px;
                     }
                 }
@@ -830,7 +830,7 @@ $value_eight: 1267px;
                 font-size: 15px;
             }
             span {
-                font-size: 13px;
+                font-size: 15px;
             }
         }
     }
@@ -986,7 +986,7 @@ $value_eight: 1267px;
                     };
                 }
                 span {
-                    font-size: 13px;
+                    font-size: 15px;
                     margin-bottom: 3px;
                 }
                 a {
@@ -1012,7 +1012,7 @@ $value_eight: 1267px;
             }
             span {
                 margin-top: 6px;
-                font-size: 13px;
+                font-size: 15px;
             }
         }
     }
@@ -1056,7 +1056,7 @@ $value_eight: 1267px;
                 font-size: 25px;
             }
             p {
-                font-size: 13px;
+                font-size: 15px;
                 max-width: 100%;
                 margin: {
                     left: 0;
@@ -1082,7 +1082,7 @@ $value_eight: 1267px;
             }
         }
         p {
-            font-size: 13px;
+            font-size: 15px;
         }
     }
     .single-achievements-image {
@@ -1163,7 +1163,7 @@ $value_eight: 1267px;
                 font-size: 15px;
             }
             .accordion-content {
-                font-size: 13px;
+                font-size: 15px;
             }
         }
     }
@@ -1200,7 +1200,7 @@ $value_eight: 1267px;
         .post-image {
             .date {
                 padding: 10px 20px 0;
-                font-size: 13px;
+                font-size: 15px;
             }
         }
         .post-content {
@@ -1270,7 +1270,7 @@ $value_eight: 1267px;
             padding-left: 0;
 
             p {
-                font-size: 13px;
+                font-size: 15px;
             }
         }
         .comments-title {
@@ -1286,7 +1286,7 @@ $value_eight: 1267px;
             font-size: 16px;
         }
         .comment-metadata {
-            font-size: 13px;
+            font-size: 15px;
         }
         .comment-respond {
             .comment-reply-title {
@@ -1471,7 +1471,7 @@ $value_eight: 1267px;
         }
         .tagcloud {
             a {
-                font-size: 13px !important;
+                font-size: 15px !important;
             }
         }
     }
@@ -1582,7 +1582,7 @@ $value_eight: 1267px;
         .footer-quick-links {
             li {
                 a {
-                    font-size: 13px;
+                    font-size: 15px;
                 }
             }
         }
@@ -2525,7 +2525,7 @@ $value_eight: 1267px;
         }
         .back-all-events {
             margin-bottom: 12px;
-            font-size: 13px;
+            font-size: 15px;
         }
     }
 

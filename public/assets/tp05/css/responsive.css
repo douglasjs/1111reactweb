@@ -1,9 +1,9 @@
 @media only screen and (max-width: 767px) {
   body {
-    font-size: 13px;
+    font-size: 15px;
   }
   p {
-    font-size: 13px;
+    font-size: 15px;
   }
   .ptb-100 {
     padding-top: 60px;
@@ -27,7 +27,7 @@
   }
   .section-title p {
     max-width: 100%;
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 0;
     margin-top: 8px;
     margin-bottom: 0;
@@ -41,7 +41,7 @@
     padding-bottom: 8px;
   }
   .optional-btn {
-    font-size: 13px;
+    font-size: 15px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 13px;
@@ -68,7 +68,7 @@
   .top-header .top-header-right-side ul li {
     text-align: center;
     padding-left: 0;
-    font-size: 13px;
+    font-size: 15px;
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -83,7 +83,7 @@
   }
   .top-header .top-header-right-side ul li a.default-btn {
     top: 5px;
-    font-size: 13px;
+    font-size: 15px;
   }
   .top-header .top-header-right-side ul li:last-child {
     display: none;
@@ -254,11 +254,11 @@
     margin-top: 10px;
   }
   .about-text p {
-    font-size: 13px;
+    font-size: 15px;
   }
   .about-text .read-more-btn {
     margin-top: 3px;
-    font-size: 13px;
+    font-size: 15px;
   }
   .about-boxes-area {
     margin-top: 10px;
@@ -309,10 +309,10 @@
     padding: 25px;
   }
   .about-text-box h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .about-text-box p {
-    font-size: 13px;
+    font-size: 15px;
   }
   .about-img {
     padding-right: 0;
@@ -349,7 +349,7 @@
   }
   .single-services-box .read-more-btn {
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 15px;
   }
   .services-slides.owl-theme .owl-nav {
     opacity: 1;
@@ -378,7 +378,7 @@
   }
   .services-box .content .read-more-btn {
     margin-top: 0;
-    font-size: 13px;
+    font-size: 15px;
   }
   .partner-area {
     padding-top: 50px;
@@ -437,7 +437,7 @@
     font-size: 25px;
   }
   .why-choose-us-content .content .title p {
-    font-size: 13px;
+    font-size: 15px;
   }
   .why-choose-us-content .content .features-list {
     text-align: center;
@@ -461,7 +461,7 @@
     margin-bottom: 15px;
   }
   .why-choose-us-content .content .features-list li span {
-    font-size: 13px;
+    font-size: 15px;
   }
   .quote-content {
     padding-right: 0;
@@ -470,7 +470,7 @@
     font-size: 25px;
   }
   .quote-content p {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 7px;
   }
   .quote-content .image {
@@ -482,7 +482,7 @@
     margin-top: 35px;
   }
   .quote-list-tab .tabs li {
-    font-size: 13px;
+    font-size: 15px;
   }
   .quote-list-tab .tabs li a {
     padding: 9px 16.1px 7px;
@@ -491,7 +491,7 @@
     padding: 15px;
   }
   .quote-list-tab .tabs_item p {
-    font-size: 13px;
+    font-size: 15px;
   }
   .quote-list-tab .tabs_item form .nice-select {
     text-transform: capitalize;
@@ -554,7 +554,7 @@
     font-size: 25px;
   }
   .ctr-content p {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 5px;
   }
   .ctr-content .default-btn {
@@ -622,7 +622,7 @@
     font-size: 15px;
   }
   .feedback-slides .client-thumbnails .item .title span {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 4px;
   }
   .feedback-slides .next-arrow, .feedback-slides .prev-arrow {
@@ -658,7 +658,7 @@
     font-size: 15px;
   }
   .single-feedback-item .client-info span {
-    font-size: 13px;
+    font-size: 15px;
   }
   .mission-image {
     background-image: unset;
@@ -786,7 +786,7 @@
     margin-right: auto;
   }
   .find-agent-contact-info ul li span {
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 3px;
   }
   .find-agent-contact-info ul li a {
@@ -806,7 +806,7 @@
   }
   .single-team-box .content span {
     margin-top: 6px;
-    font-size: 13px;
+    font-size: 15px;
   }
   .team-slides.owl-theme .owl-nav {
     opacity: 1;
@@ -841,7 +841,7 @@
     font-size: 25px;
   }
   .achievements-content .title p {
-    font-size: 13px;
+    font-size: 15px;
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -859,7 +859,7 @@
     top: 4px;
   }
   .single-funfact p {
-    font-size: 13px;
+    font-size: 15px;
   }
   .single-achievements-image {
     height: auto;
@@ -920,10 +920,10 @@
     text-align: left;
   }
   .faq-accordion .accordion .accordion-title {
-    font-size: 15px;
+    font-size: 18px;
   }
   .faq-accordion .accordion .accordion-content {
-    font-size: 14px;
+    font-size: 15px;
   }
   .single-pricing-box .pricing-header {
     padding-top: 55px;
@@ -947,7 +947,7 @@
   }
   .single-blog-post .post-image .date {
     padding: 10px 20px 0;
-    font-size: 13px;
+    font-size: 15px;
   }
   .single-blog-post .post-content {
     padding: 20px;
@@ -1004,7 +1004,7 @@
     padding-left: 0;
   }
   .comments-area .comment-body p {
-    font-size: 13px;
+    font-size: 15px;
   }
   .comments-area .comments-title {
     margin-bottom: 20px;
@@ -1018,7 +1018,7 @@
     font-size: 16px;
   }
   .comments-area .comment-metadata {
-    font-size: 13px;
+    font-size: 15px;
   }
   .comments-area .comment-respond .comment-reply-title {
     font-size: 19px;
@@ -1144,7 +1144,7 @@
     font-size: 14px;
   }
   .widget-area .tagcloud a {
-    font-size: 13px !important;
+    font-size: 15px !important;
   }
   .contact-form form .default-btn {
     font-size: 14px;
@@ -1229,7 +1229,7 @@
     font-size: 14px;
   }
   .single-footer-widget .footer-quick-links li a {
-    font-size: 13px;
+    font-size: 15px;
   }
   .copyright-area {
     margin-top: 30px;
@@ -1924,7 +1924,7 @@
   }
   .events-details-header .back-all-events {
     margin-bottom: 12px;
-    font-size: 13px;
+    font-size: 15px;
   }
   .widget-area .widget .widget-title {
     font-size: 18px;
@@ -2149,18 +2149,6 @@
   background-color: #ffffff;
 }
 
-/* card height */
-
-.card_height {
-  height: 60px;
-}
-
-@media only screen and (max-width: 400px) {
-  .card_height {
-      height: auto;
-  }
-}
-
 .tp05_benefit_icon_wh_60 {
   width: 60px !important;
   height: 60px !important;
@@ -2169,4 +2157,46 @@
 .tp05_benefit_icon_w_full {
   line-height: 60px !important;
   font-size: 45px !important;
+}
+
+/* Max line */
+.tp05_line-1, .tp05_line-2, .tp05_line-3, .tp05_line-9, .tp05_line-10 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.tp05_line-1 {
+  -webkit-line-clamp: 1;
+}
+
+.tp05_line-2 {
+  -webkit-line-clamp: 2;
+}
+
+.tp05_line-3{
+  -webkit-line-clamp: 3;
+}
+
+.tp05_line-9 {
+  -webkit-line-clamp: 9;
+}
+
+.tp05_line-10 {
+  -webkit-line-clamp: 10;
+}
+
+/* card height */
+
+.card_height {
+  height: 60px;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .card_height {
+    height: auto;
+  }
 }

@@ -3461,7 +3461,7 @@ Pricing Area CSS
 }
 
 .single-pricing-box .pricing-features-list li i.flaticon-cross-out {
-  font-size: 13px;
+  font-size: 15px;
   color: red;
 }
 
@@ -5290,7 +5290,7 @@ Blog Details Area CSS
   text-transform: uppercase;
   position: relative;
   z-index: 1;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -5332,7 +5332,7 @@ Blog Details Area CSS
   color: #666666;
   letter-spacing: 0.01em;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -6052,7 +6052,7 @@ Sidebar Widget Area CSS
 
 .widget-area .widget_recent_entries ul li .post-date {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   color: #666666;
   margin-top: 4px;
 }
