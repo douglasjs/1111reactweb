@@ -2160,3 +2160,13 @@
       height: auto;
   }
 }
+
+.tp05_benefit_icon_wh_60 {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.tp05_benefit_icon_w_full {
+  line-height: 60px !important;
+  font-size: 45px !important;
+}

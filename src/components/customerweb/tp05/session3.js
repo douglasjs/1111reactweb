@@ -95,24 +95,24 @@ class CompanyBenifit  extends React.Component {
                                     <ul className="features-list">
 
                                         <li>
-                                            <div className="icon">
-                                                <i className="flaticon-like"></i>
+                                            <div className="icon tp05_benefit_icon_wh_60">
+                                                <i className="flaticon-like tp05_benefit_icon_w_full"></i>
                                             </div>
                                             <span>{benefitSubTitle1}</span>
                                             {benefitSubContent1}
                                         </li>
 
                                         <li>
-                                            <div className="icon">
-                                                <i className="flaticon-customer-service"></i>
+                                            <div className="icon tp05_benefit_icon_wh_60">
+                                                <i className="flaticon-customer-service tp05_benefit_icon_w_full"></i>
                                             </div>
                                             <span>{benefitSubTitle2}</span>
                                             {benefitSubContent2}
                                         </li>
 
                                         <li>
-                                            <div className="icon">
-                                                <i className="flaticon-care"></i>
+                                            <div className="icon tp05_benefit_icon_wh_60">
+                                                <i className="flaticon-care tp05_benefit_icon_w_full"></i>
                                             </div>
                                             <span>{benefitSubTitle3}</span>
                                             {benefitSubContent3}
@@ -120,24 +120,24 @@ class CompanyBenifit  extends React.Component {
                                         </li>
 
                                         <li>
-                                            <div className="icon">
-                                                <i className="flaticon-team"></i>
+                                            <div className="icon tp05_benefit_icon_wh_60">
+                                                <i className="flaticon-team tp05_benefit_icon_w_full"></i>
                                             </div>
                                             <span>{benefitSubTitle4}</span>
                                             {benefitSubContent4}
                                         </li>
 
                                         <li>
-                                            <div className="icon">
-                                                <i className="flaticon-policy pl-10" ></i>
+                                            <div className="icon tp05_benefit_icon_wh_60">
+                                                <i className="flaticon-policy pl-10 tp05_benefit_icon_w_full" ></i>
                                             </div>
                                             <span>{benefitSubTitle5}</span>
                                             {benefitSubContent5}
                                         </li>
 
                                         <li>
-                                            <div className="icon">
-                                                <i className="flaticon-education"></i>
+                                            <div className="icon tp05_benefit_icon_wh_60">
+                                                <i className="flaticon-education tp05_benefit_icon_w_full"></i>
                                             </div>
                                             <span>{benefitSubTitle6}</span>
                                             {benefitSubContent6}                                            
