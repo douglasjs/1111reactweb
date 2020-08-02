@@ -47,13 +47,13 @@ class CompanyBrand extends React.Component {
 									<p className="text-justify">{brandTitleSub1Content}</p>
 								</header>
 
-								<a href={brandURL2} target='_blank' rel='noopener noreferrer' className="btn btn-sm semi-round btn-bordered border-thin px-2 font-size-17 btn-solid">
+								<a href={brandURL2} target='_blank' rel='noopener noreferrer' className="btn btn-sm round btn-bordered border-thin px-2 font-size-17 btn-solid">
 									<span>
 										<span className="btn-txt">了解更多</span>
 									</span>
 								</a>
 
-								<a href={companyurl} target='_blank' rel='noopener noreferrer' className="btn btn-sm semi-round btn-bordered border-thin px-2 font-size-17 btn-default btn-light margin-bottom_25px">
+								<a href={companyurl} target='_blank' rel='noopener noreferrer' className="btn btn-sm round btn-bordered border-thin px-2 font-size-17 btn-default btn-light margin-bottom_25px">
 									<span>
 										<span className="btn-txt">應徵</span>
 									</span>

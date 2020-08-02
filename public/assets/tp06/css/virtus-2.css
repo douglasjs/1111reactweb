@@ -197,9 +197,19 @@ h6 {
   min-height: 137px;
 }
 
+.tp06_banner_title-pt {
+  padding-top: 25%;
+}
+
 @media (max-width: 768px) {
   .tp06_benefit-mheight-137 {
     min-height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tp06_banner_title-pt {
+    padding-top: 0;
   }
 }
 
@@ -208,3 +218,4 @@ h6 {
       margin-right: auto;
   }
 }
+

@@ -70,7 +70,7 @@ class CompanyJobs extends React.Component {
 													
 												<div className="pricing-table-footer">
 													
-													<a href={positionURL} className="btn btn-sm btn-solid round lh-15 px-2">
+													<a href={positionURL} className="btn btn-sm round btn-bordered border-thin px-2 font-size-17 btn-default btn-light margin-bottom_25px">
 														<span>
 															<span className="btn-txt">有興趣</span>
 														</span>

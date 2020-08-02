@@ -1279,9 +1279,9 @@ body.archive.woocommerce #content ~ .lqd-main-footer-default { margin-top: 0; }
 
 .btn-secondary.btn-solid { border-color: var(--color-secondary); background-color: var(--color-secondary); }
 
-.btn-light.btn-bordered { color: #000; border-color: #e4e4e4; }
+.btn-light.btn-bordered { color: var(--color-primary); border-color: var(--color-primary); }
 
-.btn-light.btn-bordered:hover { border-color: #000; background-color: #000; color: #fff; }
+.btn-light.btn-bordered:hover { border-color: var(--color-primary); background-color: var(--color-primary); color: #fff; }
 
 .btn-dark.btn-underlined { color: #3f4147; }
 
@@ -9630,4 +9630,4 @@ MOBULE HEADER
 .iconbox p{-webkit-line-clamp: 3;}
 #brand p{-webkit-line-clamp: 6;}
 #company p{-webkit-line-clamp: 7;}
-#benefit .fancy-title p{-webkit-line-clamp: 9;}
+#benefit .fancy-title p{-webkit-line-clamp: 10;}

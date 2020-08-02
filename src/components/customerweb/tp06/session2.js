@@ -69,13 +69,13 @@ class CompanyInfo extends React.Component{
 									<p className="text-justify">{introMainContent}</p>
 								</header>
 
-								<a href={companyurl} target='_blank' rel='noopener noreferrer' className="btn btn-solid btn-sm semi-round btn-bordered border-thin px-2 font-size-17">
+								<a href={companyurl} target='_blank' rel='noopener noreferrer' className="btn btn-sm round btn-bordered border-thin px-2 font-size-17 btn-solid">
 									<span>
 										<span className="btn-txt">我要應徵</span>
 									</span>
 								</a>
 
-								<a href={introSubTitle1} target='_blank' rel='noopener noreferrer' className="btn btn-default btn-sm semi-round btn-bordered border-thin btn-light px-2 font-size-17">
+								<a href={introSubTitle1} target='_blank' rel='noopener noreferrer' className="btn btn-default btn-sm round btn-bordered border-thin btn-light px-2 font-size-17">
 									<span>
 										<span className="btn-txt">了解更多</span>
 									</span>

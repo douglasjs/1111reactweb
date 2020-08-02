@@ -3644,12 +3644,12 @@ body.archive.woocommerce #content ~ .lqd-main-footer-default {
 }
 
 .btn-light.btn-bordered {
-  color: #000;
-  border-color: #e4e4e4;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 .btn-light.btn-bordered:hover {
-  border-color: #000;
-  background-color: #000;
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
   color: #fff;
 }
 
