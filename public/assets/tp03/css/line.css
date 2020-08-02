@@ -47,7 +47,7 @@
     .card_height {
         height: auto;
     }
-    .mobile-mb-0 {
-        margin-bottom: 0px;
+    .mobile-mb {
+        margin-bottom: 5px;
     }
 }

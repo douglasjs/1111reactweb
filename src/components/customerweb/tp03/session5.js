@@ -57,7 +57,7 @@ class CompanyBrand extends React.Component {
                     <div className="col-md-6 col-xl-3">
                         <div className="gallery-banner-item gallery-banner-item-txt bg-brand">
                             <div className="gallery-banner-txt text-left">
-                                <h5 className="mobile-mb-0"><strong>{brandTitleSub1}</strong></h5>
+                                <h5 className="mobile-mb"><strong>{brandTitleSub1}</strong></h5>
                                 <p>{brandTitleSub1Content}</p>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ class CompanyBrand extends React.Component {
                     <div className="col-md-6 col-xl-3">
                         <div className="gallery-banner-item gallery-banner-item-txt bg-secondary">
                             <div className="gallery-banner-txt text-left">
-                                <h5 className="text-brand mobile-mb-0"><strong>{brandTitleSub2}</strong></h5>
+                                <h5 className="text-brand mobile-mb"><strong>{brandTitleSub2}</strong></h5>
                                 <p className="text-gray">{brandTitleSub2Content}</p>
                             </div>
                         </div>
