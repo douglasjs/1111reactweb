@@ -201,6 +201,10 @@ h6 {
   padding-top: 25%;
 }
 
+.tp06-width-90 {
+  width: 95%;
+}
+
 @media (max-width: 768px) {
   .tp06_benefit-mheight-137 {
     min-height: auto;
@@ -219,3 +223,22 @@ h6 {
   }
 }
 
+/* Max line */
+.tp06_line-1, .tp06_line-2, .tp06_line-7{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.tp06_line-1 {
+  -webkit-line-clamp: 1;
+}
+
+.tp06_line-2 {
+  -webkit-line-clamp: 2;
+}
+.tp06_line-7 {
+  -webkit-line-clamp: 7;
+}

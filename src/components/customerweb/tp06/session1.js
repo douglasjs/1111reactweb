@@ -56,7 +56,7 @@ class CompanyTitle extends React.Component{
 								{title}
 							</h2>
 
-							<p className="mb-40 font-size-18 lh-175 text-fade-white-06 pr-md-5">{companySubTitle1}</p>
+							<p className="mb-40 font-size-18 lh-175 text-fade-white-06 pr-md-5 tp06_line-1">{companySubTitle1}</p>
 						
 						</div>
 
