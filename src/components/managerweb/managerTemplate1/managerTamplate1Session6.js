@@ -441,7 +441,7 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-2.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_01/06-01.png" alt="Temp1_Customize" /></div>
                                             <div>
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize_card01">
                                                     觀看放大圖例
@@ -531,7 +531,7 @@ class Session6 extends React.Component{
                                             </div>
                                        </div>
                                        <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-3.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_01/06-02.png" alt="Temp1_Customize" /></div>
                                             <div>
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize_card02">
                                                     觀看放大圖例
@@ -621,7 +621,7 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_01/06-03.png" alt="Temp1_Customize" /></div>
                                             <div>
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize_card03">
                                                     觀看放大圖例
@@ -711,7 +711,7 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-5.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_01/06-04.png" alt="Temp1_Customize" /></div>
                                             <div>
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize_card04">
                                                     觀看放大圖例
@@ -802,7 +802,7 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_01/06-05.png" alt="Temp1_Customize" /></div>
                                             <div>
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize">
                                                     觀看放大圖例
