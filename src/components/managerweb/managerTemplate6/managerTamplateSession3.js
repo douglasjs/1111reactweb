@@ -31,7 +31,7 @@ class Session3 extends React.Component{
         const benObj={
             ono: cid,
             themeNum : event.target.themeNum3.value,
-            benefitContent : this.state.benefitContent,
+            benefitContent : event.target.benefitContent.value,
             benefitImg : event.target.benefitImg.value,
             benefitImg2 : '',
             benefitImgUpload : this.state.benefitImgUpload ? this.state.benefitImgUpload.value : null,
@@ -70,9 +70,7 @@ class Session3 extends React.Component{
         }
     }
 
-    handleChange = (event, data) => {   
-        this.setState({ ...this.state, benefitContent : data});
-    };
+
 
     render(){
         const { benefitData, benefitErr, benefitIsLoading} = this.props.benefitReducer;
@@ -95,7 +93,7 @@ class Session3 extends React.Component{
         if(benefitData && benefitData.length > 0){
             actionType = 'modify';
             benefitData.forEach(element => {
-                benefitContent = benefitContent !== "" ? benefitContent : element.benefitContent;
+                benefitContent = benefitContent!== "" ?  benefitContent: element.benefitContent;
                 benefitImg = benefitImg !== " " ? benefitImg : element.benefitImg;
                 benefitSubTitle1 = benefitSubTitle1 !== "" ? benefitSubTitle1 : element.benefitSubTitle1;
                 benefitSubTitle2 = benefitSubTitle2 !== "" ? benefitSubTitle2 : element.benefitSubTitle2;
