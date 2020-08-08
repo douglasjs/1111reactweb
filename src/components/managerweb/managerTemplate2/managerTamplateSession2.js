@@ -186,11 +186,11 @@ class Session2 extends React.Component{
 
                                 <div className="col-md-6 mb-3">
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='主標題' notice='(建議字數為8個字以內)' inputName='introTitle' inputState={introTitle}
+                                        <InputText title='主標題' notice='(建議字數為13個字以內)' inputName='introTitle' inputState={introTitle}
                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row">
-                                        <InputText title='副標題' notice='(建議字數為14個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
+                                        <InputText title='副標題' notice='(建議字數為23個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
                                             stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
@@ -237,13 +237,13 @@ class Session2 extends React.Component{
                                                 <tr>
                                                     <td>主標題</td>
                                                     <td align='left'>媽咪樂MHHS</td>
-                                                    <td>建議8個字以內</td>
+                                                    <td>建議13個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>
                                                     <td>副標題</td>
                                                     <td align='left'>新一代 居家服務集團</td>
-                                                    <td>建議14個字以內</td>
+                                                    <td>建議23個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>

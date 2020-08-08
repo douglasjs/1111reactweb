@@ -142,7 +142,7 @@ class Session1 extends React.Component{
                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題' notice='(建議字數為15個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                        <InputTextArea title='副標題' notice='(建議字數為52個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
                                            rows='2' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
@@ -195,15 +195,21 @@ class Session1 extends React.Component{
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>大標題</td>
+                                                <td>大標題1</td>
                                                 <td align='left'>和媽咪樂MHHS一起創造未來！</td>
-                                                <td>建議14個字以內</td>
+                                                <td>建議7個字以內</td>
+                                                <td>不可空白</td>
+                                            </tr>
+                                            <tr>
+                                                <td>大標題2</td>
+                                                <td align='left'>和媽咪樂MHHS一起創造未來！</td>
+                                                <td>建議7個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>副標題</td>
                                                 <td align='left'>如此偉大的旅程，我們才剛剛開始</td>
-                                                <td>建議15個字以內</td>
+                                                <td>建議52個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                         </tbody>                                        

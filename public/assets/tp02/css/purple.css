@@ -10895,14 +10895,14 @@ width: 100%;
 .feature-style-five .inner-box .single-item h3 a,
 .faq-secttion .carousel-content .content-box h4,
 .about-section .sec-title h1,
-.about-section .sec-title h4,
 .faq-secttion .sec-title h1,
 .contact-section .sec-title h1,
 .work-section .content-box h1 {
     -webkit-line-clamp: 2;
 }
 
-.service-block-three h4 a {	
+.service-block-three h4 a,
+.about-section .sec-title h4, {	
 	-webkit-line-clamp: 1;
 }
 
