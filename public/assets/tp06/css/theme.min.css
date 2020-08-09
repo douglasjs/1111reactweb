@@ -9625,7 +9625,7 @@ MOBULE HEADER
 #jobs h2,
 #company h3{-webkit-line-clamp: 1;}
 #brand h3,
-.accordion-content p, {-webkit-line-clamp: 2;}
+.accordion-content p {-webkit-line-clamp: 2;}
 #custom p,
 .iconbox p{-webkit-line-clamp: 3;}
 #brand p{-webkit-line-clamp: 6;}
