@@ -2199,4 +2199,8 @@
   .card_height {
     height: auto;
   }
+
+  .tp05-img-display{
+    display: none;
+  }
 }
