@@ -43,7 +43,7 @@ class CompanyTitle extends React.Component{
             <section>
             {companyData && companyData.length > 0 &&
             <div
-                className="vc_row height-60 d-flex flex-wrap align-items-end"
+                className="vc_row tp01_s1_min-height d-flex flex-wrap align-items-end"
                 data-parallax="true"
                 data-parallax-options='{"parallaxBG":true}'
                 data-slideshow-bg="true"

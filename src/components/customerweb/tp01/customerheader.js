@@ -5,7 +5,7 @@ const NavBar = (props) => {
     return(
         <div className="navbar-header">
             <a className="navbar-brand" href={props.logoURL} rel="home">
-                <span className="navbar-brand-inner">
+                <span className="navbar-brand-inner tp01_logo_height">
                     <img className="logo-dark" src={props.logURL} alt="1111人力銀行Logo" />
                     <img className="logo-sticky" src={props.logURL} alt="1111人力銀行Logo" />
                     <img className="mobile-logo-default" src={props.logURL} alt="1111人力銀行Logo" />

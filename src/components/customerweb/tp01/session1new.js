@@ -45,7 +45,7 @@ class CompanyTitle extends React.Component{
         return (
             <section>
 
-            <Slider className="vc_row height-60 d-flex flex-wrap" autoplay={3000} previousButton='' nextButton='' touchDisabled={false} disabled={false}>
+            <Slider className="vc_row tp01_s1_min-height d-flex flex-wrap" autoplay={3000} previousButton='' nextButton='' touchDisabled={false} disabled={false}>
                     {image2Arry.map((item, index) => (
                         <div
                             key={index}
