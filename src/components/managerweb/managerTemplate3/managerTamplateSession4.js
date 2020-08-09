@@ -563,6 +563,14 @@ class Session4 extends React.Component{
                                             </select>
                                         </div>
                                     </div>
+
+                                    <div align="center">
+                                        <div className="message_width">
+                                            <Msg type ='MESSAGE'  value = {this.state.showTable} text1title={text1title} text1={this.state.created} text2title={text2title} text2={this.state.failed} /> 
+                                            <button type='submit'  id='actionPosition' className={this.showStyle(!this.state.showTable)}><i className="fas fa-save"></i> 選擇職缺 </button>
+                                            <button type="button"  id='closePosition' className={this.showStyle(this.state.showTable)} data-dismiss="modal" onClick={this.handleClose}>關閉視窗  </button>
+                                        </div>
+                                    </div>
         
                                     <div className="form-row">
                                         <table className="table table-hover table-bordered" id="dataTable">

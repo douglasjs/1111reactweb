@@ -411,7 +411,7 @@ class Session4 extends React.Component{
                                                 <div id="dataTable_filter" className="dataTables_filter text-left">
                                                     {/*<a data-toggle="modal" href="#tmp4_addlable"><button className='btn btn-primary'>增加標籤 <i className="fas fa-folder-plus" value='Create' /></button></a>&nbsp;&nbsp;&nbsp;*/}
                                                     <a data-toggle="modal" href="#tmp4_addjob"><button className='btn btn-primary' onClick={this.handleAddPosition}>增加職缺 <i className="fas fa-folder-plus" value='Create' /></button></a>
-                                                    <div className="">職缺數量建議最多五筆，版面較容易瀏覽(<a type="button" data-toggle="modal" href="#tmp4_joblable_img">觀看圖例</a>)</div>
+                                                    {/*<div className="">職缺數量建議最多五筆，版面較容易瀏覽(<a type="button" data-toggle="modal" href="#tmp4_joblable_img">觀看圖例</a>)</div>*/}
                                                 </div>
                                             </div>
                                         </div>
@@ -535,7 +535,7 @@ class Session4 extends React.Component{
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <p className="modal-title">請選擇要顯示的職缺，<span className='text-danger'>建議最多選取五筆職缺，以免版面過長不容易瀏覽</span></p>
+                                <p className="modal-title">請選擇要顯示的職缺{/*，<span className='text-danger'>建議最多選取五筆職缺，以免版面過長不容易瀏覽</span>*/}</p>
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div className="modal-body text-center">
@@ -560,6 +560,14 @@ class Session4 extends React.Component{
                                                     return(<option key={index} value={element.DutyName}>{element.DutyName}</option>)
                                                 })}
                                             </select>
+                                        </div>
+                                    </div>
+
+                                    <div align="center">
+                                        <div className="message_width">
+                                            <Msg type ='MESSAGE'  value = {this.state.showTable} text1title={text1title} text1={this.state.created} text2title={text2title} text2={this.state.failed} /> 
+                                            <button type='submit'  id='actionPosition' className={this.showStyle(!this.state.showTable)}><i className="fas fa-save"></i> 選擇職缺 </button>
+                                            <button type="button"  id='closePosition' className={this.showStyle(this.state.showTable)} data-dismiss="modal" onClick={this.handleClose}>關閉視窗  </button>
                                         </div>
                                     </div>
         
