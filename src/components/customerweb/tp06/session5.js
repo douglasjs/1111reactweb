@@ -35,7 +35,7 @@ class CompanyBrand extends React.Component {
 
 		return (
 			
-			<section id="brand" className="vc_row pt-30">
+			<section id="brand" className="vc_row pt-30 tp06_s5-m-pt">
 				{brandData && brandData.length > 0 &&
 					<div className="container">
 						<div className="row">
@@ -61,7 +61,7 @@ class CompanyBrand extends React.Component {
 
 							</div>
 							
-							<div className="lqd-column col-md-6">
+							<div className="lqd-column col-md-6 tp06_s5_vedio-m-pt">
 								
 								
 								<iframe

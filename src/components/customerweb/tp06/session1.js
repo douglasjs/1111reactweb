@@ -48,7 +48,7 @@ class CompanyTitle extends React.Component{
 							data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"120", "startDelay": 200,"easing":"easeOutQuint","direction":"forward","initValues":{"translateY":80,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
 
 							<h2
-								className="h1 pr-md-7 mb-30 text-white text-left tp06_banner_title-pt"
+								className="h1 pr-md-7 mb-30 text-white text-left tp06_banner_title-pt tp06_banner-title"
 								data-split-text="true"
 								data-split-options='{"type":"lines"}'
 								data-fittext="true"

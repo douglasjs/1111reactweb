@@ -37,7 +37,7 @@ class CompanyInfo extends React.Component{
         
 		return (
 			
-			<section id="company" className="vc_row pt-60 pb-30">
+			<section id="company" className="vc_row pt-60 pb-60">
 
 					{introductionData && introductionData.length > 0 &&
 					<div className="container">
