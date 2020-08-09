@@ -68,7 +68,7 @@ class CompanyBenifit  extends React.Component {
                                             <div className="icon-box__icon">
                                                 <img src={benefitSubImg1} alt="福利" />
                                             </div>
-                                            <div className="icon-box__txt">
+                                            <div className="icon-box__txt tp06_benefit-subtitle">
                                                 <h6>{benefitSubTitle1}</h6>
                                                 <p className="text-center">{benefitSubContent1}</p>
                                             </div>
@@ -80,7 +80,7 @@ class CompanyBenifit  extends React.Component {
                                             <div className="icon-box__icon">
                                                 <img src={benefitSubImg2} alt="福利" />
                                             </div>
-                                            <div className="icon-box__txt">
+                                            <div className="icon-box__txt tp06_benefit-subtitle">
                                                 <h6>{benefitSubTitle2}</h6>
                                                 <p className="text-center">{benefitSubContent2}</p>
                                             </div>
@@ -92,7 +92,7 @@ class CompanyBenifit  extends React.Component {
                                             <div className="icon-box__icon">
                                             <img src={benefitSubImg3} alt="福利" />
                                             </div>
-                                            <div className="icon-box__txt">
+                                            <div className="icon-box__txt tp06_benefit-subtitle">
                                                 <h6>{benefitSubTitle3}</h6>
                                                 <p className="text-center">{benefitSubContent3}</p>
                                             </div>
@@ -104,7 +104,7 @@ class CompanyBenifit  extends React.Component {
                                             <div className="icon-box__icon">
                                                 <img src={benefitSubImg4} alt="福利" />
                                             </div>
-                                            <div className="icon-box__txt">
+                                            <div className="icon-box__txt tp06_benefit-subtitle">
                                                 <h6>{benefitSubTitle4}</h6>
                                                 <p className="text-center">{benefitSubContent4}</p>
                                             </div>

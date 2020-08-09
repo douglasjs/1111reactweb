@@ -147,7 +147,7 @@ class Session5 extends React.Component{
                                             stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹內文 2 ' notice='(建議字數為54個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
+                                        <InputTextArea title='品牌介紹內文 2 ' notice='(建議字數為90個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
                                             rows='3' stateObj={this} required={true} checkValue='500' />
                                     </div>                                    
                                     <div className="form-row row-style-w95-pt1">
@@ -226,7 +226,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹內文 2</td>
                                                 <td align='left'>我們相信，透過對話處理人與自己、與他人、與事物，以及與環境之間的關係，能讓彼此間的能量持續正向流動。</td>
-                                                <td>建議54個字以內</td>
+                                                <td>建議90個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp3_brand_subtitle02">觀看範例圖片</a>

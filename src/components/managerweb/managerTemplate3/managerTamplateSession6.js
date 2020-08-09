@@ -369,7 +369,7 @@ class Session6 extends React.Component{
                                                     rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片1內文' notice='(建議字數為105個字以內)' inputName='card1Content' inputState={card1Content}
+                                                <InputTextArea title='卡片1內文' notice='(建議字數為100個字以內)' inputName='card1Content' inputState={card1Content}
                                                     rows='3' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -405,7 +405,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片1內文</td>
                                                             <td align='left'>快過年了，想要為家中增添新擺飾? 或是剛開幕想要買個聚寶盆擺起來招財又體面大方卻又怕網路上買得跟到時候收到的不一樣? 今天要推薦一間有</td>
-                                                            <td>建議105個字以內</td>
+                                                            <td>建議100個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
@@ -443,7 +443,7 @@ class Session6 extends React.Component{
                                                     rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片2內文' notice='(建議字數為105個字以內)' inputName='card2Content' inputState={card2Content}
+                                                <InputTextArea title='卡片2內文' notice='(建議字數為100個字以內)' inputName='card2Content' inputState={card2Content}
                                                     rows='3' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -479,7 +479,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片2內文</td>
                                                             <td align='left'>晶典臻品. 致晶典臻品水晶精靈村台中的小精靈～ 從今天這一刻開始晶典臻品自行宣布兩岸統一了！ 我們的粉絲頁將全省合併也就是說台北台中的粉絲頁即將合體不</td>
-                                                            <td>建議105個字以內</td>
+                                                            <td>建議100個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
@@ -517,7 +517,7 @@ class Session6 extends React.Component{
                                                     rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片3內文' notice='(建議字數為105個字以內)' inputName='card3Content' inputState={card3Content}
+                                                <InputTextArea title='卡片3內文' notice='(建議字數為100個字以內)' inputName='card3Content' inputState={card3Content}
                                                     rows='3' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -553,7 +553,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片3內文</td>
                                                             <td align='left'>就是這家位於台中西屯區的「 京典臻品JD Classic 」天然水晶礦石專賣店！ 京典臻品JD Classic 可是烏拉圭&巴西水晶礦石的大盤商～. 想要什麼</td>
-                                                            <td>建議105個字以內</td>
+                                                            <td>建議100個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
@@ -591,7 +591,7 @@ class Session6 extends React.Component{
                                                     rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片4內文' notice='(建議字數為105個字以內)' inputName='card4Content' inputState={card4Content}
+                                                <InputTextArea title='卡片4內文' notice='(建議字數為100個字以內)' inputName='card4Content' inputState={card4Content}
                                                     rows='3' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -627,7 +627,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片4內文</td>
                                                             <td align='left'>快過年了，想要為家中增添新擺飾? 或是剛開幕想要買個聚寶盆擺起來招財又體面大方卻又怕網路上買得跟到時候收到的不一樣? 今天要推薦一間有</td>
-                                                            <td>建議105個字以內</td>
+                                                            <td>建議100個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
@@ -665,7 +665,7 @@ class Session6 extends React.Component{
                                                     rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片5內文' notice='(建議字數為105個字以內)' inputName='card5Content' inputState={card5Content}
+                                                <InputTextArea title='卡片5內文' notice='(建議字數為100個字以內)' inputName='card5Content' inputState={card5Content}
                                                     rows='3' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -701,7 +701,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片5內文</td>
                                                             <td align='left'>晶典臻品. 致晶典臻品水晶精靈村台中的小精靈～ 從今天這一刻開始晶典臻品自行宣布兩岸統一了！ 我們的粉絲頁將全省合併也就是說台北台中的粉絲頁即將合體不</td>
-                                                            <td>建議105個字以內</td>
+                                                            <td>建議100個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
@@ -739,7 +739,7 @@ class Session6 extends React.Component{
                                                     rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片6內文' notice='(建議字數為105個字以內)' inputName='card6Content' inputState={card6Content}
+                                                <InputTextArea title='卡片6內文' notice='(建議字數為100個字以內)' inputName='card6Content' inputState={card6Content}
                                                     rows='3' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -775,7 +775,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片6內文</td>
                                                             <td align='left'>就是這家位於台中西屯區的「 京典臻品JD Classic 」天然水晶礦石專賣店！ 京典臻品JD Classic 可是烏拉圭&巴西水晶礦石的大盤商～. 想要什麼</td>
-                                                            <td>建議105個字以內</td>
+                                                            <td>建議100個字以內</td>
                                                             <td>不可空白</td>
                                                         </tr>
                                                         <tr>
