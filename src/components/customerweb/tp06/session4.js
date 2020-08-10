@@ -17,7 +17,7 @@ class CompanyJobs extends React.Component {
         const { positionData } = this.props.positionReducer;
 
 		let imgURL = "url(../../../image/tp06/jobs_bg-1.jpg)";
-		let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
+		let companyurl = `https://www.1111.com.tw/corp/${cid}/#c4`;
 
 		return (
 			
