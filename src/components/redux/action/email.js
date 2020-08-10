@@ -39,11 +39,39 @@ const getEmailError = (error) =>{
 
 
 
-const getEmail = (data) =>{
+const getEmail =  (data, that) =>{
 
-    return (dispatch) =>{
-        
-      
+    return  (dispatch) =>{
+        /*
+            let promise = new Promise((resolve) => {
+                that.setState({...that.state, sentMail : true});
+            });
+            promise.then( (val) => console.log("asynchronous logging has val:",val) );
+        */
+            dispatch(getEmailStart())
+            
+            axios({
+                    method: 'post',
+                    url: envConfig.email,
+                    data
+                })
+                .then(response => {
+                    //setTimeout(() => {
+                    dispatch(getEmailSuccess(response.data));
+                    alert("感謝您！您寶貴的意見，已成功送出！");
+                    //}, 1000);
+                  }
+                
+                ).then( ()=>{
+                    that.setState({...that.state, sentMail : false});
+                    }
+                )
+                .catch(err => {
+                    dispatch(getEmailError(err));
+                    alert("送出失敗!");
+            });
+
+            /*
             dispatch(getEmailStart());
             axios({
                 method: 'post',
@@ -57,10 +85,15 @@ const getEmail = (data) =>{
                 //}, 1000);
               }
             
+            ).then( ()=>{
+                that.setState({...that.state, sentMail : false});
+                }
             )
             .catch(err => {
                 dispatch(getEmailError(err));
+                alert("送出失敗!");
             });
+            */
     }
 
 }

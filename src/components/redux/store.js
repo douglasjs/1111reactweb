@@ -7,7 +7,7 @@ const logger = store => next => action => {
         //console.log('previous',  store.getState());
         //console.log('dispatching', action);
         next(action);
-       // console.log('next state', store.getState()); 
+        //console.log('next state', store.getState()); 
 };
 
 const store = createStore(reducer, applyMiddleware(thunk, logger));

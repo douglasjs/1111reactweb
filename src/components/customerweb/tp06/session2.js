@@ -21,7 +21,7 @@ class CompanyInfo extends React.Component{
         let introMainContent;
         let introSubTitle1;
 		let introSubTitle1Img;
-		let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
+		let companyurl = `https://www.1111.com.tw/corp/${cid}/#c4`;
 
         if(introductionData && introductionData.length > 0){
             introductionData.forEach(element => {
