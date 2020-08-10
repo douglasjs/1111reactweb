@@ -664,7 +664,7 @@ h6 {
 
 
 /* Max line */
-.tp01_line-1, .tp01_line-2, .tp01_line-3, .tp01_line-4, .tp01_line-5, .tp01_line-10, .tp01_line-15, .tp01_imgword_line, .tp01_brand_title_line, .tp01_custom_subtitle_line {
+.tp01_line-1, .tp01_line-2, .tp01_line-3, .tp01_line-4, .tp01_line-5, .tp01_line-10, .tp01_line-15, .tp01_imgword_line, .tp01_brand_title_line, .tp01_brand_title_line span, .tp01_custom_subtitle_line {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -672,7 +672,7 @@ h6 {
   word-break: break-all;
 }
 
-.tp01_line-1, .tp01_imgword_line, .tp01_brand_title_line, .tp01_custom_subtitle_line {
+.tp01_line-1, .tp01_imgword_line, .tp01_brand_title_line, .tp01_brand_title_line span, .tp01_custom_subtitle_line {
   -webkit-line-clamp: 1;
 }
 

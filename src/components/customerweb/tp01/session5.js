@@ -54,7 +54,7 @@ class CompanyBrand extends React.Component {
                         <div className="lqd-column col-lg-6">
     
                             <h2
-                                className="lh-13 mt-0 mb-30 tp01_line-1 text-left tp01-title-font-size"
+                                className="lh-13 mt-0 mb-30 tp01_brand_title_line text-left tp01-title-font-size"
                                 data-split-text="true"
                                 data-split-options='{"type":"lines"}'
                                 data-text-rotator="true"

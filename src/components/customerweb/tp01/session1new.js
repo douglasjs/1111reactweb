@@ -63,7 +63,7 @@ class CompanyTitle extends React.Component{
                                             <div className="row">
                                                 <div className="lqd-column col-md-8 col-md-offset-2">
                 
-                                                    <p className="text-white text-shodow font-size-24 mb-1 tp01_line-2">{companySubTitle1}</p>
+                                                    <p className="text-white text-shodow font-size-24 mb-1 tp01_line-1">{companySubTitle1}</p>
                 
                                                 </div>
                                             </div>

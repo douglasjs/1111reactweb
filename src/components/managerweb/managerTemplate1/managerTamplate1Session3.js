@@ -200,7 +200,7 @@ class Session3 extends React.Component{
                                                 補 助 類：員工結婚補助、生育補助、國內、外旅遊補助<br />
                                                 其 　他：員工在職教育訓練
                                             </td>
-                                            <td>350個字以內</td>
+                                            <td>因版面有限，內容編排請特別注意，請搭配預覽確認是否超出顯示範圍</td>
                                             <td>
                                                 可自行編輯排版，不可空白 <br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_benefit_content">觀看範例圖片</a>
