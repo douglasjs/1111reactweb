@@ -9,11 +9,10 @@ const envConfig = {
 
 /* 1111 Public 
 const envConfig = {
-    kind01API : 'https://brand.1111.com.tw/api/GetApi',
-    kind00API : 'https://brand.1111.com.tw/api/GetApi',
-    email: 'https://brand.1111.com.tw/api/email',
-    WebAPI: 'https://brand.1111.com.tw/api'
-
+     kind01API : 'https://brand.1111.com.tw/WebAPI/api/GetApi',
+    kind00API : 'https://brand.1111.com.tw/WebAPI/api/GetApi',
+    email: 'https://brand.1111.com.tw/WebAPI/api/email',
+    WebAPI: 'https://brand.1111.com.tw/WebAPI/api'
 }*/
 
 /* Benedik */
