@@ -344,7 +344,7 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片1標題' notice='(建議字數為12個字以內)' inputName='card1Title' inputState={card1Title}
+                                                <InputText title='卡片1標題' notice='(建議字數為8個字以內)' inputName='card1Title' inputState={card1Title}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -374,7 +374,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片1標題</td>
                                                             <td align='left'>優惠的餐飲津貼</td>
-                                                            <td>建議12個字以內</td>
+                                                            <td>建議8個字以內</td>
                                                             <td>
                                                                 不可空白
                                                                 <a type="button" data-toggle="modal" href="#tmp4_customize_title01">觀看範例圖片</a>
@@ -444,7 +444,7 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片2標題' notice='(建議字數為12個字以內)' inputName='card2Title' inputState={card2Title}
+                                                <InputText title='卡片2標題' notice='(建議字數為8個字以內)' inputName='card2Title' inputState={card2Title}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -474,7 +474,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片2標題</td>
                                                             <td align='left'>暢通的升遷管道</td>
-                                                            <td>建議12個字以內</td>
+                                                            <td>建議8個字以內</td>
                                                             <td>
                                                                 不可空白
                                                                 <a type="button" data-toggle="modal" href="#tmp4_customize_title02">觀看範例圖片</a>
@@ -544,7 +544,7 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片3標題' notice='(建議字數為12個字以內)' inputName='card3Title' inputState={card3Title}
+                                                <InputText title='卡片3標題' notice='(建議字數為8個字以內)' inputName='card3Title' inputState={card3Title}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -574,7 +574,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片3標題</td>
                                                             <td align='left'>享有員工專屬折扣</td>
-                                                            <td>建議12個字以內</td>
+                                                            <td>建議8個字以內</td>
                                                             <td>
                                                                 不可空白
                                                                 <a type="button" data-toggle="modal" href="#tmp4_customize_title03">觀看範例圖片</a>
@@ -644,7 +644,7 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片4標題' notice='(建議字數為12個字以內)' inputName='card4Title' inputState={card4Title}
+                                                <InputText title='卡片4標題' notice='(建議字數為8個字以內)' inputName='card4Title' inputState={card4Title}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -674,7 +674,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片4標題</td>
                                                             <td align='left'>每年的健康檢查</td>
-                                                            <td>建議12個字以內</td>
+                                                            <td>建議8個字以內</td>
                                                             <td>
                                                                 不可空白
                                                                 <a type="button" data-toggle="modal" href="#tmp4_customize_title04">觀看範例圖片</a>
@@ -744,7 +744,7 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片5標題' notice='(建議字數為12個字以內)' inputName='card5Title' inputState={card5Title}
+                                                <InputText title='卡片5標題' notice='(建議字數為8個字以內)' inputName='card5Title' inputState={card5Title}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -774,7 +774,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片5標題</td>
                                                             <td align='left'>多元的訓練方式</td>
-                                                            <td>建議12個字以內</td>
+                                                            <td>建議8個字以內</td>
                                                             <td>
                                                                 不可空白
                                                                 <a type="button" data-toggle="modal" href="#tmp4_customize_title05">觀看範例圖片</a>
@@ -844,7 +844,7 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片6標題' notice='(建議字數為12個字以內)' inputName='card6Title' inputState={card6Title}
+                                                <InputText title='卡片6標題' notice='(建議字數為8個字以內)' inputName='card6Title' inputState={card6Title}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -874,7 +874,7 @@ class Session6 extends React.Component{
                                                         <tr>
                                                             <td>卡片6標題</td>
                                                             <td align='left'>公平的獎金制度</td>
-                                                            <td>建議12個字以內</td>
+                                                            <td>建議8個字以內</td>
                                                             <td>
                                                                 不可空白
                                                                 <a type="button" data-toggle="modal" href="#tmp4_customize_title06">觀看範例圖片</a>

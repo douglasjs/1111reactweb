@@ -119,11 +119,11 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題' notice='(建議字數為33個字以內)' inputName='title' inputState={title}
+                                        <InputText title='大標題' notice='(建議字數：英文22個字以內，中文11個字以內)' inputName='title' inputState={title}
                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題2' notice='(建議字數為33個字以內)' inputName='title2' inputState={title2}
+                                        <InputText title='大標題2' notice='(建議字數：英文22個字以內，中文11個字以內)' inputName='title2' inputState={title2}
                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">

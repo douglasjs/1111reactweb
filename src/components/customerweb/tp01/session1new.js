@@ -24,7 +24,7 @@ class CompanyTitle extends React.Component{
         let companySubTitle2;
         let companyBackgroundImg1;
         let companyBackgroundImg2;
-        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
+        let companyurl = `https://www.1111.com.tw/corp/${cid}/#c4`;
 
         if(companyData && companyData.length > 0){
             companyData.forEach(element => {
@@ -45,7 +45,7 @@ class CompanyTitle extends React.Component{
         return (
             <section>
 
-            <Slider className="vc_row height-60 d-flex flex-wrap" autoplay={3000} previousButton='' nextButton='' touchDisabled={false} disabled={false}>
+            <Slider className="vc_row tp01_s1_min-height d-flex flex-wrap" autoplay={3000} previousButton='' nextButton='' touchDisabled={false} disabled={false}>
                     {image2Arry.map((item, index) => (
                         <div
                             key={index}
@@ -63,7 +63,7 @@ class CompanyTitle extends React.Component{
                                             <div className="row">
                                                 <div className="lqd-column col-md-8 col-md-offset-2">
                 
-                                                    <p className="text-white text-shodow font-size-24 mb-1 tp01_line-2">{companySubTitle1}</p>
+                                                    <p className="text-white text-shodow font-size-24 mb-1 tp01_line-1">{companySubTitle1}</p>
                 
                                                 </div>
                                             </div>

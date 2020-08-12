@@ -228,11 +228,11 @@ class Session2 extends React.Component{
 
                                 <div className="col-md-6 mb-3">
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='主標題' notice='(建議字數為9個字以內)' inputName='introTitle' inputState={introTitle}
+                                        <InputText title='主標題' notice='(建議字數為20個字以內)' inputName='introTitle' inputState={introTitle}
                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='主內容' notice='(建議字數為44個字以內)' inputName='introMainContent' inputState={introMainContent}
+                                        <InputTextArea title='主內容' notice='(建議字數為92個字以內)' inputName='introMainContent' inputState={introMainContent}
                                            rows='4' stateObj={this} required={true} checkValue='200' />
                                     </div>
                                 </div>
@@ -255,7 +255,7 @@ class Session2 extends React.Component{
                                             <tr>
                                                 <td>主標題</td>
                                                 <td align='left'>求職徵才的信賴品牌</td>
-                                                <td>建議9個字以內</td>
+                                                <td>建議20個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_company_title">觀看範例圖片</a>
@@ -264,7 +264,7 @@ class Session2 extends React.Component{
                                             <tr>
                                                 <td>主內容</td>
                                                 <td align='left'>1111人力銀行求職徵才的信賴品牌，榮獲2018年人力銀行服務業金牌大獎，提供最貼心的求才求職服務</td>
-                                                <td>建議44個字以內</td>
+                                                <td>建議92個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_company_content">觀看範例圖片</a>
@@ -356,16 +356,16 @@ class Session2 extends React.Component{
 
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <InputText title='小標題1' notice='(限制字數為11個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
-                                                        stateObj={this} required={true} checkValue='11' />
+                                                    <InputText title='小標題1' notice='(限制字數為12個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
+                                                        stateObj={this} required={true} checkValue='12' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題1內容' notice='(限制字數為38個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
-                                                        rows='3' stateObj={this} required={true} checkValue='38' />
+                                                    <InputTextArea title='小標題1內容' notice='(建議字數為38個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
+                                                        rows='3' stateObj={this} required={true} checkValue='100' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputText title='小標題1圖片文字' notice='(限制字數為20個字以內)' inputName='introSubTitle1ImgText' inputState={introSubTitle1ImgText}
-                                                        stateObj={this} required={true} checkValue='20' />
+                                                    <InputText title='小標題1圖片文字' notice='(建議字數為24個字以內)' inputName='introSubTitle1ImgText' inputState={introSubTitle1ImgText}
+                                                        stateObj={this} required={true} checkValue='100' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
                                                     <ImgUpload title='小標題1圖片 上傳' notice='(圖檔尺寸大小為 724*500，接受格式為png、jpg)' notice2='請放置原始圖片，版型已經有帶遮罩' objName='introSubTitle1Img' imgUpload={introSubTitle1ImgUpload} 
@@ -392,7 +392,7 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題1</td>
                                                                 <td align='left'>幸福企業擴大徵才</td>
-                                                                <td>11個字以內</td>
+                                                                <td>12個字以內</td>
                                                                 <td>
                                                                     不可空白<br />
                                                                     <a type="button" data-toggle="modal" href="#temp1_Company_card01_title">觀看範例圖片</a>
@@ -401,7 +401,7 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題1 內容</td>
                                                                 <td align='left'>2019幸福企業擴大徵才活動，以推動企業多提供好的福利，吸引優秀的人才，創造更佳的績效！</td>
-                                                                <td>38個字以內</td>
+                                                                <td>建議38個字以內</td>
                                                                 <td>
                                                                     不可空白<br />
                                                                     <a type="button" data-toggle="modal" href="#temp1_Company_card01_content">觀看範例圖片</a>
@@ -410,7 +410,7 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題1 圖片文字</td>
                                                                 <td align='left'>推動企業多提供好的福利，吸引優秀的人才</td>
-                                                                <td>20個字以內</td>
+                                                                <td>建議24個字以內</td>
                                                                 <td>
                                                                     不可空白<br />
                                                                     <a type="button" data-toggle="modal" href="#temp1_Company_card01_pictext">觀看範例圖片</a>
@@ -528,16 +528,16 @@ class Session2 extends React.Component{
 
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <InputText title='小標題2' notice='(限制字數為11個字以內)' inputName='introSubTitle2' inputState={introSubTitle2}
-                                                        stateObj={this} required={true} checkValue='11' />
+                                                    <InputText title='小標題2' notice='(限制字數為12個字以內)' inputName='introSubTitle2' inputState={introSubTitle2}
+                                                        stateObj={this} required={true} checkValue='12' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題2內容' notice='(限制字數為38個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
-                                                        rows='3' stateObj={this} required={true} checkValue='38' />
+                                                    <InputTextArea title='小標題2內容' notice='(建議字數為38個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
+                                                        rows='3' stateObj={this} required={true} checkValue='100' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputText title='小標題2圖片文字' notice='(限制字數為20個字以內)' inputName='introSubTitle2ImgText' inputState={introSubTitle2ImgText}
-                                                        stateObj={this} required={true} checkValue='20' />
+                                                    <InputText title='小標題2圖片文字' notice='(建議字數為24個字以內)' inputName='introSubTitle2ImgText' inputState={introSubTitle2ImgText}
+                                                        stateObj={this} required={true} checkValue='100' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
                                                     <ImgUpload title='小標題2圖片 上傳' notice='(圖檔尺寸大小為 724*500，接受格式為png、jpg)' notice2='請放置原始圖片，版型已經有帶遮罩' objName='introSubTitle2Img'  imgUpload={introSubTitle2ImgUpload} 
@@ -563,7 +563,7 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題2</td>
                                                                 <td align='left'>人才、職缺、功能、媒合</td>
-                                                                <td>11個字以內</td>
+                                                                <td>12個字以內</td>
                                                                 <td>
                                                                     不可空白<br />
                                                                     <a type="button" data-toggle="modal" href="#temp1_Company_card02_title">觀看範例圖片</a>
@@ -572,7 +572,7 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題2 內容</td>
                                                                 <td align='left'>以【熱誠】、【專業】為企業經營理念，堅持營造一個【人才、職缺、功能、媒合4個第1】求職求才媒合平台</td>
-                                                                <td>38個字以內</td>
+                                                                <td>建議38個字以內</td>
                                                                 <td>
                                                                     不可空白<br />
                                                                     <a type="button" data-toggle="modal" href="#temp1_Company_card02_content">觀看範例圖片</a>
@@ -590,7 +590,7 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題2 圖片文字</td>
                                                                 <td align='left'>人才、職缺、功能、媒合4個第1求職求才媒合平台</td>
-                                                                <td>20個字以內</td>
+                                                                <td>建議24個字以內</td>
                                                                 <td>
                                                                     不可空白<br />
                                                                     <a type="button" data-toggle="modal" href="#temp1_Company_card02_pic">觀看範例圖片</a>
@@ -701,16 +701,16 @@ class Session2 extends React.Component{
 
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <InputText title='小標題3' notice='(限制字數為11個字以內)' inputName='introSubTitle3' inputState={introSubTitle3}
-                                                        stateObj={this} required={true} checkValue='11' />
+                                                    <InputText title='小標題3' notice='(限制字數為12個字以內)' inputName='introSubTitle3' inputState={introSubTitle3}
+                                                        stateObj={this} required={true} checkValue='12' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題3內容' notice='(限制字數為38個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
-                                                        rows='3' stateObj={this} required={true} checkValue='38' />
+                                                    <InputTextArea title='小標題3內容' notice='(建議字數為38個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
+                                                        rows='3' stateObj={this} required={true} checkValue='100' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputText title='小標題3圖片文字' notice='(限制字數為20個字以內)' inputName='introSubTitle3ImgText' inputState={introSubTitle3ImgText}
-                                                        stateObj={this} required={true} checkValue='20' />
+                                                    <InputText title='小標題3圖片文字' notice='(建議字數為24個字以內)' inputName='introSubTitle3ImgText' inputState={introSubTitle3ImgText}
+                                                        stateObj={this} required={true} checkValue='100' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
                                                     <ImgUpload title='小標題3圖片 上傳' notice='(圖檔尺寸大小為 724*500，接受格式為png、jpg)' notice2='請放置原始圖片，版型已經有帶遮罩' objName='introSubTitle3Img'  imgUpload={introSubTitle3ImgUpload} 
@@ -736,7 +736,7 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題3</td>
                                                                 <td align='left'>科技人才智庫</td>
-                                                                <td>11個字以內</td>
+                                                                <td>12個字以內</td>
                                                                 <td>
                                                                     不可空白<br />
                                                                     <a type="button" data-toggle="modal" href="#temp1_Company_card03_title">觀看範例圖片</a>
@@ -745,7 +745,7 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題3 內容</td>
                                                                 <td align='left'>1111人力銀行成立兩岸三地唯一的科技人才智庫，將兩岸三地的科技人才全部網羅其中，讓人才無疆界，達到人盡其才的目標</td>
-                                                                <td>38個字以內</td>
+                                                                <td>建議38個字以內</td>
                                                                 <td>
                                                                     不可空白<br />
                                                                     <a type="button" data-toggle="modal" href="#temp1_Company_card03_content">觀看範例圖片</a>
@@ -763,7 +763,7 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題3 圖片文字</td>
                                                                 <td align='left'>兩岸三地唯一的科技人才智庫</td>
-                                                                <td>20個字以內</td>
+                                                                <td>建議24個字以內</td>
                                                                 <td>
                                                                     不可空白<br />
                                                                     <a type="button" data-toggle="modal" href="#temp1_Company_card03_pic">觀看範例圖片</a>

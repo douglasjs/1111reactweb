@@ -111,31 +111,31 @@ class Session5 extends React.Component{
                                     <input type="hidden" id="themeNum5" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹主標題' notice='(建議字數為13個字以內)' inputName='brandTitle' inputState={brandTitle}
+                                        <InputText title='品牌介紹主標題' notice='(建議字數為15個字以內)' inputName='brandTitle' inputState={brandTitle}
                                             stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題1' notice='(建議字數為13個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
+                                        <InputText title='品牌介紹副標題1' notice='(建議字數為30個字以內)' inputName='brandTitleSub1' inputState={brandTitleSub1}
                                             stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題1內文 ' notice='(建議字數為135個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
+                                        <InputTextArea title='品牌介紹副標題1內文 ' notice='(建議字數為170個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
                                             rows='3' stateObj={this} required={true} checkValue='500'/>
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題2' notice='(建議字數為13個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
+                                        <InputText title='品牌介紹副標題2' notice='(建議字數為30個字以內)' inputName='brandTitleSub2' inputState={brandTitleSub2}
                                             stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題2內文 ' notice='(建議字數為135個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
+                                        <InputTextArea title='品牌介紹副標題2內文 ' notice='(建議字數為170個字以內)' inputName='brandTitleSub2Content' inputState={brandTitleSub2Content}
                                             rows='3' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹副標題3' notice='(建議字數為13個字以內)' inputName='brandTitleSub3' inputState={brandTitleSub3}
+                                        <InputText title='品牌介紹副標題3' notice='(建議字數為30個字以內)' inputName='brandTitleSub3' inputState={brandTitleSub3}
                                             stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹副標題3內文 ' notice='(建議字數為135個字以內)' inputName='brandTitleSub3Content' inputState={brandTitleSub3Content}
+                                        <InputTextArea title='品牌介紹副標題3內文 ' notice='(建議字數為170個字以內)' inputName='brandTitleSub3Content' inputState={brandTitleSub3Content}
                                             rows='3' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
@@ -170,13 +170,13 @@ class Session5 extends React.Component{
                                         <tr>
                                             <td>品牌介紹主標題</td>
                                             <td align='left'>1流的人才，進入1流的企業</td>
-                                            <td>建議13個字以內</td>
+                                            <td>建議15個字以內</td>
                                             <td>不可空白</td>
                                         </tr>
                                         <tr>
                                             <td>品牌介紹副標題1</td>
                                             <td align='left'>人力銀行指標品牌</td>
-                                            <td>建議13個字以內</td>
+                                            <td>建議30個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand_subtitle01">觀看範例圖片</a>
@@ -185,7 +185,7 @@ class Session5 extends React.Component{
                                         <tr>
                                             <td>品牌介紹副標題1 內文</td>
                                             <td align='left'>於 1998 年成立，累積超過 800 萬份求職履歷，20 萬以上徵才廠商！1111 不只是一般人力銀行，更是追求創新卓越的人才銀行！</td>
-                                            <td>建議135個字以內</td>
+                                            <td>建議170個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand_subtitle01">觀看範例圖片</a>
@@ -194,7 +194,7 @@ class Session5 extends React.Component{
                                         <tr>
                                             <td>品牌介紹副標題2</td>
                                             <td align='left'>專屬客服一流服務</td>
-                                            <td>建議13個字以內</td>
+                                            <td>建議30個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand_subtitle02">觀看範例圖片</a>
@@ -203,7 +203,7 @@ class Session5 extends React.Component{
                                         <tr>
                                             <td>品牌介紹副標題2 內文</td>
                                             <td align='left'>全國唯一擁有 400 多位人資客服人員，隨時協助您解決找尋人才或者系統上的各項問題！</td>
-                                            <td>建議135個字以內</td>
+                                            <td>建議170個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand_subtitle02">觀看範例圖片</a>
@@ -212,7 +212,7 @@ class Session5 extends React.Component{
                                         <tr>
                                             <td>品牌介紹副標題3</td>
                                             <td align='left'>特色求職工具，吸引人才加入</td>
-                                            <td>建議13個字以內</td>
+                                            <td>建議30個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand_subtitle03">觀看範例圖片</a>
@@ -221,7 +221,7 @@ class Session5 extends React.Component{
                                         <tr>
                                             <td>品牌介紹副標題3 內文</td>
                                             <td align='left'>求職工具. 工欲善其事，必先利其器！履歷準備好，工作更好找！</td>
-                                            <td>建議135個字以內</td>
+                                            <td>建議170個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_brand_subtitle03">觀看範例圖片</a>

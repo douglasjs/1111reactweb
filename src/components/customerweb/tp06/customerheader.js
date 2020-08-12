@@ -6,7 +6,7 @@ const NavBar = (props) => {
         <div className="col">
             <div className="navbar-header">
                 <a className="navbar-brand" href={props.logoURL} rel="home">
-                    <span className="navbar-brand-inner">
+                    <span className="navbar-brand-inner tp06_logo_height">
                         <img className="logo-dark" src={props.logURL} alt="1111人力銀行" />
                         <img className="logo-sticky" src={props.logURL} alt="1111人力銀行" />
                         <img className="mobile-logo-default" src={props.logURL} alt="1111人力銀行" />

@@ -4,10 +4,11 @@ import validation from '../../sharecomponents/validation';
 
 class CompanyContact extends React.Component {
 
+ 
     constructor(props){
         super(props);
         this.state={
-           sentMail: true,
+           sentMail: false,
            custName: "",
            custMobile: "",
            custMsg: "",
@@ -15,6 +16,8 @@ class CompanyContact extends React.Component {
         };
         this.emailInput = React.createRef();
         this.phoneInput = React.createRef();
+        this.custName = React.createRef();
+        this.custMsg = React.createRef();
     }
 
     componentDidMount(){
@@ -22,9 +25,8 @@ class CompanyContact extends React.Component {
         this.props.getkind01(cid);
         this.props.getcontactList(cid, this.props.themeNum);
     }
-    
+
     handleChange = name => event => {
-        console.log(event.type);
         if(name === "sentMail"){
             this.setState({...this.state, [name]: true});
         }else{
@@ -36,20 +38,13 @@ class CompanyContact extends React.Component {
         event.preventDefault();
         const { data } = this.props.datatableReducer;
         const { kind01_data } = this.props.kind01Reducer;
-
-        if(validation('custMail', this.state.custMail)!==""){
-            alert(validation('custMail', this.state.custMail));
-            this.emailInput.current.focus();
-            return;
-        }
-
-        if(validation('custMobile', this.state.custMobile)!==""){
-            alert(validation('custMobile', this.state.custMobile));
-            this.phoneInput.current.focus();
-            return;
-        }
         
-        if(data && data.length > 0){
+        this.setState({...this.state, sentMail : false});
+        if( validation('custName', this.state.custName,this) 
+            && validation('custMail', this.state.custMail,this) 
+            && validation('custMobile', this.state.custMobile,this) 
+            && validation('custMsg', this.state.custMsg,this) 
+            && data && data.length > 0){
             const emailObj = {
                 oNo: this.props.match.params.cid.trim(),
                 kind: "2",
@@ -61,10 +56,14 @@ class CompanyContact extends React.Component {
                 custMsg: this.state.custMsg,
                 custMail: this.state.custMail
             }
-            this.props.getEmail(emailObj);
-            this.setState({...this.state, sentMail : false});
+           
+            let promise = new Promise((resolve) => {
+                this.setState({...this.state, sentMail : true});
+            });
+            promise.then( (val) => console.log("asynchronous logging has val:",val) );
+            this.props.getEmail(emailObj, this);
         }
-
+        
     }
 
 
@@ -121,7 +120,7 @@ class CompanyContact extends React.Component {
 										<div className="ld-sf ld-sf--input-solid ld-sf--button-solid ld-sf--size-lg ld-sf--circle ld-sf--border-thin ld-sf--input-shadow ld-sf--button-show">
 											<form id="ld_subscribe_form" className="ld_sf_form" name="mc-embedded-subscribe-form" method="post">
 												<p className="ld_sf_paragraph pr-2">
-													<input type="text" className="ld_sf_text" id="mce-NAME" name="NAME" placeholder="姓名" required onChange={this.handleChange('custName')} value={this.state.custName} />
+													<input type="text" className="ld_sf_text" id="mce-NAME" name="NAME" placeholder="姓名" required onChange={this.handleChange('custName')} value={this.state.custName} ref={this.custName} />
 												</p>
 												<p className="ld_sf_paragraph pr-2">
 													<input type="email" className="ld_sf_text" id="mce-EMAIL" name="EMAIL" placeholder="Email" required onChange={this.handleChange('custMail')} value={this.state.custMail} ref={this.emailInput} />
@@ -130,10 +129,10 @@ class CompanyContact extends React.Component {
 													<input type="text" className="ld_sf_text" id="mce-TEL" name="TEL" placeholder="電話" required onChange={this.handleChange('custMobile')} value={this.state.custMobile}  ref={this.phoneInput}/>
 												</p>
 												<p className="ld_sf_paragraph pr-2" rows="4">
-													<input type="text" className="ld_sf_text" id="mce-MSG" name="MSG" placeholder="訊息" required onChange={this.handleChange('custMsg')} value={this.state.custMsg} />
+													<input type="text" className="ld_sf_text" id="mce-MSG" name="MSG" placeholder="訊息" required onChange={this.handleChange('custMsg')} value={this.state.custMsg} ref={this.custMsg}  />
 												</p>																							
 												<div className="lqd-column col-md-offset-3 col-md-6">
-													<input type="submit" value="送出" className="btn btn-solid circle btn-bordered border-thin font-size-16 font-weight-semibold" onClick={this.habdleSubmit} />
+													<input type="submit" value="送出" className="btn btn-solid circle btn-bordered border-thin font-size-16 font-weight-semibold" onClick={this.habdleSubmit} disabled={this.state.sentMail} />
 												</div>
 											</form>
 											<div className="ld_sf_response"></div>

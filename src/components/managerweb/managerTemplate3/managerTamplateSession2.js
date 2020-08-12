@@ -252,11 +252,11 @@ class Session2 extends React.Component{
                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row">
-                                        <InputText title='公司介紹小標題' notice='(建議字數為19個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
+                                        <InputText title='公司介紹小標題' notice='(建議字數為26個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
                                             stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='公司介紹主內容' notice='(建議字數為208個字以內)' inputName='introMainContent' inputState={introMainContent}
+                                        <InputTextArea title='公司介紹主內容' notice='(建議字數為182個字以內)' inputName='introMainContent' inputState={introMainContent}
                                            rows='5' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
@@ -289,13 +289,13 @@ class Session2 extends React.Component{
                                                 <tr>
                                                     <td>公司介紹小標題</td>
                                                     <td align='left'>京典臻品 JD Classic股份有限公司</td>
-                                                    <td>建議19個字以內</td>
+                                                    <td>建議26個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>
                                                     <td>公司介紹主內容</td>
                                                     <td align='left'>天天禧有限公司(京典臻品／時易藝品／京采水晶／京璽晶品)營業項目包括水晶礦石、烏拉圭紫水晶洞、巴西紫晶洞、黃水晶洞、鈦晶洞、意象晶洞、瑪瑙晶洞、紫晶鎮、愛心晶片、水晶聚寶盆批發零售買賣, 以技術為本服務至上的經營理念, 給予客戶最專業的服務與產品質量,。 我們重視每一位員工，除了有良好工作環境、也提供學習及成長的空間，歡迎有責任感，有熱誠的朋友一起加入我們的工作行列。</td>
-                                                    <td>建議208個字以內</td>
+                                                    <td>建議182個字以內</td>
                                                     <td>不可空白</td>
                                                 </tr>
                                                 <tr>

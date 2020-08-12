@@ -1887,12 +1887,39 @@
   text-align: left;
 }
 
+.tp02_pb-1rem {
+  padding-bottom: 1rem;
+}
+
+.benefit_min-hight {
+  min-height: 155px;
+  margin-bottom: 10px !important;
+}
+
+.tp02_company_sub{
+  overflow: hidden;
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.tp02_company_sub{
+  -webkit-line-clamp: 1;
+}
+
+@media (max-width: 1024px) {
+  .beneft_text-align {
+    right: 0px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .beneft_text-align {
     right: 0px !important;
   }
   .benefit_min-hight {
-    min-height: 100px;
+    min-height: 144px;
   }
 }
 
@@ -1901,6 +1928,6 @@
     right: 0px !important;
   }
   .benefit_min-hight {
-    min-height: 125px;
+    min-height: 140px;
   }
 }

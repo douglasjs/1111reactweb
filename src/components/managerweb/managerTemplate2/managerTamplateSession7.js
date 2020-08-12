@@ -118,7 +118,7 @@ class Session7 extends React.Component{
                                     <div className="col-md-6 mb-3">
 
                                         <div className="form-row row-style-w95">
-                                            <InputText title={`${sessionName}1標題`} notice='(建議字數為20個字以內)' inputName='qa1Title' inputState={qa1Title}
+                                            <InputText title={`${sessionName}1標題`} notice='(建議字數為96個字以內)' inputName='qa1Title' inputState={qa1Title}
                                                 stateObj={this} required={false} checkValue='100' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
@@ -126,7 +126,7 @@ class Session7 extends React.Component{
                                                 rows='4' stateObj={this} required={false} checkValue='500' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputText  title= {`${sessionName}2標題`} notice='(建議字數為20個字以內)' inputName='qa2Title' inputState={qa2Title}
+                                            <InputText  title= {`${sessionName}2標題`} notice='(建議字數為96個字以內)' inputName='qa2Title' inputState={qa2Title}
                                                 stateObj={this} required={false} checkValue='100' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
@@ -134,7 +134,7 @@ class Session7 extends React.Component{
                                                 rows='4' stateObj={this} required={false} checkValue='500' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputText  title= {`${sessionName}3標題`} notice='(建議字數為20個字以內)' inputName='qa3Title' inputState={qa3Title}
+                                            <InputText  title= {`${sessionName}3標題`} notice='(建議字數為96個字以內)' inputName='qa3Title' inputState={qa3Title}
                                                 stateObj={this} required={false} checkValue='100' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
@@ -142,7 +142,7 @@ class Session7 extends React.Component{
                                                 rows='4' stateObj={this} required={false} checkValue='500' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputText  title= {`${sessionName}4標題`} notice='(建議字數為20個字以內)' inputName='qa4Title' inputState={qa4Title}
+                                            <InputText  title= {`${sessionName}4標題`} notice='(建議字數為96個字以內)' inputName='qa4Title' inputState={qa4Title}
                                                 stateObj={this} required={false} checkValue='100' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
@@ -150,7 +150,7 @@ class Session7 extends React.Component{
                                                 rows='4' stateObj={this} required={false} checkValue='500' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputText  title= {`${sessionName}5標題`} notice='(建議字數為20個字以內)' inputName='qa5Title' inputState={qa5Title}
+                                            <InputText  title= {`${sessionName}5標題`} notice='(建議字數為96個字以內)' inputName='qa5Title' inputState={qa5Title}
                                                 stateObj={this} required={false} checkValue='100' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
@@ -179,7 +179,7 @@ class Session7 extends React.Component{
                                                     <tr>
                                                         <td>常見問題標題</td>
                                                         <td align='left'>過期或喝完的茶包丟掉就虧大了</td>
-                                                        <td>建議20個字以內</td>
+                                                        <td>建議96個字以內</td>
                                                         <td>至少2則以上才能輪播；<br />最多能輸入5則。</td>
                                                     </tr>
                                                     <tr>

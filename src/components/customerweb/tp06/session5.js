@@ -20,7 +20,7 @@ class CompanyBrand extends React.Component {
 		let brandTitleSub1Content;
 		let brandURL1;
 		let brandURL2;
-		let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
+		let companyurl = `https://www.1111.com.tw/corp/${cid}/#c4`;
 
         if(brandData && brandData.length > 0){
             brandData.forEach(element => {
@@ -35,7 +35,7 @@ class CompanyBrand extends React.Component {
 
 		return (
 			
-			<section id="brand" className="vc_row pt-30">
+			<section id="brand" className="vc_row pt-30 tp06_s5-m-pt">
 				{brandData && brandData.length > 0 &&
 					<div className="container">
 						<div className="row">
@@ -43,17 +43,17 @@ class CompanyBrand extends React.Component {
 							<div className="lqd-column col-md-6 pl-md-6 pr-md-7 text-left">
 
 								<header className="fancy-title mb-15">
-									<h2 className="mt-0 mb-2 pr-md-5">{brandTitle}</h2>
+									<h2 className="mt-0 mb-2 pr-md-5 tp06_line-2">{brandTitle}</h2>
 									<p className="text-justify">{brandTitleSub1Content}</p>
 								</header>
 
-								<a href={brandURL2} target='_blank' rel='noopener noreferrer' className="btn btn-sm semi-round btn-bordered border-thin px-2 font-size-17 btn-solid">
+								<a href={brandURL2} target='_blank' rel='noopener noreferrer' className="btn btn-sm round btn-bordered border-thin px-2 font-size-17 btn-solid">
 									<span>
 										<span className="btn-txt">了解更多</span>
 									</span>
 								</a>
 
-								<a href={companyurl} target='_blank' rel='noopener noreferrer' className="btn btn-sm semi-round btn-bordered border-thin px-2 font-size-17 btn-default btn-light margin-bottom_25px">
+								<a href={companyurl} target='_blank' rel='noopener noreferrer' className="btn btn-sm round btn-bordered border-thin px-2 font-size-17 btn-default btn-light margin-bottom_25px">
 									<span>
 										<span className="btn-txt">應徵</span>
 									</span>
@@ -61,7 +61,7 @@ class CompanyBrand extends React.Component {
 
 							</div>
 							
-							<div className="lqd-column col-md-6">
+							<div className="lqd-column col-md-6 tp06_s5_vedio-m-pt">
 								
 								
 								<iframe

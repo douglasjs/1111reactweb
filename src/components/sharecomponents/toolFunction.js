@@ -32,4 +32,30 @@ const numCheck = (value, num , title) =>{
     }
 }
 
-export {createArray, strNumLimite, emptyCheck, numCheck};
+
+const newArryMaker = (dataType, dataArry) =>{
+
+    let newArry = [];
+
+    switch(dataType){
+
+        case "city":  
+            dataArry.forEach( element => {
+                newArry.push(element.WorkCity);
+            });
+            newArry = [...new Set(newArry)];
+            break;
+
+        case "duty":
+            dataArry.forEach( element => {
+                if(!newArry.some( arrayElement => arrayElement.DutyNo === element.DutyArr[0].DutyNo)){
+                    newArry.push(element.DutyArr[0]);
+                }
+            });
+            break;
+        default:
+    }
+    return newArry;
+}
+
+export {createArray, strNumLimite, emptyCheck, numCheck, newArryMaker};

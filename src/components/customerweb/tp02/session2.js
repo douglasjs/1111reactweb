@@ -58,9 +58,9 @@ class CompanyInfo extends React.Component{
                                 </div>
                                 <div className="text">{introMainContent}</div>
                                 <ul className="list">
-                                    <li>{introSubTitle1Content}</li>
-                                    <li>{introSubTitle2Content}</li>
-                                    <li>{introSubTitle3Content}</li>
+                                    <li className="tp02_company_sub">{introSubTitle1Content}</li>
+                                    <li className="tp02_company_sub">{introSubTitle2Content}</li>
+                                    <li className="tp02_company_sub">{introSubTitle3Content}</li>
                                 </ul>
                                 <div className="btn-box">
                                     <a className="btn-style-three" target="_blank" rel="noopener noreferrer" href={companyurl}>立即應徵</a>

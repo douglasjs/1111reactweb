@@ -57,7 +57,7 @@ class CompanyInfo extends React.Component{
                 <div id="company" className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-12 hide-xs">
-                            <div className="about-image text-left">
+                            <div className="about-image text-left tp05-img-display">
                                 <img src={introSubTitle1Img} alt="公司介紹" />
                                 <img src={introSubTitle2Img} alt="公司介紹" />
                             </div>
@@ -66,8 +66,8 @@ class CompanyInfo extends React.Component{
                         <div className="col-lg-6 col-md-12 text-left">
                             <div className="about-content">
                                 <span>About Us</span>
-                                <h2>{introTitle}</h2>
-                                <p className="text-left">{introMainContent}</p>
+                                <h2 className="tp05_line-1">{introTitle}</h2>
+                                <p className="text-left tp05_line-9">{introMainContent}</p>
                                 <a target="_blank"  rel="noopener noreferrer" href={companyurl} className="default-btn tp05_hover-btn">我要應徵</a>
                             </div>
                         </div>

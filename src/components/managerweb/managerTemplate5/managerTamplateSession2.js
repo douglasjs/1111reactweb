@@ -204,11 +204,11 @@ class Session2 extends React.Component{
 
                                 <div className="col-md-6 mb-3">
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='主標題' notice='(建議字數為25個字以內)' inputName='introTitle' inputState={introTitle}
+                                        <InputText title='主標題' notice='(建議字數為14個字以內)' inputName='introTitle' inputState={introTitle}
                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='主內容' notice='(建議字數為250個字以內)' inputName='introMainContent' inputState={introMainContent}
+                                        <InputTextArea title='主內容' notice='(建議字數為270個字以內)' inputName='introMainContent' inputState={introMainContent}
                                            rows='5' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
@@ -239,7 +239,7 @@ class Session2 extends React.Component{
                                                 <tr>
                                                     <td>主標題</td>
                                                     <td align='left'>集陽由來</td>
-                                                    <td>建議25個字以內</td>
+                                                    <td>建議14個字以內</td>
                                                     <td>
                                                         不可空白<br />
                                                         <a type="button" data-toggle="modal" href="#tmp5_company_title">觀看範例圖片</a>
@@ -253,7 +253,7 @@ class Session2 extends React.Component{
                                                         然而提及到〔太陽能〕，因看見這個行業有著友善環境又響應多年來”節能減碳推動再生能源”的趨勢，太陽能資源豐富，且無需運輸，對環境污染低。
                                                         進而感覺這是一份有責任感的行業，因此開啟了集陽綠能這班列車。
                                                     </td>
-                                                    <td>建議250個字以內</td>
+                                                    <td>建議270個字以內</td>
                                                     <td>
                                                         不可空白<br />
                                                         <a type="button" data-toggle="modal" href="#tmp5_company_content">觀看範例圖片</a>
@@ -385,11 +385,11 @@ class Session2 extends React.Component{
 
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <InputText title='小標題1' notice='(建議字數為10個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
+                                                    <InputText title='小標題1' notice='(建議字數為14個字以內)' inputName='introSubTitle1' inputState={introSubTitle1}
                                                         stateObj={this} required={true} checkValue='100' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題1內容' notice='(建議字數為100個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
+                                                    <InputTextArea title='小標題1內容' notice='(建議字數為85個字以內)' inputName='introSubTitle1Content' inputState={introSubTitle1Content}
                                                         rows='3' stateObj={this} required={true} checkValue='500' />
                                                 </div>
                                             </div>
@@ -416,13 +416,13 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題1</td>
                                                                 <td align='left'>安全</td>
-                                                                <td>建議10個字以內</td>
+                                                                <td>建議14個字以內</td>
                                                                 <td>不可空白</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>小標題1 內容</td>
                                                                 <td align='left'>系統支架擁有結構技師簽證，且由結構技師設計規劃，並計算其結構強度及抗風係數，故結構及材料均符合結構設計規範要求，結構強度安全無虞。</td>
-                                                                <td>建議100個字以內</td>
+                                                                <td>建議85個字以內</td>
                                                                 <td>不可空白</td>
                                                             </tr>
                                                         </tbody>
@@ -464,11 +464,11 @@ class Session2 extends React.Component{
 
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <InputText title='小標題2' notice='(建議字數為10個字以內)' inputName='introSubTitle2' inputState={introSubTitle2}
+                                                    <InputText title='小標題2' notice='(建議字數為14個字以內)' inputName='introSubTitle2' inputState={introSubTitle2}
                                                         stateObj={this} required={true} checkValue='100' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題2內容' notice='(建議字數為100個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
+                                                    <InputTextArea title='小標題2內容' notice='(建議字數為85個字以內)' inputName='introSubTitle2Content' inputState={introSubTitle2Content}
                                                         rows='3' stateObj={this} required={true} checkValue='500' />
                                                 </div>
                                             </div>
@@ -495,13 +495,13 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題2</td>
                                                                 <td align='left'>整合服務</td>
-                                                                <td>建議10個字以內</td>
+                                                                <td>建議14個字以內</td>
                                                                 <td>不可空白</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>小標題2 內容</td>
                                                                 <td align='left'>從太陽能系統評估、設計、申請台電併聯、簽證、施工、申請躉售及補助，到施工完成後的監控、保養、維修，以上所有複雜的流程全部都可由集陽綠能幫您完成。</td>
-                                                                <td>建議100個字以內</td>
+                                                                <td>建議85個字以內</td>
                                                                 <td>不可空白</td>
                                                             </tr>
                                                         </tbody>
@@ -545,11 +545,11 @@ class Session2 extends React.Component{
 
                                             <div className="col-md-6 mb-3">
                                                 <div className="form-row">
-                                                    <InputText title='小標題3' notice='(建議字數為10個字以內)' inputName='introSubTitle3' inputState={introSubTitle3}
+                                                    <InputText title='小標題3' notice='(建議字數為14個字以內)' inputName='introSubTitle3' inputState={introSubTitle3}
                                                         stateObj={this} required={true} checkValue='100' />
                                                 </div>
                                                 <div className="form-row row-style-w95-pt1">
-                                                    <InputTextArea title='小標題3內容' notice='(建議字數為100個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
+                                                    <InputTextArea title='小標題3內容' notice='(建議字數為85個字以內)' inputName='introSubTitle3Content' inputState={introSubTitle3Content}
                                                         rows='3' stateObj={this} required={true} checkValue='500' />
                                                 </div>
                                             </div>
@@ -576,13 +576,13 @@ class Session2 extends React.Component{
                                                             <tr>
                                                                 <td>小標題3</td>
                                                                 <td align='left'>國家證照的施工保證</td>
-                                                                <td>建議10個字以內</td>
+                                                                <td>建議14個字以內</td>
                                                                 <td>不可空白</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>小標題3 內容</td>
                                                                 <td align='left'>集陽綠能有合格的甲級電器承裝業登記執照，具有專業的現場監造團隊 : 甲種電匠及太陽光電設置乙級技術士，及擁有經驗豐富的施工團隊。</td>
-                                                                <td>建議100個字以內</td>
+                                                                <td>建議85個字以內</td>
                                                                 <td>不可空白</td>
                                                             </tr>
                                                         </tbody>

@@ -254,11 +254,11 @@ class Session6 extends React.Component{
                                         stateObj={this} required={false} checkValue='4' />
                                 </div>
                                 <div className="form-row row-style-w95-pt1">
-                                    <InputText title='自訂區域主標題' notice='(建議字數為10個字以內)' inputName='customizeTitle' inputState={customizeTitle}
+                                    <InputText title='自訂區域主標題' notice='(建議字數為19個字以內)' inputName='customizeTitle' inputState={customizeTitle}
                                         stateObj={this} required={false} checkValue='100' />
                                 </div>
                                 <div className="form-row row-style-w95-pt1">
-                                    <InputTextArea title='自訂區域副標題' notice='(建議字數為50個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
+                                    <InputTextArea title='自訂區域副標題' notice='(建議字數為35個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
                                         rows='3' stateObj={this} required={false} checkValue='200' />
                                 </div>
                             </div>
@@ -293,7 +293,7 @@ class Session6 extends React.Component{
                                         <tr>
                                             <td>自訂區域主標題</td>
                                             <td align='left'>綠能新訊</td>
-                                            <td>建議10個字以內</td>
+                                            <td>建議19個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp5_customize_title">觀看範例圖片</a>
@@ -302,7 +302,7 @@ class Session6 extends React.Component{
                                         <tr>
                                             <td>自訂區域副標題</td>
                                             <td align='left'>能看出以後的趨勢，您們還在等甚麼呢?</td>
-                                            <td>建議50個字以內</td>
+                                            <td>建議35個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp5_customize_subtitle">觀看範例圖片</a>
@@ -387,15 +387,15 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片1標題' notice='(建議字數為30個字以內)' inputName='card1Title' inputState={card1Title}
+                                                <InputText title='卡片1標題' notice='(建議字數為35個字以內)' inputName='card1Title' inputState={card1Title}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片1內文' notice='(建議字數為120個字以內)' inputName='card1Content' inputState={card1Content}
+                                                <InputTextArea title='卡片1內文' notice='(建議字數為83個字以內)' inputName='card1Content' inputState={card1Content}
                                                     rows='2' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片1標籤' notice='(建議字數為15個字以內)' inputName='customizeTag1' inputState={customizeTag1}
+                                                <InputText title='卡片1標籤' notice='(建議字數為41個字以內)' inputName='customizeTag1' inputState={customizeTag1}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row">
@@ -429,7 +429,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片1標題</td>
                                                         <td align='left'>執政2年談能源 總統：綠電長期較核電經濟</td>
-                                                        <td>建議30個字以內</td>
+                                                        <td>建議35個字以內</td>
                                                         <td>
                                                             不可空白<br />
                                                             <a type="button" data-toggle="modal" href="#tmp5_customize_card1_title">觀看範例圖片</a>
@@ -438,7 +438,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片1內文</td>
                                                         <td align='left'>總統表示，2025年非核家園，屆時核一、核二以及核三廠都要退役，綠能要達到總發電量的20%，主要來源則是來自太陽能和風力。</td>
-                                                        <td>建議120個字以內</td>
+                                                        <td>建議83個字以內</td>
                                                         <td>
                                                             不可空白<br />
                                                             <a type="button" data-toggle="modal" href="#tmp5_customize_card1_content">觀看範例圖片</a>
@@ -447,7 +447,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片1標籤</td>
                                                         <td align='left'>新聞新知, 綠能新訊</td>
-                                                        <td>建議15個字以內</td>
+                                                        <td>建議41個字以內</td>
                                                         <td>
                                                             不可空白<br />
                                                             <a type="button" data-toggle="modal" href="#tmp5_customize_card1_tag">觀看範例圖片</a>
@@ -590,15 +590,15 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片2標題' notice='(建議字數為30個字以內)' inputName='card2Title' inputState={card2Title}
+                                                <InputText title='卡片2標題' notice='(建議字數為35個字以內)' inputName='card2Title' inputState={card2Title}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片2內文' notice='(建議字數為120個字以內)' inputName='card2Content' inputState={card2Content}
+                                                <InputTextArea title='卡片2內文' notice='(建議字數為83個字以內)' inputName='card2Content' inputState={card2Content}
                                                     rows='2' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片2標籤' notice='(建議字數為15個字以內)' inputName='customizeTag2' inputState={customizeTag2}
+                                                <InputText title='卡片2標籤' notice='(建議字數為41個字以內)' inputName='customizeTag2' inputState={customizeTag2}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95">
@@ -632,7 +632,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片2標題</td>
                                                         <td align='left'>電費收入穩定，可作為另類收益來源-投資再生能源 買題材股不如買電廠</td>
-                                                        <td>建議30個字以內</td>
+                                                        <td>建議35個字以內</td>
                                                         <td>
                                                             不可空白<br />
                                                             <a type="button" data-toggle="modal" href="#tmp5_customize_card2_title">觀看範例圖片</a>
@@ -641,7 +641,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片2內文</td>
                                                         <td align='left'>對於追求收益與低波動的投資人來說，要參與綠電商機，近年出現了另一種思維下的全新投資工具——再生能源基礎建設證券，此種投資工具更適合長期布局。</td>
-                                                        <td>建議120個字以內</td>
+                                                        <td>建議83個字以內</td>
                                                         <td>
                                                             不可空白<br />
                                                             <a type="button" data-toggle="modal" href="#tmp5_customize_card2_content">觀看範例圖片</a>
@@ -650,7 +650,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片2標籤</td>
                                                         <td align='left'>新聞新知, 綠能新訊</td>
-                                                        <td>建議15個字以內</td>
+                                                        <td>建議41個字以內</td>
                                                         <td>
                                                             不可空白<br />
                                                             <a type="button" data-toggle="modal" href="#tmp5_customize_card2_tag">觀看範例圖片</a>
@@ -793,15 +793,15 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                         <div className="form-row row-style-w95">
-                                                <InputText title='卡片3標題' notice='(建議字數為30個字以內)' inputName='card3Title' inputState={card3Title}
+                                                <InputText title='卡片3標題' notice='(建議字數為35個字以內)' inputName='card3Title' inputState={card3Title}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片3內文' notice='(建議字數為120個字以內)' inputName='card3Content' inputState={card3Content}
+                                                <InputTextArea title='卡片3內文' notice='(建議字數為83個字以內)' inputName='card3Content' inputState={card3Content}
                                                     rows='2' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片3標籤' notice='(建議字數為15個字以內)' inputName='customizeTag3' inputState={customizeTag3}
+                                                <InputText title='卡片3標籤' notice='(建議字數為41個字以內)' inputName='customizeTag3' inputState={customizeTag3}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95">
@@ -835,7 +835,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片3標題</td>
                                                         <td align='left'>收益穩定 公民電廠上網就能買</td>
-                                                        <td>建議30個字以內</td>
+                                                        <td>建議35個字以內</td>
                                                         <td>
                                                             不可空白<br />
                                                             <a type="button" data-toggle="modal" href="#tmp5_customize_card3_title">觀看範例圖片</a>
@@ -844,7 +844,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片3內文</td>
                                                         <td align='left'>國外綠能合作社已有二十多年歷史，台灣也有環保志願者仿效此模式，讓民眾可透過認購單片太陽能板的方式，成為大型電廠的合夥人。</td>
-                                                        <td>建議120個字以內</td>
+                                                        <td>建議83個字以內</td>
                                                         <td>
                                                             不可空白<br />
                                                             <a type="button" data-toggle="modal" href="#tmp5_customize_card3_content">觀看範例圖片</a>
@@ -853,7 +853,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片3標籤</td>
                                                         <td align='left'>新聞新知, 綠能新訊</td>
-                                                        <td>建議15個字以內</td>
+                                                        <td>建議41個字以內</td>
                                                         <td>
                                                             不可空白<br />
                                                             <a type="button" data-toggle="modal" href="#tmp5_customize_card3_tag">觀看範例圖片</a>
@@ -996,15 +996,15 @@ class Session6 extends React.Component{
                                     <div className="form-row">
                                         <div className="col-md-6 mb-3">
                                         <div className="form-row row-style-w95">
-                                                <InputText title='卡片4標題' notice='(建議字數為30個字以內)' inputName='card4Title' inputState={card4Title}
+                                                <InputText title='卡片4標題' notice='(建議字數為35個字以內)' inputName='card4Title' inputState={card4Title}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片4內文' notice='(建議字數為120個字以內)' inputName='card4Content' inputState={card4Content}
+                                                <InputTextArea title='卡片4內文' notice='(建議字數為83個字以內)' inputName='card4Content' inputState={card4Content}
                                                     rows='2' stateObj={this} required={false} checkValue='500' />
                                             </div>
                                             <div className="form-row row-style-w95">
-                                                <InputText title='卡片4標籤' notice='(建議字數為15個字以內)' inputName='customizeTag4' inputState={customizeTag4}
+                                                <InputText title='卡片4標籤' notice='(建議字數為41個字以內)' inputName='customizeTag4' inputState={customizeTag4}
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95">
@@ -1038,7 +1038,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片4標題</td>
                                                         <td align='left'>推廣全民種電 電力燃氣供應家數增</td>
-                                                        <td>建議30個字以內</td>
+                                                        <td>建議35個字以內</td>
                                                         <td>
                                                             不可空白<br />
                                                             <a type="button" data-toggle="modal" href="#tmp5_customize_card4_title">觀看範例圖片</a>
@@ -1047,7 +1047,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片4內文</td>
                                                         <td align='left'>政府推綠能，號召全民一起種電，據主計總處最新發布的工商普查，2016 年底電力及燃氣供應業家數較五年前增加 279%，主計總處說明，民間業者陸續投入綠能發電是關鍵。</td>
-                                                        <td>建議120個字以內</td>
+                                                        <td>建議83個字以內</td>
                                                         <td>
                                                             不可空白<br />
                                                             <a type="button" data-toggle="modal" href="#tmp5_customize_card4_content">觀看範例圖片</a>
@@ -1056,7 +1056,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片4標籤</td>
                                                         <td align='left'>新聞新知</td>
-                                                        <td>建議15個字以內</td>
+                                                        <td>建議41個字以內</td>
                                                         <td>
                                                             不可空白<br />
                                                             <a type="button" data-toggle="modal" href="#tmp5_customize_card4_tag">觀看範例圖片</a>

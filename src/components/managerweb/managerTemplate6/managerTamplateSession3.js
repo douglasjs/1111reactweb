@@ -31,7 +31,7 @@ class Session3 extends React.Component{
         const benObj={
             ono: cid,
             themeNum : event.target.themeNum3.value,
-            benefitContent : this.state.benefitContent,
+            benefitContent : event.target.benefitContent.value,
             benefitImg : event.target.benefitImg.value,
             benefitImg2 : '',
             benefitImgUpload : this.state.benefitImgUpload ? this.state.benefitImgUpload.value : null,
@@ -70,9 +70,7 @@ class Session3 extends React.Component{
         }
     }
 
-    handleChange = (event, data) => {   
-        this.setState({ ...this.state, benefitContent : data});
-    };
+
 
     render(){
         const { benefitData, benefitErr, benefitIsLoading} = this.props.benefitReducer;
@@ -95,7 +93,7 @@ class Session3 extends React.Component{
         if(benefitData && benefitData.length > 0){
             actionType = 'modify';
             benefitData.forEach(element => {
-                benefitContent = benefitContent !== "" ? benefitContent : element.benefitContent;
+                benefitContent = benefitContent!== "" ?  benefitContent: element.benefitContent;
                 benefitImg = benefitImg !== " " ? benefitImg : element.benefitImg;
                 benefitSubTitle1 = benefitSubTitle1 !== "" ? benefitSubTitle1 : element.benefitSubTitle1;
                 benefitSubTitle2 = benefitSubTitle2 !== "" ? benefitSubTitle2 : element.benefitSubTitle2;
@@ -129,7 +127,7 @@ class Session3 extends React.Component{
                                     <input type="hidden" id="themeNum3" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='員工福利內容' notice='(建議字數為180個字以內)' inputName='benefitContent' inputState={benefitContent}
+                                        <InputTextArea title='員工福利內容' notice='(建議字數為320個字以內)' inputName='benefitContent' inputState={benefitContent}
                                             rows='3' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
@@ -146,11 +144,11 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題1' notice='(建議字數為4個字以內)' inputName='benefitSubTitle1' inputState={benefitSubTitle1}
+                                                        <InputText title='小標題1' notice='(建議字數為14個字以內)' inputName='benefitSubTitle1' inputState={benefitSubTitle1}
                                                             stateObj={this} required={true} checkValue='100' />
                                                     </div>
                                                     <div className="form-row">
-                                                        <InputTextArea title='小標題1內容' notice='(建議字數為45個字以內)' inputName='benefitSubContent1' inputState={benefitSubContent1}
+                                                        <InputTextArea title='小標題1內容' notice='(建議字數為48個字以內)' inputName='benefitSubContent1' inputState={benefitSubContent1}
                                                             rows='3' stateObj={this} required={true} checkValue='300' />
                                                     </div>
                                                 </div>
@@ -163,16 +161,16 @@ class Session3 extends React.Component{
                                         <a href="#collapseCard3-2" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard3-2">
                                             <div className="card-header text-white bg-primary">小標題二</div>
                                         </a>                                    
-                                        <div className="card-body collapse" id="collapseCard3-2">
+                                        <div className="card-body collapse show" id="collapseCard3-2">
                                             <div className="form-row">
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題2' notice='(建議字數為4個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
+                                                        <InputText title='小標題2' notice='(建議字數為14個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
                                                             stateObj={this} required={true} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題2內容' notice='(建議字數為45個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
+                                                        <InputTextArea title='小標題2內容' notice='(建議字數為48個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
                                                             rows='3' stateObj={this} required={true} checkValue='300' />
                                                     </div>
                                                 </div>
@@ -185,16 +183,16 @@ class Session3 extends React.Component{
                                         <a href="#collapseCard3-3" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard3-3">
                                             <div className="card-header text-white bg-primary">小標題三</div>
                                         </a>                                    
-                                        <div className="card-body collapse" id="collapseCard3-3">
+                                        <div className="card-body collapse show" id="collapseCard3-3">
                                             <div className="form-row">
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題3' notice='(建議字數為4個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
+                                                        <InputText title='小標題3' notice='(建議字數為14個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
                                                             stateObj={this} required={true} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題3內容' notice='(建議字數為45個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
+                                                        <InputTextArea title='小標題3內容' notice='(建議字數為48個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
                                                             rows='3' stateObj={this} required={true} checkValue='300' />
                                                     </div>
                                                 </div>
@@ -230,7 +228,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>員工福利內容</td>
                                                 <td align='left'>1111人力銀行是台灣一家招聘網站，由東南亞集團之子公司全球華人股份有限公司創立於1999年，四個1代表著不同的含義；第一個1為"企業一定要獲利"、第二個1為"員工一定要加薪"、第三個1為"產品一定要創新"，而最後一個1則代表著"回饋一定要落實"。</td>
-                                                <td>建議180個字以內</td>
+                                                <td>建議320個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp6_benefit_content">觀看範例圖片</a>
@@ -251,7 +249,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題1</td>
                                                 <td align='left'>獎 金 類</td>
-                                                <td>建議4個字以內</td>
+                                                <td>建議14個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp6_benefit_subtitle01">觀看範例圖片</a>
@@ -260,7 +258,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題1內容</td>
                                                 <td align='left'>全勤獎金、員工生日禮金、年終獎金、三節獎金、激勵獎金、績效獎金</td>
-                                                <td>建議45個字以內</td>
+                                                <td>建議48個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp6_benefit_subtitle01">觀看範例圖片</a>
@@ -269,7 +267,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題2</td>
                                                 <td align='left'>娛 樂 類</td>
-                                                <td>建議4個字以內</td>
+                                                <td>建議14個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp6_benefit_subtitle02">觀看範例圖片</a>
@@ -278,7 +276,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題2內容</td>
                                                 <td align='left'>自強活動、國內旅遊、尾牙、員工運動會</td>
-                                                <td>建議45個字以內</td>
+                                                <td>建議48個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp6_benefit_subtitle02">觀看範例圖片</a>
@@ -287,7 +285,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題3</td>
                                                 <td align='left'>補 助 類</td>
-                                                <td>建議4個字以內</td>
+                                                <td>建議14個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp6_benefit_subtitle03">觀看範例圖片</a>
@@ -296,7 +294,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題3內容</td>
                                                 <td align='left'>員工結婚補助、生育補助、國內、外旅遊補助</td>
-                                                <td>建議45個字以內</td>
+                                                <td>建議48個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp6_benefit_subtitle03">觀看範例圖片</a>

@@ -311,11 +311,11 @@ class Session6 extends React.Component{
                                         stateObj={this} required={false} checkValue='4' />
                                 </div>
                                 <div className="form-row row-style-w95-pt1">
-                                    <InputText title='自訂區域主標題' notice='(建議字數為10個字以內)' inputName='customizeTitle' inputState={customizeTitle}
+                                    <InputText title='自訂區域主標題' notice='(建議字數為29個字以內)' inputName='customizeTitle' inputState={customizeTitle}
                                         stateObj={this} required={false} checkValue='100' />
                                 </div>
                                 <div className="form-row row-style-w95-pt1">
-                                    <InputTextArea title='自訂區域副標題' notice='(建議字數為40個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
+                                    <InputTextArea title='自訂區域副標題' notice='(建議字數為63個字以內)' inputName='customizeSubTitle' inputState={customizeSubTitle}
                                         rows='3' stateObj={this} required={false} checkValue='200' />
                                 </div>
                             </div>
@@ -350,7 +350,7 @@ class Session6 extends React.Component{
                                         <tr>
                                             <td>自訂區域主標題</td>
                                             <td align='left'>1111幸福企業</td>
-                                            <td>建議10個字以內</td>
+                                            <td>建議29個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize_title">觀看範例圖片</a>
@@ -359,7 +359,7 @@ class Session6 extends React.Component{
                                         <tr>
                                             <td>自訂區域副標題</td>
                                             <td align='left'>1111提供完善的薪資制度、福利措施與舒適的工作環境，使員工能全力發揮所長</td>
-                                            <td>建議40個字以內</td>
+                                            <td>建議63個字以內</td>
                                             <td>
                                                 不可空白<br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize_title">觀看範例圖片</a>
@@ -432,7 +432,7 @@ class Session6 extends React.Component{
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片1內文' notice='(建議字數為20個字以內)' inputName='card1Content' inputState={card1Content}
+                                                <InputTextArea title='卡片1內文' notice='(建議字數為26個字以內)' inputName='card1Content' inputState={card1Content}
                                                     rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -441,7 +441,7 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-2.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_01/06-01.png" alt="Temp1_Customize" /></div>
                                             <div>
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize_card01">
                                                     觀看放大圖例
@@ -468,7 +468,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片1內文</td>
                                                         <td align='left'>1111人力銀行年度盛事，年終獎金與尾</td>
-                                                        <td>建議20個字以內</td>
+                                                        <td>建議26個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
@@ -522,7 +522,7 @@ class Session6 extends React.Component{
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片2內文' notice='(建議字數為20個字以內)' inputName='card2Content' inputState={card2Content}
+                                                <InputTextArea title='卡片2內文' notice='(建議字數為26個字以內)' inputName='card2Content' inputState={card2Content}
                                                     rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -531,7 +531,7 @@ class Session6 extends React.Component{
                                             </div>
                                        </div>
                                        <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-3.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_01/06-02.png" alt="Temp1_Customize" /></div>
                                             <div>
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize_card02">
                                                     觀看放大圖例
@@ -558,7 +558,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片2內文</td>
                                                         <td align='left'>關心員工健康的生活與壓力，提供均衡營養的午餐</td>
-                                                        <td>建議20個字以內</td>
+                                                        <td>建議26個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
@@ -612,7 +612,7 @@ class Session6 extends React.Component{
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片3內文' notice='(建議字數為20個字以內)' inputName='card3Content' inputState={card3Content}
+                                                <InputTextArea title='卡片3內文' notice='(建議字數為26個字以內)' inputName='card3Content' inputState={card3Content}
                                                     rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -621,7 +621,7 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_01/06-03.png" alt="Temp1_Customize" /></div>
                                             <div>
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize_card03">
                                                     觀看放大圖例
@@ -648,7 +648,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片3內文</td>
                                                         <td align='left'>設置企業按摩師，由四位專業按摩師為員工提供按摩服務</td>
-                                                        <td>建議20個字以內</td>
+                                                        <td>建議26個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
@@ -702,7 +702,7 @@ class Session6 extends React.Component{
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片4內文' notice='(建議字數為20個字以內)' inputName='card4Content' inputState={card4Content}
+                                                <InputTextArea title='卡片4內文' notice='(建議字數為26個字以內)' inputName='card4Content' inputState={card4Content}
                                                     rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -711,7 +711,7 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-5.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_01/06-04.png" alt="Temp1_Customize" /></div>
                                             <div>
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize_card04">
                                                     觀看放大圖例
@@ -738,7 +738,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片4內文</td>
                                                         <td align='left'>讓員工在優良的辦公環境下發揮最高的工作效率</td>
-                                                        <td>建議20個字以內</td>
+                                                        <td>建議26個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
@@ -793,7 +793,7 @@ class Session6 extends React.Component{
                                                     stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片5內文' notice='(建議字數為20個字以內)' inputName='card5Content' inputState={card5Content}
+                                                <InputTextArea title='卡片5內文' notice='(建議字數為26個字以內)' inputName='card5Content' inputState={card5Content}
                                                     rows='2' stateObj={this} required={false} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -802,7 +802,7 @@ class Session6 extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-md-6 mb-3">                                    
-                                            <div><img src="/image/sample_01/06-4.png" alt="Temp1_Customize" /></div>
+                                            <div><img src="/image/sample_01/06-05.png" alt="Temp1_Customize" /></div>
                                             <div>
                                                 <a type="button" data-toggle="modal" href="#tmp1_customize">
                                                     觀看放大圖例
@@ -829,7 +829,7 @@ class Session6 extends React.Component{
                                                     <tr>
                                                         <td>卡片5內文</td>
                                                         <td align='left'>在有限的空間裡，營造出創新的優質辦公場所</td>
-                                                        <td>建議20個字以內</td>
+                                                        <td>建議26個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
@@ -867,7 +867,7 @@ class Session6 extends React.Component{
                                                     stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片6內文' notice='(建議字數為20個字以內)' inputName='card6Content' inputState={card6Content}
+                                                <InputTextArea title='卡片6內文' notice='(建議字數為26個字以內)' inputName='card6Content' inputState={card6Content}
                                                     rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -908,7 +908,7 @@ class Session6 extends React.Component{
                                                                 <li>正黑豬及放山雞作為基底</li>
                                                             </ul>
                                                         </td>
-                                                        <td>20個字以內</td>
+                                                        <td>26個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
@@ -946,7 +946,7 @@ class Session6 extends React.Component{
                                                     stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片7內文' notice='(建議字數為20個字以內)' inputName='card7Content' inputState={card7Content}
+                                                <InputTextArea title='卡片7內文' notice='(建議字數為26個字以內)' inputName='card7Content' inputState={card7Content}
                                                     rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -987,7 +987,7 @@ class Session6 extends React.Component{
                                                                 <li>正黑豬及放山雞作為基底</li>
                                                             </ul>
                                                         </td>
-                                                        <td>20個字以內</td>
+                                                        <td>26個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>
@@ -1025,7 +1025,7 @@ class Session6 extends React.Component{
                                                     stateObj={this} required={false} checkValue='8' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputTextArea title='卡片8內文' notice='(建議字數為20個字以內)' inputName='card8Content' inputState={card8Content}
+                                                <InputTextArea title='卡片8內文' notice='(建議字數為26個字以內)' inputName='card8Content' inputState={card8Content}
                                                     rows='2' stateObj={this} required={false} checkValue='20' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
@@ -1066,7 +1066,7 @@ class Session6 extends React.Component{
                                                                 <li>正黑豬及放山雞作為基底</li>
                                                             </ul>
                                                         </td>
-                                                        <td>20個字以內</td>
+                                                        <td>26個字以內</td>
                                                         <td>不可空白</td>
                                                     </tr>
                                                     <tr>

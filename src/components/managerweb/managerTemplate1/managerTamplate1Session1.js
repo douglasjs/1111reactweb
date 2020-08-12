@@ -137,15 +137,15 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題' notice='(建議字數為12個字以內)' inputName='title' inputState={title}
+                                        <InputText title='大標題' notice='(建議字數為13個字以內)' inputName='title' inputState={title}
                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 1' notice='(建議字數為13個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                        <InputTextArea title='副標題 1' notice='(建議字數為15個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
                                            rows='2' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 2' notice='(建議字數為11個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
+                                        <InputTextArea title='副標題 2' notice='(建議字數為37個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
                                            rows='2' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
@@ -185,7 +185,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>大標題</td>
                                                 <td align='left'>1111人力銀行</td>
-                                                <td>建議12個字以內</td>
+                                                <td>建議13個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_banner_title">觀看範例圖片</a>
@@ -194,7 +194,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>副標題1</td>
                                                 <td align='left'>找工作、找人才、找幸福企業</td>
-                                                <td>建議13個字以內</td>
+                                                <td>建議15個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_banner_subtitle_01">觀看範例圖片</a>
@@ -203,7 +203,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>副標題2</td>
                                                 <td align='left'>歡迎優秀的朋友一起加入</td>
-                                                <td>建議11個字以內</td>
+                                                <td>建議37個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_banner_subtitle_02">觀看範例圖片</a>

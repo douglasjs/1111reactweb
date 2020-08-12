@@ -40,8 +40,6 @@
 /*================================================
 Default CSS
 =================================================*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;display=swap");
-@import url("https://fonts.googleapis.com/css?family=Microsoft JhengHei:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -3492,7 +3490,7 @@ Pricing Area CSS
 }
 
 .single-pricing-box .pricing-features-list li i.flaticon-cross-out {
-  font-size: 13px;
+  font-size: 15px;
   color: red;
 }
 
@@ -5321,7 +5319,7 @@ Blog Details Area CSS
   text-transform: uppercase;
   position: relative;
   z-index: 1;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -5363,7 +5361,7 @@ Blog Details Area CSS
   color: #666666;
   letter-spacing: 0.01em;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -6083,7 +6081,7 @@ Sidebar Widget Area CSS
 
 .widget-area .widget_recent_entries ul li .post-date {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   color: #666666;
   margin-top: 4px;
 }

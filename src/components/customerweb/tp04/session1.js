@@ -10,7 +10,7 @@ class CompanyTitle extends React.Component{
 
    componentDidMount(){
         const cid = this.props.match.params.cid;
-        this.props.getCompanyList(cid, this.props.themeNum? this.props.themeNum: 'tp05');
+        this.props.getCompanyList(cid, this.props.themeNum? this.props.themeNum: 'tp04');
     }
 
     render(){
@@ -67,7 +67,7 @@ class CompanyTitle extends React.Component{
 									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
 									data-split-options='{"type":"lines"}'
 								>
-									<span className="ld-fh-txt line-3">{title}<br />{title2}</span>
+									<span className="ld-fh-txt tp04-line-3">{title}<br />{title2}</span>
 								</h1>
 								<h4								
 									data-custom-animations="true"
@@ -83,7 +83,7 @@ class CompanyTitle extends React.Component{
 									data-custom-animations="true"
 									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
 									data-split-options='{"type":"lines"}'>
-									<span className="ld-fh-txt hidden-sm-down text-justify">
+									<span className="ld-fh-txt hidden-sm-down text-justify tp04-line-3">
 										{companySubTitle2}<br />
 									</span>							
 								</p>

@@ -102,8 +102,8 @@ class CompanyCustomize extends React.Component {
                         <div className="lqd-column col-md-12">
     
                             <header className="fancy-title mb-30" id="fancy-title-unlimited-classes">
-                                <h2 className="text-uppercase ltr-sp-0 tp01_line-1 text-left tp01-title-font-size">{customizeTitle} </h2>
-                                <p className="tp01_custom_subtitle_line text-left">{customizeSubTitle} </p>
+                                <h2 className="text-uppercase ltr-sp-0 tp01_line-1 text-left tp01-title-font-size tp01_s6_title_width-90pre">{customizeTitle} </h2>
+                                <p className="tp01_custom_subtitle_line text-left tp01_s6_title_width-90pre">{customizeSubTitle} </p>
                             </header>
     
                         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Msg from '../msg';
 import InputText from '../../sharecomponents/inputText';
+import {newArryMaker} from '../../sharecomponents/toolFunction';
 
 class Session4 extends React.Component{
 
@@ -384,19 +385,14 @@ class Session4 extends React.Component{
 
         let cityGroup =[];
         let dutyGroup =[];
+
         const dataID = (kind00Data && kind00Data.length > 0 && kind00Data[0].oNo!==0) ? kind00Data[0].oNo: 0;
 
         if( dataID!==0 ){
-               
-            kind00Data.forEach( element => {
-                cityGroup.push(element.WorkCity);
-                dutyGroup.push(element.DutyArr[0]);
-            })
-
+            cityGroup = newArryMaker('city', kind00Data );
+            dutyGroup = newArryMaker('duty', kind00Data );
         }
-        cityGroup = [...new Set(cityGroup)];
-        dutyGroup = [...new Set(dutyGroup)];
-       
+
         return(
             <div className="card shadow mb-4">
                 <a href="#collapseCard4" className="d-block card-header py-3 text-white bg-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard4">

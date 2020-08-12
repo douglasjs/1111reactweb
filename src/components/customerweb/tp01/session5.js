@@ -54,7 +54,7 @@ class CompanyBrand extends React.Component {
                         <div className="lqd-column col-lg-6">
     
                             <h2
-                                className="lh-13 mt-0 mb-30 tp01_line-1 text-left tp01-title-font-size"
+                                className="lh-13 mt-0 mb-30 tp01_brand_title_line text-left tp01-title-font-size"
                                 data-split-text="true"
                                 data-split-options='{"type":"lines"}'
                                 data-text-rotator="true"
@@ -66,8 +66,8 @@ class CompanyBrand extends React.Component {
                             <div className="accordion accordion-md accordion-title-underlined accordion-expander-left accordion-active-color-primary" id="vc_accordion_5c77a7f9d2896" role="tablist">
                                 <div className="accordion-item panel active">
                                     <div className="accordion-heading" role="tab" id="heading_accordion-1">
-                                        <h4 className="accordion-title font-size-17 lh-15 tp01_brand_title_line text-left">
-                                            <a data-toggle="collapse" data-parent="#vc_accordion_5c77a7f9d2896" href="#accordion-1" aria-expanded="true" aria-controls="accordion-1">
+                                        <h4 className="accordion-title font-size-17 lh-15 tp01_brand_title_line text-left ">
+                                            <a className=" tp01_s5_subtitle_height" data-toggle="collapse" data-parent="#vc_accordion_5c77a7f9d2896" href="#accordion-1" aria-expanded="true" aria-controls="accordion-1">
                                                 {brandTitleSub1}
                                                 <span className="accordion-expander">
                                                     <i className="fa fa-angle-down"></i>
