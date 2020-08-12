@@ -168,7 +168,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>背景圖</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>1920*800</td>
+                                                <td>1920*600</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>

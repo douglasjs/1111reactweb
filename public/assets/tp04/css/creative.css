@@ -245,7 +245,7 @@ footer.main-footer p {
 }
 
 div.ld-fancy-heading h1 {
-	font-size: 50px;
+	font-size: 45px;
 }
 
 .line-height-1_2em {
@@ -346,4 +346,14 @@ div.ld-fancy-heading h1 {
 
 .fancy-box-cell {
   text-align: left;
+}
+
+@media (max-width: 1024px) and (min-width: 1024px) {
+  .tp04-S3_min-h-252{
+    min-height: 252px;
+  }
+
+  .iconbox .contents p {
+    min-height: 100px;
+  }
 }

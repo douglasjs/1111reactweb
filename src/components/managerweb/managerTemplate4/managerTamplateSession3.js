@@ -321,7 +321,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題1 圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>70*70</td>
+                                                <td>100*100</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
@@ -355,7 +355,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題2 圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>70*70</td>
+                                                <td>100*100</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
@@ -389,7 +389,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題3 圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>70*70</td>
+                                                <td>100*100</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
@@ -423,7 +423,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題4 圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>70*70</td>
+                                                <td>100*100</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>

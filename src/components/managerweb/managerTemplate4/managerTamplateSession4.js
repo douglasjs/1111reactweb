@@ -412,6 +412,7 @@ class Session4 extends React.Component{
                                                     {/*<a data-toggle="modal" href="#tmp4_addlable"><button className='btn btn-primary'>增加標籤 <i className="fas fa-folder-plus" value='Create' /></button></a>&nbsp;&nbsp;&nbsp;*/}
                                                     <a data-toggle="modal" href="#tmp4_addjob"><button className='btn btn-primary' onClick={this.handleAddPosition}>增加職缺 <i className="fas fa-folder-plus" value='Create' /></button></a>
                                                     {/*<div className="">職缺數量建議最多五筆，版面較容易瀏覽(<a type="button" data-toggle="modal" href="#tmp4_joblable_img">觀看圖例</a>)</div>*/}
+                                                    (<a type="button" data-toggle="modal" href="#tmp4_joblable_img">觀看圖例</a>)
                                                 </div>
                                             </div>
                                         </div>
@@ -535,7 +536,7 @@ class Session4 extends React.Component{
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <p className="modal-title">請選擇要顯示的職缺{/*，<span className='text-danger'>建議最多選取五筆職缺，以免版面過長不容易瀏覽</span>*/}</p>
+                                <p className="modal-title">請選擇要顯示的職缺，<em className='text-primary'>每次只能新增<span className='text-danger'>5</span>筆</em></p>
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div className="modal-body text-center">
@@ -635,7 +636,7 @@ class Session4 extends React.Component{
 
                             </div>
                             <div className="modal-footer">
-                                <p className="small">每個標籤最多只能選擇5個職缺</p>
+                                <p className="small">最多只能選擇5個職缺</p>
                             </div>
                         </div>
                     </div>

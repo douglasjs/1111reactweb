@@ -260,6 +260,7 @@ h6 {
 
   .tp06_banner-title span {
     font-size: 40px;
+    line-height: 2em;
   }
 
   .tp06_s5_vedio-m-pt {
@@ -268,5 +269,8 @@ h6 {
 
   .tp06_s5_vedio-m-pt iframe{
     height: 200px;
+  }
+  .tp06_banner-subtitle{
+    line-height: 2em;
   }
 }

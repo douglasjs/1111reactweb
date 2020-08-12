@@ -538,7 +538,7 @@ class Session4 extends React.Component{
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <p className="modal-title">請選擇要顯示的職缺</p>
+                                <p className="modal-title">請選擇要顯示的職缺，<em className='text-primary'>每次只能新增<span className='text-danger'>5</span>筆</em></p>
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div className="modal-body text-center">
@@ -641,7 +641,7 @@ class Session4 extends React.Component{
 
                             </div>
                             <div className="modal-footer">
-                                <p className="small">每個標籤最多只能選擇5個職缺</p>
+                                <p className="small">最多只能選擇5個職缺</p>
                             </div>
                         </div>
                     </div>
