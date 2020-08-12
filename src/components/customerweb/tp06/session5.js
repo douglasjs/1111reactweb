@@ -40,7 +40,7 @@ class CompanyBrand extends React.Component {
 					<div className="container">
 						<div className="row">
 
-							<div className="lqd-column col-md-6 pl-md-6 pr-md-7 text-left tp06_s5_vedio-m-pb">
+							<div className="lqd-column col-md-6 pl-md-6 pr-md-7 text-left">
 
 								<header className="fancy-title mb-15">
 									<h2 className="mt-0 mb-2 pr-md-5 tp06_line-2">{brandTitle}</h2>
@@ -61,10 +61,11 @@ class CompanyBrand extends React.Component {
 
 							</div>
 							
-							<div className="lqd-column col-md-6 tp06_s5_vedio-m-pt">
+							<div className="lqd-column col-md-6">
 								
 								
 								<iframe
+									className="tp06_s5_vedio-m-pt"
 									title="1111人力銀行影片"
 									style={{width:'100%', height:'315', overflow:'visible'}}
 									src={vedioURL}

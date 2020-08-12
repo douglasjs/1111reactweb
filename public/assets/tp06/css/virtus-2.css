@@ -255,7 +255,7 @@ h6 {
 
 @media screen and (max-width: 400px) {
   .tp06_logo_height img {
-    height: 40px;
+    height: 32px;
   }
 
   .tp06_banner-title span {
@@ -265,6 +265,7 @@ h6 {
 
   .tp06_s5_vedio-m-pt {
     padding-top: 30px;
+    height: 225px !important;
   }
 
   .tp06_s5_vedio-m-pb {
