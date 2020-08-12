@@ -85,7 +85,7 @@ class CompanyCustomize extends React.Component {
 							<div className="lqd-column col-md-6 col-md-offset-3 text-center mb-10">
 
 								<header className="fancy-heading px-md-5">
-									<h2>{customizeTitle}</h2>
+									<h2 className="tp06_s6_title">{customizeTitle}</h2>
 									<p>{customizeSubTitle}</p>
 								</header>
 
