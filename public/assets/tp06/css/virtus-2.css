@@ -275,6 +275,11 @@ h6 {
   .tp06_s5_vedio-m-pt iframe{
     height: 200px;
   }
+
+  .tp06_s6_title {
+    line-height: 1.25em;
+  }
+  
   .tp06_banner-subtitle{
     line-height: 2em;
   }
