@@ -264,12 +264,12 @@ h6 {
   }
 
   .tp06_s5_vedio-m-pt {
-    padding-top: 30px;
+    padding-top: 30px !important;
     height: 225px !important;
   }
 
   .tp06_s5_vedio-m-pb {
-    padding-bottom: 30px;
+    padding-bottom: 30px !important;
   }
 
   .tp06_s5_vedio-m-pt iframe{
@@ -277,7 +277,7 @@ h6 {
   }
 
   .tp06_s6_title {
-    line-height: 2em;
+    line-height: 1.25em !important;
   }
 
   .tp06_banner-subtitle{
