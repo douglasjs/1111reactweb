@@ -15,7 +15,7 @@ const envConfig = {
     WebAPI: 'https://brand.1111.com.tw/WebAPI/api'
 }*/
 
-/* Benedik */
+/* MBK Benedik */
 
 const envConfig = {
     kind01API : 'http://benedik.ddns.net:8080/api/GetApi',
