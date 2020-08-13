@@ -136,22 +136,19 @@ const getbenefitList = (ono, themeNum) =>{
 }
 
 const createbenefit = (data) =>{
-
-   
-  
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'C'}; 
             dispatch(createbenefitStart());
             axios({
                 method: 'post',
                 url: `${envConfig.WebAPI}/benefit/`,
-                data
+                data: submitData
             })
             .then((response)=>{
                 dispatch(createbenefitSuccess(response.data));
                 alert("新增資料完成");
-               // dispatch(getbenefitList(data.ono));
+                dispatch(getbenefitList(data.ono, data.themeNum));
             })
             .catch(err => {
                 dispatch(createbenefitError(err));
@@ -164,12 +161,12 @@ const createbenefit = (data) =>{
 const updatebenefit = (data) =>{
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'U'}; 
             dispatch(editbenefitStart());
             axios({
-                method: 'put',
-                url: `${envConfig.WebAPI}/benefit/${data.ono}`,
-                data
+                method: 'post',
+                url: `${envConfig.WebAPI}/benefit/`,
+                data: submitData
             })
             .then((response) => {
                 dispatch(editbenefitSuccess(response.data));

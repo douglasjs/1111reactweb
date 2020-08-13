@@ -141,17 +141,17 @@ const createqa = (data) =>{
   
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'C'}; 
             dispatch(createqaStart());
             axios({
                 method: 'post',
                 url: `${envConfig.WebAPI}/qa/`,
-                data
+                data: submitData
             })
             .then((response)=>{
                 dispatch(createqaSuccess(response.data));
                 alert("新增資料完成");
-               // dispatch(getqaList(data.ono));
+                dispatch(getqaList(data.ono, data.themeNum));
             })
             .catch(err => {
                 dispatch(createqaError(err));
@@ -162,15 +162,14 @@ const createqa = (data) =>{
 
 
 const updateqa = (data) =>{
-    console.log(data);
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'U'}; 
             dispatch(editqaStart());
             axios({
-                method: 'put',
-                url: `${envConfig.WebAPI}/qa/${data.ono}`,
-                data
+                method: 'post',
+                url: `${envConfig.WebAPI}/qa/`,
+                data: submitData
             })
             .then((response) => {
                 dispatch(editqaSuccess(response.data));

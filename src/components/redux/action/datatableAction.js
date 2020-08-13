@@ -176,12 +176,12 @@ const createData = (data) =>{
    
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'C'}; 
             dispatch(createAllStart());
             axios({
                 method: 'post',
                 url: `${envConfig.WebAPI}/main/`,
-                data
+                data: submitData
             })
             .then((response)=>{
                 dispatch(createAllSuccess(response.data));
@@ -201,12 +201,12 @@ const updateData = (data) =>{
    
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'U'}; 
             dispatch(editAllStart());
             axios({
-                method: 'put',
-                url: `${envConfig.WebAPI}/main/${data.ono}`,
-                data
+                method: 'post',
+                url: `${envConfig.WebAPI}/main/`,
+                data: submitData
             })
             .then((response) => {
                 dispatch(editAllSuccess(response.data));
@@ -226,11 +226,17 @@ const deleteData = (data, rowSet, curPage, search, sortDB) =>{
  
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'D'}; 
             dispatch(deleteAllStart());
-            
+            /*
             axios
             .delete(`http://localhost:8888/api/users/${data.id}`,{ crossdomain: true })
+            */
+            axios({
+                method: 'post',
+                url: `${envConfig.WebAPI}/main/`,
+                data: submitData
+            })
             .then((response) => {
                         dispatch(deleteAllSuccess(response.data));
                         dispatch(getDataList(rowSet, curPage, search, sortDB));

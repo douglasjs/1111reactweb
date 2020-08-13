@@ -26,16 +26,16 @@ const envConfig = {
 
 
 
-
 /* Douglas 
 
+const server = "http://111.185.21.100:8080/api";
 const envConfig = {
-    kind01API : 'http://benedik.ddns.net:8080/api/GetApi',
-    kind00API : 'http://benedik.ddns.net:8080/api/GetApi',
-    email: 'http://benedik.ddns.net:8080/api/email',
-    WebAPI: 'http://benedik.ddns.net:8080/api'
+    kind01API : server + '/GetApi',
+    kind00API : server + '/GetApi',
+    email: server +'/email',
+    WebAPI: server
 
-}
-*/
+};*/
+
 
 export default envConfig;

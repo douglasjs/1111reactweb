@@ -140,12 +140,12 @@ const createintroduction = (data) =>{
   
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'C'}; 
             dispatch(createintroductionStart());
             axios({
                 method: 'post',
                 url: `${envConfig.WebAPI}/introduction/`,
-                data
+                data: submitData
             })
             .then((response)=>{
                 dispatch(createintroductionSuccess(response.data));
@@ -163,17 +163,17 @@ const createintroduction = (data) =>{
 const updateintroduction = (data) =>{
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'U'}; 
             dispatch(editintroductionStart());
             axios({
-                method: 'put',
-                url: `${envConfig.WebAPI}/introduction/${data.ono}`,
-                data
+                method: 'post',
+                url: `${envConfig.WebAPI}/introduction/`,
+                data: submitData
             })
             .then((response) => {
                 dispatch(editintroductionSuccess(response.data));
                 alert("更新資料完成");
-                dispatch(getintroductionList(data.ono,data.themeNum));
+               // dispatch(getintroductionList(data.ono,data.themeNum));
             })
             .catch(err => {
                 dispatch(editintroductionError(err));

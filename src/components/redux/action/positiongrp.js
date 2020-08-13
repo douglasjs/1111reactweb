@@ -141,12 +141,12 @@ const createPositionGrp = (data) =>{
   
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'C'}; 
             dispatch(createPositionGrpStart());
             axios({
                 method: 'post',
                 url: `${envConfig.WebAPI}/positionGroup/`,
-                data
+                data: submitData
             })
             .then((response)=>{
                 dispatch(createPositionGrpSuccess(response.data));
@@ -164,12 +164,12 @@ const createPositionGrp = (data) =>{
 const updatePositionGrp = (data) =>{
     return (dispatch) =>{
         
-      
+            const submitData = {...data, postType: 'U'}; 
             dispatch(editPositionGrpStart());
             axios({
-                method: 'put',
-                url: `${envConfig.WebAPI}/positionGroup/${data.ono}`,
-                data
+                method: 'post',
+                url: `${envConfig.WebAPI}/positionGroup/`,
+                data: submitData
             })
             .then((response) => {
                 dispatch(editPositionGrpSuccess(response.data));
