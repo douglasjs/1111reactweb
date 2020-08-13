@@ -11,21 +11,21 @@ class Session2 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            introTitle: ' ',
-            introMainContent: ' ',
-            introSubTitle1: ' ',
-            introSubTitle1Content: ' ',
-            introSubTitle1ImgText: ' ',
+            introTitle: '',
+            introMainContent: '',
+            introSubTitle1: '',
+            introSubTitle1Content: '',
+            introSubTitle1ImgText: '',
             introSubTitle1Img: ' ',
             introSubTitle1ImgUpload: '',
-            introSubTitle2: ' ',
-            introSubTitle2Content: ' ',
-            introSubTitle2ImgText: ' ',
+            introSubTitle2: '',
+            introSubTitle2Content: '',
+            introSubTitle2ImgText: '',
             introSubTitle2Img: ' ',
             introSubTitle2ImgUpload: '',
-            introSubTitle3: ' ',
-            introSubTitle3Content: ' ',
-            introSubTitle3ImgText: ' ',
+            introSubTitle3: '',
+            introSubTitle3Content: '',
+            introSubTitle3ImgText: '',
             introSubTitle3Img: ' ',
             introSubTitle3ImgUpload: '',
         }
@@ -63,7 +63,7 @@ class Session2 extends React.Component{
                                 value : reader.result
                             }
                         });
-                        infoArea.textContent = '上傳檔案名稱: ' + file.name;
+                        infoArea.textContent = '上傳檔案名稱：' + file.name;
                         const fileFullName = stateName + "_"+ file.name;
                         that.setState({ ...this.state, [stateName]: fileFullName });
                    }
@@ -158,29 +158,29 @@ class Session2 extends React.Component{
         if(introductionData && introductionData.length > 0){
             actionType = 'modify';
             introductionData.forEach(element => {
-                introTitle = introTitle !==" " ? introTitle : element.introTitle;
-                introMainContent = introMainContent !==" " ? introMainContent : element.introMainContent;
+                introTitle = introTitle !=="" ? introTitle : element.introTitle;
+                introMainContent = introMainContent !=="" ? introMainContent : element.introMainContent;
 
-                introSubTitle1 = introSubTitle1 !==" " ? introSubTitle1 : element.introSubTitle1;
-                introSubTitle1Content = introSubTitle1Content !==" " ? introSubTitle1Content : element.introSubTitle1Content;
-                introSubTitle1ImgText = introSubTitle1ImgText !==" " ? introSubTitle1ImgText : element.introSubTitle1ImgText;
+                introSubTitle1 = introSubTitle1 !=="" ? introSubTitle1 : element.introSubTitle1;
+                introSubTitle1Content = introSubTitle1Content !=="" ? introSubTitle1Content : element.introSubTitle1Content;
+                introSubTitle1ImgText = introSubTitle1ImgText !=="" ? introSubTitle1ImgText : element.introSubTitle1ImgText;
                 introSubTitle1Img = introSubTitle1Img !==" " ? introSubTitle1Img : element.introSubTitle1Img;
 
-                introSubTitle2 = introSubTitle2 !==" " ? introSubTitle2 : element.introSubTitle2;
-                introSubTitle2Content = introSubTitle2Content !==" " ? introSubTitle2Content : element.introSubTitle2Content;
-                introSubTitle2ImgText = introSubTitle2ImgText !==" " ? introSubTitle2ImgText : element.introSubTitle2ImgText;
+                introSubTitle2 = introSubTitle2 !=="" ? introSubTitle2 : element.introSubTitle2;
+                introSubTitle2Content = introSubTitle2Content !=="" ? introSubTitle2Content : element.introSubTitle2Content;
+                introSubTitle2ImgText = introSubTitle2ImgText !=="" ? introSubTitle2ImgText : element.introSubTitle2ImgText;
                 introSubTitle2Img = introSubTitle2Img !==" " ? introSubTitle2Img : element.introSubTitle2Img;
 
-                introSubTitle3 = introSubTitle3 !==" " ? introSubTitle3 : element.introSubTitle3;
-                introSubTitle3Content = introSubTitle3Content !==" " ? introSubTitle3Content : element.introSubTitle3Content;
-                introSubTitle3ImgText = introSubTitle3ImgText !==" " ? introSubTitle3ImgText : element.introSubTitle3ImgText;
+                introSubTitle3 = introSubTitle3 !=="" ? introSubTitle3 : element.introSubTitle3;
+                introSubTitle3Content = introSubTitle3Content !=="" ? introSubTitle3Content : element.introSubTitle3Content;
+                introSubTitle3ImgText = introSubTitle3ImgText !=="" ? introSubTitle3ImgText : element.introSubTitle3ImgText;
                 introSubTitle3Img = introSubTitle3Img !==" " ? introSubTitle3Img : element.introSubTitle3Img;
 
             })
         }
 
         if(actionType === "create"){
-            introMainContent = kind01_data && kind01_data.length > 0 && introMainContent === ' ' ? strNumLimite(kind01_data[0].brief,80)  : this.state.introMainContent;
+            introMainContent = kind01_data && kind01_data.length > 0 && introMainContent === '' ? strNumLimite(kind01_data[0].brief,80)  : this.state.introMainContent;
         }
 
          // image
