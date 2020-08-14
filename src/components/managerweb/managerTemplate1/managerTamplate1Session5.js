@@ -9,13 +9,13 @@ class Session5 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            brandTitle: ' ',
-            brandTitleSub1: ' ',
-            brandTitleSub1Content: ' ',
-            brandTitleSub2: ' ',
-            brandTitleSub2Content: ' ',
-            brandTitleSub3: ' ',
-            brandTitleSub3Content: ' ',
+            brandTitle: '',
+            brandTitleSub1: '',
+            brandTitleSub1Content: '',
+            brandTitleSub2: '',
+            brandTitleSub2Content: '',
+            brandTitleSub3: '',
+            brandTitleSub3Content: '',
             brandImg : ' ',
             brandImgUpload : ''
         }
@@ -77,13 +77,13 @@ class Session5 extends React.Component{
         if(brandData && brandData.length > 0){
             actionType = 'modify';
             brandData.forEach(element => {
-                brandTitle = brandTitle !==" " ? brandTitle : element.brandTitle;
-                brandTitleSub1 = brandTitleSub1 !==" " ? brandTitleSub1 : element.brandTitleSub1;
-                brandTitleSub1Content = brandTitleSub1Content !==" " ? brandTitleSub1Content : element.brandTitleSub1Content;
-                brandTitleSub2 = brandTitleSub2 !==" " ? brandTitleSub2 : element.brandTitleSub2;
-                brandTitleSub2Content = brandTitleSub2Content !==" " ? brandTitleSub2Content : element.brandTitleSub2Content;
-                brandTitleSub3 = brandTitleSub3 !==" " ? brandTitleSub3 : element.brandTitleSub3;
-                brandTitleSub3Content = brandTitleSub3Content !==" " ? brandTitleSub3Content : element.brandTitleSub3Content;
+                brandTitle = brandTitle !=="" ? brandTitle : element.brandTitle;
+                brandTitleSub1 = brandTitleSub1 !=="" ? brandTitleSub1 : element.brandTitleSub1;
+                brandTitleSub1Content = brandTitleSub1Content !=="" ? brandTitleSub1Content : element.brandTitleSub1Content;
+                brandTitleSub2 = brandTitleSub2 !=="" ? brandTitleSub2 : element.brandTitleSub2;
+                brandTitleSub2Content = brandTitleSub2Content !=="" ? brandTitleSub2Content : element.brandTitleSub2Content;
+                brandTitleSub3 = brandTitleSub3 !=="" ? brandTitleSub3 : element.brandTitleSub3;
+                brandTitleSub3Content = brandTitleSub3Content !=="" ? brandTitleSub3Content : element.brandTitleSub3Content;
                 brandImg = brandImg !==" " ? brandImg : element.brandImg;
             })
         }

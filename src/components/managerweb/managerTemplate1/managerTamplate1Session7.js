@@ -11,17 +11,17 @@ class Session7 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            qaEnable : ' ',
-            qa1Title : ' ',
-            qa1Content : ' ',
-            qa2Title : ' ',
-            qa2Content : ' ',
-            qa3Title : ' ',
-            qa3Content : ' ',
-            qa4Title : ' ',
-            qa4Content : ' ',
-            qa5Title : ' ',
-            qa5Content : ' ',
+            qaEnable : '',
+            qa1Title : '',
+            qa1Content : '',
+            qa2Title : '',
+            qa2Content : '',
+            qa3Title : '',
+            qa3Content : '',
+            qa4Title : '',
+            qa4Content : '',
+            qa5Title : '',
+            qa5Content : '',
             qaImg : ' ',
             qaImgUpload : '',
         };     
@@ -91,17 +91,17 @@ class Session7 extends React.Component{
         if(qaData && qaData.length > 0){
             actionType = 'modify';
             qaData.forEach(element => {
-                qaEnable = qaEnable  !==" " ? qaEnable : element.qaEnable;
-                qa1Title = qa1Title !==" " ? qa1Title : element.qa1Title;
-                qa1Content = qa1Content !==" " ? qa1Content : element.qa1Content;
-                qa2Title = qa2Title !==" " ? qa2Title : element.qa2Title;
-                qa2Content = qa2Content !==" " ? qa2Content : element.qa2Content;
-                qa3Title = qa3Title !==" " ? qa3Title : element.qa3Title;
-                qa3Content = qa3Content !==" " ? qa3Content : element.qa3Content;
-                qa4Title = qa4Title !==" " ? qa4Title : element.qa4Title;
-                qa4Content = qa4Content !==" " ? qa4Content : element.qa4Content;
-                qa5Title = qa5Title !==" " ? qa5Title : element.qa5Title;
-                qa5Content = qa5Content !==" " ? qa5Content : element.qa5Content;
+                qaEnable = qaEnable  !=="" ? qaEnable : element.qaEnable;
+                qa1Title = qa1Title !=="" ? qa1Title : element.qa1Title;
+                qa1Content = qa1Content !=="" ? qa1Content : element.qa1Content;
+                qa2Title = qa2Title !=="" ? qa2Title : element.qa2Title;
+                qa2Content = qa2Content !=="" ? qa2Content : element.qa2Content;
+                qa3Title = qa3Title !=="" ? qa3Title : element.qa3Title;
+                qa3Content = qa3Content !=="" ? qa3Content : element.qa3Content;
+                qa4Title = qa4Title !=="" ? qa4Title : element.qa4Title;
+                qa4Content = qa4Content !=="" ? qa4Content : element.qa4Content;
+                qa5Title = qa5Title !=="" ? qa5Title : element.qa5Title;
+                qa5Content = qa5Content !=="" ? qa5Content : element.qa5Content;
                 qaImg = qaImg !==" " ? qaImg : element.qaImg;
             })
         }

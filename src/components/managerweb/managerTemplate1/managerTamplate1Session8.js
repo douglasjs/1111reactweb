@@ -8,7 +8,7 @@ class Session8 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            contactEnable : ' ',
+            contactEnable : '',
             contactImg : ' ',
             contactImgUpload : '',
         };     
@@ -50,7 +50,7 @@ class Session8 extends React.Component{
         if(contactData && contactData.length > 0){
             actionType = 'modify';
             contactData.forEach(element => {
-                contactEnable = contactEnable !==" "  ? contactEnable : element.contactEnable;
+                contactEnable = contactEnable !==""  ? contactEnable : element.contactEnable;
                 contactImg = contactImg !==" " ? contactImg : element.contactImg;
             })
         }

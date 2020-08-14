@@ -11,7 +11,7 @@ class Session3 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            benefitContent: ' ',
+            benefitContent: '',
             benefitImg : ' ',
             benefitImgUpload : ''
         }
@@ -90,7 +90,7 @@ class Session3 extends React.Component{
         if(benefitData && benefitData.length > 0){
             actionType = 'modify';
             benefitData.forEach(element => {
-                benefitContent = benefitContent !==" " ? benefitContent : element.benefitContent;
+                benefitContent = benefitContent !=="" ? benefitContent : element.benefitContent;
                 benefitImg = benefitImg !==" " ? benefitImg : element.benefitImg;
             })
         }
