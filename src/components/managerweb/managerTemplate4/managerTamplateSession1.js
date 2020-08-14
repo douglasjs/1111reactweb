@@ -135,8 +135,8 @@ class Session1 extends React.Component{
                                            rows='4' stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='背景圖片' notice='(圖檔尺寸大小為 1800*1100 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
-                                            parentObj={this}  imgW={1800} imgH={1100} required={true}/> 
+                                        <ImgUpload title='背景圖片' notice='(圖檔尺寸大小為 1800*1060 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
+                                            parentObj={this}  imgW={1800} imgH={1060} required={true}/> 
                                     </div>
                                     
                                     <hr />
@@ -167,7 +167,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>背景圖</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>1800*1100</td>
+                                                <td>1800*1060</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
