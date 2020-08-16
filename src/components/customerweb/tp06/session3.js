@@ -49,14 +49,14 @@ class CompanyBenifit  extends React.Component {
 					<div className="container">
 						<div className="row">
 
-							<div className="lqd-column col-lg-6">
+							<div className="lqd-column col-lg-6 col-md-6">
 								<header className="fancy-title mb-35">
 									<h2 className="mt-0 mb-2 pr-md-5 text-left">員工福利</h2>
 									<p>{benefitContent}</p>
 								</header>
 							</div>
 							
-							<div className="lqd-column col-lg-6">
+							<div className="lqd-column col-lg-6 col-md-6">
 
 								<div className="testimonial testimonial-quote-filled text-left testimonial-details-lg testimonial-quote-shadowed">
 									
@@ -69,6 +69,9 @@ class CompanyBenifit  extends React.Component {
 								</div>
 
 							</div>
+						</div>
+
+						<div className="row">
 
 							<div className="lqd-column col-md-4">
 
@@ -118,7 +121,6 @@ class CompanyBenifit  extends React.Component {
 								</div>
 
 							</div>
-
 
 						</div>
 					</div>

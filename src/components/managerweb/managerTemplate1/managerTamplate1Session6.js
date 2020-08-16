@@ -11,40 +11,40 @@ class Session6 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            customizeEnable : ' ',
-            customizeName : ' ',
-            customizeTitle : ' ',
-            customizeSubTitle : ' ',
-            card1Title : ' ',
-            card1Content : ' ',
+            customizeEnable : '',
+            customizeName : '',
+            customizeTitle : '',
+            customizeSubTitle : '',
+            card1Title : '',
+            card1Content : '',
             card1Img : ' ',
             card1ImgUpload : '',
-            card2Title : ' ',
-            card2Content : ' ',
+            card2Title : '',
+            card2Content : '',
             card2Img : ' ',
             card2ImgUpload : '',
-            card3Title : ' ',
-            card3Content : ' ',
+            card3Title : '',
+            card3Content : '',
             card3Img : ' ',
             card3ImgUpload : '',
-            card4Title : ' ',
-            card4Content : ' ',
+            card4Title : '',
+            card4Content : '',
             card4Img : ' ',
             card4ImgUpload : '',
-            card5Title : ' ',
-            card5Content : ' ',
+            card5Title : '',
+            card5Content : '',
             card5Img : ' ',
             card5ImgUpload : '',
-            /*card6Title : ' ',
-            card6Content : ' ',
+            /*card6Title : '',
+            card6Content : '',
             card6Img : ' ',
             card6ImgUpload : '',
-            card7Title : ' ',
-            card7Content : ' ',
+            card7Title : '',
+            card7Content : '',
             card7Img : ' ',
             card7ImgUpload : '',
-            card8Title : ' ',
-            card8Content : ' ',
+            card8Title : '',
+            card8Content : '',
             card8Img : ' ',
             card8ImgUpload : ' '*/
         }
@@ -105,11 +105,6 @@ class Session6 extends React.Component{
             card8ImgUpload : null,
 
             /*
-            card5Title : '',
-            card5Content : '',
-            card5Img : '',
-            card5ImgUpload : null,
-
             card6Title : event.target.card6Title.value,
             card6Content : event.target.card6Content.value,
             card6Img : event.target.card6Img.value,
@@ -187,30 +182,30 @@ class Session6 extends React.Component{
         if(customizeData && customizeData.length > 0){
             actionType = 'modify';
             customizeData.forEach(element => {
-                customizeEnable = customizeEnable !==" " ? customizeEnable : element.customizeEnable;
-                customizeName = customizeName !==" " ? customizeName : element.customizeName;
-                customizeTitle = customizeTitle !==" " ? customizeTitle : element.customizeTitle;
-                customizeSubTitle = customizeSubTitle !==" " ? customizeSubTitle : element.customizeSubTitle;
+                customizeEnable = customizeEnable !=="" ? customizeEnable : element.customizeEnable;
+                customizeName = customizeName !=="" ? customizeName : element.customizeName;
+                customizeTitle = customizeTitle !=="" ? customizeTitle : element.customizeTitle;
+                customizeSubTitle = customizeSubTitle !=="" ? customizeSubTitle : element.customizeSubTitle;
 
-                card1Title = card1Title !==" " ? card1Title : element.card1Title;
-                card1Content = card1Content !==" " ? card1Content : element.card1Content;
+                card1Title = card1Title !=="" ? card1Title : element.card1Title;
+                card1Content = card1Content !=="" ? card1Content : element.card1Content;
                 card1Img = card1Img !==" " ? card1Img : element.card1Img;
 
-                card2Title = card2Title !==" " ? card2Title : element.card2Title;
-                card2Content = card2Content !==" " ? card2Content : element.card2Content;
+                card2Title = card2Title !=="" ? card2Title : element.card2Title;
+                card2Content = card2Content !=="" ? card2Content : element.card2Content;
                 card2Img = card2Img !==" " ? card2Img : element.card2Img;
 
-                card3Title = card3Title !==" " ? card3Title : element.card3Title;
-                card3Content = card3Content !==" " ? card3Content : element.card3Content;
+                card3Title = card3Title !=="" ? card3Title : element.card3Title;
+                card3Content = card3Content !=="" ? card3Content : element.card3Content;
                 card3Img = card3Img !==" " ? card3Img : element.card3Img;
 
-                card4Title = card4Title !==" " ? card4Title : element.card4Title;
-                card4Content = card4Content !==" " ? card4Content : element.card4Content;
+                card4Title = card4Title !=="" ? card4Title : element.card4Title;
+                card4Content = card4Content !=="" ? card4Content : element.card4Content;
                 card4Img = card4Img !==" " ? card4Img : element.card4Img;
 
                 
-                card5Title = card5Title !==" " ? card5Title : element.card5Title;
-                card5Content = card5Content !==" " ? card5Content : element.card5Content;
+                card5Title = card5Title !=="" ? card5Title : element.card5Title;
+                card5Content = card5Content !=="" ? card5Content : element.card5Content;
                 card5Img = card5Img !==" " ? card5Img : element.card5Img;
 /*
                 card6Title = card6Title !==" " ? card6Title : element.card6Title;
@@ -229,7 +224,7 @@ class Session6 extends React.Component{
         }
 
         // enable
-        customizeEnable = customizeEnable ===" " ? false : customizeEnable;
+        customizeEnable = customizeEnable ==="" ? false : customizeEnable;
         // image
         let card1ImgUpload ="";
         if(card1Img === ""){

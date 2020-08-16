@@ -16,7 +16,7 @@ const emptyCheck = (value, title, oldValue) => {
     if (value.length === 0){
         alert(title + '不可以空白');
         /*return oldValue;*/
-        return " ";
+        return "不可空白";
     }else{
         return value;
     }

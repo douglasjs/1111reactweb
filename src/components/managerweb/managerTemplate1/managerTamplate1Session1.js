@@ -10,9 +10,9 @@ class Session1 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            title: ' ',
-            companySubTitle1: ' ',
-            companySubTitle2: ' ',
+            title: '',
+            companySubTitle1: '',
+            companySubTitle2: '',
             companyBackgroundImg1: ' ',
             companyBackgroundImg1Upload:'',
             companyBackgroundImg2: ' ',
@@ -32,12 +32,12 @@ class Session1 extends React.Component{
         const cid = this.props.match.params.cid;
 
         if(event.target.title.value){
-            if(event.target.title.value ===' '){
+            if(event.target.title.value === ''){
                 return false;
             }
         }
         if(event.target.companySubTitle1.value){
-            if(event.target.companySubTitle1.value ===' '){
+            if(event.target.companySubTitle1.value === ''){
                 return false;
             }
         }
@@ -93,9 +93,9 @@ class Session1 extends React.Component{
         if(companyData && companyData.length > 0){
             actionType = 'modify';
             companyData.forEach(element => {
-                title = title !==" " ? title : element.title;
-                companySubTitle1 = companySubTitle1 !==" " ? companySubTitle1 : element.companySubTitle1;
-                companySubTitle2 = companySubTitle2 !==" " ? companySubTitle2 : element.companySubTitle2;
+                title = title !=="" ? title : element.title;
+                companySubTitle1 = companySubTitle1 !=="" ? companySubTitle1 : element.companySubTitle1;
+                companySubTitle2 = companySubTitle2 !=="" ? companySubTitle2 : element.companySubTitle2;
                 companyBackgroundImg1 = companyBackgroundImg1 !==" " ? companyBackgroundImg1 : element.companyBackgroundImg1;
                 companyBackgroundImg2 = companyBackgroundImg2 !==" " ? companyBackgroundImg2 : element.companyBackgroundImg2;
 

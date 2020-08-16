@@ -12750,7 +12750,8 @@ only screen and (min-width:768px) and (max-width:991.98px) {
 .testimonial-item h6,
 .service-area .icon-box-item p,
 .section-title p,
-.about-business-item.bg-brand .section-title h5 {
+.about-business-item.bg-brand .section-title h5,
+.tp06_benefit-subtitle h6 {
 	overflow: hidden;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
@@ -12781,7 +12782,8 @@ only screen and (min-width:768px) and (max-width:991.98px) {
 .section-title h5,
 .testimonial-item h6,
 .testimonial-item span,
-.about-business-item.bg-brand .section-title h5  {
+.about-business-item.bg-brand .section-title h5,
+.tp06_benefit-subtitle h6 {
 	-webkit-line-clamp: 1;
 }
 
