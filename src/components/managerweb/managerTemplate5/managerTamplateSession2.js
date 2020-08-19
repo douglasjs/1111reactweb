@@ -459,7 +459,7 @@ class Session2 extends React.Component{
                                     <a href="#collapseCard2-2" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard2-2">
                                         <div className="card-header text-white bg-primary">小標題二</div>
                                     </a>                                    
-                                    <div className="card-body collapse collapsed" id="collapseCard2-2">
+                                    <div className="card-body collapse show" id="collapseCard2-2">
                                         <div className="form-row">
 
                                             <div className="col-md-6 mb-3">
@@ -540,7 +540,7 @@ class Session2 extends React.Component{
                                     <a href="#collapseCard2-3" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard2-3">
                                         <div className="card-header text-white bg-primary">小標題三</div>
                                     </a>                                    
-                                    <div className="card-body collapse collapsed" id="collapseCard2-3">
+                                    <div className="card-body collapse show" id="collapseCard2-3">
                                         <div className="form-row">
 
                                             <div className="col-md-6 mb-3">

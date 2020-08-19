@@ -25,7 +25,7 @@ class Session2 extends React.Component{
 
     };
 
-    handleFileUpload = (name, stateName, uploadName) => event =>{
+    /*handleFileUpload = (name, stateName, uploadName) => event =>{
         const infoArea = document.getElementById(name);
         const input = event.target;
    
@@ -58,7 +58,7 @@ class Session2 extends React.Component{
                 };
             };
         }
-    }
+    }*/
 
     handleSubmit = (event) =>{
         event.preventDefault();

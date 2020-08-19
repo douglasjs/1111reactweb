@@ -227,28 +227,28 @@ class Session6 extends React.Component{
         customizeEnable = customizeEnable ==="" ? false : customizeEnable;
         // image
         let card1ImgUpload ="";
-        if(card1Img === ""){
+        if(card1Img === " "){
             card1ImgUpload = "/image/logo-1111.png";
         }else{
             card1ImgUpload = this.state.card1Img !==' ' ?  this.state.card1ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card1Img}`;
         }
 
         let card2ImgUpload ="";
-        if(card2Img === ""){
+        if(card2Img === " "){
             card2ImgUpload = "/image/logo-1111.png";
         }else{
             card2ImgUpload = this.state.card2Img !==' ' ?  this.state.card2ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card2Img}`;
         }
 
         let card3ImgUpload ="";
-        if(card3Img === ""){
+        if(card3Img === " "){
             card3ImgUpload = "/image/logo-1111.png";
         }else{
             card3ImgUpload = this.state.card3Img !==' ' ?  this.state.card3ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card3Img}`;
         }
 
         let card4ImgUpload ="";
-        if(card4Img === ""){
+        if(card4Img === " "){
             card4ImgUpload = "/image/logo-1111.png";
         }else{
             card4ImgUpload = this.state.card4Img !==' ' ?  this.state.card4ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card4Img}`;
@@ -256,7 +256,7 @@ class Session6 extends React.Component{
 
         
         let card5ImgUpload ="";
-        if(card5Img === ""){
+        if(card5Img === " "){
             card5ImgUpload = "/image/logo-1111.png";
         }else{
             card5ImgUpload = this.state.card5Img !==' ' ?  this.state.card5ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card5Img}`;
@@ -264,21 +264,21 @@ class Session6 extends React.Component{
         
         /*
         let card6ImgUpload ="";
-        if(card6Img === ""){
+        if(card6Img === " "){
             card6ImgUpload = "/image/logo-1111.png";
         }else{
             card6ImgUpload = this.state.card6Img !==' ' ?  this.state.card6ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card6Img}`;
         } 
 
         let card7ImgUpload ="";
-        if(card7Img === ""){
+        if(card7Img === " "){
             card7ImgUpload = "/image/logo-1111.png";
         }else{
             card7ImgUpload = this.state.card7Img !==' ' ?  this.state.card7ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card7Img}`;
         } 
 
         let card8ImgUpload ="";
-        if(card8Img === ""){
+        if(card8Img === " "){
             card8ImgUpload = "/image/logo-1111.png";
         }else{
             card8ImgUpload = this.state.card8Img !==' ' ?  this.state.card8ImgUpload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${card8Img}`;

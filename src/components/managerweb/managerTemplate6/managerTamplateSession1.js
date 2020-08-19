@@ -149,7 +149,7 @@ class Session1 extends React.Component{
                                         <tbody>                                            
                                             <tr>
                                                 <td>大標題</td>
-                                                <td align='left'></td>
+                                                <td align='left'>1111人力銀行</td>
                                                 <td>建議8個字以內</td>
                                                 <td>
                                                     不可空白<br />
@@ -158,7 +158,7 @@ class Session1 extends React.Component{
                                             </tr>
                                             <tr>
                                                 <td>副標題</td>
-                                                <td align='left'></td>
+                                                <td align='left'>找工作、找人才、找幸福企業</td>
                                                 <td>建議28個字以內</td>
                                                 <td>
                                                     不可空白<br />

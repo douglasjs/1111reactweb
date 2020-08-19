@@ -99,21 +99,21 @@ class Session1 extends React.Component{
 
         // image
         let companyBackgroundImg1Upload = "";
-        if(companyBackgroundImg1 === ""){
+        if(companyBackgroundImg1 === " "){
            companyBackgroundImg1Upload = "/image/logo-1111.png";
         }else{
            companyBackgroundImg1Upload = this.state.companyBackgroundImg1 !== ' ' ?  this.state.companyBackgroundImg1Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg1}`;
         }
 
         let companyBackgroundImg2Upload = "";
-        if(companyBackgroundImg2 === ""){
+        if(companyBackgroundImg2 === " "){
            companyBackgroundImg2Upload = "/image/logo-1111.png";
         }else{
            companyBackgroundImg2Upload = this.state.companyBackgroundImg2 !== ' ' ?  this.state.companyBackgroundImg2Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg2}`;
         }
 
         let companyBackgroundImg3Upload = "";
-        if(companyBackgroundImg3 === ""){
+        if(companyBackgroundImg3 === " "){
            companyBackgroundImg3Upload = "/image/logo-1111.png";
         }else{
            companyBackgroundImg3Upload = this.state.companyBackgroundImg3 !== ' ' ?  this.state.companyBackgroundImg3Upload.file : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg3}`;
