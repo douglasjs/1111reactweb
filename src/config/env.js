@@ -24,18 +24,16 @@ const envConfig = {
     WebAPI: 'http://benedik.ddns.net:8080/api'
 }
 
-
-
-/* Douglas 
-
-const server = "http://111.185.21.100:8080/api";
+/* Douglas */ 
+/*
+const server1= "https://localhost:44312/api";
+const server2= "http://benedik.ddns.net:8080/api";
 const envConfig = {
-    kind01API : server + '/GetApi',
-    kind00API : server + '/GetApi',
-    email: server +'/email',
-    WebAPI: server
-
-};*/
-
+    kind01API : server2 + '/GetApi',
+    kind00API : server2 + '/GetApi',
+    email: server2 +'/email',
+    WebAPI: server1
+};
+*/
 
 export default envConfig;

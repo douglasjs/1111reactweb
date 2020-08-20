@@ -14,8 +14,6 @@ function CustomerWeb(props) {
         '/assets/tp02/js/owl.js',
         '/assets/tp02/js/wow.js',
         '/assets/tp02/js/jquery.fancybox.js',
-        '/assets/tp02/js/appear.js',
-        '/assets/tp02/js/aos.js',
         '/assets/tp02/js/jquery.paroller.min.js',
         '/assets/tp02/js/script.js',
         '/assets/tp02/js/goTopButton.js',
