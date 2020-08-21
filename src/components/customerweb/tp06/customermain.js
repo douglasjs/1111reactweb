@@ -35,6 +35,7 @@ function CustomerMain(props){
             let webURL = "https://1111.com.tw";
             let styleType ="blue.css";
             let goButtonURL = "https://1111.com.tw";
+            const endpoint = "\\#c4";
 
             if(data && data.length > 0){
                 webTitle = data[0].title;
@@ -48,8 +49,9 @@ function CustomerMain(props){
                 logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
                 webURL = `https://1111.com.tw/brand/${cid}/${data[0].companyEName}`;
                 styleType = data[0].styleType;
-                goButtonURL = `https://www.1111.com.tw/corp/${cid}/#c4`
+                goButtonURL = `https://www.1111.com.tw/corp/${cid}/${endpoint}`;
             }
+         
 
             return (
                 <main id="content" className="content">

@@ -9,7 +9,6 @@ function CustomerWeb(props) {
 
     const URL = [
         '/assets/tp06/vendors/modernizr.min.js',
-        '/assets/tp06/vendors/jquery.min.js',
         '/assets/tp06/js/theme-vendors.js',
         '/assets/tp06/js/theme.min.js',
         '/assets/tp06/js/liquidAjaxContactForm.min.js',
