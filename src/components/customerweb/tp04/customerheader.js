@@ -116,7 +116,7 @@ function CustomerHeader(props) {
 				<div className="megamenu-hover-bg"></div>
 				<div className="container-fluid mainbar-container">
 					<div className="mainbar">
-						<div className="row mainbar-row align-items-lg-stretch px-4">
+						<div className="row mainbar-row align-items-lg-stretch px-4 tp04_mobile_navfontsize">
 							
                             <NavBar logURL={logURL} logoURL={logoURL}/>
 							<NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />

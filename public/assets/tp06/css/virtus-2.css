@@ -215,6 +215,10 @@ h6 {
   .tp06_banner_title-pt {
     padding-top: 0;
   }
+
+  .tp06_mobile_navfontsize span{
+    font-size: 18px !important;
+  }
 }
 
 @media screen and (max-width: 1199px){

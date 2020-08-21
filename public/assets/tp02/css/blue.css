@@ -1395,7 +1395,7 @@ width: 100%;
   position: relative;
   max-width: none;
   float: left;
-  box-shadow: 0 23px 50px rgba(176,176,176,.35);
+  /*box-shadow: 0 23px 50px rgba(176,176,176,.35);*/
 }
 
 

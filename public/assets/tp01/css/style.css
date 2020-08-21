@@ -766,6 +766,10 @@ h6 {
   .pt-30_percent{
     padding-top: 10%;
   }
+  
+  .tp01_mobile_navfontsize span{
+    font-size: 18px !important;
+  }
 }
 
 @media screen and (min-width: 1300px){
@@ -788,6 +792,11 @@ h6 {
 
   .tp01_brand_title_line, .tp01_custom_subtitle_line {
     -webkit-line-clamp: 2;
+  }
+
+  .tp01_logo_height img{
+    width: 60%;
+    float: left;
   }
 }
 
@@ -822,9 +831,5 @@ h6 {
   .tp01_s5_subtitle_height {
     height: 80px;
     line-height: 30px !important;
-  }
-
-  .tp01_logo_height img{
-    height: 32px;
   }
 }

@@ -105,7 +105,7 @@ function CustomerHeader(props) {
                 <div className="mainbar-wrap">
                 <div className="container mainbar-container">
                     <div className="mainbar">
-                        <div className="row mainbar-row align-items-lg-stretch">
+                        <div className="row mainbar-row align-items-lg-stretch tp01_mobile_navfontsize">
                             <div className="col">
                                 <NavBar logURL={logURL} logoURL={logoURL}/>
                             </div>

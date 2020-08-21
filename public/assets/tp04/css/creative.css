@@ -230,6 +230,10 @@ h6 {
     width: 100px;
     height: 100px;
   }
+
+  .tp04_mobile_navfontsize span{
+    font-size: 18px !important;
+  }
 }
 
 .top-link img {
