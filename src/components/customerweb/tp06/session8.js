@@ -92,7 +92,7 @@ class CompanyContact extends React.Component {
 								<div className="lqd-column col-md-6 col-md-offset-1">
 
 									<header className="fancy-title">
-										<h2 className="text-left">聯絡我們</h2>
+										<h2 className="text-left tp06-title-font-size">聯絡我們</h2>
 										<p>We are here to answer any question you may have</p>
 										{/*<p>{emailMsg}</p>*/}
 									</header>

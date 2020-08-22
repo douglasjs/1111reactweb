@@ -7973,7 +7973,9 @@ only screen and (min-width:1200px) and (max-width:1599.98px) {
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s;
-	font-weight: 700;
+    font-weight: 700;
+    line-height: 30px;
+    height: 30px;
 }
 
 .accordion .card-header h4:hover,
@@ -12773,7 +12775,6 @@ only screen and (min-width:768px) and (max-width:991.98px) {
 }
 
 .tp-parallax-wrap h4,
-.accordion .card-header h4,
 .service-item__txt h2,
 .gallery-banner-item h5,
 .testimonial-item h5,
@@ -12784,6 +12785,7 @@ only screen and (min-width:768px) and (max-width:991.98px) {
 
 .section-title h4,
 .section-title h5,
+.accordion .card-header h4,
 .testimonial-item h6,
 .testimonial-item span,
 .about-business-item.bg-brand .section-title h5,

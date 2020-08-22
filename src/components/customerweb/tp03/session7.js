@@ -61,7 +61,7 @@ class CompanyQA extends React.Component {
                                 <div className="accordion mt-lg-0 my-4 my-md-5" id="accordionFaq">
                                     <div className="card text-left">
                                         <div className="card-header">
-                                            <h4 className="tp03_qatitle_height" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">{qa1Title}</h4>
+                                            <h4 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">{qa1Title}</h4>
                                         </div>
                                         <div id="collapseOne" className="collapse show" data-parent="#accordionFaq">
                                             <div className="card-body">
@@ -71,7 +71,7 @@ class CompanyQA extends React.Component {
                                     </div>
                                     <div className="card text-left">
                                         <div className="card-header">
-                                            <h4 className="tp03_qatitle_height" data-toggle="collapse" data-target="#collapseTwo">{qa2Title}</h4>
+                                            <h4 data-toggle="collapse" data-target="#collapseTwo">{qa2Title}</h4>
                                         </div>
                                         <div id="collapseTwo" className="collapse" data-parent="#accordionFaq">
                                             <div className="card-body">
@@ -81,7 +81,7 @@ class CompanyQA extends React.Component {
                                     </div>
                                     <div className="card text-left">
                                         <div className="card-header">
-                                            <h4 className="tp03_qatitle_height" data-toggle="collapse" data-target="#collapseThree">{qa3Title}</h4>
+                                            <h4 data-toggle="collapse" data-target="#collapseThree">{qa3Title}</h4>
                                         </div>
                                         <div id="collapseThree" className="collapse" data-parent="#accordionFaq">
                                             <div className="card-body">
