@@ -21,7 +21,8 @@ class CompanyInfo extends React.Component{
         let introMainContent;
         let introSubTitle1;
 		let introSubTitle1Img;
-		let companyurl = `https://www.1111.com.tw/corp/${cid}/#c4`;
+		const endpoint = "\\#c4";
+		let companyurl = `https://www.1111.com.tw/corp/${cid}/${endpoint}`;
 
         if(introductionData && introductionData.length > 0){
             introductionData.forEach(element => {
@@ -65,7 +66,7 @@ class CompanyInfo extends React.Component{
 							<div className="lqd-column col-md-6 pl-md-6 pr-md-7 text-justify">
 
 								<header className="fancy-title mb-15">
-									<h2 className="mt-0 tp06_line-1">{introTitle}</h2>
+									<h2 className="mt-0 tp06_line-1 tp06-title-font-size">{introTitle}</h2>
 									<p className="text-justify">{introMainContent}</p>
 								</header>
 

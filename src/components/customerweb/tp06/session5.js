@@ -20,7 +20,8 @@ class CompanyBrand extends React.Component {
 		let brandTitleSub1Content;
 		let brandURL1;
 		let brandURL2;
-		let companyurl = `https://www.1111.com.tw/corp/${cid}/#c4`;
+		const endpoint = "\\#c4";
+		let companyurl = `https://www.1111.com.tw/corp/${cid}/${endpoint}`;
 
         if(brandData && brandData.length > 0){
             brandData.forEach(element => {
@@ -43,7 +44,7 @@ class CompanyBrand extends React.Component {
 							<div className="lqd-column col-md-6 pl-md-6 pr-md-7 text-left">
 
 								<header className="fancy-title mb-15">
-									<h2 className="mt-0 mb-2 pr-md-5 tp06_line-2">{brandTitle}</h2>
+									<h2 className="mt-0 mb-2 pr-md-5 tp06_line-2 tp06-title-font-size">{brandTitle}</h2>
 									<p className="text-justify">{brandTitleSub1Content}</p>
 								</header>
 

@@ -45,7 +45,7 @@ class CompanyQA extends React.Component {
 							<div className="lqd-column m-3">
 
 								<header className="fancy-heading pb-2">
-									<h2>常見問題</h2>
+									<h2 className="tp06-title-font-size">常見問題</h2>
 								</header>
 
 								<div className="accordion accordion-tall accordion-body-underlined accordion-expander-lg accordion-active-color-primary" id="accordion-2" role="tablist">

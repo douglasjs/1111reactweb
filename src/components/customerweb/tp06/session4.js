@@ -17,7 +17,8 @@ class CompanyJobs extends React.Component {
         const { positionData } = this.props.positionReducer;
 
 		let imgURL = "url(../../../image/tp06/jobs_bg-1.jpg)";
-		let companyurl = `https://www.1111.com.tw/corp/${cid}/#c4`;
+		const endpoint = "\\#c4";
+		let companyurl = `https://www.1111.com.tw/corp/${cid}/${endpoint}`;
 
 		return (
 			
@@ -30,7 +31,7 @@ class CompanyJobs extends React.Component {
 							<div className="lqd-column col-md-6 col-md-offset-3">
 
 								<header className="fancy-title mb-20 text-center">
-									<h2>職缺介紹</h2>
+									<h2 className="tp06-title-font-size">職缺介紹</h2>
 								</header>
 
 							</div>
@@ -90,7 +91,7 @@ class CompanyJobs extends React.Component {
 						
 						</div>
 							
-								<a href={companyurl} className="mt-40 btn btn-sm btn-solid round lh-15 px-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+								<a href={companyurl} target='_blank' rel='noopener noreferrer' className="mt-40 btn btn-sm btn-solid round lh-15 px-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
 									<span>
 										<span className="btn-txt">所有職缺</span>
 									</span>

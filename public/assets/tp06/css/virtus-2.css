@@ -263,6 +263,10 @@ h6 {
 }
 
 @media screen and (max-width: 400px) {
+  .tp06-title-font-size {
+    font-size: 24px !important;
+  }
+
   .tp06_logo_height img {
     height: 32px;
   }
