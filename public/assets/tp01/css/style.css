@@ -738,7 +738,7 @@ h6 {
 }
 
 .tp01_s5_subtitle_height {
-  height: 75px;
+  height: 60px;
   line-height: 50px !important;
 }
 
@@ -790,7 +790,7 @@ h6 {
     margin-bottom: 0px;
   }
 
-  .tp01_brand_title_line, .tp01_custom_subtitle_line {
+  /*.tp01_brand_title_line,*/ .tp01_custom_subtitle_line {
     -webkit-line-clamp: 2;
   }
 
@@ -816,7 +816,7 @@ h6 {
     height: 300px;
   }
 
-  .tp01_imgword_line, .tp01_brand_title_line {
+  .tp01_imgword_line/*, .tp01_brand_title_line*/ {
     -webkit-line-clamp: 2;
   }
 
@@ -829,7 +829,7 @@ h6 {
   }
 
   .tp01_s5_subtitle_height {
-    height: 80px;
+    height: 50px;
     line-height: 30px !important;
   }
 }
