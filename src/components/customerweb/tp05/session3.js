@@ -94,7 +94,7 @@ class CompanyBenifit  extends React.Component {
 
                                     <ul className="features-list">
 
-                                        <li className="tp05_line-2">
+                                        <li className="tp05_line-2 tp05_benefit_icon_min-height">
                                             <div className="icon tp05_benefit_icon_wh_60">
                                                 <i className="flaticon-like tp05_benefit_icon_w_full"></i>
                                             </div>
@@ -102,7 +102,7 @@ class CompanyBenifit  extends React.Component {
                                             {benefitSubContent1}
                                         </li>
 
-                                        <li className="tp05_line-2">
+                                        <li className="tp05_line-2 tp05_benefit_icon_min-height">
                                             <div className="icon tp05_benefit_icon_wh_60">
                                                 <i className="flaticon-customer-service tp05_benefit_icon_w_full"></i>
                                             </div>
@@ -110,7 +110,7 @@ class CompanyBenifit  extends React.Component {
                                             {benefitSubContent2}
                                         </li>
 
-                                        <li className="tp05_line-2">
+                                        <li className="tp05_line-2 tp05_benefit_icon_min-height">
                                             <div className="icon tp05_benefit_icon_wh_60">
                                                 <i className="flaticon-care tp05_benefit_icon_w_full"></i>
                                             </div>
@@ -119,7 +119,7 @@ class CompanyBenifit  extends React.Component {
                                             
                                         </li>
 
-                                        <li className="tp05_line-2">
+                                        <li className="tp05_line-2 tp05_benefit_icon_min-height">
                                             <div className="icon tp05_benefit_icon_wh_60">
                                                 <i className="flaticon-team tp05_benefit_icon_w_full"></i>
                                             </div>
@@ -127,7 +127,7 @@ class CompanyBenifit  extends React.Component {
                                             {benefitSubContent4}
                                         </li>
 
-                                        <li className="tp05_line-2">
+                                        <li className="tp05_line-2 tp05_benefit_icon_min-height">
                                             <div className="icon tp05_benefit_icon_wh_60">
                                                 <i className="flaticon-policy pl-10 tp05_benefit_icon_w_full" ></i>
                                             </div>
@@ -135,7 +135,7 @@ class CompanyBenifit  extends React.Component {
                                             {benefitSubContent5}
                                         </li>
 
-                                        <li className="tp05_line-2">
+                                        <li className="tp05_line-2 tp05_benefit_icon_min-height">
                                             <div className="icon tp05_benefit_icon_wh_60">
                                                 <i className="flaticon-education tp05_benefit_icon_w_full"></i>
                                             </div>

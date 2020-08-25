@@ -2189,11 +2189,14 @@
 }
 
 /* card height */
-
 .card_height {
   height: 60px;
 }
 
+/* benefit min-height */
+.tp05_benefit_icon_min-height {
+  min-height: 100px;
+}
 
 @media only screen and (max-width: 400px) {
   .card_height {
