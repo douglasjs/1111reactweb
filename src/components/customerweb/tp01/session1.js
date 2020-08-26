@@ -1,5 +1,7 @@
 ﻿import React from 'react';
 import envConfig from '../../../config/env';
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
 
 class CompanyTitle extends React.Component{
 
@@ -37,57 +39,55 @@ class CompanyTitle extends React.Component{
         // image
         companyBackgroundImg1 = !companyBackgroundImg1 ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg1}`;
         companyBackgroundImg2 = !companyBackgroundImg2 ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg2}`;
-        const imageData = `{"delay":3000,"effect":"scale","imageArray":["${companyBackgroundImg1}","${companyBackgroundImg2}"]}`;
+       // const imageData = `{"delay":3000,"effect":"scale","imageArray":["${companyBackgroundImg1}","${companyBackgroundImg2}"]}`;
+        const image2Arry= [companyBackgroundImg1,companyBackgroundImg2,companyBackgroundImg1,companyBackgroundImg2]
 
         return (
             <section>
-            {companyData && companyData.length > 0 &&
-            <div
-                className="vc_row tp01_s1_min-height d-flex flex-wrap align-items-end"
-                data-parallax="true"
-                data-parallax-options='{"parallaxBG":true}'
-                data-slideshow-bg="true"
-                data-slideshow-options={imageData}
-            >
-                
-    
-                <span className="row-bg-loader">
-                    <span className="row-bg-loader-inner"></span>
-                </span>
-    
-                <div className="container">
-                    <div className="row">
-    
-                        <div className="lqd-column col-md-10 col-md-offset-1 text-center py-7" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":31,"translateZ":-108,"opacity":0},"animations":{"translateY":0,"translateZ":0,"opacity":1}}'>
-    
-                            <header className="fancy-title">
-                                 <h6 className="text-white lh-15 mb-4"><span className="font-size-3-3x lh-1 font-weight-bold text-shodow tp01_line-1">{title}</span></h6>
-    
+
+            <Slider className="vc_row tp01_s1_min-height d-flex flex-wrap" autoplay={3000} previousButton='' nextButton='' touchDisabled={false} disabled={false}>
+                    {image2Arry.map((item, index) => (
+                        <div
+                            key={index}
+                            style={{ background: `url('${item}') no-repeat center center` }}
+                        >
+
+                            <div className="container">
                                 <div className="row">
-                                    <div className="lqd-column col-md-8 col-md-offset-2">
-    
-                                         <p className="text-white text-shodow font-size-24 mb-1 tp01_line-2">{companySubTitle1}</p>
-    
+                
+                                    <div className="lqd-column col-md-10 col-md-offset-1 text-center pt-30_percent" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":31,"translateZ":-108,"opacity":0},"animations":{"translateY":0,"translateZ":0,"opacity":1}}'>
+                
+                                        <header className="fancy-title pt-3">
+                                            <h6 className="text-white lh-15 mb-4"><span className="font-size-3-3x lh-1 font-weight-bold text-shodow tp01_line-1">{title}</span></h6>
+                
+                                            <div className="row">
+                                                <div className="lqd-column col-md-8 col-md-offset-2">
+                
+                                                    <p className="text-white text-shodow font-size-24 mb-1 tp01_line-1">{companySubTitle1}</p>
+                
+                                                </div>
+                                            </div>
+                
+                                            <h6 className="text-uppercase font-weight-bold ltr-sp-2 text-white text-shodow mb-0 tp01_line-1">{companySubTitle2}</h6>
+                
+                                        </header>
+                
+                                        <a href={companyurl} target='_blank' rel="noopener noreferrer" className="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-18 font-weight-bold ltr-sp-05 px-2 bg-hover-white text-hover-primary mb-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+                                            <span>
+                                                <span className="btn-txt">我要應徵</span>
+                                            </span>
+                                        </a>
+                
                                     </div>
+                
                                 </div>
-    
-                                <h6 className="text-uppercase font-weight-bold ltr-sp-2 text-white text-shodow mb-5 tp01_line-1">{companySubTitle2}</h6>
-    
-                            </header>
-    
-                            <a href={companyurl} target='_blank' rel="noopener noreferrer" className="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-18 font-weight-bold ltr-sp-05 px-2 bg-hover-white text-hover-primary mb-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
-                                <span>
-                                    <span className="btn-txt">我要應徵</span>
-                                </span>
-                            </a>
-    
+                            </div>
+
                         </div>
-    
-                    </div>
-                </div>
-            
-            </div>
-            }
+
+
+                    ))}
+            </Slider>
             </section>   
         )
     }
