@@ -9,13 +9,14 @@ function createArray( preName, psotName , number, thatState){
 }
 
 function strNumLimite( str, number ){
-    return str.substring(0,str.length-1 > number ? number-1: str.length-1 );
+    return str.substring(0,str.length-1 > number ? number: str.length-1 );
 }
 
 const emptyCheck = (value, title, oldValue) => {
     if (value.length === 0){
         alert(title + '不可以空白');
-        return oldValue;
+        /*return oldValue;*/
+        return "不可空白";
     }else{
         return value;
     }
@@ -31,4 +32,30 @@ const numCheck = (value, num , title) =>{
     }
 }
 
-export {createArray, strNumLimite, emptyCheck, numCheck};
+
+const newArryMaker = (dataType, dataArry) =>{
+
+    let newArry = [];
+
+    switch(dataType){
+
+        case "city":  
+            dataArry.forEach( element => {
+                newArry.push(element.WorkCity);
+            });
+            newArry = [...new Set(newArry)];
+            break;
+
+        case "duty":
+            dataArry.forEach( element => {
+                if(!newArry.some( arrayElement => arrayElement.DutyNo === element.DutyArr[0].DutyNo)){
+                    newArry.push(element.DutyArr[0]);
+                }
+            });
+            break;
+        default:
+    }
+    return newArry;
+}
+
+export {createArray, strNumLimite, emptyCheck, numCheck, newArryMaker};

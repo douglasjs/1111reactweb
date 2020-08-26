@@ -4,10 +4,11 @@ import validation from '../../sharecomponents/validation';
 
 class CompanyContact extends React.Component {
 
+
     constructor(props){
         super(props);
         this.state={
-           sentMail: true,
+           sentMail: false,
            custName: "",
            custMobile: "",
            custMsg: "",
@@ -15,6 +16,8 @@ class CompanyContact extends React.Component {
         };
         this.emailInput = React.createRef();
         this.phoneInput = React.createRef();
+        this.custName = React.createRef();
+        this.custMsg = React.createRef();
     }
 
     componentDidMount(){
@@ -36,20 +39,12 @@ class CompanyContact extends React.Component {
         const { data } = this.props.datatableReducer;
         const { kind01_data } = this.props.kind01Reducer;
         
-
-        if(validation('custMail', this.state.custMail)!==""){
-            alert(validation('custMail', this.state.custMail));
-            this.emailInput.current.focus();
-            return;
-        }
-
-        if(validation('custMobile', this.state.custMobile)!==""){
-            alert(validation('custMobile', this.state.custMobile));
-            this.phoneInput.current.focus();
-            return;
-        }
-
-        if(data && data.length > 0){
+        this.setState({...this.state, sentMail : false});
+        if( validation('custName', this.state.custName,this) 
+            && validation('custMail', this.state.custMail,this) 
+            && validation('custMobile', this.state.custMobile,this) 
+            && validation('custMsg', this.state.custMsg,this) 
+            && data && data.length > 0){
             const emailObj = {
                 oNo: this.props.match.params.cid.trim(),
                 kind: "2",
@@ -61,12 +56,15 @@ class CompanyContact extends React.Component {
                 custMsg: this.state.custMsg,
                 custMail: this.state.custMail
             }
-            this.props.getEmail(emailObj);
-            this.setState({...this.state, sentMail : false});
+           
+            let promise = new Promise((resolve) => {
+                this.setState({...this.state, sentMail : true});
+            });
+            promise.then( (val) => console.log("asynchronous logging has val:",val) );
+            this.props.getEmail(emailObj, this);
         }
-
+        
     }
-
 
     render(){
         //const cid = this.props.match.params.cid.trim();
@@ -102,7 +100,7 @@ class CompanyContact extends React.Component {
                             <div className="row">
                                 <div className="col-lg-6 col-md-6">
                                     <div className="form-group">
-                                        <input type="text" name="name" id="name" className="form-control" required data-error="Please enter your name" placeholder="姓名" onChange={this.handleChange('custName')} value={this.state.custName} />
+                                        <input type="text" name="name" id="name" className="form-control" required data-error="Please enter your name" placeholder="姓名" onChange={this.handleChange('custName')} value={this.state.custName}  ref={this.custName}/>
                                         <div className="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -123,14 +121,14 @@ class CompanyContact extends React.Component {
 
                                 <div className="col-lg-12 col-md-12">
                                     <div className="form-group">
-                                        <textarea name="message" className="form-control" id="message" cols="30" rows="6" required data-error="Write your message" placeholder="訊息" onChange={this.handleChange('custMsg')} value={this.state.custMsg} ></textarea>
+                                        <textarea name="message" className="form-control" id="message" cols="30" rows="6" required data-error="Write your message" placeholder="訊息" onChange={this.handleChange('custMsg')} value={this.state.custMsg}  ref={this.custMsg}></textarea>
                                         <div className="help-block with-errors"></div>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-12 col-md-12">
                                     {/*<button type="submit" className="default-btn" onClick={this.habdleSubmit}> 送出 <span></span></button>*/}
-                                    <input className="default-btn" type="submit" value="送出" onClick={this.habdleSubmit} />
+                                    <input className="default-btn tp05_hover-btn" type="submit" value="送出" onClick={this.habdleSubmit}  disabled={this.state.sentMail}/>
                                     <div className="clearfix"></div>
                                 </div>
                             </div>

@@ -85,7 +85,7 @@ class CompanyCustomize extends React.Component {
 							<div className="lqd-column col-md-6 col-md-offset-3 text-center mb-10">
 
 								<header className="fancy-heading px-md-5">
-									<h2>{customizeTitle}</h2>
+									<h2 className="tp06_s6_title tp06-title-font-size">{customizeTitle}</h2>
 									<p>{customizeSubTitle}</p>
 								</header>
 
@@ -107,9 +107,9 @@ class CompanyCustomize extends React.Component {
 													<div className="ld-pf-bg bg-primary opacity-09"></div>
 													<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 80, "duration": 650, "delay": 150, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
 														<div className="ld-pf-details-inner">
-															<h3 className="ld-pf-title h4 font-size-19 text-uppercase" data-split-text="true" data-split-options='{ "type": "lines" }'>{card1Title}</h3>
+															<h3 className="ld-pf-title h4 font-size-19 text-uppercase tp06_line-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card1Title}</h3>
 															<div className="ld-pf-category size-sm">
-																<a href={companyurl} target='_blank' rel='noopener noreferrer' className="text-uppercase ltr-sp-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card1Content}</a>
+																<a href={companyurl} target='_blank' rel='noopener noreferrer' className="text-uppercase ltr-sp-1 tp06_line-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card1Content}</a>
 															</div>
 														</div>
 													</div>
@@ -129,9 +129,9 @@ class CompanyCustomize extends React.Component {
 													<div className="ld-pf-bg bg-primary opacity-09"></div>
 													<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 80, "duration": 650, "delay": 150, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
 														<div className="ld-pf-details-inner">
-															<h3 className="ld-pf-title h4 font-size-19 text-uppercase" data-split-text="true" data-split-options='{ "type": "lines" }'>{card2Title}</h3>
+															<h3 className="ld-pf-title h4 font-size-19 text-uppercase tp06_line-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card2Title}</h3>
 															<div className="ld-pf-category size-sm">
-																<a href={companyurl} target='_blank' rel='noopener noreferrer' className="text-uppercase ltr-sp-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card2Content}</a>
+																<a href={companyurl} target='_blank' rel='noopener noreferrer' className="text-uppercase ltr-sp-1 tp06_line-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card2Content}</a>
 															</div>
 														</div>
 													</div>
@@ -151,9 +151,9 @@ class CompanyCustomize extends React.Component {
 													<div className="ld-pf-bg bg-primary opacity-09"></div>
 													<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 80, "duration": 650, "delay": 150, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
 														<div className="ld-pf-details-inner">
-															<h3 className="ld-pf-title h4 font-size-19 text-uppercase" data-split-text="true" data-split-options='{ "type": "lines" }'>{card3Title}</h3>
+															<h3 className="ld-pf-title h4 font-size-19 text-uppercase tp06_line-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card3Title}</h3>
 															<div className="ld-pf-category size-sm">
-																<a href={companyurl} target='_blank' rel='noopener noreferrer' className="text-uppercase ltr-sp-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card3Content}</a>
+																<a href={companyurl} target='_blank' rel='noopener noreferrer' className="text-uppercase ltr-sp-1 tp06_line-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card3Content}</a>
 															</div>
 														</div>
 													</div>
@@ -173,9 +173,9 @@ class CompanyCustomize extends React.Component {
 													<div className="ld-pf-bg bg-primary opacity-09"></div>
 													<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 80, "duration": 650, "delay": 150, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
 														<div className="ld-pf-details-inner">
-															<h3 className="ld-pf-title h4 font-size-19 text-uppercase" data-split-text="true" data-split-options='{ "type": "lines" }'>{card4Title}</h3>
+															<h3 className="ld-pf-title h4 font-size-19 text-uppercase tp06_line-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card4Title}</h3>
 															<div className="ld-pf-category size-sm">
-																<a href={companyurl} target='_blank' rel='noopener noreferrer' className="text-uppercase ltr-sp-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card4Content}</a>
+																<a href={companyurl} target='_blank' rel='noopener noreferrer' className="text-uppercase ltr-sp-1 tp06_line-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card4Content}</a>
 															</div>
 														</div>
 													</div>
@@ -195,9 +195,9 @@ class CompanyCustomize extends React.Component {
 													<div className="ld-pf-bg bg-primary opacity-09"></div>
 													<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 80, "duration": 650, "delay": 150, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
 														<div className="ld-pf-details-inner">
-															<h3 className="ld-pf-title h4 font-size-19 text-uppercase" data-split-text="true" data-split-options='{ "type": "lines" }'>{card5Title}</h3>
+															<h3 className="ld-pf-title h4 font-size-19 text-uppercase tp06_line-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card5Title}</h3>
 															<div className="ld-pf-category size-sm">
-																<a href={companyurl} target='_blank' rel='noopener noreferrer' className="text-uppercase ltr-sp-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card5Content}</a>
+																<a href={companyurl} target='_blank' rel='noopener noreferrer' className="text-uppercase ltr-sp-1 tp06_line-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card5Content}</a>
 															</div>
 														</div>
 													</div>
@@ -217,9 +217,9 @@ class CompanyCustomize extends React.Component {
 													<div className="ld-pf-bg bg-primary opacity-09"></div>
 													<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 80, "duration": 650, "delay": 150, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
 														<div className="ld-pf-details-inner">
-															<h3 className="ld-pf-title h4 font-size-19 text-uppercase" data-split-text="true" data-split-options='{ "type": "lines" }'>{card6Title}</h3>
+															<h3 className="ld-pf-title h4 font-size-19 text-uppercase tp06_line-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card6Title}</h3>
 															<div className="ld-pf-category size-sm">
-																<a href={companyurl} target='_blank' rel='noopener noreferrer' className="text-uppercase ltr-sp-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card6Content}</a>
+																<a href={companyurl} target='_blank' rel='noopener noreferrer' className="text-uppercase ltr-sp-1 tp06_line-1" data-split-text="true" data-split-options='{ "type": "lines" }'>{card6Content}</a>
 															</div>
 														</div>
 													</div>

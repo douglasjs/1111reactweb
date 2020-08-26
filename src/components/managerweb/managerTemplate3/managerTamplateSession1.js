@@ -142,28 +142,28 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題 1' notice='(字數限制為4個字以內)' inputName='title' inputState={title}
-                                           stateObj={this} required={true} checkValue='4' />
+                                        <InputText title='大標題 1' notice='(建議字數為4個字以內)' inputName='title' inputState={title}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題 2' notice='(字數限制為4個字以內)' inputName='title2' inputState={title2}
-                                           stateObj={this} required={true} checkValue='4' />
+                                        <InputText title='大標題 2' notice='(建議字數為4個字以內)' inputName='title2' inputState={title2}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題 3' notice='(字數限制為4個字以內)' inputName='title3' inputState={title3}
-                                           stateObj={this} required={true} checkValue='4' />
+                                        <InputText title='大標題 3' notice='(建議字數為4個字以內)' inputName='title3' inputState={title3}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 1' notice='(字數限制為18個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           rows='2' stateObj={this} required={true} checkValue='18' />
+                                        <InputTextArea title='副標題 1' notice='(建議字數為18個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           rows='2' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 2' notice='(字數限制為18個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
-                                           rows='2' stateObj={this} required={true} checkValue='18' />
+                                        <InputTextArea title='副標題 2' notice='(建議字數為18個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
+                                           rows='2' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 3' notice='(字數限制為18個字以內)' inputName='companySubTitle3' inputState={companySubTitle3}
-                                           rows='2' stateObj={this} required={true} checkValue='18' />
+                                        <InputTextArea title='副標題 3' notice='(建議字數為18個字以內)' inputName='companySubTitle3' inputState={companySubTitle3}
+                                           rows='2' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='背景圖片 1' notice='(圖檔尺寸大小為 1920*1000 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
@@ -217,37 +217,37 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>大標題1</td>
                                                 <td align='left'>全面徵才</td>
-                                                <td>4個字以內</td>
+                                                <td>建議4個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>大標題2</td>
                                                 <td align='left'>有情</td>
-                                                <td>4個字以內</td>
+                                                <td>建議4個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>大標題3</td>
                                                 <td align='left'>新的開始</td>
-                                                <td>4個字以內</td>
+                                                <td>建議4個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>副標題1</td>
                                                 <td align='left'>全職、兼職、打工、實習等多元工作機會</td>
-                                                <td>18個字以內</td>
+                                                <td>建議18個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>副標題2</td>
                                                 <td align='left'>支持陪伴 珍惜每位夥伴的聲音</td>
-                                                <td>18個字以內</td>
+                                                <td>建議18個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>副標題3</td>
                                                 <td align='left'>京典臻品 JD Classic集團歡迎您的加入</td>
-                                                <td>18個字以內</td>
+                                                <td>建議18個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                         </tbody>                                        

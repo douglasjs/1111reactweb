@@ -67,7 +67,7 @@ class managerGeneralSetting extends React.Component{
                 img.src=reader.result;
 
                 img.onload = function() {
-                   if(img.width > 104 || img.height > 32){
+                   if(img.width > 260 || img.height > 80){
                        alert('上傳圖片尺寸不合');
                        return false;
                    }else{
@@ -177,6 +177,18 @@ class managerGeneralSetting extends React.Component{
     sampleMapping = (samplemap) =>{
 
         switch(samplemap){
+            case "tp01":
+                return "tp01blue.png";
+            case "tp02":
+                return "tp02blue.png";
+            case "tp03":
+                return "tp03blue.png";
+            case "tp04":
+                return "tp04blue.png";
+            case "tp05":
+                return "tp05blue.png";
+            case "tp06":
+                return "tp06blue.png";
             case "tp01blue.css":
                 return "tp01blue.png";
             case "tp02blue.css":
@@ -423,11 +435,11 @@ class managerGeneralSetting extends React.Component{
                                   </div>
                               </div>
                               <div className="col-md-6 mb-3">
-                                  <label><span className='text-danger'>*</span> 公司英文名稱</label>
+                                  <label>公司英文名稱</label>
                                   <input type="text" className={`form-control`} id="companyEName"  placeholder="公司英文名稱"
-                                     value={companyEName} onChange={this.handleChange('companyEName')} required />
+                                     value={companyEName} onChange={this.handleChange('companyEName')} />
                                   <div className="invalid-feedback">
-                                        公司英文名稱不可以空白
+                                        公司英文名稱
                                   </div>
                               </div>
                           </div>
@@ -458,7 +470,7 @@ class managerGeneralSetting extends React.Component{
                               </div>
                           </div>                          
                           <div className="form-row">
-                                <label><span className='text-danger'>*</span> 公司LOGO上傳</label><em className='text-primary'>(圖檔尺寸大小為 104*32，接受格式為png)</em> 
+                                <label><span className='text-danger'>*</span> 公司LOGO上傳</label><em className='text-primary'>(圖檔尺寸大小為 260*80，接受格式為png)</em> 
                           </div>
                           <div className="form-row">
                               <div className="col-md-6 mb-3">

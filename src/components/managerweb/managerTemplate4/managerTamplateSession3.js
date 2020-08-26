@@ -177,16 +177,16 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題1' notice='(字數限制為4個字以內)' inputName='benefitSubTitle1' inputState={benefitSubTitle1}
-                                                            stateObj={this} required={true} checkValue='4' />
+                                                        <InputText title='小標題1' notice='(建議字數為19個字以內)' inputName='benefitSubTitle1' inputState={benefitSubTitle1}
+                                                            stateObj={this} required={true} checkValue='100' />
                                                     </div>
                                                     <div className="form-row">
-                                                        <InputTextArea title='小標題1內容' notice='(字數限制為55個字以內)' inputName='benefitSubContent1' inputState={benefitSubContent1}
-                                                            rows='3' stateObj={this} required={true} checkValue='55' />
+                                                        <InputTextArea title='小標題1內容' notice='(建議字數為88個字以內)' inputName='benefitSubContent1' inputState={benefitSubContent1}
+                                                            rows='3' stateObj={this} required={true} checkValue='500' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <ImgUpload title='小標題1圖片 上傳' notice='(圖檔尺寸大小為 70*70，接受格式為png、jpg)' objName='benefitSubImg1' imgUpload={benefitSubImg1Upload} 
-                                                            imgFileName={benefitSubImg1} parentObj={this} imgW={70} imgH={70} required={true} />
+                                                        <ImgUpload title='小標題1圖片 上傳' notice='(圖檔尺寸大小為 100*100，接受格式為png、jpg)' objName='benefitSubImg1' imgUpload={benefitSubImg1Upload} 
+                                                            imgFileName={benefitSubImg1} parentObj={this} imgW={100} imgH={100} required={true} />
                                                     </div>
                                                 </div>
 
@@ -203,16 +203,16 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題2' notice='(字數限制為4個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
-                                                            stateObj={this} required={true} checkValue='4' />
+                                                        <InputText title='小標題2' notice='(建議字數為19個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
+                                                            stateObj={this} required={true} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題2內容' notice='(字數限制為55個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
-                                                            rows='3' stateObj={this} required={true} checkValue='55' />
+                                                        <InputTextArea title='小標題2內容' notice='(建議字數為88個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
+                                                            rows='3' stateObj={this} required={true} checkValue='500' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <ImgUpload title='小標題2圖片 上傳' notice='(圖檔尺寸大小為 70*70，接受格式為png、jpg)' objName='benefitSubImg2' imgUpload={benefitSubImg2Upload} 
-                                                            imgFileName={benefitSubImg2} parentObj={this} imgW={70} imgH={70} required={true} />
+                                                        <ImgUpload title='小標題2圖片 上傳' notice='(圖檔尺寸大小為 100*100，接受格式為png、jpg)' objName='benefitSubImg2' imgUpload={benefitSubImg2Upload} 
+                                                            imgFileName={benefitSubImg2} parentObj={this} imgW={100} imgH={100} required={true} />
                                                     </div>
                                                 </div>
 
@@ -229,16 +229,16 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題3' notice='(字數限制為4個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
-                                                            stateObj={this} required={true} checkValue='4' />
+                                                        <InputText title='小標題3' notice='(建議字數為19個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
+                                                            stateObj={this} required={true} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題3內容' notice='(字數限制為55個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
-                                                            rows='3' stateObj={this} required={true} checkValue='55' />
+                                                        <InputTextArea title='小標題3內容' notice='(建議字數為88個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
+                                                            rows='3' stateObj={this} required={true} checkValue='500' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <ImgUpload title='小標題3圖片 上傳' notice='(圖檔尺寸大小為 70*70，接受格式為png、jpg)' objName='benefitSubImg3' imgUpload={benefitSubImg3Upload} 
-                                                            imgFileName={benefitSubImg3} parentObj={this} imgW={70} imgH={70} required={true} />
+                                                        <ImgUpload title='小標題3圖片 上傳' notice='(圖檔尺寸大小為 100*100，接受格式為png、jpg)' objName='benefitSubImg3' imgUpload={benefitSubImg3Upload} 
+                                                            imgFileName={benefitSubImg3} parentObj={this} imgW={100} imgH={100} required={true} />
                                                     </div>
                                                 </div>
 
@@ -255,16 +255,16 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題4' notice='(字數限制為4個字以內)' inputName='benefitSubTitle4' inputState={benefitSubTitle4}
-                                                            stateObj={this} required={true} checkValue='4' />
+                                                        <InputText title='小標題4' notice='(建議字數為19個字以內)' inputName='benefitSubTitle4' inputState={benefitSubTitle4}
+                                                            stateObj={this} required={true} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題4內容' notice='(字數限制為55個字以內)' inputName='benefitSubContent4' inputState={benefitSubContent4}
-                                                            rows='3' stateObj={this} required={true} checkValue='55' />
+                                                        <InputTextArea title='小標題4內容' notice='(建議字數為88個字以內)' inputName='benefitSubContent4' inputState={benefitSubContent4}
+                                                            rows='3' stateObj={this} required={true} checkValue='500' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <ImgUpload title='小標題4圖片 上傳' notice='(圖檔尺寸大小為 70*70，接受格式為png、jpg)' objName='benefitSubImg4' imgUpload={benefitSubImg4Upload} 
-                                                            imgFileName={benefitSubImg4} parentObj={this} imgW={70} imgH={70} required={true} />
+                                                        <ImgUpload title='小標題4圖片 上傳' notice='(圖檔尺寸大小為 100*100，接受格式為png、jpg)' objName='benefitSubImg4' imgUpload={benefitSubImg4Upload} 
+                                                            imgFileName={benefitSubImg4} parentObj={this} imgW={100} imgH={100} required={true} />
                                                     </div>
                                                 </div>
 
@@ -299,7 +299,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題1</td>
                                                 <td align='left'>獎金保險</td>
-                                                <td>4個字以內</td>
+                                                <td>建議19個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -310,7 +310,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題1 內容</td>
                                                 <td align='left'>獎 金 類：全勤獎金、生日禮金、年終獎金、三節獎金、結婚禮金、彌月禮金。保 險 類：勞保、健保、團保、勞退提撥金。</td>
-                                                <td>55個字以內</td>
+                                                <td>建議88個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -321,7 +321,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題1 圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>70*70</td>
+                                                <td>100*100</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
@@ -333,7 +333,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題2</td>
                                                 <td align='left'>休閒娛樂</td>
-                                                <td>4個字以內</td>
+                                                <td>建議19個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -344,7 +344,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題2 內容</td>
                                                 <td align='left'>員購優惠、家庭日聚餐、員工旅遊、尾牙活動。</td>
-                                                <td>55個字以內</td>
+                                                <td>建議88個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -355,7 +355,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題2 圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>70*70</td>
+                                                <td>100*100</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
@@ -367,7 +367,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題3</td>
                                                 <td align='left'>訓練升遷</td>
-                                                <td>4個字以內</td>
+                                                <td>建議19個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -378,7 +378,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題3 內容</td>
                                                 <td align='left'>OJT線上訓練、Off-JT外部訓練。內部晉升考升遷。</td>
-                                                <td>55個字以內</td>
+                                                <td>建議88個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -389,7 +389,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題3 圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>70*70</td>
+                                                <td>100*100</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
@@ -401,7 +401,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題4</td>
                                                 <td align='left'>健康檢查</td>
-                                                <td>4個字以內</td>
+                                                <td>建議19個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -412,7 +412,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題4 內容</td>
                                                 <td align='left'>「每年的健康檢查」是給員工健康的把關。</td>
-                                                <td>55個字以內</td>
+                                                <td>建議88個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -423,7 +423,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>小標題4 圖片</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>70*70</td>
+                                                <td>100*100</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>

@@ -26,17 +26,26 @@ const Msg = (props) =>{
 
                 return(value && 
                         <div className="row-expand-slide-appear">
-                            <div  className = "p-3 mb-2  bg-primary text-white rounded">
-                                <ul>
-                                    <h4>{props.text1title}</h4>
-                                    {props.text1.map((item, index)=>{
-                                        return( <li key={index}>{item}</li>);
-                                    })}
-                                    <h4>{props.text2title}</h4>
-                                    {props.text2.map((item, index)=>{
-                                        return( <li key={index}>{item}</li>);
-                                    })}
-                                </ul>
+                            <div className = "p-3 mb-2 bg-lightgray text-white rounded">
+                                <div className="form-row">
+                                    <div className="col-md-6">
+                                        <ul>
+                                            <h4 className = "msg-position-add">{props.text1title}</h4>
+                                            {props.text1.map((item, index)=>{
+                                                return( <li className="msg-position-list-style" key={index}>{item}</li>);
+                                            })}
+                                        </ul>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <ul>
+                                            <h4 className = "msg-position-duplicate">{props.text2title}</h4>
+                                            {props.text2.map((item, index)=>{
+                                                return( <li className="msg-position-list-style" key={index}>{item}</li>);
+                                            })}
+                                        </ul>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     );

@@ -33,11 +33,11 @@ class CompanyCustomize extends React.Component {
         let card4Title;
         let card4Content;
         let card4Img;
-        /*
+        
         let card5Title;
         let card5Content;
         let card5Img;
-        let card6Title;
+        /*let card6Title;
         let card6Content;
         let card6Img;
         let card7Title;
@@ -65,11 +65,11 @@ class CompanyCustomize extends React.Component {
                 card4Title = element.card4Title;
                 card4Content = element.card4Content;
                 card4Img = element.card4Img;
-                /*
+                
                 card5Title = element.card5Title;
                 card5Content = element.card5Content;
                 card5Img = element.card5Img;
-                card6Title = element.card6Title;
+                /*card6Title = element.card6Title;
                 card6Content = element.card6Content;
                 card6Img = element.card6Img;
                 card7Title = element.card7Title;
@@ -87,9 +87,9 @@ class CompanyCustomize extends React.Component {
         card2Img = !card2Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card2Img}`;
         card3Img = !card3Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card3Img}`;
         card4Img = !card4Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card4Img}`;
-        /*
+        
         card5Img = !card5Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card5Img}`;
-        card6Img = !card6Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card6Img}`;
+        /*card6Img = !card6Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card6Img}`;
         card7Img = !card7Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card7Img}`;
         card8Img = !card8Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${card8Img}`;
         */
@@ -102,8 +102,8 @@ class CompanyCustomize extends React.Component {
                         <div className="lqd-column col-md-12">
     
                             <header className="fancy-title mb-30" id="fancy-title-unlimited-classes">
-                                <h2 className="text-uppercase ltr-sp-0 line-1 text-left">{customizeTitle} </h2>
-                                <p className="line-1 text-left">{customizeSubTitle} </p>
+                                <h2 className="text-uppercase ltr-sp-0 tp01_line-1 text-left tp01-title-font-size tp01_s6_title_width-90pre">{customizeTitle} </h2>
+                                <p className="tp01_custom_subtitle_line text-left tp01_s6_title_width-90pre">{customizeSubTitle} </p>
                             </header>
     
                         </div>
@@ -123,8 +123,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card1Title}</h3>
-                                                    <span className="trainer line-2">{card1Content}</span>
+                                                    <h3 className="tp01_line-1">{card1Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card1Content}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,8 +139,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card2Title}</h3>
-                                                    <span className="trainer line-2">{card2Content}</span>
+                                                    <h3 className="tp01_line-1">{card2Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card2Content}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,8 +155,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">    
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card3Title}</h3>
-                                                    <span className="trainer line-2">{card3Content}</span>
+                                                    <h3 className="tp01_line-1">{card3Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card3Content}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -171,15 +171,15 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card4Title}</h3>
-                                                    <span className="trainer line-2">{card4Content}</span>
+                                                    <h3 className="tp01_line-1">{card4Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card4Content}</span>
                                                 </div>
                                             </div>
                                         </div>
     
                                     </div>
 
-                                    {/*}
+                                    
                                     <div className="lqd-column carousel-item col-md-3 col-sm-6">
     
                                         <div className="fancy-box content-box-heading-sm fancy-box-classes">
@@ -188,14 +188,14 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card5Title}</h3>
-                                                    <span className="trainer line-2">{card5Content}</span>
+                                                    <h3 className="tp01_line-1">{card5Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card5Content}</span>
                                                 </div>
                                             </div>
                                         </div>
     
                                     </div>
-
+{/*}
                                     <div className="lqd-column carousel-item col-md-3 col-sm-6">
     
                                         <div className="fancy-box content-box-heading-sm fancy-box-classes">
@@ -204,8 +204,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card6Title}</h3>
-                                                    <span className="trainer line-2">{card6Content}</span>
+                                                    <h3 className="tp01_line-1">{card6Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card6Content}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -220,8 +220,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card7Title}</h3>
-                                                    <span className="trainer line-2">{card7Content}</span>
+                                                    <h3 className="tp01_line-1">{card7Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card7Content}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -236,8 +236,8 @@ class CompanyCustomize extends React.Component {
                                             </figure>
                                             <div className="fancy-box-contents">
                                                 <div className="fancy-box-info text-left">
-                                                    <h3 className="line-1">{card8Title}</h3>
-                                                    <span className="trainer line-2">{card8Content}</span>
+                                                    <h3 className="tp01_line-1">{card8Title}</h3>
+                                                    <span className="trainer tp01_line-2">{card8Content}</span>
                                                 </div>
                                             </div>
                                         </div>

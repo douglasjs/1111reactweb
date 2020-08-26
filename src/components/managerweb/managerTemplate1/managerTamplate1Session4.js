@@ -1,6 +1,7 @@
 import React from 'react';
 import Msg from '../msg';
 import InputText from '../../sharecomponents/inputText';
+import {newArryMaker} from '../../sharecomponents/toolFunction';
 
 class Session4 extends React.Component{
 
@@ -384,19 +385,14 @@ class Session4 extends React.Component{
 
         let cityGroup =[];
         let dutyGroup =[];
+
         const dataID = (kind00Data && kind00Data.length > 0 && kind00Data[0].oNo!==0) ? kind00Data[0].oNo: 0;
 
         if( dataID!==0 ){
-               
-            kind00Data.forEach( element => {
-                cityGroup.push(element.WorkCity);
-                dutyGroup.push(element.DutyArr[0]);
-            })
-
+            cityGroup = newArryMaker('city', kind00Data );
+            dutyGroup = newArryMaker('duty', kind00Data );
         }
-        cityGroup = [...new Set(cityGroup)];
-        dutyGroup = [...new Set(dutyGroup)];
-       
+
         return(
             <div className="card shadow mb-4">
                 <a href="#collapseCard4" className="d-block card-header py-3 text-white bg-primary" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard4">
@@ -489,11 +485,11 @@ class Session4 extends React.Component{
                                     <input type="hidden" id="themeNum4" value={themeNum} />
                                     
 
-                                    <InputText title='標籤 1' notice='( 字數限制為4個字以內 )' inputName='groupName1' inputState={groupName1}
+                                    <InputText title='標籤 1' notice='( 建議字數為4個字以內 )' inputName='groupName1' inputState={groupName1}
                                                 stateObj={this} required={true} checkValue='4' />
-                                    <InputText title='標籤 2' notice='( 字數限制為4個字以內 )' inputName='groupName2' inputState={groupName2}
+                                    <InputText title='標籤 2' notice='( 建議字數為4個字以內 )' inputName='groupName2' inputState={groupName2}
                                                 stateObj={this} required={false} checkValue='4' />
-                                    <InputText title='標籤 3' notice='( 字數限制為4個字以內 )' inputName='groupName3' inputState={groupName3}
+                                    <InputText title='標籤 3' notice='( 建議字數為4個字以內 )' inputName='groupName3' inputState={groupName3}
                                                 stateObj={this} required={false} checkValue='4' />
                                  
                                     <hr />
@@ -535,7 +531,7 @@ class Session4 extends React.Component{
                     <div className="modal-dialog sample-img-width">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <p className="modal-title">請選擇要顯示的職缺</p>
+                                <p className="modal-title">請選擇要顯示的職缺，<em className='text-primary'>每次每個標籤只能新增<span className='text-danger'>5</span>筆</em></p>
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div className="modal-body text-center">
@@ -560,6 +556,14 @@ class Session4 extends React.Component{
                                                     return(<option key={index} value={element.DutyName}>{element.DutyName}</option>)
                                                 })}
                                             </select>
+                                        </div>
+                                    </div>
+
+                                    <div align="center">
+                                        <div className="message_width">
+                                            <Msg type ='MESSAGE'  value = {this.state.showTable} text1title={text1title} text1={this.state.created} text2title={text2title} text2={this.state.failed} /> 
+                                            <button type='submit'  id='actionPosition' className={this.showStyle(!this.state.showTable)}><i className="fas fa-save"></i> 選擇職缺 </button>
+                                            <button type="button"  id='closePosition' className={this.showStyle(this.state.showTable)} data-dismiss="modal" onClick={this.handleClose}>關閉視窗  </button>
                                         </div>
                                     </div>
         

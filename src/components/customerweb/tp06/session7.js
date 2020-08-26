@@ -44,8 +44,8 @@ class CompanyQA extends React.Component {
 							
 							<div className="lqd-column m-3">
 
-								<header className="fancy-heading">
-									<h2>常見問題</h2>
+								<header className="fancy-heading pb-2">
+									<h2 className="tp06-title-font-size">常見問題</h2>
 								</header>
 
 								<div className="accordion accordion-tall accordion-body-underlined accordion-expander-lg accordion-active-color-primary" id="accordion-2" role="tablist">
@@ -53,8 +53,8 @@ class CompanyQA extends React.Component {
 									<div className="accordion-item panel active">
 										<div className="accordion-heading" role="tab" id="accordion-collapse-heading-1">
 											<h4 className="accordion-title font-size-19">
-												<a className="" data-toggle="collapse" data-parent="#accordion-2" href="#accordion-collapse-panel-1" aria-expanded="true" aria-controls="accordion-collapse-panel-1">
-													{qa1Title}
+												<a data-toggle="collapse" data-parent="#accordion-2" href="#accordion-collapse-panel-1" aria-expanded="true" aria-controls="accordion-collapse-panel-1">
+													<div className="tp06-width-90">{qa1Title}</div>
 													<span className="accordion-expander">
 														<i className="icon-arrows_circle_plus"></i>
 														<i className="icon-arrows_circle_minus"></i>
@@ -64,7 +64,7 @@ class CompanyQA extends React.Component {
 										</div>
 										<div id="accordion-collapse-panel-1" className="accordion-collapse collapse in" role="tabpanel" aria-labelledby="accordion-collapse-heading-1">
 											<div className="accordion-content">
-												<p>{qa1Content}</p>
+												<p className="tp06_line-7">{qa1Content}</p>
 											</div>
 										</div>
 									</div>
@@ -73,7 +73,7 @@ class CompanyQA extends React.Component {
 										<div className="accordion-heading" role="tab" id="accordion-collapse-heading-2">
 											<h4 className="accordion-title font-size-19">
 												<a className="collapsed" data-toggle="collapse" data-parent="#accordion-2" href="#accordion-collapse-collapse-2" aria-expanded="false" aria-controls="accordion-collapse-collapse-2">
-													{qa2Title}
+													<div className="tp06-width-90">{qa2Title}</div>
 													<span className="accordion-expander">
 														<i className="icon-arrows_circle_plus"></i>
 														<i className="icon-arrows_circle_minus"></i>
@@ -83,7 +83,7 @@ class CompanyQA extends React.Component {
 										</div>
 										<div id="accordion-collapse-collapse-2" className="accordion-collapse collapse" role="tabpanel" aria-labelledby="accordion-collapse-heading-2">
 											<div className="accordion-content">
-												<p>{qa2Content}</p>
+												<p className="tp06_line-7">{qa2Content}</p>
 											</div>
 										</div>
 									</div>
@@ -92,7 +92,7 @@ class CompanyQA extends React.Component {
 										<div className="accordion-heading" role="tab" id="accordion-collapse-heading-3">
 											<h4 className="accordion-title font-size-19">
 												<a className="collapsed" data-toggle="collapse" data-parent="#accordion-2" href="#accordion-collapse-collapse-3" aria-expanded="false" aria-controls="accordion-collapse-collapse-3">
-													{qa3Title}
+													<div className="tp06-width-90">{qa3Title}</div>
 													<span className="accordion-expander">
 														<i className="icon-arrows_circle_plus"></i>
 														<i className="icon-arrows_circle_minus"></i>
@@ -102,7 +102,7 @@ class CompanyQA extends React.Component {
 										</div>
 										<div id="accordion-collapse-collapse-3" className="accordion-collapse collapse" role="tabpanel" aria-labelledby="accordion-collapse-heading-3">
 											<div className="accordion-content">
-												<p>{qa3Content}</p>
+												<p className="tp06_line-7">{qa3Content}</p>
 											</div>
 										</div>
 									</div>

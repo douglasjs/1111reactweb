@@ -24,7 +24,7 @@ class CompanyInfo extends React.Component{
         let introSubTitle1Img;
         let introSubTitle2Content; 
         let introSubTitle3Content;        
-        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
+        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
 
         if(introductionData && introductionData.length > 0){
             introductionData.forEach(element => {
@@ -41,7 +41,7 @@ class CompanyInfo extends React.Component{
         // image
         introSubTitle1Img = !introSubTitle1Img ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${introSubTitle1Img}`;
 
-        let imgURL = "url(images/background/about-bg.png)";
+        let imgURL = "url(/images/background/about-bg.png)";
 
         return (
             <section id="company" className="about-section" style={{backgroundImage: imgURL}}>
@@ -58,12 +58,12 @@ class CompanyInfo extends React.Component{
                                 </div>
                                 <div className="text">{introMainContent}</div>
                                 <ul className="list">
-                                    <li>{introSubTitle1Content}</li>
-                                    <li>{introSubTitle2Content}</li>
-                                    <li>{introSubTitle3Content}</li>
+                                    <li className="tp02_company_sub">{introSubTitle1Content}</li>
+                                    <li className="tp02_company_sub">{introSubTitle2Content}</li>
+                                    <li className="tp02_company_sub">{introSubTitle3Content}</li>
                                 </ul>
                                 <div className="btn-box">
-                                    <a className="btn-style-two" target="_blank" rel="noopener noreferrer" href={companyurl}>立即應徵</a>
+                                    <a className="btn-style-three" target="_blank" rel="noopener noreferrer" href={companyurl}>立即應徵</a>
                                 </div>
                             </div>
                         </div>

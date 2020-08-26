@@ -45,7 +45,7 @@ function CustomerMain(props){
                 logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
                 webURL = `https://1111.com.tw/brand/${cid}/${data[0].companyEName}`;
                 styleType = data[0].styleType;
-                goButtonURL = `https://www.1111.com.tw/corp/${cid}/`
+                goButtonURL = "https://www.1111.com.tw/corp/" + cid + "/#c4";
             }
 
             return (

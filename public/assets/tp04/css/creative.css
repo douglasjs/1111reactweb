@@ -230,6 +230,10 @@ h6 {
     width: 100px;
     height: 100px;
   }
+
+  .tp04_mobile_navfontsize span{
+    font-size: 18px !important;
+  }
 }
 
 .top-link img {
@@ -245,7 +249,7 @@ footer.main-footer p {
 }
 
 div.ld-fancy-heading h1 {
-	font-size: 50px;
+	font-size: 45px;
 }
 
 .line-height-1_2em {
@@ -266,32 +270,36 @@ div.ld-fancy-heading h1 {
 }
 
 /* Max line */
-.line-1 ,.line-2 ,.line-3 ,.line-4 ,.line-5 {
+.tp04-line-1, .tp04-line-2, .tp04-line-3, .tp04-line-4, .tp04-line-5, .tp04-line-10 {
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
+  display: -webkit-box !important;
   -webkit-box-orient: vertical;
   word-break: break-all;
 }
 
-.line-1 {
+.tp04-line-1 {
   -webkit-line-clamp: 1 !important;
 }
 
-.line-2 {
+.tp04-line-2 {
   -webkit-line-clamp: 2 !important;
 }
 
-.line-3 {
+.tp04-line-3 {
   -webkit-line-clamp: 3 !important;
 }
 
-.line-4 {
+.tp04-line-4 {
   -webkit-line-clamp: 4 !important;
 }
 
-.line-5 {
+.tp04-line-5 {
   -webkit-line-clamp: 5 !important;
+}
+
+.tp04-line-10 {
+  -webkit-line-clamp: 10 !important;
 }
 
 .brand-content-tp04 {
@@ -331,6 +339,9 @@ div.ld-fancy-heading h1 {
   .brand-content-tp04 {
     height: auto !important;
   }
+  .d-flex > .lqd-column:not([class*=col-xs-]) {
+    width: 345px;
+  }
 }
 
 .navbar-header {
@@ -339,4 +350,14 @@ div.ld-fancy-heading h1 {
 
 .fancy-box-cell {
   text-align: left;
+}
+
+@media (max-width: 1024px) and (min-width: 1024px) {
+  .tp04-S3_min-h-252{
+    min-height: 252px;
+  }
+
+  .iconbox .contents p {
+    min-height: 100px;
+  }
 }

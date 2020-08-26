@@ -34,7 +34,7 @@ class CompanyBenifit  extends React.Component {
             benefitData.forEach(element => {
                 benefitSubTitle1 = element.benefitSubTitle1;
                 benefitSubTitle2 = element.benefitSubTitle2;
-                benefitSubTitle3 = element.benefitSubTitle2;
+                benefitSubTitle3 = element.benefitSubTitle3;
                 benefitSubTitle4 = element.benefitSubTitle4;
                 benefitSubContent1 = element.benefitSubContent1;
                 benefitSubContent2 = element.benefitSubContent2;
@@ -78,7 +78,7 @@ class CompanyBenifit  extends React.Component {
 
 					<div className="row" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"180","initValues":{"scale":0.8,"opacity":0},"animations":{"scale":1,"opacity":1}}'>
 
-						<div className="lqd-column col-md-6">
+						<div className="lqd-column col-md-6 tp04-S3_min-h-252">
 
 							<div className="iconbox iconbox-side iconbox-semiround iconbox-shadow iconbox-heading-sm iconbox-filled" id="ld_icon_box_5c4e9c4475e68">
 								<div className="iconbox-icon-wrap">
@@ -94,7 +94,7 @@ class CompanyBenifit  extends React.Component {
 
 						</div>
 
-						<div className="lqd-column col-md-6">
+						<div className="lqd-column col-md-6 tp04-S3_min-h-252">
 
 							<div className="iconbox iconbox-side iconbox-semiround iconbox-shadow iconbox-heading-sm iconbox-filled" id="ld_icon_box_5c4e9c4475e69">
 								<div className="iconbox-icon-wrap">
@@ -110,7 +110,7 @@ class CompanyBenifit  extends React.Component {
 
 						</div>
 
-						<div className="lqd-column col-md-6">
+						<div className="lqd-column col-md-6 tp04-S3_min-h-252">
 
 							<div className="iconbox iconbox-side iconbox-semiround iconbox-shadow iconbox-heading-sm iconbox-filled" id="ld_icon_box_5c4e9c4475e70">
 								<div className="iconbox-icon-wrap">
@@ -126,7 +126,7 @@ class CompanyBenifit  extends React.Component {
 
 						</div>
 
-						<div className="lqd-column col-md-6">
+						<div className="lqd-column col-md-6 tp04-S3_min-h-252">
 
 							<div className="iconbox iconbox-side iconbox-semiround iconbox-shadow iconbox-heading-sm iconbox-filled" id="ld_icon_box_5c4e9c4475e71">
 								<div className="iconbox-icon-wrap">

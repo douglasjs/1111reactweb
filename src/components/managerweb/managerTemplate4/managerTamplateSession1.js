@@ -11,6 +11,7 @@ class Session1 extends React.Component{
         super(props);
         this.state={
             title : '',
+            title2 : '',
             companySubTitle1 : '',
             companySubTitle2 : '',
             companyBackgroundImg1 : ' ',
@@ -44,7 +45,7 @@ class Session1 extends React.Component{
             ono: cid,
             themeNum : event.target.themeNum.value,
             title : event.target.title.value,
-            title2 : '',
+            title2 : event.target.title2.value,
             title3 : '',
             companySubTitle1 : event.target.companySubTitle1.value,
             companySubTitle2 : event.target.companySubTitle2.value,
@@ -72,6 +73,7 @@ class Session1 extends React.Component{
         const cid = this.props.match.params.cid.trim();
 
         let title = this.state.title;
+        let title2 = this.state.title2;
         let companySubTitle1 = this.state.companySubTitle1;
         let companySubTitle2 = this.state.companySubTitle2;
         let companyBackgroundImg1 = this.state.companyBackgroundImg1;
@@ -82,6 +84,7 @@ class Session1 extends React.Component{
             actionType = 'modify';
             companyData.forEach(element => {
                 title = title !== "" ? title : element.title;
+                title2 = title2 !== "" ? title2 : element.title2;
                 companySubTitle1 = companySubTitle1 !== "" ? companySubTitle1 : element.companySubTitle1;
                 companySubTitle2 = companySubTitle2 !== "" ? companySubTitle2 : element.companySubTitle2;
                 companyBackgroundImg1 = companyBackgroundImg1 !== " " ? companyBackgroundImg1 : element.companyBackgroundImg1;
@@ -116,20 +119,24 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題' notice='(字數限制為14個字以內)' inputName='title' inputState={title}
-                                           stateObj={this} required={true} checkValue='14' />
+                                        <InputText title='大標題' notice='(建議字數：英文17個字以內，中文12個字以內)' inputName='title' inputState={title}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題' notice='(字數限制為30個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           rows='2' stateObj={this} required={true} checkValue='30' />
+                                        <InputText title='大標題2' notice='(建議字數：英文17個字以內，中文12個字以內)' inputName='title2' inputState={title2}
+                                           stateObj={this} required={false} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='短文' notice='(字數限制為125個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
-                                           rows='4' stateObj={this} required={true} checkValue='125' />
+                                        <InputText title='副標題' notice='(建議字數為22個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='背景圖片' notice='(圖檔尺寸大小為 1800*1100 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
-                                            parentObj={this}  imgW={1800} imgH={1100} required={true}/> 
+                                        <InputTextArea title='短文' notice='(建議字數為96個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
+                                           rows='4' stateObj={this} required={true} checkValue='500' />
+                                    </div>
+                                    <div className="form-row row-style-w95-pt1">
+                                        <ImgUpload title='背景圖片' notice='(圖檔尺寸大小為 1800*1060 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
+                                            parentObj={this}  imgW={1800} imgH={1060} required={true}/> 
                                     </div>
                                     
                                     <hr />
@@ -160,7 +167,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>背景圖</td>
                                                 <td align='left'>寬、高(px)</td>
-                                                <td>1800*1100</td>
+                                                <td>1800*1060</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>
@@ -171,21 +178,27 @@ class Session1 extends React.Component{
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>大標題</td>
-                                                <td align='left'>【Sharing melts our hearts. 分享｡讓心融化】</td>
-                                                <td>14個字以內</td>
+                                                <td>大標題1</td>
+                                                <td align='left'>【Sharing melts our hearts.分享｡讓心融化】</td>
+                                                <td>建議英文17個字以內，中文12個字以內</td>
                                                 <td>不可空白</td>
+                                            </tr>
+                                            <tr>
+                                                <td>大標題2</td>
+                                                <td align='left'>【Sharing melts our hearts.分享｡讓心融化】</td>
+                                                <td>建議英文17個字以內，中文12個字以內</td>
+                                                <td>當大標題字數過多時，此欄位會被覆蓋無法顯示</td>
                                             </tr>
                                             <tr>
                                                 <td>副標題</td>
                                                 <td align='left'>歡迎負責、熱情、有同理心的你</td>
-                                                <td>22個字以內</td>
+                                                <td>建議22個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                             <tr>
                                                 <td>短文</td>
                                                 <td align='left'>在餐廳裡，甜點是飽餐一頓的完美句點；在亞尼克，甜點是美好生活的幸福起點。</td>
-                                                <td>125個字以內</td>
+                                                <td>建議96個字以內</td>
                                                 <td>不可空白</td>
                                             </tr>
                                         </tbody>                                        

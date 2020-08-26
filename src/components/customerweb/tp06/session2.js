@@ -21,7 +21,8 @@ class CompanyInfo extends React.Component{
         let introMainContent;
         let introSubTitle1;
 		let introSubTitle1Img;
-		let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
+		const endpoint = "\\#c4";
+		let companyurl = `https://www.1111.com.tw/corp/${cid}/${endpoint}`;
 
         if(introductionData && introductionData.length > 0){
             introductionData.forEach(element => {
@@ -37,7 +38,7 @@ class CompanyInfo extends React.Component{
         
 		return (
 			
-			<section id="company" className="vc_row pt-60 pb-30">
+			<section id="company" className="vc_row pt-60 pb-60">
 
 					{introductionData && introductionData.length > 0 &&
 					<div className="container">
@@ -65,17 +66,17 @@ class CompanyInfo extends React.Component{
 							<div className="lqd-column col-md-6 pl-md-6 pr-md-7 text-justify">
 
 								<header className="fancy-title mb-15">
-									<h3 className="mt-0">{introTitle}</h3>
+									<h2 className="mt-0 tp06_line-1 tp06-title-font-size">{introTitle}</h2>
 									<p className="text-justify">{introMainContent}</p>
 								</header>
 
-								<a href={companyurl} target='_blank' rel='noopener noreferrer' className="btn btn-solid btn-sm semi-round btn-bordered border-thin fresco px-2 font-size-17">
+								<a href={companyurl} target='_blank' rel='noopener noreferrer' className="btn btn-sm round btn-bordered border-thin px-2 font-size-17 btn-solid">
 									<span>
 										<span className="btn-txt">我要應徵</span>
 									</span>
 								</a>
 
-								<a href={introSubTitle1} target='_blank' rel='noopener noreferrer' className="btn btn-default btn-sm semi-round btn-bordered border-thin btn-light px-2 font-size-17">
+								<a href={introSubTitle1} target='_blank' rel='noopener noreferrer' className="btn btn-default btn-sm round btn-bordered border-thin btn-light px-2 font-size-17">
 									<span>
 										<span className="btn-txt">了解更多</span>
 									</span>

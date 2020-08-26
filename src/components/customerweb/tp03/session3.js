@@ -64,49 +64,49 @@ class CompanyBenifit  extends React.Component {
                             <div className="service-inner-wrap service-business-classic">
                                 <div className="row">
                                     <div className="col-sm-6">
-                                        <div className="icon-box-item text-left">
+                                        <div className="icon-box-item">
                                             <div className="icon-box__icon">
                                                 <img src={benefitSubImg1} alt="福利" />
                                             </div>
-                                            <div className="icon-box__txt">
+                                            <div className="icon-box__txt tp06_benefit-subtitle">
                                                 <h6>{benefitSubTitle1}</h6>
-                                                <p>{benefitSubContent1}</p>
+                                                <p className="text-center">{benefitSubContent1}</p>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div className="col-sm-6">
-                                        <div className="icon-box-item text-left">
+                                        <div className="icon-box-item">
                                             <div className="icon-box__icon">
                                                 <img src={benefitSubImg2} alt="福利" />
                                             </div>
-                                            <div className="icon-box__txt">
+                                            <div className="icon-box__txt tp06_benefit-subtitle">
                                                 <h6>{benefitSubTitle2}</h6>
-                                                <p>{benefitSubContent2}</p>
+                                                <p className="text-center">{benefitSubContent2}</p>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div className="col-sm-6">
-                                        <div className="icon-box-item text-left">
+                                        <div className="icon-box-item">
                                             <div className="icon-box__icon">
                                             <img src={benefitSubImg3} alt="福利" />
                                             </div>
-                                            <div className="icon-box__txt">
+                                            <div className="icon-box__txt tp06_benefit-subtitle">
                                                 <h6>{benefitSubTitle3}</h6>
-                                                <p>{benefitSubContent3}</p>
+                                                <p className="text-center">{benefitSubContent3}</p>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div className="col-sm-6">
-                                        <div className="icon-box-item text-left">
+                                        <div className="icon-box-item">
                                             <div className="icon-box__icon">
                                                 <img src={benefitSubImg4} alt="福利" />
                                             </div>
-                                            <div className="icon-box__txt">
+                                            <div className="icon-box__txt tp06_benefit-subtitle">
                                                 <h6>{benefitSubTitle4}</h6>
-                                                <p>{benefitSubContent4}</p>
+                                                <p className="text-center">{benefitSubContent4}</p>
                                             </div>
                                         </div>
                                     </div>

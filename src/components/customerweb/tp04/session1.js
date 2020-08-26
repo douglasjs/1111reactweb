@@ -10,7 +10,7 @@ class CompanyTitle extends React.Component{
 
    componentDidMount(){
         const cid = this.props.match.params.cid;
-        this.props.getCompanyList(cid, this.props.themeNum? this.props.themeNum: 'tp05');
+        this.props.getCompanyList(cid, this.props.themeNum? this.props.themeNum: 'tp04');
     }
 
     render(){
@@ -18,14 +18,16 @@ class CompanyTitle extends React.Component{
         const { companyData } = this.props.companyReducer;
 
 		let title;
+		let title2;
 		let companySubTitle1;
 		let companySubTitle2;
 		let companyBackgroundImg1;
-        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
+        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
 
         if(companyData && companyData.length > 0){
             companyData.forEach(element => {
 				title = element.title;
+				title2 = element.title2;
 				companySubTitle1 = element.companySubTitle1;
 				companySubTitle2 = element.companySubTitle2;
                 companyBackgroundImg1 = element.companyBackgroundImg1;
@@ -65,7 +67,7 @@ class CompanyTitle extends React.Component{
 									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
 									data-split-options='{"type":"lines"}'
 								>
-									<span className="ld-fh-txt">{title}</span>
+									<span className="ld-fh-txt tp04-line-3">{title}<br />{title2}</span>
 								</h1>
 								<h4								
 									data-custom-animations="true"
@@ -81,7 +83,7 @@ class CompanyTitle extends React.Component{
 									data-custom-animations="true"
 									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
 									data-split-options='{"type":"lines"}'>
-									<span className="ld-fh-txt hidden-sm-down text-justify line-2">
+									<span className="ld-fh-txt hidden-sm-down text-justify tp04-line-3">
 										{companySubTitle2}<br />
 									</span>							
 								</p>

@@ -117,20 +117,20 @@ class Session1 extends React.Component{
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題 1' notice='(字數限制為8個字以內)' inputName='title' inputState={title}
-                                           stateObj={this} required={true} checkValue='8' />
+                                        <InputText title='大標題 1' notice='(建議字數為20個字以內)' inputName='title' inputState={title}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題 2' notice='(字數限制為8個字以內)' inputName='title2' inputState={title2}
-                                           stateObj={this} required={true} checkValue='8' />
+                                        <InputText title='大標題 2' notice='(建議字數為20個字以內)' inputName='title2' inputState={title2}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='副標題 1' notice='(字數限制為18個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           stateObj={this} required={true} checkValue='18' />
+                                        <InputText title='副標題 1' notice='(建議字數為46個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='副標題 2' notice='(字數限制為18個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
-                                           stateObj={this} required={true} checkValue='18' />
+                                        <InputText title='副標題 2' notice='(建議字數為46個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <ImgUpload title='背景圖片1' notice='(圖檔尺寸大小為 1920*570 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
@@ -168,8 +168,8 @@ class Session1 extends React.Component{
                                         <tbody>                                            
                                             <tr>
                                                 <td>大標題1、2</td>
-                                                <td align='left'></td>
-                                                <td>8個字以內</td>
+                                                <td align='left'>貢獻地球綠色能源</td>
+                                                <td>建議20個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp5_banner_title">觀看範例圖片</a>
@@ -177,8 +177,8 @@ class Session1 extends React.Component{
                                             </tr>
                                             <tr>
                                                 <td>副標題1、2</td>
-                                                <td align='left'></td>
-                                                <td>18個字以內</td>
+                                                <td align='left'>加入共同來盡一份心力</td>
+                                                <td>建議46個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp5_banner_subtitle">觀看範例圖片</a>

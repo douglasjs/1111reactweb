@@ -69,7 +69,7 @@ function ImgUpload(props){
                     }
                     {props.title}
                 </label>
-                <em className='text-primary'>{props.notice}</em> 
+                <em className='text-primary'>{props.notice}<br/>{props.notice2}</em> 
             </div>
             <div className="form-row">
                 <div className="card image-area mt-4">

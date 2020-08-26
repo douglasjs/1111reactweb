@@ -84,7 +84,7 @@ class CompanyQA extends React.Component {
                                     <li className="accordion-item">
                                         <button className="accordion-title tp05_s7_button active text-left">
                                             <i className="fas fa-plus"></i>
-                                            {qa1Title}
+                                            <div className="tp05_line-1">{qa1Title}</div>
                                         </button>
 
                                         <p className="accordion-content show">{qa1Content}</p>
@@ -93,7 +93,7 @@ class CompanyQA extends React.Component {
                                     <li className="accordion-item">
                                         <button className="accordion-title tp05_s7_button text-left">
                                             <i className="fas fa-plus"></i>
-                                            {qa2Title}
+                                            <div className="tp05_line-1">{qa2Title}</div>
                                         </button>
 
                                         <p className="accordion-content">{qa2Content}</p>
@@ -102,7 +102,7 @@ class CompanyQA extends React.Component {
                                     <li className="accordion-item">
                                         <button className="accordion-title tp05_s7_button text-left">
                                             <i className="fas fa-plus"></i>
-                                            {qa3Title}
+                                            <div className="tp05_line-1">{qa3Title}</div>
                                         </button>
 
                                         <p className="accordion-content">{qa3Content}</p>
@@ -111,7 +111,7 @@ class CompanyQA extends React.Component {
                                     <li className="accordion-item">
                                         <button className="accordion-title tp05_s7_button text-left">
                                             <i className="fas fa-plus"></i>
-                                            {qa4Title}
+                                            <div className="tp05_line-1">{qa4Title}</div>
                                         </button>
 
                                         <p className="accordion-content">{qa4Content}</p>
@@ -120,7 +120,7 @@ class CompanyQA extends React.Component {
                                     <li className="accordion-item">
                                         <button className="accordion-title tp05_s7_button text-left">
                                             <i className="fas fa-plus"></i>
-                                            {qa5Title}
+                                            <div className="tp05_line-1">{qa5Title}</div>
                                         </button>
 
                                         <p className="accordion-content">{qa5Content}</p>

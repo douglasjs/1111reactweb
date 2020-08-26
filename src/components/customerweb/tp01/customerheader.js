@@ -5,7 +5,7 @@ const NavBar = (props) => {
     return(
         <div className="navbar-header">
             <a className="navbar-brand" href={props.logoURL} rel="home">
-                <span className="navbar-brand-inner">
+                <span className="navbar-brand-inner tp01_logo_height">
                     <img className="logo-dark" src={props.logURL} alt="1111人力銀行Logo" />
                     <img className="logo-sticky" src={props.logURL} alt="1111人力銀行Logo" />
                     <img className="mobile-logo-default" src={props.logURL} alt="1111人力銀行Logo" />
@@ -105,7 +105,7 @@ function CustomerHeader(props) {
                 <div className="mainbar-wrap">
                 <div className="container mainbar-container">
                     <div className="mainbar">
-                        <div className="row mainbar-row align-items-lg-stretch">
+                        <div className="row mainbar-row align-items-lg-stretch tp01_mobile_navfontsize">
                             <div className="col">
                                 <NavBar logURL={logURL} logoURL={logoURL}/>
                             </div>

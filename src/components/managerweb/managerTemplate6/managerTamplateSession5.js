@@ -63,6 +63,9 @@ class Session5 extends React.Component{
         let themeNum = this.props.themeNum;
         let actionType = 'create';
 
+        let youtubeURL = '/doc/YouTube_vedio_link.pdf';
+        let fbURL = '/doc/Facebook_vedio_link.pdf';
+
         if(brandData && brandData.length > 0){
             actionType = 'modify';
             brandData.forEach(element => {
@@ -94,20 +97,20 @@ class Session5 extends React.Component{
                                     <input type="hidden" id="themeNum5" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='品牌介紹主標題' notice='(字數限制為13個字以內)' inputName='brandTitle' inputState={brandTitle}
-                                            stateObj={this} required={true} checkValue='13' />
+                                        <InputText title='品牌介紹主標題' notice='(建議字數為22個字以內)' inputName='brandTitle' inputState={brandTitle}
+                                            stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='品牌介紹內文 ' notice='(字數限制為135個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
-                                            rows='5' stateObj={this} required={true} checkValue='135'/>
+                                        <InputTextArea title='品牌介紹內文 ' notice='(建議字數為150個字以內)' inputName='brandTitleSub1Content' inputState={brandTitleSub1Content}
+                                            rows='5' stateObj={this} required={true} checkValue='500'/>
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputText title='了解更多網址' notice='(請輸入網址)' inputName='brandURL2' inputState={brandURL2}
-                                            stateObj={this} required={true} checkValue='200' />
+                                            stateObj={this} required={true} checkValue='500' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
                                         <InputText title='影片網址' notice='(請輸入影片連結網址)' inputName='brandURL1' inputState={brandURL1}
-                                            stateObj={this} required={true} checkValue='200' />
+                                            stateObj={this} required={true} checkValue='500' />
                                     </div>
 
                                     <hr />
@@ -137,7 +140,7 @@ class Session5 extends React.Component{
                                             <tr>
                                                 <td>品牌介紹主標題</td>
                                                 <td align='left'>1流的人才，進入1流的企業</td>
-                                                <td>13個字以內</td>
+                                                <td>建議22個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp6_brand_title">觀看範例圖片</a>
@@ -150,7 +153,7 @@ class Session5 extends React.Component{
                                                     全國唯一擁有 400 多位人資客服人員，隨時協助您解決找尋人才或者系統上的各項問題！<br />
                                                     求職工具. 工欲善其事，必先利其器！履歷準備好，工作更好找！
                                                 </td>
-                                                <td>135個字以內</td>
+                                                <td>建議150個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp6_brand_content">觀看範例圖片</a>
@@ -169,9 +172,13 @@ class Session5 extends React.Component{
                                                 <td>影片網址</td>
                                                 <td align='left'>可設定所要撥放影片的網址</td>
                                                 <td>請輸入網址</td>
-                                                <td>
-                                                    不可空白<br />
-                                                    <a type="button" data-toggle="modal" href="#tmp6_brand_vedio">觀看範例圖片</a>
+                                                <td align='left'>
+                                                    <ul>
+                                                        <li>不可空白</li>
+                                                        <li><a target='_blank' rel='noopener noreferrer' href={youtubeURL}>Youtube影片連結說明</a></li>
+                                                        <li><a target='_blank' rel='noopener noreferrer' href={fbURL}>Facebook影片連結說明</a></li>
+                                                        <li><a type="button" data-toggle="modal" href="#tmp6_brand_vedio">觀看範例圖片</a></li>
+                                                    </ul>                                                    
                                                 </td>
                                             </tr>
                                         </tbody>

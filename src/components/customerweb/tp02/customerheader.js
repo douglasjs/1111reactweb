@@ -47,18 +47,29 @@ const NavMain = (props) => {
 
 function CustomerHeader(props) {
 
-    
+    const { companyData } = props.companyReducer;
     const { customizeData } = props.customizeReducer;
     const { qaData } = props.qaReducer;
     const { contactData} = props.contactReducer;
-    const { data } = props.datatableReducer;
     const cid = props.match.params.cid;
-    let logURL = "/image/logo-1111.png";
-    let logoURL = "https://1111.com.tw";
 
-    if(data && data.length > 0){
-        logURL = `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
-        logoURL = `https://www.1111.com.tw/corp/${cid}/`;
+    let companyBackgroundImg2;
+    let companyBackgroundImg3;
+    let logoNormal = "/image/logo-1111.png";
+    let logoWhite = "/image/logo-1111.png";
+    let logoNormalURL = "https://1111.com.tw";;
+    let logoWhiteURL = "https://1111.com.tw";;    
+    if(companyData && companyData.length > 0){
+        companyData.forEach(element => {
+            companyBackgroundImg2 = element.companyBackgroundImg2;            
+            companyBackgroundImg3 = element.companyBackgroundImg3;
+
+            logoNormal = `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg2}`;
+            logoWhite = `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg3}`;
+
+            logoNormalURL = `https://www.1111.com.tw/corp/${cid}/`;
+            logoWhiteURL = `https://www.1111.com.tw/corp/${cid}/`;
+        })
     }
 
     let customizeEnable;
@@ -90,12 +101,12 @@ function CustomerHeader(props) {
             <div className="outer-container">
                 <div className="main-box clearfix">
                     <div className="logo-box">
-                        <figure className="logo"><a href={logoURL}><img src={logURL} alt="1111人力銀行" /></a></figure>
+                        <figure className="logo"><a href={logoWhiteURL}><img src={logoWhite} alt="1111人力銀行" /></a></figure>
                     </div>
                     <div className="nav-outer clearfix">
                         <div className="menu-area">
                             <nav className="main-menu navbar-expand-lg">
-                                <NavBar logURL={logURL}/>
+                                <NavBar logURL={logoWhite}/>
                                 <NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
                             </nav>
                         </div>
@@ -106,10 +117,10 @@ function CustomerHeader(props) {
             
             <div className="sticky-header">
                 <div className="container clearfix">
-                    <figure className="logo-box"><a href={logoURL}><img src={logURL} alt="1111人力銀行" /></a></figure>
+                    <figure className="logo-box"><a href={logoNormalURL}><img src={logoNormal} alt="1111人力銀行" /></a></figure>
                     <div className="menu-area">
                         <nav className="main-menu navbar-expand-lg">
-                            <NavBar logURL={logURL}/>
+                            <NavBar logURL={logoNormal}/>
                             <NavMain customizeEnable={customizeEnable} customizeName={customizeName} qaEnable={qaEnable} contactEnable={contactEnable} />
                         </nav>
                     </div>

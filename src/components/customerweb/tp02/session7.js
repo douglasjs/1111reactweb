@@ -59,58 +59,58 @@ class CompanyQA extends React.Component {
                         </div>
                         <div className="carousel-content centred">
                             <div className="testimonial-carousel owl-carousel owl-theme nav-style-one owl-dots-none">
-                                <div className="content-box">
-                                    <div className="author-info">
-                                        <span className="designation">Q1.</span>
-                                        <h4 className="name">{qa1Title}</h4>
+                                <div className="content-box text-center">
+                                    <div className="author-info tp02_pb-1rem">
+                                        <span className="designation text-center">Q1.</span>
+                                        <h4 className="name text-center">{qa1Title}</h4>
                                     </div>
                                     <div className="row">
-                                        <div className="col-lg-6 offset-lg-3 text-left">
-                                            <div className="text">{qa1Content}</div>
+                                        <div className="col-lg-6 offset-lg-3">
+                                            <div className="text text-center">{qa1Content}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="content-box">
-                                    <div className="author-info">
-                                        <span className="designation">Q2.</span>
-                                        <h4 className="name">{qa2Title}</h4>
+                                    <div className="author-info tp02_pb-1rem">
+                                        <span className="designation text-center">Q2.</span>
+                                        <h4 className="name text-center">{qa2Title}</h4>
                                     </div>
                                     <div className="row">
-                                        <div className="col-lg-6 offset-lg-3 text-left">
-                                            <div className="text">{qa2Content}</div>
+                                        <div className="col-lg-6 offset-lg-3">
+                                            <div className="text text-center">{qa2Content}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="content-box">
-                                    <div className="author-info">
-                                        <span className="designation">Q3.</span>
-                                        <h4 className="name">{qa3Title}</h4>
+                                    <div className="author-info tp02_pb-1rem">
+                                        <span className="designation text-center">Q3.</span>
+                                        <h4 className="name text-center">{qa3Title}</h4>
                                     </div>
                                     <div className="row">
-                                        <div className="col-lg-6 offset-lg-3 text-left">
-                                            <div className="text">{qa3Content}</div>
+                                        <div className="col-lg-6 offset-lg-3">
+                                            <div className="text text-center">{qa3Content}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="content-box">
-                                    <div className="author-info">
-                                        <span className="designation">Q4.</span>
-                                        <h4 className="name">{qa4Title}</h4>
+                                    <div className="author-info tp02_pb-1rem">
+                                        <span className="designation text-center">Q4.</span>
+                                        <h4 className="name text-center">{qa4Title}</h4>
                                     </div>
                                     <div className="row">
-                                        <div className="col-lg-6 offset-lg-3 text-left">
-                                            <div className="text">{qa4Content}</div>
+                                        <div className="col-lg-6 offset-lg-3">
+                                            <div className="text text-center">{qa4Content}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="content-box">
-                                    <div className="author-info">
-                                        <span className="designation">Q5.</span>
-                                        <h4 className="name">{qa5Title}</h4>
+                                    <div className="author-info tp02_pb-1rem">
+                                        <span className="designation text-center">Q5.</span>
+                                        <h4 className="name text-center">{qa5Title}</h4>
                                     </div>
                                     <div className="row">
-                                        <div className="col-lg-6 offset-lg-3 text-left">
-                                            <div className="text">{qa5Content}</div>
+                                        <div className="col-lg-6 offset-lg-3">
+                                            <div className="text text-center">{qa5Content}</div>
                                         </div>
                                     </div>
                                 </div>

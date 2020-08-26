@@ -67,7 +67,7 @@ function CustomerMain(props){
                 logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
                 webURL = `https://1111.com.tw/brand/${cid}/${data[0].companyEName}`;
                 styleType = data[0].styleType;
-                goButtonURL = `https://www.1111.com.tw/corp/${cid}/`
+                goButtonURL = `https://www.1111.com.tw/corp/${cid}/#c4`
             }
 
             return (
@@ -93,7 +93,7 @@ function CustomerMain(props){
                             <div className="off-canvas-content">
                                 <div className="off-canvas-header">
                                     <div className="logo-area">
-                                        <a href={goButtonURL}><img src="image/tp03/logo.png" alt="Logo" /></a>
+                                        <a href={goButtonURL}><img src={logURL} alt="Logo" /></a>
                                     </div>
                                     <div className="close-action">
                                         <button className="btn-close"><i className="pe-7s-close"></i></button>

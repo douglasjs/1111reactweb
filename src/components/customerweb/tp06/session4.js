@@ -13,9 +13,12 @@ class CompanyJobs extends React.Component {
     }
 
     render(){
+		const cid = this.props.match.params.cid;
         const { positionData } = this.props.positionReducer;
 
 		let imgURL = "url(../../../image/tp06/jobs_bg-1.jpg)";
+		const endpoint = "\\#c4";
+		let companyurl = `https://www.1111.com.tw/corp/${cid}/${endpoint}`;
 
 		return (
 			
@@ -28,7 +31,7 @@ class CompanyJobs extends React.Component {
 							<div className="lqd-column col-md-6 col-md-offset-3">
 
 								<header className="fancy-title mb-20 text-center">
-									<h2>職缺介紹</h2>
+									<h2 className="tp06-title-font-size">職缺介紹</h2>
 								</header>
 
 							</div>
@@ -68,7 +71,7 @@ class CompanyJobs extends React.Component {
 													
 												<div className="pricing-table-footer">
 													
-													<a href={positionURL} className="btn btn-sm btn-solid round lh-15 px-2">
+													<a href={positionURL} className="btn btn-sm round btn-bordered border-thin px-2 font-size-17 btn-default btn-light margin-bottom_25px">
 														<span>
 															<span className="btn-txt">有興趣</span>
 														</span>
@@ -88,10 +91,9 @@ class CompanyJobs extends React.Component {
 						
 						</div>
 							
-								<a href="https://www.1111.com.tw/corp/50750609/" className="mt-40 btn btn-sm btn-solid round lh-15 px-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+								<a href={companyurl} target='_blank' rel='noopener noreferrer' className="mt-40 btn btn-sm btn-solid round lh-15 px-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
 									<span>
 										<span className="btn-txt">所有職缺</span>
-										<span className="btn-icon"><i className="fa fa-angle-right"></i></span>
 									</span>
 								</a>
 								

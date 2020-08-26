@@ -10,9 +10,9 @@ class Session1 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            title: ' ',
-            companySubTitle1: ' ',
-            companySubTitle2: ' ',
+            title: '',
+            companySubTitle1: '',
+            companySubTitle2: '',
             companyBackgroundImg1: ' ',
             companyBackgroundImg1Upload:'',
             companyBackgroundImg2: ' ',
@@ -32,12 +32,12 @@ class Session1 extends React.Component{
         const cid = this.props.match.params.cid;
 
         if(event.target.title.value){
-            if(event.target.title.value ===' '){
+            if(event.target.title.value === ''){
                 return false;
             }
         }
         if(event.target.companySubTitle1.value){
-            if(event.target.companySubTitle1.value ===' '){
+            if(event.target.companySubTitle1.value === ''){
                 return false;
             }
         }
@@ -93,9 +93,9 @@ class Session1 extends React.Component{
         if(companyData && companyData.length > 0){
             actionType = 'modify';
             companyData.forEach(element => {
-                title = title !==" " ? title : element.title;
-                companySubTitle1 = companySubTitle1 !==" " ? companySubTitle1 : element.companySubTitle1;
-                companySubTitle2 = companySubTitle2 !==" " ? companySubTitle2 : element.companySubTitle2;
+                title = title !=="" ? title : element.title;
+                companySubTitle1 = companySubTitle1 !=="" ? companySubTitle1 : element.companySubTitle1;
+                companySubTitle2 = companySubTitle2 !=="" ? companySubTitle2 : element.companySubTitle2;
                 companyBackgroundImg1 = companyBackgroundImg1 !==" " ? companyBackgroundImg1 : element.companyBackgroundImg1;
                 companyBackgroundImg2 = companyBackgroundImg2 !==" " ? companyBackgroundImg2 : element.companyBackgroundImg2;
 
@@ -137,24 +137,24 @@ class Session1 extends React.Component{
                                     <input type="hidden" id="themeNum" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputText title='大標題' notice='(字數限制為5個字以內)' inputName='title' inputState={title}
-                                           stateObj={this} required={true} checkValue='5' />
+                                        <InputText title='大標題' notice='(建議字數為13個字以內)' inputName='title' inputState={title}
+                                           stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 1' notice='(字數限制為40個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
-                                           rows='3' stateObj={this} required={true} checkValue='40' />
+                                        <InputTextArea title='副標題 1' notice='(建議字數為15個字以內)' inputName='companySubTitle1' inputState={companySubTitle1}
+                                           rows='2' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <InputTextArea title='副標題 2' notice='(字數限制為15個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
-                                           rows='2' stateObj={this} required={true} checkValue='15' />
+                                        <InputTextArea title='副標題 2' notice='(建議字數為37個字以內)' inputName='companySubTitle2' inputState={companySubTitle2}
+                                           rows='2' stateObj={this} required={true} checkValue='100' />
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='背景圖片1' notice='(圖檔尺寸大小為 1920*1200 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
-                                            parentObj={this}  imgW={1920} imgH={1200} required={true}/> 
+                                        <ImgUpload title='背景圖片1' notice='(圖檔尺寸大小為 1920*570 ，接受格式為png、jpg)' objName='companyBackgroundImg1'  imgUpload={companyBackgroundImg1Upload} imgFileName={companyBackgroundImg1} 
+                                            parentObj={this}  imgW={1920} imgH={570} required={true}/> 
                                     </div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='背景圖片2' notice='(圖檔尺寸大小為 1920*1200 ，接受格式為png、jpg)' objName='companyBackgroundImg2'  imgUpload={companyBackgroundImg2Upload} imgFileName={companyBackgroundImg2} 
-                                            parentObj={this}  imgW={1920} imgH={1200} required={true}/> 
+                                        <ImgUpload title='背景圖片2' notice='(圖檔尺寸大小為 1920*570 ，接受格式為png、jpg)' objName='companyBackgroundImg2'  imgUpload={companyBackgroundImg2Upload} imgFileName={companyBackgroundImg2} 
+                                            parentObj={this}  imgW={1920} imgH={570} required={true}/> 
                                     </div>
 
                                     <hr />
@@ -184,8 +184,8 @@ class Session1 extends React.Component{
                                         <tbody>                                            
                                             <tr>
                                                 <td>大標題</td>
-                                                <td align='left'>永豐餘生技</td>
-                                                <td>5個字以內</td>
+                                                <td align='left'>1111人力銀行</td>
+                                                <td>建議13個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_banner_title">觀看範例圖片</a>
@@ -193,8 +193,8 @@ class Session1 extends React.Component{
                                             </tr>
                                             <tr>
                                                 <td>副標題1</td>
-                                                <td align='left'>期許作為一個專業及熱情的有機生活管家，貼心的讓客人輕鬆的享受有機生活。</td>
-                                                <td>40個字以內</td>
+                                                <td align='left'>找工作、找人才、找幸福企業</td>
+                                                <td>建議15個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_banner_subtitle_01">觀看範例圖片</a>
@@ -203,7 +203,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>副標題2</td>
                                                 <td align='left'>歡迎優秀的朋友一起加入</td>
-                                                <td>15個字以內</td>
+                                                <td>建議37個字以內</td>
                                                 <td>
                                                     不可空白<br />
                                                     <a type="button" data-toggle="modal" href="#tmp1_banner_subtitle_02">觀看範例圖片</a>
@@ -212,7 +212,7 @@ class Session1 extends React.Component{
                                             <tr>
                                                 <td>背景圖</td>
                                                 <td>寬、高(px)</td>
-                                                <td>1920*1080</td>
+                                                <td>1920*570</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>接受格式為png、jpg</li>

@@ -61,7 +61,8 @@ class CompanyQA extends React.Component {
                                 <div className="accordion mt-lg-0 my-4 my-md-5" id="accordionFaq">
                                     <div className="card text-left">
                                         <div className="card-header">
-                                            <h4 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">{qa1Title}</h4></div>
+                                            <h4 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">{qa1Title}</h4>
+                                        </div>
                                         <div id="collapseOne" className="collapse show" data-parent="#accordionFaq">
                                             <div className="card-body">
                                                 <p>{qa1Content}</p>
@@ -70,7 +71,8 @@ class CompanyQA extends React.Component {
                                     </div>
                                     <div className="card text-left">
                                         <div className="card-header">
-                                            <h4 data-toggle="collapse" data-target="#collapseTwo">{qa2Title}</h4></div>
+                                            <h4 data-toggle="collapse" data-target="#collapseTwo">{qa2Title}</h4>
+                                        </div>
                                         <div id="collapseTwo" className="collapse" data-parent="#accordionFaq">
                                             <div className="card-body">
                                                 <p>{qa2Content}</p>

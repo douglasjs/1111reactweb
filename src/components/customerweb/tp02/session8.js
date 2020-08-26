@@ -7,7 +7,7 @@ class CompanyContact extends React.Component {
     constructor(props){
         super(props);
         this.state={
-           sentMail: true,
+           sentMail: false,
            custName: "",
            custMobile: "",
            custMsg: "",
@@ -15,6 +15,8 @@ class CompanyContact extends React.Component {
         };
         this.emailInput = React.createRef();
         this.phoneInput = React.createRef();
+        this.custName = React.createRef();
+        this.custMsg = React.createRef();
     }
 
     componentDidMount(){
@@ -36,20 +38,12 @@ class CompanyContact extends React.Component {
         const { data } = this.props.datatableReducer;
         const { kind01_data } = this.props.kind01Reducer;
         
-
-        if(validation('custMail', this.state.custMail)!==""){
-            alert(validation('custMail', this.state.custMail));
-            this.emailInput.current.focus();
-            return;
-        }
-
-        if(validation('custMobile', this.state.custMobile)!==""){
-            alert(validation('custMobile', this.state.custMobile));
-            this.phoneInput.current.focus();
-            return;
-        }
-
-        if(data && data.length > 0){
+        this.setState({...this.state, sentMail : false});
+        if( validation('custName', this.state.custName,this) 
+            && validation('custMail', this.state.custMail,this) 
+            && validation('custMobile', this.state.custMobile,this) 
+            && validation('custMsg', this.state.custMsg,this) 
+            && data && data.length > 0){
             const emailObj = {
                 oNo: this.props.match.params.cid.trim(),
                 kind: "2",
@@ -61,10 +55,14 @@ class CompanyContact extends React.Component {
                 custMsg: this.state.custMsg,
                 custMail: this.state.custMail
             }
-            this.props.getEmail(emailObj);
-            this.setState({...this.state, sentMail : false});
+           
+            let promise = new Promise((resolve) => {
+                this.setState({...this.state, sentMail : true});
+            });
+            promise.then( (val) => console.log("asynchronous logging has val:",val) );
+            this.props.getEmail(emailObj, this);
         }
-
+        
     }
 
 
@@ -85,7 +83,7 @@ class CompanyContact extends React.Component {
             })
         }
 
-        let imgURL = "url(image/tp02/background/testimonial-bg.png)";
+        let imgURL = "url(/image/tp02/background/testimonial-bg.png)";
 
         return (
             <div style={contactEnable? {} : {display: 'none'}}>
@@ -105,22 +103,22 @@ class CompanyContact extends React.Component {
                                 <form method="post" id="register_form" className="default-form"> 
                                     <div className="row p-t-20">
                                         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-                                            <input type="text" name="username" placeholder="姓名*" required data-error="格式錯誤" onChange={this.handleChange('custName')} value={this.state.custName} />
+                                            <input type="text" name="username" placeholder="姓名*" required data-error="格式錯誤" onChange={this.handleChange('custName')} value={this.state.custName} ref={this.custName}/>
                                         </div>
                                         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
                                             <input type="email" name="email" placeholder="電子郵件*" data-error="郵件格式錯誤" required onChange={this.handleChange('custMail')} value={this.state.custMail}  ref={this.emailInput} />
                                         </div>
                                         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-                                            <input type="text" name="phone" placeholder="電話" required onChange={this.handleChange('custMobile')} value={this.state.custMobile}  ref={this.phoneInput}/>
+                                            <input type="text" name="phone" placeholder="電話*" required onChange={this.handleChange('custMobile')} value={this.state.custMobile}  ref={this.phoneInput}/>
                                         </div>
                                         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
                                             <input type="text" name="subject" placeholder="主題" required />
                                         </div>
                                         <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <textarea name="message" placeholder="問題" onChange={this.handleChange('custMsg')} value={this.state.custMsg}></textarea>
+                                            <textarea name="message" placeholder="問題*" onChange={this.handleChange('custMsg')} value={this.state.custMsg} ref={this.custMsg}></textarea>
                                         </div>
                                         <div className="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                            <button type="submit" className="btn-style-two" name="submit-form" onClick={this.habdleSubmit}>送出</button>
+                                            <button type="submit" className='btn-style-three' name="submit-form" onClick={this.habdleSubmit} disabled={this.state.sentMail}>送出</button>
                                         </div>
                                     </div>
                                 </form>

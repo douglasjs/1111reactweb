@@ -46,7 +46,7 @@ class CompanyJobs extends React.Component {
                                     <p className="salary-fmt">{element.position_salary}</p>
                                     <p>{element.position_workCity}</p>
                                 
-                                    <a target="_blank" rel="noopener noreferrer" href={positionURL} className="default-btn">我要應徵<span></span></a>
+                                    <a target="_blank" rel="noopener noreferrer" href={positionURL} className="default-btn tp05_position_btn tp05_hover-btn">我要應徵</a>
 
                                     <div className="box-shape">
                                         <img src="../../../assets/tp05/img/box-shape1.png" alt="職缺介紹" />

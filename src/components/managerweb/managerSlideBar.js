@@ -37,10 +37,10 @@ function ManagerSlideBar(props) {
                   <i className="fas fa-fw fa-cog"></i>
                   <span>通用設定</span>
                 </a>
-                <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapseTwo" className="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                   <div className="bg-white py-2 collapse-inner rounded">
-                    <h6 className="collapse-header">通用設定</h6>
-                   {/* <a className="collapse-item" href="/#" onClick={()=>loginHandler(props,'setting')}>網站通用設定</a>*/}
+                    {/*<h6 className="collapse-header">通用設定</h6>
+                    <a className="collapse-item" href="/#" onClick={()=>loginHandler(props,'setting')}>網站通用設定</a>*/}
               
                     <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/setting`, state: { detail: 'login' }}}>網站通用設定</Link>
                   </div>
@@ -55,7 +55,7 @@ function ManagerSlideBar(props) {
                 </a>
                 <div id="collapseUtilities" className="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                   <div className="bg-white py-2 collapse-inner rounded">
-                    <h6 className="collapse-header">模板設定</h6>
+                    {/*<h6 className="collapse-header">模板設定</h6>*/}
                     <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template1`, state: { detail: 'login' }}}>模板樣式 =1=</Link>
                     <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template2`, state: { detail: 'login' }}}>模板樣式 =2=</Link>
                     <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/template3`, state: { detail: 'login' }}}>模板樣式 =3=</Link> 
@@ -70,9 +70,9 @@ function ManagerSlideBar(props) {
                   <i className="fas fa-fw fa-images"></i>
                   <span>參考圖庫</span>
                 </a>
-                <div id="collapsePictures" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapsePictures" className="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                   <div className="bg-white py-2 collapse-inner rounded">
-                    <h6 className="collapse-header">參考圖庫</h6>
+                    {/*<h6 className="collapse-header">參考圖庫</h6>*/}
                     <Link className="collapse-item" to={{pathname:`/managerweb/${cid}/imageGallery`, state: { detail: 'login' }}}>圖庫</Link>
                   </div>
                 </div>

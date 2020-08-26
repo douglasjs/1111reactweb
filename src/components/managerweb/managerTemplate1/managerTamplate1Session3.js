@@ -11,7 +11,7 @@ class Session3 extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            benefitContent: ' ',
+            benefitContent: '',
             benefitImg : ' ',
             benefitImgUpload : ''
         }
@@ -90,7 +90,7 @@ class Session3 extends React.Component{
         if(benefitData && benefitData.length > 0){
             actionType = 'modify';
             benefitData.forEach(element => {
-                benefitContent = benefitContent !==" " ? benefitContent : element.benefitContent;
+                benefitContent = benefitContent !=="" ? benefitContent : element.benefitContent;
                 benefitImg = benefitImg !==" " ? benefitImg : element.benefitImg;
             })
         }
@@ -118,8 +118,8 @@ class Session3 extends React.Component{
                                     <input type="hidden" id="themeNum3" value={themeNum} />
                                     <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                     <div className="form-row row-style-w95-pt1">
-                                        <ImgUpload title='員工福利圖片' notice='(圖檔尺寸大小為 500*354 ，接受格式為png、jpg)' objName='benefitImg'  imgUpload={benefitImgUpload} imgFileName={benefitImg} 
-                                            parentObj={this}  imgW={500} imgH={354} required={true}/> 
+                                        <ImgUpload title='員工福利圖片' notice='(圖檔尺寸大小為 500*350 ，接受格式為png、jpg)' objName='benefitImg'  imgUpload={benefitImgUpload} imgFileName={benefitImg} 
+                                            parentObj={this}  imgW={500} imgH={350} required={true}/> 
                                     </div>                                    
                                     <div className="form-row row-style-w95-pt1">
                                         <label><span className='text-danger'>*</span>員工福利內容 <em className='text-primary'>( 因版面有限，內容編排請特別注意，可搭配預覽確認是否超出顯示範圍 )</em> </label>
@@ -176,7 +176,7 @@ class Session3 extends React.Component{
                                         <tr>
                                             <td>員工福利圖片</td>
                                             <td>寬、高(px)</td>
-                                            <td>500*354</td>
+                                            <td>500*350</td>
                                             <td align='left'>
                                                 <ul>
                                                     <li>接受格式為png、jpg</li>
@@ -190,16 +190,17 @@ class Session3 extends React.Component{
                                             <td>員工福利內容</td>
                                             <td align='left'>
                                             法定項目<br />
-                                                勞保、健保、男性員工陪產假、育嬰假、生理假、特別休假、員工體檢、勞退提撥金、職災保險<br />
+                                                勞保、健保、週休二日、男性員工陪產假、育嬰假、生理假、特別休假、產假、員工體檢、勞退提撥金、職災保險、哺乳室<br />
                                             福利制度<br />
-                                                獎 金 類：全勤獎金、年節獎金、員工生日禮金、年終獎金、三節獎金、禮品、績效獎金<br />
-                                                保 險 類：意外險、員工團保、員工及眷屬住院慰問金<br />
-                                                餐 飲 類：免費供餐<br />
+                                                獎 金 類：全勤獎金、員工生日禮金、年終獎金、三節獎金、激勵獎金、績效獎金<br />
+                                                保 險 類：員工團保<br />
+                                                餐 飲 類：免費供餐. 公司免費提供中餐享用(午休1200~1330)<br />
                                                 娛 樂 類：自強活動、國內旅遊、尾牙、員工運動會<br />
-                                                補 助 類：員工結婚補助、生育補助、員工國內、外進修補助、員工及眷屬喪葬補助、員工購物優惠、社團補助<br />
-                                                其 　他：員工在職教育訓練、良好升遷制度<br />
+                                                娛 樂 類：國內旅遊、尾牙<br />
+                                                補 助 類：員工結婚補助、生育補助、國內、外旅遊補助<br />
+                                                其 　他：員工在職教育訓練
                                             </td>
-                                            <td>350個字以內</td>
+                                            <td>因版面有限，內容編排請特別注意，請搭配預覽確認是否超出顯示範圍</td>
                                             <td>
                                                 可自行編輯排版，不可空白 <br />
                                                 <a type="button" data-toggle="modal" href="#tmp1_benefit_content">觀看範例圖片</a>

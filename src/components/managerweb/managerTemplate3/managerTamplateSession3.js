@@ -194,12 +194,12 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題1' notice='(字數限制為4個字以內)' inputName='benefitSubTitle1' inputState={benefitSubTitle1}
-                                                            stateObj={this} required={true} checkValue='4' />
+                                                        <InputText title='小標題1' notice='(建議字數為16個字以內)' inputName='benefitSubTitle1' inputState={benefitSubTitle1}
+                                                            stateObj={this} required={true} checkValue='100' />
                                                     </div>
                                                     <div className="form-row">
-                                                        <InputTextArea title='小標題1內容' notice='(字數限制為75個字以內)' inputName='benefitSubContent1' inputState={benefitSubContent1}
-                                                            rows='3' stateObj={this} required={true} checkValue='75' />
+                                                        <InputTextArea title='小標題1內容' notice='(建議字數為100個字以內)' inputName='benefitSubContent1' inputState={benefitSubContent1}
+                                                            rows='3' stateObj={this} required={true} checkValue='300' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
                                                         <ImgUpload title='小標題1圖片 上傳' notice='(圖檔尺寸大小為 300*300，接受格式為png、jpg)' objName='benefitSubImg1' imgUpload={benefitSubImg1Upload} 
@@ -220,12 +220,12 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題2' notice='(字數限制為4個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
-                                                            stateObj={this} required={true} checkValue='4' />
+                                                        <InputText title='小標題2' notice='(建議字數為16個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
+                                                            stateObj={this} required={true} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題2內容' notice='(字數限制為75個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
-                                                            rows='3' stateObj={this} required={true} checkValue='75' />
+                                                        <InputTextArea title='小標題2內容' notice='(建議字數為100個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
+                                                            rows='3' stateObj={this} required={true} checkValue='300' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
                                                         <ImgUpload title='小標題2圖片 上傳' notice='(圖檔尺寸大小為 300*300，接受格式為png、jpg)' objName='benefitSubImg2' imgUpload={benefitSubImg2Upload} 
@@ -246,12 +246,12 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題3' notice='(字數限制為4個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
-                                                            stateObj={this} required={true} checkValue='4' />
+                                                        <InputText title='小標題3' notice='(建議字數為16個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
+                                                            stateObj={this} required={true} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題3內容' notice='(字數限制為75個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
-                                                            rows='3' stateObj={this} required={true} checkValue='75' />
+                                                        <InputTextArea title='小標題3內容' notice='(建議字數為100個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
+                                                            rows='3' stateObj={this} required={true} checkValue='300' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
                                                         <ImgUpload title='小標題3圖片 上傳' notice='(圖檔尺寸大小為 300*300，接受格式為png、jpg)' objName='benefitSubImg3' imgUpload={benefitSubImg3Upload} 
@@ -267,17 +267,17 @@ class Session3 extends React.Component{
                                         <a href="#collapseCard3-4" className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard3-4">
                                             <div className="card-header text-white bg-primary">小標題四</div>
                                         </a>                                    
-                                        <div className="card-body collapse" id="collapseCard3-4">
+                                        <div className="card-body collapse show" id="collapseCard3-4">
                                             <div className="form-row">
 
                                                 <div className="col-md-10 mb-6">
                                                     <div className="form-row">
-                                                        <InputText title='小標題4' notice='(字數限制為4個字以內)' inputName='benefitSubTitle4' inputState={benefitSubTitle4}
-                                                            stateObj={this} required={true} checkValue='4' />
+                                                        <InputText title='小標題4' notice='(建議字數為16個字以內)' inputName='benefitSubTitle4' inputState={benefitSubTitle4}
+                                                            stateObj={this} required={true} checkValue='1004' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題4內容' notice='(字數限制為75個字以內)' inputName='benefitSubContent4' inputState={benefitSubContent4}
-                                                            rows='3' stateObj={this} required={true} checkValue='75' />
+                                                        <InputTextArea title='小標題4內容' notice='(建議字數為100個字以內)' inputName='benefitSubContent4' inputState={benefitSubContent4}
+                                                            rows='3' stateObj={this} required={true} checkValue='300' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
                                                         <ImgUpload title='小標題4圖片 上傳' notice='(圖檔尺寸大小為 300*300，接受格式為png、jpg)' objName='benefitSubImg4' imgUpload={benefitSubImg4Upload} 
@@ -329,7 +329,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>員工福利小標題1</td>
                                                 <td align='left'>法定項目</td>
-                                                <td>4個字以內</td>
+                                                <td>建議16個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -340,7 +340,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>員工福利小標題1內容</td>
                                                 <td align='left'>勞保、健保、加班費、生理假、產假、勞退提撥金</td>
-                                                <td>75個字以內</td>
+                                                <td>建議100個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -363,7 +363,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>員工福利小標題2</td>
                                                 <td align='left'>節慶福利</td>
-                                                <td>4個字以內</td>
+                                                <td>建議16個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -374,7 +374,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>員工福利小標題2內容</td>
                                                 <td align='left'>年節禮券、生日禮券、春酒聚餐</td>
-                                                <td>75個字以內</td>
+                                                <td>建議100個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -397,7 +397,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>員工福利小標題3</td>
                                                 <td align='left'>獎金類</td>
-                                                <td>4個字以內</td>
+                                                <td>建議16個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -408,7 +408,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>員工福利小標題3內容</td>
                                                 <td align='left'>全勤獎金、年節獎金、員工生日禮金、年終獎金、三節獎金、激勵獎金、績效獎金</td>
-                                                <td>75個字以內</td>
+                                                <td>建議100個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -431,7 +431,7 @@ class Session3 extends React.Component{
                                             <tr>
                                                 <td>員工福利小標題4</td>
                                                 <td align='left'>其他福利</td>
-                                                <td>4個字以內</td>
+                                                <td>建議16個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>
@@ -446,7 +446,7 @@ class Session3 extends React.Component{
                                                     補 助 類：員工國內、外進修補助、員工手機配發或補助<br />
                                                     其 　他：員工在職教育訓練、良好升遷制度
                                                 </td>
-                                                <td>75個字以內</td>
+                                                <td>建議100個字以內</td>
                                                 <td align='left'>
                                                     <ul>
                                                         <li>不可空白</li>

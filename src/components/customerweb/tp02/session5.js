@@ -45,9 +45,9 @@ class CompanyBrand extends React.Component {
             styleType = data[0].styleType;
         }
 
-        let imgURL1 = "image/tp02/icons/icon-1_"+ styleType + ".png";
-        let imgURL2 = "image/tp02/icons/icon-2_"+ styleType + ".png";
-        let imgURL3 = "image/tp02/icons/icon-3_"+ styleType + ".png";
+        let imgURL1 = "/image/tp02/icons/icon-1_"+ styleType + ".png";
+        let imgURL2 = "/image/tp02/icons/icon-2_"+ styleType + ".png";
+        let imgURL3 = "/image/tp02/icons/icon-3_"+ styleType + ".png";
 
         return (
             <section id="brand" className="feature-section centred">

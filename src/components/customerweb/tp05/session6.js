@@ -89,8 +89,8 @@ class CompanyCustomize extends React.Component {
                 
                 <div id="custom" className="container">
                     <div className="section-title">
-                        <h2>{customizeTitle}</h2>
-                        <p>{customizeSubTitle}</p>
+                        <h2 className="tp05_line-1">{customizeTitle}</h2>
+                        <p className="tp05_line-1">{customizeSubTitle}</p>
                     </div>
                     <div className="single-events-box">
                         <div className="events-box">
@@ -102,9 +102,9 @@ class CompanyCustomize extends React.Component {
 
                             <div className="events-content">
                                 <div className="content text-left">
-                                    <h3><a href={companyurl}>{card1Title}</a></h3>
-                                    <p>{card1Content}</p>
-                                    <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag1}</span>
+                                    <h3><a className="tp05_line-1" href={companyurl}>{card1Title}</a></h3>
+                                    <p className="tp05_line-2">{card1Content}</p>
+                                    <span className="location tp05_line-1"><i className="fas fa-thumbtack"></i>{customizeTag1}</span>
                                     <a target="_blank" rel="noopener noreferrer" href={customizeURL1} className="join-now-btn">了解更多</a>
                                 </div>
                             </div>
@@ -126,9 +126,9 @@ class CompanyCustomize extends React.Component {
 
                             <div className="events-content">
                                 <div className="content text-left">
-                                    <h3><a href={companyurl}>{card2Title}</a></h3>
-                                    <p>{card2Content}</p>
-                                    <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag2}</span>
+                                    <h3><a className="tp05_line-1" href={companyurl}>{card2Title}</a></h3>
+                                    <p className="tp05_line-2">{card2Content}</p>
+                                    <span className="location tp05_line-1"><i className="fas fa-thumbtack"></i>{customizeTag2}</span>
                                     <a target="_blank" rel="noopener noreferrer" href={customizeURL2} className="join-now-btn">了解更多</a>
                                 </div>
                             </div>
@@ -150,9 +150,9 @@ class CompanyCustomize extends React.Component {
 
                             <div className="events-content">
                                 <div className="content text-left">
-                                    <h3><a href={companyurl}>{card3Title}</a></h3>
-                                    <p>{card3Content}</p>
-                                    <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag3}</span>
+                                    <h3><a className="tp05_line-1" href={companyurl}>{card3Title}</a></h3>
+                                    <p className="tp05_line-2">{card3Content}</p>
+                                    <span className="location tp05_line-1"><i className="fas fa-thumbtack"></i>{customizeTag3}</span>
                                     <a target="_blank" rel="noopener noreferrer" href={customizeURL3} className="join-now-btn">了解更多</a>
                                     
                                 </div>
@@ -175,9 +175,9 @@ class CompanyCustomize extends React.Component {
 
                             <div className="events-content">
                                 <div className="content text-left">
-                                    <h3><a href={companyurl}>{card4Title}</a></h3>
-                                    <p>{card4Content}</p>
-                                    <span className="location"><i className="fas fa-thumbtack"></i>{customizeTag4}</span>
+                                    <h3><a className="tp05_line-1" href={companyurl}>{card4Title}</a></h3>
+                                    <p className="tp05_line-2">{card4Content}</p>
+                                    <span className="location tp05_line-1"><i className="fas fa-thumbtack"></i>{customizeTag4}</span>
                                     <a target="_blank" rel="noopener noreferrer" href={customizeURL4} className="join-now-btn">了解更多</a>
                                     <div className="box-shape">
                                         <img src="../../../assets/tp05/img/box-shape3g.png" alt="自訂圖片" />

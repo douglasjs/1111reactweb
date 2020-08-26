@@ -104,28 +104,28 @@ class Session7 extends React.Component{
                                     <div className="col-md-6 mb-3">
 
                                         <div className="form-row row-style-w95">
-                                            <InputText title={`${sessionName}1標題`} notice='(字數限制為30個字以內)' inputName='qa1Title' inputState={qa1Title}
-                                                stateObj={this} required={false} checkValue='30' />
+                                            <InputText title={`${sessionName}1標題`} notice='(建議字數為55個字以內)' inputName='qa1Title' inputState={qa1Title}
+                                                stateObj={this} required={false} checkValue='200' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputTextArea title={`${sessionName}1內容`} notice='(字數限制為80個字以內)' inputName='qa1Content' inputState={qa1Content}
-                                                rows='4' stateObj={this} required={false} checkValue='80' />
+                                            <InputTextArea title={`${sessionName}1內容`} notice='(建議字數為462個字以內)' inputName='qa1Content' inputState={qa1Content}
+                                                rows='4' stateObj={this} required={false} checkValue='500' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputText  title= {`${sessionName}2標題`} notice='(字數限制為30個字以內)' inputName='qa2Title' inputState={qa2Title}
-                                                stateObj={this} required={false} checkValue='30' />
+                                            <InputText  title= {`${sessionName}2標題`} notice='(建議字數為55個字以內)' inputName='qa2Title' inputState={qa2Title}
+                                                stateObj={this} required={false} checkValue='200' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputTextArea title={`${sessionName}2內容`} notice='(字數限制為80個字以內)' inputName='qa2Content' inputState={qa2Content}
-                                                rows='4' stateObj={this} required={false} checkValue='80' />
+                                            <InputTextArea title={`${sessionName}2內容`} notice='(建議字數為462個字以內)' inputName='qa2Content' inputState={qa2Content}
+                                                rows='4' stateObj={this} required={false} checkValue='500' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputText  title= {`${sessionName}3標題`} notice='(字數限制為30個字以內)' inputName='qa3Title' inputState={qa3Title}
-                                                stateObj={this} required={false} checkValue='30' />
+                                            <InputText  title= {`${sessionName}3標題`} notice='(建議字數為55個字以內)' inputName='qa3Title' inputState={qa3Title}
+                                                stateObj={this} required={false} checkValue='200' />
                                         </div>
                                         <div className="form-row row-style-w95-pt1">
-                                            <InputTextArea title={`${sessionName}3內容`} notice='(字數限制為80個字以內)' inputName='qa3Content' inputState={qa3Content}
-                                                rows='4' stateObj={this} required={false} checkValue='80' />
+                                            <InputTextArea title={`${sessionName}3內容`} notice='(建議字數為462個字以內)' inputName='qa3Content' inputState={qa3Content}
+                                                rows='4' stateObj={this} required={false} checkValue='500' />
                                         </div>
 
                                         <hr />
@@ -149,7 +149,7 @@ class Session7 extends React.Component{
                                                 <tr>
                                                     <td>常見問題標題</td>
                                                     <td align='left'>公司的介紹</td>
-                                                    <td>30個字以內</td>
+                                                    <td>建議55個字以內</td>
                                                     <td>
                                                         3則常見問題<br />
                                                         <a type="button" data-toggle="modal" href="#tmp6_faq_title">觀看範例圖片</a>
@@ -162,7 +162,7 @@ class Session7 extends React.Component{
                                                         榮獲2018年人力銀行服務業金牌大獎，提供最貼心的求才求職服務。
                                                         今年更推出2019幸福企業擴大徵才活動，以推動企業多提供。
                                                     </td>
-                                                    <td>135個字以內</td>
+                                                    <td>建議462個字以內</td>
                                                     <td>
                                                         3則常見問題內容<br />
                                                         <a type="button" data-toggle="modal" href="#tmp6_faq_content">觀看範例圖片</a>

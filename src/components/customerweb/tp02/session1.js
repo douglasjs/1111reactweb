@@ -10,7 +10,7 @@ class CompanyTitle extends React.Component{
 
    componentDidMount(){
         const cid = this.props.match.params.cid;
-        this.props.getCompanyList(cid, this.props.themeNum? this.props.themeNum: 'tp05');
+        this.props.getCompanyList(cid, this.props.themeNum? this.props.themeNum: 'tp02');
     }
 
     render(){
@@ -18,15 +18,17 @@ class CompanyTitle extends React.Component{
         const { companyData } = this.props.companyReducer;
         const { data } = this.props.datatableReducer;
 
-		let title;
+        let title;
+        let title2;
 		let companySubTitle1;
         let companyBackgroundImg1;
         let styleType;
-        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
+        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
 
         if(companyData && companyData.length > 0){
             companyData.forEach(element => {
-				title = element.title;
+                title = element.title;
+                title2 = element.title2;
 				companySubTitle1 = element.companySubTitle1;
                 companyBackgroundImg1 = element.companyBackgroundImg1;
             })
@@ -39,7 +41,7 @@ class CompanyTitle extends React.Component{
         // image
         companyBackgroundImg1 = !companyBackgroundImg1 ? "/image/logo-1111.png" : `${envConfig.WebAPI}/image/${cid}?fileName=${companyBackgroundImg1}`;
 
-        let imgURL = "url(image/tp02/background/banner-1_"+ styleType + ".png)";
+        let imgURL = "url(/image/tp02/background/banner-1_"+ styleType + ".png)";
 
         return (
             
@@ -55,10 +57,11 @@ class CompanyTitle extends React.Component{
                     <div className="row">
                         <div className="col-lg-6 col-md-12 col-sm-12 content-column">
                             <div className="content-box text-left s1_width">
-                                <h1>{title}</h1>
+                                <h1 className="mb-0">{title}</h1>                                
+                                <h1>{title2}</h1>
                                 <div className="text">{companySubTitle1}</div>
                                 <div className="btn-box">
-                                    <a className="btn-style-two" target="_blank" rel="noopener noreferrer" href={companyurl}>徵的就是你!</a>
+                                    <a className="btn-style-three" target="_blank" rel="noopener noreferrer" href={companyurl}>徵的就是你!</a>
                                 </div>
                             </div>
                         </div>

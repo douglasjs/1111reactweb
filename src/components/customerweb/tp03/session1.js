@@ -10,7 +10,7 @@ class CompanyTitle extends React.Component{
 
    componentDidMount(){
         const cid = this.props.match.params.cid;
-        this.props.getCompanyList(cid, this.props.themeNum? this.props.themeNum: 'tp05');
+        this.props.getCompanyList(cid, this.props.themeNum? this.props.themeNum: 'tp03');
     }
 
     render(){
@@ -26,7 +26,7 @@ class CompanyTitle extends React.Component{
         let companyBackgroundImg1;
         let companyBackgroundImg2;
         let companyBackgroundImg3;
-        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
+        let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
 
         if(companyData && companyData.length > 0){
             companyData.forEach(element => {

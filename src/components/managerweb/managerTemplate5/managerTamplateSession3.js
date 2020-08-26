@@ -171,8 +171,8 @@ class Session3 extends React.Component{
                                         <div className="col-md-6 mb-3">
                                             <div align="left"><label><span className='text-danger'>*</span><em className='text-primary'>為必填欄位</em> </label></div>
                                             <div className="form-row row-style-w95-pt1">
-                                                <InputText title='副標題' notice='(字數限制為40個字以內)' inputName='benefitContent' inputState={benefitContent}
-                                                stateObj={this} required={true} checkValue='40' />
+                                                <InputText title='副標題' notice='(建議字數為39個字以內)' inputName='benefitContent' inputState={benefitContent}
+                                                stateObj={this} required={true} checkValue='100' />
                                             </div>
                                             <div className="form-row row-style-w95-pt1">
                                                 <ImgUpload title='圖片一 上傳' notice='(圖檔尺寸大小為 850*760，接受格式為png、jpg)' objName='benefitImg' imgUpload={benefitImgUpload} 
@@ -209,7 +209,7 @@ class Session3 extends React.Component{
                                                         <tr>
                                                             <td>副標題</td>
                                                             <td align='left'>提供豐富的獎金福利制度，獎勵同仁的辛勞及貢獻</td>
-                                                            <td>40個字以內</td>
+                                                            <td>建議39個字以內</td>
                                                             <td>
                                                                 不可空白<br />
                                                                 <a type="button" data-toggle="modal" href="#tmp5_benefit_subtitle">觀看範例圖片</a>
@@ -255,12 +255,12 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-6 mb-3">
                                                     <div className="form-row">
-                                                        <InputText title='小標題1' notice='(字數限制為9個字以內)' inputName='benefitSubTitle1' inputState={benefitSubTitle1}
-                                                            stateObj={this} required={true} checkValue='9' />
+                                                        <InputText title='小標題1' notice='(建議字數為13個字以內)' inputName='benefitSubTitle1' inputState={benefitSubTitle1}
+                                                            stateObj={this} required={true} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題1內容' notice='(字數限制為50個字以內)' inputName='benefitSubContent1' inputState={benefitSubContent1}
-                                                            rows='3' stateObj={this} required={true} checkValue='50' />
+                                                        <InputTextArea title='小標題1內容' notice='(建議字數為26個字以內)' inputName='benefitSubContent1' inputState={benefitSubContent1}
+                                                            rows='3' stateObj={this} required={true} checkValue='200' />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6 mb-3">
@@ -285,13 +285,13 @@ class Session3 extends React.Component{
                                                                 <tr>
                                                                     <td>小標題1</td>
                                                                     <td align='left'>獎金福利</td>
-                                                                    <td>9個字以內</td>
+                                                                    <td>建議13個字以內</td>
                                                                     <td>不可空白</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>小標題1內容</td>
                                                                     <td align='left'>全勤獎金、年終獎金、績效獎金</td>
-                                                                    <td>50個字以內</td>
+                                                                    <td>建議26個字以內</td>
                                                                     <td>不可空白</td>
                                                                 </tr>
                                                             </tbody>
@@ -312,12 +312,12 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-6 mb-3">
                                                     <div className="form-row">
-                                                        <InputText title='小標題2' notice='(字數限制為9個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
-                                                            stateObj={this} required={true} checkValue='9' />
+                                                        <InputText title='小標題2' notice='(建議字數為13個字以內)' inputName='benefitSubTitle2' inputState={benefitSubTitle2}
+                                                            stateObj={this} required={false} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題2內容' notice='(字數限制為50個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
-                                                            rows='3' stateObj={this} required={true} checkValue='50' />
+                                                        <InputTextArea title='小標題2內容' notice='(建議字數為26個字以內)' inputName='benefitSubContent2' inputState={benefitSubContent2}
+                                                            rows='3' stateObj={this} required={false} checkValue='200' />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6 mb-3">
@@ -342,13 +342,13 @@ class Session3 extends React.Component{
                                                                 <tr>
                                                                     <td>小標題2</td>
                                                                     <td align='left'>補助津貼</td>
-                                                                    <td>9個字以內</td>
+                                                                    <td>建議13個字以內</td>
                                                                     <td>不可空白</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>小標題2內容</td>
                                                                     <td align='left'>進修補助 全勤津貼 伙食津貼</td>
-                                                                    <td>50個字以內</td>
+                                                                    <td>建議26個字以內</td>
                                                                     <td>不可空白</td>
                                                                 </tr>
                                                             </tbody>
@@ -369,12 +369,12 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-6 mb-3">
                                                     <div className="form-row">
-                                                        <InputText title='小標題3' notice='(字數限制為9個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
-                                                            stateObj={this} required={true} checkValue='9' />
+                                                        <InputText title='小標題3' notice='(建議字數為13個字以內)' inputName='benefitSubTitle3' inputState={benefitSubTitle3}
+                                                            stateObj={this} required={false} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題3內容' notice='(字數限制為50個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
-                                                            rows='3' stateObj={this} required={true} checkValue='50' />
+                                                        <InputTextArea title='小標題3內容' notice='(建議字數為26個字以內)' inputName='benefitSubContent3' inputState={benefitSubContent3}
+                                                            rows='3' stateObj={this} required={false} checkValue='200' />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6 mb-3">
@@ -399,13 +399,13 @@ class Session3 extends React.Component{
                                                                 <tr>
                                                                     <td>小標題3</td>
                                                                     <td align='left'>休閒娛樂</td>
-                                                                    <td>9個字以內</td>
+                                                                    <td>建議13個字以內</td>
                                                                     <td>不可空白</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>小標題3內容</td>
                                                                     <td align='left'>國內員工旅遊 國外員工旅遊 尾牙/不定期餐敘</td>
-                                                                    <td>50個字以內</td>
+                                                                    <td>建議26個字以內</td>
                                                                     <td>不可空白</td>
                                                                 </tr>
                                                             </tbody>
@@ -426,12 +426,12 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-6 mb-3">
                                                     <div className="form-row">
-                                                        <InputText title='小標題4' notice='(字數限制為9個字以內)' inputName='benefitSubTitle4' inputState={benefitSubTitle4}
-                                                            stateObj={this} required={true} checkValue='9' />
+                                                        <InputText title='小標題4' notice='(建議字數為13個字以內)' inputName='benefitSubTitle4' inputState={benefitSubTitle4}
+                                                            stateObj={this} required={false} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題4內容' notice='(字數限制為50個字以內)' inputName='benefitSubContent4' inputState={benefitSubContent4}
-                                                            rows='3' stateObj={this} required={true} checkValue='50' />
+                                                        <InputTextArea title='小標題4內容' notice='(建議字數為26個字以內)' inputName='benefitSubContent4' inputState={benefitSubContent4}
+                                                            rows='3' stateObj={this} required={false} checkValue='200' />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6 mb-3">
@@ -456,13 +456,13 @@ class Session3 extends React.Component{
                                                                 <tr>
                                                                     <td>小標題4</td>
                                                                     <td align='left'>其他福利</td>
-                                                                    <td>9個字以內</td>
+                                                                    <td>建議13個字以內</td>
                                                                     <td>不可空白</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>小標題4內容</td>
                                                                     <td align='left'>員工健康檢查 勞保、健保 福利制度</td>
-                                                                    <td>50個字以內</td>
+                                                                    <td>建議26個字以內</td>
                                                                     <td>不可空白</td>
                                                                 </tr>
                                                             </tbody>
@@ -483,12 +483,12 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-6 mb-3">
                                                     <div className="form-row">
-                                                        <InputText title='小標題5' notice='(字數限制為9個字以內)' inputName='benefitSubTitle5' inputState={benefitSubTitle5}
-                                                            stateObj={this} required={true} checkValue='9' />
+                                                        <InputText title='小標題5' notice='(建議字數為13個字以內)' inputName='benefitSubTitle5' inputState={benefitSubTitle5}
+                                                            stateObj={this} required={false} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題內容5' notice='(字數限制為50個字以內)' inputName='benefitSubContent5' inputState={benefitSubContent5}
-                                                            rows='3' stateObj={this} required={true} checkValue='50' />
+                                                        <InputTextArea title='小標題內容5' notice='(建議字數為26個字以內)' inputName='benefitSubContent5' inputState={benefitSubContent5}
+                                                            rows='3' stateObj={this} required={false} checkValue='200' />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6 mb-3">
@@ -513,13 +513,13 @@ class Session3 extends React.Component{
                                                                 <tr>
                                                                     <td>小標題5</td>
                                                                     <td align='left'>福利設施</td>
-                                                                    <td>9個字以內</td>
+                                                                    <td>建議13個字以內</td>
                                                                     <td>不可空白</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>小標題5內容</td>
                                                                     <td align='left'>員工停車位</td>
-                                                                    <td>50個字以內</td>
+                                                                    <td>建議26個字以內</td>
                                                                     <td>不可空白</td>
                                                                 </tr>
                                                             </tbody>
@@ -540,12 +540,12 @@ class Session3 extends React.Component{
 
                                                 <div className="col-md-6 mb-3">
                                                     <div className="form-row">
-                                                        <InputText title='小標題6' notice='(字數限制為9個字以內)' inputName='benefitSubTitle6' inputState={benefitSubTitle6}
-                                                            stateObj={this} required={true} checkValue='9' />
+                                                        <InputText title='小標題6' notice='(建議字數為13個字以內)' inputName='benefitSubTitle6' inputState={benefitSubTitle6}
+                                                            stateObj={this} required={false} checkValue='100' />
                                                     </div>
                                                     <div className="form-row row-style-w95-pt1">
-                                                        <InputTextArea title='小標題內容6' notice='(字數限制為50個字以內)' inputName='benefitSubContent6' inputState={benefitSubContent6}
-                                                            rows='3' stateObj={this} required={true} checkValue='50' />
+                                                        <InputTextArea title='小標題內容6' notice='(建議字數為26個字以內)' inputName='benefitSubContent6' inputState={benefitSubContent6}
+                                                            rows='3' stateObj={this} required={false} checkValue='200' />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6 mb-3">
@@ -570,13 +570,13 @@ class Session3 extends React.Component{
                                                                 <tr>
                                                                     <td>小標題6</td>
                                                                     <td align='left'>餐 飲 類</td>
-                                                                    <td>9個字以內</td>
+                                                                    <td>建議13個字以內</td>
                                                                     <td>不可空白</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>小標題6內容</td>
                                                                     <td align='left'>伙食津貼</td>
-                                                                    <td>50個字以內</td>
+                                                                    <td>建議26個字以內</td>
                                                                     <td>不可空白</td>
                                                                 </tr>
                                                             </tbody>

@@ -6,7 +6,7 @@ const NavBar = (props) => {
         <div className="pearo-responsive-nav">
             <div className="container">
                 <div className="pearo-responsive-menu">
-                    <div className="logo">
+                    <div className="logo text-left">
                         <a href={props.logoURL}>
                             <img src={props.logURL} alt="logo" />
                         </a>

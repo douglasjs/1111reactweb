@@ -16,7 +16,7 @@ class CompanyJobs extends React.Component {
     render(){
 		const cid = this.props.match.params.cid;
 		const { positionData } = this.props.positionReducer;
-		let companyurl = "https://www.1111.com.tw/corp/" + cid + "/";
+		let companyurl = "https://www.1111.com.tw/corp/" + cid + "/#c4";
 
 		return (
 			
@@ -55,15 +55,15 @@ class CompanyJobs extends React.Component {
 								<div key={index} className="fancy-box fancy-box-offer fancy-box-heading-sm">	
 									<div className="fancy-box-cell fancy-box-header">		
 										<h3 className="text-primary">{element.position_name}</h3>
-										<p className="line-3">{element.position_matter}</p>						
+										<p className="position_matter-line">{element.position_matter}</p>						
 									</div>
 								
-									<div className="fancy-box-cell" data-text="地區">
+									<div className="fancy-box-cell" data-text="">
 										<p>{element.position_workCity}</p>
 									</div>
 								
-									<div className="fancy-box-cell" data-text="時薪">
-										<p>{element.position_salary}</p>
+									<div className="fancy-box-cell" data-text="">
+										<p><strong>{element.position_salary}</strong></p>
 									</div>
 								
 									

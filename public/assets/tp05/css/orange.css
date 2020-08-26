@@ -8,8 +8,6 @@
 /*================================================
 Default CSS
 =================================================*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;display=swap");
-@import url("https://fonts.googleapis.com/css?family=Microsoft JhengHei:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -163,7 +161,7 @@ img {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: #fe8300;
+  background-color: #fe6500;
   -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
@@ -245,7 +243,6 @@ img {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 0;
-  text-transform: uppercase;
   color: #242424;
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
@@ -2859,7 +2856,7 @@ Services Area CSS
 
 .services-slides.owl-theme .owl-dots .owl-dot span {
   width: 15px;
-  height: 2px;
+  height: 10px;
   margin: 0 3px;
   background-color: #afaaaf;
   -webkit-transition: 0.5s;
@@ -3091,7 +3088,7 @@ Why Choose Us Area CSS
   color: #ffffff;
   margin-bottom: 0;
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 900;
 }
 
@@ -3244,7 +3241,7 @@ Why Choose Us Area CSS
 
 .why-choose-us-slides.owl-theme .owl-dots .owl-dot span {
   width: 15px;
-  height: 2px;
+  height: 10px;
   margin: 0 3px;
   background-color: #ffffff;
   -webkit-transition: 0.5s;
@@ -3433,7 +3430,7 @@ Pricing Area CSS
 }
 
 .single-pricing-box .book-now-btn .default-btn span {
-  background-color: #fe8300;
+  background-color: #fe6500;
 }
 
 .single-pricing-box .book-now-btn .default-btn:hover {
@@ -3462,7 +3459,7 @@ Pricing Area CSS
 }
 
 .single-pricing-box .pricing-features-list li i.flaticon-cross-out {
-  font-size: 13px;
+  font-size: 15px;
   color: red;
 }
 
@@ -5291,7 +5288,7 @@ Blog Details Area CSS
   text-transform: uppercase;
   position: relative;
   z-index: 1;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -5333,7 +5330,7 @@ Blog Details Area CSS
   color: #666666;
   letter-spacing: 0.01em;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -6053,7 +6050,7 @@ Sidebar Widget Area CSS
 
 .widget-area .widget_recent_entries ul li .post-date {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   color: #666666;
   margin-top: 4px;
 }
@@ -7551,4 +7548,20 @@ Go Top CSS
 p.salary-fmt {
 	font-weight: bold;
 	color: #fe8300;
+}
+
+.tp05_position_btn {
+  background-color: #ffffff;
+  color: #fe8300;
+  border-color: #fe8300;
+  border-style: solid;
+}
+
+.tp05_position_btn:visited {
+  color: #fe8300;
+}
+
+.tp05_hover-btn:hover {
+  color: #ffffff;
+  background-color: #fe6500;
 }

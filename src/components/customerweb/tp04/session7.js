@@ -54,13 +54,13 @@ class CompanyQA extends React.Component {
 
 								<h6 className="text-uppercase ltr-sp-2 font-size-13 font-weight-semibold text-secondary">Have a question?</h6>
 								<h2 className="mt-1 mb-2">常見問題</h2>
-								<p>{qaSubTitle}</p>
+								<p className="faq-content mt-1 mb-3">{qaSubTitle}</p>
 
 							</header>
 
 						</div>
 
-						<div className="lqd-column col-lg-7 col-lg-offset-1 col-xs-12 mb-7 mb-md-0">
+						<div className="lqd-column col-lg-7 col-lg-offset-1 col-xs-12 mb-7 mb-md-0 pt-30">
 
 							<div className="carousel-container carousel-vertical-3d">
 

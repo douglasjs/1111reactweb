@@ -22,7 +22,6 @@ function CustomerMain(props){
                 description: '找工作送1萬元！前1,000名不必抽、人人有獎，1111推動幸福企業提供高薪、最好的福利等你來，找到工作立即送1萬元大紅包！速分享好友，他拿1萬元，你也有分享獎金1千元'
             }
             let styleSheet = [
-                'https://fonts.googleapis.com/css?family=Roboto%7cRubik:300,400',
                 '/assets/tp06/vendors/liquid-icon/liquid-icon.min.css',
                 '/assets/tp06/vendors/font-awesome/css/font-awesome.min.css',
                 '/assets/tp06/css/theme-vendors.min.css',
@@ -36,6 +35,7 @@ function CustomerMain(props){
             let webURL = "https://1111.com.tw";
             let styleType ="blue.css";
             let goButtonURL = "https://1111.com.tw";
+            const endpoint = "\\#c4";
 
             if(data && data.length > 0){
                 webTitle = data[0].title;
@@ -45,12 +45,13 @@ function CustomerMain(props){
                     keywords: data[0].keyword,
                     description: data[0].description
                 }
-                styleSheet[5] = `/assets/tp06/css/${data[0].styleType}`;
+                styleSheet[4] = `/assets/tp06/css/${data[0].styleType}`;
                 logURL  =  `${envConfig.WebAPI}/image/${cid}?fileName=${data[0].logoImg}`;
                 webURL = `https://1111.com.tw/brand/${cid}/${data[0].companyEName}`;
                 styleType = data[0].styleType;
-                goButtonURL = `https://www.1111.com.tw/corp/${cid}/`
+                goButtonURL = `https://www.1111.com.tw/corp/${cid}/${endpoint}`;
             }
+         
 
             return (
                 <main id="content" className="content">

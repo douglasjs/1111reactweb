@@ -29,7 +29,7 @@
 
 /* Job min-height*/
 .job-min-height {
-    min-height: 300px;
+    min-height: 255px;
 }
 
 /* card height */
@@ -38,8 +38,16 @@
     height: 50px;
 }
 
+.tp03_qatitle_height {
+    height: 66px;
+    line-height: 30px !important;
+  }
+
 @media only screen and (max-width: 400px) {
     .card_height {
         height: auto;
+    }
+    .mobile-mb {
+        margin-bottom: 5px;
     }
 }

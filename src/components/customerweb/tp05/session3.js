@@ -87,59 +87,59 @@ class CompanyBenifit  extends React.Component {
                             <div className="why-choose-us-content text-left" style={{backgroundImage: benefitBgURL}}>
                                 <div className="content">
                                     <div className="title">
-                                        <span className="sub-title">Your Benefits</span>
+                                        <span className="sub-title text-white">Your Benefits</span>
                                         <h2>好 福 利</h2>
-                                        <p>{benefitContent}</p>
+                                        <p className="tp05_line-1">{benefitContent}</p>
                                     </div>
 
                                     <ul className="features-list">
 
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-like"></i>
+                                        <li className="tp05_line-2 tp05_benefit_icon_min-height">
+                                            <div className="icon tp05_benefit_icon_wh_60">
+                                                <i className="flaticon-like tp05_benefit_icon_w_full"></i>
                                             </div>
-                                            <span>{benefitSubTitle1}</span>
+                                            <span className="tp05_line-1">{benefitSubTitle1}</span>
                                             {benefitSubContent1}
                                         </li>
 
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-customer-service"></i>
+                                        <li className="tp05_line-2 tp05_benefit_icon_min-height">
+                                            <div className="icon tp05_benefit_icon_wh_60">
+                                                <i className="flaticon-customer-service tp05_benefit_icon_w_full"></i>
                                             </div>
-                                            <span>{benefitSubTitle2}</span>
+                                            <span className="tp05_line-1">{benefitSubTitle2}</span>
                                             {benefitSubContent2}
                                         </li>
 
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-care"></i>
+                                        <li className="tp05_line-2 tp05_benefit_icon_min-height">
+                                            <div className="icon tp05_benefit_icon_wh_60">
+                                                <i className="flaticon-care tp05_benefit_icon_w_full"></i>
                                             </div>
-                                            <span>{benefitSubTitle3}</span>
+                                            <span className="tp05_line-1">{benefitSubTitle3}</span>
                                             {benefitSubContent3}
                                             
                                         </li>
 
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-team"></i>
+                                        <li className="tp05_line-2 tp05_benefit_icon_min-height">
+                                            <div className="icon tp05_benefit_icon_wh_60">
+                                                <i className="flaticon-team tp05_benefit_icon_w_full"></i>
                                             </div>
-                                            <span>{benefitSubTitle4}</span>
+                                            <span className="tp05_line-1">{benefitSubTitle4}</span>
                                             {benefitSubContent4}
                                         </li>
 
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-policy pl-10" ></i>
+                                        <li className="tp05_line-2 tp05_benefit_icon_min-height">
+                                            <div className="icon tp05_benefit_icon_wh_60">
+                                                <i className="flaticon-policy pl-10 tp05_benefit_icon_w_full" ></i>
                                             </div>
-                                            <span>{benefitSubTitle5}</span>
+                                            <span className="tp05_line-1">{benefitSubTitle5}</span>
                                             {benefitSubContent5}
                                         </li>
 
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-education"></i>
+                                        <li className="tp05_line-2 tp05_benefit_icon_min-height">
+                                            <div className="icon tp05_benefit_icon_wh_60">
+                                                <i className="flaticon-education tp05_benefit_icon_w_full"></i>
                                             </div>
-                                            <span>{benefitSubTitle6}</span>
+                                            <span className="tp05_line-1">{benefitSubTitle6}</span>
                                             {benefitSubContent6}                                            
                                         </li>
 

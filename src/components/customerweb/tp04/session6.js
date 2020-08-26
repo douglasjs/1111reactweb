@@ -82,8 +82,8 @@ class CompanyCustomize extends React.Component {
 
 							<header className="fancy-title text-center mb-30" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":80,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
 
-								<h6 className="text-uppercase ltr-sp-2 font-size-13 font-weight-semibold text-secondary">{customizeSubTitle}</h6>
-								<h2 className="mt-1 mb-2">{customizeTitle}</h2>
+								<h6 className="text-uppercase ltr-sp-2 font-size-13 font-weight-semibold text-secondary tp04-line-1">{customizeSubTitle}</h6>
+								<h2 className="mt-1 mb-2 tp04-line-1">{customizeTitle}</h2>
 
 							</header>
 
@@ -118,7 +118,7 @@ class CompanyCustomize extends React.Component {
 													
 													<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "duration": 200, "delay": 35, "offDuration": 100, "easing": "easeOutCubic", "initValues": { "translateX": 50, "rotateZ": -75, "opacity": 0, "transformOrigin": [0, "-100%", 0] }, "animations": { "translateX": 0, "rotateZ": 0, "opacity": 1, "transformOrigin": [0, "0%", 0] } }'>
 														<div className="ld-pf-details-inner">
-															<h3 className="ld-pf-title h4 font-weight-semibold" data-split-text="true" data-split-options='{ "type": "chars" }'>{card2Title}</h3>
+															<h3 className="ld-pf-title h4 font-weight-semibold tp04-line-1" data-split-text="true" data-split-options='{ "type": "chars" }'>{card2Title}</h3>
 														</div>
 													</div>
 													
@@ -146,7 +146,7 @@ class CompanyCustomize extends React.Component {
 													
 													<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "duration": 200, "delay": 35, "offDuration": 100, "easing": "easeOutCubic", "initValues": { "translateX": 50, "rotateZ": -75, "opacity": 0, "transformOrigin": [0, "-100%", 0] }, "animations": { "translateX": 0, "rotateZ": 0, "opacity": 1, "transformOrigin": [0, "0%", 0] } }'>
 														<div className="ld-pf-details-inner">
-															<h3 className="ld-pf-title h4 font-weight-semibold" data-split-text="true" data-split-options='{ "type": "chars" }'>{card1Title}</h3>
+															<h3 className="ld-pf-title h4 font-weight-semibold tp04-line-1" data-split-text="true" data-split-options='{ "type": "chars" }'>{card1Title}</h3>
 														</div>
 													</div>
 													
@@ -174,7 +174,7 @@ class CompanyCustomize extends React.Component {
 													
 													<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "duration": 200, "delay": 35, "offDuration": 100, "easing": "easeOutCubic", "initValues": { "translateX": 50, "rotateZ": -75, "opacity": 0, "transformOrigin": [0, "-100%", 0] }, "animations": { "translateX": 0, "rotateZ": 0, "opacity": 1, "transformOrigin": [0, "0%", 0] } }'>
 														<div className="ld-pf-details-inner">
-															<h3 className="ld-pf-title h4 font-weight-semibold" data-split-text="true" data-split-options='{ "type": "chars" }'>{card3Title}</h3>
+															<h3 className="ld-pf-title h4 font-weight-semibold tp04-line-1" data-split-text="true" data-split-options='{ "type": "chars" }'>{card3Title}</h3>
 														</div>
 													</div>
 													
@@ -202,7 +202,7 @@ class CompanyCustomize extends React.Component {
 													
 													<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "duration": 200, "delay": 35, "offDuration": 100, "easing": "easeOutCubic", "initValues": { "translateX": 50, "rotateZ": -75, "opacity": 0, "transformOrigin": [0, "-100%", 0] }, "animations": { "translateX": 0, "rotateZ": 0, "opacity": 1, "transformOrigin": [0, "0%", 0] } }'>
 														<div className="ld-pf-details-inner">
-															<h3 className="ld-pf-title h4 font-weight-semibold" data-split-text="true" data-split-options='{ "type": "chars" }'>{card4Title}</h3>
+															<h3 className="ld-pf-title h4 font-weight-semibold tp04-line-1" data-split-text="true" data-split-options='{ "type": "chars" }'>{card4Title}</h3>
 														</div>
 													</div>
 													
@@ -230,7 +230,7 @@ class CompanyCustomize extends React.Component {
 													
 													<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "duration": 200, "delay": 35, "offDuration": 100, "easing": "easeOutCubic", "initValues": { "translateX": 50, "rotateZ": -75, "opacity": 0, "transformOrigin": [0, "-100%", 0] }, "animations": { "translateX": 0, "rotateZ": 0, "opacity": 1, "transformOrigin": [0, "0%", 0] } }'>
 														<div className="ld-pf-details-inner">
-															<h3 className="ld-pf-title h4 font-weight-semibold" data-split-text="true" data-split-options='{ "type": "chars" }'>{card5Title}</h3>
+															<h3 className="ld-pf-title h4 font-weight-semibold tp04-line-1" data-split-text="true" data-split-options='{ "type": "chars" }'>{card5Title}</h3>
 														</div>
 													</div>
 													
@@ -258,7 +258,7 @@ class CompanyCustomize extends React.Component {
 													
 													<div className="ld-pf-details" data-custom-animations="true" data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "duration": 200, "delay": 35, "offDuration": 100, "easing": "easeOutCubic", "initValues": { "translateX": 50, "rotateZ": -75, "opacity": 0, "transformOrigin": [0, "-100%", 0] }, "animations": { "translateX": 0, "rotateZ": 0, "opacity": 1, "transformOrigin": [0, "0%", 0] } }'>
 														<div className="ld-pf-details-inner">
-															<h3 className="ld-pf-title h4 font-weight-semibold" data-split-text="true" data-split-options='{ "type": "chars" }'>{card6Title}</h3>
+															<h3 className="ld-pf-title h4 font-weight-semibold tp04-line-1" data-split-text="true" data-split-options='{ "type": "chars" }'>{card6Title}</h3>
 														</div>
 													</div>
 													
