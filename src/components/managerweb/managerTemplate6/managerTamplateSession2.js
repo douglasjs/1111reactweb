@@ -145,7 +145,7 @@ class Session2 extends React.Component{
         }
 
         if(actionType === "create"){
-            introMainContent = kind01_data && kind01_data.length > 0 && introMainContent === ' ' ? strNumLimite(kind01_data[0].brief,80)  : this.state.introMainContent;
+            introMainContent = kind01_data && kind01_data.length > 0 && introMainContent === '' ? strNumLimite(kind01_data[0].brief,80)  : this.state.introMainContent;
             if(introSubTitle1 === ''){
                 introSubTitle1 = `https://www.1111.com.tw/corp/${cid}/`;
             }
